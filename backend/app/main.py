@@ -1,8 +1,9 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.core.config import settings
-from app.core.logger import logger
+from app.core import settings, logger
+from app.infrastructure import GroqNLPExtractor
+from app.api import api_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -12,7 +13,10 @@ async def lifespan(app: FastAPI):
     logger.info(f"--- Starting {settings.PROJECT_NAME} ---")
     logger.info(f"Environment: {settings.ENVIRONMENT}")
     logger.info("Initializing ML models and database connections...")
-    
+
+    logger.info("Initializing LLM extractor model...")
+    app.state.nlp_extractor = GroqNLPExtractor()
+
     yield 
     
     logger.info(f"--- Shutting down {settings.PROJECT_NAME} ---")
@@ -40,6 +44,12 @@ app.add_middleware(
     allow_methods=settings.cors_methods_list,
     allow_headers=settings.cors_headers_list,
 )
+
+app.include_router(api_router, prefix="/api/v1")
+
+@app.get("/")
+async def root():
+    return {"message": f"Welcome to {settings.PROJECT_NAME}."}
 
 @app.get("/health")
 async def health_check():

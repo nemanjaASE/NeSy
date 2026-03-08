@@ -17,8 +17,22 @@ class Settings(BaseSettings):
     
     # --- AI / LLM
     GROQ_API_KEY: str
+    GROQ_EXTRACTION_MODEL_NAME: str
     EMBEDDING_MODEL_NAME: str
-    
+
+    SYMPTOM_PROMPT_PATH: Path = BASE_DIR / "app" / "core" / "prompts" / "symptom_extraction_prompt.txt"
+
+    @property
+    def symptom_system_prompt(self) -> str:
+        """
+        Reads the system prompt from the external text file.
+        """
+        try:
+            with open(self.SYMPTOM_PROMPT_PATH, "r", encoding="utf-8") as f:
+                return f.read().strip()
+        except FileNotFoundError:
+            raise FileNotFoundError(f"System prompt file not found at {self.SYMPTOM_PROMPT_PATH}")
+        
     # --- CORS
     ALLOWED_ORIGINS: str 
     ALLOWED_METHODS: str
