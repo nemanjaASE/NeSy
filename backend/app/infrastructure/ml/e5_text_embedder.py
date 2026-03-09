@@ -24,14 +24,11 @@ class E5Embedder(TextEmbedder):
         try:
             logger.debug(f"Generating embeddings for {len(texts)} items.")
             
-
-            formatted_texts = [f"query: {text}" for text in texts]
-            
             loop = asyncio.get_running_loop()
 
             embeddings_array = await loop.run_in_executor(
                 None, 
-                lambda: self.model.encode(formatted_texts)
+                lambda: self.model.encode(texts)
             )
             
             logger.info("Successfully generated vector embeddings.")

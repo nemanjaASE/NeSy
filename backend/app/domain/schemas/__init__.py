@@ -1,1 +1,1 @@
-from .diagnostics import DiagnosticRequest, DiagnosticResult
+from .diagnostics import DiagnosticRequest, DiagnosticResult, DiseaseScore, InferenceResult
