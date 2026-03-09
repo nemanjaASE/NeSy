@@ -1,0 +1,42 @@
+import asyncio
+from typing import List
+from sentence_transformers import SentenceTransformer
+from app.domain.interfaces.ml import TextEmbedder
+from app.core import logger
+
+class E5Embedder(TextEmbedder):
+    """
+    Infrastructure implementation of TextEmbedder using the multilingual-e5-large model.
+    """
+
+    def __init__(self, model_name: str):
+        """
+        Initialize the embedding model.
+        """
+        logger.info(f"Initializing Embedder with model: {model_name}")
+        self.model = SentenceTransformer(model_name)
+        logger.info("Embedding model loaded successfully into memory.")
+
+    async def generate_embeddings(self, texts: List[str]) -> List[List[float]]:
+        """
+        Generate embeddings for a list of texts asynchronously.
+        """
+        try:
+            logger.debug(f"Generating embeddings for {len(texts)} items.")
+            
+
+            formatted_texts = [f"query: {text}" for text in texts]
+            
+            loop = asyncio.get_running_loop()
+
+            embeddings_array = await loop.run_in_executor(
+                None, 
+                lambda: self.model.encode(formatted_texts)
+            )
+            
+            logger.info("Successfully generated vector embeddings.")
+            return embeddings_array.tolist()
+
+        except Exception as e:
+            logger.error(f"Failed to generate embeddings: {str(e)}")
+            return []

@@ -13,5 +13,5 @@ class NLPExtractor(Protocol):
             text (str): The raw clinical description provided by the user.
 
         Returns:
-            List[str]: A list of extracted medical symptoms or entities.
+            List[str]: A list of extracted symptom names.
         """

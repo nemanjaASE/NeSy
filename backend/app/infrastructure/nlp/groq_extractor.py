@@ -27,7 +27,7 @@ class GroqNLPExtractor(NLPExtractor):
             text (str): Raw clinical text from the patient.
 
         Returns:
-            List[str]: A list of symptoms (e.g., ['headache', 'fever']).
+            List[str]: A list of extracted symptom names.
         """
         try:
             logger.info(f"Extracting symptoms using model: {self.model}")

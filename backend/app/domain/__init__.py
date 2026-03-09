@@ -1,2 +1,3 @@
-from .interfaces import NLPExtractor
-from .schemas import EntityExtraction, DiagnosticRequest
+from .interfaces import NLPExtractor, TextEmbedder
+from .schemas import DiagnosticRequest, DiagnosticResult
+from .services import SemanticMatcher
