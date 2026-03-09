@@ -40,7 +40,7 @@ class SemanticMatcher:
             scores = matrix[i]
             best_idx = np.argmax(scores)
             confidence = float(scores[best_idx])
-            
+
             results.append({
                 "input_symptom": term,
                 "mapped_symptom": onto_labels[best_idx],

@@ -6,7 +6,7 @@ QUERY_CACHE = {}
 def get_query(query_name: str) -> str:
     if query_name not in QUERY_CACHE:
         queries_dir = Path(__file__).parent / "queries"
-        file_path = queries_dir / f"{query_name}.cy"
+        file_path = queries_dir / f"{query_name}.cyp"
         
         if not file_path.exists():
             logger.error(f"Query file not found: {file_path}")

@@ -5,7 +5,7 @@ class DiagnosticRequest(BaseModel):
     """
     The initial input from the user/patient.
     """
-    text: str = Field(..., example="I have a sharp pain in my lower back.")
+    text: str = Field(..., example="Već par dana kašljem i imam baš visoku temperaturu.")
 
 class SemanticMatchDetail(BaseModel):
     """
@@ -16,6 +16,22 @@ class SemanticMatchDetail(BaseModel):
     confidence: float
     is_match: bool
 
+class DiseaseScore(BaseModel):
+    """Represents the scoring and coverage details for a potential disease diagnosis based on the matched symptoms."""
+    disease_name: str
+    uri: str
+    normalized_score: float
+    match_count: int
+    disease_coverage_pct: float  # D.COV
+    input_coverage_pct: float    # I.COV
+    matched_symptoms: List[str]
+    missing_symptoms: List[str]
+
+class InferenceResult(BaseModel):
+    """Represents the final inference results including all potential disease diagnoses."""
+    total_input_symptoms: int
+    diseases: List[DiseaseScore]
+
 class DiagnosticResult(BaseModel):
     """
     The final output of the diagnostic pipeline, including the original input text, the extracted entities, the ontological matches, and detailed information about each match.
@@ -24,3 +40,4 @@ class DiagnosticResult(BaseModel):
     extracted_entities: List[str]
     ontological_matches: List[str]
     detailed_results: List[SemanticMatchDetail]
+    inference: InferenceResult

@@ -1,6 +1,6 @@
 from neo4j import GraphDatabase
 from app.core import logger, settings
-from typing import List, Tuple
+from typing import Any, Dict, List, Tuple
 
 from .queries import get_query
 
@@ -47,3 +47,34 @@ class Neo4jRepository:
         except Exception as e:
             logger.error(f"Error fetching symptoms from Neo4j: {str(e)}")
             return []
+        
+    async def infer_diseases(
+        self, 
+        mapped_symptoms: List[str], 
+        min_match: int = 1, 
+        has_symptom_rel: str = "http://purl.obolibrary.org/obo/RO_0002452"
+    ) -> List[Dict[str, Any]]:
+        """
+        Executes the inference Cypher query to find matching diseases.
+        """
+        if not mapped_symptoms:
+            logger.warning("No mapped symptoms provided for inference.")
+            return []
+        try:
+            query = get_query("infer_diseases")
+            
+            with self.driver.session() as session:
+                result = session.run(
+                    query, 
+                    has_symptom=has_symptom_rel, 
+                    symptoms=mapped_symptoms, 
+                    min_match=min_match
+                )
+
+                records = [dict(r) for r in result]
+                logger.info(f"Inference query executed successfully. Found {len(records)} potential diseases.")
+                return records
+
+        except Exception as e:
+            logger.error(f"Error executing inference query: {str(e)}")
+            return []    
