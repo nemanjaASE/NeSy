@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core import settings, logger
-from app.infrastructure import GroqNLPExtractor
+from app.infrastructure import GroqNLPExtractor, E5Embedder, Neo4jRepository
 from app.api import api_router
 
 @asynccontextmanager
@@ -14,10 +14,32 @@ async def lifespan(app: FastAPI):
     logger.info(f"Environment: {settings.ENVIRONMENT}")
     logger.info("Initializing ML models and database connections...")
 
+    # Initialize LLM Extractor model
     logger.info("Initializing LLM extractor model...")
     app.state.nlp_extractor = GroqNLPExtractor()
 
+    # Initialize Text Embedder model
+    logger.info("Initializing Text Embedder model...")
+    app.state.embedder = E5Embedder(model_name=settings.EMBEDDING_MODEL_NAME)
+
+    # Initialize Neo4j connection
+    db = Neo4jRepository()
+    db.connect()
+    app.state.db = db
+
+    # Chaching Ontology Symptoms
+    logger.info("Pre-loading ontology symptoms into memory...")
+    ontology_data = await db.get_ontology_symptoms()
+    
+    # Save labels and vectors separately
+    app.state.onto_labels = [item[0] for item in ontology_data]
+    app.state.onto_vectors = [item[1] for item in ontology_data]
+    
+    logger.info(f"Loaded {len(app.state.onto_labels)} symptoms from ontology.")
+
     yield 
+    
+    db.close()
     
     logger.info(f"--- Shutting down {settings.PROJECT_NAME} ---")
 

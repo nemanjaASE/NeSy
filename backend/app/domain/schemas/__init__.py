@@ -1,2 +1,1 @@
-from .nlp import EntityExtraction
-from .diagnostics import DiagnosticRequest
+from .diagnostics import DiagnosticRequest, DiagnosticResult
