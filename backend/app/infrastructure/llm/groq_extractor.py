@@ -1,9 +1,8 @@
 import json
 from typing import List
 from groq import Groq
-from app.domain.interfaces.nlp import NLPExtractor
-from app.core.config import settings
-from app.core.logger import logger
+from app.domain import NLPExtractor
+from app.core import settings, logger
 from .prompt_loader import load_prompt
 
 class GroqNLPExtractor(NLPExtractor):

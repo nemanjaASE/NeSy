@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     # --- AI / LLM
     GROQ_API_KEY: str
     GROQ_EXTRACTION_MODEL_NAME: str
+    GROQ_XAI_MODEL_NAME: str
     EMBEDDING_MODEL_NAME: str
         
     # --- CORS

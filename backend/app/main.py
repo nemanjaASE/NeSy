@@ -1,8 +1,8 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.infrastructure import GroqNLPExtractor, E5Embedder, Neo4jRepository, XAIExplainer
 from app.core import settings, logger
-from app.infrastructure import GroqNLPExtractor, E5Embedder, Neo4jRepository
 from app.api import api_router
 
 @asynccontextmanager
@@ -28,6 +28,10 @@ async def lifespan(app: FastAPI):
         # Initialize Neo4j connection
         db.connect()
         app.state.db = db
+
+        # Initialize XAI Explainer model
+        logger.info("Initializing XAI Explainer model...")
+        app.state.xai_explainer = XAIExplainer()
 
         # Chaching Ontology Symptoms
         logger.info("Pre-loading ontology symptoms into memory...")

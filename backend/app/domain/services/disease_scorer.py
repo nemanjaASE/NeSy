@@ -1,5 +1,7 @@
 from typing import List, Dict, Any
-from app.domain import DiseaseScore, InferenceResult
+
+from ..DTOs.DiseaseInferenceDTO import DiseaseInferenceDTO
+from ..schemas.diagnostics import DiseaseScore, InferenceResult
 from app.core import logger
 
 class DiseaseScorer:
@@ -18,6 +20,7 @@ class DiseaseScorer:
         Calculates disease coverage and input coverage based on Neo4j raw data.
         """
         if total_input_symptoms == 0 or not raw_records:
+            logger.warning("No symptoms or records to score.")
             return InferenceResult(total_input_symptoms=total_input_symptoms, diseases=[])
 
         scored_diseases = []
@@ -29,7 +32,7 @@ class DiseaseScorer:
             disease_cov = round(match_count / total_symptom_count * 100, 1)
             input_cov = round(match_count / total_input_symptoms * 100, 1)
 
-            scored_disease = DiseaseScore(
+            scored_disease = DiseaseInferenceDTO(
                 disease_name=rec.get('disease', 'Unknown'),
                 uri=rec.get('uri', ''),
                 normalized_score=round(rec.get('normalized_score', 0.0), 2),

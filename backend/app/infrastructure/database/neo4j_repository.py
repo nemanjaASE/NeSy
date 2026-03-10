@@ -1,7 +1,6 @@
 from neo4j import GraphDatabase
 from app.core import logger, settings
 from typing import Any, Dict, List, Tuple
-
 from .queries import get_query
 
 class Neo4jRepository:

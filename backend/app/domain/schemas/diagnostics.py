@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
-from typing import List
+from typing import Any, Dict, List, Optional
+from ..DTOs.DiseaseInferenceDTO import DiseaseInferenceDTO
 
 class DiagnosticRequest(BaseModel):
     """
@@ -30,7 +31,7 @@ class DiseaseScore(BaseModel):
 class InferenceResult(BaseModel):
     """Represents the final inference results including all potential disease diagnoses."""
     total_input_symptoms: int
-    diseases: List[DiseaseScore]
+    diseases: List[DiseaseInferenceDTO]
 
 class DiagnosticResult(BaseModel):
     """
@@ -41,3 +42,4 @@ class DiagnosticResult(BaseModel):
     ontological_matches: List[str]
     detailed_results: List[SemanticMatchDetail]
     inference: InferenceResult
+    explanation: Optional[Dict[str, Any]]
