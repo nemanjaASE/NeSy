@@ -1,7 +1,7 @@
 import asyncio
 from typing import List
 from sentence_transformers import SentenceTransformer
-from app.domain.interfaces.ml import TextEmbedder
+from app.domain import TextEmbedder
 from app.core import logger
 
 class E5Embedder(TextEmbedder):
