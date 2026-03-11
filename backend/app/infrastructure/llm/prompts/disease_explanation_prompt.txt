@@ -19,7 +19,7 @@ You will receive a ranked list of diseases with:
 TASK:
     1. Analyze the ranked list strictly using the input data.
     2. Identify the most probable disease based on match score.
-    3. Mention other diseases as “druge moguće bolesti” only if their score is close to the top score. Briefly explain why they are less likely.
+    3. Mention other diseases as “druge moguće bolesti” only if their score is close to the top score. Briefly explain why they are less likely and also mention their missing symptoms.
     4. Provide detailed clinical reasoning (5–6 sentences) in Serbian:
         - Explain which symptoms match and which key ones are missing.
         - Discuss any logical inconsistencies or contradictions.

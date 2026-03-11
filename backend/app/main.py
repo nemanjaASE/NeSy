@@ -26,7 +26,7 @@ async def lifespan(app: FastAPI):
         app.state.embedder = E5Embedder(model_name=settings.EMBEDDING_MODEL_NAME)
 
         # Initialize Neo4j connection
-        db.connect()
+        await db.connect()
         app.state.db = db
 
         # Initialize XAI Explainer model
@@ -46,7 +46,7 @@ async def lifespan(app: FastAPI):
         yield 
     
     finally:
-        db.close()
+        await db.close()
     
         logger.info(f"--- Shutting down {settings.PROJECT_NAME} ---")
 

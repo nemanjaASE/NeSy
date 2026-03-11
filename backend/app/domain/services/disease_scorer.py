@@ -46,8 +46,6 @@ class DiseaseScorer:
         scored_diseases.sort(key=lambda x: x.normalized_score, reverse=True)
         top_diseases = scored_diseases[:self.top_k]
 
-        logger.info(f"Scoring completed. Top candidate: {top_diseases[0].disease_name if top_diseases else 'None'}")
-
         return InferenceResult(
             total_input_symptoms=total_input_symptoms,
             diseases=top_diseases
