@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import List, Union
 
-class DiseaseInferenceDTO(BaseModel):
+class DiseaseInference(BaseModel):
     """
     Data Transfer Object for disease inference results.
     """

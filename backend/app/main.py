@@ -38,8 +38,8 @@ async def lifespan(app: FastAPI):
         ontology_data = await db.get_ontology_symptoms()
     
         # Save labels and vectors separately
-        app.state.onto_labels = [item[0] for item in ontology_data]
-        app.state.onto_vectors = [item[1] for item in ontology_data]
+        app.state.onto_labels = [item.label for item in ontology_data]
+        app.state.onto_vectors = [item.embedding for item in ontology_data]
     
         logger.info(f"Loaded {len(app.state.onto_labels)} symptoms from ontology.")
 

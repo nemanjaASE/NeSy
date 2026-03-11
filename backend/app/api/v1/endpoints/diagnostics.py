@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, Request
-from app.domain import NLPExtractor, TextEmbedder, SemanticMatcher, DiagnosticResult, DiseaseScorer, DiagnosticRequest
+from app.domain import NLPExtractor, TextEmbedder, SemanticMatcher, DiagnosticResponseDTO, DiseaseScorer, DiagnosticRequestDTO
 from app.application import DiagnosticCoordinator
 
 router = APIRouter()
@@ -20,10 +20,10 @@ def get_coordinator(request: Request) -> DiagnosticCoordinator:
         xai_explainer=request.app.state.xai_explainer
     )
 
-@router.post("/diagnose", response_model=DiagnosticResult)
+@router.post("/diagnose", response_model=DiagnosticResponseDTO)
 async def perform_diagnosis(
     request: Request,
-    payload: DiagnosticRequest,
+    payload: DiagnosticRequestDTO,
     coordinator: DiagnosticCoordinator = Depends(get_coordinator),
 ):
     """
@@ -38,14 +38,4 @@ async def perform_diagnosis(
         onto_vectors=onto_vectors
     )
     
-    return {
-        "input_text": payload.text,
-        "extracted_entities": [m["input_symptom"] for m in results["raw_matches"]],
-        "ontological_matches": results["mapped_symptoms"],
-        "detailed_results": results["raw_matches"],
-        "inference": {
-            "total_input_symptoms": len(results["mapped_symptoms"]),
-            "diseases": results["inference"]["diseases"]
-        },
-        "explanation": results.get("explanation")
-    }
+    return results
