@@ -1,7 +1,6 @@
-from typing import List, Dict, Any
-
-from ..DTOs.DiseaseInferenceDTO import DiseaseInferenceDTO
-from ..schemas.diagnostics import DiseaseScore, InferenceResult
+from typing import List
+from app.domain import RawDiseaseMatch
+from ..schemas import InferenceResult, DiseaseInference
 from app.core import logger
 
 class DiseaseScorer:
@@ -13,7 +12,7 @@ class DiseaseScorer:
 
     def calculate_scores(
         self, 
-        raw_records: List[Dict[str, Any]], 
+        raw_records: List[RawDiseaseMatch], 
         total_input_symptoms: int
     ) -> InferenceResult:
         """
@@ -26,28 +25,28 @@ class DiseaseScorer:
         scored_diseases = []
 
         for rec in raw_records:
-            match_count = rec.get('match_count', 0)
-            total_symptom_count = rec.get('total_symptom_count', 1) 
+            match_count = rec.match_count
+            total_symptom_count = rec.total_symptom_count if rec.total_symptom_count > 0 else 1
             
             disease_cov = round(match_count / total_symptom_count * 100, 1)
             input_cov = round(match_count / total_input_symptoms * 100, 1)
 
-            scored_disease = DiseaseInferenceDTO(
-                disease_name=rec.get('disease', 'Unknown'),
-                uri=rec.get('uri', ''),
-                normalized_score=round(rec.get('normalized_score', 0.0), 2),
+            scored_disease = DiseaseInference(
+                disease_name=rec.disease,
+                uri=rec.uri,
+                normalized_score=round(rec.normalized_score, 2),
                 match_count=match_count,
                 disease_coverage_pct=disease_cov,
                 input_coverage_pct=input_cov,
-                matched_symptoms=rec.get('matched_symptoms', []),
-                missing_symptoms=rec.get('missing_symptoms', [])
+                matched_symptoms=rec.matched_symptoms,
+                missing_symptoms=rec.missing_symptoms
             )
             scored_diseases.append(scored_disease)
 
         scored_diseases.sort(key=lambda x: x.normalized_score, reverse=True)
         top_diseases = scored_diseases[:self.top_k]
 
-        logger.info(f"Calculated scores for {len(top_diseases)} top diseases.")
+        logger.info(f"Scoring completed. Top candidate: {top_diseases[0].disease_name if top_diseases else 'None'}")
 
         return InferenceResult(
             total_input_symptoms=total_input_symptoms,

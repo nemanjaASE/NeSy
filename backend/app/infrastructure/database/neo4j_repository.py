@@ -1,6 +1,7 @@
 from neo4j import GraphDatabase
 from app.core import logger, settings
-from typing import Any, Dict, List, Tuple
+from typing import List
+from app.domain import SymptomOntologyData, RawDiseaseMatch
 from .queries import get_query
 
 class Neo4jRepository:
@@ -30,7 +31,7 @@ class Neo4jRepository:
             self.driver.close()
             logger.info("Neo4j connection closed.")
 
-    async def get_ontology_symptoms(self) -> List[Tuple[str, List[float]]]:
+    async def get_ontology_symptoms(self) -> List[SymptomOntologyData]:
         """
         Fetches all symptoms and their pre-computed embeddings from the graph.
         Returns:
@@ -41,8 +42,12 @@ class Neo4jRepository:
 
             with self.driver.session() as session:
                 result = session.run(query)
-
-                return [(r["label"], r["embedding"]) for r in result if r["embedding"]]
+                return [
+                    SymptomOntologyData(
+                        label=r["label"], 
+                        embedding=r["embedding"]
+                    ) for r in result if r["embedding"]
+                ]
         except Exception as e:
             logger.error(f"Error fetching symptoms from Neo4j: {str(e)}")
             return []
@@ -52,7 +57,7 @@ class Neo4jRepository:
         mapped_symptoms: List[str], 
         min_match: int = 1, 
         has_symptom_rel: str = "http://purl.obolibrary.org/obo/RO_0002452"
-    ) -> List[Dict[str, Any]]:
+    ) -> List[RawDiseaseMatch]:
         """
         Executes the inference Cypher query to find matching diseases.
         """
@@ -70,9 +75,10 @@ class Neo4jRepository:
                     min_match=min_match
                 )
 
-                records = [dict(r) for r in result]
-                logger.info(f"Inference query executed successfully. Found {len(records)} potential diseases.")
-                return records
+                validated_records = [RawDiseaseMatch(**dict(r)) for r in result]
+                logger.info(f"Inference successful. Found {len(validated_records)} candidates.")
+                
+                return validated_records
 
         except Exception as e:
             logger.error(f"Error executing inference query: {str(e)}")

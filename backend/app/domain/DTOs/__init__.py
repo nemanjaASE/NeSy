@@ -1,1 +1,2 @@
-from .DiseaseInferenceDTO import DiseaseInferenceDTO
+from .diagnostic_response_dto import DiagnosticResponseDTO
+from .diagnostic_request_dto import DiagnosticRequestDTO

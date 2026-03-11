@@ -1,9 +1,9 @@
 import json
-import re
 import asyncio
 from typing import List, Dict, Any
 from groq import AsyncGroq
 from app.core import logger, settings
+from app.domain import XAIExplanationResult
 from .prompt_loader import load_prompt
 
 class XAIExplainer:
@@ -35,14 +35,14 @@ class XAIExplainer:
             )
         return "\n".join(lines)
 
-    async def generate_explanation(self, disease_results: List[Dict[str, Any]], max_retries: int = 3) -> Dict[str, Any]:
+    async def generate_explanation(self, disease_results: List[Dict[str, Any]], max_retries: int = 3) -> XAIExplanationResult:
         """
         Calls the LLM to generate reasoning based on the extracted and scored diseases.
         """
         if not disease_results:
             logger.warning("No disease results provided to XAI layer.")
-            return self._get_fallback_response("No data available for reasoning.")
-
+            return XAIExplanationResult.fallback("No data for reasoning.")
+        
         formatted_input = self._format_input(disease_results)
         logger.debug(f"Sending formatted data to LLM: {len(disease_results)} diseases.")
 
@@ -64,17 +64,10 @@ class XAIExplainer:
                 raw = completion.choices[0].message.content
                 
                 try:
-                    result = json.loads(raw)
                     logger.info(f"Successfully generated XAI response on attempt {attempt + 1}.")
-                    return result
+                    return XAIExplanationResult.model_validate_json(raw)
                 except json.JSONDecodeError:
                     pass
-
-                match = re.search(r'\{.*\}', raw, re.DOTALL)
-                if match:
-                    result = json.loads(match.group())
-                    logger.info(f"Successfully recovered XAI JSON using regex on attempt {attempt + 1}.")
-                    return result
 
                 logger.warning(f"Attempt {attempt + 1}/{max_retries} failed to return valid JSON. Retrying...")
                 await asyncio.sleep(1)
@@ -84,14 +77,4 @@ class XAIExplainer:
                 await asyncio.sleep(1)
                 
         logger.error("All attempts to generate XAI reasoning have failed.")
-        return self._get_fallback_response("Failed to generate reasoning due to technical limitations.")
-
-    def _get_fallback_response(self, reason: str) -> Dict[str, Any]:
-        """Returns a safe default response if the LLM completely fails."""
-        return {
-            "most_likely": "unknown",
-            "confidence": "low",
-            "differentials": [],
-            "reasoning": reason,
-            "recommendation": "Please consult a healthcare professional for clinical evaluation."
-        }
+        return XAIExplanationResult.fallback("Technical error during reasoning generation.")

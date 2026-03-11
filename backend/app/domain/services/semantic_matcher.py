@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-from typing import List, Dict, Any
+from typing import List
+from ..schemas import SemanticMatchResult
 
 class SemanticMatcher:
     """
@@ -16,7 +17,7 @@ class SemanticMatcher:
         onto_labels: List[str], 
         onto_vectors: List[List[float]],
         original_terms: List[str]
-    ) -> List[Dict[str, Any]]:
+    ) -> List[SemanticMatchResult]:
         """
         Calculates cosine similarity between query embeddings and ontology vectors to find the best matches.
         Args:
@@ -25,7 +26,7 @@ class SemanticMatcher:
             onto_vectors: List of vector embeddings for the ontology symptoms.
             original_terms: List of original symptom terms corresponding to the query embeddings.
         Returns:
-            A list of dictionaries containing the input symptom, mapped symptom, confidence score, and match status.
+            A list of SemanticMatchResult objects containing the input symptom, mapped symptom, confidence score, and match status.
         """
         if not query_embeddings or not onto_vectors:
             return []
@@ -41,11 +42,11 @@ class SemanticMatcher:
             best_idx = np.argmax(scores)
             confidence = float(scores[best_idx])
 
-            results.append({
-                "input_symptom": term,
-                "mapped_symptom": onto_labels[best_idx],
-                "confidence": confidence,
-                "is_match": confidence >= self.threshold
-            })
+            results.append(SemanticMatchResult(
+                input_symptom=term,
+                mapped_symptom=onto_labels[best_idx],
+                confidence=confidence,
+                is_match=confidence >= self.threshold
+            ))
             
         return results

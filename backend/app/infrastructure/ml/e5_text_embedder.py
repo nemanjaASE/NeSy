@@ -3,6 +3,7 @@ from typing import List
 from sentence_transformers import SentenceTransformer
 from app.domain import TextEmbedder
 from app.core import logger
+from app.domain import EmbeddingGenerationError
 
 class E5Embedder(TextEmbedder):
     """
@@ -35,5 +36,5 @@ class E5Embedder(TextEmbedder):
             return embeddings_array.tolist()
 
         except Exception as e:
-            logger.error(f"Failed to generate embeddings: {str(e)}")
-            return []
+            logger.error(f"Failed to generate embeddings: {str(e)}", exc_info=True)
+            raise EmbeddingGenerationError(f"Critical error in embedding generation: {str(e)}")
