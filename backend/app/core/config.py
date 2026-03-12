@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     ENVIRONMENT: str
     
     # --- Neo4j
-    NEO4J_URL: str
+    NEO4J_URI: str
     NEO4J_USERNAME: str
     NEO4J_PASSWORD: str
     
