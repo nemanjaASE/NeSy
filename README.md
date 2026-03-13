@@ -1,8 +1,3 @@
----
-layout: default
-title: NeSy Diagnostic Assistant
----
-
 # 🌟 Overview
 
 NeSy is a diagnostic assistance framework that bridges the gap between neural natural language processing and symbolic knowledge representation. By integrating Large Language Models (LLMs) with a Knowledge Graph (Neo4j), the system provides a robust pipeline for disease inference based on standardized medical ontologies.
