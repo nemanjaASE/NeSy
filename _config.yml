@@ -1,3 +1,10 @@
+remote_theme: pages-themes/minimal@v0.2.0 
+title: NeSy Diagnostics
+description: Neuro-Symbolic Diagnostic Assistance Framework
+
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+  syntax_highlighter: rouge
+
+exclude: [vendor]
