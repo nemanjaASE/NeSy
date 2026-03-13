@@ -1,0 +1,52 @@
+[
+  {
+    "disease": "Marburg hemorrhagic fever",
+    "uri": "http://purl.obolibrary.org/obo/DOID_4327",
+    "score": 16.17,
+    "match": 9,
+    "disease_coverage": "81.8%",
+    "input_coverage": "100.0%",
+    "matched_symptoms": ["diarrhea", "headache", "abdominal pain", "pharynx inflammation", "maculopapular rash", "bleeding", "nausea", "chills", "chest pain"],
+    "missing_symptoms": ["fever", "vomiting"]
+  },
+  {
+    "disease": "Mycoplasma pneumoniae pneumonia",
+    "uri": "http://purl.obolibrary.org/obo/DOID_13276",
+    "score": 10.03,
+    "match": 4,
+    "disease_coverage": "66.7%",
+    "input_coverage": "44.4%",
+    "matched_symptoms": ["headache", "pharynx inflammation", "chills", "chest pain"],
+    "missing_symptoms": ["fever", "dry cough"]
+  },
+  {
+    "disease": "clonorchiasis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_13767",
+    "score": 9.58,
+    "match": 3,
+    "disease_coverage": "100.0%",
+    "input_coverage": "33.3%",
+    "matched_symptoms": ["diarrhea", "abdominal pain", "nausea"],
+    "missing_symptoms": []
+  },
+  {
+    "disease": "West Nile fever",
+    "uri": "http://purl.obolibrary.org/obo/DOID_2366",
+    "score": 9.10,
+    "match": 4,
+    "disease_coverage": "57.1%",
+    "input_coverage": "44.4%",
+    "matched_symptoms": ["headache", "pharynx inflammation", "maculopapular rash", "nausea"],
+    "missing_symptoms": ["fever", "vomiting", "body ache"]
+  },
+  {
+    "disease": "cat-scratch disease",
+    "uri": "http://purl.obolibrary.org/obo/DOID_11258",
+    "score": 8.37,
+    "match": 3,
+    "disease_coverage": "75.0%",
+    "input_coverage": "33.3%",
+    "matched_symptoms": ["headache", "abdominal pain", "chills"],
+    "missing_symptoms": ["backache"]
+  }
+]

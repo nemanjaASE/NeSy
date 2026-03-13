@@ -1,0 +1,9 @@
+Most likely: Ebola virus disease
+
+Confidence: visoka
+
+Differentials: ['hymenolepiasis']
+
+Reasoning: Ebola virus disease pokazuje najviši skor i poklapa se sa svim navedenim simptomima pacijenta: dijareja, glavobolja, osip, povišena temperatura, crvenilo očiju, krvarenje, opšta slabost i mišićna slabost. Nedostaju tri tipična simptoma za Ebola – upala ždrela, bol u zglobovima i povraćanje – što ne umanjuje značajnu pokrivenost (72,7% disease_coverage i 100% input_coverage). Ostale bolesti u listi imaju znatno manji broj podudarnih simptoma i niži ulazni pokrivenost, pa su manje verovatne. Nema logičkih kontradikcija između izveštaja simptoma i profila Ebola bolesti. Stoga je Ebola najverovatniji uzrok trenutnog kliničkog obraza.
+
+Recommendation: Preporučuje se hitna konsultacija infektologa i izolacija pacijenta. Neophodni su laboratorijski testovi: PCR za Ebola virus, kompletna krvna slika, koagulacijski panel, testovi jetrene funkcije i serološki testovi. Takođe, lekar treba da proveri prisustvo nedostajućih simptoma – upalu ždrela, bol u zglobovima i povraćanje – i da ispita epidemiološku pozadinu (putovanja u endemicna područja, kontakt sa zaraženim osobama ili telesnim tečnostima).

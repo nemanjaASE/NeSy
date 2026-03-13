@@ -1,0 +1,42 @@
+[
+  {
+    "disease": "Ebola virus disease",
+    "uri": "http://purl.obolibrary.org/obo/DOID_4325",
+    "score": 13.45,
+    "match": 8,
+    "disease_coverage": "72.7%",
+    "input_coverage": "100.0%",
+    "matched_symptoms": ["diarrhea", "headache", "rash", "fever", "bloodshot eye", "bleeding", "weakness", "muscle weakness"],
+    "missing_symptoms": ["pharynx inflammation", "joint pain", "vomiting"]
+  },
+  {
+    "disease": "hymenolepiasis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_10074",
+    "score": 8.52,
+    "match": 2,
+    "disease_coverage": "100.0%",
+    "input_coverage": "25.0%",
+    "matched_symptoms": ["diarrhea", "weakness"],
+    "missing_symptoms": []
+  },
+  {
+    "disease": "Rickettsia parkeri spotted fever",
+    "uri": "http://purl.obolibrary.org/obo/DOID_0050051",
+    "score": 7.81,
+    "match": 3,
+    "disease_coverage": "75.0%",
+    "input_coverage": "37.5%",
+    "matched_symptoms": ["headache", "rash", "fever"],
+    "missing_symptoms": ["eschar"]
+  },
+  {
+    "disease": "human monocytic ehrlichiosis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_0050026",
+    "score": 7.81,
+    "match": 3,
+    "disease_coverage": "75.0%",
+    "input_coverage": "37.5%",
+    "matched_symptoms": ["headache", "rash", "fever"],
+    "missing_symptoms": ["fatigue"]
+  }
+]

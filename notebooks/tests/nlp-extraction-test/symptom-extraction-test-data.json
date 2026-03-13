@@ -1,0 +1,402 @@
+[
+  {
+    "id": "CANONICAL_001",
+    "input": "Imam glavobolju i temperaturu.",
+    "expected": ["headache", "fever"]
+  },
+  {
+    "id": "CANONICAL_002",
+    "input": "Boli me glava, visoka temperatura i jako kašljem.",
+    "expected": ["headache", "fever", "cough"]
+  },
+  {
+    "id": "CANONICAL_003",
+    "input": "Muči me mučnina, povraćam i imam proliv već dva dana.",
+    "expected": ["nausea", "vomiting", "diarrhea"]
+  },
+  {
+    "id": "CANONICAL_004",
+    "input": "Bol u zglobovima, groznica i osip po telu.",
+    "expected": ["joint pain", "fever", "rash"]
+  },
+  {
+    "id": "CANONICAL_005",
+    "input": "Osećam se jako umorno, bez snage, malaksalo mi je celo telo.",
+    "expected": ["fatigue", "weakness", "malaise"]
+  },
+  {
+    "id": "CANONICAL_006",
+    "input": "Imam upalu grla, kijam i curi mi nos.",
+    "expected": ["sore throat", "sneezing", "rhinorrhea"]
+  },
+  {
+    "id": "CANONICAL_007",
+    "input": "Teško dišem, osećam nedostatak vazduha i steže me u grudima.",
+    "expected": ["dyspnea", "chest tightness"]
+  },
+  {
+    "id": "CANONICAL_008",
+    "input": "Boli me stomak, nadut sam i imam grčeve.",
+    "expected": ["abdominal pain", "abdominal distention", "abdominal cramp"]
+  },
+  {
+    "id": "CANONICAL_009",
+    "input": "Oči su mi crvene, peku me i suze mi non-stop.",
+    "expected": ["bloodshot eye"]
+  },
+  {
+    "id": "CANONICAL_010",
+    "input": "Imam temperaturu, jezu i bole me svi mišići.",
+    "expected": ["fever", "chills", "muscle pain"]
+  },
+  {
+    "id": "CANONICAL_011",
+    "input": "Glavobolja, vrtoglavica i osećam se kao da ću se onesvestiti.",
+    "expected": ["headache", "dizziness", "lightheadedness"]
+  },
+  {
+    "id": "CANONICAL_012",
+    "input": "Svrbi me celo telo, imam osip i crvene tačkice.",
+    "expected": ["itching", "rash", "petechiae"]
+  },
+  {
+    "id": "CANONICAL_013",
+    "input": "Imam kašalj sa iskašljavanjem krvi i bol u grudima kad duboko udahnem.",
+    "expected": ["cough", "hemoptysis", "pleuritic chest pain"]
+  },
+  {
+    "id": "CANONICAL_014",
+    "input": "Otečeni su mi limfni čvorovi na vratu, bolni su na dodir.",
+    "expected": ["lymphadenopathy"]
+  },
+  {
+    "id": "CANONICAL_015",
+    "input": "Imam žuticu, tamnu mokraću i svetlu stolicu.",
+    "expected": ["jaundice", "dark urine", "diarrhea"]
+  },
+  {
+    "id": "CANONICAL_016",
+    "input": "Boli me desno ispod rebara, mučnina i povraćam žuč.",
+    "expected": ["abdominal pain", "nausea", "vomiting"]
+  },
+  {
+    "id": "CANONICAL_017",
+    "input": "Osećam slabost u nogama, teško mi je hodati i penjati se uz stepenice.",
+    "expected": ["muscle weakness"]
+  },
+  {
+    "id": "CANONICAL_018",
+    "input": "Imam ranicu na koži koja ne zarasta i curi iz nje.",
+    "expected": ["skin lesion", "skin ulcer"]
+  },
+  {
+    "id": "CANONICAL_019",
+    "input": "Jako me boli glava, vrat mi je ukočen i ne podnosim svetlost.",
+    "expected": ["headache", "stiff neck", "photophobia"]
+  },
+  {
+    "id": "CANONICAL_020",
+    "input": "Imam proliv sa krvlju, grčeve u stomaku i temperaturu.",
+    "expected": ["diarrhea", "hematochezia", "abdominal cramp", "fever"]
+  },
+  {
+    "id": "CANONICAL_021",
+    "input": "Imam temperaturu i curi mi nos kao iz slavine, glava mi puca.",
+    "expected": ["fever", "rhinorrhea", "headache"]
+  },
+  {
+    "id": "CANONICAL_022",
+    "input": "Kašljem ko luda, suvo mi je grlo i peče me kad gutam.",
+    "expected": ["cough", "sore throat"]
+  },
+  {
+    "id": "CANONICAL_023",
+    "input": "Boli me stomak strašno, imam grčeve i trčim na WC svakih 10 minuta.",
+    "expected": ["abdominal pain", "abdominal cramp", "diarrhea"]
+  },
+  {
+    "id": "CANONICAL_024",
+    "input": "Osećam se kao krpa, nemam snage ni da ustanem iz kreveta.",
+    "expected": ["fatigue", "weakness", "malaise"]
+  },
+  {
+    "id": "CANONICAL_025",
+    "input": "Imam osip po telu, crvene fleke i svrbi me kao ludo.",
+    "expected": ["rash", "itching"]
+  },
+  {
+    "id": "CANONICAL_026",
+    "input": "Glavobolja, muka mi je, vrtoglavica i kao da ću da se srušim.",
+    "expected": ["headache", "nausea", "dizziness"]
+  },
+  {
+    "id": "CANONICAL_027",
+    "input": "Boli me celo telo, mišići, zglobovi, sve me lomi.",
+    "expected": ["muscle pain", "joint pain", "body ache"]
+  },
+  {
+    "id": "CANONICAL_028",
+    "input": "Imam jezu, drhtim i zubi mi cvokoću iako je toplo.",
+    "expected": ["chills"]
+  },
+  {
+    "id": "CANONICAL_029",
+    "input": "Oči mi su crvene, peku i suze mi non stop, svetlost mi smeta.",
+    "expected": ["bloodshot eye", "photophobia"]
+  },
+  {
+    "id": "CANONICAL_030",
+    "input": "Povraćam, mučno mi je i stomak mi se prevrće.",
+    "expected": ["vomiting", "nausea", "abdominal pain"]
+  },
+  {
+    "id": "CANONICAL_031",
+    "input": "Imam groznicu i kašalj sa iskašljavanjem, ponekad ima i krvi.",
+    "expected": ["fever", "cough", "hemoptysis"]
+  },
+  {
+    "id": "CANONICAL_032",
+    "input": "Glavobolja strašna, vrat ukočen, ne mogu da pomerim glavu.",
+    "expected": ["headache", "stiff neck"]
+  },
+  {
+    "id": "CANONICAL_033",
+    "input": "Imam proliv sa sluzi i krvlju, stomak me peče.",
+    "expected": ["diarrhea", "hematochezia", "abdominal pain"]
+  },
+  {
+    "id": "CANONICAL_034",
+    "input": "Osećam se slabo, vrtoglav sam i srce mi lupa jako.",
+    "expected": ["weakness", "dizziness", "palpitation"]
+  },
+  {
+    "id": "CANONICAL_035",
+    "input": "Imam crvene tačkice po koži, ne svrbe ali izgleda ružno.",
+    "expected": ["petechiae", "rash"]
+  },
+  {
+    "id": "CANONICAL_036",
+    "input": "Teško dišem kad legnem, kao da mi neko sedi na grudima.",
+    "expected": ["dyspnea"]
+  },
+  {
+    "id": "CANONICAL_037",
+    "input": "Boli me desna strana stomaka, gore ispod rebara, i mučno mi je.",
+    "expected": ["abdominal pain", "nausea"]
+  },
+  {
+    "id": "CANONICAL_038",
+    "input": "Imam temperaturu 39, glavu mi razbija i sve me boli.",
+    "expected": ["fever", "headache", "body ache"]
+  },
+  {
+    "id": "CANONICAL_039",
+    "input": "Svrbi me koža po celom telu, imam plikove i crvenilo.",
+    "expected": ["itching", "rash"]
+  },
+  {
+    "id": "CANONICAL_040",
+    "input": "Kašljem već nedelju dana, suvo, noću najgore, i gubim dah.",
+    "expected": ["cough", "dyspnea"]
+  },
+  {
+    "id": "CANONICAL_041",
+    "input": "Glavobolja strašna, temp 38.7, kasljem i curi mi nos.",
+    "expected": ["headache", "fever", "cough", "rhinorrhea"]
+  },
+  {
+    "id": "CANONICAL_042",
+    "input": "Imam dijareju već 3 dana, stomak me boli i mučnina.",
+    "expected": ["diarrhea", "abdominal pain", "nausea"]
+  },
+  {
+    "id": "CANONICAL_043",
+    "input": "Boli me grlo ko ludo, gutam teško i temperatura mi je skočila.",
+    "expected": ["sore throat", "dysphagia", "fever"]
+  },
+  {
+    "id": "CANONICAL_044",
+    "input": "Sve me boli, mišići, leđa, zglobovi – kao da sam prebio 10 km trčanja.",
+    "expected": ["muscle pain", "backache", "joint pain", "body ache"]
+  },
+  {
+    "id": "CANONICAL_045",
+    "input": "Imam osip po rukama i nogama, svrbi me i crveno je.",
+    "expected": ["rash", "itching"]
+  },
+  {
+    "id": "CANONICAL_046",
+    "input": "Puls mi lupa 110, teško dišem i vrtoglav sam.",
+    "expected": ["palpitation", "dyspnea", "dizziness"]
+  },
+  {
+    "id": "CANONICAL_047",
+    "input": "Imam temperaturu 39.2, glava mi puca i jeza me trese.",
+    "expected": ["fever", "headache", "chills"]
+  },
+  {
+    "id": "CANONICAL_048",
+    "input": "Kašalj suv, noću najgore, i osećam da mi nedostaje vazduh.",
+    "expected": ["cough", "dyspnea"]
+  },
+  {
+    "id": "CANONICAL_049",
+    "input": "Boli me stomak dole desno, mučno mi je i imam temperaturu.",
+    "expected": ["abdominal pain", "nausea", "fever"]
+  },
+  {
+    "id": "CANONICAL_050",
+    "input": "Oči mi su crvene, peku me i suze, ne podnosim svetlo.",
+    "expected": ["bloodshot eye", "photophobia"]
+  },
+  {
+    "id": "CANONICAL_051",
+    "input": "Imam proliv sa krvlju, grčevi u crevima i slabost.",
+    "expected": ["diarrhea", "hematochezia", "abdominal cramp", "weakness"]
+  },
+  {
+    "id": "CANONICAL_052",
+    "input": "Glavobolja, vrat ukočen, temperatura i ne mogu da pomerim glavu na dole.",
+    "expected": ["headache", "stiff neck", "fever"]
+  },
+  {
+    "id": "CANONICAL_053",
+    "input": "Svrbi me celo telo, imam crvene tačkice i malaksao sam.",
+    "expected": ["itching", "petechiae", "malaise"]
+  },
+  {
+    "id": "CANONICAL_054",
+    "input": "Povraćam žuč, stomak me peče i imam temperaturu oko 38.",
+    "expected": ["vomiting", "abdominal pain", "fever"]
+  },
+  {
+    "id": "CANONICAL_055",
+    "input": "Imam kašalj sa iskašljavanjem, ponekad ima krvi i boli me grudi kad kašljem.",
+    "expected": ["cough", "hemoptysis", "chest pain"]
+  },
+  {
+    "id": "CANONICAL_056",
+    "input": "Osećam se kao da sam pregazio kamion, umor totalan i bez snage.",
+    "expected": ["fatigue", "weakness", "malaise"]
+  },
+  {
+    "id": "CANONICAL_057",
+    "input": "Boli me desno ispod rebara, mučnina i blago žut sam u licu.",
+    "expected": ["abdominal pain", "nausea", "jaundice"]
+  },
+  {
+    "id": "CANONICAL_058",
+    "input": "Imam temperaturu, drhtim i sve me lomi, glava kao da će da pukne.",
+    "expected": ["fever", "chills", "body ache", "headache"]
+  },
+  {
+    "id": "CANONICAL_059",
+    "input": "Curenje nosa, kijanje non stop i peče me grlo.",
+    "expected": ["rhinorrhea", "sneezing", "pharynx inflammation"]
+  },
+  {
+    "id": "CANONICAL_060",
+    "input": "Teško dišem, steže me u grudima i puls mi je brz.",
+    "expected": ["dyspnea", "chest tightness", "palpitation"]
+  },
+  {
+    "id": "CANONICAL_061",
+    "input": "Imam jaku glavobolju i temperaturu, ali nemam kašalj ni curenje nosa.",
+    "expected": ["headache", "fever"]
+  },
+  {
+    "id": "CANONICAL_062",
+    "input": "Mučnina i povraćanje su strašni, ali nema proliva ni bolova u stomaku.",
+    "expected": ["nausea", "vomiting"]
+  },
+  {
+    "id": "CANONICAL_063",
+    "input": "Boli me grlo i glava, temperatura oko 38, ali nema kijanja ni curenja nosa.",
+    "expected": ["pharynx inflammation", "headache", "fever"]
+  },
+  {
+    "id": "CANONICAL_064",
+    "input": "Već 4 dana sam totalno iscrpljen, slab sam, malaksao, bez apetita, ali nemam temperaturu ni bolove.",
+    "expected": ["fatigue", "weakness", "malaise", "loss of appetite"]
+  },
+  {
+    "id": "CANONICAL_065",
+    "input": "Imam osip po telu, svrbi me, crveno je, ali nema temperature ni bolova u zglobovima.",
+    "expected": ["rash", "itching"]
+  },
+  {
+    "id": "CANONICAL_066",
+    "input": "Glavobolja strašna, vrtoglavica, mučnina, osećam se loše, puls mi lupa, ali nemam temperaturu ni proliv.",
+    "expected": ["headache", "dizziness", "nausea", "palpitation", "malaise"]
+  },
+  {
+    "id": "CANONICAL_067",
+    "input": "Već nedelju dana me sve boli – mišići, zglobovi, leđa, glava, umoran sam, ali nema kašlja, nema temperature, nema osipa.",
+    "expected": ["muscle pain", "joint pain", "backache", "headache", "fatigue"]
+  },
+  {
+    "id": "CANONICAL_068",
+    "input": "Teško dišem kad legnem, steže me u grudima, srce lupa, anksiozan sam, mislim da nešto nije u redu, ali nemam temperaturu ni kašalj.",
+    "expected": ["dyspnea", "chest tightness", "palpitation"]
+  },
+  {
+    "id": "CANONICAL_069",
+    "input": "Imam temperaturu 38.5, glava mi puca, jeza, bol u mišićima, ali nema proliva, nema povraćanja, nema osipa.",
+    "expected": ["fever", "headache", "chills", "muscle pain"]
+  },
+  {
+    "id": "CANONICAL_070",
+    "input": "Boli me stomak, nadut sam, grčevi, mučnina, ali nema temperature, nema proliva sa krvlju, nema povraćanja krvi.",
+    "expected": ["abdominal pain", "abdominal distention", "abdominal cramp", "nausea"]
+  },
+  {
+    "id": "CANONICAL_071",
+    "input": "Osećam se grozno, umoran sam, bez snage, glava mi je teška, nervozan sam, loše spavam, ali nemam temperaturu ni bolove negde specifično.",
+    "expected": ["fatigue", "weakness", "headache", "malaise"]
+  },
+  {
+    "id": "CANONICAL_072",
+    "input": "Imam crvene oči, peku me, suze, fotofobija, ali nema temperature, nema glavobolje, nema curenja nosa.",
+    "expected": ["bloodshot eye", "photophobia"]
+  },
+  {
+    "id": "CANONICAL_073",
+    "input": "Kašljem već 10 dana, suvo, noću najgore, ponekad boli grudi kad kašljem, ali nemam iskašljavanje krvi ni temperaturu.",
+    "expected": ["cough", "chest pain"]
+  },
+  {
+    "id": "CANONICAL_074",
+    "input": "Sve me svrbi, imam crvene fleke po rukama i nogama, ali nema temperature, nema bolova u zglobovima, nema umora.",
+    "expected": ["itching", "rash"]
+  },
+  {
+    "id": "CANONICAL_075",
+    "input": "Glavobolja, vrtoglavica, slabost u nogama, teško mi je hodati, ali nemam temperaturu, nemam mučninu, nemam proliv.",
+    "expected": ["headache", "dizziness", "weakness"]
+  },
+  {
+    "id": "CANONICAL_076",
+    "input": "Imam temperaturu, jezu, bol u mišićima, glava boli, osećam se loše, ali nema kašlja, nema osipa, nema proliva.",
+    "expected": ["fever", "chills", "muscle pain", "headache", "malaise"]
+  },
+  {
+    "id": "CANONICAL_077",
+    "input": "Mučnina cela nedelja, povraćam ponekad, stomak mi se prevrće, ali nema temperature, nema bolova u stomaku, nema dijareje.",
+    "expected": ["nausea", "vomiting"]
+  },
+  {
+    "id": "CANONICAL_078",
+    "input": "Osećam se iscrpljeno, bez energije, loše spavam, nervozan sam, puls mi je brz kad legnem, ali nemam bolove ni temperaturu.",
+    "expected": ["fatigue", "malaise", "palpitation"]
+  },
+  {
+    "id": "CANONICAL_079",
+    "input": "Boli me vrat, ukočen je, glavobolja kad pomerim glavu, ali nemam temperaturu, nemam osip, nemam mučninu.",
+    "expected": ["stiff neck", "headache"]
+  },
+  {
+    "id": "CANONICAL_080",
+    "input": "Imam osip po grudima i rukama, svrbi me, crveno je, ali nema temperature, nema umora, nema bolova u zglobovima.",
+    "expected": ["rash", "itching"]
+  }
+]

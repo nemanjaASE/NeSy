@@ -1,0 +1,9 @@
+Most likely: Japanese encephalitis
+
+Confidence: umerena
+
+Differentials: ['St. Louis encephalitis', 'Powassan encephalitis']
+
+Reasoning: Pacijentova klinička slika uključuje glavobolju, konfuziju, komu, tremor, dezorijentaciju i ukočenost vrata, što se podudara sa profilom japanske encefalitisa (uri: http://purl.obolibrary.org/obo/DOID_10844). Nedostaju ključni simptomi koji su tipični za ovu bolest, a to su konvulzije, visoka temperatura, spastična paraliza i stupor, što smanjuje ukupnu pokrivenost bolesti na 60 %. Slično, St. Louis encefalitis ima identičan skup podudarajućih i nedostajućih simptoma, pa je diferencijalna dijagnoza vrlo bliska. Powassan encefalitis takođe poklapa šest simptoma, ali se razlikuje po prisustvu povišene temperature i odsustvu tremora, što ga čini nešto manje verovatnim. S obzirom na visoku stopu poklapanja simptoma (85,7 % ulaznih simptoma), ali i na odsustvo ključnih znakova, predložena dijagnoza ostaje probabilistička, a ne definitivna.
+
+Recommendation: Preporučuje se hitna konsultacija neurologa i infektologa, uz laboratorijsku evaluaciju: analiza cerebrospinalne tečnosti, PCR i serološki testovi za flavivirusne agense (uključujući japanski i St. Louis virus), kao i MRI mozga. Takođe je potrebno proveriti prisustvo sledećih nedostajućih simptoma: konvulzije, visoka temperatura, spastična paraliza i stupor, kako bi se dodatno suzio dijagnostički spektar.

@@ -1,0 +1,9 @@
+Most likely: Marburg hemorrhagic fever
+
+Confidence: visoka
+
+Differentials: ['Mycoplasma pneumoniae pneumonia', 'West Nile fever']
+
+Reasoning: Na osnovu podataka, Marburg hemoragijska groznica ima najviši skor (16.17) i pokriva 81,8 % poznatih simptoma bolesti, pri čemu su svi simptomi iz unosa pacijenta (100 % input_coverage) prisutni. Simptomi koji se podudaraju uključuju dijareju, glavobolju, bol u abdomenu, upalu ždrela, makulopapularni osip, krvarenje, mučninu, zimicu i bol u grudima. Nedostaju ključni simptomi tipični za Marburg – groznica i povraćanje, što može ukazivati na nekompletan klinički prikaz ili ranu fazu bolesti. Mycoplasma pneumoniae pneumonija i West Nile groznica imaju znatno niži skor i pokrivaju manji deo simptoma (44‑45 % input_coverage), te im nedostaju karakteristični kožni i gastrointestinalni simptomi. Stoga, iako su drugi uzroci moguće, Marburg ostaje najverovatnija dijagnoza na osnovu dostupnih podataka. Međutim, zbog ozbiljnosti i potencijalne epidemijske prirode, neophodna je hitna dodatna evaluacija.
+
+Recommendation: Preporučuje se hitna konsultacija infektologa i izolacija pacijenta. Laboratorijski testovi: PCR za filovirus (Marburg), kompletna krvna slika, koagulacijski panel, testovi jetrene funkcije i serološki testovi. Takođe je potrebno proveriti nedostajuće kliničke znakove – groznicu, povraćanje i eventualno druge znakove krvarenja ili hemodinamske nestabilnosti. Ukoliko se pojave, treba odmah započeti odgovarajuću podršku i terapiju.

@@ -1,0 +1,414 @@
+[
+  {
+    "disease": "3-methylcrotonyl-CoA carboxylase deficiency",
+    "symptoms": ["diarrhea", "lethargy", "vomiting", "poor feeding"]
+  },
+  {
+    "disease": "3MC syndrome",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "3p deletion syndrome",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "Aagenaes syndrome",
+    "symptoms": ["hepatitis"]
+  },
+  {
+    "disease": "African tick-bite fever",
+    "symptoms": ["maculopapular rash", "fever", "eschar"]
+  },
+  {
+    "disease": "Alkhumra hemorrhagic fever",
+    "symptoms": ["headache", "joint pain", "vomiting", "muscle pain", "thrombocytopenia"]
+  },
+  {
+    "disease": "Alstrom syndrome",
+    "symptoms": ["blindness"]
+  },
+  {
+    "disease": "American histoplasmosis",
+    "symptoms": ["headache", "loss of appetite", "muscle pain"]
+  },
+  {
+    "disease": "Andersen-Tawil syndrome",
+    "symptoms": ["arrhythmia"]
+  },
+  {
+    "disease": "Argentine hemorrhagic fever",
+    "symptoms": ["fever", "fatigue", "low white blood cell count", "malaise", "thrombocytopenia"]
+  },
+  {
+    "disease": "Astrakhan spotted fever",
+    "symptoms": ["maculopapular rash", "fever", "eschar"]
+  },
+  {
+    "disease": "Balkan hemorrhagic fever",
+    "symptoms": ["headache", "fever", "flushing", "renal failure", "muscle pain", "petechiae", "proteinuria"]
+  },
+  {
+    "disease": "Baraitser-Winter syndrome",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "Barmah Forest virus disease",
+    "symptoms": ["rash", "joint pain", "fever"]
+  },
+  {
+    "disease": "Becker muscular dystrophy",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Behcet's disease",
+    "symptoms": ["inflammation"]
+  },
+  {
+    "disease": "Bernard-Soulier syndrome",
+    "symptoms": ["bleeding"]
+  },
+  {
+    "disease": "Bernard-Soulier syndrome type A2",
+    "symptoms": ["bleeding"]
+  },
+  {
+    "disease": "Bolivian hemorrhagic fever",
+    "symptoms": ["headache", "joint pain", "fever", "fatigue", "bronchopulmonary bleeding", "bleeding", "gastrointestinal bleeding"]
+  },
+  {
+    "disease": "Bordetella parapertussis whooping cough",
+    "symptoms": ["cough", "rhinorrhea", "sneezing"]
+  },
+  {
+    "disease": "Borrelia miyamotoi disease",
+    "symptoms": ["headache", "joint pain", "fever", "fatigue", "nausea", "chills", "muscle pain", "asthenia"]
+  },
+  {
+    "disease": "Brazilian hemorrhagic fever",
+    "symptoms": ["fever", "fatigue", "bloodshot eye", "bleeding", "dizziness"]
+  },
+  {
+    "disease": "Brown-Vialetto-Van Laere syndrome 2",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Brucella abortus brucellosis",
+    "symptoms": ["headache", "joint pain", "fever", "chills", "malaise", "weight loss"]
+  },
+  {
+    "disease": "Brucella canis brucellosis",
+    "symptoms": ["headache", "fever", "weakness", "weight loss", "splenomegaly"]
+  },
+  {
+    "disease": "Brucella melitensis brucellosis",
+    "symptoms": ["backache", "fever", "anorexia", "malaise"]
+  },
+  {
+    "disease": "Brucella suis brucellosis",
+    "symptoms": ["headache", "joint pain", "fever", "fatigue", "anorexia", "chills", "malaise", "diaphoresis"]
+  },
+  {
+    "disease": "Buruli ulcer disease",
+    "symptoms": ["skin lesion", "necrosis"]
+  },
+  {
+    "disease": "COVID-19",
+    "symptoms": ["cough", "fever", "dyspnea"]
+  },
+  {
+    "disease": "Caffey disease",
+    "symptoms": ["irritability"]
+  },
+  {
+    "disease": "Carey-Fineman-Ziter syndrome",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "Chagas disease",
+    "symptoms": ["myocarditis", "diarrhea", "headache", "rash", "fever", "fatigue", "loss of appetite", "vomiting", "body ache"]
+  },
+  {
+    "disease": "Chapare hemorrhagic fever",
+    "symptoms": ["headache", "joint pain", "vomiting", "bleeding", "shock", "muscle pain"]
+  },
+  {
+    "disease": "Charcot-Marie-Tooth disease type 1G",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Churg-Strauss syndrome",
+    "symptoms": ["rash", "bleeding", "gastrointestinal bleeding"]
+  },
+  {
+    "disease": "Cogan syndrome",
+    "symptoms": ["fever", "fatigue"]
+  },
+  {
+    "disease": "Cole-Carpenter syndrome",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "Colorado tick fever",
+    "symptoms": ["headache", "fever", "fatigue"]
+  },
+  {
+    "disease": "Compton-North congenital myopathy",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Cor pulmonale",
+    "symptoms": ["heart failure", "high blood pressure"]
+  },
+  {
+    "disease": "Crimean-Congo hemorrhagic fever",
+    "symptoms": ["headache", "backache", "joint pain", "vomiting", "bloodshot eye", "epistaxis", "jaundice", "petechiae", "high fever", "hematochezia", "hematuria"]
+  },
+  {
+    "disease": "Crohn's colitis",
+    "symptoms": ["diarrhea", "inflammation", "skin lesion", "bleeding", "abscess", "anal abscess"]
+  },
+  {
+    "disease": "Dubowitz syndrome",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "Duchenne muscular dystrophy",
+    "symptoms": ["muscle weakness", "progressive weakness"]
+  },
+  {
+    "disease": "Eastern equine encephalitis",
+    "symptoms": ["headache", "coma", "vomiting", "seizure", "disorientation", "chills", "high fever"]
+  },
+  {
+    "disease": "Ebola virus disease",
+    "symptoms": ["diarrhea", "headache", "rash", "pharynx inflammation", "joint pain", "fever", "vomiting", "bloodshot eye", "bleeding", "weakness", "muscle weakness"]
+  },
+  {
+    "disease": "Ehlers-Danlos syndrome musculocontractural type 2",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Elsahy-Waters syndrome",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "Epstein-Barr virus hepatitis",
+    "symptoms": ["headache", "abdominal pain", "fever", "fatigue", "nausea", "jaundice", "liver inflammation"]
+  },
+  {
+    "disease": "Far Eastern spotted fever",
+    "symptoms": ["maculopapular rash", "fever", "eschar"]
+  },
+  {
+    "disease": "Finnish type amyloidosis",
+    "symptoms": ["facial paralysis"]
+  },
+  {
+    "disease": "Flinders Island spotted fever",
+    "symptoms": ["eschar", "lymphadenopathy"]
+  },
+  {
+    "disease": "Fox-Fordyce disease",
+    "symptoms": ["papule", "hair loss"]
+  },
+  {
+    "disease": "Fukuyama congenital muscular dystrophy",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "GM1 gangliosidosis type 1",
+    "symptoms": ["hepatosplenomegaly"]
+  },
+  {
+    "disease": "GNE myopathy",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Gamstorp-Wohlfart syndrome",
+    "symptoms": ["progressive weakness"]
+  },
+  {
+    "disease": "Gerstmann syndrome",
+    "symptoms": ["agraphia"]
+  },
+  {
+    "disease": "Goodpasture syndrome",
+    "symptoms": ["bleeding"]
+  },
+  {
+    "disease": "HTLV-1-associated myelopathy/tropical spastic paraparesis",
+    "symptoms": ["sensory disturbance", "muscle weakness"]
+  },
+  {
+    "disease": "Hantavirus hemorrhagic fever with renal syndrome",
+    "symptoms": ["headache", "fever", "renal failure", "muscle pain", "petechiae", "proteinuria"]
+  },
+  {
+    "disease": "Haverhill fever",
+    "symptoms": ["rash", "joint pain", "fever", "chills"]
+  },
+  {
+    "disease": "Hermansky-Pudlak syndrome",
+    "symptoms": ["bleeding"]
+  },
+  {
+    "disease": "Huntington's disease-like 2",
+    "symptoms": ["weight loss"]
+  },
+  {
+    "disease": "IgG4-related disease",
+    "symptoms": ["phlebitis"]
+  },
+  {
+    "disease": "Indian tick typhus",
+    "symptoms": ["maculopapular rash", "fever", "eschar"]
+  },
+  {
+    "disease": "Israeli tick typhus",
+    "symptoms": ["maculopapular rash", "fever", "eschar"]
+  },
+  {
+    "disease": "Japanese encephalitis",
+    "symptoms": ["headache", "confusion", "coma", "tremor", "disorientation", "convulsion", "stiff neck", "high fever", "spastic paralysis", "stupor"]
+  },
+  {
+    "disease": "Japanese spotted fever",
+    "symptoms": ["fever", "eschar"]
+  },
+  {
+    "disease": "Kawasaki disease",
+    "symptoms": ["inflammation", "fever", "conjunctival congestion", "lymph gland swelling"]
+  },
+  {
+    "disease": "Klebsiella pneumonia",
+    "symptoms": ["cough", "high fever", "hemoptysis", "pleuritic chest pain"]
+  },
+  {
+    "disease": "Koolen de Vries syndrome",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Korean hemorrhagic fever",
+    "symptoms": ["headache", "rash", "backache", "abdominal pain", "fever", "flushing", "bloodshot eye", "shock", "low blood pressure", "nausea", "hypotension", "chills"]
+  },
+  {
+    "disease": "Kunjin encephalitis",
+    "symptoms": ["headache", "confusion", "lethargy", "fever"]
+  },
+  {
+    "disease": "Kyasanur forest disease",
+    "symptoms": ["headache", "cough", "fever", "bleeding", "stiff neck", "dehydration"]
+  },
+  {
+    "disease": "La Crosse encephalitis",
+    "symptoms": ["headache", "paralysis", "coma", "fever", "seizure"]
+  },
+  {
+    "disease": "Lafora disease",
+    "symptoms": ["hallucination"]
+  },
+  {
+    "disease": "Lassa fever",
+    "symptoms": ["diarrhea", "backache", "abdominal pain", "pharynx inflammation", "cough", "fever", "vomiting", "bleeding", "proteinuria", "conjunctivitis", "abdominal swelling"]
+  },
+  {
+    "disease": "Legionnaires' disease",
+    "symptoms": ["cough", "fever", "chills"]
+  },
+  {
+    "disease": "Leigh disease",
+    "symptoms": ["loss of appetite", "vomiting", "seizure", "irritability"]
+  },
+  {
+    "disease": "Lemierre's syndrome",
+    "symptoms": ["chills", "abscess", "leukocytosis"]
+  },
+  {
+    "disease": "Loeffler endocarditis",
+    "symptoms": ["endocarditis"]
+  },
+  {
+    "disease": "Loeffler syndrome",
+    "symptoms": ["allergic reaction"]
+  },
+  {
+    "disease": "Lujo hemorrhagic fever",
+    "symptoms": ["headache", "fever", "bleeding", "muscle pain", "thrombocytopenia"]
+  },
+  {
+    "disease": "Lyme disease",
+    "symptoms": ["headache", "fever", "fatigue"]
+  },
+  {
+    "disease": "MELAS syndrome",
+    "symptoms": ["headache", "seizure", "hemiparesis", "motor weakness", "severe headache"]
+  },
+  {
+    "disease": "Marburg hemorrhagic fever",
+    "symptoms": ["diarrhea", "headache", "abdominal pain", "pharynx inflammation", "maculopapular rash", "fever", "vomiting", "bleeding", "nausea", "chills", "chest pain"]
+  },
+  {
+    "disease": "Marinesco-Sjogren syndrome",
+    "symptoms": ["muscle weakness", "progressive weakness"]
+  },
+  {
+    "disease": "Meckel's diverticulitis",
+    "symptoms": ["inflammation"]
+  },
+  {
+    "disease": "Middle East respiratory syndrome",
+    "symptoms": ["cough"]
+  },
+  {
+    "disease": "Mikulicz disease",
+    "symptoms": ["dry mouth"]
+  },
+  {
+    "disease": "Miyoshi muscular dystrophy",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Miyoshi muscular dystrophy 2",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Moebius syndrome",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Mooren's ulcer",
+    "symptoms": ["inflammation"]
+  },
+  {
+    "disease": "Murray Valley encephalitis",
+    "symptoms": ["headache", "drowsiness", "confusion", "fever", "vomiting", "nausea", "weakness"]
+  },
+  {
+    "disease": "Mycoplasma pneumoniae pneumonia",
+    "symptoms": ["headache", "pharynx inflammation", "fever", "chills", "dry cough", "chest pain"]
+  },
+  {
+    "disease": "NARP syndrome",
+    "symptoms": ["muscle weakness"]
+  },
+  {
+    "disease": "Netherton syndrome",
+    "symptoms": ["inflammation"]
+  },
+  {
+    "disease": "Neu-Laxova syndrome 1",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "Neu-Laxova syndrome 2",
+    "symptoms": ["ptosis"]
+  },
+  {
+    "disease": "Newcastle disease",
+    "symptoms": ["diarrhea", "headache", "paralysis", "cough", "conjunctivitis"]
+  },
+  {
+    "disease": "Nipah virus encephalitis",
+    "symptoms": ["drowsiness", "coma", "alteration of consciousness", "disorientation", "dizziness"]
+  }
+]

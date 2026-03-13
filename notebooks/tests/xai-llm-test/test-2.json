@@ -1,0 +1,32 @@
+[
+  {
+    "disease": "3-methylcrotonyl-CoA carboxylase deficiency",
+    "uri": "http://purl.obolibrary.org/obo/DOID_0050710",
+    "score": 8.90,
+    "match": 3,
+    "disease_coverage": "75.0%",
+    "input_coverage": "100.0%",
+    "matched_symptoms": ["diarrhea", "lethargy", "vomiting"],
+    "missing_symptoms": ["poor feeding"]
+  },
+  {
+    "disease": "beta-ketothiolase deficiency",
+    "uri": "http://purl.obolibrary.org/obo/DOID_14723",
+    "score": 6.31,
+    "match": 2,
+    "disease_coverage": "50.0%",
+    "input_coverage": "66.7%",
+    "matched_symptoms": ["lethargy", "vomiting"],
+    "missing_symptoms": ["seizure", "dehydration"]
+  },
+  {
+    "disease": "swine influenza",
+    "uri": "http://purl.obolibrary.org/obo/DOID_0050211",
+    "score": 6.29,
+    "match": 3,
+    "disease_coverage": "37.5%",
+    "input_coverage": "100.0%",
+    "matched_symptoms": ["diarrhea", "lethargy", "vomiting"],
+    "missing_symptoms": ["pharynx inflammation", "cough", "fever", "nausea", "rhinorrhea"]
+  }
+]

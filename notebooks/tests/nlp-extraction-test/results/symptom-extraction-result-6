@@ -1,0 +1,805 @@
+
+--- CANONICAL_001 ---
+Extracted (normalized): ['fever', 'headache']
+Expected:              ['fever', 'headache']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_002 ---
+Extracted (normalized): ['cough', 'fever', 'headache']
+Expected:              ['cough', 'fever', 'headache']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_003 ---
+Extracted (normalized): ['diarrhea', 'nausea', 'vomiting']
+Expected:              ['diarrhea', 'nausea', 'vomiting']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_004 ---
+Extracted (normalized): ['fever', 'joint pain', 'rash']
+Expected:              ['fever', 'joint pain', 'rash']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_005 ---
+Extracted (normalized): ['fatigue']
+Expected:              ['fatigue', 'malaise', 'weakness']
+Precision: 1.000
+Recall:    0.333
+F1:        0.500
+False Positive: []
+False Negative: ['malaise', 'weakness']
+Negation Error: False
+
+--- CANONICAL_006 ---
+Extracted (normalized): ['rhinorrhea', 'sore throat']
+Expected:              ['rhinorrhea', 'sneezing', 'sore throat']
+Precision: 1.000
+Recall:    0.667
+F1:        0.800
+False Positive: []
+False Negative: ['sneezing']
+Negation Error: False
+
+--- CANONICAL_007 ---
+Extracted (normalized): ['chest tightness', 'dyspnea']
+Expected:              ['chest tightness', 'dyspnea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_008 ---
+Extracted (normalized): ['abdominal cramp', 'bloating']
+Expected:              ['abdominal cramp', 'abdominal distention', 'abdominal pain']
+Precision: 0.500
+Recall:    0.333
+F1:        0.400
+False Positive: ['bloating']
+False Negative: ['abdominal distention', 'abdominal pain']
+Negation Error: False
+
+--- CANONICAL_009 ---
+Extracted (normalized): ['bloodshot eye', 'itching', 'lacrimation']
+Expected:              ['bloodshot eye']
+Precision: 0.333
+Recall:    1.000
+F1:        0.500
+False Positive: ['itching', 'lacrimation']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_010 ---
+Extracted (normalized): ['fever', 'itching', 'myalgia']
+Expected:              ['chills', 'fever', 'muscle pain']
+Precision: 0.333
+Recall:    0.333
+F1:        0.333
+False Positive: ['itching', 'myalgia']
+False Negative: ['chills', 'muscle pain']
+Negation Error: False
+
+--- CANONICAL_011 ---
+Extracted (normalized): ['dizziness', 'headache', 'syncope']
+Expected:              ['dizziness', 'headache', 'lightheadedness']
+Precision: 0.667
+Recall:    0.667
+F1:        0.667
+False Positive: ['syncope']
+False Negative: ['lightheadedness']
+Negation Error: False
+
+--- CANONICAL_012 ---
+Extracted (normalized): ['erythema', 'itching', 'rash']
+Expected:              ['itching', 'petechiae', 'rash']
+Precision: 0.667
+Recall:    0.667
+F1:        0.667
+False Positive: ['erythema']
+False Negative: ['petechiae']
+Negation Error: False
+
+--- CANONICAL_013 ---
+Extracted (normalized): ['chest pain', 'cough', 'hemoptysis']
+Expected:              ['cough', 'hemoptysis', 'pleuritic chest pain']
+Precision: 0.667
+Recall:    0.667
+F1:        0.667
+False Positive: ['chest pain']
+False Negative: ['pleuritic chest pain']
+Negation Error: False
+
+--- CANONICAL_014 ---
+Extracted (normalized): ['swollen lymph node', 'tender lymph node']
+Expected:              ['lymphadenopathy']
+Precision: 0.000
+Recall:    0.000
+F1:        0.000
+False Positive: ['swollen lymph node', 'tender lymph node']
+False Negative: ['lymphadenopathy']
+Negation Error: False
+
+--- CANONICAL_015 ---
+Extracted (normalized): ['dark urine', 'jaundice', 'pale stool']
+Expected:              ['dark urine', 'diarrhea', 'jaundice']
+Precision: 0.667
+Recall:    0.667
+F1:        0.667
+False Positive: ['pale stool']
+False Negative: ['diarrhea']
+Negation Error: False
+
+--- CANONICAL_016 ---
+Extracted (normalized): ['abdominal pain', 'nausea', 'vomiting']
+Expected:              ['abdominal pain', 'nausea', 'vomiting']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_017 ---
+Extracted (normalized): ['difficulty climbing stairs', 'difficulty walking', 'dyspnea on exertion', 'weakness in legs']
+Expected:              ['muscle weakness']
+Precision: 0.000
+Recall:    0.000
+F1:        0.000
+False Positive: ['difficulty climbing stairs', 'difficulty walking', 'dyspnea on exertion', 'weakness in legs']
+False Negative: ['muscle weakness']
+Negation Error: False
+
+--- CANONICAL_018 ---
+Extracted (normalized): ['discharge', 'itching', 'wound']
+Expected:              ['skin lesion', 'skin ulcer']
+Precision: 0.000
+Recall:    0.000
+F1:        0.000
+False Positive: ['discharge', 'itching', 'wound']
+False Negative: ['skin lesion', 'skin ulcer']
+Negation Error: False
+
+--- CANONICAL_019 ---
+Extracted (normalized): ['headache', 'photophobia', 'stiff neck']
+Expected:              ['headache', 'photophobia', 'stiff neck']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_020 ---
+Extracted (normalized): ['abdominal cramp', 'fever', 'hematochezia']
+Expected:              ['abdominal cramp', 'diarrhea', 'fever', 'hematochezia']
+Precision: 1.000
+Recall:    0.750
+F1:        0.857
+False Positive: []
+False Negative: ['diarrhea']
+Negation Error: False
+
+--- CANONICAL_021 ---
+Extracted (normalized): ['fever', 'headache', 'rhinorrhea']
+Expected:              ['fever', 'headache', 'rhinorrhea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_022 ---
+Extracted (normalized): ['cough', 'sore throat']
+Expected:              ['cough', 'sore throat']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_023 ---
+Extracted (normalized): ['abdominal cramp', 'diarrhea']
+Expected:              ['abdominal cramp', 'abdominal pain', 'diarrhea']
+Precision: 1.000
+Recall:    0.667
+F1:        0.800
+False Positive: []
+False Negative: ['abdominal pain']
+Negation Error: False
+
+--- CANONICAL_024 ---
+Extracted (normalized): ['fatigue', 'weakness']
+Expected:              ['fatigue', 'malaise', 'weakness']
+Precision: 1.000
+Recall:    0.667
+F1:        0.800
+False Positive: []
+False Negative: ['malaise']
+Negation Error: False
+
+--- CANONICAL_025 ---
+Extracted (normalized): ['itching', 'rash', 'red spots']
+Expected:              ['itching', 'rash']
+Precision: 0.667
+Recall:    1.000
+F1:        0.800
+False Positive: ['red spots']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_026 ---
+Extracted (normalized): ['dizziness', 'headache', 'syncope']
+Expected:              ['dizziness', 'headache', 'nausea']
+Precision: 0.667
+Recall:    0.667
+F1:        0.667
+False Positive: ['syncope']
+False Negative: ['nausea']
+Negation Error: False
+
+--- CANONICAL_027 ---
+Extracted (normalized): ['arthralgia', 'myalgia']
+Expected:              ['body ache', 'joint pain', 'muscle pain']
+Precision: 0.000
+Recall:    0.000
+F1:        0.000
+False Positive: ['arthralgia', 'myalgia']
+False Negative: ['body ache', 'joint pain', 'muscle pain']
+Negation Error: False
+
+--- CANONICAL_028 ---
+Extracted (normalized): ['fever', 'shivering', 'tooth chattering']
+Expected:              ['chills']
+Precision: 0.000
+Recall:    0.000
+F1:        0.000
+False Positive: ['fever', 'shivering', 'tooth chattering']
+False Negative: ['chills']
+Negation Error: False
+
+--- CANONICAL_029 ---
+Extracted (normalized): ['bloodshot eye', 'itching', 'lacrimation', 'photophobia']
+Expected:              ['bloodshot eye', 'photophobia']
+Precision: 0.500
+Recall:    1.000
+F1:        0.667
+False Positive: ['itching', 'lacrimation']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_030 ---
+Extracted (normalized): ['abdominal pain', 'nausea', 'vomiting']
+Expected:              ['abdominal pain', 'nausea', 'vomiting']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_031 ---
+Extracted (normalized): ['cough', 'fever', 'hemoptysis']
+Expected:              ['cough', 'fever', 'hemoptysis']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_032 ---
+Extracted (normalized): ['headache', 'stiff neck']
+Expected:              ['headache', 'stiff neck']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_033 ---
+Extracted (normalized): ['abdominal pain', 'diarrhea with blood']
+Expected:              ['abdominal pain', 'diarrhea', 'hematochezia']
+Precision: 0.500
+Recall:    0.333
+F1:        0.400
+False Positive: ['diarrhea with blood']
+False Negative: ['diarrhea', 'hematochezia']
+Negation Error: False
+
+--- CANONICAL_034 ---
+Extracted (normalized): ['dizziness', 'palpitation', 'weakness']
+Expected:              ['dizziness', 'palpitation', 'weakness']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_035 ---
+Extracted (normalized): ['rash']
+Expected:              ['petechiae', 'rash']
+Precision: 1.000
+Recall:    0.500
+F1:        0.667
+False Positive: []
+False Negative: ['petechiae']
+Negation Error: False
+
+--- CANONICAL_036 ---
+Extracted (normalized): ['dyspnea']
+Expected:              ['dyspnea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_037 ---
+Extracted (normalized): ['abdominal pain', 'nausea']
+Expected:              ['abdominal pain', 'nausea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_038 ---
+Extracted (normalized): ['fever', 'headache']
+Expected:              ['body ache', 'fever', 'headache']
+Precision: 1.000
+Recall:    0.667
+F1:        0.800
+False Positive: []
+False Negative: ['body ache']
+Negation Error: False
+
+--- CANONICAL_039 ---
+Extracted (normalized): ['itching', 'rash', 'redness']
+Expected:              ['itching', 'rash']
+Precision: 0.667
+Recall:    1.000
+F1:        0.800
+False Positive: ['redness']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_040 ---
+Extracted (normalized): ['cough', 'dyspnea']
+Expected:              ['cough', 'dyspnea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_041 ---
+Extracted (normalized): ['cough', 'fever', 'headache', 'rhinorrhea']
+Expected:              ['cough', 'fever', 'headache', 'rhinorrhea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_042 ---
+Extracted (normalized): ['abdominal pain', 'diarrhea', 'nausea']
+Expected:              ['abdominal pain', 'diarrhea', 'nausea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_043 ---
+Extracted (normalized): ['dysphagia', 'fever', 'sore throat']
+Expected:              ['dysphagia', 'fever', 'sore throat']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_044 ---
+Extracted (normalized): ['back pain', 'joint pain', 'muscle pain']
+Expected:              ['backache', 'body ache', 'joint pain', 'muscle pain']
+Precision: 0.667
+Recall:    0.500
+F1:        0.571
+False Positive: ['back pain']
+False Negative: ['backache', 'body ache']
+Negation Error: False
+
+--- CANONICAL_045 ---
+Extracted (normalized): ['itching', 'rash', 'redness']
+Expected:              ['itching', 'rash']
+Precision: 0.667
+Recall:    1.000
+F1:        0.800
+False Positive: ['redness']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_046 ---
+Extracted (normalized): ['dizziness', 'dyspnea', 'palpitation']
+Expected:              ['dizziness', 'dyspnea', 'palpitation']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_047 ---
+Extracted (normalized): ['chills', 'fever', 'headache']
+Expected:              ['chills', 'fever', 'headache']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_048 ---
+Extracted (normalized): ['cough', 'dyspnea']
+Expected:              ['cough', 'dyspnea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_049 ---
+Extracted (normalized): ['abdominal pain', 'fever', 'nausea']
+Expected:              ['abdominal pain', 'fever', 'nausea']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_050 ---
+Extracted (normalized): ['bloodshot eye', 'itching', 'lacrimation', 'photophobia']
+Expected:              ['bloodshot eye', 'photophobia']
+Precision: 0.500
+Recall:    1.000
+F1:        0.667
+False Positive: ['itching', 'lacrimation']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_051 ---
+Extracted (normalized): ['abdominal cramp', 'hematochezia', 'weakness']
+Expected:              ['abdominal cramp', 'diarrhea', 'hematochezia', 'weakness']
+Precision: 1.000
+Recall:    0.750
+F1:        0.857
+False Positive: []
+False Negative: ['diarrhea']
+Negation Error: False
+
+--- CANONICAL_052 ---
+Extracted (normalized): ['fever', 'headache', 'neck stiffness', 'stiff neck']
+Expected:              ['fever', 'headache', 'stiff neck']
+Precision: 0.750
+Recall:    1.000
+F1:        0.857
+False Positive: ['neck stiffness']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_053 ---
+Extracted (normalized): ['fatigue', 'itching', 'rash']
+Expected:              ['itching', 'malaise', 'petechiae']
+Precision: 0.333
+Recall:    0.333
+F1:        0.333
+False Positive: ['fatigue', 'rash']
+False Negative: ['malaise', 'petechiae']
+Negation Error: False
+
+--- CANONICAL_054 ---
+Extracted (normalized): ['bile vomiting', 'fever', 'stomach burning']
+Expected:              ['abdominal pain', 'fever', 'vomiting']
+Precision: 0.333
+Recall:    0.333
+F1:        0.333
+False Positive: ['bile vomiting', 'stomach burning']
+False Negative: ['abdominal pain', 'vomiting']
+Negation Error: False
+
+--- CANONICAL_055 ---
+Extracted (normalized): ['chest pain', 'cough', 'hemoptysis']
+Expected:              ['chest pain', 'cough', 'hemoptysis']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_056 ---
+Extracted (normalized): ['fatigue', 'weakness']
+Expected:              ['fatigue', 'malaise', 'weakness']
+Precision: 1.000
+Recall:    0.667
+F1:        0.800
+False Positive: []
+False Negative: ['malaise']
+Negation Error: False
+
+--- CANONICAL_057 ---
+Extracted (normalized): ['jaundice', 'nausea', 'pain right hypochondrium']
+Expected:              ['abdominal pain', 'jaundice', 'nausea']
+Precision: 0.667
+Recall:    0.667
+F1:        0.667
+False Positive: ['pain right hypochondrium']
+False Negative: ['abdominal pain']
+Negation Error: False
+
+--- CANONICAL_058 ---
+Extracted (normalized): ['body aches', 'fever', 'headache', 'shivering']
+Expected:              ['body ache', 'chills', 'fever', 'headache']
+Precision: 0.500
+Recall:    0.500
+F1:        0.500
+False Positive: ['body aches', 'shivering']
+False Negative: ['body ache', 'chills']
+Negation Error: False
+
+--- CANONICAL_059 ---
+Extracted (normalized): ['rhinorrhea', 'sore throat']
+Expected:              ['pharynx inflammation', 'rhinorrhea', 'sneezing']
+Precision: 0.500
+Recall:    0.333
+F1:        0.400
+False Positive: ['sore throat']
+False Negative: ['pharynx inflammation', 'sneezing']
+Negation Error: False
+
+--- CANONICAL_060 ---
+Extracted (normalized): ['chest tightness', 'dyspnea', 'tachycardia']
+Expected:              ['chest tightness', 'dyspnea', 'palpitation']
+Precision: 0.667
+Recall:    0.667
+F1:        0.667
+False Positive: ['tachycardia']
+False Negative: ['palpitation']
+Negation Error: False
+
+--- CANONICAL_061 ---
+Extracted (normalized): ['fever', 'headache']
+Expected:              ['fever', 'headache']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_062 ---
+Extracted (normalized): ['nausea', 'vomiting']
+Expected:              ['nausea', 'vomiting']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_063 ---
+Extracted (normalized): ['fever', 'headache', 'sore throat']
+Expected:              ['fever', 'headache', 'pharynx inflammation']
+Precision: 0.667
+Recall:    0.667
+F1:        0.667
+False Positive: ['sore throat']
+False Negative: ['pharynx inflammation']
+Negation Error: False
+
+--- CANONICAL_064 ---
+Extracted (normalized): ['fatigue', 'loss of appetite', 'weakness']
+Expected:              ['fatigue', 'loss of appetite', 'malaise', 'weakness']
+Precision: 1.000
+Recall:    0.750
+F1:        0.857
+False Positive: []
+False Negative: ['malaise']
+Negation Error: False
+
+--- CANONICAL_065 ---
+Extracted (normalized): ['itching', 'rash']
+Expected:              ['itching', 'rash']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_066 ---
+Extracted (normalized): ['dizziness', 'headache', 'nausea', 'palpitation']
+Expected:              ['dizziness', 'headache', 'malaise', 'nausea', 'palpitation']
+Precision: 1.000
+Recall:    0.800
+F1:        0.889
+False Positive: []
+False Negative: ['malaise']
+Negation Error: False
+
+--- CANONICAL_067 ---
+Extracted (normalized): ['back pain', 'fatigue', 'headache', 'joint pain', 'muscle pain']
+Expected:              ['backache', 'fatigue', 'headache', 'joint pain', 'muscle pain']
+Precision: 0.800
+Recall:    0.800
+F1:        0.800
+False Positive: ['back pain']
+False Negative: ['backache']
+Negation Error: False
+
+--- CANONICAL_068 ---
+Extracted (normalized): ['anxiety', 'chest tightness', 'dyspnea', 'palpitation']
+Expected:              ['chest tightness', 'dyspnea', 'palpitation']
+Precision: 0.750
+Recall:    1.000
+F1:        0.857
+False Positive: ['anxiety']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_069 ---
+Extracted (normalized): ['chills', 'fever', 'headache', 'muscle pain']
+Expected:              ['chills', 'fever', 'headache', 'muscle pain']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_070 ---
+Extracted (normalized): ['abdominal cramp', 'bloating', 'nausea']
+Expected:              ['abdominal cramp', 'abdominal distention', 'abdominal pain', 'nausea']
+Precision: 0.667
+Recall:    0.500
+F1:        0.571
+False Positive: ['bloating']
+False Negative: ['abdominal distention', 'abdominal pain']
+Negation Error: False
+
+--- CANONICAL_071 ---
+Extracted (normalized): ['fatigue', 'head heaviness', 'nervousness', 'sleep disturbance', 'weakness']
+Expected:              ['fatigue', 'headache', 'malaise', 'weakness']
+Precision: 0.400
+Recall:    0.500
+F1:        0.444
+False Positive: ['head heaviness', 'nervousness', 'sleep disturbance']
+False Negative: ['headache', 'malaise']
+Negation Error: False
+
+--- CANONICAL_072 ---
+Extracted (normalized): ['bloodshot eye', 'lacrimation', 'photophobia']
+Expected:              ['bloodshot eye', 'photophobia']
+Precision: 0.667
+Recall:    1.000
+F1:        0.800
+False Positive: ['lacrimation']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_073 ---
+Extracted (normalized): ['chest pain', 'cough']
+Expected:              ['chest pain', 'cough']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_074 ---
+Extracted (normalized): ['itching', 'rash']
+Expected:              ['itching', 'rash']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_075 ---
+Extracted (normalized): ['dizziness', 'dyspnea', 'headache', 'weakness in legs']
+Expected:              ['dizziness', 'headache', 'weakness']
+Precision: 0.500
+Recall:    0.667
+F1:        0.571
+False Positive: ['dyspnea', 'weakness in legs']
+False Negative: ['weakness']
+Negation Error: False
+
+--- CANONICAL_076 ---
+Extracted (normalized): ['chill', 'fever', 'headache', 'malaise', 'muscle pain']
+Expected:              ['chills', 'fever', 'headache', 'malaise', 'muscle pain']
+Precision: 0.800
+Recall:    0.800
+F1:        0.800
+False Positive: ['chill']
+False Negative: ['chills']
+Negation Error: False
+
+--- CANONICAL_077 ---
+Extracted (normalized): ['nausea', 'stomach discomfort', 'vomiting']
+Expected:              ['nausea', 'vomiting']
+Precision: 0.667
+Recall:    1.000
+F1:        0.800
+False Positive: ['stomach discomfort']
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_078 ---
+Extracted (normalized): ['anxiety', 'fatigue', 'insomnia', 'tachycardia']
+Expected:              ['fatigue', 'malaise', 'palpitation']
+Precision: 0.250
+Recall:    0.333
+F1:        0.286
+False Positive: ['anxiety', 'insomnia', 'tachycardia']
+False Negative: ['malaise', 'palpitation']
+Negation Error: False
+
+--- CANONICAL_079 ---
+Extracted (normalized): ['headache', 'stiff neck']
+Expected:              ['headache', 'stiff neck']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+--- CANONICAL_080 ---
+Extracted (normalized): ['itching', 'rash']
+Expected:              ['itching', 'rash']
+Precision: 1.000
+Recall:    1.000
+F1:        1.000
+False Positive: []
+False Negative: []
+Negation Error: False
+
+====================
+Average Precision: 0.770
+Average Recall:    0.764
+Average F1-score:  0.753

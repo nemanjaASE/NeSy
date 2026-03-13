@@ -1,0 +1,12827 @@
+[
+  {
+    "disease": [
+      "3-methylcrotonyl-CoA carboxylase deficiency"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "lethargy"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "poor feeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "3MC syndrome"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "3p deletion syndrome"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Aagenaes syndrome"
+    ],
+    "symptoms": [
+      [
+        "hepatitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "African tick-bite fever"
+    ],
+    "symptoms": [
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Alkhumra hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "thrombocytopenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Alstrom syndrome"
+    ],
+    "symptoms": [
+      [
+        "blindness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "American histoplasmosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "muscle pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Andersen-Tawil syndrome"
+    ],
+    "symptoms": [
+      [
+        "arrhythmia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Argentine hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "low white blood cell count"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "thrombocytopenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Astrakhan spotted fever"
+    ],
+    "symptoms": [
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Balkan hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "flushing"
+      ],
+      [
+        "renal failure"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "petechiae"
+      ],
+      [
+        "proteinuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Baraitser-Winter syndrome"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Barmah Forest virus disease"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Becker muscular dystrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Behcet's disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Bernard-Soulier syndrome"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Bernard-Soulier syndrome type A2"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Bolivian hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "bronchopulmonary bleeding"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "gastrointestinal bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Bordetella parapertussis whooping cough"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "rhinorrhea"
+      ],
+      [
+        "sneezing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Borrelia miyamotoi disease"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "asthenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Brazilian hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "dizziness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Brown-Vialetto-Van Laere syndrome 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Brucella abortus brucellosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Brucella canis brucellosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "weakness"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "splenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Brucella melitensis brucellosis"
+    ],
+    "symptoms": [
+      [
+        "backache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "malaise"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Brucella suis brucellosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "diaphoresis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Buruli ulcer disease"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ],
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "COVID-19"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dyspnea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Caffey disease"
+    ],
+    "symptoms": [
+      [
+        "irritability"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Carey-Fineman-Ziter syndrome"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Chagas disease"
+    ],
+    "symptoms": [
+      [
+        "myocarditis"
+      ],
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "body ache"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Chapare hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "shock"
+      ],
+      [
+        "muscle pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Charcot-Marie-Tooth disease type 1G"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Churg-Strauss syndrome"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "gastrointestinal bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Cogan syndrome"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Cole-Carpenter syndrome"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Colorado tick fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Compton-North congenital myopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Cor pulmonale"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ],
+      [
+        "high blood pressure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Crimean-Congo hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "epistaxis"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "petechiae"
+      ],
+      [
+        "high fever"
+      ],
+      [
+        "hematochezia"
+      ],
+      [
+        "hematuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Crohn's colitis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "inflammation"
+      ],
+      [
+        "skin lesion"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "abscess"
+      ],
+      [
+        "anal abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Dubowitz syndrome"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Duchenne muscular dystrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Eastern equine encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "disorientation"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "high fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Ebola virus disease"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "weakness"
+      ],
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Ehlers-Danlos syndrome musculocontractural type 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Elsahy-Waters syndrome"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Epstein-Barr virus hepatitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "liver inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Far Eastern spotted fever"
+    ],
+    "symptoms": [
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Finnish type amyloidosis"
+    ],
+    "symptoms": [
+      [
+        "facial paralysis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Flinders Island spotted fever"
+    ],
+    "symptoms": [
+      [
+        "eschar"
+      ],
+      [
+        "lymphadenopathy"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Fox-Fordyce disease"
+    ],
+    "symptoms": [
+      [
+        "papule"
+      ],
+      [
+        "hair loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Fukuyama congenital muscular dystrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "GM1 gangliosidosis type 1"
+    ],
+    "symptoms": [
+      [
+        "hepatosplenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "GNE myopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Gamstorp-Wohlfart syndrome"
+    ],
+    "symptoms": [
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Gerstmann syndrome"
+    ],
+    "symptoms": [
+      [
+        "agraphia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Goodpasture syndrome"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "HTLV-1-associated myelopathy/tropical spastic paraparesis"
+    ],
+    "symptoms": [
+      [
+        "sensory disturbance"
+      ],
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Hantavirus hemorrhagic fever with renal syndrome"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "renal failure"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "petechiae"
+      ],
+      [
+        "proteinuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Haverhill fever"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Hermansky-Pudlak syndrome"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Huntington's disease-like 2"
+    ],
+    "symptoms": [
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "IgG4-related disease"
+    ],
+    "symptoms": [
+      [
+        "phlebitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Indian tick typhus"
+    ],
+    "symptoms": [
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Israeli tick typhus"
+    ],
+    "symptoms": [
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Japanese encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "tremor"
+      ],
+      [
+        "disorientation"
+      ],
+      [
+        "convulsion"
+      ],
+      [
+        "stiff neck"
+      ],
+      [
+        "high fever"
+      ],
+      [
+        "spastic paralysis"
+      ],
+      [
+        "stupor"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Japanese spotted fever"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Kawasaki disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "conjunctival congestion"
+      ],
+      [
+        "lymph gland swelling"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Klebsiella pneumonia"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "high fever"
+      ],
+      [
+        "hemoptysis"
+      ],
+      [
+        "pleuritic chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Koolen de Vries syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Korean hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "flushing"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "shock"
+      ],
+      [
+        "low blood pressure"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "hypotension"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Kunjin encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "lethargy"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Kyasanur forest disease"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "stiff neck"
+      ],
+      [
+        "dehydration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "La Crosse encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "paralysis"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "seizure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Lafora disease"
+    ],
+    "symptoms": [
+      [
+        "hallucination"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Lassa fever"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "proteinuria"
+      ],
+      [
+        "conjunctivitis"
+      ],
+      [
+        "abdominal swelling"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Legionnaires' disease"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Leigh disease"
+    ],
+    "symptoms": [
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "irritability"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Lemierre's syndrome"
+    ],
+    "symptoms": [
+      [
+        "chills"
+      ],
+      [
+        "abscess"
+      ],
+      [
+        "leukocytosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Loeffler endocarditis"
+    ],
+    "symptoms": [
+      [
+        "endocarditis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Loeffler syndrome"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Lujo hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "thrombocytopenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Lyme disease"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "MELAS syndrome"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "hemiparesis"
+      ],
+      [
+        "motor weakness"
+      ],
+      [
+        "severe headache"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Marburg hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Marinesco-Sjogren syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Meckel's diverticulitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Middle East respiratory syndrome"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Mikulicz disease"
+    ],
+    "symptoms": [
+      [
+        "dry mouth"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Miyoshi muscular dystrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Miyoshi muscular dystrophy 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Moebius syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Mooren's ulcer"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Murray Valley encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "drowsiness"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Mycoplasma pneumoniae pneumonia"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "dry cough"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "NARP syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Netherton syndrome"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Neu-Laxova syndrome 1"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Neu-Laxova syndrome 2"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Newcastle disease"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "paralysis"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "conjunctivitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Nipah virus encephalitis"
+    ],
+    "symptoms": [
+      [
+        "drowsiness"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "alteration of consciousness"
+      ],
+      [
+        "disorientation"
+      ],
+      [
+        "dizziness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Noonan syndrome"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ],
+      [
+        "short stature"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "O'nyong-nyong fever"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "lymphadenitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Ohdo syndrome"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Ohdo syndrome, SBBYS variant"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Omenn syndrome"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "hepatosplenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Omsk hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "stiff neck"
+      ],
+      [
+        "hemoptysis"
+      ],
+      [
+        "hematuria"
+      ],
+      [
+        "cervical lymphadenopathy"
+      ],
+      [
+        "conjunctival suffusion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Oropouche fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "muscle pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Pediculus humanus capitis infestation"
+    ],
+    "symptoms": [
+      [
+        "itching"
+      ],
+      [
+        "irritability"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Plasmodium ovale malaria"
+    ],
+    "symptoms": [
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Pontiac fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Powassan encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "paralysis"
+      ],
+      [
+        "drowsiness"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "tremor"
+      ],
+      [
+        "stiff neck"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Q fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "pleuritic chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Quebec platelet disorder"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Queensland tick typhus"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Ramsay Hunt syndrome"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "paralysis"
+      ],
+      [
+        "tinnitus"
+      ],
+      [
+        "vertigo"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Renpenning syndrome"
+    ],
+    "symptoms": [
+      [
+        "short stature"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Rickettsia parkeri spotted fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Rift Valley fever"
+    ],
+    "symptoms": [
+      [
+        "hematemesis"
+      ],
+      [
+        "menorrhagia"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "hematochezia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Ritter's disease"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "necrosis"
+      ],
+      [
+        "irritability"
+      ],
+      [
+        "skin peeling"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Rocky Mountain spotted fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "maculopapular rash"
+      ],
+      [
+        "papular rash"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Ross River fever"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "STING-associated vasculopathy with onset in infancy"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Schnitzler syndrome"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "joint pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Siberian tick typhus"
+    ],
+    "symptoms": [
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "St. Louis encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "tremor"
+      ],
+      [
+        "disorientation"
+      ],
+      [
+        "convulsion"
+      ],
+      [
+        "stiff neck"
+      ],
+      [
+        "high fever"
+      ],
+      [
+        "spastic paralysis"
+      ],
+      [
+        "stupor"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Sweet syndrome"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Trichomonas vaginalis trichomoniasis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "relapsing fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Troyer syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Ullrich congenital muscular dystrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Venezuelan equine encephalitis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "photophobia"
+      ],
+      [
+        "severe headache"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Venezuelan hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "hematemesis"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "menorrhagia"
+      ],
+      [
+        "gum bleeding"
+      ],
+      [
+        "epistaxis"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "hepatomegaly"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "melena"
+      ],
+      [
+        "convulsion"
+      ],
+      [
+        "weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Vogt-Koyanagi-Harada disease"
+    ],
+    "symptoms": [
+      [
+        "meningitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Volkmann contracture"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Waterhouse-Friderichsen syndrome"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ],
+      [
+        "meningitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Werdnig-Hoffmann disease"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Wernicke encephalopathy"
+    ],
+    "symptoms": [
+      [
+        "confusion"
+      ],
+      [
+        "ataxia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "West Nile encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "paralysis"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "tremor"
+      ],
+      [
+        "disorientation"
+      ],
+      [
+        "convulsion"
+      ],
+      [
+        "stiff neck"
+      ],
+      [
+        "muscle weakness"
+      ],
+      [
+        "high fever"
+      ],
+      [
+        "paresthesia"
+      ],
+      [
+        "stupor"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "West Nile fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "body ache"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Western equine encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "altered mental status"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Whitewater Arroyo hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "hemorrhage"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Wolcott-Rallison syndrome"
+    ],
+    "symptoms": [
+      [
+        "hepatic dysfunction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Wolfram syndrome 2"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "X-linked congenital myopathy with fiber-type disproportion"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ],
+      [
+        "facial weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "X-linked distal spinal muscular atrophy 3"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "X-linked myopathy with excessive autophagy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "Zika fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acanthocephaliasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "constipation"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "decreased appetite"
+      ],
+      [
+        "abdominal distention"
+      ],
+      [
+        "bloody stool"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "achalasia microcephaly syndrome"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acquired von Willebrand syndrome"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "actinomycosis"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ],
+      [
+        "granulomatous inflammation"
+      ],
+      [
+        "asthenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute allergic mucoid otitis media"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute allergic sanguinous otitis media"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute allergic serous otitis media"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute canaliculitis"
+    ],
+    "symptoms": [
+      [
+        "conjunctivitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute chest syndrome"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "pleuritic chest pain"
+      ],
+      [
+        "leukocytosis"
+      ],
+      [
+        "tachypnea"
+      ],
+      [
+        "hypoxemia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute closed-angle glaucoma"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "acute pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute diarrhea"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute disseminated encephalomyelitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute hemorrhagic conjunctivitis"
+    ],
+    "symptoms": [
+      [
+        "bloodshot eye"
+      ],
+      [
+        "conjunctival congestion"
+      ],
+      [
+        "photophobia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute hemorrhagic leukoencephalitis"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute interstitial pneumonia"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute kidney tubular necrosis"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute myocarditis"
+    ],
+    "symptoms": [
+      [
+        "myocarditis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute orbital inflammation"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "acute porphyria"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "adenoiditis"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "swelling symptom"
+      ],
+      [
+        "dysphagia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "adult hepatocellular carcinoma"
+    ],
+    "symptoms": [
+      [
+        "liver inflammation"
+      ],
+      [
+        "abdominal mass"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "adult respiratory distress syndrome"
+    ],
+    "symptoms": [
+      [
+        "shock"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "adult spinal muscular atrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "alcoholic psychosis"
+    ],
+    "symptoms": [
+      [
+        "hallucination"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "aleutian mink disease"
+    ],
+    "symptoms": [
+      [
+        "anemia"
+      ],
+      [
+        "hepatomegaly"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ],
+      [
+        "splenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allergic asthma"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "allergic reaction"
+      ],
+      [
+        "chest tightness"
+      ],
+      [
+        "tachypnea"
+      ],
+      [
+        "wheezing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allergic bronchopulmonary aspergillosis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "allergic reaction"
+      ],
+      [
+        "wheezing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allergic conjunctivitis"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allergic contact dermatitis"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allergic contact dermatitis of eyelid"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allergic cutaneous vasculitis"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allergic rhinitis"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allergic urticaria"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "allescheriosis"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "alpha-2-plasmin inhibitor deficiency"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "amebiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "anaerobic pneumonia"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ancylostomiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "severe diarrhea"
+      ],
+      [
+        "anemia"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "gastrointestinal bleeding"
+      ],
+      [
+        "cachexia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "aneruptive fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "angle-closure glaucoma"
+    ],
+    "symptoms": [
+      [
+        "bloodshot eye"
+      ],
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "angular cheilitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "anhidrosis"
+    ],
+    "symptoms": [
+      [
+        "hyperthermia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "anisakiasis"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ankylosing spondylitis"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "stiff neck"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "anthrax disease"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "hematochezia"
+      ],
+      [
+        "rectorrhagia"
+      ],
+      [
+        "skin ulcer"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "appendicitis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "aqueous misdirection"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "aromatic L-amino acid decarboxylase deficiency"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "arthritis"
+    ],
+    "symptoms": [
+      [
+        "joint inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "arthus reaction"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ],
+      [
+        "necrosis"
+      ],
+      [
+        "edema"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ascariasis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "abdominal cramp"
+      ],
+      [
+        "wheezing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "aseptic meningitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "aspiration pneumonia"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "tachypnea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "aspiration pneumonitis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "tachypnea"
+      ],
+      [
+        "bloody sputum"
+      ],
+      [
+        "bronchospasm"
+      ],
+      [
+        "cerebrovascular accident"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "asthma"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "chest tightness"
+      ],
+      [
+        "wheezing"
+      ],
+      [
+        "chronic inflammation"
+      ],
+      [
+        "airway stenosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "asymptomatic neurosyphilis"
+    ],
+    "symptoms": [
+      [
+        "meningitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "atopic dermatitis"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ],
+      [
+        "eczema"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "atrial fibrillation"
+    ],
+    "symptoms": [
+      [
+        "confusion"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "weakness"
+      ],
+      [
+        "arrhythmia"
+      ],
+      [
+        "chest pain"
+      ],
+      [
+        "palpitation"
+      ],
+      [
+        "lightheadedness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "attention deficit hyperactivity disorder"
+    ],
+    "symptoms": [
+      [
+        "hyperactivity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "atypical depressive disorder"
+    ],
+    "symptoms": [
+      [
+        "paralysis"
+      ],
+      [
+        "hypersomnia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autism spectrum disorder"
+    ],
+    "symptoms": [
+      [
+        "repetitive behavior"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autoimmune disease of gastrointestinal tract"
+    ],
+    "symptoms": [
+      [
+        "loss of appetite"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autoimmune hepatitis"
+    ],
+    "symptoms": [
+      [
+        "liver inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autoinflammatory disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant adult-onset proximal spinal muscular atrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant distal hereditary motor neuronopathy 1"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant distal hereditary motor neuronopathy 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant distal hereditary motor neuronopathy 5"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant distal hereditary motor neuronopathy 7"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant distal hereditary motor neuronopathy 8"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant distal hereditary motor neuronopathy 9"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant osteopetrosis 2"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal dominant progressive external ophthalmoplegia with mitochondrial DNA deletions 6"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal recessive distal hereditary motor neuronopathy 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal recessive distal hereditary motor neuronopathy 3"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal recessive distal hereditary motor neuronopathy 4"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal recessive distal hereditary motor neuronopathy 5"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal recessive limb-girdle muscular dystrophy type 2Z"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal recessive progressive external ophthalmoplegia with mitochondrial DNA deletions 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "autosomal recessive progressive external ophthalmoplegia with mitochondrial DNA deletions 4"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "avian influenza"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "babesiosis"
+    ],
+    "symptoms": [
+      [
+        "anemia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bacterial gastritis"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "bloating"
+      ],
+      [
+        "dyspepsia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bacterial pneumonia"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bagassosis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "balantidiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "basaloid squamous cell carcinoma"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "baylisascariasis"
+    ],
+    "symptoms": [
+      [
+        "blindness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "berylliosis"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "beta-ketothiolase deficiency"
+    ],
+    "symptoms": [
+      [
+        "lethargy"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "dehydration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "biotin-responsive basal ganglia disease"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "ataxia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bird fancier's lung"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "acute dyspnea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "blastic plasmacytoid dendritic cell neoplasm"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ],
+      [
+        "lymphadenopathy"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "blastomycosis"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ],
+      [
+        "lesions in lung"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "blepharitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bone inflammation disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "boutonneuse fever"
+    ],
+    "symptoms": [
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "brain compression"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "brain edema"
+    ],
+    "symptoms": [
+      [
+        "coma"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "brain glioblastoma multiforme"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "memory loss"
+      ],
+      [
+        "limited attention"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "brain infarction"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "brain stem infarction"
+    ],
+    "symptoms": [
+      [
+        "hoarseness"
+      ],
+      [
+        "loss of balance"
+      ],
+      [
+        "vertigo"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "brawny scleritis"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "photophobia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "breast large cell neuroendocrine carcinoma"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "breast malignant eccrine spiradenoma"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bronchiolitis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "wheezing"
+      ],
+      [
+        "cyanosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bronchitis"
+    ],
+    "symptoms": [
+      [
+        "low-grade fever"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "chest tightness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "brucellosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bubonic plague"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "lymphadenitis"
+      ],
+      [
+        "prostration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bulbar polio"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "dysarthria"
+      ],
+      [
+        "breathing problems"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "bulbospinal polio"
+    ],
+    "symptoms": [
+      [
+        "paralysis"
+      ],
+      [
+        "dysphagia"
+      ],
+      [
+        "hind limb paralysis"
+      ],
+      [
+        "breathing problems"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "buphthalmos"
+    ],
+    "symptoms": [
+      [
+        "photophobia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "byssinosis"
+    ],
+    "symptoms": [
+      [
+        "chest tightness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "camptodactyly-arthropathy-coxa vara-pericarditis syndrome"
+    ],
+    "symptoms": [
+      [
+        "pericardial effusion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "campylobacteriosis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cardiac arrest"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cardiac sarcoidosis"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cardiofaciocutaneous syndrome"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cat-scratch disease"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "catecholaminergic polymorphic ventricular tachycardia"
+    ],
+    "symptoms": [
+      [
+        "ventricular tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "catecholaminergic polymorphic ventricular tachycardia 1"
+    ],
+    "symptoms": [
+      [
+        "ventricular tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "catecholaminergic polymorphic ventricular tachycardia 2"
+    ],
+    "symptoms": [
+      [
+        "ventricular tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "catecholaminergic polymorphic ventricular tachycardia 3"
+    ],
+    "symptoms": [
+      [
+        "ventricular tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "catecholaminergic polymorphic ventricular tachycardia 4"
+    ],
+    "symptoms": [
+      [
+        "ventricular tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "catecholaminergic polymorphic ventricular tachycardia 5"
+    ],
+    "symptoms": [
+      [
+        "ventricular tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "celiac disease"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "constipation"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "central diabetes insipidus"
+    ],
+    "symptoms": [
+      [
+        "polyuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "central nervous system origin vertigo"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "abnormality of gait"
+      ],
+      [
+        "vertigo"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "central nervous system vasculitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "central pontine myelinolysis"
+    ],
+    "symptoms": [
+      [
+        "paralysis"
+      ],
+      [
+        "dysphagia"
+      ],
+      [
+        "dysarthria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "central pterygium"
+    ],
+    "symptoms": [
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "centronuclear myopathy 1"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cerebellar ataxia type 48"
+    ],
+    "symptoms": [
+      [
+        "ataxia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cerebellar disease"
+    ],
+    "symptoms": [
+      [
+        "dysarthria"
+      ],
+      [
+        "ataxia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cerebellar hyplasia/atrophy, epilepsy, and global developmental delay"
+    ],
+    "symptoms": [
+      [
+        "nystagmus"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cerebral amyloid angiopathy"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cerebritis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cervicitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cheilitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "chickenpox"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "blister"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "chikungunya"
+    ],
+    "symptoms": [
+      [
+        "joint pain"
+      ],
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cholecystitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cholera"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "shock"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "chondrocalcinosis"
+    ],
+    "symptoms": [
+      [
+        "arthritis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "chronic NK-cell lymphocytosis"
+    ],
+    "symptoms": [
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "cytopenia"
+      ],
+      [
+        "apthous ulcer"
+      ],
+      [
+        "mouth sore"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "chronic inflammation of lacrimal passage"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "decreased tearing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "chronic interstitial cystitis"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "dysuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "chronic rhinitis"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "clonorchiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "coccidioidomycosis"
+    ],
+    "symptoms": [
+      [
+        "arthritis"
+      ],
+      [
+        "conjunctivitis"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "coenurosis"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "combined malonic and methylmalonic acidemia"
+    ],
+    "symptoms": [
+      [
+        "failure to thrive"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "combined oxidative phosphorylation deficiency 23"
+    ],
+    "symptoms": [
+      [
+        "delayed psychomotor development"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "combined oxidative phosphorylation deficiency 34"
+    ],
+    "symptoms": [
+      [
+        "hepatic dysfunction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "combined saposin deficiency"
+    ],
+    "symptoms": [
+      [
+        "hepatosplenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "comedo carcinoma"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital bile acid synthesis defect 5"
+    ],
+    "symptoms": [
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital diarrhea"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital diarrhea 6"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital diarrhea 7 with exudative enteropathy"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital disorder of glycosylation Ib"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ],
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital disorder of glycosylation Ih"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "hepatomegaly"
+      ],
+      [
+        "failure to thrive"
+      ],
+      [
+        "ataxia"
+      ],
+      [
+        "ascites"
+      ],
+      [
+        "feeding problem"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ],
+      [
+        "edema"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital disorder of glycosylation Il"
+    ],
+    "symptoms": [
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital disorder of glycosylation Ip"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ],
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital disorder of glycosylation Ir"
+    ],
+    "symptoms": [
+      [
+        "hepatic dysfunction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital disorder of glycosylation It"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital disorder of glycosylation Iy"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital malabsorptive diarrhea 4"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital merosin-deficient muscular dystrophy 1A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital muscular dystrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital muscular dystrophy 1B"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital muscular dystrophy with cataracts and intellectual disability"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital muscular dystrophy-dystroglycanopathy type A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 10"
+    ],
+    "symptoms": [
+      [
+        "limb weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 12"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 13"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 14"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 15"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 18"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 19"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 1A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 1B"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 2A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 2C"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 3A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 3B"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 3C"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 4A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 4B"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 4C"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 8"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myasthenic syndrome 9"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myopathy 13"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital myopathy 6"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital secretory chloride diarrhea 1"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital secretory sodium diarrhea 3"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congenital secretory sodium diarrhea 8"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "congestive heart failure"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "conjunctival pterygium"
+    ],
+    "symptoms": [
+      [
+        "loss of vision"
+      ],
+      [
+        "conjunctival degeneration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "conjunctivitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "connective tissue disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "copper deficiency myelopathy"
+    ],
+    "symptoms": [
+      [
+        "anemia"
+      ],
+      [
+        "ataxia"
+      ],
+      [
+        "loss of balance"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cork-handlers' disease"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "wheezing"
+      ],
+      [
+        "asthenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cough variant asthma"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "croup"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cryptogenic organizing pneumonia"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cryptosporidiosis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "dehydration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cutaneous anthrax"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cyclosporiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "low-grade fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cylindrical spirals myopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cystic echinococcosis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "shock"
+      ],
+      [
+        "abdominal mass"
+      ],
+      [
+        "hemoptysis"
+      ],
+      [
+        "urticaria"
+      ],
+      [
+        "anaphylactic shock"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cystitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cystoisosporiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "cytochrome-c oxidase deficiency disease"
+    ],
+    "symptoms": [
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dacryocystitis"
+    ],
+    "symptoms": [
+      [
+        "conjunctivitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "degenerative disc disease"
+    ],
+    "symptoms": [
+      [
+        "dehydration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "delusional disorder"
+    ],
+    "symptoms": [
+      [
+        "hallucination"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dengue disease"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "severe headache"
+      ],
+      [
+        "bone pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dengue hemorrhagic fever"
+    ],
+    "symptoms": [
+      [
+        "thrombocytopenia"
+      ],
+      [
+        "high fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dengue shock syndrome"
+    ],
+    "symptoms": [
+      [
+        "gum bleeding"
+      ],
+      [
+        "epistaxis"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "shock"
+      ],
+      [
+        "hypotension"
+      ],
+      [
+        "nasal bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dermatomyositis"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "diabetes insipidus"
+    ],
+    "symptoms": [
+      [
+        "polyuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "diabetes mellitus"
+    ],
+    "symptoms": [
+      [
+        "polyuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "diastolic heart failure"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dicrocoeliasis"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ],
+      [
+        "hepatic abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dientamoebiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "diffuse pulmonary fibrosis"
+    ],
+    "symptoms": [
+      [
+        "fatigue"
+      ],
+      [
+        "chronic cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dipetalonemiasis"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "diphyllobothriasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "abdominal discomfort"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dipsogenic diabetes insipidus"
+    ],
+    "symptoms": [
+      [
+        "polyuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "distal myopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "diverticulitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "diverticulitis of colon"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dominant optic atrophy plus syndrome"
+    ],
+    "symptoms": [
+      [
+        "ataxia"
+      ],
+      [
+        "loss of vision"
+      ],
+      [
+        "muscle cramp"
+      ],
+      [
+        "hyperreflexia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dopamine beta-hydroxylase deficiency"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "double pterygium"
+    ],
+    "symptoms": [
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dry beriberi"
+    ],
+    "symptoms": [
+      [
+        "confusion"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "dysarthria"
+      ],
+      [
+        "abnormality of gait"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "dysentery"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "early congenital syphilis"
+    ],
+    "symptoms": [
+      [
+        "seizure"
+      ],
+      [
+        "skin lesion"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "failure to thrive"
+      ],
+      [
+        "hydrocephalus"
+      ],
+      [
+        "meningitis"
+      ],
+      [
+        "lymphadenopathy"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "early-onset myopathy-areflexia-respiratory distress-dysphagia syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "echinostomiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "eczema herpeticum"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "lymph gland swelling"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ego-dystonic sexual orientation"
+    ],
+    "symptoms": [
+      [
+        "anxiety"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ehrlichiosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "fatigue"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "encephalitis"
+    ],
+    "symptoms": [
+      [
+        "encephalitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "encephalopathy due to defective mitochondrial and peroxisomal fission 1"
+    ],
+    "symptoms": [
+      [
+        "delayed psychomotor development"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "endemic typhus"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "endocarditis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "endometritis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "endophthalmitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "enthesopathy"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "swelling symptom"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "eosinophilic esophagitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "eosinophilic meningitis"
+    ],
+    "symptoms": [
+      [
+        "dizziness"
+      ],
+      [
+        "paresthesia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "eosinophilic pneumonia"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "breathing problems"
+      ],
+      [
+        "night sweats"
+      ],
+      [
+        "pneumonitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "epidemic pleurodynia"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "necrosis"
+      ],
+      [
+        "severe chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "epidemic typhus"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "high fever"
+      ],
+      [
+        "photophobia"
+      ],
+      [
+        "delirium"
+      ],
+      [
+        "stupor"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "episcleritis periodica fugax"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "photophobia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "episodic ataxia type 7"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "episodic ataxia type 8"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "erythema multiforme"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "esophageal candidiasis"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "esophageal tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "essential thrombocythemia"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "essential tremor"
+    ],
+    "symptoms": [
+      [
+        "tremor"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ethylmalonic encephalopathy"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "exanthem"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "exanthema subitum"
+    ],
+    "symptoms": [
+      [
+        "high fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "extrinsic allergic alveolitis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "allergic reaction"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "extrinsic asthma"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "exudative vitreoretinopathy"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "factor VII deficiency"
+    ],
+    "symptoms": [
+      [
+        "menorrhagia"
+      ],
+      [
+        "gum bleeding"
+      ],
+      [
+        "epistaxis"
+      ],
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "factor XI deficiency"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "factor XIII deficiency"
+    ],
+    "symptoms": [
+      [
+        "menorrhagia"
+      ],
+      [
+        "gum bleeding"
+      ],
+      [
+        "epistaxis"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "abnormal scar formation"
+      ],
+      [
+        "abnormal wound healing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "fallopian tube disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "familial Mediterranean fever"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "familial atrial fibrillation"
+    ],
+    "symptoms": [
+      [
+        "atrial fibrillation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "familial hemiplegic migraine"
+    ],
+    "symptoms": [
+      [
+        "drowsiness"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "muscle weakness"
+      ],
+      [
+        "hemiparesis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "farmer's lung"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "fascioliasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "fasciolopsiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "ascites"
+      ],
+      [
+        "anasarca"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "fatal familial insomnia"
+    ],
+    "symptoms": [
+      [
+        "hallucination"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "femoral vein thrombophlebitis"
+    ],
+    "symptoms": [
+      [
+        "phlebitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "fiedler's myocarditis"
+    ],
+    "symptoms": [
+      [
+        "myocarditis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "filarial elephantiasis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "lymphadenitis"
+      ],
+      [
+        "abscess"
+      ],
+      [
+        "epididymitis"
+      ],
+      [
+        "lymphangitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "focal epithelial hyperplasia"
+    ],
+    "symptoms": [
+      [
+        "mouth papules"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "foodborne botulism"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "dysphonia"
+      ],
+      [
+        "dysarthria"
+      ],
+      [
+        "double vision"
+      ],
+      [
+        "descending muscle paralysis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "frozen shoulder"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "functional diarrhea"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "fusariosis"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gas gangrene"
+    ],
+    "symptoms": [
+      [
+        "gangrene"
+      ],
+      [
+        "necrosis"
+      ],
+      [
+        "blister"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gastroduodenal Crohn's disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gastroenteritis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "abdominal discomfort"
+      ],
+      [
+        "cramp"
+      ],
+      [
+        "abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gastrointestinal anthrax"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "hematemesis"
+      ],
+      [
+        "severe diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gastrointestinal system disease"
+    ],
+    "symptoms": [
+      [
+        "ascites"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gastrointestinal tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "constipation"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gastrointestinal tularemia"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "lymphadenitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "generalized anxiety disorder"
+    ],
+    "symptoms": [
+      [
+        "anxiety"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "genital herpes"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gestational diabetes insipidus"
+    ],
+    "symptoms": [
+      [
+        "polyuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "giant axonal neuropathy 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "giardiasis"
+    ],
+    "symptoms": [
+      [
+        "steatorrhea"
+      ],
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "bloating"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glanders"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "muscle tightness"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glomerulonephritis"
+    ],
+    "symptoms": [
+      [
+        "nephritis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glucocorticoid-induced osteoporosis"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gluten allergy"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glycogen storage disease IXa"
+    ],
+    "symptoms": [
+      [
+        "hepatomegaly"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glycogen storage disease IXb"
+    ],
+    "symptoms": [
+      [
+        "hepatomegaly"
+      ],
+      [
+        "short stature"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glycogen storage disease IXc"
+    ],
+    "symptoms": [
+      [
+        "hepatomegaly"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glycogen storage disease IXd"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glycogen storage disease Ia"
+    ],
+    "symptoms": [
+      [
+        "hepatomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "glycogen storage disease XV"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gnathomiasis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gonorrhea"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ],
+      [
+        "paresthesia"
+      ],
+      [
+        "abnormal vaginal bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "granulomatosis with polyangiitis"
+    ],
+    "symptoms": [
+      [
+        "granulomatous inflammation"
+      ],
+      [
+        "vasculitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "granulomatous amebic encephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "altered mental status"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "gray platelet syndrome"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "haemonchiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hand, foot and mouth disease"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "malaise"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hantavirus pulmonary syndrome"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "shock"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "pulmonary edema"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hemophagocytic lymphohistiocytosis"
+    ],
+    "symptoms": [
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hemophilia"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hemorrhagic cystitis"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hepatic tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hepatitis A"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "liver inflammation"
+      ],
+      [
+        "acholic stool"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hepatitis B"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "liver inflammation"
+      ],
+      [
+        "acholic stool"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hepatitis C"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "liver inflammation"
+      ],
+      [
+        "acholic stool"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hepatitis D"
+    ],
+    "symptoms": [
+      [
+        "drowsiness"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "lethargy"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "liver inflammation"
+      ],
+      [
+        "sleep disturbance"
+      ],
+      [
+        "acholic stool"
+      ],
+      [
+        "dark urine"
+      ],
+      [
+        "abnormal behavior"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hepatitis E"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "liver inflammation"
+      ],
+      [
+        "acholic stool"
+      ],
+      [
+        "dark urine"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary hypophosphatemic rickets with hypercalciuria"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary neuropathy with liability to pressure palsies"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary papulotranslucent acrokeratoderma"
+    ],
+    "symptoms": [
+      [
+        "papule"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary sensory and autonomic neuropathy type 7"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary sensory neuropathy type 1B"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary spastic paraplegia"
+    ],
+    "symptoms": [
+      [
+        "paraplegia"
+      ],
+      [
+        "spasticity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary spastic paraplegia 3A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary spastic paraplegia 4"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hereditary spastic paraplegia 5A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "herpangina"
+    ],
+    "symptoms": [
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "lesions in mouth"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "herpes zoster"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "itching"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "paresthesia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "herpetic whitlow"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "heterophyiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hidradenitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "papule"
+      ],
+      [
+        "edema"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hidradenitis suppurativa"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "abscess"
+      ],
+      [
+        "chronic inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "histiocytosis-lymphadenopathy plus syndrome"
+    ],
+    "symptoms": [
+      [
+        "hepatosplenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "histoplasmosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "muscle pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "human granulocytic anaplasmosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "human immunodeficiency virus infectious disease"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "lymphadenitis"
+      ],
+      [
+        "apthous ulcer"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "human monocytic ehrlichiosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hymenolepiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypermanganesemia with dystonia 1"
+    ],
+    "symptoms": [
+      [
+        "hepatic dysfunction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypersecretion glaucoma"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypersensitivity vasculitis"
+    ],
+    "symptoms": [
+      [
+        "urticaria"
+      ],
+      [
+        "vasculitis"
+      ],
+      [
+        "blister"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypertension"
+    ],
+    "symptoms": [
+      [
+        "high blood pressure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypertensive heart disease"
+    ],
+    "symptoms": [
+      [
+        "high blood pressure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypertrophic pyloric stenosis"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypervitaminosis A"
+    ],
+    "symptoms": [
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "hepatomegaly"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypervitaminosis D"
+    ],
+    "symptoms": [
+      [
+        "fatigue"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "irritability"
+      ],
+      [
+        "polyuria"
+      ],
+      [
+        "dehydration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypochondrogenesis"
+    ],
+    "symptoms": [
+      [
+        "bloating"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypoglycemic coma"
+    ],
+    "symptoms": [
+      [
+        "coma"
+      ],
+      [
+        "seizure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypohidrosis"
+    ],
+    "symptoms": [
+      [
+        "hyperthermia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "hypophosphatemia"
+    ],
+    "symptoms": [
+      [
+        "bone pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "idiopathic CD4-positive T-lymphocytopenia"
+    ],
+    "symptoms": [
+      [
+        "lymphopenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ileitis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "right lower quadrant abdominal pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ileocolitis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "inflammation"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "right lower quadrant abdominal pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "inclusion body myopathy with Paget disease of bone and frontotemporal dementia"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "inclusion body myositis"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "inclusion conjunctivitis"
+    ],
+    "symptoms": [
+      [
+        "conjunctival swelling"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "infant botulism"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "lethargy"
+      ],
+      [
+        "constipation"
+      ],
+      [
+        "muscle weakness"
+      ],
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "infantile Refsum disease"
+    ],
+    "symptoms": [
+      [
+        "hepatosplenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "infectious mononucleosis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "splenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "infective endocarditis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "inflammatory diarrhea"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "influenza"
+    ],
+    "symptoms": [
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "rhinorrhea"
+      ],
+      [
+        "weakness"
+      ],
+      [
+        "severe headache"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "inhalation anthrax"
+    ],
+    "symptoms": [
+      [
+        "chest discomfort"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "low-grade fever"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "tiredness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "intermediate spinal muscular atrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "interstitial keratitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "corneal scarring"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "interstitial lung disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "dyspnea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "interval angle-closure glaucoma"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "acute pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "intestinal disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "intestinal schistosomiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "hematochezia"
+      ],
+      [
+        "rectorrhagia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "intestinal tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "gastrointestinal bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "intracranial hypertension"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "altered mental status"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "intrinsic asthma"
+    ],
+    "symptoms": [
+      [
+        "anxiety"
+      ],
+      [
+        "hyperventilation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "intrinsic cardiomyopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "invasive aspergillosis"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "irritable bowel syndrome"
+    ],
+    "symptoms": [
+      [
+        "abdominal discomfort"
+      ],
+      [
+        "bloating"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "irritant dermatitis"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "edema"
+      ],
+      [
+        "paresthesia"
+      ],
+      [
+        "skin desquamation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "jejunoileitis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "cramp"
+      ],
+      [
+        "abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "juvenile spinal muscular atrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "keratitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "kwashiorkor"
+    ],
+    "symptoms": [
+      [
+        "swelling symptom"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "edema"
+      ],
+      [
+        "dehydration"
+      ],
+      [
+        "anasarca"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "labyrinthitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "laryngeal tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "granulomatous inflammation"
+      ],
+      [
+        "hoarse voice"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "laryngomalacia"
+    ],
+    "symptoms": [
+      [
+        "stridor"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "larynx squamous papilloma"
+    ],
+    "symptoms": [
+      [
+        "hoarseness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lateral medullary syndrome"
+    ],
+    "symptoms": [
+      [
+        "nausea"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "hoarseness"
+      ],
+      [
+        "vertigo"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lateral sclerosis"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "legionellosis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dry cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "leprosy"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "leptospirosis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "hepatomegaly"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "limbic encephalitis"
+    ],
+    "symptoms": [
+      [
+        "seizure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "listeriosis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "malaise"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "localized pulmonary fibrosis"
+    ],
+    "symptoms": [
+      [
+        "fatigue"
+      ],
+      [
+        "chronic cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "loiasis"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "long COVID"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "concentration difficulty"
+      ],
+      [
+        "breathing problems"
+      ],
+      [
+        "memory loss"
+      ],
+      [
+        "tachycardia"
+      ],
+      [
+        "chest pain"
+      ],
+      [
+        "ageusia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "long QT syndrome"
+    ],
+    "symptoms": [
+      [
+        "arrhythmia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "louping ill"
+    ],
+    "symptoms": [
+      [
+        "lethargy"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "muscle pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "louse-borne relapsing fever"
+    ],
+    "symptoms": [
+      [
+        "relapsing fever"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "tachycardia"
+      ],
+      [
+        "tachypnea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lung abscess"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lung carcinoma"
+    ],
+    "symptoms": [
+      [
+        "chest discomfort"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "hemoptysis"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lupus erythematosus"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "low white blood cell count"
+      ],
+      [
+        "thrombocytopenia"
+      ],
+      [
+        "arthritis"
+      ],
+      [
+        "hair loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lupus nephritis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lymph node tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "night sweats"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lymphatic system disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lymphocytic choriomeningitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "malaise"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lymphogranuloma venereum"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ],
+      [
+        "lymphangitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "lymphoid interstitial pneumonia"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "malaria"
+    ],
+    "symptoms": [
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "malignant hypertension"
+    ],
+    "symptoms": [
+      [
+        "high blood pressure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "maple syrup urine disease"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "marasmus"
+    ],
+    "symptoms": [
+      [
+        "constipation"
+      ],
+      [
+        "bradycardia"
+      ],
+      [
+        "decreased metabolism"
+      ],
+      [
+        "weight gain"
+      ],
+      [
+        "loss of height"
+      ],
+      [
+        "hypothermia"
+      ],
+      [
+        "emaciation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "measles"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "conjunctivitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mediastinitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "melioidosis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "meningitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "meningovascular neurosyphilis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "paralysis"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "stiff neck"
+      ],
+      [
+        "muscle weakness"
+      ],
+      [
+        "memory impairment"
+      ],
+      [
+        "urinary incontinence"
+      ],
+      [
+        "memory loss"
+      ],
+      [
+        "insomnia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mesocestoidiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "abdominal discomfort"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "metabolic dysfunction-associated steatohepatitis"
+    ],
+    "symptoms": [
+      [
+        "liver inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "metagonimiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "middle lobe syndrome"
+    ],
+    "symptoms": [
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "granulomatous inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "migraine"
+    ],
+    "symptoms": [
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "milker's nodule"
+    ],
+    "symptoms": [
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "lymphangitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mitochondrial DNA depletion syndrome 1"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mitochondrial DNA depletion syndrome 11"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mitochondrial DNA depletion syndrome 12b"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mitochondrial DNA depletion syndrome 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mitochondrial DNA depletion syndrome 4b"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mitochondrial DNA depletion syndrome 8b"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "molluscum contagiosum"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "motility-related diarrhea"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mpox"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mucopolysaccharidosis Ih"
+    ],
+    "symptoms": [
+      [
+        "hepatosplenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mucopolysaccharidosis Ih/s"
+    ],
+    "symptoms": [
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "short stature"
+      ],
+      [
+        "cloudy cornea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mucositis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "multicentric Castleman disease"
+    ],
+    "symptoms": [
+      [
+        "cytopenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "multiple epiphyseal dysplasia"
+    ],
+    "symptoms": [
+      [
+        "joint pain"
+      ],
+      [
+        "fatigue"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "multiple mitochondrial dysfunctions syndrome 1"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "mumps"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "tiredness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "muscular dystrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "muscular dystrophy-dystroglycanopathy type B1"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myasthenia gravis"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "dysarthria"
+      ],
+      [
+        "double vision"
+      ],
+      [
+        "muscle weakness"
+      ],
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myelitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myelophthisic anemia"
+    ],
+    "symptoms": [
+      [
+        "anemia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myocardial infarction"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myofibrillar myopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myofibrillar myopathy 8"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myofibrillar myopathy 9"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myopathy with extrapyramidal signs"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myositis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myotonia congenita"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myotonic disease"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myotonic dystrophy type 1"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "myotonic dystrophy type 2"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "necatoriasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal cramp"
+      ],
+      [
+        "severe abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nemaline myopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nemaline myopathy 1"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nemaline myopathy 10"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nemaline myopathy 11"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nemaline myopathy 6"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nemaline myopathy 9"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neovascular glaucoma"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neovascular inflammatory vitreoretinopathy"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nephritis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nephrogenic diabetes insipidus"
+    ],
+    "symptoms": [
+      [
+        "polyuria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nephropathia epidemica"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "hemorrhage"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "renal failure"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neurodevelopmental disorder with cataracts, poor growth, and dysmorphic facies"
+    ],
+    "symptoms": [
+      [
+        "abnormality of gait"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neurofibromatosis-Noonan syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neurogenic scapuloperoneal syndrome Kaeser type"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neuromyelitis optica"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neuronal ceroid lipofuscinosis 1"
+    ],
+    "symptoms": [
+      [
+        "seizure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neuronal ceroid lipofuscinosis 4"
+    ],
+    "symptoms": [
+      [
+        "seizure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neuronal ceroid lipofuscinosis 7"
+    ],
+    "symptoms": [
+      [
+        "seizure"
+      ],
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neuronal ceroid lipofuscinosis 8"
+    ],
+    "symptoms": [
+      [
+        "seizure"
+      ],
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neuronitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "neurotic disorder"
+    ],
+    "symptoms": [
+      [
+        "hallucination"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nocardiosis"
+    ],
+    "symptoms": [
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "cellulitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nodular episcleritis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "photophobia"
+      ],
+      [
+        "cornea symptom"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nonbacterial thrombotic endocarditis"
+    ],
+    "symptoms": [
+      [
+        "endocarditis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nonobstructive coronary artery disease"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "severe chest pain"
+      ],
+      [
+        "shoulder pain"
+      ],
+      [
+        "neck pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nonparalytic poliomyelitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "stiff neck"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nonspecific interstitial pneumonia"
+    ],
+    "symptoms": [
+      [
+        "dry cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nuclear type mitochondrial complex I deficiency 20"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nut allergy"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "allergic reaction"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "nutritional optic neuropathy"
+    ],
+    "symptoms": [
+      [
+        "acquired color vision deficiency"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "oesophagostomiasis"
+    ],
+    "symptoms": [
+      [
+        "low-grade fever"
+      ],
+      [
+        "skin lesion"
+      ],
+      [
+        "right lower quadrant abdominal tenderness"
+      ],
+      [
+        "abdominal tenderness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "onchocerciasis"
+    ],
+    "symptoms": [
+      [
+        "itching"
+      ],
+      [
+        "blindness"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "eczema"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "opisthorchiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "constipation"
+      ],
+      [
+        "hepatomegaly"
+      ],
+      [
+        "left upper quadrant abdominal rigidity"
+      ],
+      [
+        "dyspepsia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "orbital cancer"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ],
+      [
+        "exophthalmos"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "orbital cellulitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "double vision"
+      ],
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "orbital periostitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "orbital tenonitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ornithosis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "oropharyngeal anthrax"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "hematemesis"
+      ],
+      [
+        "severe diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "osmotic diarrhea"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "constipation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "osteitis fibrosa"
+    ],
+    "symptoms": [
+      [
+        "hyperactivity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "osteoarthritis"
+    ],
+    "symptoms": [
+      [
+        "arthritis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "osteochondritis dissecans"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "osteochondrosis"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "osteonecrosis"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ovarian disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "ovarian hyperstimulation syndrome"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "overactive bladder syndrome"
+    ],
+    "symptoms": [
+      [
+        "urinary urgency"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "palindromic rheumatism"
+    ],
+    "symptoms": [
+      [
+        "arthritis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pancreatic steatorrhea"
+    ],
+    "symptoms": [
+      [
+        "steatorrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "panic disorder"
+    ],
+    "symptoms": [
+      [
+        "dyspnea"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "chest pain"
+      ],
+      [
+        "palpitation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "panuveitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "paragonimiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "hemoptysis"
+      ],
+      [
+        "urticaria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "paralytic poliomyelitis"
+    ],
+    "symptoms": [
+      [
+        "flaccid paralysis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "paramyotonia congenita of Von Eulenburg"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "paranoid schizophrenia"
+    ],
+    "symptoms": [
+      [
+        "hallucination"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "paratyphoid fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "constipation"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "bradycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "parenchymatous neurosyphilis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "lethargy"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "concentration difficulty"
+      ],
+      [
+        "irritability"
+      ],
+      [
+        "insomnia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "parotitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pasteurellosis"
+    ],
+    "symptoms": [
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "peeling skin syndrome"
+    ],
+    "symptoms": [
+      [
+        "skin peeling"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pellagra"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "hallucination"
+      ],
+      [
+        "depression"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "penicilliosis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "skin lesion"
+      ],
+      [
+        "anemia"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pericardial tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "pericardial effusion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pericarditis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "perichondritis of auricle"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "periostitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "peripartum cardiomyopathy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "peritonitis"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "abdominal tenderness"
+      ],
+      [
+        "oliguria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pernicious anemia"
+    ],
+    "symptoms": [
+      [
+        "fatigue"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "ataxia"
+      ],
+      [
+        "paresthesia"
+      ],
+      [
+        "pallor"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "phacolytic glaucoma"
+    ],
+    "symptoms": [
+      [
+        "bloodshot eye"
+      ],
+      [
+        "loss of vision"
+      ],
+      [
+        "acute pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "phaeohyphomycosis"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pharyngitis"
+    ],
+    "symptoms": [
+      [
+        "low-grade fever"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "rhinorrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pharyngoconjunctival fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pheochromocytoma"
+    ],
+    "symptoms": [
+      [
+        "high blood pressure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "phlebitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "phlebotomus fever"
+    ],
+    "symptoms": [
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "flushing"
+      ],
+      [
+        "tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "photoallergic dermatitis"
+    ],
+    "symptoms": [
+      [
+        "eczema"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "plague"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "plantar fascial fibromatosis"
+    ],
+    "symptoms": [
+      [
+        "contracture"
+      ],
+      [
+        "hand weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "plantar wart"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 10"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 11"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 12"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 14"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 15"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 16"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 17"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 18"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 20"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "platelet-type bleeding disorder 8"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pleural disease"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ],
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pleural empyema"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "abscess"
+      ],
+      [
+        "chest pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pleural tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "allergic reaction"
+      ],
+      [
+        "pleural effusion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pleuropneumonia"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pneumocystosis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "dyspnea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pneumonia"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pneumonic plague"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "breathing problems"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pneumonic tularemia"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "breathing problems"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "poliomyelitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "stiff neck"
+      ],
+      [
+        "flaccid paralysis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "polyarteritis nodosa"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "polyclonal hypergammaglobulinemia"
+    ],
+    "symptoms": [
+      [
+        "hypergammaglobulinemia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "polymyositis"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "polyneuropathy"
+    ],
+    "symptoms": [
+      [
+        "peripheral muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pompholyx"
+    ],
+    "symptoms": [
+      [
+        "skin desquamation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "postpoliomyelitis syndrome"
+    ],
+    "symptoms": [
+      [
+        "muscle pain"
+      ],
+      [
+        "muscle weakness"
+      ],
+      [
+        "breathing problems"
+      ],
+      [
+        "sleep apnea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "primary amebic meningoencephalitis"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "coma"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "seizure"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "delirium"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "primary angle-closure glaucoma"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "primary ciliary dyskinesia"
+    ],
+    "symptoms": [
+      [
+        "short stature"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "primary ciliary dyskinesia 11"
+    ],
+    "symptoms": [
+      [
+        "chronic cough"
+      ],
+      [
+        "wet cough"
+      ],
+      [
+        "underweight"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "primary ciliary dyskinesia 12"
+    ],
+    "symptoms": [
+      [
+        "chronic cough"
+      ],
+      [
+        "wet cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "primary ciliary dyskinesia 2"
+    ],
+    "symptoms": [
+      [
+        "chronic cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "primary ciliary dyskinesia 22"
+    ],
+    "symptoms": [
+      [
+        "chronic cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "primary pulmonary hypertension"
+    ],
+    "symptoms": [
+      [
+        "dyspnea"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "leg swelling"
+      ],
+      [
+        "syncope"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "proctitis"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "progressive familial heart block"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "syncope"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "progressive familial heart block type II"
+    ],
+    "symptoms": [
+      [
+        "sinus bradycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "progressive multifocal leukoencephalopathy"
+    ],
+    "symptoms": [
+      [
+        "coma"
+      ],
+      [
+        "dysarthria"
+      ],
+      [
+        "hemiparesis"
+      ],
+      [
+        "aphasia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "progressive peripheral pterygium"
+    ],
+    "symptoms": [
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "prothrombin deficiency"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pseudobulbar palsy"
+    ],
+    "symptoms": [
+      [
+        "dysphagia"
+      ],
+      [
+        "dysarthria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pseudohypoparathyroidism type 1A"
+    ],
+    "symptoms": [
+      [
+        "short stature"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pulmonary fibrosis"
+    ],
+    "symptoms": [
+      [
+        "fatigue"
+      ],
+      [
+        "chronic cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pulmonary hemosiderosis"
+    ],
+    "symptoms": [
+      [
+        "dyspnea"
+      ],
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pulmonary sarcoidosis"
+    ],
+    "symptoms": [
+      [
+        "fatigue"
+      ],
+      [
+        "dyspnea"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "chronic cough"
+      ],
+      [
+        "wheezing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pulmonary tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "breathing problems"
+      ],
+      [
+        "pleural effusion"
+      ],
+      [
+        "caseation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "purpura fulminans"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pyometritis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "pyruvate carboxylase deficiency disease"
+    ],
+    "symptoms": [
+      [
+        "seizure"
+      ],
+      [
+        "failure to thrive"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rabies"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "paralysis"
+      ],
+      [
+        "dysphagia"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "itching"
+      ],
+      [
+        "anxiety"
+      ],
+      [
+        "delirium"
+      ],
+      [
+        "agitation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "radiculopathy"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "weakness"
+      ],
+      [
+        "paresthesia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rapadilino syndrome"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "respiratory syncytial virus infectious disease"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "rhinorrhea"
+      ],
+      [
+        "wheezing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "reticular dysgenesis"
+    ],
+    "symptoms": [
+      [
+        "lymphopenia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "retinal vasculitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rhabdomyolysis-myalgia syndrome"
+    ],
+    "symptoms": [
+      [
+        "cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rheumatic congestive heart failure"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rheumatic fever"
+    ],
+    "symptoms": [
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rheumatic heart disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "riboflavin deficiency"
+    ],
+    "symptoms": [
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "anemia"
+      ],
+      [
+        "conjunctivitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rickettsialpox"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rigid spine muscular dystrophy 1"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rippling muscle disease 1"
+    ],
+    "symptoms": [
+      [
+        "muscle pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "rubella"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "conjunctivitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "salmonellosis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "sarcocystosis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "low-grade fever"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "muscle tenderness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "scapuloperoneal spinal muscular atrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "schistosomiasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "hepatomegaly"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "hematuria"
+      ],
+      [
+        "splenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "scleromalacia perforans"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ],
+      [
+        "loss of vision"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "scleroperikeratitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "photophobia"
+      ],
+      [
+        "anterior scleral inflammation"
+      ],
+      [
+        "splitting of urinary stream"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "sclerosing keratitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "bloodshot eye"
+      ],
+      [
+        "keratitis"
+      ],
+      [
+        "photophobia"
+      ],
+      [
+        "corneal opacity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "scrub typhus"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "maculopapular rash"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "eschar"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "splenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "scurvy"
+    ],
+    "symptoms": [
+      [
+        "fatigue"
+      ],
+      [
+        "anemia"
+      ],
+      [
+        "weakness"
+      ],
+      [
+        "petechiae"
+      ],
+      [
+        "corkscrew hair"
+      ],
+      [
+        "poor wound healing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "seborrheic dermatitis"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ],
+      [
+        "itching"
+      ],
+      [
+        "skin desquamation"
+      ],
+      [
+        "hair loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "secretory diarrhea"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "seminal vesicle acute gonorrhea"
+    ],
+    "symptoms": [
+      [
+        "backache"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "sennetsu fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "septic arthritis"
+    ],
+    "symptoms": [
+      [
+        "arthritis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "septic myocarditis"
+    ],
+    "symptoms": [
+      [
+        "myocarditis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "septicemic plague"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "shock"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "prostration"
+      ],
+      [
+        "hemorrhage into skin"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "serous conjunctivitis except viral"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "severe acute respiratory syndrome"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "body ache"
+      ],
+      [
+        "dry cough"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "severe pre-eclampsia"
+    ],
+    "symptoms": [
+      [
+        "thrombocytopenia"
+      ],
+      [
+        "proteinuria"
+      ],
+      [
+        "cyanosis"
+      ],
+      [
+        "oliguria"
+      ],
+      [
+        "epigastric abdominal pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "shigellosis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "short QT syndrome"
+    ],
+    "symptoms": [
+      [
+        "arrhythmia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "sick building syndrome"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "breathing problems"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "sinusitis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ],
+      [
+        "weakness"
+      ],
+      [
+        "congestion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "sleeping sickness"
+    ],
+    "symptoms": [
+      [
+        "sensory disturbance"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "confusion"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "itching"
+      ],
+      [
+        "ataxia"
+      ],
+      [
+        "sleep disturbance"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "sodoku disease"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "joint pain"
+      ],
+      [
+        "relapsing fever"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "spinal muscular atrophy"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ],
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "spinal muscular atrophy with lower extremity predominant"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "spinal muscular atrophy with lower extremity predominant 2A"
+    ],
+    "symptoms": [
+      [
+        "muscle weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "spinal polio"
+    ],
+    "symptoms": [
+      [
+        "hind limb paralysis"
+      ],
+      [
+        "breathing problems"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "spinocerebellar ataxia type 28"
+    ],
+    "symptoms": [
+      [
+        "ptosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "splenic tuberculosis"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "spondyloepimetaphyseal dysplasia, Strudwick type"
+    ],
+    "symptoms": [
+      [
+        "short stature"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "spotted fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "maculopapular rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "fatigue"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "staphyloenterotoxemia"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "weakness"
+      ],
+      [
+        "cramp"
+      ],
+      [
+        "abdominal cramp"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "stress-induced childhood-onset neurodegeneration with variable ataxia and seizures"
+    ],
+    "symptoms": [
+      [
+        "seizure"
+      ],
+      [
+        "muscle weakness"
+      ],
+      [
+        "ataxia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "subacute bacterial endocarditis"
+    ],
+    "symptoms": [
+      [
+        "endocarditis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "superior semicircular canal dehiscence"
+    ],
+    "symptoms": [
+      [
+        "bone conduction hyperacusis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "supine hypotensive syndrome"
+    ],
+    "symptoms": [
+      [
+        "shock"
+      ],
+      [
+        "vascular alteration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "suppurative uveitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "pain"
+      ],
+      [
+        "bloodshot eye"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "swine influenza"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "lethargy"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "rhinorrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "sympathetic ophthalmia"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "photophobia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "syndromic X-linked intellectual disability Chudley-Schwartz type"
+    ],
+    "symptoms": [
+      [
+        "progressive weakness"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "syphilitic meningitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "systemic scleroderma"
+    ],
+    "symptoms": [
+      [
+        "vascular alteration"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "systolic heart failure"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tabes dorsalis"
+    ],
+    "symptoms": [
+      [
+        "ataxia"
+      ],
+      [
+        "paresthesia"
+      ],
+      [
+        "hyperesthesia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tetanus neonatorum"
+    ],
+    "symptoms": [
+      [
+        "breathing problems"
+      ],
+      [
+        "exhaustion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "thromboangiitis obliterans"
+    ],
+    "symptoms": [
+      [
+        "gangrene"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "thrombophlebitis"
+    ],
+    "symptoms": [
+      [
+        "phlebitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "thrombophlebitis migrans"
+    ],
+    "symptoms": [
+      [
+        "phlebitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tick paralysis"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ],
+      [
+        "flaccidity"
+      ],
+      [
+        "edema"
+      ],
+      [
+        "flaccid paralysis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tick-borne encephalitis"
+    ],
+    "symptoms": [
+      [
+        "sensory disturbance"
+      ],
+      [
+        "paralysis"
+      ],
+      [
+        "drowsiness"
+      ],
+      [
+        "confusion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tick-borne relapsing fever"
+    ],
+    "symptoms": [
+      [
+        "relapsing fever"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "enlargement of lymph nodes"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "tachycardia"
+      ],
+      [
+        "tachypnea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tinea capitis"
+    ],
+    "symptoms": [
+      [
+        "itching"
+      ],
+      [
+        "patches of hair loss with a black dot pattern"
+      ],
+      [
+        "boil"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tinea corporis"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tinea manuum"
+    ],
+    "symptoms": [
+      [
+        "itching"
+      ],
+      [
+        "paresthesia"
+      ],
+      [
+        "skin desquamation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tinea pedis"
+    ],
+    "symptoms": [
+      [
+        "skin desquamation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tinea profunda"
+    ],
+    "symptoms": [
+      [
+        "abscess"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tonsillitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "pharynx inflammation"
+      ],
+      [
+        "dysphagia"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "toxascariasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "vomiting"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "toxic myocarditis"
+    ],
+    "symptoms": [
+      [
+        "myocarditis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "toxic shock syndrome"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "shock"
+      ],
+      [
+        "hypotension"
+      ],
+      [
+        "skin desquamation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "toxocariasis"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "cough"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "anorexia"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "wheezing"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "toxoplasmosis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "anemia"
+      ],
+      [
+        "low white blood cell count"
+      ],
+      [
+        "hepatosplenomegaly"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "lymphadenopathy"
+      ],
+      [
+        "cervical lymphadenopathy"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tracheitis"
+    ],
+    "symptoms": [
+      [
+        "cough"
+      ],
+      [
+        "high fever"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tracheomalacia"
+    ],
+    "symptoms": [
+      [
+        "flaccidity"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "trichinosis"
+    ],
+    "symptoms": [
+      [
+        "myocarditis"
+      ],
+      [
+        "diarrhea"
+      ],
+      [
+        "hemorrhage"
+      ],
+      [
+        "vomiting"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "trichohepatoenteric syndrome"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "trichorhinophalangeal syndrome type II"
+    ],
+    "symptoms": [
+      [
+        "short stature"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "trichostrongylosis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "trichuriasis"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "abdominal pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tricuspid valve insufficiency"
+    ],
+    "symptoms": [
+      [
+        "heart failure"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tricuspid valve stenosis"
+    ],
+    "symptoms": [
+      [
+        "endocarditis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tropical sprue"
+    ],
+    "symptoms": [
+      [
+        "steatorrhea"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tuberculous epididymitis"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tuberculous peritonitis"
+    ],
+    "symptoms": [
+      [
+        "pain"
+      ],
+      [
+        "abdominal distention"
+      ],
+      [
+        "abdominal discomfort"
+      ],
+      [
+        "emaciation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tungiasis"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ],
+      [
+        "itching"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "typhoid fever"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "low white blood cell count"
+      ],
+      [
+        "prostration"
+      ],
+      [
+        "splenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "typhoidal tularemia"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "chills"
+      ],
+      [
+        "malaise"
+      ],
+      [
+        "weight loss"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "tyrosinemia type II"
+    ],
+    "symptoms": [
+      [
+        "keratitis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "upper respiratory tract disease"
+    ],
+    "symptoms": [
+      [
+        "stridor"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "uterine corpus apoplectic leiomyoma"
+    ],
+    "symptoms": [
+      [
+        "hemorrhage"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "uterine corpus epithelioid leiomyoma"
+    ],
+    "symptoms": [
+      [
+        "necrosis"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "uterine inflammatory disease"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "uveitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vaccinia"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "body ache"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vaginitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vasculitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vasomotor rhinitis"
+    ],
+    "symptoms": [
+      [
+        "shock"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vestibular neuronitis"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "vertigo"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "viral gastritis"
+    ],
+    "symptoms": [
+      [
+        "abdominal pain"
+      ],
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "bloating"
+      ],
+      [
+        "dyspepsia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "viral labyrinthitis"
+    ],
+    "symptoms": [
+      [
+        "vomiting"
+      ],
+      [
+        "nausea"
+      ],
+      [
+        "dizziness"
+      ],
+      [
+        "loss of balance"
+      ],
+      [
+        "tinnitus"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "visceral leishmaniasis"
+    ],
+    "symptoms": [
+      [
+        "fever"
+      ],
+      [
+        "hepatomegaly"
+      ],
+      [
+        "weight loss"
+      ],
+      [
+        "splenomegaly"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vitamin K deficiency bleeding"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "von Willebrand's disease 3"
+    ],
+    "symptoms": [
+      [
+        "bleeding"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vulvar syringoma"
+    ],
+    "symptoms": [
+      [
+        "itching"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vulvitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vulvovaginal candidiasis"
+    ],
+    "symptoms": [
+      [
+        "rash"
+      ],
+      [
+        "paresthesia"
+      ],
+      [
+        "dyspareunia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "vulvovaginitis"
+    ],
+    "symptoms": [
+      [
+        "inflammation"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "wet beriberi"
+    ],
+    "symptoms": [
+      [
+        "dyspnea"
+      ],
+      [
+        "tachycardia"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "wheat allergy"
+    ],
+    "symptoms": [
+      [
+        "diarrhea"
+      ],
+      [
+        "headache"
+      ],
+      [
+        "rash"
+      ],
+      [
+        "allergic reaction"
+      ],
+      [
+        "urticaria"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "yaws"
+    ],
+    "symptoms": [
+      [
+        "skin lesion"
+      ]
+    ]
+  },
+  {
+    "disease": [
+      "yellow fever"
+    ],
+    "symptoms": [
+      [
+        "headache"
+      ],
+      [
+        "backache"
+      ],
+      [
+        "fever"
+      ],
+      [
+        "loss of appetite"
+      ],
+      [
+        "hematemesis"
+      ],
+      [
+        "bleeding"
+      ],
+      [
+        "muscle pain"
+      ],
+      [
+        "jaundice"
+      ],
+      [
+        "nasal bleeding"
+      ],
+      [
+        "mouth bleeding"
+      ]
+    ]
+  }
+]

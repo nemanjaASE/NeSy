@@ -1,0 +1,22 @@
+[
+  {
+    "disease": "hepatitis D",
+    "uri": "http://purl.obolibrary.org/obo/DOID_2047",
+    "score": 6.37,
+    "match": 3,
+    "disease_coverage": "23.1%",
+    "input_coverage": "100.0%",
+    "matched_symptoms": ["lethargy", "jaundice", "dark urine"],
+    "missing_symptoms": ["drowsiness", "confusion", "coma", "fatigue", "anorexia", "nausea", "liver inflammation", "sleep disturbance", "acholic stool", "abnormal behavior"]
+  },
+  {
+    "disease": "hepatitis E",
+    "uri": "http://purl.obolibrary.org/obo/DOID_4411",
+    "score": 4.70,
+    "match": 2,
+    "disease_coverage": "18.2%",
+    "input_coverage": "66.7%",
+    "matched_symptoms": ["jaundice", "dark urine"],
+    "missing_symptoms": ["abdominal pain", "joint pain", "fever", "fatigue", "loss of appetite", "vomiting", "nausea", "liver inflammation", "acholic stool"]
+  }
+]

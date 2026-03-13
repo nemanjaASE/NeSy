@@ -1,0 +1,5703 @@
+[
+   {
+      "disease":"3-methylcrotonyl-CoA carboxylase deficiency",
+      "symptoms":[
+         "diarrhea",
+         "lethargy"
+      ],
+      "ranked":[
+         "swine influenza",
+         "3-methylcrotonyl-CoA carboxylase deficiency"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.566609259416854
+   },
+   {
+      "disease":"African tick-bite fever",
+      "symptoms":[
+         "maculopapular rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Alkhumra hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "joint pain",
+         "vomiting"
+      ],
+      "ranked":[
+         "Alkhumra hemorrhagic fever",
+         "Chapare hemorrhagic fever",
+         "Oropouche fever",
+         "Crimean-Congo hemorrhagic fever",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.26208835468033
+   },
+   {
+      "disease":"American histoplasmosis",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Argentine hemorrhagic fever",
+      "symptoms":[
+         "fever",
+         "fatigue",
+         "low white blood cell count"
+      ],
+      "ranked":[
+         "Argentine hemorrhagic fever",
+         "lupus erythematosus",
+         "typhoid fever",
+         "toxoplasmosis",
+         "spotted fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":18.306844338372276
+   },
+   {
+      "disease":"Astrakhan spotted fever",
+      "symptoms":[
+         "maculopapular rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Balkan hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "fever",
+         "flushing",
+         "renal failure",
+         "muscle pain"
+      ],
+      "ranked":[
+         "Balkan hemorrhagic fever",
+         "Hantavirus hemorrhagic fever with renal syndrome",
+         "Korean hemorrhagic fever",
+         "Lujo hemorrhagic fever",
+         "Oropouche fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":32.536556988755834
+   },
+   {
+      "disease":"Barmah Forest virus disease",
+      "symptoms":[
+         "rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Bolivian hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "joint pain",
+         "fever",
+         "fatigue",
+         "bronchopulmonary bleeding"
+      ],
+      "ranked":[
+         "Bolivian hemorrhagic fever",
+         "Brucella suis brucellosis",
+         "brucellosis",
+         "Borrelia miyamotoi disease",
+         "hepatitis A"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":30.24988735106769
+   },
+   {
+      "disease":"Bordetella parapertussis whooping cough",
+      "symptoms":[
+         "cough"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Borrelia miyamotoi disease",
+      "symptoms":[
+         "headache",
+         "joint pain",
+         "fever",
+         "fatigue",
+         "nausea",
+         "chills"
+      ],
+      "ranked":[
+         "Borrelia miyamotoi disease",
+         "Brucella suis brucellosis",
+         "hepatitis A",
+         "hepatitis B",
+         "hepatitis E"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":32.895605821049735
+   },
+   {
+      "disease":"Brazilian hemorrhagic fever",
+      "symptoms":[
+         "fever",
+         "fatigue",
+         "bloodshot eye"
+      ],
+      "ranked":[
+         "Brazilian hemorrhagic fever",
+         "Korean hemorrhagic fever",
+         "Ebola virus disease",
+         "spotted fever",
+         "human monocytic ehrlichiosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.920549977252385
+   },
+   {
+      "disease":"Brucella abortus brucellosis",
+      "symptoms":[
+         "headache",
+         "joint pain",
+         "fever",
+         "chills"
+      ],
+      "ranked":[
+         "Oropouche fever",
+         "Brucella suis brucellosis",
+         "Brucella abortus brucellosis",
+         "Borrelia miyamotoi disease",
+         "sarcocystosis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":21.510496510106755
+   },
+   {
+      "disease":"Brucella canis brucellosis",
+      "symptoms":[
+         "headache",
+         "fever",
+         "weakness"
+      ],
+      "ranked":[
+         "Venezuelan hemorrhagic fever",
+         "Murray Valley encephalitis",
+         "brucellosis",
+         "Brucella canis brucellosis",
+         "Ebola virus disease"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":16.387251497634338
+   },
+   {
+      "disease":"Brucella melitensis brucellosis",
+      "symptoms":[
+         "backache",
+         "fever"
+      ],
+      "ranked":[
+         "Korean hemorrhagic fever",
+         "sennetsu fever",
+         "listeriosis",
+         "brucellosis",
+         "Brucella melitensis brucellosis"
+      ],
+      "rank":5,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":11.636423739223883
+   },
+   {
+      "disease":"Brucella suis brucellosis",
+      "symptoms":[
+         "headache",
+         "joint pain",
+         "fever",
+         "fatigue",
+         "anorexia",
+         "chills"
+      ],
+      "ranked":[
+         "Brucella suis brucellosis",
+         "Oropouche fever",
+         "sennetsu fever",
+         "Borrelia miyamotoi disease",
+         "Brucella abortus brucellosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":34.11200114537423
+   },
+   {
+      "disease":"COVID-19",
+      "symptoms":[
+         "cough"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Chagas disease",
+      "symptoms":[
+         "myocarditis",
+         "diarrhea",
+         "headache",
+         "rash",
+         "fever",
+         "fatigue",
+         "loss of appetite"
+      ],
+      "ranked":[
+         "Chagas disease",
+         "human monocytic ehrlichiosis",
+         "human granulocytic anaplasmosis",
+         "Ebola virus disease",
+         "toxic shock syndrome"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":40.877143861975384
+   },
+   {
+      "disease":"Chapare hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "joint pain",
+         "vomiting",
+         "bleeding"
+      ],
+      "ranked":[
+         "Chapare hemorrhagic fever",
+         "Ebola virus disease",
+         "Bolivian hemorrhagic fever",
+         "Alkhumra hemorrhagic fever",
+         "Oropouche fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":21.870937936840964
+   },
+   {
+      "disease":"Churg-Strauss syndrome",
+      "symptoms":[
+         "rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Colorado tick fever",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Crimean-Congo hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "backache",
+         "joint pain",
+         "vomiting",
+         "bloodshot eye",
+         "epistaxis",
+         "jaundice",
+         "petechiae",
+         "high fever"
+      ],
+      "ranked":[
+         "Crimean-Congo hemorrhagic fever",
+         "Ebola virus disease",
+         "yellow fever",
+         "Korean hemorrhagic fever",
+         "hepatitis A"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":59.972299101366346
+   },
+   {
+      "disease":"Crohn's colitis",
+      "symptoms":[
+         "diarrhea",
+         "inflammation",
+         "skin lesion",
+         "bleeding"
+      ],
+      "ranked":[
+         "Crohn's colitis",
+         "vitamin K deficiency bleeding",
+         "ancylostomiasis",
+         "Marburg hemorrhagic fever",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":22.81295791468094
+   },
+   {
+      "disease":"Eastern equine encephalitis",
+      "symptoms":[
+         "headache",
+         "coma",
+         "vomiting",
+         "seizure",
+         "disorientation"
+      ],
+      "ranked":[
+         "Eastern equine encephalitis",
+         "Powassan encephalitis",
+         "primary amebic meningoencephalitis",
+         "West Nile encephalitis",
+         "Japanese encephalitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":31.545500606308984
+   },
+   {
+      "disease":"Ebola virus disease",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "rash",
+         "pharynx inflammation",
+         "joint pain",
+         "fever",
+         "vomiting",
+         "bloodshot eye",
+         "bleeding"
+      ],
+      "ranked":[
+         "Ebola virus disease",
+         "Marburg hemorrhagic fever",
+         "Lassa fever",
+         "Venezuelan hemorrhagic fever",
+         "Chagas disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":50.92933650279852
+   },
+   {
+      "disease":"Epstein-Barr virus hepatitis",
+      "symptoms":[
+         "headache",
+         "abdominal pain",
+         "fever",
+         "fatigue",
+         "nausea"
+      ],
+      "ranked":[
+         "Epstein-Barr virus hepatitis",
+         "hepatitis A",
+         "hepatitis B",
+         "hepatitis E",
+         "hepatitis C"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":26.71921089398596
+   },
+   {
+      "disease":"Far Eastern spotted fever",
+      "symptoms":[
+         "maculopapular rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Hantavirus hemorrhagic fever with renal syndrome",
+      "symptoms":[
+         "headache",
+         "fever",
+         "renal failure",
+         "muscle pain"
+      ],
+      "ranked":[
+         "Hantavirus hemorrhagic fever with renal syndrome",
+         "Balkan hemorrhagic fever",
+         "Lujo hemorrhagic fever",
+         "Oropouche fever",
+         "scrub typhus"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":24.34370985416297
+   },
+   {
+      "disease":"Haverhill fever",
+      "symptoms":[
+         "rash",
+         "joint pain"
+      ],
+      "ranked":[
+         "dengue disease",
+         "Barmah Forest virus disease",
+         "O'nyong-nyong fever",
+         "Ross River fever",
+         "Zika fever"
+      ],
+      "rank":7,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":12.166186564009625
+   },
+   {
+      "disease":"Indian tick typhus",
+      "symptoms":[
+         "maculopapular rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Israeli tick typhus",
+      "symptoms":[
+         "maculopapular rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Japanese encephalitis",
+      "symptoms":[
+         "headache",
+         "confusion",
+         "coma",
+         "tremor",
+         "disorientation",
+         "convulsion",
+         "stiff neck",
+         "high fever"
+      ],
+      "ranked":[
+         "West Nile encephalitis",
+         "Japanese encephalitis",
+         "St. Louis encephalitis",
+         "Powassan encephalitis",
+         "Eastern equine encephalitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":56.64105168170924
+   },
+   {
+      "disease":"Kawasaki disease",
+      "symptoms":[
+         "inflammation",
+         "fever"
+      ],
+      "ranked":[
+         "autoinflammatory disease",
+         "tonsillitis",
+         "orbital cellulitis",
+         "Kawasaki disease"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":9.690513590168568
+   },
+   {
+      "disease":"Klebsiella pneumonia",
+      "symptoms":[
+         "cough",
+         "high fever"
+      ],
+      "ranked":[
+         "epidemic typhus",
+         "Klebsiella pneumonia",
+         "tracheitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.60150463526747
+   },
+   {
+      "disease":"Korean hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "rash",
+         "backache",
+         "abdominal pain",
+         "fever",
+         "flushing",
+         "bloodshot eye",
+         "shock",
+         "low blood pressure",
+         "nausea"
+      ],
+      "ranked":[
+         "Korean hemorrhagic fever",
+         "nephropathia epidemica",
+         "toxic shock syndrome",
+         "Ebola virus disease",
+         "listeriosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":64.88838498885843
+   },
+   {
+      "disease":"Kunjin encephalitis",
+      "symptoms":[
+         "headache",
+         "confusion"
+      ],
+      "ranked":[
+         "West Nile encephalitis",
+         "Powassan encephalitis",
+         "Kunjin encephalitis",
+         "Japanese encephalitis",
+         "St. Louis encephalitis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.719899461381203
+   },
+   {
+      "disease":"Kyasanur forest disease",
+      "symptoms":[
+         "headache",
+         "cough",
+         "fever",
+         "bleeding"
+      ],
+      "ranked":[
+         "Kyasanur forest disease",
+         "Lassa fever",
+         "Lujo hemorrhagic fever",
+         "Bolivian hemorrhagic fever",
+         "Venezuelan hemorrhagic fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":20.54526819753751
+   },
+   {
+      "disease":"La Crosse encephalitis",
+      "symptoms":[
+         "headache",
+         "paralysis",
+         "coma"
+      ],
+      "ranked":[
+         "West Nile encephalitis",
+         "La Crosse encephalitis",
+         "Powassan encephalitis",
+         "meningovascular neurosyphilis",
+         "rabies"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":19.08239829390064
+   },
+   {
+      "disease":"Lassa fever",
+      "symptoms":[
+         "diarrhea",
+         "backache",
+         "abdominal pain",
+         "pharynx inflammation",
+         "cough",
+         "fever",
+         "vomiting",
+         "bleeding",
+         "proteinuria"
+      ],
+      "ranked":[
+         "Lassa fever",
+         "Marburg hemorrhagic fever",
+         "Ebola virus disease",
+         "swine influenza",
+         "avian influenza"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":53.50790762848116
+   },
+   {
+      "disease":"Legionnaires' disease",
+      "symptoms":[
+         "cough"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Leigh disease",
+      "symptoms":[
+         "loss of appetite",
+         "vomiting"
+      ],
+      "ranked":[
+         "gastroenteritis",
+         "oropharyngeal anthrax",
+         "gastrointestinal anthrax",
+         "gastroduodenal Crohn's disease",
+         "Chagas disease"
+      ],
+      "rank":8,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.870038590405386
+   },
+   {
+      "disease":"Lemierre's syndrome",
+      "symptoms":[
+         "chills"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Lujo hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "fever",
+         "bleeding"
+      ],
+      "ranked":[
+         "Lujo hemorrhagic fever",
+         "Bolivian hemorrhagic fever",
+         "Venezuelan hemorrhagic fever",
+         "Kyasanur forest disease",
+         "Marburg hemorrhagic fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":15.125009785184425
+   },
+   {
+      "disease":"Lyme disease",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"MELAS syndrome",
+      "symptoms":[
+         "headache",
+         "seizure",
+         "hemiparesis"
+      ],
+      "ranked":[
+         "MELAS syndrome",
+         "La Crosse encephalitis",
+         "Powassan encephalitis",
+         "primary amebic meningoencephalitis",
+         "Eastern equine encephalitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":19.70143750230686
+   },
+   {
+      "disease":"Marburg hemorrhagic fever",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "abdominal pain",
+         "pharynx inflammation",
+         "maculopapular rash",
+         "fever",
+         "vomiting",
+         "bleeding",
+         "nausea"
+      ],
+      "ranked":[
+         "Marburg hemorrhagic fever",
+         "West Nile fever",
+         "Lassa fever",
+         "Venezuelan hemorrhagic fever",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":50.45893084040834
+   },
+   {
+      "disease":"Murray Valley encephalitis",
+      "symptoms":[
+         "headache",
+         "drowsiness",
+         "confusion",
+         "fever",
+         "vomiting"
+      ],
+      "ranked":[
+         "Powassan encephalitis",
+         "Murray Valley encephalitis",
+         "Kunjin encephalitis",
+         "rabies",
+         "sleeping sickness"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":29.130655775196843
+   },
+   {
+      "disease":"Mycoplasma pneumoniae pneumonia",
+      "symptoms":[
+         "headache",
+         "pharynx inflammation",
+         "fever",
+         "chills"
+      ],
+      "ranked":[
+         "tonsillitis",
+         "Mycoplasma pneumoniae pneumonia",
+         "Marburg hemorrhagic fever",
+         "influenza",
+         "Venezuelan hemorrhagic fever"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":22.092418055556475
+   },
+   {
+      "disease":"Newcastle disease",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "paralysis"
+      ],
+      "ranked":[
+         "Newcastle disease",
+         "West Nile encephalitis",
+         "La Crosse encephalitis",
+         "Powassan encephalitis",
+         "meningovascular neurosyphilis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.25289849668974
+   },
+   {
+      "disease":"Nipah virus encephalitis",
+      "symptoms":[
+         "drowsiness",
+         "coma",
+         "alteration of consciousness"
+      ],
+      "ranked":[
+         "Nipah virus encephalitis",
+         "Powassan encephalitis",
+         "hepatitis D"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":23.53341780006147
+   },
+   {
+      "disease":"O'nyong-nyong fever",
+      "symptoms":[
+         "rash",
+         "joint pain"
+      ],
+      "ranked":[
+         "dengue disease",
+         "Barmah Forest virus disease",
+         "O'nyong-nyong fever",
+         "Ross River fever",
+         "Zika fever"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.166186564009625
+   },
+   {
+      "disease":"Omsk hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "fever",
+         "chills",
+         "stiff neck",
+         "hemoptysis",
+         "hematuria"
+      ],
+      "ranked":[
+         "Omsk hemorrhagic fever",
+         "schistosomiasis",
+         "Powassan encephalitis",
+         "Kyasanur forest disease",
+         "nonparalytic poliomyelitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":38.61919092300211
+   },
+   {
+      "disease":"Oropouche fever",
+      "symptoms":[
+         "headache",
+         "joint pain",
+         "fever",
+         "vomiting",
+         "anorexia"
+      ],
+      "ranked":[
+         "Oropouche fever",
+         "Brucella suis brucellosis",
+         "Venezuelan hemorrhagic fever",
+         "Western equine encephalitis",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":27.61083002145243
+   },
+   {
+      "disease":"Powassan encephalitis",
+      "symptoms":[
+         "headache",
+         "paralysis",
+         "drowsiness",
+         "confusion",
+         "coma",
+         "fever",
+         "vomiting",
+         "seizure"
+      ],
+      "ranked":[
+         "Powassan encephalitis",
+         "La Crosse encephalitis",
+         "Murray Valley encephalitis",
+         "West Nile encephalitis",
+         "primary amebic meningoencephalitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":49.77370181736215
+   },
+   {
+      "disease":"Q fever",
+      "symptoms":[
+         "headache",
+         "joint pain",
+         "cough"
+      ],
+      "ranked":[
+         "Q fever",
+         "sarcocystosis",
+         "Alkhumra hemorrhagic fever",
+         "Chapare hemorrhagic fever",
+         "Bolivian hemorrhagic fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.44701069317434
+   },
+   {
+      "disease":"Queensland tick typhus",
+      "symptoms":[
+         "headache",
+         "maculopapular rash",
+         "fever"
+      ],
+      "ranked":[
+         "spotted fever",
+         "Rocky Mountain spotted fever",
+         "Queensland tick typhus",
+         "scrub typhus",
+         "West Nile fever"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.387251497634338
+   },
+   {
+      "disease":"Ramsay Hunt syndrome",
+      "symptoms":[
+         "headache",
+         "paralysis"
+      ],
+      "ranked":[
+         "West Nile encephalitis",
+         "La Crosse encephalitis",
+         "Powassan encephalitis",
+         "meningovascular neurosyphilis",
+         "rabies"
+      ],
+      "rank":7,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":12.06820615564942
+   },
+   {
+      "disease":"Rickettsia parkeri spotted fever",
+      "symptoms":[
+         "headache",
+         "rash"
+      ],
+      "ranked":[
+         "ehrlichiosis",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis",
+         "Korean hemorrhagic fever",
+         "endemic typhus"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.087376902637693
+   },
+   {
+      "disease":"Rift Valley fever",
+      "symptoms":[
+         "hematemesis",
+         "menorrhagia"
+      ],
+      "ranked":[
+         "Venezuelan hemorrhagic fever",
+         "Rift Valley fever"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":15.757085609763356
+   },
+   {
+      "disease":"Ritter's disease",
+      "symptoms":[
+         "rash",
+         "fever",
+         "necrosis"
+      ],
+      "ranked":[
+         "Ritter's disease",
+         "epidemic pleurodynia",
+         "dengue disease",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.056682151576965
+   },
+   {
+      "disease":"Rocky Mountain spotted fever",
+      "symptoms":[
+         "headache",
+         "abdominal pain",
+         "maculopapular rash"
+      ],
+      "ranked":[
+         "Rocky Mountain spotted fever",
+         "Marburg hemorrhagic fever",
+         "spotted fever",
+         "Queensland tick typhus",
+         "scrub typhus"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.663003984354404
+   },
+   {
+      "disease":"Ross River fever",
+      "symptoms":[
+         "rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Siberian tick typhus",
+      "symptoms":[
+         "maculopapular rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"St. Louis encephalitis",
+      "symptoms":[
+         "headache",
+         "confusion",
+         "coma",
+         "tremor",
+         "disorientation",
+         "convulsion",
+         "stiff neck",
+         "high fever"
+      ],
+      "ranked":[
+         "West Nile encephalitis",
+         "Japanese encephalitis",
+         "St. Louis encephalitis",
+         "Powassan encephalitis",
+         "Eastern equine encephalitis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":56.64105168170924
+   },
+   {
+      "disease":"Venezuelan equine encephalitis",
+      "symptoms":[
+         "fever",
+         "chills",
+         "malaise"
+      ],
+      "ranked":[
+         "sennetsu fever",
+         "typhoidal tularemia",
+         "schistosomiasis",
+         "Brucella suis brucellosis",
+         "extrinsic allergic alveolitis"
+      ],
+      "rank":8,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":17.018363287274827
+   },
+   {
+      "disease":"Venezuelan hemorrhagic fever",
+      "symptoms":[
+         "headache",
+         "pharynx inflammation",
+         "fever",
+         "vomiting",
+         "hematemesis",
+         "anorexia",
+         "menorrhagia",
+         "gum bleeding",
+         "epistaxis",
+         "bleeding",
+         "hepatomegaly",
+         "nausea",
+         "melena"
+      ],
+      "ranked":[
+         "Venezuelan hemorrhagic fever",
+         "Marburg hemorrhagic fever",
+         "factor VII deficiency",
+         "factor XIII deficiency",
+         "chickenpox"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":86.80611627114202
+   },
+   {
+      "disease":"West Nile encephalitis",
+      "symptoms":[
+         "headache",
+         "paralysis",
+         "confusion",
+         "coma",
+         "tremor",
+         "disorientation",
+         "convulsion",
+         "stiff neck",
+         "muscle weakness",
+         "high fever"
+      ],
+      "ranked":[
+         "West Nile encephalitis",
+         "Japanese encephalitis",
+         "St. Louis encephalitis",
+         "Powassan encephalitis",
+         "Eastern equine encephalitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":68.47024093688817
+   },
+   {
+      "disease":"West Nile fever",
+      "symptoms":[
+         "headache",
+         "pharynx inflammation",
+         "maculopapular rash",
+         "fever",
+         "vomiting"
+      ],
+      "ranked":[
+         "West Nile fever",
+         "Marburg hemorrhagic fever",
+         "Venezuelan hemorrhagic fever",
+         "Ebola virus disease",
+         "nonparalytic poliomyelitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.257290088039724
+   },
+   {
+      "disease":"Western equine encephalitis",
+      "symptoms":[
+         "headache",
+         "fever",
+         "vomiting",
+         "anorexia",
+         "altered mental status",
+         "nausea"
+      ],
+      "ranked":[
+         "Western equine encephalitis",
+         "Venezuelan hemorrhagic fever",
+         "gastrointestinal tuberculosis",
+         "chickenpox",
+         "Oropouche fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":35.34105363409718
+   },
+   {
+      "disease":"Whitewater Arroyo hemorrhagic fever",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"Zika fever",
+      "symptoms":[
+         "headache",
+         "rash"
+      ],
+      "ranked":[
+         "ehrlichiosis",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis",
+         "Korean hemorrhagic fever",
+         "endemic typhus"
+      ],
+      "rank":6,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.087376902637693
+   },
+   {
+      "disease":"acanthocephaliasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "fever",
+         "constipation",
+         "vomiting",
+         "decreased appetite",
+         "abdominal distention",
+         "bloody stool"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "celiac disease",
+         "gastrointestinal tuberculosis",
+         "echinostomiasis",
+         "cryptosporidiosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":54.41459344394451
+   },
+   {
+      "disease":"actinomycosis",
+      "symptoms":[
+         "abscess"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"acute chest syndrome",
+      "symptoms":[
+         "cough",
+         "fever",
+         "pleuritic chest pain",
+         "leukocytosis"
+      ],
+      "ranked":[
+         "acute chest syndrome",
+         "Q fever",
+         "Klebsiella pneumonia",
+         "swine influenza",
+         "influenza"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":26.63582364728972
+   },
+   {
+      "disease":"acute closed-angle glaucoma",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"acute hemorrhagic conjunctivitis",
+      "symptoms":[
+         "bloodshot eye"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"adenoiditis",
+      "symptoms":[
+         "pain"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"aleutian mink disease",
+      "symptoms":[
+         "anemia",
+         "hepatomegaly",
+         "weight loss"
+      ],
+      "ranked":[
+         "aleutian mink disease",
+         "penicilliosis",
+         "visceral leishmaniasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":20.691836206334738
+   },
+   {
+      "disease":"allergic asthma",
+      "symptoms":[
+         "cough",
+         "dyspnea",
+         "allergic reaction",
+         "chest tightness"
+      ],
+      "ranked":[
+         "allergic asthma",
+         "asthma",
+         "bronchitis",
+         "extrinsic allergic alveolitis",
+         "allergic bronchopulmonary aspergillosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":26.321708317769787
+   },
+   {
+      "disease":"allergic bronchopulmonary aspergillosis",
+      "symptoms":[
+         "cough",
+         "fever"
+      ],
+      "ranked":[
+         "swine influenza",
+         "influenza",
+         "endemic typhus",
+         "intestinal schistosomiasis",
+         "COVID-19"
+      ],
+      "rank":15,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":9.96244730565221
+   },
+   {
+      "disease":"ancylostomiasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "severe diarrhea",
+         "anemia",
+         "bleeding"
+      ],
+      "ranked":[
+         "ancylostomiasis",
+         "Marburg hemorrhagic fever",
+         "Lassa fever",
+         "oropharyngeal anthrax",
+         "gastrointestinal anthrax"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":32.08088684053172
+   },
+   {
+      "disease":"anisakiasis",
+      "symptoms":[
+         "abdominal pain"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"anthrax disease",
+      "symptoms":[
+         "diarrhea",
+         "fever",
+         "dyspnea",
+         "nausea",
+         "hematochezia"
+      ],
+      "ranked":[
+         "anthrax disease",
+         "intestinal schistosomiasis",
+         "acanthocephaliasis",
+         "swine influenza",
+         "schistosomiasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":29.730389546550185
+   },
+   {
+      "disease":"appendicitis",
+      "symptoms":[
+         "fever"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"aqueous misdirection",
+      "symptoms":[
+         "pain",
+         "headache"
+      ],
+      "ranked":[
+         "primary angle-closure glaucoma",
+         "hypersecretion glaucoma",
+         "aqueous misdirection",
+         "neovascular glaucoma"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.220908295262216
+   },
+   {
+      "disease":"arthus reaction",
+      "symptoms":[
+         "hemorrhage"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"ascariasis",
+      "symptoms":[
+         "cough",
+         "vomiting",
+         "nausea"
+      ],
+      "ranked":[
+         "swine influenza",
+         "endemic typhus",
+         "avian influenza",
+         "ascariasis",
+         "gastroenteritis"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":16.245751935360637
+   },
+   {
+      "disease":"aspiration pneumonitis",
+      "symptoms":[
+         "cough",
+         "tachypnea",
+         "bloody sputum"
+      ],
+      "ranked":[
+         "aspiration pneumonitis",
+         "allergic asthma",
+         "acute chest syndrome"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":21.93948407416334
+   },
+   {
+      "disease":"asthma",
+      "symptoms":[
+         "inflammation",
+         "cough",
+         "dyspnea",
+         "chest tightness",
+         "wheezing"
+      ],
+      "ranked":[
+         "asthma",
+         "allergic asthma",
+         "bronchitis",
+         "bronchiolitis",
+         "cork-handlers' disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":32.2584903750035
+   },
+   {
+      "disease":"atrial fibrillation",
+      "symptoms":[
+         "confusion",
+         "fatigue",
+         "dyspnea",
+         "dizziness",
+         "weakness",
+         "arrhythmia",
+         "chest pain"
+      ],
+      "ranked":[
+         "atrial fibrillation",
+         "long COVID",
+         "panic disorder",
+         "Murray Valley encephalitis",
+         "primary pulmonary hypertension"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":47.85370644762628
+   },
+   {
+      "disease":"avian influenza",
+      "symptoms":[
+         "diarrhea",
+         "pharynx inflammation",
+         "cough",
+         "fever"
+      ],
+      "ranked":[
+         "swine influenza",
+         "avian influenza",
+         "Lassa fever",
+         "influenza",
+         "tonsillitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":21.781842163238842
+   },
+   {
+      "disease":"bacterial gastritis",
+      "symptoms":[
+         "abdominal pain",
+         "vomiting",
+         "nausea"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "nephropathia epidemica",
+         "celiac disease",
+         "giardiasis",
+         "echinostomiasis"
+      ],
+      "rank":14,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":16.643434903026748
+   },
+   {
+      "disease":"bagassosis",
+      "symptoms":[
+         "cough"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"balantidiasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "intestinal schistosomiasis",
+         "schistosomiasis",
+         "jejunoileitis",
+         "celiac disease"
+      ],
+      "rank":9,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.00263372105951
+   },
+   {
+      "disease":"beta-ketothiolase deficiency",
+      "symptoms":[
+         "lethargy",
+         "vomiting"
+      ],
+      "ranked":[
+         "swine influenza",
+         "3-methylcrotonyl-CoA carboxylase deficiency",
+         "beta-ketothiolase deficiency"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.617252992235608
+   },
+   {
+      "disease":"biotin-responsive basal ganglia disease",
+      "symptoms":[
+         "dysphagia",
+         "confusion"
+      ],
+      "ranked":[
+         "biotin-responsive basal ganglia disease",
+         "rabies"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":13.617019446267086
+   },
+   {
+      "disease":"bird fancier's lung",
+      "symptoms":[
+         "cough",
+         "fever",
+         "dyspnea"
+      ],
+      "ranked":[
+         "COVID-19",
+         "pneumocystosis",
+         "extrinsic allergic alveolitis",
+         "bird fancier's lung",
+         "pleural empyema"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":16.406094585435817
+   },
+   {
+      "disease":"boutonneuse fever",
+      "symptoms":[
+         "maculopapular rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"brain edema",
+      "symptoms":[
+         "coma",
+         "vomiting"
+      ],
+      "ranked":[
+         "Powassan encephalitis",
+         "primary amebic meningoencephalitis",
+         "brain edema",
+         "Eastern equine encephalitis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.249528212110292
+   },
+   {
+      "disease":"brain glioblastoma multiforme",
+      "symptoms":[
+         "headache",
+         "vomiting",
+         "nausea"
+      ],
+      "ranked":[
+         "primary amebic meningoencephalitis",
+         "nephropathia epidemica",
+         "Venezuelan hemorrhagic fever",
+         "endemic typhus",
+         "Murray Valley encephalitis"
+      ],
+      "rank":9,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":15.799464832732218
+   },
+   {
+      "disease":"brain stem infarction",
+      "symptoms":[
+         "hoarseness"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"brawny scleritis",
+      "symptoms":[
+         "pain"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"bronchiolitis",
+      "symptoms":[
+         "cough",
+         "fever",
+         "dyspnea"
+      ],
+      "ranked":[
+         "COVID-19",
+         "pneumocystosis",
+         "extrinsic allergic alveolitis",
+         "bird fancier's lung",
+         "pleural empyema"
+      ],
+      "rank":6,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":16.406094585435817
+   },
+   {
+      "disease":"bronchitis",
+      "symptoms":[
+         "low-grade fever",
+         "cough"
+      ],
+      "ranked":[
+         "inhalation anthrax",
+         "pharyngitis",
+         "bronchitis",
+         "sarcocystosis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":13.053489759010526
+   },
+   {
+      "disease":"brucellosis",
+      "symptoms":[
+         "headache",
+         "backache",
+         "joint pain",
+         "fever"
+      ],
+      "ranked":[
+         "brucellosis",
+         "Crimean-Congo hemorrhagic fever",
+         "Korean hemorrhagic fever",
+         "sennetsu fever",
+         "listeriosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":22.663176020045142
+   },
+   {
+      "disease":"bubonic plague",
+      "symptoms":[
+         "fever",
+         "chills"
+      ],
+      "ranked":[
+         "Korean hemorrhagic fever",
+         "influenza",
+         "sennetsu fever",
+         "endemic typhus",
+         "Oropouche fever"
+      ],
+      "rank":13,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":10.483744229285495
+   },
+   {
+      "disease":"bulbar polio",
+      "symptoms":[
+         "dysphagia"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"bulbospinal polio",
+      "symptoms":[
+         "paralysis",
+         "dysphagia"
+      ],
+      "ranked":[
+         "bulbospinal polio",
+         "rabies",
+         "central pontine myelinolysis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":13.9653261405353
+   },
+   {
+      "disease":"campylobacteriosis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "intestinal schistosomiasis",
+         "schistosomiasis",
+         "jejunoileitis",
+         "celiac disease"
+      ],
+      "rank":15,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.00263372105951
+   },
+   {
+      "disease":"cat-scratch disease",
+      "symptoms":[
+         "headache",
+         "backache"
+      ],
+      "ranked":[
+         "nephropathia epidemica",
+         "Korean hemorrhagic fever",
+         "sennetsu fever",
+         "listeriosis",
+         "brucellosis"
+      ],
+      "rank":6,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":12.06820615564942
+   },
+   {
+      "disease":"celiac disease",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "constipation"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "celiac disease",
+         "opisthorchiasis",
+         "gastrointestinal tuberculosis",
+         "paratyphoid fever"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":18.384550639436046
+   },
+   {
+      "disease":"central nervous system origin vertigo",
+      "symptoms":[
+         "vomiting",
+         "nausea",
+         "dizziness"
+      ],
+      "ranked":[
+         "viral labyrinthitis",
+         "central nervous system origin vertigo",
+         "lateral medullary syndrome",
+         "gastroenteritis",
+         "acanthocephaliasis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.839685661258773
+   },
+   {
+      "disease":"central pontine myelinolysis",
+      "symptoms":[
+         "paralysis"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"chickenpox",
+      "symptoms":[
+         "headache",
+         "pharynx inflammation",
+         "fever",
+         "anorexia"
+      ],
+      "ranked":[
+         "Venezuelan hemorrhagic fever",
+         "chickenpox",
+         "sennetsu fever",
+         "Oropouche fever",
+         "Brucella suis brucellosis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":22.95741549304308
+   },
+   {
+      "disease":"chikungunya",
+      "symptoms":[
+         "joint pain"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"cholera",
+      "symptoms":[
+         "diarrhea"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"chronic NK-cell lymphocytosis",
+      "symptoms":[
+         "joint pain",
+         "fever",
+         "cytopenia"
+      ],
+      "ranked":[
+         "chronic NK-cell lymphocytosis",
+         "chikungunya",
+         "dengue disease",
+         "Bolivian hemorrhagic fever",
+         "Oropouche fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":19.07549907144037
+   },
+   {
+      "disease":"chronic inflammation of lacrimal passage",
+      "symptoms":[
+         "inflammation"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"clonorchiasis",
+      "symptoms":[
+         "diarrhea"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"coccidioidomycosis",
+      "symptoms":[
+         "arthritis"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"congenital disorder of glycosylation Ih",
+      "symptoms":[
+         "diarrhea",
+         "vomiting",
+         "seizure",
+         "hepatomegaly",
+         "failure to thrive",
+         "ataxia",
+         "ascites",
+         "feeding problem"
+      ],
+      "ranked":[
+         "congenital disorder of glycosylation Ih",
+         "early congenital syphilis",
+         "pyruvate carboxylase deficiency disease",
+         "biotin-responsive basal ganglia disease",
+         "stress-induced childhood-onset neurodegeneration with variable ataxia and seizures"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":56.111619490089026
+   },
+   {
+      "disease":"copper deficiency myelopathy",
+      "symptoms":[
+         "anemia"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"cork-handlers' disease",
+      "symptoms":[
+         "cough",
+         "fever",
+         "dyspnea"
+      ],
+      "ranked":[
+         "COVID-19",
+         "pneumocystosis",
+         "extrinsic allergic alveolitis",
+         "bird fancier's lung",
+         "pleural empyema"
+      ],
+      "rank":7,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":16.406094585435817
+   },
+   {
+      "disease":"cryptogenic organizing pneumonia",
+      "symptoms":[
+         "inflammation"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"cryptosporidiosis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "fever",
+         "vomiting",
+         "nausea"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "echinostomiasis",
+         "cryptosporidiosis",
+         "Marburg hemorrhagic fever",
+         "celiac disease"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":26.370316137366192
+   },
+   {
+      "disease":"cyclosporiasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "low-grade fever",
+         "fatigue",
+         "vomiting",
+         "anorexia"
+      ],
+      "ranked":[
+         "cyclosporiasis",
+         "sarcocystosis",
+         "gastrointestinal tuberculosis",
+         "hepatitis A",
+         "hepatitis B"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":36.47270577684349
+   },
+   {
+      "disease":"cystic echinococcosis",
+      "symptoms":[
+         "cough",
+         "shock",
+         "abdominal mass",
+         "hemoptysis"
+      ],
+      "ranked":[
+         "cystic echinococcosis",
+         "lung carcinoma",
+         "paragonimiasis",
+         "Klebsiella pneumonia",
+         "hantavirus pulmonary syndrome"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.782404491807185
+   },
+   {
+      "disease":"dengue disease",
+      "symptoms":[
+         "rash",
+         "joint pain",
+         "fever",
+         "bleeding",
+         "muscle pain"
+      ],
+      "ranked":[
+         "dengue disease",
+         "Ebola virus disease",
+         "Chapare hemorrhagic fever",
+         "Oropouche fever",
+         "Borrelia miyamotoi disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.9519275560157
+   },
+   {
+      "disease":"dengue shock syndrome",
+      "symptoms":[
+         "gum bleeding",
+         "epistaxis",
+         "bleeding",
+         "shock"
+      ],
+      "ranked":[
+         "dengue shock syndrome",
+         "Venezuelan hemorrhagic fever",
+         "factor VII deficiency",
+         "factor XIII deficiency",
+         "Chapare hemorrhagic fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.460170037848744
+   },
+   {
+      "disease":"dientamoebiasis",
+      "symptoms":[
+         "diarrhea",
+         "fatigue",
+         "loss of appetite",
+         "nausea"
+      ],
+      "ranked":[
+         "dientamoebiasis",
+         "hepatitis A",
+         "hepatitis B",
+         "hepatitis E",
+         "hepatitis C"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":23.20450416852961
+   },
+   {
+      "disease":"diphyllobothriasis",
+      "symptoms":[
+         "diarrhea",
+         "vomiting"
+      ],
+      "ranked":[
+         "gastroenteritis",
+         "oropharyngeal anthrax",
+         "gastrointestinal anthrax",
+         "acanthocephaliasis",
+         "mesocestoidiasis"
+      ],
+      "rank":10,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":10.420028414899388
+   },
+   {
+      "disease":"dominant optic atrophy plus syndrome",
+      "symptoms":[
+         "ataxia",
+         "loss of vision"
+      ],
+      "ranked":[
+         "dominant optic atrophy plus syndrome"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":13.9653261405353
+   },
+   {
+      "disease":"dry beriberi",
+      "symptoms":[
+         "confusion",
+         "vomiting"
+      ],
+      "ranked":[
+         "Powassan encephalitis",
+         "dry beriberi",
+         "Murray Valley encephalitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.981264225515613
+   },
+   {
+      "disease":"early congenital syphilis",
+      "symptoms":[
+         "seizure",
+         "skin lesion",
+         "hepatosplenomegaly",
+         "enlargement of lymph nodes",
+         "failure to thrive",
+         "hydrocephalus"
+      ],
+      "ranked":[
+         "early congenital syphilis",
+         "congenital disorder of glycosylation Ih",
+         "pyruvate carboxylase deficiency disease",
+         "sennetsu fever",
+         "louse-borne relapsing fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":43.83619493367516
+   },
+   {
+      "disease":"echinostomiasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "fever"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "intestinal schistosomiasis",
+         "schistosomiasis",
+         "paragonimiasis",
+         "echinostomiasis"
+      ],
+      "rank":5,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":15.544822614358637
+   },
+   {
+      "disease":"ehrlichiosis",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"endemic typhus",
+      "symptoms":[
+         "headache",
+         "rash",
+         "cough",
+         "fever",
+         "vomiting"
+      ],
+      "ranked":[
+         "endemic typhus",
+         "Chagas disease",
+         "Ebola virus disease",
+         "toxic shock syndrome",
+         "hantavirus pulmonary syndrome"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":26.28516028214898
+   },
+   {
+      "disease":"enthesopathy",
+      "symptoms":[
+         "inflammation"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"eosinophilic pneumonia",
+      "symptoms":[
+         "cough",
+         "fever",
+         "breathing problems"
+      ],
+      "ranked":[
+         "pneumonic plague",
+         "pulmonary tuberculosis",
+         "eosinophilic pneumonia",
+         "pneumonic tularemia",
+         "swine influenza"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.056682151576965
+   },
+   {
+      "disease":"epidemic pleurodynia",
+      "symptoms":[
+         "headache",
+         "fever",
+         "malaise"
+      ],
+      "ranked":[
+         "sennetsu fever",
+         "epidemic pleurodynia",
+         "listeriosis",
+         "Brucella suis brucellosis",
+         "Brucella abortus brucellosis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.050779261013123
+   },
+   {
+      "disease":"epidemic typhus",
+      "symptoms":[
+         "rash",
+         "cough",
+         "chills",
+         "high fever",
+         "photophobia"
+      ],
+      "ranked":[
+         "epidemic typhus",
+         "endemic typhus",
+         "Venezuelan equine encephalitis",
+         "Eastern equine encephalitis",
+         "Klebsiella pneumonia"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":31.837711787081254
+   },
+   {
+      "disease":"episcleritis periodica fugax",
+      "symptoms":[
+         "inflammation",
+         "pain"
+      ],
+      "ranked":[
+         "enthesopathy",
+         "interstitial keratitis",
+         "chronic inflammation of lacrimal passage",
+         "episcleritis periodica fugax",
+         "suppurative uveitis"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":11.395261682406993
+   },
+   {
+      "disease":"esophageal tuberculosis",
+      "symptoms":[
+         "dysphagia",
+         "cough",
+         "fever"
+      ],
+      "ranked":[
+         "tonsillitis",
+         "esophageal tuberculosis",
+         "rabies",
+         "swine influenza",
+         "influenza"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.833538600262756
+   },
+   {
+      "disease":"extrinsic allergic alveolitis",
+      "symptoms":[
+         "cough",
+         "fever",
+         "dyspnea",
+         "loss of appetite",
+         "allergic reaction",
+         "chills"
+      ],
+      "ranked":[
+         "extrinsic allergic alveolitis",
+         "allergic asthma",
+         "allergic bronchopulmonary aspergillosis",
+         "COVID-19",
+         "pneumocystosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":35.47045148032294
+   },
+   {
+      "disease":"factor VII deficiency",
+      "symptoms":[
+         "menorrhagia",
+         "gum bleeding"
+      ],
+      "ranked":[
+         "Venezuelan hemorrhagic fever",
+         "factor VII deficiency",
+         "factor XIII deficiency"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":15.939407166557311
+   },
+   {
+      "disease":"factor XIII deficiency",
+      "symptoms":[
+         "menorrhagia",
+         "gum bleeding",
+         "epistaxis",
+         "bleeding"
+      ],
+      "ranked":[
+         "Venezuelan hemorrhagic fever",
+         "factor VII deficiency",
+         "factor XIII deficiency",
+         "dengue shock syndrome"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":29.335638775202646
+   },
+   {
+      "disease":"familial hemiplegic migraine",
+      "symptoms":[
+         "drowsiness",
+         "confusion"
+      ],
+      "ranked":[
+         "Powassan encephalitis",
+         "tick-borne encephalitis",
+         "Murray Valley encephalitis",
+         "hepatitis D",
+         "familial hemiplegic migraine"
+      ],
+      "rank":5,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":14.379159498313982
+   },
+   {
+      "disease":"fascioliasis",
+      "symptoms":[
+         "diarrhea"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"fasciolopsiasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "fever"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "intestinal schistosomiasis",
+         "schistosomiasis",
+         "paragonimiasis",
+         "echinostomiasis"
+      ],
+      "rank":9,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":15.544822614358637
+   },
+   {
+      "disease":"filarial elephantiasis",
+      "symptoms":[
+         "fever",
+         "lymphadenitis",
+         "abscess"
+      ],
+      "ranked":[
+         "filarial elephantiasis",
+         "O'nyong-nyong fever",
+         "bubonic plague",
+         "gastrointestinal tularemia",
+         "human immunodeficiency virus infectious disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":19.075499071440365
+   },
+   {
+      "disease":"foodborne botulism",
+      "symptoms":[
+         "dysphagia",
+         "dysphonia",
+         "dysarthria"
+      ],
+      "ranked":[
+         "foodborne botulism",
+         "myasthenia gravis",
+         "pseudobulbar palsy",
+         "central pontine myelinolysis",
+         "bulbar polio"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":23.13900252813989
+   },
+   {
+      "disease":"gas gangrene",
+      "symptoms":[
+         "gangrene"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"gastroduodenal Crohn's disease",
+      "symptoms":[
+         "inflammation",
+         "loss of appetite",
+         "vomiting"
+      ],
+      "ranked":[
+         "gastroduodenal Crohn's disease",
+         "gastroenteritis",
+         "oropharyngeal anthrax",
+         "gastrointestinal anthrax",
+         "Chagas disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.01836328727483
+   },
+   {
+      "disease":"gastroenteritis",
+      "symptoms":[
+         "diarrhea",
+         "loss of appetite",
+         "vomiting",
+         "nausea",
+         "abdominal discomfort"
+      ],
+      "ranked":[
+         "gastroenteritis",
+         "mesocestoidiasis",
+         "diphyllobothriasis",
+         "gastroduodenal Crohn's disease",
+         "hepatitis A"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":30.432270407078885
+   },
+   {
+      "disease":"gastrointestinal anthrax",
+      "symptoms":[
+         "diarrhea",
+         "loss of appetite",
+         "vomiting"
+      ],
+      "ranked":[
+         "gastroenteritis",
+         "oropharyngeal anthrax",
+         "gastrointestinal anthrax",
+         "Chagas disease",
+         "toxascariasis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.054730931445704
+   },
+   {
+      "disease":"gastrointestinal tuberculosis",
+      "symptoms":[
+         "abdominal pain",
+         "fever",
+         "constipation",
+         "vomiting",
+         "anorexia"
+      ],
+      "ranked":[
+         "gastrointestinal tuberculosis",
+         "paratyphoid fever",
+         "acanthocephaliasis",
+         "celiac disease",
+         "cyclosporiasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":29.783936039026898
+   },
+   {
+      "disease":"gastrointestinal tularemia",
+      "symptoms":[
+         "fever",
+         "vomiting",
+         "chills"
+      ],
+      "ranked":[
+         "endemic typhus",
+         "Oropouche fever",
+         "gastrointestinal tularemia",
+         "Marburg hemorrhagic fever",
+         "hantavirus pulmonary syndrome"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":15.719080303144569
+   },
+   {
+      "disease":"giardiasis",
+      "symptoms":[
+         "steatorrhea",
+         "diarrhea",
+         "abdominal pain",
+         "vomiting"
+      ],
+      "ranked":[
+         "giardiasis",
+         "acanthocephaliasis",
+         "celiac disease",
+         "echinostomiasis",
+         "cyclosporiasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":24.430816929511444
+   },
+   {
+      "disease":"glanders",
+      "symptoms":[
+         "headache",
+         "fever",
+         "chills"
+      ],
+      "ranked":[
+         "Korean hemorrhagic fever",
+         "sennetsu fever",
+         "endemic typhus",
+         "Oropouche fever",
+         "rickettsialpox"
+      ],
+      "rank":9,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":15.45771553901016
+   },
+   {
+      "disease":"glycogen storage disease IXb",
+      "symptoms":[
+         "hepatomegaly"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"gonorrhea",
+      "symptoms":[
+         "bleeding"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"hand, foot and mouth disease",
+      "symptoms":[
+         "rash",
+         "pharynx inflammation"
+      ],
+      "ranked":[
+         "Ebola virus disease",
+         "hand, foot and mouth disease"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.748108109459345
+   },
+   {
+      "disease":"hantavirus pulmonary syndrome",
+      "symptoms":[
+         "headache",
+         "cough",
+         "fever",
+         "vomiting",
+         "shock",
+         "chills"
+      ],
+      "ranked":[
+         "hantavirus pulmonary syndrome",
+         "endemic typhus",
+         "Korean hemorrhagic fever",
+         "toxic shock syndrome",
+         "sarcocystosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":33.20754487114707
+   },
+   {
+      "disease":"hemophagocytic lymphohistiocytosis",
+      "symptoms":[
+         "hepatosplenomegaly"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"hepatic tuberculosis",
+      "symptoms":[
+         "abdominal pain",
+         "fever",
+         "anorexia"
+      ],
+      "ranked":[
+         "gastrointestinal tuberculosis",
+         "paratyphoid fever",
+         "hepatic tuberculosis",
+         "cyclosporiasis",
+         "Venezuelan hemorrhagic fever"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.16668304679129
+   },
+   {
+      "disease":"hepatitis A",
+      "symptoms":[
+         "abdominal pain",
+         "joint pain",
+         "fever",
+         "fatigue",
+         "loss of appetite",
+         "vomiting",
+         "nausea",
+         "jaundice"
+      ],
+      "ranked":[
+         "hepatitis A",
+         "hepatitis B",
+         "hepatitis E",
+         "hepatitis C",
+         "Epstein-Barr virus hepatitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":46.76229399168803
+   },
+   {
+      "disease":"hepatitis B",
+      "symptoms":[
+         "abdominal pain",
+         "joint pain",
+         "fever",
+         "fatigue",
+         "loss of appetite",
+         "vomiting",
+         "nausea",
+         "jaundice"
+      ],
+      "ranked":[
+         "hepatitis A",
+         "hepatitis B",
+         "hepatitis E",
+         "hepatitis C",
+         "Epstein-Barr virus hepatitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":46.76229399168803
+   },
+   {
+      "disease":"hepatitis C",
+      "symptoms":[
+         "abdominal pain",
+         "joint pain",
+         "fever",
+         "fatigue",
+         "loss of appetite",
+         "vomiting",
+         "nausea",
+         "jaundice"
+      ],
+      "ranked":[
+         "hepatitis A",
+         "hepatitis B",
+         "hepatitis E",
+         "hepatitis C",
+         "Epstein-Barr virus hepatitis"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":46.76229399168803
+   },
+   {
+      "disease":"hepatitis D",
+      "symptoms":[
+         "drowsiness",
+         "confusion",
+         "lethargy",
+         "coma",
+         "fatigue",
+         "anorexia",
+         "nausea",
+         "jaundice",
+         "liver inflammation",
+         "sleep disturbance",
+         "acholic stool"
+      ],
+      "ranked":[
+         "hepatitis D",
+         "hepatitis A",
+         "hepatitis B",
+         "hepatitis E",
+         "hepatitis C"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":77.6056331215305
+   },
+   {
+      "disease":"hepatitis E",
+      "symptoms":[
+         "abdominal pain",
+         "joint pain",
+         "fever",
+         "fatigue",
+         "loss of appetite",
+         "vomiting",
+         "nausea",
+         "jaundice",
+         "liver inflammation"
+      ],
+      "ranked":[
+         "hepatitis A",
+         "hepatitis B",
+         "hepatitis E",
+         "hepatitis C",
+         "Epstein-Barr virus hepatitis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":54.038850394406744
+   },
+   {
+      "disease":"herpangina",
+      "symptoms":[
+         "pharynx inflammation"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"herpes zoster",
+      "symptoms":[
+         "headache",
+         "fever",
+         "itching"
+      ],
+      "ranked":[
+         "rabies",
+         "sleeping sickness",
+         "herpes zoster",
+         "spotted fever",
+         "legionellosis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.697406425938176
+   },
+   {
+      "disease":"hidradenitis",
+      "symptoms":[
+         "inflammation",
+         "pain"
+      ],
+      "ranked":[
+         "enthesopathy",
+         "interstitial keratitis",
+         "chronic inflammation of lacrimal passage",
+         "episcleritis periodica fugax",
+         "suppurative uveitis"
+      ],
+      "rank":9,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.395261682406993
+   },
+   {
+      "disease":"hidradenitis suppurativa",
+      "symptoms":[
+         "inflammation",
+         "pain"
+      ],
+      "ranked":[
+         "enthesopathy",
+         "interstitial keratitis",
+         "chronic inflammation of lacrimal passage",
+         "episcleritis periodica fugax",
+         "suppurative uveitis"
+      ],
+      "rank":8,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.395261682406993
+   },
+   {
+      "disease":"histoplasmosis",
+      "symptoms":[
+         "headache",
+         "cough"
+      ],
+      "ranked":[
+         "endemic typhus",
+         "Q fever",
+         "Kyasanur forest disease",
+         "tonsillitis",
+         "histoplasmosis"
+      ],
+      "rank":5,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":10.394229722077748
+   },
+   {
+      "disease":"human granulocytic anaplasmosis",
+      "symptoms":[
+         "headache",
+         "rash"
+      ],
+      "ranked":[
+         "ehrlichiosis",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis",
+         "Korean hemorrhagic fever",
+         "endemic typhus"
+      ],
+      "rank":11,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.087376902637693
+   },
+   {
+      "disease":"human immunodeficiency virus infectious disease",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "pharynx inflammation",
+         "fever",
+         "fatigue"
+      ],
+      "ranked":[
+         "human immunodeficiency virus infectious disease",
+         "nonparalytic poliomyelitis",
+         "poliomyelitis",
+         "Marburg hemorrhagic fever",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":27.13050692240492
+   },
+   {
+      "disease":"human monocytic ehrlichiosis",
+      "symptoms":[
+         "headache",
+         "rash"
+      ],
+      "ranked":[
+         "ehrlichiosis",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis",
+         "Korean hemorrhagic fever",
+         "endemic typhus"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.087376902637693
+   },
+   {
+      "disease":"hypersecretion glaucoma",
+      "symptoms":[
+         "pain",
+         "headache"
+      ],
+      "ranked":[
+         "primary angle-closure glaucoma",
+         "hypersecretion glaucoma",
+         "aqueous misdirection",
+         "neovascular glaucoma"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.220908295262216
+   },
+   {
+      "disease":"hypersensitivity vasculitis",
+      "symptoms":[
+         "urticaria"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"hypervitaminosis A",
+      "symptoms":[
+         "joint pain",
+         "fever",
+         "anorexia"
+      ],
+      "ranked":[
+         "Oropouche fever",
+         "Brucella suis brucellosis",
+         "hypervitaminosis A",
+         "Venezuelan hemorrhagic fever",
+         "sennetsu fever"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.401522637868695
+   },
+   {
+      "disease":"hypervitaminosis D",
+      "symptoms":[
+         "fatigue",
+         "nausea",
+         "irritability"
+      ],
+      "ranked":[
+         "hypervitaminosis D",
+         "parenchymatous neurosyphilis",
+         "Epstein-Barr virus hepatitis",
+         "hepatitis A",
+         "cyclosporiasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":19.01834065760042
+   },
+   {
+      "disease":"ileitis",
+      "symptoms":[
+         "diarrhea"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"ileocolitis",
+      "symptoms":[
+         "diarrhea",
+         "inflammation"
+      ],
+      "ranked":[
+         "Crohn's colitis",
+         "ileocolitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":10.333017037909759
+   },
+   {
+      "disease":"infant botulism",
+      "symptoms":[
+         "dysphagia",
+         "lethargy",
+         "constipation"
+      ],
+      "ranked":[
+         "infant botulism"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":21.634925131363616
+   },
+   {
+      "disease":"infectious mononucleosis",
+      "symptoms":[
+         "fever",
+         "fatigue",
+         "enlargement of lymph nodes"
+      ],
+      "ranked":[
+         "sennetsu fever",
+         "lymph node tuberculosis",
+         "infectious mononucleosis",
+         "Queensland tick typhus",
+         "pharyngoconjunctival fever"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.27722492119112
+   },
+   {
+      "disease":"influenza",
+      "symptoms":[
+         "pharynx inflammation",
+         "cough",
+         "fever",
+         "chills",
+         "muscle pain",
+         "rhinorrhea"
+      ],
+      "ranked":[
+         "influenza",
+         "swine influenza",
+         "hantavirus pulmonary syndrome",
+         "tonsillitis",
+         "respiratory syncytial virus infectious disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":36.96078970121591
+   },
+   {
+      "disease":"inhalation anthrax",
+      "symptoms":[
+         "chest discomfort",
+         "pharynx inflammation",
+         "low-grade fever",
+         "cough"
+      ],
+      "ranked":[
+         "inhalation anthrax",
+         "lung carcinoma",
+         "pharyngitis",
+         "bronchitis",
+         "sarcocystosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.168721482601484
+   },
+   {
+      "disease":"interstitial keratitis",
+      "symptoms":[
+         "inflammation"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"interstitial lung disease",
+      "symptoms":[
+         "inflammation"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"interval angle-closure glaucoma",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"intestinal schistosomiasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "cough",
+         "fever",
+         "hepatosplenomegaly"
+      ],
+      "ranked":[
+         "intestinal schistosomiasis",
+         "paragonimiasis",
+         "paratyphoid fever",
+         "Lassa fever",
+         "toxocariasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":27.599783543258038
+   },
+   {
+      "disease":"intestinal tuberculosis",
+      "symptoms":[
+         "abdominal pain",
+         "vomiting",
+         "bleeding"
+      ],
+      "ranked":[
+         "intestinal tuberculosis",
+         "Marburg hemorrhagic fever",
+         "Lassa fever",
+         "ancylostomiasis",
+         "acanthocephaliasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.6621270360389
+   },
+   {
+      "disease":"intracranial hypertension",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"irritant dermatitis",
+      "symptoms":[
+         "pain",
+         "edema"
+      ],
+      "ranked":[
+         "hidradenitis",
+         "irritant dermatitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":13.880168332194994
+   },
+   {
+      "disease":"jejunoileitis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "intestinal schistosomiasis",
+         "schistosomiasis",
+         "jejunoileitis",
+         "celiac disease"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":11.00263372105951
+   },
+   {
+      "disease":"kwashiorkor",
+      "symptoms":[
+         "swelling symptom",
+         "cough",
+         "edema"
+      ],
+      "ranked":[
+         "kwashiorkor"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":21.24633689360339
+   },
+   {
+      "disease":"laryngeal tuberculosis",
+      "symptoms":[
+         "dysphagia"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"lateral medullary syndrome",
+      "symptoms":[
+         "nausea",
+         "dizziness"
+      ],
+      "ranked":[
+         "viral labyrinthitis",
+         "central nervous system origin vertigo",
+         "lateral medullary syndrome"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.6043495873997
+   },
+   {
+      "disease":"legionellosis",
+      "symptoms":[
+         "diarrhea",
+         "headache"
+      ],
+      "ranked":[
+         "legionellosis",
+         "listeriosis",
+         "Chagas disease",
+         "typhoid fever",
+         "Marburg hemorrhagic fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":10.158663650764982
+   },
+   {
+      "disease":"leptospirosis",
+      "symptoms":[
+         "fever",
+         "hepatomegaly",
+         "chills",
+         "muscle pain"
+      ],
+      "ranked":[
+         "leptospirosis",
+         "schistosomiasis",
+         "influenza",
+         "Oropouche fever",
+         "Borrelia miyamotoi disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":24.13263888408303
+   },
+   {
+      "disease":"listeriosis",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "backache",
+         "fever",
+         "vomiting"
+      ],
+      "ranked":[
+         "listeriosis",
+         "Lassa fever",
+         "Chagas disease",
+         "Marburg hemorrhagic fever",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":27.03042346384794
+   },
+   {
+      "disease":"long COVID",
+      "symptoms":[
+         "headache",
+         "confusion",
+         "fatigue",
+         "dizziness",
+         "concentration difficulty",
+         "breathing problems",
+         "memory loss",
+         "tachycardia"
+      ],
+      "ranked":[
+         "long COVID",
+         "meningovascular neurosyphilis",
+         "atrial fibrillation",
+         "parenchymatous neurosyphilis",
+         "sick building syndrome"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":55.92988599564663
+   },
+   {
+      "disease":"louping ill",
+      "symptoms":[
+         "lethargy"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"louse-borne relapsing fever",
+      "symptoms":[
+         "relapsing fever",
+         "hepatosplenomegaly",
+         "enlargement of lymph nodes",
+         "lymphadenopathy"
+      ],
+      "ranked":[
+         "louse-borne relapsing fever",
+         "tick-borne relapsing fever",
+         "early congenital syphilis",
+         "sennetsu fever",
+         "hemophagocytic lymphohistiocytosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.233260003739062
+   },
+   {
+      "disease":"lung carcinoma",
+      "symptoms":[
+         "chest discomfort",
+         "cough",
+         "weight loss"
+      ],
+      "ranked":[
+         "lung carcinoma",
+         "inhalation anthrax",
+         "extrinsic allergic alveolitis",
+         "lymph node tuberculosis",
+         "esophageal tuberculosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":20.301875284762538
+   },
+   {
+      "disease":"lupus erythematosus",
+      "symptoms":[
+         "rash",
+         "fatigue",
+         "seizure",
+         "low white blood cell count",
+         "thrombocytopenia"
+      ],
+      "ranked":[
+         "lupus erythematosus",
+         "Argentine hemorrhagic fever",
+         "ehrlichiosis",
+         "human monocytic ehrlichiosis",
+         "Chagas disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":34.045911442632956
+   },
+   {
+      "disease":"lymph node tuberculosis",
+      "symptoms":[
+         "cough",
+         "fever",
+         "fatigue",
+         "weight loss",
+         "enlargement of lymph nodes"
+      ],
+      "ranked":[
+         "lymph node tuberculosis",
+         "sennetsu fever",
+         "infectious mononucleosis",
+         "extrinsic allergic alveolitis",
+         "esophageal tuberculosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":29.09857099890901
+   },
+   {
+      "disease":"lymphocytic choriomeningitis",
+      "symptoms":[
+         "headache",
+         "fever",
+         "vomiting"
+      ],
+      "ranked":[
+         "Powassan encephalitis",
+         "Venezuelan hemorrhagic fever",
+         "endemic typhus",
+         "Oropouche fever",
+         "Murray Valley encephalitis"
+      ],
+      "rank":14,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":14.751496276882863
+   },
+   {
+      "disease":"marasmus",
+      "symptoms":[
+         "constipation",
+         "bradycardia",
+         "decreased metabolism",
+         "weight gain",
+         "loss of height"
+      ],
+      "ranked":[
+         "marasmus",
+         "paratyphoid fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":42.520429070879615
+   },
+   {
+      "disease":"measles",
+      "symptoms":[
+         "cough"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"meningovascular neurosyphilis",
+      "symptoms":[
+         "headache",
+         "paralysis",
+         "dizziness",
+         "stiff neck",
+         "muscle weakness",
+         "memory impairment",
+         "urinary incontinence"
+      ],
+      "ranked":[
+         "meningovascular neurosyphilis",
+         "West Nile encephalitis",
+         "Powassan encephalitis",
+         "Japanese encephalitis",
+         "St. Louis encephalitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":48.77058755637481
+   },
+   {
+      "disease":"mesocestoidiasis",
+      "symptoms":[
+         "diarrhea",
+         "vomiting"
+      ],
+      "ranked":[
+         "gastroenteritis",
+         "oropharyngeal anthrax",
+         "gastrointestinal anthrax",
+         "acanthocephaliasis",
+         "mesocestoidiasis"
+      ],
+      "rank":5,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":10.420028414899388
+   },
+   {
+      "disease":"middle lobe syndrome",
+      "symptoms":[
+         "enlargement of lymph nodes"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"milker's nodule",
+      "symptoms":[
+         "enlargement of lymph nodes"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"mucopolysaccharidosis Ih/s",
+      "symptoms":[
+         "hepatosplenomegaly"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"mumps",
+      "symptoms":[
+         "headache",
+         "fever"
+      ],
+      "ranked":[
+         "spotted fever",
+         "legionellosis",
+         "Rocky Mountain spotted fever",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis"
+      ],
+      "rank":26,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":9.51616020302379
+   },
+   {
+      "disease":"myasthenia gravis",
+      "symptoms":[
+         "dysphagia",
+         "dyspnea",
+         "dysarthria",
+         "double vision"
+      ],
+      "ranked":[
+         "myasthenia gravis",
+         "foodborne botulism",
+         "pseudobulbar palsy",
+         "central pontine myelinolysis",
+         "bulbar polio"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.889502627363555
+   },
+   {
+      "disease":"necatoriasis",
+      "symptoms":[
+         "diarrhea"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"neovascular glaucoma",
+      "symptoms":[
+         "pain",
+         "headache"
+      ],
+      "ranked":[
+         "primary angle-closure glaucoma",
+         "hypersecretion glaucoma",
+         "aqueous misdirection",
+         "neovascular glaucoma"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":11.220908295262216
+   },
+   {
+      "disease":"nephropathia epidemica",
+      "symptoms":[
+         "headache",
+         "backache",
+         "abdominal pain",
+         "hemorrhage",
+         "vomiting"
+      ],
+      "ranked":[
+         "nephropathia epidemica",
+         "Lassa fever",
+         "Korean hemorrhagic fever",
+         "cat-scratch disease",
+         "listeriosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":30.135675747778905
+   },
+   {
+      "disease":"nodular episcleritis",
+      "symptoms":[
+         "inflammation",
+         "pain",
+         "bloodshot eye"
+      ],
+      "ranked":[
+         "episcleritis periodica fugax",
+         "suppurative uveitis",
+         "scleroperikeratitis",
+         "sclerosing keratitis",
+         "nodular episcleritis"
+      ],
+      "rank":5,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":17.978670904565757
+   },
+   {
+      "disease":"nonobstructive coronary artery disease",
+      "symptoms":[
+         "pain",
+         "severe chest pain"
+      ],
+      "ranked":[
+         "nonobstructive coronary artery disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":14.727466192582197
+   },
+   {
+      "disease":"nonparalytic poliomyelitis",
+      "symptoms":[
+         "headache",
+         "pharynx inflammation",
+         "fever",
+         "fatigue"
+      ],
+      "ranked":[
+         "nonparalytic poliomyelitis",
+         "poliomyelitis",
+         "human immunodeficiency virus infectious disease",
+         "Venezuelan hemorrhagic fever",
+         "tonsillitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":21.9458145813646
+   },
+   {
+      "disease":"oesophagostomiasis",
+      "symptoms":[
+         "low-grade fever",
+         "skin lesion"
+      ],
+      "ranked":[
+         "oesophagostomiasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":14.504322641267988
+   },
+   {
+      "disease":"onchocerciasis",
+      "symptoms":[
+         "itching",
+         "blindness",
+         "enlargement of lymph nodes"
+      ],
+      "ranked":[
+         "onchocerciasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":22.314177523604748
+   },
+   {
+      "disease":"opisthorchiasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "constipation",
+         "hepatomegaly"
+      ],
+      "ranked":[
+         "opisthorchiasis",
+         "acanthocephaliasis",
+         "celiac disease",
+         "schistosomiasis",
+         "gastrointestinal tuberculosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":25.398742777687264
+   },
+   {
+      "disease":"orbital cellulitis",
+      "symptoms":[
+         "inflammation",
+         "headache",
+         "fever"
+      ],
+      "ranked":[
+         "tonsillitis",
+         "orbital cellulitis",
+         "autoinflammatory disease",
+         "Kawasaki disease",
+         "spotted fever"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":14.664484899893232
+   },
+   {
+      "disease":"ornithosis",
+      "symptoms":[
+         "headache",
+         "rash"
+      ],
+      "ranked":[
+         "ehrlichiosis",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis",
+         "Korean hemorrhagic fever",
+         "endemic typhus"
+      ],
+      "rank":7,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.087376902637693
+   },
+   {
+      "disease":"oropharyngeal anthrax",
+      "symptoms":[
+         "diarrhea",
+         "loss of appetite",
+         "vomiting"
+      ],
+      "ranked":[
+         "gastroenteritis",
+         "oropharyngeal anthrax",
+         "gastrointestinal anthrax",
+         "Chagas disease",
+         "toxascariasis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.054730931445704
+   },
+   {
+      "disease":"ovarian hyperstimulation syndrome",
+      "symptoms":[
+         "abdominal pain"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"panic disorder",
+      "symptoms":[
+         "dyspnea",
+         "dizziness"
+      ],
+      "ranked":[
+         "primary pulmonary hypertension",
+         "panic disorder",
+         "atrial fibrillation",
+         "progressive familial heart block"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":13.457839418034824
+   },
+   {
+      "disease":"paragonimiasis",
+      "symptoms":[
+         "diarrhea",
+         "abdominal pain",
+         "cough",
+         "fever",
+         "hepatosplenomegaly"
+      ],
+      "ranked":[
+         "intestinal schistosomiasis",
+         "paragonimiasis",
+         "paratyphoid fever",
+         "Lassa fever",
+         "toxocariasis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":27.599783543258038
+   },
+   {
+      "disease":"paratyphoid fever",
+      "symptoms":[
+         "headache",
+         "abdominal pain",
+         "cough",
+         "fever",
+         "constipation",
+         "anorexia",
+         "hepatosplenomegaly"
+      ],
+      "ranked":[
+         "paratyphoid fever",
+         "gastrointestinal tuberculosis",
+         "toxocariasis",
+         "sennetsu fever",
+         "intestinal schistosomiasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":41.57753220379189
+   },
+   {
+      "disease":"parenchymatous neurosyphilis",
+      "symptoms":[
+         "headache",
+         "lethargy",
+         "fatigue",
+         "concentration difficulty"
+      ],
+      "ranked":[
+         "parenchymatous neurosyphilis",
+         "long COVID",
+         "hepatitis D",
+         "Kunjin encephalitis",
+         "ehrlichiosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":26.631369296940342
+   },
+   {
+      "disease":"pasteurellosis",
+      "symptoms":[
+         "joint pain"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"pellagra",
+      "symptoms":[
+         "diarrhea",
+         "anorexia"
+      ],
+      "ranked":[
+         "cyclosporiasis",
+         "pellagra"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.99124511451329
+   },
+   {
+      "disease":"penicilliosis",
+      "symptoms":[
+         "fever",
+         "skin lesion",
+         "anemia"
+      ],
+      "ranked":[
+         "penicilliosis",
+         "toxoplasmosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":18.68983659062838
+   },
+   {
+      "disease":"peritonitis",
+      "symptoms":[
+         "abdominal pain",
+         "fever",
+         "vomiting",
+         "nausea"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "echinostomiasis",
+         "hepatitis A",
+         "peritonitis",
+         "gastrointestinal tuberculosis"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":21.18562379632587
+   },
+   {
+      "disease":"pernicious anemia",
+      "symptoms":[
+         "fatigue",
+         "dyspnea",
+         "ataxia"
+      ],
+      "ranked":[
+         "pernicious anemia",
+         "pulmonary sarcoidosis",
+         "atrial fibrillation"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":19.332833987502855
+   },
+   {
+      "disease":"phacolytic glaucoma",
+      "symptoms":[
+         "bloodshot eye"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"pharyngitis",
+      "symptoms":[
+         "low-grade fever"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"pharyngoconjunctival fever",
+      "symptoms":[
+         "headache",
+         "fever"
+      ],
+      "ranked":[
+         "spotted fever",
+         "legionellosis",
+         "Rocky Mountain spotted fever",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis"
+      ],
+      "rank":44,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":9.51616020302379
+   },
+   {
+      "disease":"phlebotomus fever",
+      "symptoms":[
+         "joint pain",
+         "fever"
+      ],
+      "ranked":[
+         "chikungunya",
+         "dengue disease",
+         "Bolivian hemorrhagic fever",
+         "Oropouche fever",
+         "Barmah Forest virus disease"
+      ],
+      "rank":9,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":10.594969864395722
+   },
+   {
+      "disease":"pleural empyema",
+      "symptoms":[
+         "cough",
+         "fever",
+         "dyspnea"
+      ],
+      "ranked":[
+         "COVID-19",
+         "pneumocystosis",
+         "extrinsic allergic alveolitis",
+         "bird fancier's lung",
+         "pleural empyema"
+      ],
+      "rank":5,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":16.406094585435817
+   },
+   {
+      "disease":"pneumocystosis",
+      "symptoms":[
+         "cough"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"pneumonic plague",
+      "symptoms":[
+         "cough",
+         "fever"
+      ],
+      "ranked":[
+         "swine influenza",
+         "influenza",
+         "endemic typhus",
+         "intestinal schistosomiasis",
+         "COVID-19"
+      ],
+      "rank":12,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":9.96244730565221
+   },
+   {
+      "disease":"pneumonic tularemia",
+      "symptoms":[
+         "pain"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"poliomyelitis",
+      "symptoms":[
+         "headache",
+         "pharynx inflammation",
+         "fever",
+         "fatigue",
+         "vomiting"
+      ],
+      "ranked":[
+         "nonparalytic poliomyelitis",
+         "poliomyelitis",
+         "human immunodeficiency virus infectious disease",
+         "Venezuelan hemorrhagic fever",
+         "West Nile fever"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":27.181150655223675
+   },
+   {
+      "disease":"postpoliomyelitis syndrome",
+      "symptoms":[
+         "muscle pain",
+         "muscle weakness"
+      ],
+      "ranked":[
+         "postpoliomyelitis syndrome"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.369656925800479
+   },
+   {
+      "disease":"primary amebic meningoencephalitis",
+      "symptoms":[
+         "headache",
+         "coma",
+         "vomiting",
+         "seizure"
+      ],
+      "ranked":[
+         "Powassan encephalitis",
+         "primary amebic meningoencephalitis",
+         "Eastern equine encephalitis",
+         "brain edema",
+         "La Crosse encephalitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":23.758118579824284
+   },
+   {
+      "disease":"primary angle-closure glaucoma",
+      "symptoms":[
+         "pain",
+         "headache"
+      ],
+      "ranked":[
+         "primary angle-closure glaucoma",
+         "hypersecretion glaucoma",
+         "aqueous misdirection",
+         "neovascular glaucoma"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.220908295262216
+   },
+   {
+      "disease":"primary ciliary dyskinesia 11",
+      "symptoms":[
+         "chronic cough"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"primary pulmonary hypertension",
+      "symptoms":[
+         "dyspnea",
+         "dizziness"
+      ],
+      "ranked":[
+         "primary pulmonary hypertension",
+         "panic disorder",
+         "atrial fibrillation",
+         "progressive familial heart block"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":13.457839418034824
+   },
+   {
+      "disease":"progressive familial heart block",
+      "symptoms":[
+         "heart failure",
+         "abdominal pain",
+         "dyspnea"
+      ],
+      "ranked":[
+         "progressive familial heart block"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":19.27578079805402
+   },
+   {
+      "disease":"progressive multifocal leukoencephalopathy",
+      "symptoms":[
+         "coma",
+         "dysarthria"
+      ],
+      "ranked":[
+         "progressive multifocal leukoencephalopathy"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":14.396109056627754
+   },
+   {
+      "disease":"pulmonary sarcoidosis",
+      "symptoms":[
+         "fatigue",
+         "dyspnea",
+         "lymphadenopathy"
+      ],
+      "ranked":[
+         "pulmonary sarcoidosis",
+         "sennetsu fever",
+         "lymph node tuberculosis",
+         "infectious mononucleosis",
+         "pernicious anemia"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":18.92736887939469
+   },
+   {
+      "disease":"pulmonary tuberculosis",
+      "symptoms":[
+         "cough",
+         "fever",
+         "breathing problems"
+      ],
+      "ranked":[
+         "pneumonic plague",
+         "pulmonary tuberculosis",
+         "eosinophilic pneumonia",
+         "pneumonic tularemia",
+         "swine influenza"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.056682151576965
+   },
+   {
+      "disease":"rabies",
+      "symptoms":[
+         "headache",
+         "paralysis",
+         "dysphagia",
+         "confusion",
+         "fever",
+         "itching",
+         "anxiety"
+      ],
+      "ranked":[
+         "rabies",
+         "sleeping sickness",
+         "Powassan encephalitis",
+         "West Nile encephalitis",
+         "herpes zoster"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":45.37836430140867
+   },
+   {
+      "disease":"radiculopathy",
+      "symptoms":[
+         "pain"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"respiratory syncytial virus infectious disease",
+      "symptoms":[
+         "cough",
+         "fever"
+      ],
+      "ranked":[
+         "swine influenza",
+         "influenza",
+         "endemic typhus",
+         "intestinal schistosomiasis",
+         "COVID-19"
+      ],
+      "rank":30,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":9.96244730565221
+   },
+   {
+      "disease":"riboflavin deficiency",
+      "symptoms":[
+         "pharynx inflammation",
+         "fatigue"
+      ],
+      "ranked":[
+         "nonparalytic poliomyelitis",
+         "poliomyelitis",
+         "riboflavin deficiency",
+         "human immunodeficiency virus infectious disease"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.42965437834081
+   },
+   {
+      "disease":"rickettsialpox",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"rubella",
+      "symptoms":[
+         "headache",
+         "joint pain"
+      ],
+      "ranked":[
+         "Alkhumra hemorrhagic fever",
+         "Chapare hemorrhagic fever",
+         "Bolivian hemorrhagic fever",
+         "Oropouche fever",
+         "Zika fever"
+      ],
+      "rank":13,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":11.02675228082126
+   },
+   {
+      "disease":"salmonellosis",
+      "symptoms":[
+         "diarrhea"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"sarcocystosis",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "joint pain",
+         "low-grade fever",
+         "cough",
+         "vomiting",
+         "chills"
+      ],
+      "ranked":[
+         "sarcocystosis",
+         "Oropouche fever",
+         "endemic typhus",
+         "hantavirus pulmonary syndrome",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":40.44182579071755
+   },
+   {
+      "disease":"schistosomiasis",
+      "symptoms":[
+         "diarrhea",
+         "rash",
+         "abdominal pain",
+         "fever",
+         "hepatomegaly",
+         "nausea",
+         "chills",
+         "malaise"
+      ],
+      "ranked":[
+         "schistosomiasis",
+         "Korean hemorrhagic fever",
+         "Marburg hemorrhagic fever",
+         "endemic typhus",
+         "listeriosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":46.73875218864707
+   },
+   {
+      "disease":"scleroperikeratitis",
+      "symptoms":[
+         "inflammation",
+         "pain",
+         "bloodshot eye",
+         "photophobia"
+      ],
+      "ranked":[
+         "episcleritis periodica fugax",
+         "scleroperikeratitis",
+         "sclerosing keratitis",
+         "nodular episcleritis",
+         "brawny scleritis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":25.159917127480142
+   },
+   {
+      "disease":"sclerosing keratitis",
+      "symptoms":[
+         "inflammation",
+         "pain",
+         "bloodshot eye",
+         "keratitis"
+      ],
+      "ranked":[
+         "sclerosing keratitis",
+         "episcleritis periodica fugax",
+         "suppurative uveitis",
+         "scleroperikeratitis",
+         "nodular episcleritis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":26.4592001116104
+   },
+   {
+      "disease":"scrub typhus",
+      "symptoms":[
+         "headache",
+         "maculopapular rash",
+         "cough",
+         "fever",
+         "eschar"
+      ],
+      "ranked":[
+         "scrub typhus",
+         "Far Eastern spotted fever",
+         "Astrakhan spotted fever",
+         "Israeli tick typhus",
+         "Indian tick typhus"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.901744755912176
+   },
+   {
+      "disease":"scurvy",
+      "symptoms":[
+         "fatigue",
+         "anemia",
+         "weakness",
+         "petechiae"
+      ],
+      "ranked":[
+         "scurvy",
+         "riboflavin deficiency",
+         "brucellosis",
+         "atrial fibrillation",
+         "sinusitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":27.912303142402404
+   },
+   {
+      "disease":"seborrheic dermatitis",
+      "symptoms":[
+         "skin lesion",
+         "itching"
+      ],
+      "ranked":[
+         "tungiasis",
+         "seborrheic dermatitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":14.052337517524931
+   },
+   {
+      "disease":"sennetsu fever",
+      "symptoms":[
+         "headache",
+         "backache",
+         "fever",
+         "fatigue",
+         "anorexia",
+         "hepatosplenomegaly",
+         "chills",
+         "malaise"
+      ],
+      "ranked":[
+         "sennetsu fever",
+         "Brucella suis brucellosis",
+         "paratyphoid fever",
+         "Brucella melitensis brucellosis",
+         "listeriosis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":48.32277659473803
+   },
+   {
+      "disease":"septicemic plague",
+      "symptoms":[
+         "abdominal pain",
+         "fever",
+         "shock",
+         "chills"
+      ],
+      "ranked":[
+         "Korean hemorrhagic fever",
+         "septicemic plague",
+         "hantavirus pulmonary syndrome",
+         "schistosomiasis",
+         "Marburg hemorrhagic fever"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":23.395920455229444
+   },
+   {
+      "disease":"severe acute respiratory syndrome",
+      "symptoms":[
+         "headache",
+         "fever"
+      ],
+      "ranked":[
+         "spotted fever",
+         "legionellosis",
+         "Rocky Mountain spotted fever",
+         "Rickettsia parkeri spotted fever",
+         "human monocytic ehrlichiosis"
+      ],
+      "rank":65,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":9.51616020302379
+   },
+   {
+      "disease":"severe pre-eclampsia",
+      "symptoms":[
+         "thrombocytopenia",
+         "proteinuria",
+         "cyanosis"
+      ],
+      "ranked":[
+         "severe pre-eclampsia"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":24.083464136980744
+   },
+   {
+      "disease":"sick building syndrome",
+      "symptoms":[
+         "headache"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"sinusitis",
+      "symptoms":[
+         "cough",
+         "fever",
+         "fatigue"
+      ],
+      "ranked":[
+         "lymph node tuberculosis",
+         "sinusitis",
+         "spotted fever",
+         "human monocytic ehrlichiosis",
+         "Epstein-Barr virus hepatitis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":15.757399167446705
+   },
+   {
+      "disease":"sleeping sickness",
+      "symptoms":[
+         "sensory disturbance",
+         "headache",
+         "confusion",
+         "joint pain",
+         "fever",
+         "itching"
+      ],
+      "ranked":[
+         "sleeping sickness",
+         "rabies",
+         "herpes zoster",
+         "Powassan encephalitis",
+         "Kunjin encephalitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":37.688962683284174
+   },
+   {
+      "disease":"sodoku disease",
+      "symptoms":[
+         "rash",
+         "joint pain"
+      ],
+      "ranked":[
+         "dengue disease",
+         "Barmah Forest virus disease",
+         "O'nyong-nyong fever",
+         "Ross River fever",
+         "Zika fever"
+      ],
+      "rank":6,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":12.166186564009625
+   },
+   {
+      "disease":"spotted fever",
+      "symptoms":[
+         "headache",
+         "maculopapular rash"
+      ],
+      "ranked":[
+         "spotted fever",
+         "Rocky Mountain spotted fever",
+         "Queensland tick typhus",
+         "scrub typhus",
+         "West Nile fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":11.84506260433521
+   },
+   {
+      "disease":"staphyloenterotoxemia",
+      "symptoms":[
+         "diarrhea",
+         "vomiting",
+         "nausea",
+         "weakness"
+      ],
+      "ranked":[
+         "staphyloenterotoxemia",
+         "Venezuelan hemorrhagic fever",
+         "Murray Valley encephalitis",
+         "Western equine encephalitis",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":22.881277158658413
+   },
+   {
+      "disease":"stress-induced childhood-onset neurodegeneration with variable ataxia and seizures",
+      "symptoms":[
+         "seizure"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"suppurative uveitis",
+      "symptoms":[
+         "inflammation"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"swine influenza",
+      "symptoms":[
+         "diarrhea",
+         "pharynx inflammation",
+         "lethargy",
+         "cough",
+         "fever",
+         "vomiting"
+      ],
+      "ranked":[
+         "swine influenza",
+         "avian influenza",
+         "Lassa fever",
+         "Marburg hemorrhagic fever",
+         "Ebola virus disease"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":34.399095155474456
+   },
+   {
+      "disease":"tabes dorsalis",
+      "symptoms":[
+         "ataxia"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"tick paralysis",
+      "symptoms":[
+         "hemorrhage",
+         "flaccidity"
+      ],
+      "ranked":[
+         "tick paralysis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":15.494721345295865
+   },
+   {
+      "disease":"tick-borne encephalitis",
+      "symptoms":[
+         "sensory disturbance",
+         "paralysis"
+      ],
+      "ranked":[
+         "tick-borne encephalitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":15.28708198051762
+   },
+   {
+      "disease":"tick-borne relapsing fever",
+      "symptoms":[
+         "relapsing fever",
+         "hepatosplenomegaly",
+         "enlargement of lymph nodes",
+         "lymphadenopathy"
+      ],
+      "ranked":[
+         "louse-borne relapsing fever",
+         "tick-borne relapsing fever",
+         "early congenital syphilis",
+         "sennetsu fever",
+         "hemophagocytic lymphohistiocytosis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":28.233260003739062
+   },
+   {
+      "disease":"tinea capitis",
+      "symptoms":[
+         "itching"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"tinea manuum",
+      "symptoms":[
+         "itching"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"tonsillitis",
+      "symptoms":[
+         "inflammation",
+         "headache",
+         "pharynx inflammation",
+         "dysphagia",
+         "cough"
+      ],
+      "ranked":[
+         "tonsillitis",
+         "esophageal tuberculosis",
+         "inhalation anthrax",
+         "swine influenza",
+         "influenza"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":29.048348230104054
+   },
+   {
+      "disease":"toxascariasis",
+      "symptoms":[
+         "diarrhea"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"toxic shock syndrome",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "rash",
+         "fever",
+         "vomiting",
+         "shock"
+      ],
+      "ranked":[
+         "toxic shock syndrome",
+         "Chagas disease",
+         "Ebola virus disease",
+         "Korean hemorrhagic fever",
+         "hantavirus pulmonary syndrome"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":33.143829056760964
+   },
+   {
+      "disease":"toxocariasis",
+      "symptoms":[
+         "rash",
+         "cough",
+         "fever",
+         "anorexia",
+         "hepatosplenomegaly"
+      ],
+      "ranked":[
+         "toxocariasis",
+         "paratyphoid fever",
+         "sennetsu fever",
+         "intestinal schistosomiasis",
+         "paragonimiasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":29.517108188584526
+   },
+   {
+      "disease":"toxoplasmosis",
+      "symptoms":[
+         "fever",
+         "anemia",
+         "low white blood cell count",
+         "hepatosplenomegaly",
+         "malaise"
+      ],
+      "ranked":[
+         "toxoplasmosis",
+         "Argentine hemorrhagic fever",
+         "penicilliosis",
+         "sennetsu fever",
+         "paratyphoid fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":32.95777045383214
+   },
+   {
+      "disease":"trichinosis",
+      "symptoms":[
+         "myocarditis",
+         "diarrhea"
+      ],
+      "ranked":[
+         "Chagas disease",
+         "trichinosis"
+      ],
+      "rank":2,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":12.81792368769776
+   },
+   {
+      "disease":"tuberculous peritonitis",
+      "symptoms":[
+         "pain",
+         "abdominal distention"
+      ],
+      "ranked":[
+         "tuberculous peritonitis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":14.727466192582197
+   },
+   {
+      "disease":"typhoid fever",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "fever",
+         "low white blood cell count"
+      ],
+      "ranked":[
+         "typhoid fever",
+         "legionellosis",
+         "listeriosis",
+         "Chagas disease",
+         "Marburg hemorrhagic fever"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":22.670556127342763
+   },
+   {
+      "disease":"typhoidal tularemia",
+      "symptoms":[
+         "fever",
+         "chills"
+      ],
+      "ranked":[
+         "Korean hemorrhagic fever",
+         "influenza",
+         "sennetsu fever",
+         "endemic typhus",
+         "Oropouche fever"
+      ],
+      "rank":6,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":10.483744229285495
+   },
+   {
+      "disease":"vaccinia",
+      "symptoms":[
+         "rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"vestibular neuronitis",
+      "symptoms":[
+         "vomiting"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"viral gastritis",
+      "symptoms":[
+         "abdominal pain",
+         "vomiting",
+         "nausea"
+      ],
+      "ranked":[
+         "acanthocephaliasis",
+         "nephropathia epidemica",
+         "celiac disease",
+         "giardiasis",
+         "echinostomiasis"
+      ],
+      "rank":17,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false,
+      "top_score":16.643434903026748
+   },
+   {
+      "disease":"viral labyrinthitis",
+      "symptoms":[
+         "vomiting",
+         "nausea",
+         "dizziness"
+      ],
+      "ranked":[
+         "viral labyrinthitis",
+         "central nervous system origin vertigo",
+         "lateral medullary syndrome",
+         "gastroenteritis",
+         "acanthocephaliasis"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":17.839685661258773
+   },
+   {
+      "disease":"visceral leishmaniasis",
+      "symptoms":[
+         "fever",
+         "hepatomegaly"
+      ],
+      "ranked":[
+         "Venezuelan hemorrhagic fever",
+         "schistosomiasis",
+         "leptospirosis",
+         "visceral leishmaniasis",
+         "hypervitaminosis A"
+      ],
+      "rank":4,
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":true,
+      "top_score":11.556381031550345
+   },
+   {
+      "disease":"vulvovaginal candidiasis",
+      "symptoms":[
+         "rash"
+      ],
+      "ranked":[
+
+      ],
+      "rank":"None",
+      "hit@1":false,
+      "hit@3":false,
+      "hit@5":false
+   },
+   {
+      "disease":"wheat allergy",
+      "symptoms":[
+         "diarrhea",
+         "headache",
+         "rash"
+      ],
+      "ranked":[
+         "Chagas disease",
+         "Ebola virus disease",
+         "wheat allergy",
+         "toxic shock syndrome",
+         "schistosomiasis"
+      ],
+      "rank":3,
+      "hit@1":false,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":16.27206924367801
+   },
+   {
+      "disease":"yellow fever",
+      "symptoms":[
+         "headache",
+         "backache",
+         "fever",
+         "loss of appetite",
+         "hematemesis",
+         "bleeding",
+         "muscle pain",
+         "jaundice"
+      ],
+      "ranked":[
+         "yellow fever",
+         "Venezuelan hemorrhagic fever",
+         "Lujo hemorrhagic fever",
+         "Crimean-Congo hemorrhagic fever",
+         "hepatitis A"
+      ],
+      "rank":1,
+      "hit@1":true,
+      "hit@3":true,
+      "hit@5":true,
+      "top_score":50.37026653661126
+   }
+]
