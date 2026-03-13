@@ -16,13 +16,13 @@ In the world of medical data, the link between a disease and its symptoms is for
 
 By mapping DOID diseases to SYMP symptoms via the `RO_0002452` relationship, NeSy constructs the foundational Knowledge Graph required for precise, neuro-symbolic inference.
 
-![Graph Visualization](./assets/graph-visualization.png)
+![Graph Visualization](./assets/images/graph-visualization.png)
 
 # 🏗️ System Architecture
 
 The system is divided into two primary workflows: the **Runtime Pipeline** and the **Preparation Pipeline**.
 
-![System Architecture](./assets/NeSy-architecture.png)
+![System Architecture](./assets/images/NeSy-architecture.png)
 
 ## ⚙️ Preparation Pipeline
 
@@ -43,9 +43,9 @@ Before the system can perform inferences, it undergoes a data enrichment phase:
 - **Symptom Embedding**: Generates high-dimensional vector representations for symptoms using the ```intfloat/multilingual-e5-large model```.
 
 - **Information Content (IC)**: Calculates IC metrics to weight the significance of each symptom within the graph hierarchy as follows:
-  <p align="center">
+  
     $$IC(s) = \log \left( \frac{N_{total}}{f(s) + 1} \right)$$
-  </p>
+  
   Where:
   
   - $N_{total}$ is the total number of diseases in the database.
@@ -78,15 +78,11 @@ The active diagnostic process follows a neuro-symbolic approach:
 
   - **Weighted Sum** (```total_score```): The Neo4j engine identifies diseases connected to the user's symptoms and sums the pre-calculated weights (IC) of all matching symptoms.
     
-  <p align="center">
     $$total\_{score} = \sum IC(matched\_{symptoms})$$
-  </p>
   
   - **Square Root Normalization** (```normalized_score```): To prevent "broad" diseases (those with a high number of general symptoms) from unfairly dominating the results, we normalize the score by the square root of the total number of symptoms associated with that disease.
 
-  <p align="center">
     $$normalized\_{score} = \frac{total\_{score}}{\sqrt{count(disease\_{symptoms})}}$$
-  </p>
   
 **Key advantages of this approach**:
 
