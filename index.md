@@ -48,8 +48,8 @@ Before the system can perform inferences, it undergoes a data enrichment phase:
 - **Symptom Embedding**: Generates high-dimensional vector representations for symptoms using the ```intfloat/multilingual-e5-large model```.
 
 - **Information Content (IC)**: Calculates IC metrics to weight the significance of each symptom within the graph hierarchy as follows:
-  
-    $$IC(s) = \log \left( \frac{N_{total}}{f(s) + 1} \right)$$
+
+$$IC(s) = \log \left( \frac{N_{total}}{f(s) + 1} \right)$$
   
   Where:
   
@@ -82,12 +82,12 @@ The active diagnostic process follows a neuro-symbolic approach:
 - **Scoring Engine**: Disease ranking is not a simple count of matching symptoms. Instead, it utilizes a sophisticated Normalized Weighted Sum approach:
 
   - **Weighted Sum** (```total_score```): The Neo4j engine identifies diseases connected to the user's symptoms and sums the pre-calculated weights (IC) of all matching symptoms.
-    
-    $$total\_{score} = \sum IC(matched\_{symptoms})$$
+
+$$total\_{score} = \sum IC(matched\_{symptoms})$$
   
   - **Square Root Normalization** (```normalized_score```): To prevent "broad" diseases (those with a high number of general symptoms) from unfairly dominating the results, we normalize the score by the square root of the total number of symptoms associated with that disease.
 
-    $$normalized\_{score} = \frac{total\_{score}}{\sqrt{count(disease\_{symptoms})}}$$
+$$normalized\_{score} = \frac{total\_{score}}{\sqrt{count(disease\_{symptoms})}}$$
   
 **Key advantages of this approach**:
 
