@@ -16,6 +16,8 @@ In the world of medical data, the link between a disease and its symptoms is for
 
 By mapping DOID diseases to SYMP symptoms via the `RO_0002452` relationship, NeSy constructs the foundational Knowledge Graph required for precise, neuro-symbolic inference.
 
+![Graph Visualization](./assets/graph-visualization.png)
+
 # 🏗️ System Architecture
 
 The system is divided into two primary workflows: the **Runtime Pipeline** and the **Preparation Pipeline**.
