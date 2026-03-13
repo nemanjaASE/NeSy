@@ -15,8 +15,8 @@ class GroqNLPExtractor(NLPExtractor):
         """
         Initialize the Groq client and load configuration.
         """
-        self.client = Groq(api_key=settings.GROQ_API_KEY)
-        self.model = settings.GROQ_EXTRACTION_MODEL_NAME
+        self.client = Groq(api_key=settings.LLM_API_KEY)
+        self.model = settings.LLM_EXTRACTION_MODEL_NAME
         self.system_prompt = load_prompt("symptom_extraction_prompt.txt")
 
     async def extract_entities(self, text: str) -> List[str]:

@@ -16,9 +16,9 @@ class Settings(BaseSettings):
     NEO4J_PASSWORD: str
     
     # --- AI / LLM
-    GROQ_API_KEY: str
-    GROQ_EXTRACTION_MODEL_NAME: str
-    GROQ_XAI_MODEL_NAME: str
+    LLM_API_KEY: str
+    LLM_EXTRACTION_MODEL_NAME: str
+    LLM_XAI_MODEL_NAME: str
     EMBEDDING_MODEL_NAME: str
         
     # --- CORS

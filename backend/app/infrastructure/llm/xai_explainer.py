@@ -13,8 +13,8 @@ class XAIExplainer:
     """
 
     def __init__(self):
-        self.client = AsyncGroq(api_key=settings.GROQ_API_KEY)
-        self.model = settings.GROQ_XAI_MODEL_NAME
+        self.client = AsyncGroq(api_key=settings.LLM_API_KEY)
+        self.model = settings.LLM_XAI_MODEL_NAME
         self.system_prompt = load_prompt("disease_explanation_prompt.txt")
 
     def _format_input(self, disease_results: List[Dict[str, Any]]) -> str:
