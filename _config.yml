@@ -1,14 +1,10 @@
 remote_theme: just-the-docs/just-the-docs@v0.10.0
 title: NeSy Diagnostics
 description: Neuro-Symbolic Diagnostic Assistance Framework
+color_scheme: dark
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
   syntax_highlighter: rouge
-
-color_scheme: dark
-
 plugins:
   - jekyll-remote-theme
-
 exclude: [vendor]
