@@ -83,11 +83,11 @@ The active diagnostic process follows a neuro-symbolic approach:
 
   - **Weighted Sum** (```total_score```): The Neo4j engine identifies diseases connected to the user's symptoms and sums the pre-calculated weights (IC) of all matching symptoms.
 
-$$total\_{score} = \sum IC(matched\_{symptoms})$$
+$$total_{score} = \sum IC(matched_{symptoms})$$
   
   - **Square Root Normalization** (```normalized_score```): To prevent "broad" diseases (those with a high number of general symptoms) from unfairly dominating the results, we normalize the score by the square root of the total number of symptoms associated with that disease.
 
-$$normalized\_{score} = \frac{total\_{score}}{\sqrt{count(disease\_{symptoms})}}$$
+$$normalized_{score} = \frac{total_{score}}{\sqrt{count(disease_{symptoms})}}$$
   
 **Key advantages of this approach**:
 
