@@ -166,7 +166,8 @@ ALLOW_CREDENTIALS="your-allow-credentials" # true or false
 
 Before starting the API, you must populate the Neo4j database with the medical ontologies, calculate the Information Content (IC) weights, and generate symptom embeddings. 
 
-> **Note:** The preparation pipeline is currently implemented as interactive Jupyter Notebooks. Please navigate to the `notebooks/` directory and execute the setup notebooks sequentially to enrich your local graph database.
+> **Note:** The preparation pipeline is currently implemented as interactive Jupyter Notebooks. 
+> 📘 **[Click here to read the detailed Notebooks Setup Guide](./notebooks/README.md)** to learn how to configure your VS Code kernel and execute the graph enrichment steps.
 
 **2. Start the FastAPI Development Server**
 
