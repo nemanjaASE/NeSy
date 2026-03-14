@@ -2,13 +2,13 @@
 
 The notebooks in this directory are categorized into two groups: the Preparation Pipeline (mandatory for database enrichment) and Layer Demonstrations (standalone execution of specific system components).
 
+## ⚙️ 1. Preparation Pipeline (Data Enrichment)
+These notebooks must be executed to "bake" the logic and weights into the Neo4j graph. Run these if you are not using a pre-configured database dump.
+
 | Notebook | Purpose | Impact on Database |
 |---|---|---|
 | `calculate-weights.ipynb` | Calculates Information Content (IC) for each symptom based on disease frequency. | Adds `weight` property to `:Symptom` nodes. |
 | `generate-embeddings.ipynb` | Generates high-dimensional vectors using the `multilingual-e5-large` model. | Adds `embedding` property to `:Symptom` nodes. |
-
-## ⚙️ 1. Preparation Pipeline (Data Enrichment)
-These notebooks must be executed to "bake" the logic and weights into the Neo4j graph. Run these if you are not using a pre-configured database dump.
 
 ## 🧪 2. Layer Demonstrations (Individual Components)
 
