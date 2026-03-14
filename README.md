@@ -8,11 +8,11 @@ NeSy grounds its symbolic reasoning in standardized, peer-reviewed medical ontol
 
 * **DOID (Human Disease Ontology):** A standardized map of human diseases. It allows the system to understand the relationships between different medical conditions.
 
-![Diseases Graph Visualization](./assets/images/diseases.png)
+  ![Diseases Graph Visualization](./assets/images/diseases.png)
 
 * **SYMP (Symptom Ontology):** Provides a standardized vocabulary for clinical signs and symptoms. NeSy uses this to extract, classify, and mathematically weight the symptoms reported by the user.
 
-![Symptoms Graph Visualization](./assets/images/symptoms.png)
+  ![Symptoms Graph Visualization](./assets/images/symptoms.png)
 
 ### 🔗 The Connection (RO_0002452)
 
