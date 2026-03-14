@@ -6,6 +6,13 @@ Neosemantics is an extension that allows Neo4j to store and query data in RDF fo
 
 Before you can run any Cypher queries for ontologies, you must prepare your Neo4j instance.
 
+**0. Prerequisites: Install Neo4j Desktop**
+
+If you don't have Neo4j installed on your machine, you need to download it first:
+- Download **Neo4j Desktop** from the [official Neo4j website](https://neo4j.com/download/).
+- Install the application (available for Windows, macOS, and Linux) and create a free account if prompted.
+- Open Neo4j Desktop to begin the setup.
+
 **1. Create a New Database Instance**
 
 - Open Neo4j Desktop.
