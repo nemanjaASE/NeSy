@@ -69,7 +69,7 @@ Before the system can perform inferences, it undergoes a data enrichment phase:
 
 - **Enriched Graph**: Stores nodes with attributes like URIs, labels, embeddings, and weights in a Neo4j Graph DB.
 
-> 📓 **[Data Enrichment Instructions](./notebooks/README.md)** — Follow these steps to prepare your Jupyter environment and run the preparation pipeline.
+> 📚 **[Notebook Directory & Workflow](./notebooks/README.md)** — Follow these steps to prepare your Jupyter environment and run the preparation pipeline.
 
 ## ⚡Runtime Pipeline
 
@@ -126,5 +126,6 @@ NeSy/
 To get the system up and running, follow these modules in order:
 
 1.  **Database**: Restore the graph using the [Neo4j Setup Guide](./docs/neo4j_setup.md).
-2.  **Enrichment**: Generate embeddings via the [Notebooks Guide](./notebooks/README.md).
+2.  **Notebooks**: Preparation phase and testing [Notebooks Guide](./notebooks/README.md).
 3.  **API**: Launch the backend following the [Backend README](./backend/README.md).
+
