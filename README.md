@@ -40,6 +40,8 @@ Existing biomedical ontologies (DOID and SYMP) are parsed and loaded into the Ne
 
 - URIs are mapped to short prefixes (e.g., DOID:, SYMP:) to optimize storage and query performance.
 
+> 📘 **[Neo4j & Ontology Setup Guide](./docs/neo4j_setup.md)** — Follow this guide to install Neo4j, configure plugins, and load the data.
+
 ### Step 2 ***Data Enrichment***
 
 Before the system can perform inferences, it undergoes a data enrichment phase:
@@ -61,6 +63,8 @@ Before the system can perform inferences, it undergoes a data enrichment phase:
    The resulting `IC` is permanently stored as the `weight` property on each `Symptom` node within the Neo4j graph. This shifts the heavy mathematical   computation to the preparation phase.
 
 - **Enriched Graph**: Stores nodes with attributes like URIs, labels, embeddings, and weights in a Neo4j Graph DB.
+
+> 📓 **[Data Enrichment Instructions](./notebooks/README.md)** — Follow these steps to prepare your Jupyter environment and run the preparation pipeline.
 
 ## ⚡Runtime Pipeline
 
@@ -98,16 +102,24 @@ The active diagnostic process follows a neuro-symbolic approach:
 
 ```
 NeSy/
-├── _includes/          # Custom HTML headers for GitHub Pages (e.g., MathJax integration)
-├── assets/
-│   └── images/         # Architecture diagrams and graph visualizations
-├── backend/            # FastAPI application, core reasoning logic, and API endpoints
-│   └── README.md       # Backend-specific installation and setup guide
-├── notebooks/          # Jupyter notebooks for Knowledge Graph enrichment (IC & embeddings)
-│   └── README.md       # Jupyter setup and execution instructions
-├── .gitignore          # Ignored files and directories
-├── _config.yml         # Jekyll configuration for GitHub Pages deployment
-├── index.md            # GitHub Pages entry point
-├── LICENSE             # Open-source license (e.g., MIT)
-└── README.md           # This file (Project overview and general instructions)
+├── docs/               # Detailed documentation for database and ontology setup
+│   └── neo4j_setup.md  # Step-by-step guide for Neo4j and n10s
+├── data/               # Contains the neo4j.dump file for quick database restore
+├── notebooks/          # Jupyter notebooks for IC calculation and vector embeddings
+│   └── README.md       # Notebooks setup and execution guide
+├── backend/            # FastAPI application and Neuro-Symbolic reasoning engine
+│   └── README.md       # API installation and environment configuration
+├── assets/images/      # Architecture diagrams and visualizations
+├── _config.yml         # GitHub Pages configuration
+├── index.md            # GitHub Pages landing page
+├── LICENSE             # MIT License
+└── README.md           # Main project overview
 ```
+
+# 🚀 Getting Started
+
+To get the system up and running, follow these modules in order:
+
+1.  **Database**: Restore the graph using the [Neo4j Setup Guide](./docs/neo4j_setup.md).
+2.  **Enrichment**: Generate embeddings via the [Notebooks Guide](./notebooks/README.md).
+3.  **API**: Launch the backend following the [Backend README](./backend/README.md).
