@@ -136,6 +136,13 @@ NeSy/
 └── README.md           # Main project overview
 ```
 
+## 🔬 Limitations
+ 
+- Knowledge graph coverage is bounded by DOID and SYMP ontology versions — rare or newly described diseases may be absent
+- The system performs inference, not diagnosis — results represent probabilistic candidates, not clinical conclusions
+- Multilingual support depends on `intfloat/multilingual-e5-large` — performance may vary across languages
+- IC weights are computed at preparation time; updating ontologies requires re-running the enrichment pipeline
+
 # 🚀 Getting Started
 
 To get the system up and running, follow these modules in order:
@@ -143,3 +150,7 @@ To get the system up and running, follow these modules in order:
 1.  **Database**: Restore the graph using the [Neo4j Setup Guide](./docs/neo4j_setup.md).
 2.  **Notebooks**: Preparation phase and testing [Notebooks Guide](./notebooks/README.md).
 3.  **API**: Launch the backend following the [Backend README](./backend/README.md).
+
+## License
+ 
+Distributed under the MIT License. See [`LICENSE`](./LICENSE) for details.
