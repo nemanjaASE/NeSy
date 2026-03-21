@@ -1,6 +1,26 @@
-# 🌟 Overview
+<h1 align="center">🌟 NeSy: Neuro-Symbolic Diagnostic Framework</h1>
 
+<p align="center">
+
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+  <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi">
+  <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white">
+  <br>
+
+  <img src="https://img.shields.io/badge/Groq-1a1a1a?style=for-the-badge&logoColor=white">
+  <img src="https://img.shields.io/badge/Meta%20Llama-04ADFF?style=for-the-badge&logo=meta&logoColor=white">
+  <img src="https://img.shields.io/badge/OpenAI%20GPT--4o-412991?style=for-the-badge&logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black">
+  <br>
+
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge">
+</p>
+
+---
 NeSy is a diagnostic assistance framework that bridges the gap between neural natural language processing and symbolic knowledge representation. By integrating Large Language Models (LLMs) with a Knowledge Graph (Neo4j), the system provides a robust pipeline for disease inference based on standardized medical ontologies.
+
+> ⚠️ **Disclaimer:** NeSy is a research prototype and is not intended
+> for clinical use. Do not use for actual medical diagnosis.
 
 ## 🧬 Biomedical Ontologies
 
@@ -50,7 +70,7 @@ Before the system can perform inferences, it undergoes a data enrichment phase:
 
 - **Information Content (IC)**: Calculates IC metrics to weight the significance of each symptom within the graph hierarchy as follows:
   
-    $$IC(s) = \log \left( \frac{N_{total}}{f(s) + 1} \right)$$
+$$IC(s) = \log \left( \frac{N_{total}}{f(s) + 1} \right)$$
   
   Where:
   
@@ -64,7 +84,7 @@ Before the system can perform inferences, it undergoes a data enrichment phase:
 
 - **Enriched Graph**: Stores nodes with attributes like URIs, labels, embeddings, and weights in a Neo4j Graph DB.
 
-> 📓 **[Data Enrichment Instructions](./notebooks/README.md)** — Follow these steps to prepare your Jupyter environment and run the preparation pipeline.
+> 📚 **[Notebook Directory & Workflow](./notebooks/README.md)** — Follow these steps to prepare your Jupyter environment and run the preparation pipeline.
 
 ## ⚡Runtime Pipeline
 
@@ -86,11 +106,11 @@ The active diagnostic process follows a neuro-symbolic approach:
 
   - **Weighted Sum** (```total_score```): The Neo4j engine identifies diseases connected to the user's symptoms and sums the pre-calculated weights (IC) of all matching symptoms.
     
-    $$total\_{score} = \sum IC(matched\_{symptoms})$$
+$$total\_{score} = \sum IC(matched\_{symptoms})$$
   
   - **Square Root Normalization** (```normalized_score```): To prevent "broad" diseases (those with a high number of general symptoms) from unfairly dominating the results, we normalize the score by the square root of the total number of symptoms associated with that disease.
 
-    $$normalized\_{score} = \frac{total\_{score}}{\sqrt{count(disease\_{symptoms})}}$$
+$$normalized\_{score} = \frac{total\_{score}}{\sqrt{count(disease\_{symptoms})}}$$
   
 **Key advantages of this approach**:
 
@@ -116,10 +136,21 @@ NeSy/
 └── README.md           # Main project overview
 ```
 
+## 🔬 Limitations
+ 
+- Knowledge graph coverage is bounded by DOID and SYMP ontology versions — rare or newly described diseases may be absent
+- The system performs inference, not diagnosis — results represent probabilistic candidates, not clinical conclusions
+- Multilingual support depends on `intfloat/multilingual-e5-large` — performance may vary across languages
+- IC weights are computed at preparation time; updating ontologies requires re-running the enrichment pipeline
+
 # 🚀 Getting Started
 
 To get the system up and running, follow these modules in order:
 
 1.  **Database**: Restore the graph using the [Neo4j Setup Guide](./docs/neo4j_setup.md).
-2.  **Enrichment**: Generate embeddings via the [Notebooks Guide](./notebooks/README.md).
+2.  **Notebooks**: Preparation phase and testing [Notebooks Guide](./notebooks/README.md).
 3.  **API**: Launch the backend following the [Backend README](./backend/README.md).
+
+## License
+ 
+Distributed under the MIT License. See [`LICENSE`](./LICENSE) for details.
