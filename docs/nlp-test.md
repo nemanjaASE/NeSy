@@ -8,7 +8,7 @@ The core challenge of this layer is accurately **identifying symptoms** in compl
 
 The goal of testing is to identify the optimal combination of LLM architecture and system prompt configuration in order to achieve high precision and reliability before data is passed to the next layer — **the embedding (vectorization) layer**.
 
-Testing was conducted across 6 phases, varying model size (from 3B to 120B parameters) and instruction complexity, with a focus on reaching an 80% success threshold across key metrics. The following models were evaluated:
+Testing was conducted across 5 phases, varying model size (from 3B to 120B parameters) and instruction complexity, with a focus on reaching an 80% success threshold across key metrics. The following models were evaluated:
 
 - 🤖 **llama3.2:3b** (local)
 - 🤖 **llama3.3:8** (local)
