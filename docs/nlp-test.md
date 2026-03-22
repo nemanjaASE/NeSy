@@ -43,6 +43,22 @@ Standard NLP metrics were used to assess extraction quality:
 | System Prompt  | symptom-extraction-prompt-1.txt        |
 | Results        | symptom-extraction-result-1.txt        |
 
+### 🔍 Model Overview — `llama3.2:3b`
+ 
+| Property         | Value                          |
+|------------------|--------------------------------|
+| Developer        | Meta                           |
+| Released         | September 2024                 |
+| Architecture     | Dense · Decoder-only Transformer |
+| Parameters       | 3.21B                          |
+| Attention        | GQA + RoPE                     |
+| Context Window   | 128K tokens                    |
+| Quantization     | Q4_K_M (Ollama)                |
+| Intended Use     | On-device / edge deployment    |
+| License          | Llama 3.2 Community License    |
+ 
+> Lightweight text-only model optimized for mobile and edge environments. Supports 8 languages. Smallest model in the Llama 3.2 family.
+
 ### 📊 Results
 
 | Metric    | Score |
@@ -63,6 +79,23 @@ The `llama3.2:3B` model offers surprisingly robust baseline extraction capabilit
 | Model          | llama3:8b (local)                      |
 | System Prompt  | symptom-extraction-prompt-1.txt        |
 | Results        | symptom-extraction-result-2.txt        |
+
+### 🔍 Model Overview — `llama3:8b`
+ 
+| Property         | Value                          |
+|------------------|--------------------------------|
+| Developer        | Meta                           |
+| Released         | April 2024                     |
+| Architecture     | Dense · Decoder-only Transformer |
+| Parameters       | 8.03B                          |
+| Attention        | GQA + RoPE                     |
+| Layers           | 32                             |
+| Hidden Dim       | 4096                           |
+| Context Window   | 8K tokens                      |
+| Quantization     | Q4_0 (Ollama)                  |
+| License          | Meta Llama 3 Community License |
+
+> First generation of the Llama 3 family. Trained on 15T tokens. Strong reasoning and instruction following for its size class.
 
 ### 📊 Results
 
@@ -85,6 +118,24 @@ The `llama3:8B` model achieved a solid **80% F1-score** across the **100 test ca
 | System Prompt  | symptom-extraction-prompt-1.txt        |
 | Results        | symptom-extraction-result-3.txt        |
 
+### 🔍 Model Overview — `mistral-nemo:12b`
+ 
+| Property         | Value                                  |
+|------------------|----------------------------------------|
+| Developer        | Mistral AI + NVIDIA (joint)            |
+| Released         | July 2024                              |
+| Architecture     | Dense · Decoder-only Transformer       |
+| Parameters       | 12.2B                                  |
+| Layers           | 40                                     |
+| Attention        | GQA (32 heads / 8 KV heads)            |
+| Context Window   | 128K tokens                            |
+| Tokenizer        | Tekken (Tiktoken-based, 131K vocab)    |
+| Quantization     | FP8-aware training                     |
+| Training Infra   | NVIDIA Megatron-LM, 3072× H100 GPUs   |
+| License          | Apache 2.0                             |
+ 
+> Co-developed with NVIDIA on DGX Cloud. Drop-in replacement for Mistral 7B with significantly expanded context and multilingual capability across 11+ languages.
+
 ### 📊 Results
 
 | Metric    | Score |
@@ -105,6 +156,25 @@ The `mistral-nemo:12b` model achieved a nearly identical **79% F1-score**, showi
 | Model          | qwen2.5:14b (local)                            |
 | System Prompt  | symptom-extraction-prompt-1.txt                |
 | Results        | symptom-extraction-result-4.txt                |
+
+### 🔍 Model Overview — `qwen2.5:14b`
+ 
+| Property         | Value                                      |
+|------------------|--------------------------------------------|
+| Developer        | Alibaba Cloud (Qwen Team)                  |
+| Released         | September 2024                             |
+| Architecture     | Dense · Decoder-only Transformer           |
+| Parameters       | 14.7B total / 13.1B non-embedding          |
+| Layers           | 48                                         |
+| Attention        | GQA (40 Q heads / 8 KV heads) + RoPE      |
+| Activation       | SwiGLU                                     |
+| Normalization    | RMSNorm                                    |
+| Context Window   | 128K tokens (generates up to 8K)          |
+| Pretraining Data | ~18 trillion tokens                        |
+| Multilingual     | 29+ languages                              |
+| License          | Qwen Research License                      |
+ 
+> Dense open-weight model from the Qwen2.5 family. Pretrained on the largest dataset among local models tested (~18T tokens). Strong structured output and instruction-following capabilities.
 
 ### 📊 Results
 
@@ -127,6 +197,24 @@ The `qwen2.5:14b` model is the current top performer with a **0.825 F1-score**, 
 | System Prompt  | symptom-extraction-prompt-1.txt        |
 | Results        | symptom-extraction-result-5.txt        |
 
+### 🔍 Model Overview — `phi4:14b`
+ 
+| Property         | Value                                      |
+|------------------|--------------------------------------------|
+| Developer        | Microsoft Research                         |
+| Released         | December 2024                              |
+| Architecture     | Dense · Decoder-only Transformer           |
+| Parameters       | 14B                                        |
+| Layers           | 40                                         |
+| Attention        | GQA (24 heads / 8 KV heads) + RoPE        |
+| Context Window   | 16K tokens (extendable to 64K)            |
+| Tokenizer        | tiktoken (vocab size 100,352)              |
+| Pretraining Data | ~9.8T tokens (incl. ~400B synthetic)      |
+| Knowledge Cutoff | June 2024                                  |
+| License          | MIT                                        |
+ 
+> STEM-focused SLM (Small Language Model) from Microsoft. Distinguished by heavy use of **synthetic training data** for mathematical and scientific reasoning. Punches above its weight class on GPQA and MATH benchmarks.
+
 ### 📊 Results
 
 | Metric    | Score |
@@ -148,6 +236,26 @@ The `phi4:14B model` demonstrates high clinical intelligence with an **F1-score 
 | System Prompt  | symptom-extraction-prompt-1.txt        |
 | Results        | symptom-extraction-result-6.txt        |
 
+### 🔍 Model Overview — `meta-llama/llama-4-scout-17b-16e-instruct`
+ 
+| Property           | Value                                              |
+|--------------------|----------------------------------------------------|
+| Developer          | Meta                                               |
+| Released           | April 2025                                         |
+| Architecture       | **Mixture-of-Experts (MoE)** · Auto-regressive     |
+| Active Parameters  | 17B (Top-2 routing per token)                      |
+| Total Parameters   | 109B (distributed across experts)                  |
+| MoE Experts        | 16 specialized + 1 shared (always active)          |
+| Transformer Layers | 40 total (20 MoE blocks)                           |
+| Activation         | SwiGLU                                             |
+| Multimodality      | ✅ Early fusion (up to 5 images per prompt)        |
+| Context Window     | 128K tokens (cloud)                                |
+| Knowledge Cutoff   | August 2024                                        |
+| Multilingual       | 12 languages                                       |
+| License            | Llama 4 Community License                          |
+ 
+> First MoE model in the Llama family. Each token activates only 2 of 16 experts, giving the inference cost of a 17B dense model with the knowledge capacity of 109B parameters. Natively multimodal via early fusion architecture.
+
 ### 📊 Results
 
 | Metric    | Score |
@@ -168,6 +276,17 @@ The `llama-4-scout-17b` model shows a solid baseline for symptom extraction with
 | Model          | openai/gpt-oss-120b (cloud)            |
 | System Prompt  | symptom-extraction-prompt-1.txt        |
 | Results        | symptom-extraction-result-7.txt        |
+
+### 🔍 Model Overview — `openai/gpt-oss-120b`
+ 
+| Property         | Value                              |
+|------------------|------------------------------------|
+| Developer        | OpenAI                             |
+| Architecture     | Dense · Decoder-only Transformer   |
+| Parameters       | ~120B                              |
+| Deployment       | Cloud (API)                        |
+ 
+> Large-scale dense model. Highest parameter count among all tested models. Exhibits the most pronounced High-Intelligence Bias — consistently extracts more clinically nuanced and anatomically precise terms than the ground truth labels require.
 
 ### 📊 Results
 
