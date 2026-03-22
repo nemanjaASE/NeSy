@@ -150,6 +150,7 @@ To get the system up and running, follow these modules in order:
 1.  **Database**: Restore the graph using the [Neo4j Setup Guide](./docs/neo4j_setup.md).
 2.  **Notebooks**: Preparation phase and testing [Notebooks Guide](./notebooks/README.md).
 3.  **API**: Launch the backend following the [Backend README](./backend/README.md).
+4.  **NLP test**: NLP Layer Test Results [NLP Test Results](./docs/nlp-test.md).
 
 ## License
  
