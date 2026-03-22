@@ -1,6 +1,6 @@
 ---
 title: 🔧 Neo4j Desktop Setup & n10s Installation
-nav_order: 3
+nav_order: 2
 ---
 
 # 🔧 Neo4j Desktop Setup & n10s Installation
