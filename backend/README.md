@@ -1,3 +1,8 @@
+---
+title: 🚀 FastAPI
+nav_order: 5
+---
+
 # 🚀 FastAPI
 
 ## 📋 Prerequisites
