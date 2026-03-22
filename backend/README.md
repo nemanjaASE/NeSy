@@ -1,5 +1,5 @@
 ---
-title: 🔧 Neo4j Desktop Setup & n10s Installation
+title: 🚀 FastAPI
 nav_order: 5
 ---
 
