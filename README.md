@@ -152,6 +152,7 @@ To get the system up and running, follow these modules in order:
 3.  **Notebooks**: Preparation phase and testing [Notebooks Guide](./notebooks/README.md).
 4.  **API**: Launch the backend following the [Backend README](./backend/README.md).
 5.  **NLP test**: NLP Layer Test Results [NLP Test Results](./docs/nlp-test.md).
+6.  **Embedding test**: Embedding Layer Test Results [NLP Test Results](./docs/embedding-test.md).
 
 ## License
  
