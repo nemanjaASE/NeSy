@@ -1,3 +1,8 @@
+---
+title: 🦙 Ollama — Setup Guide
+nav_order: 4
+---
+
 # 🦙 Ollama — Setup Guide
 
 Ollama is an open-source runtime for running large language models (LLMs) locally, without any cloud dependency. It runs as a background service and exposes a REST API on port `11434`.
