@@ -1,3 +1,5 @@
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://nemanjaase.github.io/NeSy/)
+
 <h1 align="center">🌟 NeSy: Neuro-Symbolic Diagnostic Framework</h1>
 
 <p align="center">
