@@ -1,3 +1,8 @@
+---
+title: 📚 Notebook Directory & Workflow
+nav_order: 3
+---
+
 # 📚 Notebook Directory & Workflow
 
 The notebooks in this directory are categorized into two groups: the Preparation Pipeline (mandatory for database enrichment) and Layer Demonstrations (standalone execution of specific system components).
