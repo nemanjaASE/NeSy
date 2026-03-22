@@ -1,5 +1,5 @@
-=== SYMPTOM EXTRACTION REPORT - 2026-03-21 15:25:52 ===
-Model: llama3:latest
+=== SYMPTOM EXTRACTION REPORT - 2026-03-22 09:07:26 ===
+Model: llama3:8B
 ====================================================
 
 --- CANONICAL_001 ---
@@ -114,21 +114,21 @@ Negation Error: False
 
 --- CANONICAL_012 ---
 Input: My whole body itches, I have a rash and small red spots.
-Present (extracted): ['erythema', 'pruritus', 'rash']
+Present (extracted): ['petechiae', 'pruritus', 'rash']
 Absent (negated):    []
 Expected:           ['itching', 'petechiae', 'rash']
-Precision: 1.000 | Recall: 0.667 | F1: 0.800
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
 False Positive: []
-False Negative: ['petechiae']
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_013 ---
 Input: I have a cough with blood in the sputum and chest pain when I breathe deeply.
-Present (extracted): ['chest pain', 'haemoptysis']
+Present (extracted): ['chest pain', 'dyspnea', 'haemoptysis']
 Absent (negated):    []
 Expected:           ['cough', 'hemoptysis', 'pleuritic chest pain']
-Precision: 0.500 | Recall: 0.333 | F1: 0.400
-False Positive: ['chest pain']
+Precision: 0.333 | Recall: 0.333 | F1: 0.333
+False Positive: ['chest pain', 'dyspnea']
 False Negative: ['cough', 'pleuritic chest pain']
 Negation Error: False
 
@@ -244,11 +244,11 @@ Negation Error: False
 
 --- CANONICAL_025 ---
 Input: I have a rash all over my body, red patches, and it itches like crazy.
-Present (extracted): ['erythema', 'pruritus', 'rash']
+Present (extracted): ['erythema', 'generalized pruritic rash', 'pruritus']
 Absent (negated):    []
 Expected:           ['itching', 'rash']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
+Precision: 0.667 | Recall: 1.000 | F1: 0.800
+False Positive: ['generalized pruritic rash']
 False Negative: []
 Negation Error: False
 
@@ -644,12 +644,12 @@ Negation Error: False
 
 --- CANONICAL_065 ---
 Input: I have a rash all over my body, it itches and is red, but no fever or joint pain.
-Present (extracted): ['erythema', 'generalized rash', 'pruritus']
+Present (extracted): ['erythema', 'pruritic rash']
 Absent (negated):    ['fever', 'joint pain']
 Expected:           ['itching', 'rash']
-Precision: 0.667 | Recall: 1.000 | F1: 0.800
-False Positive: ['generalized rash']
-False Negative: []
+Precision: 0.500 | Recall: 0.500 | F1: 0.500
+False Positive: ['pruritic rash']
+False Negative: ['itching']
 Negation Error: False
 
 --- CANONICAL_066 ---
@@ -714,11 +714,11 @@ Negation Error: False
 
 --- CANONICAL_072 ---
 Input: I have red eyes, they burn, they're watering, light sensitivity — but no fever, no headache, no runny nose.
-Present (extracted): ['bloodshot eye', 'conjunctivitis', 'excessive tearing', 'photophobia']
+Present (extracted): ['bloodshot eye', 'excessive tearing', 'photophobia']
 Absent (negated):    ['fever', 'headache', 'rhinorrhea']
 Expected:           ['bloodshot eye', 'excessive tearing', 'photophobia']
-Precision: 0.750 | Recall: 1.000 | F1: 0.857
-False Positive: ['conjunctivitis']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
 False Negative: []
 Negation Error: False
 
@@ -824,12 +824,12 @@ Negation Error: False
 
 --- CANONICAL_083 ---
 Input: I noticed blood in my urine and I have a sharp pain in my back.
-Present (extracted): []
+Present (extracted): ['back pain', 'hematuria']
 Absent (negated):    []
 Expected:           ['backache', 'hematuria']
-Precision: 0.000 | Recall: 0.000 | F1: 0.000
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
 False Positive: []
-False Negative: ['backache', 'hematuria']
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_084 ---
@@ -874,12 +874,12 @@ Negation Error: False
 
 --- CANONICAL_088 ---
 Input: I'm seeing double and my eyelids are drooping.
-Present (extracted): []
+Present (extracted): ['double vision', 'ptosis']
 Absent (negated):    []
 Expected:           ['double vision', 'ptosis']
-Precision: 0.000 | Recall: 0.000 | F1: 0.000
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
 False Positive: []
-False Negative: ['double vision', 'ptosis']
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_089 ---
@@ -1004,7 +1004,7 @@ Negation Error: False
 
 
 ====================
-Average Precision: 0.793
-Average Recall:    0.787
-Average F1-score:  0.782
+Average Precision: 0.809
+Average Recall:    0.806
+Average F1-score:  0.800
 All cases processed.

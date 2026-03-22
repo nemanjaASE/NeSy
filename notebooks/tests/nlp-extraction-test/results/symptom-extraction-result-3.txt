@@ -1,5 +1,5 @@
-=== SYMPTOM EXTRACTION REPORT - 2026-03-21 19:35:53 ===
-Model: qwen2.5:14b
+=== SYMPTOM EXTRACTION REPORT - 2026-03-22 09:28:14 ===
+Model: mistral-nemo:12b
 ====================================================
 
 --- CANONICAL_001 ---
@@ -54,12 +54,12 @@ Negation Error: False
 
 --- CANONICAL_006 ---
 Input: I have a sore throat, I'm sneezing, and my nose is running.
-Present (extracted): ['pharyngitis', 'rhinorrhea', 'sneezing']
+Present (extracted): ['rhinorrhea', 'sneeze', 'sore throat']
 Absent (negated):    []
 Expected:           ['pharynx inflammation', 'rhinorrhea', 'sneezing']
 Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['pharyngitis']
-False Negative: ['pharynx inflammation']
+False Positive: ['sneeze']
+False Negative: ['sneezing']
 Negation Error: False
 
 --- CANONICAL_007 ---
@@ -74,11 +74,11 @@ Negation Error: False
 
 --- CANONICAL_008 ---
 Input: My stomach hurts, I'm bloated, and I have cramps.
-Present (extracted): ['abdominal bloating', 'abdominal cramp', 'abdominal pain']
+Present (extracted): ['abdominal cramp', 'abdominal distention', 'abdominal pain']
 Absent (negated):    []
 Expected:           ['abdominal cramp', 'abdominal pain', 'bloating']
 Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['abdominal bloating']
+False Positive: ['abdominal distention']
 False Negative: ['bloating']
 Negation Error: False
 
@@ -114,32 +114,32 @@ Negation Error: False
 
 --- CANONICAL_012 ---
 Input: My whole body itches, I have a rash and small red spots.
-Present (extracted): ['petechiae', 'pruritus', 'rash']
+Present (extracted): ['macules', 'pruritus', 'rash']
 Absent (negated):    []
 Expected:           ['itching', 'petechiae', 'rash']
+Precision: 0.667 | Recall: 0.667 | F1: 0.667
+False Positive: ['macules']
+False Negative: ['petechiae']
+Negation Error: False
+
+--- CANONICAL_013 ---
+Input: I have a cough with blood in the sputum and chest pain when I breathe deeply.
+Present (extracted): ['cough', 'hemoptysis', 'pleuritic chest pain']
+Absent (negated):    []
+Expected:           ['cough', 'hemoptysis', 'pleuritic chest pain']
 Precision: 1.000 | Recall: 1.000 | F1: 1.000
 False Positive: []
 False Negative: []
 Negation Error: False
 
---- CANONICAL_013 ---
-Input: I have a cough with blood in the sputum and chest pain when I breathe deeply.
-Present (extracted): ['chest pain', 'hemoptysis']
-Absent (negated):    []
-Expected:           ['cough', 'hemoptysis', 'pleuritic chest pain']
-Precision: 0.500 | Recall: 0.333 | F1: 0.400
-False Positive: ['chest pain']
-False Negative: ['cough', 'pleuritic chest pain']
-Negation Error: False
-
 --- CANONICAL_014 ---
 Input: My lymph nodes on my neck are swollen and painful to the touch.
-Present (extracted): ['cervical pain', 'lymphadenopathy']
+Present (extracted): ['lymphadenopathy', 'neck pain']
 Absent (negated):    []
 Expected:           ['lymphadenopathy', 'neck pain']
-Precision: 0.500 | Recall: 0.500 | F1: 0.500
-False Positive: ['cervical pain']
-False Negative: ['neck pain']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_015 ---
@@ -154,31 +154,31 @@ Negation Error: False
 
 --- CANONICAL_016 ---
 Input: Pain under my right ribs, nausea, and I'm vomiting bile.
-Present (extracted): ['nausea', 'right upper quadrant pain', 'vomiting']
+Present (extracted): ['nausea', 'right rib pain', 'vomiting bile']
 Absent (negated):    []
 Expected:           ['abdominal pain', 'nausea', 'vomiting']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['right upper quadrant pain']
-False Negative: ['abdominal pain']
+Precision: 0.333 | Recall: 0.333 | F1: 0.333
+False Positive: ['right rib pain', 'vomiting bile']
+False Negative: ['abdominal pain', 'vomiting']
 Negation Error: False
 
 --- CANONICAL_017 ---
 Input: I feel weakness in my legs, it's hard to walk and climb stairs.
-Present (extracted): ['climbing stairs difficulty', 'difficulty walking', 'leg weakness']
+Present (extracted): ['difficulty climbing stairs', 'difficulty walking', 'leg weakness']
 Absent (negated):    []
 Expected:           ['leg weakness']
 Precision: 0.333 | Recall: 1.000 | F1: 0.500
-False Positive: ['climbing stairs difficulty', 'difficulty walking']
+False Positive: ['difficulty climbing stairs', 'difficulty walking']
 False Negative: []
 Negation Error: False
 
 --- CANONICAL_018 ---
 Input: I have a wound on my skin that won't heal and is oozing.
-Present (extracted): ['non-healing wound', 'wound exudate']
+Present (extracted): ['skin wound', 'wound ooze']
 Absent (negated):    []
 Expected:           ['skin lesion', 'skin ulcer']
 Precision: 0.000 | Recall: 0.000 | F1: 0.000
-False Positive: ['non-healing wound', 'wound exudate']
+False Positive: ['skin wound', 'wound ooze']
 False Negative: ['skin lesion', 'skin ulcer']
 Negation Error: False
 
@@ -194,42 +194,42 @@ Negation Error: False
 
 --- CANONICAL_020 ---
 Input: I have bloody diarrhea, stomach cramps, and a fever.
-Present (extracted): ['abdominal cramp', 'bloody diarrhea', 'fever']
+Present (extracted): ['abdominal pain', 'bloody diarrhea', 'fever']
 Absent (negated):    []
 Expected:           ['abdominal cramp', 'bloody diarrhea', 'fever']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.667 | Recall: 0.667 | F1: 0.667
+False Positive: ['abdominal pain']
+False Negative: ['abdominal cramp']
 Negation Error: False
 
 --- CANONICAL_021 ---
 Input: I have a fever and my nose is running like a tap, my head is splitting.
-Present (extracted): ['fever', 'rhinorrhea', 'severe headache']
+Present (extracted): ['fever', 'headache', 'rhinorrhea']
 Absent (negated):    []
 Expected:           ['fever', 'headache', 'rhinorrhea']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['severe headache']
-False Negative: ['headache']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_022 ---
 Input: I'm coughing like crazy, my throat is dry and it burns when I swallow.
-Present (extracted): ['dry throat', 'odynophagia', 'severe cough']
+Present (extracted): ['cough', 'dry throat', 'odynophagia']
 Absent (negated):    []
 Expected:           ['cough', 'pharynx inflammation']
-Precision: 0.000 | Recall: 0.000 | F1: 0.000
-False Positive: ['dry throat', 'odynophagia', 'severe cough']
-False Negative: ['cough', 'pharynx inflammation']
+Precision: 0.333 | Recall: 0.500 | F1: 0.400
+False Positive: ['dry throat', 'odynophagia']
+False Negative: ['pharynx inflammation']
 Negation Error: False
 
 --- CANONICAL_023 ---
 Input: My stomach hurts terribly, I have cramps and I'm running to the bathroom every 10 minutes.
-Present (extracted): ['abdominal cramp', 'abdominal pain', 'diarrhea']
+Present (extracted): ['abdominal cramp', 'abdominal pain', 'urgency']
 Absent (negated):    []
 Expected:           ['abdominal cramp', 'abdominal pain', 'diarrhea']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.667 | Recall: 0.667 | F1: 0.667
+False Positive: ['urgency']
+False Negative: ['diarrhea']
 Negation Error: False
 
 --- CANONICAL_024 ---
@@ -244,21 +244,21 @@ Negation Error: False
 
 --- CANONICAL_025 ---
 Input: I have a rash all over my body, red patches, and it itches like crazy.
-Present (extracted): ['erythema', 'pruritus', 'rash']
+Present (extracted): ['pruritus', 'rash', 'red skin patch']
 Absent (negated):    []
 Expected:           ['itching', 'rash']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
+Precision: 0.667 | Recall: 1.000 | F1: 0.800
+False Positive: ['red skin patch']
 False Negative: []
 Negation Error: False
 
 --- CANONICAL_026 ---
 Input: Headache, nausea, dizziness, I feel awful, like I'm going to collapse.
-Present (extracted): ['dizziness', 'headache', 'nausea', 'weakness']
+Present (extracted): ['dizziness', 'headache', 'nausea']
 Absent (negated):    []
 Expected:           ['dizziness', 'headache', 'malaise', 'nausea']
-Precision: 0.750 | Recall: 0.750 | F1: 0.750
-False Positive: ['weakness']
+Precision: 1.000 | Recall: 0.750 | F1: 0.857
+False Positive: []
 False Negative: ['malaise']
 Negation Error: False
 
@@ -274,21 +274,21 @@ Negation Error: False
 
 --- CANONICAL_028 ---
 Input: I have chills, I'm shaking, and my teeth are chattering even though it's warm.
-Present (extracted): ['chills', 'shivering']
+Present (extracted): ['chills', 'shivering', 'teeth chattering']
 Absent (negated):    []
 Expected:           ['chills', 'shakes', 'teeth chattering']
-Precision: 0.500 | Recall: 0.333 | F1: 0.400
+Precision: 0.667 | Recall: 0.667 | F1: 0.667
 False Positive: ['shivering']
-False Negative: ['shakes', 'teeth chattering']
+False Negative: ['shakes']
 Negation Error: False
 
 --- CANONICAL_029 ---
 Input: My eyes are red, they burn and water non-stop, and light bothers me.
-Present (extracted): ['bloodshot eye', 'excessive tearing', 'photophobia']
+Present (extracted): ['bloodshot eye', 'excessive tearing', 'eye pain', 'photophobia']
 Absent (negated):    []
 Expected:           ['bloodshot eye', 'excessive tearing', 'eye burning', 'photophobia']
-Precision: 1.000 | Recall: 0.750 | F1: 0.857
-False Positive: []
+Precision: 0.750 | Recall: 0.750 | F1: 0.750
+False Positive: ['eye pain']
 False Negative: ['eye burning']
 Negation Error: False
 
@@ -304,12 +304,12 @@ Negation Error: False
 
 --- CANONICAL_031 ---
 Input: I have a fever and a cough with phlegm, sometimes with blood in it.
-Present (extracted): ['fever', 'hemoptysis', 'productive cough']
+Present (extracted): ['cough', 'fever', 'hemoptysis', 'sputum']
 Absent (negated):    []
 Expected:           ['cough', 'fever', 'hemoptysis']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['productive cough']
-False Negative: ['cough']
+Precision: 0.750 | Recall: 1.000 | F1: 0.857
+False Positive: ['sputum']
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_032 ---
@@ -324,32 +324,32 @@ Negation Error: False
 
 --- CANONICAL_033 ---
 Input: I have diarrhea with mucus and blood, and my stomach is burning.
-Present (extracted): ['abdominal pain', 'bloody diarrhea', 'mucoid diarrhea']
+Present (extracted): ['abdominal pain', 'bloody stool', 'diarrhea', 'mucoid stool']
 Absent (negated):    []
 Expected:           ['abdominal pain', 'bloody stool', 'diarrhea', 'mucus in stool']
-Precision: 0.333 | Recall: 0.250 | F1: 0.286
-False Positive: ['bloody diarrhea', 'mucoid diarrhea']
-False Negative: ['bloody stool', 'diarrhea', 'mucus in stool']
+Precision: 0.750 | Recall: 0.750 | F1: 0.750
+False Positive: ['mucoid stool']
+False Negative: ['mucus in stool']
 Negation Error: False
 
 --- CANONICAL_034 ---
 Input: I feel weak, dizzy, and my heart is beating very fast.
-Present (extracted): ['dizziness', 'palpitation', 'weakness']
+Present (extracted): ['dizziness', 'tachycardia', 'weakness']
 Absent (negated):    []
 Expected:           ['dizziness', 'palpitation', 'weakness']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.667 | Recall: 0.667 | F1: 0.667
+False Positive: ['tachycardia']
+False Negative: ['palpitation']
 Negation Error: False
 
 --- CANONICAL_035 ---
 Input: I have small red spots on my skin, they don't itch but look bad.
-Present (extracted): ['petechiae']
+Present (extracted): ['macules']
 Absent (negated):    []
 Expected:           ['petechiae']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+False Positive: ['macules']
+False Negative: ['petechiae']
 Negation Error: False
 
 --- CANONICAL_036 ---
@@ -364,52 +364,52 @@ Negation Error: False
 
 --- CANONICAL_037 ---
 Input: My right side hurts under the ribs and I feel nauseous.
-Present (extracted): ['nausea', 'right upper abdominal pain']
+Present (extracted): ['nausea', 'right-sided abdominal pain']
 Absent (negated):    []
 Expected:           ['nausea', 'right upper quadrant abdominal pain']
 Precision: 0.500 | Recall: 0.500 | F1: 0.500
-False Positive: ['right upper abdominal pain']
+False Positive: ['right-sided abdominal pain']
 False Negative: ['right upper quadrant abdominal pain']
 Negation Error: False
 
 --- CANONICAL_038 ---
 Input: I have a fever of 39°C, a splitting headache, and everything hurts.
-Present (extracted): ['body ache', 'fever', 'headache']
+Present (extracted): ['body ache', 'headache', 'high fever']
 Absent (negated):    []
 Expected:           ['body ache', 'fever', 'headache']
+Precision: 0.667 | Recall: 0.667 | F1: 0.667
+False Positive: ['high fever']
+False Negative: ['fever']
+Negation Error: False
+
+--- CANONICAL_039 ---
+Input: My skin itches all over my body, I have blisters and redness.
+Present (extracted): ['blister', 'pruritus', 'skin redness']
+Absent (negated):    []
+Expected:           ['blister', 'itching', 'rash']
 Precision: 1.000 | Recall: 1.000 | F1: 1.000
 False Positive: []
 False Negative: []
 Negation Error: False
 
---- CANONICAL_039 ---
-Input: My skin itches all over my body, I have blisters and redness.
-Present (extracted): ['blisters', 'erythema', 'pruritus']
-Absent (negated):    []
-Expected:           ['blister', 'itching', 'rash']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['blisters']
-False Negative: ['blister']
-Negation Error: False
-
 --- CANONICAL_040 ---
 Input: I've been coughing for a week, dry, worst at night, and I'm short of breath.
-Present (extracted): ['dry cough', 'dyspnea']
+Present (extracted): ['dry cough', 'dyspnea', 'nocturnal cough']
 Absent (negated):    []
 Expected:           ['dry cough', 'dyspnea']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
+Precision: 0.667 | Recall: 1.000 | F1: 0.800
+False Positive: ['nocturnal cough']
 False Negative: []
 Negation Error: False
 
 --- CANONICAL_041 ---
 Input: Terrible headache, temp 38.7, coughing, and my nose is running.
-Present (extracted): ['cough', 'fever', 'headache', 'rhinorrhea']
+Present (extracted): ['cough', 'headache', 'high fever', 'rhinorrhea']
 Absent (negated):    []
 Expected:           ['cough', 'fever', 'headache', 'rhinorrhea']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.750 | Recall: 0.750 | F1: 0.750
+False Positive: ['high fever']
+False Negative: ['fever']
 Negation Error: False
 
 --- CANONICAL_042 ---
@@ -424,12 +424,12 @@ Negation Error: False
 
 --- CANONICAL_043 ---
 Input: My throat hurts terribly, swallowing is hard, and my fever has spiked.
-Present (extracted): ['dysphagia', 'high fever', 'pharyngitis']
+Present (extracted): ['dysphagia', 'high fever', 'throat pain']
 Absent (negated):    []
 Expected:           ['dysphagia', 'high fever', 'pharynx inflammation']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['pharyngitis']
-False Negative: ['pharynx inflammation']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_044 ---
@@ -464,52 +464,52 @@ Negation Error: False
 
 --- CANONICAL_047 ---
 Input: I have a fever of 39.2°C, a splitting headache, and chills are shaking me.
-Present (extracted): ['chills', 'fever', 'headache']
+Present (extracted): ['chills', 'headache', 'high fever']
 Absent (negated):    []
 Expected:           ['chills', 'fever', 'headache']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.667 | Recall: 0.667 | F1: 0.667
+False Positive: ['high fever']
+False Negative: ['fever']
 Negation Error: False
 
 --- CANONICAL_048 ---
 Input: Dry cough, worst at night, and I feel like I'm running out of air.
-Present (extracted): ['dry cough', 'dyspnea']
+Present (extracted): ['dry cough', 'dyspnea', 'paroxysmal cough']
 Absent (negated):    []
 Expected:           ['dry cough', 'dyspnea']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
+Precision: 0.667 | Recall: 1.000 | F1: 0.800
+False Positive: ['paroxysmal cough']
 False Negative: []
 Negation Error: False
 
 --- CANONICAL_049 ---
 Input: Pain in the lower right abdomen, I feel nauseous and have a fever.
-Present (extracted): ['fever', 'nausea', 'right lower quadrant abdominal pain']
+Present (extracted): ['abdominal pain', 'fever', 'nausea']
 Absent (negated):    []
 Expected:           ['abdominal pain', 'fever', 'nausea']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['right lower quadrant abdominal pain']
-False Negative: ['abdominal pain']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_050 ---
 Input: My eyes are red, they burn, they're watering, and I can't stand light.
-Present (extracted): ['bloodshot eye', 'excessive tearing', 'photophobia']
+Present (extracted): ['bloodshot eye', 'excessive tearing', 'eye pain', 'photophobia']
 Absent (negated):    []
 Expected:           ['bloodshot eye', 'excessive tearing', 'eye burning', 'photophobia']
-Precision: 1.000 | Recall: 0.750 | F1: 0.857
-False Positive: []
+Precision: 0.750 | Recall: 0.750 | F1: 0.750
+False Positive: ['eye pain']
 False Negative: ['eye burning']
 Negation Error: False
 
 --- CANONICAL_051 ---
 Input: I have bloody diarrhea, intestinal cramps, and weakness.
-Present (extracted): ['abdominal cramp', 'bloody diarrhea', 'weakness']
+Present (extracted): ['bloody diarrhea', 'intestinal cramp', 'weakness']
 Absent (negated):    []
 Expected:           ['bloody diarrhea', 'intestinal cramp', 'weakness']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['abdominal cramp']
-False Negative: ['intestinal cramp']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_052 ---
@@ -524,72 +524,72 @@ Negation Error: False
 
 --- CANONICAL_053 ---
 Input: My whole body itches, I have small red spots, and I feel run down.
-Present (extracted): ['malaise', 'petechiae', 'pruritus']
+Present (extracted): ['maculopapular rash', 'pruritus']
 Absent (negated):    []
 Expected:           ['fatigue', 'itching', 'petechiae']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['malaise']
-False Negative: ['fatigue']
+Precision: 0.500 | Recall: 0.333 | F1: 0.400
+False Positive: ['maculopapular rash']
+False Negative: ['fatigue', 'petechiae']
 Negation Error: False
 
 --- CANONICAL_054 ---
 Input: I have been vomiting bile, I feel a sharp burning in my chest after eating, and my temperature is 38°C.
-Present (extracted): ['fever', 'heartburn', 'vomiting']
+Present (extracted): ['bile', 'burning sensation', 'chest pain', 'high fever', 'vomiting']
 Absent (negated):    []
 Expected:           ['fever', 'pyrosis', 'vomiting']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.200 | Recall: 0.333 | F1: 0.250
+False Positive: ['bile', 'burning sensation', 'chest pain', 'high fever']
+False Negative: ['fever', 'pyrosis']
 Negation Error: False
 
 --- CANONICAL_055 ---
 Input: I have a cough with phlegm, sometimes with blood, and my chest hurts when I cough.
-Present (extracted): ['chest pain', 'hemoptysis', 'productive cough']
+Present (extracted): ['chest pain', 'cough', 'hemoptysis', 'productive cough']
 Absent (negated):    []
 Expected:           ['chest pain', 'cough', 'hemoptysis']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
+Precision: 0.750 | Recall: 1.000 | F1: 0.857
 False Positive: ['productive cough']
-False Negative: ['cough']
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_056 ---
 Input: I feel like I've been run over by a truck, totally exhausted and without any strength.
-Present (extracted): ['fatigue', 'weakness']
+Present (extracted): ['fatigue', 'joint pain', 'muscle pain', 'weakness']
 Absent (negated):    []
 Expected:           ['exhaustion', 'fatigue', 'weakness']
-Precision: 1.000 | Recall: 0.667 | F1: 0.800
-False Positive: []
+Precision: 0.500 | Recall: 0.667 | F1: 0.571
+False Positive: ['joint pain', 'muscle pain']
 False Negative: ['exhaustion']
 Negation Error: False
 
 --- CANONICAL_057 ---
 Input: Pain under my right ribs, nausea, and I look slightly yellow in the face.
-Present (extracted): ['jaundice', 'nausea', 'right upper quadrant pain']
+Present (extracted): ['jaundice', 'nausea', 'right rib pain']
 Absent (negated):    []
 Expected:           ['abdominal pain', 'jaundice', 'nausea']
 Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['right upper quadrant pain']
+False Positive: ['right rib pain']
 False Negative: ['abdominal pain']
 Negation Error: False
 
 --- CANONICAL_058 ---
 Input: I have a fever, I'm shaking, everything aches, and my head feels like it's going to explode.
-Present (extracted): ['body ache', 'chills', 'fever', 'severe headache']
+Present (extracted): ['fever', 'headache', 'muscle pain', 'shivering']
 Absent (negated):    []
 Expected:           ['body ache', 'fever', 'headache', 'shaking']
 Precision: 0.500 | Recall: 0.500 | F1: 0.500
-False Positive: ['chills', 'severe headache']
-False Negative: ['headache', 'shaking']
+False Positive: ['muscle pain', 'shivering']
+False Negative: ['body ache', 'shaking']
 Negation Error: False
 
 --- CANONICAL_059 ---
 Input: Runny nose, constant sneezing, and my throat is burning.
-Present (extracted): ['pharyngitis', 'rhinorrhea', 'sneezing']
+Present (extracted): ['rhinorrhea', 'sneeze', 'throat pain']
 Absent (negated):    []
 Expected:           ['pharynx inflammation', 'rhinorrhea', 'sneezing']
 Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['pharyngitis']
-False Negative: ['pharynx inflammation']
+False Positive: ['sneeze']
+False Negative: ['sneezing']
 Negation Error: False
 
 --- CANONICAL_060 ---
@@ -624,22 +624,22 @@ Negation Error: False
 
 --- CANONICAL_063 ---
 Input: My throat and head hurt, fever around 38°C, but no sneezing or runny nose.
-Present (extracted): ['fever', 'headache', 'pharyngitis']
-Absent (negated):    ['rhinorrhea', 'sneezing']
+Present (extracted): ['headache', 'high fever', 'throat pain']
+Absent (negated):    ['rhinorrhea', 'sneeze']
 Expected:           ['fever', 'headache', 'pharynx inflammation']
 Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['pharyngitis']
-False Negative: ['pharynx inflammation']
+False Positive: ['high fever']
+False Negative: ['fever']
 Negation Error: False
 
 --- CANONICAL_064 ---
 Input: I've been completely exhausted for 4 days — weak, run down, no appetite — but no fever or specific pain.
-Present (extracted): ['fatigue', 'loss of appetite', 'weakness']
-Absent (negated):    ['fever']
+Present (extracted): ['anorexia', 'fatigue', 'malaise']
+Absent (negated):    ['fever', 'pain']
 Expected:           ['exhaustion', 'loss of appetite', 'weakness']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['fatigue']
-False Negative: ['exhaustion']
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+False Positive: ['anorexia', 'fatigue', 'malaise']
+False Negative: ['exhaustion', 'loss of appetite', 'weakness']
 Negation Error: False
 
 --- CANONICAL_065 ---
@@ -654,17 +654,17 @@ Negation Error: False
 
 --- CANONICAL_066 ---
 Input: Terrible headache, dizziness, nausea, I feel awful, my heart is racing, but no fever or diarrhea.
-Present (extracted): ['dizziness', 'headache', 'malaise', 'nausea', 'palpitation']
+Present (extracted): ['dizziness', 'headache', 'nausea', 'palpitation']
 Absent (negated):    ['diarrhea', 'fever']
 Expected:           ['dizziness', 'headache', 'nausea', 'palpitation']
-Precision: 0.800 | Recall: 1.000 | F1: 0.889
-False Positive: ['malaise']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
 False Negative: []
 Negation Error: False
 
 --- CANONICAL_067 ---
 Input: For a week everything has hurt — muscles, joints, back, head, I'm tired — but no cough, no fever, no rash.
-Present (extracted): ['back pain', 'fatigue', 'headache', 'joint pain', 'muscle pain']
+Present (extracted): ['backache', 'fatigue', 'headache', 'joint pain', 'muscle pain']
 Absent (negated):    ['cough', 'fever', 'rash']
 Expected:           ['backache', 'fatigue', 'headache', 'joint pain', 'muscle pain']
 Precision: 1.000 | Recall: 1.000 | F1: 1.000
@@ -694,18 +694,18 @@ Negation Error: False
 
 --- CANONICAL_070 ---
 Input: My stomach hurts, I'm bloated, I have cramps and nausea, but no fever, no bloody diarrhea, no vomiting blood.
-Present (extracted): ['abdominal cramp', 'abdominal pain', 'bloating', 'nausea']
+Present (extracted): ['abdominal cramp', 'abdominal distention', 'abdominal pain', 'nausea']
 Absent (negated):    ['bloody diarrhea', 'fever', 'hematemesis']
 Expected:           ['abdominal pain', 'bloating', 'cramp', 'nausea']
-Precision: 0.750 | Recall: 0.750 | F1: 0.750
-False Positive: ['abdominal cramp']
-False Negative: ['cramp']
+Precision: 0.500 | Recall: 0.500 | F1: 0.500
+False Positive: ['abdominal cramp', 'abdominal distention']
+False Negative: ['bloating', 'cramp']
 Negation Error: False
 
 --- CANONICAL_071 ---
 Input: I feel awful — tired, weak, heavy-headed, irritable, sleeping badly — but no fever or localized pain.
 Present (extracted): ['fatigue', 'headache', 'irritability', 'sleep disturbance', 'weakness']
-Absent (negated):    ['fever']
+Absent (negated):    ['fever', 'localized pain']
 Expected:           ['headache', 'insomnia', 'irritability', 'tiredness', 'weakness']
 Precision: 0.600 | Recall: 0.600 | F1: 0.600
 False Positive: ['fatigue', 'sleep disturbance']
@@ -714,27 +714,27 @@ Negation Error: False
 
 --- CANONICAL_072 ---
 Input: I have red eyes, they burn, they're watering, light sensitivity — but no fever, no headache, no runny nose.
-Present (extracted): ['bloodshot eye', 'excessive tearing', 'photophobia']
+Present (extracted): ['bloodshot eye', 'excessive tearing', 'eye pain', 'photophobia']
 Absent (negated):    ['fever', 'headache', 'rhinorrhea']
 Expected:           ['bloodshot eye', 'excessive tearing', 'photophobia']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
+Precision: 0.750 | Recall: 1.000 | F1: 0.857
+False Positive: ['eye pain']
 False Negative: []
 Negation Error: False
 
 --- CANONICAL_073 ---
 Input: I've been coughing for 10 days, dry, worst at night, sometimes my chest hurts when I cough — but no bloody sputum or fever.
-Present (extracted): ['chest pain', 'dry cough']
-Absent (negated):    ['fever', 'hemoptysis']
+Present (extracted): ['chest pain associated with cough', 'dry cough', 'nighttime cough']
+Absent (negated):    ['bloody sputum', 'fever']
 Expected:           ['chest pain', 'dry cough']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.333 | Recall: 0.500 | F1: 0.400
+False Positive: ['chest pain associated with cough', 'nighttime cough']
+False Negative: ['chest pain']
 Negation Error: False
 
 --- CANONICAL_074 ---
 Input: Everything itches, I have red patches on my arms and legs — but no fever, no joint pain, no fatigue.
-Present (extracted): ['pruritus', 'rash']
+Present (extracted): ['erythema', 'pruritus']
 Absent (negated):    ['fatigue', 'fever', 'joint pain']
 Expected:           ['itching', 'rash']
 Precision: 1.000 | Recall: 1.000 | F1: 1.000
@@ -774,12 +774,12 @@ Negation Error: False
 
 --- CANONICAL_078 ---
 Input: I feel exhausted, no energy, sleeping badly, irritable, my pulse races when I lie down — but no pain or fever.
-Present (extracted): ['fatigue', 'irritability', 'orthopnea', 'sleep disturbance']
+Present (extracted): ['fatigue', 'insomnia', 'irritability', 'orthopnea', 'tachycardia']
 Absent (negated):    ['fever', 'pain']
 Expected:           ['exhaustion', 'fatigue', 'irritability', 'lack of energy', 'palpitation', 'sleep disturbance']
-Precision: 0.750 | Recall: 0.500 | F1: 0.600
-False Positive: ['orthopnea']
-False Negative: ['exhaustion', 'lack of energy', 'palpitation']
+Precision: 0.400 | Recall: 0.333 | F1: 0.364
+False Positive: ['insomnia', 'orthopnea', 'tachycardia']
+False Negative: ['exhaustion', 'lack of energy', 'palpitation', 'sleep disturbance']
 Negation Error: False
 
 --- CANONICAL_079 ---
@@ -794,32 +794,32 @@ Negation Error: False
 
 --- CANONICAL_080 ---
 Input: I have a rash on my chest and arms, it itches and is red — but no fever, no fatigue, no joint pain.
-Present (extracted): ['erythema', 'pruritus', 'rash']
+Present (extracted): ['arm rash', 'chest rash', 'erythema', 'pruritus', 'rash']
 Absent (negated):    ['fatigue', 'fever', 'joint pain']
 Expected:           ['itching', 'rash']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
+Precision: 0.500 | Recall: 1.000 | F1: 0.667
+False Positive: ['arm rash', 'chest rash']
 False Negative: []
 Negation Error: False
 
 --- CANONICAL_081 ---
 Input: I'm having seizures and my hands are shaking uncontrollably.
-Present (extracted): ['seizure', 'tremor']
+Present (extracted): ['hand tremor', 'seizure']
 Absent (negated):    []
 Expected:           ['seizure', 'tremor']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.500 | Recall: 0.500 | F1: 0.500
+False Positive: ['hand tremor']
+False Negative: ['tremor']
 Negation Error: False
 
 --- CANONICAL_082 ---
 Input: I have severe constipation and I feel very bloated.
-Present (extracted): ['abdominal bloating', 'constipation']
+Present (extracted): ['abdominal distention', 'severe constipation']
 Absent (negated):    []
 Expected:           ['bloating', 'constipation']
-Precision: 0.500 | Recall: 0.500 | F1: 0.500
-False Positive: ['abdominal bloating']
-False Negative: ['bloating']
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+False Positive: ['abdominal distention', 'severe constipation']
+False Negative: ['bloating', 'constipation']
 Negation Error: False
 
 --- CANONICAL_083 ---
@@ -834,7 +834,7 @@ Negation Error: False
 
 --- CANONICAL_084 ---
 Input: I feel very drowsy, confused, and I can't stay awake.
-Present (extracted): ['confusion', 'drowsiness']
+Present (extracted): ['confusion', 'somnolence']
 Absent (negated):    []
 Expected:           ['confusion', 'drowsiness']
 Precision: 1.000 | Recall: 1.000 | F1: 1.000
@@ -844,7 +844,7 @@ Negation Error: False
 
 --- CANONICAL_085 ---
 Input: I have a strange tingling sensation in my arms and I feel numb.
-Present (extracted): ['numbness', 'tingling']
+Present (extracted): ['numbness', 'paresthesia']
 Absent (negated):    []
 Expected:           ['hypoesthesia', 'paresthesia']
 Precision: 1.000 | Recall: 1.000 | F1: 1.000
@@ -854,22 +854,22 @@ Negation Error: False
 
 --- CANONICAL_086 ---
 Input: My gums are bleeding and I have small bruises all over my skin.
-Present (extracted): ['gum bleeding', 'petechiae']
+Present (extracted): ['ecchymosis', 'gingival bleeding']
 Absent (negated):    []
 Expected:           ['bruise', 'gum bleeding']
 Precision: 0.500 | Recall: 0.500 | F1: 0.500
-False Positive: ['petechiae']
-False Negative: ['bruise']
+False Positive: ['gingival bleeding']
+False Negative: ['gum bleeding']
 Negation Error: False
 
 --- CANONICAL_087 ---
 Input: I've lost a lot of weight recently without trying and I have no appetite.
-Present (extracted): ['loss of appetite', 'weight loss']
+Present (extracted): ['anorexia', 'unintentional weight loss']
 Absent (negated):    []
 Expected:           ['loss of appetite', 'weight loss']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.500 | Recall: 0.500 | F1: 0.500
+False Positive: ['unintentional weight loss']
+False Negative: ['loss of appetite']
 Negation Error: False
 
 --- CANONICAL_088 ---
@@ -894,7 +894,7 @@ Negation Error: False
 
 --- CANONICAL_090 ---
 Input: I can't stop hiccuping and my stomach feels very full quickly.
-Present (extracted): ['early satiety', 'hiccups']
+Present (extracted): ['early satiety', 'hiccup']
 Absent (negated):    []
 Expected:           ['early satiety', 'hiccough']
 Precision: 1.000 | Recall: 1.000 | F1: 1.000
@@ -914,12 +914,12 @@ Negation Error: False
 
 --- CANONICAL_092 ---
 Input: I feel very anxious, my heart is racing and I'm sweating a lot.
-Present (extracted): ['anxiety', 'palpitation', 'sweating']
+Present (extracted): ['anxiety', 'diaphoresis', 'palpitation']
 Absent (negated):    []
 Expected:           ['anxiety', 'diaphoresis', 'palpitation']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['sweating']
-False Negative: ['diaphoresis']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_093 ---
@@ -954,12 +954,12 @@ Negation Error: False
 
 --- CANONICAL_096 ---
 Input: I have a dry mouth and I'm thirsty all the time.
-Present (extracted): ['dry mouth', 'polydipsia']
+Present (extracted): ['dry mouth', 'thirst']
 Absent (negated):    []
 Expected:           ['dry mouth', 'thirst']
-Precision: 0.500 | Recall: 0.500 | F1: 0.500
-False Positive: ['polydipsia']
-False Negative: ['thirst']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_097 ---
@@ -984,12 +984,12 @@ Negation Error: False
 
 --- CANONICAL_099 ---
 Input: I have a bulge in my abdomen and it's tender to the touch.
-Present (extracted): ['abdominal distension', 'abdominal tenderness']
+Present (extracted): ['abdominal mass', 'abdominal tenderness']
 Absent (negated):    []
 Expected:           ['abdominal mass', 'abdominal tenderness']
-Precision: 0.500 | Recall: 0.500 | F1: 0.500
-False Positive: ['abdominal distension']
-False Negative: ['abdominal mass']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_100 ---
@@ -1004,7 +1004,7 @@ Negation Error: False
 
 
 ====================
-Average Precision: 0.836
-Average Recall:    0.825
-Average F1-score:  0.826
+Average Precision: 0.784
+Average Recall:    0.810
+Average F1-score:  0.790
 All cases processed.

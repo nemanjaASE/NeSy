@@ -1,4 +1,4 @@
-=== SYMPTOM EXTRACTION REPORT - 2026-03-21 15:12:56 ===
+=== SYMPTOM EXTRACTION REPORT - 2026-03-22 09:11:28 ===
 Model: llama3.2:3B
 ====================================================
 
@@ -44,12 +44,12 @@ Negation Error: False
 
 --- CANONICAL_005 ---
 Input: I feel extremely tired, weak, and my whole body feels run down.
-Present (extracted): ['body ache', 'fatigue', 'weakness']
+Present (extracted): ['extreme fatigue', 'generalized malaise', 'weakness']
 Absent (negated):    []
 Expected:           ['fatigue', 'malaise', 'weakness']
-Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['body ache']
-False Negative: ['malaise']
+Precision: 0.333 | Recall: 0.333 | F1: 0.333
+False Positive: ['extreme fatigue', 'generalized malaise']
+False Negative: ['fatigue', 'malaise']
 Negation Error: False
 
 --- CANONICAL_006 ---
@@ -95,12 +95,12 @@ Negation Error: False
 --- CANONICAL_010 ---
 Input: I have a fever, chills, and all my muscles ache.
 Present (extracted): ['fever', 'muscle pain']
-Absent (negated):    []
+Absent (negated):    ['chills']
 Expected:           ['chills', 'fever', 'muscle pain']
 Precision: 1.000 | Recall: 0.667 | F1: 0.800
 False Positive: []
 False Negative: ['chills']
-Negation Error: False
+Negation Error: True
 
 --- CANONICAL_011 ---
 Input: Headache, dizziness, and I feel like I'm about to faint.
@@ -294,11 +294,11 @@ Negation Error: False
 
 --- CANONICAL_030 ---
 Input: I'm vomiting, I feel nauseous, and my stomach is turning.
-Present (extracted): ['abdominal cramp', 'nausea', 'vomiting']
+Present (extracted): ['abdominal rotation', 'nausea', 'vomiting']
 Absent (negated):    []
 Expected:           ['abdominal discomfort', 'nausea', 'vomiting']
 Precision: 0.667 | Recall: 0.667 | F1: 0.667
-False Positive: ['abdominal cramp']
+False Positive: ['abdominal rotation']
 False Negative: ['abdominal discomfort']
 Negation Error: False
 
@@ -314,21 +314,21 @@ Negation Error: False
 
 --- CANONICAL_032 ---
 Input: Terrible headache, stiff neck, I can't move my head.
-Present (extracted): ['headache', 'neck pain', 'stiff neck']
-Absent (negated):    []
+Present (extracted): ['headache', 'stiff neck']
+Absent (negated):    ['neck movement']
 Expected:           ['headache', 'stiff neck']
-Precision: 0.667 | Recall: 1.000 | F1: 0.800
-False Positive: ['neck pain']
+Precision: 1.000 | Recall: 1.000 | F1: 1.000
+False Positive: []
 False Negative: []
 Negation Error: False
 
 --- CANONICAL_033 ---
 Input: I have diarrhea with mucus and blood, and my stomach is burning.
-Present (extracted): ['diarrhea with blood', 'diarrhea with mucus', 'stomach burn']
+Present (extracted): ['diarrhea with blood', 'diarrhea with mucus', 'stomach burning']
 Absent (negated):    []
 Expected:           ['abdominal pain', 'bloody stool', 'diarrhea', 'mucus in stool']
 Precision: 0.000 | Recall: 0.000 | F1: 0.000
-False Positive: ['diarrhea with blood', 'diarrhea with mucus', 'stomach burn']
+False Positive: ['diarrhea with blood', 'diarrhea with mucus', 'stomach burning']
 False Negative: ['abdominal pain', 'bloody stool', 'diarrhea', 'mucus in stool']
 Negation Error: False
 
@@ -344,12 +344,12 @@ Negation Error: False
 
 --- CANONICAL_035 ---
 Input: I have small red spots on my skin, they don't itch but look bad.
-Present (extracted): ['erythema']
+Present (extracted): ['erythema', 'petechiae']
 Absent (negated):    []
 Expected:           ['petechiae']
-Precision: 0.000 | Recall: 0.000 | F1: 0.000
+Precision: 0.500 | Recall: 1.000 | F1: 0.667
 False Positive: ['erythema']
-False Negative: ['petechiae']
+False Negative: []
 Negation Error: False
 
 --- CANONICAL_036 ---
@@ -444,11 +444,11 @@ Negation Error: False
 
 --- CANONICAL_045 ---
 Input: I have a rash on my arms and legs, it itches and is red.
-Present (extracted): ['pruritic erythematous rash']
+Present (extracted): ['itchy rash', 'red rash']
 Absent (negated):    []
 Expected:           ['itching', 'rash']
 Precision: 0.000 | Recall: 0.000 | F1: 0.000
-False Positive: ['pruritic erythematous rash']
+False Positive: ['itchy rash', 'red rash']
 False Negative: ['itching', 'rash']
 Negation Error: False
 
@@ -524,11 +524,11 @@ Negation Error: False
 
 --- CANONICAL_053 ---
 Input: My whole body itches, I have small red spots, and I feel run down.
-Present (extracted): ['itching', 'pruritus']
+Present (extracted): ['itching', 'pruritus', 'urticaria']
 Absent (negated):    []
 Expected:           ['fatigue', 'itching', 'petechiae']
-Precision: 1.000 | Recall: 0.333 | F1: 0.500
-False Positive: []
+Precision: 0.500 | Recall: 0.333 | F1: 0.400
+False Positive: ['urticaria']
 False Negative: ['fatigue', 'petechiae']
 Negation Error: False
 
@@ -694,12 +694,12 @@ Negation Error: False
 
 --- CANONICAL_070 ---
 Input: My stomach hurts, I'm bloated, I have cramps and nausea, but no fever, no bloody diarrhea, no vomiting blood.
-Present (extracted): ['bloating', 'cramp', 'nausea', 'stomach pain']
+Present (extracted): ['abdominal cramp', 'bloating', 'nausea', 'stomach pain']
 Absent (negated):    ['bloody diarrhea', 'fever', 'vomiting blood']
 Expected:           ['abdominal pain', 'bloating', 'cramp', 'nausea']
-Precision: 0.750 | Recall: 0.750 | F1: 0.750
-False Positive: ['stomach pain']
-False Negative: ['abdominal pain']
+Precision: 0.500 | Recall: 0.500 | F1: 0.500
+False Positive: ['abdominal cramp', 'stomach pain']
+False Negative: ['abdominal pain', 'cramp']
 Negation Error: False
 
 --- CANONICAL_071 ---
@@ -774,12 +774,12 @@ Negation Error: False
 
 --- CANONICAL_078 ---
 Input: I feel exhausted, no energy, sleeping badly, irritable, my pulse races when I lie down — but no pain or fever.
-Present (extracted): ['fatigue', 'lightheadedness', 'palpitations']
+Present (extracted): ['fatigue', 'lightheadedness', 'palpitation']
 Absent (negated):    ['fever', 'pain']
 Expected:           ['exhaustion', 'fatigue', 'irritability', 'lack of energy', 'palpitation', 'sleep disturbance']
-Precision: 0.333 | Recall: 0.167 | F1: 0.222
-False Positive: ['lightheadedness', 'palpitations']
-False Negative: ['exhaustion', 'irritability', 'lack of energy', 'palpitation', 'sleep disturbance']
+Precision: 0.667 | Recall: 0.333 | F1: 0.444
+False Positive: ['lightheadedness']
+False Negative: ['exhaustion', 'irritability', 'lack of energy', 'sleep disturbance']
 Negation Error: False
 
 --- CANONICAL_079 ---
@@ -824,21 +824,21 @@ Negation Error: False
 
 --- CANONICAL_083 ---
 Input: I noticed blood in my urine and I have a sharp pain in my back.
-Present (extracted): ['back pain', 'hematuria']
+Present (extracted): ['hematuria', 'lumbago']
 Absent (negated):    []
 Expected:           ['backache', 'hematuria']
-Precision: 1.000 | Recall: 1.000 | F1: 1.000
-False Positive: []
-False Negative: []
+Precision: 0.500 | Recall: 0.500 | F1: 0.500
+False Positive: ['lumbago']
+False Negative: ['backache']
 Negation Error: False
 
 --- CANONICAL_084 ---
 Input: I feel very drowsy, confused, and I can't stay awake.
-Present (extracted): ['confusion', 'drowsiness', 'insomnia']
+Present (extracted): ['confusion', 'drowsiness', 'hypersomnia']
 Absent (negated):    []
 Expected:           ['confusion', 'drowsiness']
 Precision: 0.667 | Recall: 1.000 | F1: 0.800
-False Positive: ['insomnia']
+False Positive: ['hypersomnia']
 False Negative: []
 Negation Error: False
 
@@ -1004,7 +1004,7 @@ Negation Error: False
 
 
 ====================
-Average Precision: 0.751
-Average Recall:    0.729
-Average F1-score:  0.732
+Average Precision: 0.747
+Average Recall:    0.730
+Average F1-score:  0.731
 All cases processed.
