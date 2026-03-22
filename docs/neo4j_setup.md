@@ -1,3 +1,8 @@
+---
+title: 🔧 Neo4j Desktop Setup & n10s Installation
+nav_order: 3
+---
+
 # 🔧 Neo4j Desktop Setup & n10s Installation
 
 ## 🧠 What is Neosemantics (n10s)?
