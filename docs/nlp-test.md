@@ -139,6 +139,27 @@ The `qwen2.5:14b` model is the current top performer with a `0.825 F1-score`, sh
 
 The `phi4:14B model` demonstrates high clinical intelligence with an `F1-score of 0.772`, though it frequently loses points by using advanced medical terminology (e.g., ***presyncope*** instead of ***faint***) that causes mismatches with your dataset's expected labels. While it excels at handling negations and complex symptoms, its primary challenge is over-specification, as it often provides more detailed anatomical descriptions than your ground truth requires.
 
+## 🧪 Test 6
+
+| Field          | Value                                  |
+|----------------|----------------------------------------|
+| Test Set       | symptom-extraction-test-data-en.json   |
+| Model          | meta-llama/llama-4-scout-17b-16e-instruct (cloud) |
+| System Prompt  | symptom-extraction-prompt-1.txt        |
+| Results        | symptom-extraction-result-6.txt        |
+
+### 📊 Results
+
+| Metric    | Score |
+|-----------|-------|
+| Precision | 0.746 |
+| Recall    | 0.799 |
+| F1 Score  | 0.763 |
+
+### 💬 Commentary
+
+The `llama-4-scout-17b` model shows a solid baseline for symptom extraction with an average `F1-score of 0.763`, but it frequently encounters "False Positives" due to its high clinical precision. Much like the previous model, it tends to extract more detailed or technical terms (e.g., ***presyncope*** or ***hyperhidrosis***) when the ground truth expects simpler descriptions (e.g., ***lightheadedness*** or ***diaphoresis***). While its negation detection is nearly perfect, the overall score is primarily capped by this semantic gap between the model's medical vocabulary and your dataset's specific labels.
+
 ## 📊 Overall Results
 
 | Model                                    | Size | Type  | Precision | Recall | F1    |
@@ -148,7 +169,7 @@ The `phi4:14B model` demonstrates high clinical intelligence with an `F1-score o
 | mistral-nemo:12b                         | 12B  | Local | 0.784     | 0.810  | 0.790 |
 | qwen2.5:14b                              | 14B  | Local | 0.835     | 0.825  | 0.825 |
 | phi4:14b                                 | 14B  | Local | 0.771     | 0.783  | 0.772 |
-| meta-llama/llama-4-scout-17b-16e-instruct| 17B  | Cloud | 0.0     | 0.0  | 0.0 |
+| meta-llama/llama-4-scout-17b-16e-instruct| 17B  | Cloud | 0.746     | 0.799  | 0.763 |
 | openai/gpt-oss-120b                      | 120B | Cloud | 0.0     | 0.0  | 0.0 |
 
 > ✅ `qwen2.5:14b` achieved the highest F1 score across all tested models, surpassing the 80% target threshold and outperforming models up to 8x larger.
