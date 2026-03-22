@@ -152,3 +152,11 @@ The `phi4:14B model` demonstrates high clinical intelligence with an `F1-score o
 | openai/gpt-oss-120b                      | 120B | Cloud | 0.0     | 0.0  | 0.0 |
 
 > ✅ `qwen2.5:14b` achieved the highest F1 score across all tested models, surpassing the 80% target threshold and outperforming models up to 8x larger.
+
+## 🔍 Conclusion
+
+While the NLP layer achieved satisfactory performance (F1 ≥ 0.80 for the best model), several challenges remain that directly impact the embedding layer.
+
+The most critical issue is the lack of **strict canonical normalization**, which leads to **semantic fragmentation**. Different lexical representations of the same clinical concept (e.g., *"lightheadedness"*, *"dizziness"*, *"presyncope"*) result in distinct vector embeddings, reducing similarity accuracy and negatively affecting downstream disease matching.
+
+Therefore, the effectiveness of the embedding layer is not solely dependent on the embedding model itself, but is heavily constrained by the **consistency and standardization of the NLP output**.
