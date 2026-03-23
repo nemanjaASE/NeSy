@@ -1,0 +1,2585 @@
+{
+  "EXACT_001": [
+    {
+      "input_symptom": "Pel-Epstein fever",
+      "mapped_symptom": "Pel-Epstein fever",
+      "confidence": 0.99999999999852
+    }
+  ],
+  "EXACT_002": [
+    {
+      "input_symptom": "abdominal lump",
+      "mapped_symptom": "abdominal lump",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_003": [
+    {
+      "input_symptom": "abdominal rigidity",
+      "mapped_symptom": "abdominal rigidity",
+      "confidence": 0.9999999999988141
+    }
+  ],
+  "EXACT_004": [
+    {
+      "input_symptom": "abdominal symptom",
+      "mapped_symptom": "abdominal symptom",
+      "confidence": 0.9999999999993663
+    }
+  ],
+  "EXACT_005": [
+    {
+      "input_symptom": "abnormal bowel sound",
+      "mapped_symptom": "abnormal bowel sound",
+      "confidence": 0.9999999999992539
+    }
+  ],
+  "EXACT_006": [
+    {
+      "input_symptom": "abnormal chest sound",
+      "mapped_symptom": "abnormal chest sound",
+      "confidence": 0.9999999999993443
+    }
+  ],
+  "EXACT_007": [
+    {
+      "input_symptom": "abnormal feces",
+      "mapped_symptom": "abnormal feces",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_008": [
+    {
+      "input_symptom": "abnormal hemistanding",
+      "mapped_symptom": "abnormal hemistanding",
+      "confidence": 0.9999999999988458
+    }
+  ],
+  "EXACT_009": [
+    {
+      "input_symptom": "abnormal hemiwalking",
+      "mapped_symptom": "abnormal hemiwalking",
+      "confidence": 0.9999999999982141
+    }
+  ],
+  "EXACT_010": [
+    {
+      "input_symptom": "abnormal involuntary movement",
+      "mapped_symptom": "abnormal involuntary movement",
+      "confidence": 0.9999999999951781
+    }
+  ],
+  "EXACT_011": [
+    {
+      "input_symptom": "abnormal posture",
+      "mapped_symptom": "abnormal posture",
+      "confidence": 0.999999999999269
+    }
+  ],
+  "EXACT_012": [
+    {
+      "input_symptom": "abnormal sputum",
+      "mapped_symptom": "abnormal sputum",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_013": [
+    {
+      "input_symptom": "abnormal weight gain",
+      "mapped_symptom": "abnormal weight gain",
+      "confidence": 0.9999999999995803
+    }
+  ],
+  "EXACT_014": [
+    {
+      "input_symptom": "abnormal weight loss",
+      "mapped_symptom": "abnormal weight loss",
+      "confidence": 0.9999999999992581
+    }
+  ],
+  "EXACT_015": [
+    {
+      "input_symptom": "abortion",
+      "mapped_symptom": "abortion",
+      "confidence": 0.9999999999997341
+    }
+  ],
+  "EXACT_016": [
+    {
+      "input_symptom": "absence of knee jerk reflex",
+      "mapped_symptom": "absence of knee jerk reflex",
+      "confidence": 0.9999999999992382
+    }
+  ],
+  "EXACT_017": [
+    {
+      "input_symptom": "absent gag reflex",
+      "mapped_symptom": "absent gag reflex",
+      "confidence": 0.9999999999994272
+    }
+  ],
+  "EXACT_018": [
+    {
+      "input_symptom": "active hyperemia",
+      "mapped_symptom": "active hyperemia",
+      "confidence": 0.999999999999437
+    }
+  ],
+  "EXACT_019": [
+    {
+      "input_symptom": "acute arthritis",
+      "mapped_symptom": "acute arthritis",
+      "confidence": 0.9999999999988408
+    }
+  ],
+  "EXACT_020": [
+    {
+      "input_symptom": "acute cranial nerve dysfunction",
+      "mapped_symptom": "acute cranial nerve dysfunction",
+      "confidence": 0.9999999999991505
+    }
+  ],
+  "EXACT_021": [
+    {
+      "input_symptom": "acute diarrhea",
+      "mapped_symptom": "acute diarrhea",
+      "confidence": 0.9999999999991024
+    }
+  ],
+  "EXACT_022": [
+    {
+      "input_symptom": "acute enteritis",
+      "mapped_symptom": "acute enteritis",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "EXACT_023": [
+    {
+      "input_symptom": "acute gastroenteritis",
+      "mapped_symptom": "acute gastroenteritis",
+      "confidence": 0.9999999999971616
+    }
+  ],
+  "EXACT_024": [
+    {
+      "input_symptom": "acute meningoencephalitis",
+      "mapped_symptom": "acute meningoencephalitis",
+      "confidence": 0.9999999999996396
+    }
+  ],
+  "EXACT_025": [
+    {
+      "input_symptom": "acute mental dysfunction",
+      "mapped_symptom": "acute mental dysfunction",
+      "confidence": 0.9999999999992065
+    }
+  ],
+  "EXACT_026": [
+    {
+      "input_symptom": "acute mesenteric lymphadenitis",
+      "mapped_symptom": "acute mesenteric lymphadenitis",
+      "confidence": 0.9999999999992306
+    }
+  ],
+  "EXACT_027": [
+    {
+      "input_symptom": "acute painful vision loss",
+      "mapped_symptom": "acute painful vision loss",
+      "confidence": 0.9999999999990091
+    }
+  ],
+  "EXACT_028": [
+    {
+      "input_symptom": "acute renal failure",
+      "mapped_symptom": "acute renal failure",
+      "confidence": 0.9999999999994732
+    }
+  ],
+  "EXACT_029": [
+    {
+      "input_symptom": "acute suppurative parotiditis",
+      "mapped_symptom": "acute suppurative parotiditis",
+      "confidence": 0.9999999999989795
+    }
+  ],
+  "EXACT_030": [
+    {
+      "input_symptom": "acute weight gain",
+      "mapped_symptom": "acute weight gain",
+      "confidence": 0.9999999999994158
+    }
+  ],
+  "EXACT_031": [
+    {
+      "input_symptom": "acute weight loss",
+      "mapped_symptom": "acute weight loss",
+      "confidence": 0.9999999999995535
+    }
+  ],
+  "EXACT_032": [
+    {
+      "input_symptom": "adult failure to thrive",
+      "mapped_symptom": "adult failure to thrive",
+      "confidence": 0.9999999999984696
+    }
+  ],
+  "EXACT_033": [
+    {
+      "input_symptom": "afebrile",
+      "mapped_symptom": "afebrile",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_034": [
+    {
+      "input_symptom": "aggressive behavior",
+      "mapped_symptom": "aggressive behavior",
+      "confidence": 0.9999999999997303
+    }
+  ],
+  "EXACT_035": [
+    {
+      "input_symptom": "alexia",
+      "mapped_symptom": "alexia",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_036": [
+    {
+      "input_symptom": "allodynia",
+      "mapped_symptom": "allodynia",
+      "confidence": 0.9999999999996814
+    }
+  ],
+  "EXACT_037": [
+    {
+      "input_symptom": "alteration of appetite",
+      "mapped_symptom": "alteration of appetite",
+      "confidence": 0.9999999999990159
+    }
+  ],
+  "EXACT_038": [
+    {
+      "input_symptom": "amaurosis",
+      "mapped_symptom": "amaurosis",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_039": [
+    {
+      "input_symptom": "amaurosis fugax",
+      "mapped_symptom": "amaurosis fugax",
+      "confidence": 0.9999999999995856
+    }
+  ],
+  "EXACT_040": [
+    {
+      "input_symptom": "anisocoria",
+      "mapped_symptom": "anisocoria",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_041": [
+    {
+      "input_symptom": "ankle rash",
+      "mapped_symptom": "ankle rash",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "EXACT_042": [
+    {
+      "input_symptom": "anomia",
+      "mapped_symptom": "anomia",
+      "confidence": 0.9999999999999998
+    }
+  ],
+  "EXACT_043": [
+    {
+      "input_symptom": "anuria",
+      "mapped_symptom": "anuria",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_044": [
+    {
+      "input_symptom": "aphonia",
+      "mapped_symptom": "aphonia",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_045": [
+    {
+      "input_symptom": "apnea",
+      "mapped_symptom": "apnea",
+      "confidence": 0.9999999999996936
+    }
+  ],
+  "EXACT_046": [
+    {
+      "input_symptom": "areflexia",
+      "mapped_symptom": "areflexia",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_047": [
+    {
+      "input_symptom": "arm weakness",
+      "mapped_symptom": "arm weakness",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_048": [
+    {
+      "input_symptom": "asthenopia",
+      "mapped_symptom": "asthenopia",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_049": [
+    {
+      "input_symptom": "atonic seizure",
+      "mapped_symptom": "atonic seizure",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_050": [
+    {
+      "input_symptom": "balance symptom",
+      "mapped_symptom": "balance symptom",
+      "confidence": 0.9999999999993191
+    }
+  ],
+  "EXACT_051": [
+    {
+      "input_symptom": "barking croup cough",
+      "mapped_symptom": "barking croup cough",
+      "confidence": 0.999999999998564
+    }
+  ],
+  "EXACT_052": [
+    {
+      "input_symptom": "belching",
+      "mapped_symptom": "belching",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_053": [
+    {
+      "input_symptom": "bifrontal headache",
+      "mapped_symptom": "bifrontal headache",
+      "confidence": 0.9999999999985638
+    }
+  ],
+  "EXACT_054": [
+    {
+      "input_symptom": "blind spot",
+      "mapped_symptom": "blind spot",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "EXACT_055": [
+    {
+      "input_symptom": "blood pressure",
+      "mapped_symptom": "blood pressure",
+      "confidence": 0.9999999999990415
+    }
+  ],
+  "EXACT_056": [
+    {
+      "input_symptom": "blood vessel infection",
+      "mapped_symptom": "blood vessel infection",
+      "confidence": 0.9999999999989737
+    }
+  ],
+  "EXACT_057": [
+    {
+      "input_symptom": "bloody diarrhea",
+      "mapped_symptom": "bloody diarrhea",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_058": [
+    {
+      "input_symptom": "blotchy red rash",
+      "mapped_symptom": "blotchy red rash",
+      "confidence": 0.999999999998983
+    }
+  ],
+  "EXACT_059": [
+    {
+      "input_symptom": "blurred vision",
+      "mapped_symptom": "blurred vision",
+      "confidence": 0.9999999999995964
+    }
+  ],
+  "EXACT_060": [
+    {
+      "input_symptom": "blurred vision with haloes",
+      "mapped_symptom": "blurred vision with haloes",
+      "confidence": 0.9999999999959226
+    }
+  ],
+  "EXACT_061": [
+    {
+      "input_symptom": "bradykinesia",
+      "mapped_symptom": "bradykinesia",
+      "confidence": 0.9999999999995333
+    }
+  ],
+  "EXACT_062": [
+    {
+      "input_symptom": "bradypnea",
+      "mapped_symptom": "bradypnea",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "EXACT_063": [
+    {
+      "input_symptom": "brain cyst",
+      "mapped_symptom": "brain cyst",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_064": [
+    {
+      "input_symptom": "breakthrough pain",
+      "mapped_symptom": "breakthrough pain",
+      "confidence": 0.9999999999994812
+    }
+  ],
+  "EXACT_065": [
+    {
+      "input_symptom": "bronchiole inflammation",
+      "mapped_symptom": "bronchiole inflammation",
+      "confidence": 0.9999999999995136
+    }
+  ],
+  "EXACT_066": [
+    {
+      "input_symptom": "bronchiolitis",
+      "mapped_symptom": "bronchiolitis",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "EXACT_067": [
+    {
+      "input_symptom": "bronchitis",
+      "mapped_symptom": "bronchitis",
+      "confidence": 0.9999999999997399
+    }
+  ],
+  "EXACT_068": [
+    {
+      "input_symptom": "bruise",
+      "mapped_symptom": "bruise",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_069": [
+    {
+      "input_symptom": "bubo",
+      "mapped_symptom": "bubo",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_070": [
+    {
+      "input_symptom": "cardiac fibrillation",
+      "mapped_symptom": "cardiac fibrillation",
+      "confidence": 0.9999999999988076
+    }
+  ],
+  "EXACT_071": [
+    {
+      "input_symptom": "cardiogenic shock",
+      "mapped_symptom": "cardiogenic shock",
+      "confidence": 0.9999999999994829
+    }
+  ],
+  "EXACT_072": [
+    {
+      "input_symptom": "cardiovascular system symptom",
+      "mapped_symptom": "cardiovascular system symptom",
+      "confidence": 0.9999999999988622
+    }
+  ],
+  "EXACT_073": [
+    {
+      "input_symptom": "cataplexy",
+      "mapped_symptom": "cataplexy",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_074": [
+    {
+      "input_symptom": "catatonia",
+      "mapped_symptom": "catatonia",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_075": [
+    {
+      "input_symptom": "cervical edema",
+      "mapped_symptom": "cervical edema",
+      "confidence": 0.9999999999993172
+    }
+  ],
+  "EXACT_076": [
+    {
+      "input_symptom": "change in body sensation",
+      "mapped_symptom": "change in body sensation",
+      "confidence": 0.9999999999995989
+    }
+  ],
+  "EXACT_077": [
+    {
+      "input_symptom": "change in skin color",
+      "mapped_symptom": "change in skin color",
+      "confidence": 0.9999999999989149
+    }
+  ],
+  "EXACT_078": [
+    {
+      "input_symptom": "change in skin texture",
+      "mapped_symptom": "change in skin texture",
+      "confidence": 0.9999999999993407
+    }
+  ],
+  "EXACT_079": [
+    {
+      "input_symptom": "chest hyperemia",
+      "mapped_symptom": "chest hyperemia",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_080": [
+    {
+      "input_symptom": "cheyne-stokes respiration",
+      "mapped_symptom": "cheyne-stokes respiration",
+      "confidence": 0.9999999999993697
+    }
+  ],
+  "EXACT_081": [
+    {
+      "input_symptom": "chronic enteritis",
+      "mapped_symptom": "chronic enteritis",
+      "confidence": 0.9999999999992882
+    }
+  ],
+  "EXACT_082": [
+    {
+      "input_symptom": "chronic pain",
+      "mapped_symptom": "chronic pain",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_083": [
+    {
+      "input_symptom": "chronic weight gain",
+      "mapped_symptom": "chronic weight gain",
+      "confidence": 0.9999999999981676
+    }
+  ],
+  "EXACT_084": [
+    {
+      "input_symptom": "chronic weight loss",
+      "mapped_symptom": "chronic weight loss",
+      "confidence": 0.9999999999993772
+    }
+  ],
+  "EXACT_085": [
+    {
+      "input_symptom": "circling movement",
+      "mapped_symptom": "circling movement",
+      "confidence": 0.9999999999994499
+    }
+  ],
+  "EXACT_086": [
+    {
+      "input_symptom": "claudication",
+      "mapped_symptom": "claudication",
+      "confidence": 0.9999999999993063
+    }
+  ],
+  "EXACT_087": [
+    {
+      "input_symptom": "clonic seizure",
+      "mapped_symptom": "clonic seizure",
+      "confidence": 0.9999999999995456
+    }
+  ],
+  "EXACT_088": [
+    {
+      "input_symptom": "clubbing of fingers",
+      "mapped_symptom": "clubbing of fingers",
+      "confidence": 0.9999999999996853
+    }
+  ],
+  "EXACT_089": [
+    {
+      "input_symptom": "coagulopathy",
+      "mapped_symptom": "coagulopathy",
+      "confidence": 0.9999999999996652
+    }
+  ],
+  "EXACT_090": [
+    {
+      "input_symptom": "cold clammy skin",
+      "mapped_symptom": "cold clammy skin",
+      "confidence": 0.9999999999995122
+    }
+  ],
+  "EXACT_091": [
+    {
+      "input_symptom": "colic",
+      "mapped_symptom": "colic",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_092": [
+    {
+      "input_symptom": "colicky pain",
+      "mapped_symptom": "colicky pain",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_093": [
+    {
+      "input_symptom": "communication difficulty",
+      "mapped_symptom": "communication difficulty",
+      "confidence": 0.9999999999990646
+    }
+  ],
+  "EXACT_094": [
+    {
+      "input_symptom": "complex partial seizure",
+      "mapped_symptom": "complex partial seizure",
+      "confidence": 0.9999999999977796
+    }
+  ],
+  "EXACT_095": [
+    {
+      "input_symptom": "congested sclera",
+      "mapped_symptom": "congested sclera",
+      "confidence": 0.9999999999995741
+    }
+  ],
+  "EXACT_096": [
+    {
+      "input_symptom": "conjunctiva symptom",
+      "mapped_symptom": "conjunctiva symptom",
+      "confidence": 0.9999999999993412
+    }
+  ],
+  "EXACT_097": [
+    {
+      "input_symptom": "conscious disturbance",
+      "mapped_symptom": "conscious disturbance",
+      "confidence": 0.9999999999992526
+    }
+  ],
+  "EXACT_098": [
+    {
+      "input_symptom": "conscious proprioception",
+      "mapped_symptom": "conscious proprioception",
+      "confidence": 0.9999999999983324
+    }
+  ],
+  "EXACT_099": [
+    {
+      "input_symptom": "continuous fever",
+      "mapped_symptom": "continuous fever",
+      "confidence": 0.999999999999289
+    }
+  ],
+  "EXACT_100": [
+    {
+      "input_symptom": "continuous leakage of urine",
+      "mapped_symptom": "continuous leakage of urine",
+      "confidence": 0.9999999999991945
+    }
+  ],
+  "EXACT_101": [
+    {
+      "input_symptom": "continuous profuse salivation",
+      "mapped_symptom": "continuous profuse salivation",
+      "confidence": 0.9999999999993288
+    }
+  ],
+  "EXACT_102": [
+    {
+      "input_symptom": "contracted pupil",
+      "mapped_symptom": "contracted pupil",
+      "confidence": 0.9999999999995045
+    }
+  ],
+  "EXACT_103": [
+    {
+      "input_symptom": "coordination symptom",
+      "mapped_symptom": "coordination symptom",
+      "confidence": 0.9999999999984626
+    }
+  ],
+  "EXACT_104": [
+    {
+      "input_symptom": "corneal ulcers",
+      "mapped_symptom": "corneal ulcers",
+      "confidence": 0.9999999999996116
+    }
+  ],
+  "EXACT_105": [
+    {
+      "input_symptom": "cough with bloody sputum",
+      "mapped_symptom": "cough with bloody sputum",
+      "confidence": 0.9999999999984553
+    }
+  ],
+  "EXACT_106": [
+    {
+      "input_symptom": "cranial nerve palsies",
+      "mapped_symptom": "cranial nerve palsies",
+      "confidence": 0.9999999999981799
+    }
+  ],
+  "EXACT_107": [
+    {
+      "input_symptom": "crinkle",
+      "mapped_symptom": "crinkle",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_108": [
+    {
+      "input_symptom": "cyclic fever",
+      "mapped_symptom": "cyclic fever",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_109": [
+    {
+      "input_symptom": "darkening of skin",
+      "mapped_symptom": "darkening of skin",
+      "confidence": 0.9999999999995053
+    }
+  ],
+  "EXACT_110": [
+    {
+      "input_symptom": "deafness",
+      "mapped_symptom": "deafness",
+      "confidence": 0.9999999999996164
+    }
+  ],
+  "EXACT_111": [
+    {
+      "input_symptom": "decreased conscious proprioception",
+      "mapped_symptom": "decreased conscious proprioception",
+      "confidence": 0.9999999999982535
+    }
+  ],
+  "EXACT_112": [
+    {
+      "input_symptom": "decreased facial sensation",
+      "mapped_symptom": "decreased facial sensation",
+      "confidence": 0.9999999999987702
+    }
+  ],
+  "EXACT_113": [
+    {
+      "input_symptom": "decreased flexor withdrawal reflex",
+      "mapped_symptom": "decreased flexor withdrawal reflex",
+      "confidence": 0.999999999998069
+    }
+  ],
+  "EXACT_114": [
+    {
+      "input_symptom": "decreased jaw tone",
+      "mapped_symptom": "decreased jaw tone",
+      "confidence": 0.9999999999983183
+    }
+  ],
+  "EXACT_115": [
+    {
+      "input_symptom": "decreased milk production",
+      "mapped_symptom": "decreased milk production",
+      "confidence": 0.9999999999995273
+    }
+  ],
+  "EXACT_116": [
+    {
+      "input_symptom": "decreased motor response",
+      "mapped_symptom": "decreased motor response",
+      "confidence": 0.9999999999984761
+    }
+  ],
+  "EXACT_117": [
+    {
+      "input_symptom": "decreased pharyngeal tone",
+      "mapped_symptom": "decreased pharyngeal tone",
+      "confidence": 0.9999999999991448
+    }
+  ],
+  "EXACT_118": [
+    {
+      "input_symptom": "decreased sucking",
+      "mapped_symptom": "decreased sucking",
+      "confidence": 0.9999999999995813
+    }
+  ],
+  "EXACT_119": [
+    {
+      "input_symptom": "decreased tongue tone",
+      "mapped_symptom": "decreased tongue tone",
+      "confidence": 0.9999999999976118
+    }
+  ],
+  "EXACT_120": [
+    {
+      "input_symptom": "delayed milestones",
+      "mapped_symptom": "delayed milestones",
+      "confidence": 0.9999999999972616
+    }
+  ],
+  "EXACT_121": [
+    {
+      "input_symptom": "deltoid muscle weakness",
+      "mapped_symptom": "deltoid muscle weakness",
+      "confidence": 0.999999999998603
+    }
+  ],
+  "EXACT_122": [
+    {
+      "input_symptom": "dermal abscess",
+      "mapped_symptom": "dermal abscess",
+      "confidence": 0.9999999999993063
+    }
+  ],
+  "EXACT_123": [
+    {
+      "input_symptom": "diffuse rash",
+      "mapped_symptom": "diffuse rash",
+      "confidence": 0.9999999999995717
+    }
+  ],
+  "EXACT_124": [
+    {
+      "input_symptom": "digestive system symptom",
+      "mapped_symptom": "digestive system symptom",
+      "confidence": 0.9999999999994359
+    }
+  ],
+  "EXACT_125": [
+    {
+      "input_symptom": "dilated pupil",
+      "mapped_symptom": "dilated pupil",
+      "confidence": 0.9999999999994955
+    }
+  ],
+  "EXACT_126": [
+    {
+      "input_symptom": "diminished gag reflex",
+      "mapped_symptom": "diminished gag reflex",
+      "confidence": 0.9999999999993662
+    }
+  ],
+  "EXACT_127": [
+    {
+      "input_symptom": "diminished gastro-intestinal motility",
+      "mapped_symptom": "diminished gastro-intestinal motility",
+      "confidence": 0.9999999999989533
+    }
+  ],
+  "EXACT_128": [
+    {
+      "input_symptom": "diminished spontaneous movement",
+      "mapped_symptom": "diminished spontaneous movement",
+      "confidence": 0.9999999999980953
+    }
+  ],
+  "EXACT_129": [
+    {
+      "input_symptom": "discharge",
+      "mapped_symptom": "discharge",
+      "confidence": 0.9999999999992335
+    }
+  ],
+  "EXACT_130": [
+    {
+      "input_symptom": "disruptions of 24-hour sleep-wake cycle",
+      "mapped_symptom": "disruptions of 24-hour sleep-wake cycle",
+      "confidence": 0.9999999999986344
+    }
+  ],
+  "EXACT_131": [
+    {
+      "input_symptom": "distended loops of intestines on rectal",
+      "mapped_symptom": "distended loops of intestines on rectal",
+      "confidence": 0.9999999999990312
+    }
+  ],
+  "EXACT_132": [
+    {
+      "input_symptom": "disturbance of skin sensation",
+      "mapped_symptom": "disturbance of skin sensation",
+      "confidence": 0.9999999999987425
+    }
+  ],
+  "EXACT_133": [
+    {
+      "input_symptom": "disturbances of sensation of smell and taste",
+      "mapped_symptom": "disturbances of sensation of smell and taste",
+      "confidence": 0.999999999999396
+    }
+  ],
+  "EXACT_134": [
+    {
+      "input_symptom": "disturbed vision",
+      "mapped_symptom": "disturbed vision",
+      "confidence": 0.9999999999991531
+    }
+  ],
+  "EXACT_135": [
+    {
+      "input_symptom": "droopy ears",
+      "mapped_symptom": "droopy ears",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_136": [
+    {
+      "input_symptom": "dry hacking cough",
+      "mapped_symptom": "dry hacking cough",
+      "confidence": 0.9999999999990309
+    }
+  ],
+  "EXACT_137": [
+    {
+      "input_symptom": "dry mucous membrane",
+      "mapped_symptom": "dry mucous membrane",
+      "confidence": 0.9999999999990139
+    }
+  ],
+  "EXACT_138": [
+    {
+      "input_symptom": "dysfunctions associated with arousal from sleep",
+      "mapped_symptom": "dysfunctions associated with arousal from sleep",
+      "confidence": 0.9999999999991038
+    }
+  ],
+  "EXACT_139": [
+    {
+      "input_symptom": "dysfunctions associated with sleep stages",
+      "mapped_symptom": "dysfunctions associated with sleep stages",
+      "confidence": 0.9999999999994365
+    }
+  ],
+  "EXACT_140": [
+    {
+      "input_symptom": "dyspneic enteritis",
+      "mapped_symptom": "dyspneic enteritis",
+      "confidence": 0.9999999999993325
+    }
+  ],
+  "EXACT_141": [
+    {
+      "input_symptom": "ear symptom",
+      "mapped_symptom": "ear symptom",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "EXACT_142": [
+    {
+      "input_symptom": "earache",
+      "mapped_symptom": "earache",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_143": [
+    {
+      "input_symptom": "early satiety",
+      "mapped_symptom": "early satiety",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "EXACT_144": [
+    {
+      "input_symptom": "elbow pain",
+      "mapped_symptom": "elbow pain",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_145": [
+    {
+      "input_symptom": "enanthem",
+      "mapped_symptom": "enanthem",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_146": [
+    {
+      "input_symptom": "enteritis",
+      "mapped_symptom": "enteritis",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "EXACT_147": [
+    {
+      "input_symptom": "epididymorchitis",
+      "mapped_symptom": "epididymorchitis",
+      "confidence": 0.9999999999995934
+    }
+  ],
+  "EXACT_148": [
+    {
+      "input_symptom": "epigastric abdominal lump",
+      "mapped_symptom": "epigastric abdominal lump",
+      "confidence": 0.9999999999996796
+    }
+  ],
+  "EXACT_149": [
+    {
+      "input_symptom": "epigastric abdominal mass",
+      "mapped_symptom": "epigastric abdominal mass",
+      "confidence": 0.999999999998458
+    }
+  ],
+  "EXACT_150": [
+    {
+      "input_symptom": "epigastric abdominal rigidity",
+      "mapped_symptom": "epigastric abdominal rigidity",
+      "confidence": 0.9999999999992185
+    }
+  ],
+  "EXACT_151": [
+    {
+      "input_symptom": "epigastric abdominal swelling",
+      "mapped_symptom": "epigastric abdominal swelling",
+      "confidence": 0.9999999999990774
+    }
+  ],
+  "EXACT_152": [
+    {
+      "input_symptom": "epigastric abdominal tenderness",
+      "mapped_symptom": "epigastric abdominal tenderness",
+      "confidence": 0.9999999999988475
+    }
+  ],
+  "EXACT_153": [
+    {
+      "input_symptom": "epigastric pelvic lump",
+      "mapped_symptom": "epigastric pelvic lump",
+      "confidence": 0.999999999999528
+    }
+  ],
+  "EXACT_154": [
+    {
+      "input_symptom": "epigastric pelvic mass",
+      "mapped_symptom": "epigastric pelvic mass",
+      "confidence": 0.9999999999994247
+    }
+  ],
+  "EXACT_155": [
+    {
+      "input_symptom": "epigastric pelvic swelling",
+      "mapped_symptom": "epigastric pelvic swelling",
+      "confidence": 0.999999999998997
+    }
+  ],
+  "EXACT_156": [
+    {
+      "input_symptom": "epileptic seizure",
+      "mapped_symptom": "epileptic seizure",
+      "confidence": 0.999999999999534
+    }
+  ],
+  "EXACT_157": [
+    {
+      "input_symptom": "exanthema",
+      "mapped_symptom": "exanthema",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "EXACT_158": [
+    {
+      "input_symptom": "excess lymphocytes in cerebrospinal fluid",
+      "mapped_symptom": "excess lymphocytes in cerebrospinal fluid",
+      "confidence": 0.9999999999992621
+    }
+  ],
+  "EXACT_159": [
+    {
+      "input_symptom": "excess salivation",
+      "mapped_symptom": "excess salivation",
+      "confidence": 0.9999999999996583
+    }
+  ],
+  "EXACT_160": [
+    {
+      "input_symptom": "excessive crying of infant",
+      "mapped_symptom": "excessive crying of infant",
+      "confidence": 0.9999999999984193
+    }
+  ],
+  "EXACT_161": [
+    {
+      "input_symptom": "excessive tearing",
+      "mapped_symptom": "excessive tearing",
+      "confidence": 0.9999999999995228
+    }
+  ],
+  "EXACT_162": [
+    {
+      "input_symptom": "expressive aphasia",
+      "mapped_symptom": "expressive aphasia",
+      "confidence": 0.9999999999993133
+    }
+  ],
+  "EXACT_163": [
+    {
+      "input_symptom": "extensive ulcer",
+      "mapped_symptom": "extensive ulcer",
+      "confidence": 1.0
+    }
+  ],
+  "EXACT_164": [
+    {
+      "input_symptom": "extracellular fluid alteration",
+      "mapped_symptom": "extracellular fluid alteration",
+      "confidence": 0.9999999999983479
+    }
+  ],
+  "EXACT_165": [
+    {
+      "input_symptom": "extraocular muscles paralysis",
+      "mapped_symptom": "extraocular muscles paralysis",
+      "confidence": 0.9999999999989211
+    }
+  ],
+  "EXACT_166": [
+    {
+      "input_symptom": "extravasation of urine",
+      "mapped_symptom": "extravasation of urine",
+      "confidence": 0.9999999999992921
+    }
+  ],
+  "EXACT_167": [
+    {
+      "input_symptom": "extreme exhaustion",
+      "mapped_symptom": "extreme exhaustion",
+      "confidence": 0.9999999999976843
+    }
+  ],
+  "EXACT_168": [
+    {
+      "input_symptom": "extreme fatigue",
+      "mapped_symptom": "extreme fatigue",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "EXACT_169": [
+    {
+      "input_symptom": "extreme prostration",
+      "mapped_symptom": "extreme prostration",
+      "confidence": 0.9999999999994824
+    }
+  ],
+  "EXACT_170": [
+    {
+      "input_symptom": "eye discharge",
+      "mapped_symptom": "eye discharge",
+      "confidence": 0.9999999999995552
+    }
+  ],
+  "EXACT_171": [
+    {
+      "input_symptom": "eye strain",
+      "mapped_symptom": "eye strain",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "EXACT_172": [
+    {
+      "input_symptom": "eye symptom",
+      "mapped_symptom": "eye symptom",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_173": [
+    {
+      "input_symptom": "face hyperemia",
+      "mapped_symptom": "face hyperemia",
+      "confidence": 0.9999999999995111
+    }
+  ],
+  "EXACT_174": [
+    {
+      "input_symptom": "facial edema",
+      "mapped_symptom": "facial edema",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "EXACT_175": [
+    {
+      "input_symptom": "facial muscle twitching",
+      "mapped_symptom": "facial muscle twitching",
+      "confidence": 0.9999999999994129
+    }
+  ],
+  "EXACT_176": [
+    {
+      "input_symptom": "facial tremor",
+      "mapped_symptom": "facial tremor",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "EXACT_177": [
+    {
+      "input_symptom": "febrile convulsion",
+      "mapped_symptom": "febrile convulsion",
+      "confidence": 0.9999999999985965
+    }
+  ],
+  "EXACT_178": [
+    {
+      "input_symptom": "feces and droppings symptom",
+      "mapped_symptom": "feces and droppings symptom",
+      "confidence": 0.99999999999889
+    }
+  ],
+  "EXACT_179": [
+    {
+      "input_symptom": "feeding difficulties and mismanagement",
+      "mapped_symptom": "feeding difficulties and mismanagement",
+      "confidence": 0.9999999999986162
+    }
+  ],
+  "EXACT_180": [
+    {
+      "input_symptom": "fixed dilated pupils",
+      "mapped_symptom": "fixed dilated pupils",
+      "confidence": 0.9999999999984013
+    }
+  ],
+  "SYN_001": [
+    {
+      "input_symptom": "high fever",
+      "mapped_symptom": "high fever",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "SYN_002": [
+    {
+      "input_symptom": "belly lump",
+      "mapped_symptom": "abdominal lump",
+      "confidence": 0.7342063686608336
+    }
+  ],
+  "SYN_003": [
+    {
+      "input_symptom": "hard stomach",
+      "mapped_symptom": "dyspepsia",
+      "confidence": 0.4868879709435864
+    }
+  ],
+  "SYN_004": [
+    {
+      "input_symptom": "stomach trouble",
+      "mapped_symptom": "dyspepsia",
+      "confidence": 0.5985521236273504
+    }
+  ],
+  "SYN_005": [
+    {
+      "input_symptom": "gurgling noises in belly",
+      "mapped_symptom": "abnormal chest sound",
+      "confidence": 0.44183803708425184
+    }
+  ],
+  "SYN_006": [
+    {
+      "input_symptom": "crackling in chest",
+      "mapped_symptom": "abnormal chest sound",
+      "confidence": 0.7051140771464783
+    }
+  ],
+  "SYN_007": [
+    {
+      "input_symptom": "strange poop",
+      "mapped_symptom": "tache noire",
+      "confidence": 0.5319207168544229
+    }
+  ],
+  "SYN_008": [
+    {
+      "input_symptom": "can't stand steady on one leg",
+      "mapped_symptom": "inibility to stand",
+      "confidence": 0.6478075027008512
+    }
+  ],
+  "SYN_009": [
+    {
+      "input_symptom": "limping on one side",
+      "mapped_symptom": "leg cramp",
+      "confidence": 0.5167753020404472
+    }
+  ],
+  "SYN_010": [
+    {
+      "input_symptom": "muscle jerks",
+      "mapped_symptom": "muscle twitching",
+      "confidence": 0.6953799178359703
+    }
+  ],
+  "SYN_011": [
+    {
+      "input_symptom": "crooked posture",
+      "mapped_symptom": "abnormal posture",
+      "confidence": 0.6735828137810105
+    }
+  ],
+  "SYN_012": [
+    {
+      "input_symptom": "weird spit",
+      "mapped_symptom": "crinkle",
+      "confidence": 0.6310554653680781
+    }
+  ],
+  "SYN_013": [
+    {
+      "input_symptom": "gaining weight fast",
+      "mapped_symptom": "weight gain",
+      "confidence": 0.7950249325489488
+    }
+  ],
+  "SYN_014": [
+    {
+      "input_symptom": "losing weight quickly",
+      "mapped_symptom": "weight loss",
+      "confidence": 0.7851282372853787
+    }
+  ],
+  "SYN_015": [
+    {
+      "input_symptom": "miscarriage",
+      "mapped_symptom": "miscarriage",
+      "confidence": 0.9999999999996194
+    }
+  ],
+  "SYN_016": [
+    {
+      "input_symptom": "no knee reflex",
+      "mapped_symptom": "absence of knee jerk reflex",
+      "confidence": 0.7888847108011677
+    }
+  ],
+  "SYN_017": [
+    {
+      "input_symptom": "no gag when throat touched",
+      "mapped_symptom": "throat symptom",
+      "confidence": 0.6414616534803392
+    }
+  ],
+  "SYN_018": [
+    {
+      "input_symptom": "flushed face from blood flow",
+      "mapped_symptom": "flushing",
+      "confidence": 0.6773791561113596
+    }
+  ],
+  "SYN_019": [
+    {
+      "input_symptom": "sudden joint pain",
+      "mapped_symptom": "joint pain",
+      "confidence": 0.830300380128244
+    }
+  ],
+  "SYN_020": [
+    {
+      "input_symptom": "recent face nerve weakness",
+      "mapped_symptom": "facial weakness",
+      "confidence": 0.7770803116703638
+    }
+  ],
+  "SYN_021": [
+    {
+      "input_symptom": "sudden loose stools",
+      "mapped_symptom": "bloody stool",
+      "confidence": 0.6759353610100942
+    }
+  ],
+  "SYN_022": [
+    {
+      "input_symptom": "recent gut inflammation",
+      "mapped_symptom": "inflammation",
+      "confidence": 0.6837375922553053
+    }
+  ],
+  "SYN_023": [
+    {
+      "input_symptom": "sudden food poisoning symptoms",
+      "mapped_symptom": "severe abdominal cramp",
+      "confidence": 0.48187971832442567
+    }
+  ],
+  "SYN_024": [
+    {
+      "input_symptom": "recent brain and meninges infection",
+      "mapped_symptom": "meningoencephalitis",
+      "confidence": 0.7086064255485054
+    }
+  ],
+  "SYN_025": [
+    {
+      "input_symptom": "sudden confusion",
+      "mapped_symptom": "confusion",
+      "confidence": 0.7384277303741721
+    }
+  ],
+  "SYN_026": [
+    {
+      "input_symptom": "recent swollen lymph nodes in gut",
+      "mapped_symptom": "enlargement of lymph nodes",
+      "confidence": 0.7194462159921863
+    }
+  ],
+  "SYN_027": [
+    {
+      "input_symptom": "sudden painful loss of vision",
+      "mapped_symptom": "acute painful vision loss",
+      "confidence": 0.8651805115884879
+    }
+  ],
+  "SYN_028": [
+    {
+      "input_symptom": "sudden kidney failure",
+      "mapped_symptom": "renal failure",
+      "confidence": 0.7598155142186921
+    }
+  ],
+  "SYN_029": [
+    {
+      "input_symptom": "sudden painful swelling near jaw",
+      "mapped_symptom": "parotid pain",
+      "confidence": 0.6721105281176483
+    }
+  ],
+  "SYN_030": [
+    {
+      "input_symptom": "rapid weight gain",
+      "mapped_symptom": "weight gain",
+      "confidence": 0.9006363607280017
+    }
+  ],
+  "SYN_031": [
+    {
+      "input_symptom": "runny nose like a faucet",
+      "mapped_symptom": "nose symptom",
+      "confidence": 0.6801223663442368
+    }
+  ],
+  "SYN_032": [
+    {
+      "input_symptom": "sore throat when swallowing",
+      "mapped_symptom": "throat symptom",
+      "confidence": 0.722867973244751
+    }
+  ],
+  "SYN_033": [
+    {
+      "input_symptom": "short of breath when walking",
+      "mapped_symptom": "dyspnea",
+      "confidence": 0.5614238800931017
+    }
+  ],
+  "SYN_034": [
+    {
+      "input_symptom": "stomach cramps",
+      "mapped_symptom": "abdominal cramp",
+      "confidence": 0.7045019097020401
+    }
+  ],
+  "SYN_035": [
+    {
+      "input_symptom": "red eyes",
+      "mapped_symptom": "sore eyes",
+      "confidence": 0.6817260774345749
+    }
+  ],
+  "SYN_036": [
+    {
+      "input_symptom": "whole body aches like after marathon",
+      "mapped_symptom": "body ache",
+      "confidence": 0.6982030047536802
+    }
+  ],
+  "SYN_037": [
+    {
+      "input_symptom": "dizzy when standing up",
+      "mapped_symptom": "dizziness",
+      "confidence": 0.6590109701632598
+    }
+  ],
+  "SYN_038": [
+    {
+      "input_symptom": "redness",
+      "mapped_symptom": "lightheadedness",
+      "confidence": 0.6568942849018196
+    }
+  ],
+  "SYN_039": [
+    {
+      "input_symptom": "coughing up blood",
+      "mapped_symptom": "cough with bloody sputum",
+      "confidence": 0.6377405161593224
+    }
+  ],
+  "SYN_040": [
+    {
+      "input_symptom": "swollen painful neck lymph nodes",
+      "mapped_symptom": "lymph gland swelling",
+      "confidence": 0.8066983838946963
+    }
+  ],
+  "SYN_041": [
+    {
+      "input_symptom": "dark urine",
+      "mapped_symptom": "dark urine",
+      "confidence": 1.000000000000001
+    }
+  ],
+  "SYN_042": [
+    {
+      "input_symptom": "pain under right ribs",
+      "mapped_symptom": "chest pain",
+      "confidence": 0.6795021814955549
+    }
+  ],
+  "SYN_043": [
+    {
+      "input_symptom": "can't climb stairs easily",
+      "mapped_symptom": "inability to lie flat",
+      "confidence": 0.5466302849477751
+    }
+  ],
+  "SYN_044": [
+    {
+      "input_symptom": "yellow discharge from wound",
+      "mapped_symptom": "wound discharge",
+      "confidence": 0.7685328171561308
+    }
+  ],
+  "SYN_045": [
+    {
+      "input_symptom": "headache",
+      "mapped_symptom": "headache",
+      "confidence": 0.9999999999986124
+    }
+  ],
+  "SYN_046": [
+    {
+      "input_symptom": "bloody stools",
+      "mapped_symptom": "bloody stool",
+      "confidence": 0.9497095151759039
+    }
+  ],
+  "SYN_047": [
+    {
+      "input_symptom": "runny nose",
+      "mapped_symptom": "nose symptom",
+      "confidence": 0.730660121389035
+    }
+  ],
+  "SYN_048": [
+    {
+      "input_symptom": "dry cough",
+      "mapped_symptom": "dry cough",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "SYN_049": [
+    {
+      "input_symptom": "cramps",
+      "mapped_symptom": "cramp",
+      "confidence": 0.9149815663332062
+    }
+  ],
+  "SYN_050": [
+    {
+      "input_symptom": "completely exhausted",
+      "mapped_symptom": "exhaustion",
+      "confidence": 0.6648016106877228
+    }
+  ],
+  "SYN_051": [
+    {
+      "input_symptom": "itching",
+      "mapped_symptom": "itching",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "SYN_052": [
+    {
+      "input_symptom": "losing consciousness",
+      "mapped_symptom": "loss of consciousness",
+      "confidence": 0.8708856165319667
+    }
+  ],
+  "SYN_053": [
+    {
+      "input_symptom": "joint pain",
+      "mapped_symptom": "joint pain",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "SYN_054": [
+    {
+      "input_symptom": "shivering",
+      "mapped_symptom": "hypothermia",
+      "confidence": 0.556656100698517
+    }
+  ],
+  "SYN_055": [
+    {
+      "input_symptom": "red eyes",
+      "mapped_symptom": "sore eyes",
+      "confidence": 0.6817260774345749
+    }
+  ],
+  "SYN_056": [
+    {
+      "input_symptom": "vomiting",
+      "mapped_symptom": "vomiting",
+      "confidence": 0.9999999999996071
+    }
+  ],
+  "SYN_057": [
+    {
+      "input_symptom": "cough with bloody phlegm",
+      "mapped_symptom": "cough with bloody sputum",
+      "confidence": 0.8043744647495878
+    }
+  ],
+  "SYN_058": [
+    {
+      "input_symptom": "stiff neck can't turn head",
+      "mapped_symptom": "stiff neck",
+      "confidence": 0.6570232204644929
+    }
+  ],
+  "SYN_059": [
+    {
+      "input_symptom": "diarrhea with blood",
+      "mapped_symptom": "bloody diarrhea",
+      "confidence": 0.8800772152240055
+    }
+  ],
+  "SYN_060": [
+    {
+      "input_symptom": "heart racing",
+      "mapped_symptom": "wheelbarrowing",
+      "confidence": 0.46774996706674554
+    }
+  ],
+  "SYN_061": [
+    {
+      "input_symptom": "skin rash all over",
+      "mapped_symptom": "rash",
+      "confidence": 0.7100480766180202
+    }
+  ],
+  "SYN_062": [
+    {
+      "input_symptom": "hard to breathe",
+      "mapped_symptom": "boil",
+      "confidence": 0.5594439277395521
+    }
+  ],
+  "SYN_063": [
+    {
+      "input_symptom": "stomach pain",
+      "mapped_symptom": "abdominal pain",
+      "confidence": 0.7459010420785953
+    }
+  ],
+  "SYN_064": [
+    {
+      "input_symptom": "headache",
+      "mapped_symptom": "headache",
+      "confidence": 0.9999999999986124
+    }
+  ],
+  "SYN_065": [
+    {
+      "input_symptom": "itching",
+      "mapped_symptom": "itching",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "SYN_066": [
+    {
+      "input_symptom": "cough",
+      "mapped_symptom": "cough",
+      "confidence": 0.9999999999996174
+    }
+  ],
+  "SYN_067": [
+    {
+      "input_symptom": "abdominal pain",
+      "mapped_symptom": "abdominal pain",
+      "confidence": 1.0
+    }
+  ],
+  "SYN_068": [
+    {
+      "input_symptom": "trouble swallowing",
+      "mapped_symptom": "inability to swallow",
+      "confidence": 0.703357540395777
+    }
+  ],
+  "SYN_069": [
+    {
+      "input_symptom": "back pain",
+      "mapped_symptom": "inflammatory low back pain",
+      "confidence": 0.863491905489173
+    }
+  ],
+  "SYN_070": [
+    {
+      "input_symptom": "heart pounding",
+      "mapped_symptom": "wobble",
+      "confidence": 0.5083507226881695
+    }
+  ],
+  "LLM_001": [
+    {
+      "input_symptom": "fever",
+      "mapped_symptom": "fever",
+      "confidence": 0.9999999999996296
+    }
+  ],
+  "LLM_002": [
+    {
+      "input_symptom": "headache",
+      "mapped_symptom": "headache",
+      "confidence": 0.9999999999986124
+    }
+  ],
+  "LLM_003": [
+    {
+      "input_symptom": "cough",
+      "mapped_symptom": "cough",
+      "confidence": 0.9999999999996174
+    }
+  ],
+  "LLM_004": [
+    {
+      "input_symptom": "diarrhea",
+      "mapped_symptom": "diarrhea",
+      "confidence": 0.9999999999994766
+    }
+  ],
+  "LLM_005": [
+    {
+      "input_symptom": "nausea",
+      "mapped_symptom": "nausea",
+      "confidence": 0.9999999999995255
+    }
+  ],
+  "LLM_006": [
+    {
+      "input_symptom": "vomiting",
+      "mapped_symptom": "vomiting",
+      "confidence": 0.9999999999996071
+    }
+  ],
+  "LLM_007": [
+    {
+      "input_symptom": "joint pain",
+      "mapped_symptom": "joint pain",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "LLM_008": [
+    {
+      "input_symptom": "rash",
+      "mapped_symptom": "rash",
+      "confidence": 0.9999999999992383
+    }
+  ],
+  "LLM_009": [
+    {
+      "input_symptom": "fatigue",
+      "mapped_symptom": "fatigue",
+      "confidence": 0.9999999999996433
+    }
+  ],
+  "LLM_010": [
+    {
+      "input_symptom": "rhinorrhea",
+      "mapped_symptom": "rhinorrhea",
+      "confidence": 1.0
+    }
+  ],
+  "LLM_011": [
+    {
+      "input_symptom": "sore throat",
+      "mapped_symptom": "mouth sore",
+      "confidence": 0.7920645229837994
+    }
+  ],
+  "LLM_012": [
+    {
+      "input_symptom": "chest tightness",
+      "mapped_symptom": "chest tightness",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_013": [
+    {
+      "input_symptom": "dyspnea",
+      "mapped_symptom": "dyspnea",
+      "confidence": 0.9999999999993867
+    }
+  ],
+  "LLM_014": [
+    {
+      "input_symptom": "abdominal cramp",
+      "mapped_symptom": "abdominal cramp",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "LLM_015": [
+    {
+      "input_symptom": "bloating",
+      "mapped_symptom": "bloating",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "LLM_016": [
+    {
+      "input_symptom": "bloodshot eye",
+      "mapped_symptom": "bloodshot eye",
+      "confidence": 1.0
+    }
+  ],
+  "LLM_017": [
+    {
+      "input_symptom": "itching",
+      "mapped_symptom": "itching",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "LLM_018": [
+    {
+      "input_symptom": "lacrimation",
+      "mapped_symptom": "conjunctival swelling",
+      "confidence": 0.5751290304955412
+    }
+  ],
+  "LLM_019": [
+    {
+      "input_symptom": "myalgia",
+      "mapped_symptom": "severe myalgia",
+      "confidence": 0.8594705803439684
+    }
+  ],
+  "LLM_020": [
+    {
+      "input_symptom": "dizziness",
+      "mapped_symptom": "dizziness",
+      "confidence": 0.9999999999994946
+    }
+  ],
+  "LLM_021": [
+    {
+      "input_symptom": "syncope",
+      "mapped_symptom": "syncope",
+      "confidence": 0.9999999999997187
+    }
+  ],
+  "LLM_022": [
+    {
+      "input_symptom": "erythema",
+      "mapped_symptom": "rash",
+      "confidence": 0.7107097567203484
+    }
+  ],
+  "LLM_023": [
+    {
+      "input_symptom": "chest pain",
+      "mapped_symptom": "chest pain",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_024": [
+    {
+      "input_symptom": "hemoptysis",
+      "mapped_symptom": "hemoptysis",
+      "confidence": 1.0
+    }
+  ],
+  "LLM_025": [
+    {
+      "input_symptom": "swollen lymph node",
+      "mapped_symptom": "lymph gland swelling",
+      "confidence": 0.8459532555273784
+    }
+  ],
+  "LLM_026": [
+    {
+      "input_symptom": "tender lymph node",
+      "mapped_symptom": "lymph gland swelling",
+      "confidence": 0.785174446477573
+    }
+  ],
+  "LLM_027": [
+    {
+      "input_symptom": "dark urine",
+      "mapped_symptom": "dark urine",
+      "confidence": 1.000000000000001
+    }
+  ],
+  "LLM_028": [
+    {
+      "input_symptom": "jaundice",
+      "mapped_symptom": "jaundice",
+      "confidence": 0.9999999999994127
+    }
+  ],
+  "LLM_029": [
+    {
+      "input_symptom": "pale stool",
+      "mapped_symptom": "bloody stool",
+      "confidence": 0.7892313356846726
+    }
+  ],
+  "LLM_030": [
+    {
+      "input_symptom": "abdominal pain",
+      "mapped_symptom": "abdominal pain",
+      "confidence": 1.0
+    }
+  ],
+  "LLM_031": [
+    {
+      "input_symptom": "difficulty climbing stairs",
+      "mapped_symptom": "staggering gait",
+      "confidence": 0.5568541865454475
+    }
+  ],
+  "LLM_032": [
+    {
+      "input_symptom": "difficulty walking",
+      "mapped_symptom": "concentration difficulty",
+      "confidence": 0.5388864041097225
+    }
+  ],
+  "LLM_033": [
+    {
+      "input_symptom": "dyspnea on exertion",
+      "mapped_symptom": "dyspnea",
+      "confidence": 0.7409253659341399
+    }
+  ],
+  "LLM_034": [
+    {
+      "input_symptom": "weakness in legs",
+      "mapped_symptom": "leg weakness",
+      "confidence": 0.8938181771012461
+    }
+  ],
+  "LLM_035": [
+    {
+      "input_symptom": "discharge",
+      "mapped_symptom": "discharge",
+      "confidence": 0.9999999999992335
+    }
+  ],
+  "LLM_036": [
+    {
+      "input_symptom": "photophobia",
+      "mapped_symptom": "photophobia",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_037": [
+    {
+      "input_symptom": "stiff neck",
+      "mapped_symptom": "stiff neck",
+      "confidence": 0.9999999999999999
+    }
+  ],
+  "LLM_038": [
+    {
+      "input_symptom": "hematochezia",
+      "mapped_symptom": "hematochezia",
+      "confidence": 0.999999999999604
+    }
+  ],
+  "LLM_039": [
+    {
+      "input_symptom": "palpitation",
+      "mapped_symptom": "palpitation",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_040": [
+    {
+      "input_symptom": "shivering",
+      "mapped_symptom": "hypothermia",
+      "confidence": 0.556656100698517
+    }
+  ],
+  "LLM_041": [
+    {
+      "input_symptom": "tooth chattering",
+      "mapped_symptom": "toothache",
+      "confidence": 0.6559884729583477
+    }
+  ],
+  "LLM_042": [
+    {
+      "input_symptom": "weakness",
+      "mapped_symptom": "weakness",
+      "confidence": 0.9999999999995459
+    }
+  ],
+  "LLM_043": [
+    {
+      "input_symptom": "bile vomiting",
+      "mapped_symptom": "vomiting",
+      "confidence": 0.6855670353306136
+    }
+  ],
+  "LLM_044": [
+    {
+      "input_symptom": "stomach burning",
+      "mapped_symptom": "belching",
+      "confidence": 0.5878809158232572
+    }
+  ],
+  "LLM_045": [
+    {
+      "input_symptom": "pain right hypochondrium",
+      "mapped_symptom": "abdominal pain",
+      "confidence": 0.6200428639463897
+    }
+  ],
+  "LLM_046": [
+    {
+      "input_symptom": "body aches",
+      "mapped_symptom": "body ache",
+      "confidence": 0.9128756289439621
+    }
+  ],
+  "LLM_047": [
+    {
+      "input_symptom": "neck stiffness",
+      "mapped_symptom": "stiff neck",
+      "confidence": 0.8994689175855711
+    }
+  ],
+  "LLM_048": [
+    {
+      "input_symptom": "loss of appetite",
+      "mapped_symptom": "loss of appetite",
+      "confidence": 0.9999999999995244
+    }
+  ],
+  "LLM_049": [
+    {
+      "input_symptom": "red spots",
+      "mapped_symptom": "blind spot",
+      "confidence": 0.6052872599840284
+    }
+  ],
+  "LLM_050": [
+    {
+      "input_symptom": "redness",
+      "mapped_symptom": "lightheadedness",
+      "confidence": 0.6568942849018196
+    }
+  ],
+  "LLM_051": [
+    {
+      "input_symptom": "back pain",
+      "mapped_symptom": "inflammatory low back pain",
+      "confidence": 0.863491905489173
+    }
+  ],
+  "LLM_052": [
+    {
+      "input_symptom": "muscle pain",
+      "mapped_symptom": "muscle pain",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "LLM_053": [
+    {
+      "input_symptom": "chills",
+      "mapped_symptom": "chills",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "LLM_054": [
+    {
+      "input_symptom": "tachycardia",
+      "mapped_symptom": "tachycardia",
+      "confidence": 0.9999999999996176
+    }
+  ],
+  "LLM_055": [
+    {
+      "input_symptom": "stomach discomfort",
+      "mapped_symptom": "abdominal discomfort",
+      "confidence": 0.7819339355047517
+    }
+  ],
+  "LLM_056": [
+    {
+      "input_symptom": "anxiety",
+      "mapped_symptom": "anxiety",
+      "confidence": 0.9999999999994489
+    }
+  ],
+  "LLM_057": [
+    {
+      "input_symptom": "insomnia",
+      "mapped_symptom": "insomnia",
+      "confidence": 0.9999999999996685
+    }
+  ],
+  "LLM_058": [
+    {
+      "input_symptom": "chill",
+      "mapped_symptom": "chills",
+      "confidence": 0.9261279417296195
+    }
+  ],
+  "LLM_059": [
+    {
+      "input_symptom": "malaise",
+      "mapped_symptom": "malaise",
+      "confidence": 1.0000000000000002
+    }
+  ],
+  "LLM_060": [
+    {
+      "input_symptom": "head heaviness",
+      "mapped_symptom": "lightheadedness",
+      "confidence": 0.7026678256398712
+    }
+  ],
+  "LLM_061": [
+    {
+      "input_symptom": "nervousness",
+      "mapped_symptom": "tiredness",
+      "confidence": 0.6452042489261826
+    }
+  ],
+  "LLM_062": [
+    {
+      "input_symptom": "sleep disturbance",
+      "mapped_symptom": "sleep disturbance",
+      "confidence": 0.9999999999992228
+    }
+  ],
+  "LLM_063": [
+    {
+      "input_symptom": "abdominal bloating",
+      "mapped_symptom": "bloating",
+      "confidence": 0.7793866141319583
+    }
+  ],
+  "LLM_064": [
+    {
+      "input_symptom": "abdominal discomfort",
+      "mapped_symptom": "abdominal discomfort",
+      "confidence": 0.9999999999989653
+    }
+  ],
+  "LLM_065": [
+    {
+      "input_symptom": "abdominal distension",
+      "mapped_symptom": "abdominal distention",
+      "confidence": 0.885194947283351
+    }
+  ],
+  "LLM_066": [
+    {
+      "input_symptom": "abdominal tenderness",
+      "mapped_symptom": "abdominal tenderness",
+      "confidence": 0.9999999999995212
+    }
+  ],
+  "LLM_067": [
+    {
+      "input_symptom": "blisters",
+      "mapped_symptom": "blister",
+      "confidence": 0.908587162201915
+    }
+  ],
+  "LLM_068": [
+    {
+      "input_symptom": "body ache",
+      "mapped_symptom": "body ache",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "LLM_069": [
+    {
+      "input_symptom": "bradycardia",
+      "mapped_symptom": "bradycardia",
+      "confidence": 0.9999999999995884
+    }
+  ],
+  "LLM_070": [
+    {
+      "input_symptom": "cervical pain",
+      "mapped_symptom": "neck pain",
+      "confidence": 0.8673942678746952
+    }
+  ],
+  "LLM_071": [
+    {
+      "input_symptom": "climbing stairs difficulty",
+      "mapped_symptom": "staggering gait",
+      "confidence": 0.5767310307132127
+    }
+  ],
+  "LLM_072": [
+    {
+      "input_symptom": "confusion",
+      "mapped_symptom": "confusion",
+      "confidence": 0.9999999999992675
+    }
+  ],
+  "LLM_073": [
+    {
+      "input_symptom": "constipation",
+      "mapped_symptom": "constipation",
+      "confidence": 0.9999999999994781
+    }
+  ],
+  "LLM_074": [
+    {
+      "input_symptom": "cyanosis",
+      "mapped_symptom": "cyanosis",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "LLM_075": [
+    {
+      "input_symptom": "diplopia",
+      "mapped_symptom": "occasional diplopia",
+      "confidence": 0.8704721768301678
+    }
+  ],
+  "LLM_076": [
+    {
+      "input_symptom": "drowsiness",
+      "mapped_symptom": "drowsiness",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "LLM_077": [
+    {
+      "input_symptom": "dry mouth",
+      "mapped_symptom": "dry mouth",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_078": [
+    {
+      "input_symptom": "dry throat",
+      "mapped_symptom": "dry mouth",
+      "confidence": 0.7760697835036641
+    }
+  ],
+  "LLM_079": [
+    {
+      "input_symptom": "dysarthria",
+      "mapped_symptom": "dysarthria",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_080": [
+    {
+      "input_symptom": "dysphagia",
+      "mapped_symptom": "dysphagia",
+      "confidence": 0.9999999999997138
+    }
+  ],
+  "LLM_081": [
+    {
+      "input_symptom": "gait disturbance",
+      "mapped_symptom": "abnormality of gait",
+      "confidence": 0.8121088944715117
+    }
+  ],
+  "LLM_082": [
+    {
+      "input_symptom": "gum bleeding",
+      "mapped_symptom": "gum bleeding",
+      "confidence": 1.000000000000001
+    }
+  ],
+  "LLM_083": [
+    {
+      "input_symptom": "hallucination",
+      "mapped_symptom": "hallucination",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "LLM_084": [
+    {
+      "input_symptom": "heartburn",
+      "mapped_symptom": "obsolete heartburn",
+      "confidence": 0.8104792930908793
+    }
+  ],
+  "LLM_085": [
+    {
+      "input_symptom": "hematuria",
+      "mapped_symptom": "hematuria",
+      "confidence": 0.9999999999992806
+    }
+  ],
+  "LLM_086": [
+    {
+      "input_symptom": "hiccup",
+      "mapped_symptom": "hiccough",
+      "confidence": 0.7904796908306562
+    }
+  ],
+  "LLM_087": [
+    {
+      "input_symptom": "irritability",
+      "mapped_symptom": "irritability",
+      "confidence": 0.9999999999994684
+    }
+  ],
+  "LLM_088": [
+    {
+      "input_symptom": "joint swelling",
+      "mapped_symptom": "obsolete joint swelling",
+      "confidence": 0.7482388413065919
+    }
+  ],
+  "LLM_089": [
+    {
+      "input_symptom": "leg weakness",
+      "mapped_symptom": "leg weakness",
+      "confidence": 0.9999999999995538
+    }
+  ],
+  "LLM_090": [
+    {
+      "input_symptom": "lymphadenopathy",
+      "mapped_symptom": "lymphadenopathy",
+      "confidence": 0.9999999999997025
+    }
+  ],
+  "LLM_091": [
+    {
+      "input_symptom": "mucous diarrhea",
+      "mapped_symptom": "diarrhea",
+      "confidence": 0.7920551671191841
+    }
+  ],
+  "LLM_092": [
+    {
+      "input_symptom": "neck pain",
+      "mapped_symptom": "neck pain",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "LLM_093": [
+    {
+      "input_symptom": "non-healing wound",
+      "mapped_symptom": "poor wound healing",
+      "confidence": 0.8269509605004572
+    }
+  ],
+  "LLM_094": [
+    {
+      "input_symptom": "numbness",
+      "mapped_symptom": "hypoesthesia",
+      "confidence": 0.6440718392214001
+    }
+  ],
+  "LLM_095": [
+    {
+      "input_symptom": "odynophagia",
+      "mapped_symptom": "dysphagia",
+      "confidence": 0.5815947313569767
+    }
+  ],
+  "LLM_096": [
+    {
+      "input_symptom": "oral ulcer",
+      "mapped_symptom": "extensive ulcer",
+      "confidence": 0.722984069234476
+    }
+  ],
+  "LLM_097": [
+    {
+      "input_symptom": "orthopnea",
+      "mapped_symptom": "orthopnea",
+      "confidence": 1.0000000000000009
+    }
+  ],
+  "LLM_098": [
+    {
+      "input_symptom": "petechiae",
+      "mapped_symptom": "petechiae",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_099": [
+    {
+      "input_symptom": "pharyngitis",
+      "mapped_symptom": "pharynx inflammation",
+      "confidence": 0.7436047425233734
+    }
+  ],
+  "LLM_100": [
+    {
+      "input_symptom": "polydipsia",
+      "mapped_symptom": "polydipsia",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_101": [
+    {
+      "input_symptom": "presyncope",
+      "mapped_symptom": "sneezing",
+      "confidence": 0.5330388673160242
+    }
+  ],
+  "LLM_102": [
+    {
+      "input_symptom": "productive cough",
+      "mapped_symptom": "cough",
+      "confidence": 0.8669081261004408
+    }
+  ],
+  "LLM_103": [
+    {
+      "input_symptom": "pruritus",
+      "mapped_symptom": "itching",
+      "confidence": 0.7600085159381735
+    }
+  ],
+  "LLM_104": [
+    {
+      "input_symptom": "ptosis",
+      "mapped_symptom": "ptosis",
+      "confidence": 1.0000000000000007
+    }
+  ],
+  "LLM_105": [
+    {
+      "input_symptom": "right lower quadrant abdominal pain",
+      "mapped_symptom": "right lower quadrant abdominal pain",
+      "confidence": 0.9999999999985351
+    }
+  ],
+  "LLM_106": [
+    {
+      "input_symptom": "right upper abdominal pain",
+      "mapped_symptom": "right upper quadrant abdominal pain",
+      "confidence": 0.9304102733415549
+    }
+  ],
+  "LLM_107": [
+    {
+      "input_symptom": "right upper quadrant pain",
+      "mapped_symptom": "right upper quadrant abdominal pain",
+      "confidence": 0.8988884526467724
+    }
+  ],
+  "LLM_108": [
+    {
+      "input_symptom": "seizure",
+      "mapped_symptom": "seizure",
+      "confidence": 0.9999999999995959
+    }
+  ],
+  "LLM_109": [
+    {
+      "input_symptom": "severe cough",
+      "mapped_symptom": "cough",
+      "confidence": 0.8374782825199709
+    }
+  ],
+  "LLM_110": [
+    {
+      "input_symptom": "severe headache",
+      "mapped_symptom": "severe headache",
+      "confidence": 1.0
+    }
+  ],
+  "LLM_111": [
+    {
+      "input_symptom": "skin peeling",
+      "mapped_symptom": "skin peeling",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_112": [
+    {
+      "input_symptom": "sneezing",
+      "mapped_symptom": "sneezing",
+      "confidence": 1.0
+    }
+  ],
+  "LLM_113": [
+    {
+      "input_symptom": "sweating",
+      "mapped_symptom": "sweaty",
+      "confidence": 0.8626786197867535
+    }
+  ],
+  "LLM_114": [
+    {
+      "input_symptom": "tingling",
+      "mapped_symptom": "itching",
+      "confidence": 0.64680102474868
+    }
+  ],
+  "LLM_115": [
+    {
+      "input_symptom": "tinnitus",
+      "mapped_symptom": "tinnitus",
+      "confidence": 0.9999999999996696
+    }
+  ],
+  "LLM_116": [
+    {
+      "input_symptom": "tremor",
+      "mapped_symptom": "tremor",
+      "confidence": 0.9999999999996485
+    }
+  ],
+  "LLM_117": [
+    {
+      "input_symptom": "vertigo",
+      "mapped_symptom": "vertigo",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_118": [
+    {
+      "input_symptom": "weight loss",
+      "mapped_symptom": "weight loss",
+      "confidence": 1.0000000000000004
+    }
+  ],
+  "LLM_119": [
+    {
+      "input_symptom": "wound exudate",
+      "mapped_symptom": "wound discharge",
+      "confidence": 0.6627476933529269
+    }
+  ]
+}

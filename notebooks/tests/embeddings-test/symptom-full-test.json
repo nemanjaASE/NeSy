@@ -1,1564 +1,1478 @@
 [
   {
     "id": "EXACT_001",
-    "extracted_symptoms": [
-      "Pel-Epstein fever"
-    ]
+    "extracted_symptoms": ["Pel-Epstein fever"]
   },
   {
     "id": "EXACT_002",
-    "extracted_symptoms": [
-      "abdominal lump"
-    ]
+    "extracted_symptoms": ["abdominal lump"]
   },
   {
     "id": "EXACT_003",
-    "extracted_symptoms": [
-      "abdominal rigidity"
-    ]
+    "extracted_symptoms": ["abdominal rigidity"]
   },
   {
     "id": "EXACT_004",
-    "extracted_symptoms": [
-      "abdominal symptom"
-    ]
+    "extracted_symptoms": ["abdominal symptom"]
   },
   {
     "id": "EXACT_005",
-    "extracted_symptoms": [
-      "abnormal bowel sound"
-    ]
+    "extracted_symptoms": ["abnormal bowel sound"]
   },
   {
     "id": "EXACT_006",
-    "extracted_symptoms": [
-      "abnormal chest sound"
-    ]
+    "extracted_symptoms": ["abnormal chest sound"]
   },
   {
     "id": "EXACT_007",
-    "extracted_symptoms": [
-      "abnormal feces"
-    ]
+    "extracted_symptoms": ["abnormal feces"]
   },
   {
     "id": "EXACT_008",
-    "extracted_symptoms": [
-      "abnormal hemistanding"
-    ]
+    "extracted_symptoms": ["abnormal hemistanding"]
   },
   {
     "id": "EXACT_009",
-    "extracted_symptoms": [
-      "abnormal hemiwalking"
-    ]
+    "extracted_symptoms": ["abnormal hemiwalking"]
   },
   {
     "id": "EXACT_010",
-    "extracted_symptoms": [
-      "abnormal involuntary movement"
-    ]
+    "extracted_symptoms": ["abnormal involuntary movement"]
   },
   {
     "id": "EXACT_011",
-    "extracted_symptoms": [
-      "abnormal posture"
-    ]
+    "extracted_symptoms": ["abnormal posture"]
   },
   {
     "id": "EXACT_012",
-    "extracted_symptoms": [
-      "abnormal sputum"
-    ]
+    "extracted_symptoms": ["abnormal sputum"]
   },
   {
     "id": "EXACT_013",
-    "extracted_symptoms": [
-      "abnormal weight gain"
-    ]
+    "extracted_symptoms": ["abnormal weight gain"]
   },
   {
     "id": "EXACT_014",
-    "extracted_symptoms": [
-      "abnormal weight loss"
-    ]
+    "extracted_symptoms": ["abnormal weight loss"]
   },
   {
     "id": "EXACT_015",
-    "extracted_symptoms": [
-      "abortion"
-    ]
+    "extracted_symptoms": ["abortion"]
   },
   {
     "id": "EXACT_016",
-    "extracted_symptoms": [
-      "absence of knee jerk reflex"
-    ]
+    "extracted_symptoms": ["absence of knee jerk reflex"]
   },
   {
     "id": "EXACT_017",
-    "extracted_symptoms": [
-      "absent gag reflex"
-    ]
+    "extracted_symptoms": ["absent gag reflex"]
   },
   {
     "id": "EXACT_018",
-    "extracted_symptoms": [
-      "active hyperemia"
-    ]
+    "extracted_symptoms": ["active hyperemia"]
   },
   {
     "id": "EXACT_019",
-    "extracted_symptoms": [
-      "acute arthritis"
-    ]
+    "extracted_symptoms": ["acute arthritis"]
   },
   {
     "id": "EXACT_020",
-    "extracted_symptoms": [
-      "acute cranial nerve dysfunction"
-    ]
+    "extracted_symptoms": ["acute cranial nerve dysfunction"]
   },
   {
     "id": "EXACT_021",
-    "extracted_symptoms": [
-      "acute diarrhea"
-    ]
+    "extracted_symptoms": ["acute diarrhea"]
   },
   {
     "id": "EXACT_022",
-    "extracted_symptoms": [
-      "acute enteritis"
-    ]
+    "extracted_symptoms": ["acute enteritis"]
   },
   {
     "id": "EXACT_023",
-    "extracted_symptoms": [
-      "acute gastroenteritis"
-    ]
+    "extracted_symptoms": ["acute gastroenteritis"]
   },
   {
     "id": "EXACT_024",
-    "extracted_symptoms": [
-      "acute meningoencephalitis"
-    ]
+    "extracted_symptoms": ["acute meningoencephalitis"]
   },
   {
     "id": "EXACT_025",
-    "extracted_symptoms": [
-      "acute mental dysfunction"
-    ]
+    "extracted_symptoms": ["acute mental dysfunction"]
   },
   {
     "id": "EXACT_026",
-    "extracted_symptoms": [
-      "acute mesenteric lymphadenitis"
-    ]
+    "extracted_symptoms": ["acute mesenteric lymphadenitis"]
   },
   {
     "id": "EXACT_027",
-    "extracted_symptoms": [
-      "acute painful vision loss"
-    ]
+    "extracted_symptoms": ["acute painful vision loss"]
   },
   {
     "id": "EXACT_028",
-    "extracted_symptoms": [
-      "acute renal failure"
-    ]
+    "extracted_symptoms": ["acute renal failure"]
   },
   {
     "id": "EXACT_029",
-    "extracted_symptoms": [
-      "acute suppurative parotiditis"
-    ]
+    "extracted_symptoms": ["acute suppurative parotiditis"]
   },
   {
     "id": "EXACT_030",
-    "extracted_symptoms": [
-      "acute weight gain"
-    ]
+    "extracted_symptoms": ["acute weight gain"]
   },
   {
     "id": "EXACT_031",
-    "extracted_symptoms": [
-      "acute weight loss"
-    ]
+    "extracted_symptoms": ["acute weight loss"]
   },
   {
     "id": "EXACT_032",
-    "extracted_symptoms": [
-      "adult failure to thrive"
-    ]
+    "extracted_symptoms": ["adult failure to thrive"]
   },
   {
     "id": "EXACT_033",
-    "extracted_symptoms": [
-      "afebrile"
-    ]
+    "extracted_symptoms": ["afebrile"]
   },
   {
     "id": "EXACT_034",
-    "extracted_symptoms": [
-      "aggressive behavior"
-    ]
+    "extracted_symptoms": ["aggressive behavior"]
   },
   {
     "id": "EXACT_035",
-    "extracted_symptoms": [
-      "alexia"
-    ]
+    "extracted_symptoms": ["alexia"]
   },
   {
     "id": "EXACT_036",
-    "extracted_symptoms": [
-      "allodynia"
-    ]
+    "extracted_symptoms": ["allodynia"]
   },
   {
     "id": "EXACT_037",
-    "extracted_symptoms": [
-      "alteration of appetite"
-    ]
+    "extracted_symptoms": ["alteration of appetite"]
   },
   {
     "id": "EXACT_038",
-    "extracted_symptoms": [
-      "amaurosis"
-    ]
+    "extracted_symptoms": ["amaurosis"]
   },
   {
     "id": "EXACT_039",
-    "extracted_symptoms": [
-      "amaurosis fugax"
-    ]
+    "extracted_symptoms": ["amaurosis fugax"]
   },
   {
     "id": "EXACT_040",
-    "extracted_symptoms": [
-      "anisocoria"
-    ]
+    "extracted_symptoms": ["anisocoria"]
   },
   {
     "id": "EXACT_041",
-    "extracted_symptoms": [
-      "ankle rash"
-    ]
+    "extracted_symptoms": ["ankle rash"]
   },
   {
     "id": "EXACT_042",
-    "extracted_symptoms": [
-      "anomia"
-    ]
+    "extracted_symptoms": ["anomia"]
   },
   {
     "id": "EXACT_043",
-    "extracted_symptoms": [
-      "anuria"
-    ]
+    "extracted_symptoms": ["anuria"]
   },
   {
     "id": "EXACT_044",
-    "extracted_symptoms": [
-      "aphonia"
-    ]
+    "extracted_symptoms": ["aphonia"]
   },
   {
     "id": "EXACT_045",
-    "extracted_symptoms": [
-      "apnea"
-    ]
+    "extracted_symptoms": ["apnea"]
   },
   {
     "id": "EXACT_046",
-    "extracted_symptoms": [
-      "areflexia"
-    ]
+    "extracted_symptoms": ["areflexia"]
   },
   {
     "id": "EXACT_047",
-    "extracted_symptoms": [
-      "arm weakness"
-    ]
+    "extracted_symptoms": ["arm weakness"]
   },
   {
     "id": "EXACT_048",
-    "extracted_symptoms": [
-      "asthenopia"
-    ]
+    "extracted_symptoms": ["asthenopia"]
   },
   {
     "id": "EXACT_049",
-    "extracted_symptoms": [
-      "atonic seizure"
-    ]
+    "extracted_symptoms": ["atonic seizure"]
   },
   {
     "id": "EXACT_050",
-    "extracted_symptoms": [
-      "balance symptom"
-    ]
+    "extracted_symptoms": ["balance symptom"]
   },
   {
     "id": "EXACT_051",
-    "extracted_symptoms": [
-      "barking croup cough"
-    ]
+    "extracted_symptoms": ["barking croup cough"]
   },
   {
     "id": "EXACT_052",
-    "extracted_symptoms": [
-      "belching"
-    ]
+    "extracted_symptoms": ["belching"]
   },
   {
     "id": "EXACT_053",
-    "extracted_symptoms": [
-      "bifrontal headache"
-    ]
+    "extracted_symptoms": ["bifrontal headache"]
   },
   {
     "id": "EXACT_054",
-    "extracted_symptoms": [
-      "blind spot"
-    ]
+    "extracted_symptoms": ["blind spot"]
   },
   {
     "id": "EXACT_055",
-    "extracted_symptoms": [
-      "blood pressure"
-    ]
+    "extracted_symptoms": ["blood pressure"]
   },
   {
     "id": "EXACT_056",
-    "extracted_symptoms": [
-      "blood vessel infection"
-    ]
+    "extracted_symptoms": ["blood vessel infection"]
   },
   {
     "id": "EXACT_057",
-    "extracted_symptoms": [
-      "bloody diarrhea"
-    ]
+    "extracted_symptoms": ["bloody diarrhea"]
   },
   {
     "id": "EXACT_058",
-    "extracted_symptoms": [
-      "blotchy red rash"
-    ]
+    "extracted_symptoms": ["blotchy red rash"]
   },
   {
     "id": "EXACT_059",
-    "extracted_symptoms": [
-      "blurred vision"
-    ]
+    "extracted_symptoms": ["blurred vision"]
   },
   {
     "id": "EXACT_060",
-    "extracted_symptoms": [
-      "blurred vision with haloes"
-    ]
+    "extracted_symptoms": ["blurred vision with haloes"]
   },
   {
     "id": "EXACT_061",
-    "extracted_symptoms": [
-      "bradykinesia"
-    ]
+    "extracted_symptoms": ["bradykinesia"]
   },
   {
     "id": "EXACT_062",
-    "extracted_symptoms": [
-      "bradypnea"
-    ]
+    "extracted_symptoms": ["bradypnea"]
   },
   {
     "id": "EXACT_063",
-    "extracted_symptoms": [
-      "brain cyst"
-    ]
+    "extracted_symptoms": ["brain cyst"]
   },
   {
     "id": "EXACT_064",
-    "extracted_symptoms": [
-      "breakthrough pain"
-    ]
+    "extracted_symptoms": ["breakthrough pain"]
   },
   {
     "id": "EXACT_065",
-    "extracted_symptoms": [
-      "bronchiole inflammation"
-    ]
+    "extracted_symptoms": ["bronchiole inflammation"]
   },
   {
     "id": "EXACT_066",
-    "extracted_symptoms": [
-      "bronchiolitis"
-    ]
+    "extracted_symptoms": ["bronchiolitis"]
   },
   {
     "id": "EXACT_067",
-    "extracted_symptoms": [
-      "bronchitis"
-    ]
+    "extracted_symptoms": ["bronchitis"]
   },
   {
     "id": "EXACT_068",
-    "extracted_symptoms": [
-      "bruise"
-    ]
+    "extracted_symptoms": ["bruise"]
   },
   {
     "id": "EXACT_069",
-    "extracted_symptoms": [
-      "bubo"
-    ]
+    "extracted_symptoms": ["bubo"]
   },
   {
     "id": "EXACT_070",
-    "extracted_symptoms": [
-      "cardiac fibrillation"
-    ]
+    "extracted_symptoms": ["cardiac fibrillation"]
   },
   {
     "id": "EXACT_071",
-    "extracted_symptoms": [
-      "cardiogenic shock"
-    ]
+    "extracted_symptoms": ["cardiogenic shock"]
   },
   {
     "id": "EXACT_072",
-    "extracted_symptoms": [
-      "cardiovascular system symptom"
-    ]
+    "extracted_symptoms": ["cardiovascular system symptom"]
   },
   {
     "id": "EXACT_073",
-    "extracted_symptoms": [
-      "cataplexy"
-    ]
+    "extracted_symptoms": ["cataplexy"]
   },
   {
     "id": "EXACT_074",
-    "extracted_symptoms": [
-      "catatonia"
-    ]
+    "extracted_symptoms": ["catatonia"]
   },
   {
     "id": "EXACT_075",
-    "extracted_symptoms": [
-      "cervical edema"
-    ]
+    "extracted_symptoms": ["cervical edema"]
   },
   {
     "id": "EXACT_076",
-    "extracted_symptoms": [
-      "change in body sensation"
-    ]
+    "extracted_symptoms": ["change in body sensation"]
   },
   {
     "id": "EXACT_077",
-    "extracted_symptoms": [
-      "change in skin color"
-    ]
+    "extracted_symptoms": ["change in skin color"]
   },
   {
     "id": "EXACT_078",
-    "extracted_symptoms": [
-      "change in skin texture"
-    ]
+    "extracted_symptoms": ["change in skin texture"]
   },
   {
     "id": "EXACT_079",
-    "extracted_symptoms": [
-      "chest hyperemia"
-    ]
+    "extracted_symptoms": ["chest hyperemia"]
   },
   {
     "id": "EXACT_080",
-    "extracted_symptoms": [
-      "cheyne-stokes respiration"
-    ]
+    "extracted_symptoms": ["cheyne-stokes respiration"]
   },
   {
     "id": "EXACT_081",
-    "extracted_symptoms": [
-      "chronic enteritis"
-    ]
+    "extracted_symptoms": ["chronic enteritis"]
   },
   {
     "id": "EXACT_082",
-    "extracted_symptoms": [
-      "chronic pain"
-    ]
+    "extracted_symptoms": ["chronic pain"]
   },
   {
     "id": "EXACT_083",
-    "extracted_symptoms": [
-      "chronic weight gain"
-    ]
+    "extracted_symptoms": ["chronic weight gain"]
   },
   {
     "id": "EXACT_084",
-    "extracted_symptoms": [
-      "chronic weight loss"
-    ]
+    "extracted_symptoms": ["chronic weight loss"]
   },
   {
     "id": "EXACT_085",
-    "extracted_symptoms": [
-      "circling movement"
-    ]
+    "extracted_symptoms": ["circling movement"]
   },
   {
     "id": "EXACT_086",
-    "extracted_symptoms": [
-      "claudication"
-    ]
+    "extracted_symptoms": ["claudication"]
   },
   {
     "id": "EXACT_087",
-    "extracted_symptoms": [
-      "clonic seizure"
-    ]
+    "extracted_symptoms": ["clonic seizure"]
   },
   {
     "id": "EXACT_088",
-    "extracted_symptoms": [
-      "clubbing of fingers"
-    ]
+    "extracted_symptoms": ["clubbing of fingers"]
   },
   {
     "id": "EXACT_089",
-    "extracted_symptoms": [
-      "coagulopathy"
-    ]
+    "extracted_symptoms": ["coagulopathy"]
   },
   {
     "id": "EXACT_090",
-    "extracted_symptoms": [
-      "cold clammy skin"
-    ]
+    "extracted_symptoms": ["cold clammy skin"]
   },
   {
     "id": "EXACT_091",
-    "extracted_symptoms": [
-      "colic"
-    ]
+    "extracted_symptoms": ["colic"]
   },
   {
     "id": "EXACT_092",
-    "extracted_symptoms": [
-      "colicky pain"
-    ]
+    "extracted_symptoms": ["colicky pain"]
   },
   {
     "id": "EXACT_093",
-    "extracted_symptoms": [
-      "communication difficulty"
-    ]
+    "extracted_symptoms": ["communication difficulty"]
   },
   {
     "id": "EXACT_094",
-    "extracted_symptoms": [
-      "complex partial seizure"
-    ]
+    "extracted_symptoms": ["complex partial seizure"]
   },
   {
     "id": "EXACT_095",
-    "extracted_symptoms": [
-      "congested sclera"
-    ]
+    "extracted_symptoms": ["congested sclera"]
   },
   {
     "id": "EXACT_096",
-    "extracted_symptoms": [
-      "conjunctiva symptom"
-    ]
+    "extracted_symptoms": ["conjunctiva symptom"]
   },
   {
     "id": "EXACT_097",
-    "extracted_symptoms": [
-      "conscious disturbance"
-    ]
+    "extracted_symptoms": ["conscious disturbance"]
   },
   {
     "id": "EXACT_098",
-    "extracted_symptoms": [
-      "conscious proprioception"
-    ]
+    "extracted_symptoms": ["conscious proprioception"]
   },
   {
     "id": "EXACT_099",
-    "extracted_symptoms": [
-      "continuous fever"
-    ]
+    "extracted_symptoms": ["continuous fever"]
   },
   {
     "id": "EXACT_100",
-    "extracted_symptoms": [
-      "continuous leakage of urine"
-    ]
+    "extracted_symptoms": ["continuous leakage of urine"]
   },
   {
     "id": "EXACT_101",
-    "extracted_symptoms": [
-      "continuous profuse salivation"
-    ]
+    "extracted_symptoms": ["continuous profuse salivation"]
   },
   {
     "id": "EXACT_102",
-    "extracted_symptoms": [
-      "contracted pupil"
-    ]
+    "extracted_symptoms": ["contracted pupil"]
   },
   {
     "id": "EXACT_103",
-    "extracted_symptoms": [
-      "coordination symptom"
-    ]
+    "extracted_symptoms": ["coordination symptom"]
   },
   {
     "id": "EXACT_104",
-    "extracted_symptoms": [
-      "corneal ulcers"
-    ]
+    "extracted_symptoms": ["corneal ulcers"]
   },
   {
     "id": "EXACT_105",
-    "extracted_symptoms": [
-      "cough with bloody sputum"
-    ]
+    "extracted_symptoms": ["cough with bloody sputum"]
   },
   {
     "id": "EXACT_106",
-    "extracted_symptoms": [
-      "cranial nerve palsies"
-    ]
+    "extracted_symptoms": ["cranial nerve palsies"]
   },
   {
     "id": "EXACT_107",
-    "extracted_symptoms": [
-      "crinkle"
-    ]
+    "extracted_symptoms": ["crinkle"]
   },
   {
     "id": "EXACT_108",
-    "extracted_symptoms": [
-      "cyclic fever"
-    ]
+    "extracted_symptoms": ["cyclic fever"]
   },
   {
     "id": "EXACT_109",
-    "extracted_symptoms": [
-      "darkening of skin"
-    ]
+    "extracted_symptoms": ["darkening of skin"]
   },
   {
     "id": "EXACT_110",
-    "extracted_symptoms": [
-      "deafness"
-    ]
+    "extracted_symptoms": ["deafness"]
   },
   {
     "id": "EXACT_111",
-    "extracted_symptoms": [
-      "decreased conscious proprioception"
-    ]
+    "extracted_symptoms": ["decreased conscious proprioception"]
   },
   {
     "id": "EXACT_112",
-    "extracted_symptoms": [
-      "decreased facial sensation"
-    ]
+    "extracted_symptoms": ["decreased facial sensation"]
   },
   {
     "id": "EXACT_113",
-    "extracted_symptoms": [
-      "decreased flexor withdrawal reflex"
-    ]
+    "extracted_symptoms": ["decreased flexor withdrawal reflex"]
   },
   {
     "id": "EXACT_114",
-    "extracted_symptoms": [
-      "decreased jaw tone"
-    ]
+    "extracted_symptoms": ["decreased jaw tone"]
   },
   {
     "id": "EXACT_115",
-    "extracted_symptoms": [
-      "decreased milk production"
-    ]
+    "extracted_symptoms": ["decreased milk production"]
   },
   {
     "id": "EXACT_116",
-    "extracted_symptoms": [
-      "decreased motor response"
-    ]
+    "extracted_symptoms": ["decreased motor response"]
   },
   {
     "id": "EXACT_117",
-    "extracted_symptoms": [
-      "decreased pharyngeal tone"
-    ]
+    "extracted_symptoms": ["decreased pharyngeal tone"]
   },
   {
     "id": "EXACT_118",
-    "extracted_symptoms": [
-      "decreased sucking"
-    ]
+    "extracted_symptoms": ["decreased sucking"]
   },
   {
     "id": "EXACT_119",
-    "extracted_symptoms": [
-      "decreased tongue tone"
-    ]
+    "extracted_symptoms": ["decreased tongue tone"]
   },
   {
     "id": "EXACT_120",
-    "extracted_symptoms": [
-      "delayed milestones"
-    ]
+    "extracted_symptoms": ["delayed milestones"]
   },
   {
     "id": "EXACT_121",
-    "extracted_symptoms": [
-      "deltoid muscle weakness"
-    ]
+    "extracted_symptoms": ["deltoid muscle weakness"]
   },
   {
     "id": "EXACT_122",
-    "extracted_symptoms": [
-      "dermal abscess"
-    ]
+    "extracted_symptoms": ["dermal abscess"]
   },
   {
     "id": "EXACT_123",
-    "extracted_symptoms": [
-      "diffuse rash"
-    ]
+    "extracted_symptoms": ["diffuse rash"]
   },
   {
     "id": "EXACT_124",
-    "extracted_symptoms": [
-      "digestive system symptom"
-    ]
+    "extracted_symptoms": ["digestive system symptom"]
   },
   {
     "id": "EXACT_125",
-    "extracted_symptoms": [
-      "dilated pupil"
-    ]
+    "extracted_symptoms": ["dilated pupil"]
   },
   {
     "id": "EXACT_126",
-    "extracted_symptoms": [
-      "diminished gag reflex"
-    ]
+    "extracted_symptoms": ["diminished gag reflex"]
   },
   {
     "id": "EXACT_127",
-    "extracted_symptoms": [
-      "diminished gastro-intestinal motility"
-    ]
+    "extracted_symptoms": ["diminished gastro-intestinal motility"]
   },
   {
     "id": "EXACT_128",
-    "extracted_symptoms": [
-      "diminished spontaneous movement"
-    ]
+    "extracted_symptoms": ["diminished spontaneous movement"]
   },
   {
     "id": "EXACT_129",
-    "extracted_symptoms": [
-      "discharge"
-    ]
+    "extracted_symptoms": ["discharge"]
   },
   {
     "id": "EXACT_130",
-    "extracted_symptoms": [
-      "disruptions of 24-hour sleep-wake cycle"
-    ]
+    "extracted_symptoms": ["disruptions of 24-hour sleep-wake cycle"]
   },
   {
     "id": "EXACT_131",
-    "extracted_symptoms": [
-      "distended loops of intestines on rectal"
-    ]
+    "extracted_symptoms": ["distended loops of intestines on rectal"]
   },
   {
     "id": "EXACT_132",
-    "extracted_symptoms": [
-      "disturbance of skin sensation"
-    ]
+    "extracted_symptoms": ["disturbance of skin sensation"]
   },
   {
     "id": "EXACT_133",
-    "extracted_symptoms": [
-      "disturbances of sensation of smell and taste"
-    ]
+    "extracted_symptoms": ["disturbances of sensation of smell and taste"]
   },
   {
     "id": "EXACT_134",
-    "extracted_symptoms": [
-      "disturbed vision"
-    ]
+    "extracted_symptoms": ["disturbed vision"]
   },
   {
     "id": "EXACT_135",
-    "extracted_symptoms": [
-      "droopy ears"
-    ]
+    "extracted_symptoms": ["droopy ears"]
   },
   {
     "id": "EXACT_136",
-    "extracted_symptoms": [
-      "dry hacking cough"
-    ]
+    "extracted_symptoms": ["dry hacking cough"]
   },
   {
     "id": "EXACT_137",
-    "extracted_symptoms": [
-      "dry mucous membrane"
-    ]
+    "extracted_symptoms": ["dry mucous membrane"]
   },
   {
     "id": "EXACT_138",
-    "extracted_symptoms": [
-      "dysfunctions associated with arousal from sleep"
-    ]
+    "extracted_symptoms": ["dysfunctions associated with arousal from sleep"]
   },
   {
     "id": "EXACT_139",
-    "extracted_symptoms": [
-      "dysfunctions associated with sleep stages"
-    ]
+    "extracted_symptoms": ["dysfunctions associated with sleep stages"]
   },
   {
     "id": "EXACT_140",
-    "extracted_symptoms": [
-      "dyspneic enteritis"
-    ]
+    "extracted_symptoms": ["dyspneic enteritis"]
   },
   {
     "id": "EXACT_141",
-    "extracted_symptoms": [
-      "ear symptom"
-    ]
+    "extracted_symptoms": ["ear symptom"]
   },
   {
     "id": "EXACT_142",
-    "extracted_symptoms": [
-      "earache"
-    ]
+    "extracted_symptoms": ["earache"]
   },
   {
     "id": "EXACT_143",
-    "extracted_symptoms": [
-      "early satiety"
-    ]
+    "extracted_symptoms": ["early satiety"]
   },
   {
     "id": "EXACT_144",
-    "extracted_symptoms": [
-      "elbow pain"
-    ]
+    "extracted_symptoms": ["elbow pain"]
   },
   {
     "id": "EXACT_145",
-    "extracted_symptoms": [
-      "enanthem"
-    ]
+    "extracted_symptoms": ["enanthem"]
   },
   {
     "id": "EXACT_146",
-    "extracted_symptoms": [
-      "enteritis"
-    ]
+    "extracted_symptoms": ["enteritis"]
   },
   {
     "id": "EXACT_147",
-    "extracted_symptoms": [
-      "epididymorchitis"
-    ]
+    "extracted_symptoms": ["epididymorchitis"]
   },
   {
     "id": "EXACT_148",
-    "extracted_symptoms": [
-      "epigastric abdominal lump"
-    ]
+    "extracted_symptoms": ["epigastric abdominal lump"]
   },
   {
     "id": "EXACT_149",
-    "extracted_symptoms": [
-      "epigastric abdominal mass"
-    ]
+    "extracted_symptoms": ["epigastric abdominal mass"]
   },
   {
     "id": "EXACT_150",
-    "extracted_symptoms": [
-      "epigastric abdominal rigidity"
-    ]
+    "extracted_symptoms": ["epigastric abdominal rigidity"]
   },
   {
     "id": "EXACT_151",
-    "extracted_symptoms": [
-      "epigastric abdominal swelling"
-    ]
+    "extracted_symptoms": ["epigastric abdominal swelling"]
   },
   {
     "id": "EXACT_152",
-    "extracted_symptoms": [
-      "epigastric abdominal tenderness"
-    ]
+    "extracted_symptoms": ["epigastric abdominal tenderness"]
   },
   {
     "id": "EXACT_153",
-    "extracted_symptoms": [
-      "epigastric pelvic lump"
-    ]
+    "extracted_symptoms": ["epigastric pelvic lump"]
   },
   {
     "id": "EXACT_154",
-    "extracted_symptoms": [
-      "epigastric pelvic mass"
-    ]
+    "extracted_symptoms": ["epigastric pelvic mass"]
   },
   {
     "id": "EXACT_155",
-    "extracted_symptoms": [
-      "epigastric pelvic swelling"
-    ]
+    "extracted_symptoms": ["epigastric pelvic swelling"]
   },
   {
     "id": "EXACT_156",
-    "extracted_symptoms": [
-      "epileptic seizure"
-    ]
+    "extracted_symptoms": ["epileptic seizure"]
   },
   {
     "id": "EXACT_157",
-    "extracted_symptoms": [
-      "exanthema"
-    ]
+    "extracted_symptoms": ["exanthema"]
   },
   {
     "id": "EXACT_158",
-    "extracted_symptoms": [
-      "excess lymphocytes in cerebrospinal fluid"
-    ]
+    "extracted_symptoms": ["excess lymphocytes in cerebrospinal fluid"]
   },
   {
     "id": "EXACT_159",
-    "extracted_symptoms": [
-      "excess salivation"
-    ]
+    "extracted_symptoms": ["excess salivation"]
   },
   {
     "id": "EXACT_160",
-    "extracted_symptoms": [
-      "excessive crying of infant"
-    ]
+    "extracted_symptoms": ["excessive crying of infant"]
   },
   {
     "id": "EXACT_161",
-    "extracted_symptoms": [
-      "excessive tearing"
-    ]
+    "extracted_symptoms": ["excessive tearing"]
   },
   {
     "id": "EXACT_162",
-    "extracted_symptoms": [
-      "expressive aphasia"
-    ]
+    "extracted_symptoms": ["expressive aphasia"]
   },
   {
     "id": "EXACT_163",
-    "extracted_symptoms": [
-      "extensive ulcer"
-    ]
+    "extracted_symptoms": ["extensive ulcer"]
   },
   {
     "id": "EXACT_164",
-    "extracted_symptoms": [
-      "extracellular fluid alteration"
-    ]
+    "extracted_symptoms": ["extracellular fluid alteration"]
   },
   {
     "id": "EXACT_165",
-    "extracted_symptoms": [
-      "extraocular muscles paralysis"
-    ]
+    "extracted_symptoms": ["extraocular muscles paralysis"]
   },
   {
     "id": "EXACT_166",
-    "extracted_symptoms": [
-      "extravasation of urine"
-    ]
+    "extracted_symptoms": ["extravasation of urine"]
   },
   {
     "id": "EXACT_167",
-    "extracted_symptoms": [
-      "extreme exhaustion"
-    ]
+    "extracted_symptoms": ["extreme exhaustion"]
   },
   {
     "id": "EXACT_168",
-    "extracted_symptoms": [
-      "extreme fatigue"
-    ]
+    "extracted_symptoms": ["extreme fatigue"]
   },
   {
     "id": "EXACT_169",
-    "extracted_symptoms": [
-      "extreme prostration"
-    ]
+    "extracted_symptoms": ["extreme prostration"]
   },
   {
     "id": "EXACT_170",
-    "extracted_symptoms": [
-      "eye discharge"
-    ]
+    "extracted_symptoms": ["eye discharge"]
   },
   {
     "id": "EXACT_171",
-    "extracted_symptoms": [
-      "eye strain"
-    ]
+    "extracted_symptoms": ["eye strain"]
   },
   {
     "id": "EXACT_172",
-    "extracted_symptoms": [
-      "eye symptom"
-    ]
+    "extracted_symptoms": ["eye symptom"]
   },
   {
     "id": "EXACT_173",
-    "extracted_symptoms": [
-      "face hyperemia"
-    ]
+    "extracted_symptoms": ["face hyperemia"]
   },
   {
     "id": "EXACT_174",
-    "extracted_symptoms": [
-      "facial edema"
-    ]
+    "extracted_symptoms": ["facial edema"]
   },
   {
     "id": "EXACT_175",
-    "extracted_symptoms": [
-      "facial muscle twitching"
-    ]
+    "extracted_symptoms": ["facial muscle twitching"]
   },
   {
     "id": "EXACT_176",
-    "extracted_symptoms": [
-      "facial tremor"
-    ]
+    "extracted_symptoms": ["facial tremor"]
   },
   {
     "id": "EXACT_177",
-    "extracted_symptoms": [
-      "febrile convulsion"
-    ]
+    "extracted_symptoms": ["febrile convulsion"]
   },
   {
     "id": "EXACT_178",
-    "extracted_symptoms": [
-      "feces and droppings symptom"
-    ]
+    "extracted_symptoms": ["feces and droppings symptom"]
   },
   {
     "id": "EXACT_179",
-    "extracted_symptoms": [
-      "feeding difficulties and mismanagement"
-    ]
+    "extracted_symptoms": ["feeding difficulties and mismanagement"]
   },
   {
     "id": "EXACT_180",
-    "extracted_symptoms": [
-      "fixed dilated pupils"
-    ]
+    "extracted_symptoms": ["fixed dilated pupils"]
   },
   {
     "id": "SYN_001",
-    "extracted_symptoms": [
-      "high fever"
-    ]
+    "extracted_symptoms": ["high fever"]
   },
   {
     "id": "SYN_002",
-    "extracted_symptoms": [
-      "belly lump"
-    ]
+    "extracted_symptoms": ["belly lump"]
   },
   {
     "id": "SYN_003",
-    "extracted_symptoms": [
-      "hard stomach"
-    ]
+    "extracted_symptoms": ["hard stomach"]
   },
   {
     "id": "SYN_004",
-    "extracted_symptoms": [
-      "stomach trouble"
-    ]
+    "extracted_symptoms": ["stomach trouble"]
   },
   {
     "id": "SYN_005",
-    "extracted_symptoms": [
-      "gurgling noises in belly"
-    ]
+    "extracted_symptoms": ["gurgling noises in belly"]
   },
   {
     "id": "SYN_006",
-    "extracted_symptoms": [
-      "crackling in chest"
-    ]
+    "extracted_symptoms": ["crackling in chest"]
   },
   {
     "id": "SYN_007",
-    "extracted_symptoms": [
-      "strange poop"
-    ]
+    "extracted_symptoms": ["strange poop"]
   },
   {
     "id": "SYN_008",
-    "extracted_symptoms": [
-      "can't stand steady on one leg"
-    ]
+    "extracted_symptoms": ["can't stand steady on one leg"]
   },
   {
     "id": "SYN_009",
-    "extracted_symptoms": [
-      "limping on one side"
-    ]
+    "extracted_symptoms": ["limping on one side"]
   },
   {
     "id": "SYN_010",
-    "extracted_symptoms": [
-      "muscle jerks"
-    ]
+    "extracted_symptoms": ["muscle jerks"]
   },
   {
     "id": "SYN_011",
-    "extracted_symptoms": [
-      "crooked posture"
-    ]
+    "extracted_symptoms": ["crooked posture"]
   },
   {
     "id": "SYN_012",
-    "extracted_symptoms": [
-      "weird spit"
-    ]
+    "extracted_symptoms": ["weird spit"]
   },
   {
     "id": "SYN_013",
-    "extracted_symptoms": [
-      "gaining weight fast"
-    ]
+    "extracted_symptoms": ["gaining weight fast"]
   },
   {
     "id": "SYN_014",
-    "extracted_symptoms": [
-      "losing weight quickly"
-    ]
+    "extracted_symptoms": ["losing weight quickly"]
   },
   {
     "id": "SYN_015",
-    "extracted_symptoms": [
-      "miscarriage"
-    ]
+    "extracted_symptoms": ["miscarriage"]
   },
   {
     "id": "SYN_016",
-    "extracted_symptoms": [
-      "no knee reflex"
-    ]
+    "extracted_symptoms": ["no knee reflex"]
   },
   {
     "id": "SYN_017",
-    "extracted_symptoms": [
-      "no gag when throat touched"
-    ]
+    "extracted_symptoms": ["no gag when throat touched"]
   },
   {
     "id": "SYN_018",
-    "extracted_symptoms": [
-      "flushed face from blood flow"
-    ]
+    "extracted_symptoms": ["flushed face from blood flow"]
   },
   {
     "id": "SYN_019",
-    "extracted_symptoms": [
-      "sudden joint pain"
-    ]
+    "extracted_symptoms": ["sudden joint pain"]
   },
   {
     "id": "SYN_020",
-    "extracted_symptoms": [
-      "recent face nerve weakness"
-    ]
+    "extracted_symptoms": ["recent face nerve weakness"]
   },
   {
     "id": "SYN_021",
-    "extracted_symptoms": [
-      "sudden loose stools"
-    ]
+    "extracted_symptoms": ["sudden loose stools"]
   },
   {
     "id": "SYN_022",
-    "extracted_symptoms": [
-      "recent gut inflammation"
-    ]
+    "extracted_symptoms": ["recent gut inflammation"]
   },
   {
     "id": "SYN_023",
-    "extracted_symptoms": [
-      "sudden food poisoning symptoms"
-    ]
+    "extracted_symptoms": ["sudden food poisoning symptoms"]
   },
   {
     "id": "SYN_024",
-    "extracted_symptoms": [
-      "recent brain and meninges infection"
-    ]
+    "extracted_symptoms": ["recent brain and meninges infection"]
   },
   {
     "id": "SYN_025",
-    "extracted_symptoms": [
-      "sudden confusion"
-    ]
+    "extracted_symptoms": ["sudden confusion"]
   },
   {
     "id": "SYN_026",
-    "extracted_symptoms": [
-      "recent swollen lymph nodes in gut"
-    ]
+    "extracted_symptoms": ["recent swollen lymph nodes in gut"]
   },
   {
     "id": "SYN_027",
-    "extracted_symptoms": [
-      "sudden painful loss of vision"
-    ]
+    "extracted_symptoms": ["sudden painful loss of vision"]
   },
   {
     "id": "SYN_028",
-    "extracted_symptoms": [
-      "sudden kidney failure"
-    ]
+    "extracted_symptoms": ["sudden kidney failure"]
   },
   {
     "id": "SYN_029",
-    "extracted_symptoms": [
-      "sudden painful swelling near jaw"
-    ]
+    "extracted_symptoms": ["sudden painful swelling near jaw"]
   },
   {
     "id": "SYN_030",
-    "extracted_symptoms": [
-      "rapid weight gain"
-    ]
+    "extracted_symptoms": ["rapid weight gain"]
   },
   {
     "id": "SYN_031",
-    "extracted_symptoms": [
-      "runny nose like a faucet"
-    ]
+    "extracted_symptoms": ["runny nose like a faucet"]
   },
   {
     "id": "SYN_032",
-    "extracted_symptoms": [
-      "sore throat when swallowing"
-    ]
+    "extracted_symptoms": ["sore throat when swallowing"]
   },
   {
     "id": "SYN_033",
-    "extracted_symptoms": [
-      "short of breath when walking"
-    ]
+    "extracted_symptoms": ["short of breath when walking"]
   },
   {
     "id": "SYN_034",
-    "extracted_symptoms": [
-      "stomach cramps"
-    ]
+    "extracted_symptoms": ["stomach cramps"]
   },
   {
     "id": "SYN_035",
-    "extracted_symptoms": [
-      "red eyes"
-    ]
+    "extracted_symptoms": ["red eyes"]
   },
   {
     "id": "SYN_036",
-    "extracted_symptoms": [
-      "whole body aches like after marathon"
-    ]
+    "extracted_symptoms": ["whole body aches like after marathon"]
   },
   {
     "id": "SYN_037",
-    "extracted_symptoms": [
-      "dizzy when standing up"
-    ]
+    "extracted_symptoms": ["dizzy when standing up"]
   },
   {
     "id": "SYN_038",
-    "extracted_symptoms": [
-      "redness"
-    ]
+    "extracted_symptoms": ["redness"]
   },
   {
     "id": "SYN_039",
-    "extracted_symptoms": [
-      "coughing up blood"
-    ]
+    "extracted_symptoms": ["coughing up blood"]
   },
   {
     "id": "SYN_040",
-    "extracted_symptoms": [
-      "swollen painful neck lymph nodes"
-    ]
+    "extracted_symptoms": ["swollen painful neck lymph nodes"]
   },
   {
     "id": "SYN_041",
-    "extracted_symptoms": [
-      "dark urine"
-    ]
+    "extracted_symptoms": ["dark urine"]
   },
   {
     "id": "SYN_042",
-    "extracted_symptoms": [
-      "pain under right ribs"
-    ]
+    "extracted_symptoms": ["pain under right ribs"]
   },
   {
     "id": "SYN_043",
-    "extracted_symptoms": [
-      "can't climb stairs easily"
-    ]
+    "extracted_symptoms": ["can't climb stairs easily"]
   },
   {
     "id": "SYN_044",
-    "extracted_symptoms": [
-      "yellow discharge from wound"
-    ]
+    "extracted_symptoms": ["yellow discharge from wound"]
   },
   {
     "id": "SYN_045",
-    "extracted_symptoms": [
-      "headache"
-    ]
+    "extracted_symptoms": ["headache"]
   },
   {
     "id": "SYN_046",
-    "extracted_symptoms": [
-      "bloody stools"
-    ]
+    "extracted_symptoms": ["bloody stools"]
   },
   {
     "id": "SYN_047",
-    "extracted_symptoms": [
-      "runny nose"
-    ]
+    "extracted_symptoms": ["runny nose"]
   },
   {
     "id": "SYN_048",
-    "extracted_symptoms": [
-      "dry cough"
-    ]
+    "extracted_symptoms": ["dry cough"]
   },
   {
     "id": "SYN_049",
-    "extracted_symptoms": [
-      "cramps"
-    ]
+    "extracted_symptoms": ["cramps"]
   },
   {
     "id": "SYN_050",
-    "extracted_symptoms": [
-      "completely exhausted"
-    ]
+    "extracted_symptoms": ["completely exhausted"]
   },
   {
     "id": "SYN_051",
-    "extracted_symptoms": [
-      "itching"
-    ]
+    "extracted_symptoms": ["itching"]
   },
   {
     "id": "SYN_052",
-    "extracted_symptoms": [
-      "losing consciousness"
-    ]
+    "extracted_symptoms": ["losing consciousness"]
   },
   {
     "id": "SYN_053",
-    "extracted_symptoms": [
-      "joint pain"
-    ]
+    "extracted_symptoms": ["joint pain"]
   },
   {
     "id": "SYN_054",
-    "extracted_symptoms": [
-      "shivering"
-    ]
+    "extracted_symptoms": ["shivering"]
   },
   {
     "id": "SYN_055",
-    "extracted_symptoms": [
-      "red eyes"
-    ]
+    "extracted_symptoms": ["red eyes"]
   },
   {
     "id": "SYN_056",
-    "extracted_symptoms": [
-      "vomiting"
-    ]
+    "extracted_symptoms": ["vomiting"]
   },
   {
     "id": "SYN_057",
-    "extracted_symptoms": [
-      "cough with bloody phlegm"
-    ]
+    "extracted_symptoms": ["cough with bloody phlegm"]
   },
   {
     "id": "SYN_058",
-    "extracted_symptoms": [
-      "stiff neck can't turn head"
-    ]
+    "extracted_symptoms": ["stiff neck can't turn head"]
   },
   {
     "id": "SYN_059",
-    "extracted_symptoms": [
-      "diarrhea with blood"
-    ]
+    "extracted_symptoms": ["diarrhea with blood"]
   },
   {
     "id": "SYN_060",
-    "extracted_symptoms": [
-      "heart racing"
-    ]
+    "extracted_symptoms": ["heart racing"]
   },
   {
     "id": "SYN_061",
-    "extracted_symptoms": [
-      "skin rash all over"
-    ]
+    "extracted_symptoms": ["skin rash all over"]
   },
   {
     "id": "SYN_062",
-    "extracted_symptoms": [
-      "hard to breathe"
-    ]
+    "extracted_symptoms": ["hard to breathe"]
   },
   {
     "id": "SYN_063",
-    "extracted_symptoms": [
-      "stomach pain"
-    ]
+    "extracted_symptoms": ["stomach pain"]
   },
   {
     "id": "SYN_064",
-    "extracted_symptoms": [
-      "headache"
-    ]
+    "extracted_symptoms": ["headache"]
   },
   {
     "id": "SYN_065",
-    "extracted_symptoms": [
-      "itching"
-    ]
+    "extracted_symptoms": ["itching"]
   },
   {
     "id": "SYN_066",
-    "extracted_symptoms": [
-      "cough"
-    ]
+    "extracted_symptoms": ["cough"]
   },
   {
     "id": "SYN_067",
-    "extracted_symptoms": [
-      "abdominal pain"
-    ]
+    "extracted_symptoms": ["abdominal pain"]
   },
   {
     "id": "SYN_068",
-    "extracted_symptoms": [
-      "trouble swallowing"
-    ]
+    "extracted_symptoms": ["trouble swallowing"]
   },
   {
     "id": "SYN_069",
-    "extracted_symptoms": [
-      "back pain"
-    ]
+    "extracted_symptoms": ["back pain"]
   },
   {
     "id": "SYN_070",
-    "extracted_symptoms": [
-      "heart pounding"
-    ]
+    "extracted_symptoms": ["heart pounding"]
   },
-   { "id": "LLM_001", "extracted_symptoms": ["fever"] },
-  { "id": "LLM_002", "extracted_symptoms": ["headache"] },
-  { "id": "LLM_003", "extracted_symptoms": ["cough"] },
-  { "id": "LLM_004", "extracted_symptoms": ["diarrhea"] },
-  { "id": "LLM_005", "extracted_symptoms": ["nausea"] },
-  { "id": "LLM_006", "extracted_symptoms": ["vomiting"] },
-  { "id": "LLM_007", "extracted_symptoms": ["joint pain"] },
-  { "id": "LLM_008", "extracted_symptoms": ["rash"] },
-  { "id": "LLM_009", "extracted_symptoms": ["fatigue"] },
-  { "id": "LLM_010", "extracted_symptoms": ["rhinorrhea"] },
-  { "id": "LLM_011", "extracted_symptoms": ["sore throat"] },
-  { "id": "LLM_012", "extracted_symptoms": ["chest tightness"] },
-  { "id": "LLM_013", "extracted_symptoms": ["dyspnea"] },
-  { "id": "LLM_014", "extracted_symptoms": ["abdominal cramp"] },
-  { "id": "LLM_015", "extracted_symptoms": ["bloating"] },
-  { "id": "LLM_016", "extracted_symptoms": ["bloodshot eye"] },
-  { "id": "LLM_017", "extracted_symptoms": ["itching"] },
-  { "id": "LLM_018", "extracted_symptoms": ["lacrimation"] },
-  { "id": "LLM_019", "extracted_symptoms": ["myalgia"] },
-  { "id": "LLM_020", "extracted_symptoms": ["dizziness"] },
-  { "id": "LLM_021", "extracted_symptoms": ["syncope"] },
-  { "id": "LLM_022", "extracted_symptoms": ["erythema"] },
-  { "id": "LLM_023", "extracted_symptoms": ["chest pain"] },
-  { "id": "LLM_024", "extracted_symptoms": ["hemoptysis"] },
-  { "id": "LLM_025", "extracted_symptoms": ["swollen lymph node"] },
-  { "id": "LLM_026", "extracted_symptoms": ["tender lymph node"] },
-  { "id": "LLM_027", "extracted_symptoms": ["dark urine"] },
-  { "id": "LLM_028", "extracted_symptoms": ["jaundice"] },
-  { "id": "LLM_029", "extracted_symptoms": ["pale stool"] },
-  { "id": "LLM_030", "extracted_symptoms": ["abdominal pain"] },
-  { "id": "LLM_031", "extracted_symptoms": ["difficulty climbing stairs"] },
-  { "id": "LLM_032", "extracted_symptoms": ["difficulty walking"] },
-  { "id": "LLM_033", "extracted_symptoms": ["dyspnea on exertion"] },
-  { "id": "LLM_034", "extracted_symptoms": ["weakness in legs"] },
-  { "id": "LLM_035", "extracted_symptoms": ["discharge"] },
-  { "id": "LLM_036", "extracted_symptoms": ["photophobia"] },
-  { "id": "LLM_037", "extracted_symptoms": ["stiff neck"] },
-  { "id": "LLM_038", "extracted_symptoms": ["hematochezia"] },
-  { "id": "LLM_039", "extracted_symptoms": ["palpitation"] },
-  { "id": "LLM_040", "extracted_symptoms": ["shivering"] },
-  { "id": "LLM_041", "extracted_symptoms": ["tooth chattering"] },
-  { "id": "LLM_042", "extracted_symptoms": ["weakness"] },
-  { "id": "LLM_043", "extracted_symptoms": ["bile vomiting"] },
-  { "id": "LLM_044", "extracted_symptoms": ["stomach burning"] },
-  { "id": "LLM_045", "extracted_symptoms": ["pain right hypochondrium"] },
-  { "id": "LLM_046", "extracted_symptoms": ["body aches"] },
-  { "id": "LLM_047", "extracted_symptoms": ["neck stiffness"] },
-  { "id": "LLM_048", "extracted_symptoms": ["loss of appetite"] },
-  { "id": "LLM_049", "extracted_symptoms": ["red spots"] },
-  { "id": "LLM_050", "extracted_symptoms": ["redness"] },
-  { "id": "LLM_051", "extracted_symptoms": ["back pain"] },
-  { "id": "LLM_052", "extracted_symptoms": ["muscle pain"] },
-  { "id": "LLM_053", "extracted_symptoms": ["chills"] },
-  { "id": "LLM_054", "extracted_symptoms": ["tachycardia"] },
-  { "id": "LLM_055", "extracted_symptoms": ["stomach discomfort"] },
-  { "id": "LLM_056", "extracted_symptoms": ["anxiety"] },
-  { "id": "LLM_057", "extracted_symptoms": ["insomnia"] },
-  { "id": "LLM_058", "extracted_symptoms": ["chill"] },
-  { "id": "LLM_059", "extracted_symptoms": ["malaise"] },
-  { "id": "LLM_060", "extracted_symptoms": ["head heaviness"] },
-  { "id": "LLM_061", "extracted_symptoms": ["nervousness"] },
-  { "id": "LLM_062", "extracted_symptoms": ["sleep disturbance"] }
+  {
+    "id": "LLM_001",
+    "extracted_symptoms": ["fever"]
+  },
+  {
+    "id": "LLM_002",
+    "extracted_symptoms": ["headache"]
+  },
+  {
+    "id": "LLM_003",
+    "extracted_symptoms": ["cough"]
+  },
+  {
+    "id": "LLM_004",
+    "extracted_symptoms": ["diarrhea"]
+  },
+  {
+    "id": "LLM_005",
+    "extracted_symptoms": ["nausea"]
+  },
+  {
+    "id": "LLM_006",
+    "extracted_symptoms": ["vomiting"]
+  },
+  {
+    "id": "LLM_007",
+    "extracted_symptoms": ["joint pain"]
+  },
+  {
+    "id": "LLM_008",
+    "extracted_symptoms": ["rash"]
+  },
+  {
+    "id": "LLM_009",
+    "extracted_symptoms": ["fatigue"]
+  },
+  {
+    "id": "LLM_010",
+    "extracted_symptoms": ["rhinorrhea"]
+  },
+  {
+    "id": "LLM_011",
+    "extracted_symptoms": ["sore throat"]
+  },
+  {
+    "id": "LLM_012",
+    "extracted_symptoms": ["chest tightness"]
+  },
+  {
+    "id": "LLM_013",
+    "extracted_symptoms": ["dyspnea"]
+  },
+  {
+    "id": "LLM_014",
+    "extracted_symptoms": ["abdominal cramp"]
+  },
+  {
+    "id": "LLM_015",
+    "extracted_symptoms": ["bloating"]
+  },
+  {
+    "id": "LLM_016",
+    "extracted_symptoms": ["bloodshot eye"]
+  },
+  {
+    "id": "LLM_017",
+    "extracted_symptoms": ["itching"]
+  },
+  {
+    "id": "LLM_018",
+    "extracted_symptoms": ["lacrimation"]
+  },
+  {
+    "id": "LLM_019",
+    "extracted_symptoms": ["myalgia"]
+  },
+  {
+    "id": "LLM_020",
+    "extracted_symptoms": ["dizziness"]
+  },
+  {
+    "id": "LLM_021",
+    "extracted_symptoms": ["syncope"]
+  },
+  {
+    "id": "LLM_022",
+    "extracted_symptoms": ["erythema"]
+  },
+  {
+    "id": "LLM_023",
+    "extracted_symptoms": ["chest pain"]
+  },
+  {
+    "id": "LLM_024",
+    "extracted_symptoms": ["hemoptysis"]
+  },
+  {
+    "id": "LLM_025",
+    "extracted_symptoms": ["swollen lymph node"]
+  },
+  {
+    "id": "LLM_026",
+    "extracted_symptoms": ["tender lymph node"]
+  },
+  {
+    "id": "LLM_027",
+    "extracted_symptoms": ["dark urine"]
+  },
+  {
+    "id": "LLM_028",
+    "extracted_symptoms": ["jaundice"]
+  },
+  {
+    "id": "LLM_029",
+    "extracted_symptoms": ["pale stool"]
+  },
+  {
+    "id": "LLM_030",
+    "extracted_symptoms": ["abdominal pain"]
+  },
+  {
+    "id": "LLM_031",
+    "extracted_symptoms": ["difficulty climbing stairs"]
+  },
+  {
+    "id": "LLM_032",
+    "extracted_symptoms": ["difficulty walking"]
+  },
+  {
+    "id": "LLM_033",
+    "extracted_symptoms": ["dyspnea on exertion"]
+  },
+  {
+    "id": "LLM_034",
+    "extracted_symptoms": ["weakness in legs"]
+  },
+  {
+    "id": "LLM_035",
+    "extracted_symptoms": ["discharge"]
+  },
+  {
+    "id": "LLM_036",
+    "extracted_symptoms": ["photophobia"]
+  },
+  {
+    "id": "LLM_037",
+    "extracted_symptoms": ["stiff neck"]
+  },
+  {
+    "id": "LLM_038",
+    "extracted_symptoms": ["hematochezia"]
+  },
+  {
+    "id": "LLM_039",
+    "extracted_symptoms": ["palpitation"]
+  },
+  {
+    "id": "LLM_040",
+    "extracted_symptoms": ["shivering"]
+  },
+  {
+    "id": "LLM_041",
+    "extracted_symptoms": ["tooth chattering"]
+  },
+  {
+    "id": "LLM_042",
+    "extracted_symptoms": ["weakness"]
+  },
+  {
+    "id": "LLM_043",
+    "extracted_symptoms": ["bile vomiting"]
+  },
+  {
+    "id": "LLM_044",
+    "extracted_symptoms": ["stomach burning"]
+  },
+  {
+    "id": "LLM_045",
+    "extracted_symptoms": ["pain right hypochondrium"]
+  },
+  {
+    "id": "LLM_046",
+    "extracted_symptoms": ["body aches"]
+  },
+  {
+    "id": "LLM_047",
+    "extracted_symptoms": ["neck stiffness"]
+  },
+  {
+    "id": "LLM_048",
+    "extracted_symptoms": ["loss of appetite"]
+  },
+  {
+    "id": "LLM_049",
+    "extracted_symptoms": ["red spots"]
+  },
+  {
+    "id": "LLM_050",
+    "extracted_symptoms": ["redness"]
+  },
+  {
+    "id": "LLM_051",
+    "extracted_symptoms": ["back pain"]
+  },
+  {
+    "id": "LLM_052",
+    "extracted_symptoms": ["muscle pain"]
+  },
+  {
+    "id": "LLM_053",
+    "extracted_symptoms": ["chills"]
+  },
+  {
+    "id": "LLM_054",
+    "extracted_symptoms": ["tachycardia"]
+  },
+  {
+    "id": "LLM_055",
+    "extracted_symptoms": ["stomach discomfort"]
+  },
+  {
+    "id": "LLM_056",
+    "extracted_symptoms": ["anxiety"]
+  },
+  {
+    "id": "LLM_057",
+    "extracted_symptoms": ["insomnia"]
+  },
+  {
+    "id": "LLM_058",
+    "extracted_symptoms": ["chill"]
+  },
+  {
+    "id": "LLM_059",
+    "extracted_symptoms": ["malaise"]
+  },
+  {
+    "id": "LLM_060",
+    "extracted_symptoms": ["head heaviness"]
+  },
+  {
+    "id": "LLM_061",
+    "extracted_symptoms": ["nervousness"]
+  },
+  {
+    "id": "LLM_062",
+    "extracted_symptoms": ["sleep disturbance"]
+  },
+  {
+    "id": "LLM_063",
+    "extracted_symptoms": ["abdominal bloating"]
+  },
+  {
+    "id": "LLM_064",
+    "extracted_symptoms": ["abdominal discomfort"]
+  },
+  {
+    "id": "LLM_065",
+    "extracted_symptoms": ["abdominal distension"]
+  },
+  {
+    "id": "LLM_066",
+    "extracted_symptoms": ["abdominal tenderness"]
+  },
+  {
+    "id": "LLM_067",
+    "extracted_symptoms": ["blisters"]
+  },
+  {
+    "id": "LLM_068",
+    "extracted_symptoms": ["body ache"]
+  },
+  {
+    "id": "LLM_069",
+    "extracted_symptoms": ["bradycardia"]
+  },
+  {
+    "id": "LLM_070",
+    "extracted_symptoms": ["cervical pain"]
+  },
+  {
+    "id": "LLM_071",
+    "extracted_symptoms": ["climbing stairs difficulty"]
+  },
+  {
+    "id": "LLM_072",
+    "extracted_symptoms": ["confusion"]
+  },
+  {
+    "id": "LLM_073",
+    "extracted_symptoms": ["constipation"]
+  },
+  {
+    "id": "LLM_074",
+    "extracted_symptoms": ["cyanosis"]
+  },
+  {
+    "id": "LLM_075",
+    "extracted_symptoms": ["diplopia"]
+  },
+  {
+    "id": "LLM_076",
+    "extracted_symptoms": ["drowsiness"]
+  },
+  {
+    "id": "LLM_077",
+    "extracted_symptoms": ["dry mouth"]
+  },
+  {
+    "id": "LLM_078",
+    "extracted_symptoms": ["dry throat"]
+  },
+  {
+    "id": "LLM_079",
+    "extracted_symptoms": ["dysarthria"]
+  },
+  {
+    "id": "LLM_080",
+    "extracted_symptoms": ["dysphagia"]
+  },
+  {
+    "id": "LLM_081",
+    "extracted_symptoms": ["gait disturbance"]
+  },
+  {
+    "id": "LLM_082",
+    "extracted_symptoms": ["gum bleeding"]
+  },
+  {
+    "id": "LLM_083",
+    "extracted_symptoms": ["hallucination"]
+  },
+  {
+    "id": "LLM_084",
+    "extracted_symptoms": ["heartburn"]
+  },
+  {
+    "id": "LLM_085",
+    "extracted_symptoms": ["hematuria"]
+  },
+  {
+    "id": "LLM_086",
+    "extracted_symptoms": ["hiccup"]
+  },
+  {
+    "id": "LLM_087",
+    "extracted_symptoms": ["irritability"]
+  },
+  {
+    "id": "LLM_088",
+    "extracted_symptoms": ["joint swelling"]
+  },
+  {
+    "id": "LLM_089",
+    "extracted_symptoms": ["leg weakness"]
+  },
+  {
+    "id": "LLM_090",
+    "extracted_symptoms": ["lymphadenopathy"]
+  },
+  {
+    "id": "LLM_091",
+    "extracted_symptoms": ["mucous diarrhea"]
+  },
+  {
+    "id": "LLM_092",
+    "extracted_symptoms": ["neck pain"]
+  },
+  {
+    "id": "LLM_093",
+    "extracted_symptoms": ["non-healing wound"]
+  },
+  {
+    "id": "LLM_094",
+    "extracted_symptoms": ["numbness"]
+  },
+  {
+    "id": "LLM_095",
+    "extracted_symptoms": ["odynophagia"]
+  },
+  {
+    "id": "LLM_096",
+    "extracted_symptoms": ["oral ulcer"]
+  },
+  {
+    "id": "LLM_097",
+    "extracted_symptoms": ["orthopnea"]
+  },
+  {
+    "id": "LLM_098",
+    "extracted_symptoms": ["petechiae"]
+  },
+  {
+    "id": "LLM_099",
+    "extracted_symptoms": ["pharyngitis"]
+  },
+  {
+    "id": "LLM_100",
+    "extracted_symptoms": ["polydipsia"]
+  },
+  {
+    "id": "LLM_101",
+    "extracted_symptoms": ["presyncope"]
+  },
+  {
+    "id": "LLM_102",
+    "extracted_symptoms": ["productive cough"]
+  },
+  {
+    "id": "LLM_103",
+    "extracted_symptoms": ["pruritus"]
+  },
+  {
+    "id": "LLM_104",
+    "extracted_symptoms": ["ptosis"]
+  },
+  {
+    "id": "LLM_105",
+    "extracted_symptoms": ["right lower quadrant abdominal pain"]
+  },
+  {
+    "id": "LLM_106",
+    "extracted_symptoms": ["right upper abdominal pain"]
+  },
+  {
+    "id": "LLM_107",
+    "extracted_symptoms": ["right upper quadrant pain"]
+  },
+  {
+    "id": "LLM_108",
+    "extracted_symptoms": ["seizure"]
+  },
+  {
+    "id": "LLM_109",
+    "extracted_symptoms": ["severe cough"]
+  },
+  {
+    "id": "LLM_110",
+    "extracted_symptoms": ["severe headache"]
+  },
+  {
+    "id": "LLM_111",
+    "extracted_symptoms": ["skin peeling"]
+  },
+  {
+    "id": "LLM_112",
+    "extracted_symptoms": ["sneezing"]
+  },
+  {
+    "id": "LLM_113",
+    "extracted_symptoms": ["sweating"]
+  },
+  {
+    "id": "LLM_114",
+    "extracted_symptoms": ["tingling"]
+  },
+  {
+    "id": "LLM_115",
+    "extracted_symptoms": ["tinnitus"]
+  },
+  {
+    "id": "LLM_116",
+    "extracted_symptoms": ["tremor"]
+  },
+  {
+    "id": "LLM_117",
+    "extracted_symptoms": ["vertigo"]
+  },
+  {
+    "id": "LLM_118",
+    "extracted_symptoms": ["weight loss"]
+  },
+  {
+    "id": "LLM_119",
+    "extracted_symptoms": ["wound exudate"]
+  }
 ]
