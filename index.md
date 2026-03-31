@@ -152,11 +152,17 @@ NeSy/
 
 To get the system up and running, follow these modules in order:
 
-1.  **Database**: Restore the graph using the [Neo4j Setup Guide](./docs/neo4j_setup.md).
-2.  **Ollama**: Local Ollama Setup [Ollama Setup Guide](./docs/ollama_setup.md).
-3.  **Notebooks**: Preparation phase and testing [Notebooks Guide](./notebooks/README.md).
-4.  **API**: Launch the backend following the [Backend README](./backend/README.md).
-5.  **NLP test**: NLP Layer Test Results [NLP Test Results](./docs/nlp-test.md).
+1. **Database**: Restore the graph using the [Neo4j Setup Guide](./docs/neo4j_setup.md).
+2. **Ollama**: Local Ollama Setup [Ollama Setup Guide](./docs/ollama_setup.md).
+3. **Notebooks**: Preparation phase and testing [Notebooks Guide](./notebooks/README.md).
+4. **API**: Launch the backend following the [Backend README](./backend/README.md).
+
+---
+
+# 🧪 Test Results
+
+1. **NLP test**: NLP Layer Test Results [NLP Test Results](./docs/nlp-test.md).
+2. **Embedding test**: Embedding Layer Test Results [Embedding Test Results](./docs/embedding-test.md).
 
 ## License
  
