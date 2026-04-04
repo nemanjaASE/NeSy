@@ -163,6 +163,7 @@ To get the system up and running, follow these modules in order:
 
 1. **NLP test**: NLP Layer Test Results [NLP Test Results](./docs/nlp-test.md).
 2. **Embedding test**: Embedding Layer Test Results [Embedding Test Results](./docs/embedding-test.md).
+3. **Inference and Scoring test**: Inference and Scoring Layer Test Results [Inference and Scoring Test Results](./docs/inference-and-scoring-test.md).
 
 ## License
  
