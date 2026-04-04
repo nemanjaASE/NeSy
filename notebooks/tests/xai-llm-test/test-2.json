@@ -1,32 +1,116 @@
 [
   {
-    "disease": "3-methylcrotonyl-CoA carboxylase deficiency",
-    "uri": "http://purl.obolibrary.org/obo/DOID_0050710",
-    "score": 8.90,
-    "match": 3,
-    "disease_coverage": "75.0%",
-    "input_coverage": "100.0%",
-    "matched_symptoms": ["diarrhea", "lethargy", "vomiting"],
-    "missing_symptoms": ["poor feeding"]
+    "disease": "hepatitis E",
+    "uri": "http://purl.obolibrary.org/obo/DOID_4411",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 10.476,
+    "match_count": 5,
+    "total_symptom_count": 11,
+    "disease_coverage_pct": "45.5%",
+    "input_coverage_pct": "100.0%",
+    "matched_symptoms": [
+      "fatigue",
+      "nausea",
+      "jaundice",
+      "acholic stool",
+      "dark urine"
+    ],
+    "missing_symptoms": [
+      "abdominal pain",
+      "joint pain",
+      "fever",
+      "loss of appetite",
+      "vomiting",
+      "liver inflammation"
+    ]
   },
   {
-    "disease": "beta-ketothiolase deficiency",
-    "uri": "http://purl.obolibrary.org/obo/DOID_14723",
-    "score": 6.31,
-    "match": 2,
-    "disease_coverage": "50.0%",
-    "input_coverage": "66.7%",
-    "matched_symptoms": ["lethargy", "vomiting"],
-    "missing_symptoms": ["seizure", "dehydration"]
+    "disease": "hepatitis D",
+    "uri": "http://purl.obolibrary.org/obo/DOID_2047",
+    "passed_filter": false,
+    "blocking_symptoms": ["drowsiness", "confusion"],
+    "normalized_score": 9.637,
+    "match_count": 5,
+    "total_symptom_count": 13,
+    "disease_coverage_pct": "38.5%",
+    "input_coverage_pct": "100.0%",
+    "matched_symptoms": [
+      "fatigue",
+      "nausea",
+      "jaundice",
+      "acholic stool",
+      "dark urine"
+    ],
+    "missing_symptoms": [
+      "drowsiness",
+      "confusion",
+      "lethargy",
+      "coma",
+      "anorexia",
+      "liver inflammation",
+      "sleep disturbance",
+      "abnormal behavior"
+    ]
   },
   {
-    "disease": "swine influenza",
-    "uri": "http://purl.obolibrary.org/obo/DOID_0050211",
-    "score": 6.29,
-    "match": 3,
-    "disease_coverage": "37.5%",
-    "input_coverage": "100.0%",
-    "matched_symptoms": ["diarrhea", "lethargy", "vomiting"],
-    "missing_symptoms": ["pharynx inflammation", "cough", "fever", "nausea", "rhinorrhea"]
+    "disease": "hepatitis A",
+    "uri": "http://purl.obolibrary.org/obo/DOID_12549",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.306,
+    "match_count": 4,
+    "total_symptom_count": 10,
+    "disease_coverage_pct": "40.0%",
+    "input_coverage_pct": "80.0%",
+    "matched_symptoms": ["fatigue", "nausea", "jaundice", "acholic stool"],
+    "missing_symptoms": [
+      "abdominal pain",
+      "joint pain",
+      "fever",
+      "loss of appetite",
+      "vomiting",
+      "liver inflammation"
+    ]
+  },
+  {
+    "disease": "hepatitis B",
+    "uri": "http://purl.obolibrary.org/obo/DOID_2043",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.306,
+    "match_count": 4,
+    "total_symptom_count": 10,
+    "disease_coverage_pct": "40.0%",
+    "input_coverage_pct": "80.0%",
+    "matched_symptoms": ["fatigue", "nausea", "jaundice", "acholic stool"],
+    "missing_symptoms": [
+      "abdominal pain",
+      "joint pain",
+      "fever",
+      "loss of appetite",
+      "vomiting",
+      "liver inflammation"
+    ]
+  },
+  {
+    "disease": "hepatitis C",
+    "uri": "http://purl.obolibrary.org/obo/DOID_1883",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.306,
+    "match_count": 4,
+    "total_symptom_count": 10,
+    "disease_coverage_pct": "40.0%",
+    "input_coverage_pct": "80.0%",
+    "matched_symptoms": ["fatigue", "nausea", "jaundice", "acholic stool"],
+    "missing_symptoms": [
+      "abdominal pain",
+      "joint pain",
+      "fever",
+      "loss of appetite",
+      "vomiting",
+      "liver inflammation"
+    ]
   }
 ]

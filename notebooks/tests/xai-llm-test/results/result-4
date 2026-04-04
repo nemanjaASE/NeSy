@@ -1,9 +1,0 @@
-Most likely: swine influenza
-
-Confidence: visoka
-
-Differentials: ['respiratory syncytial virus infectious disease']
-
-Reasoning: Pacijent ima letargiju, kašalj, povišenu temperaturu, mučninu i rinitis, što se poklapa sa tipičnim kliničkim manifestacijama svinjskog influenznog virusa. Nedostaju gastrointestinalni simptomi koji su česti kod ove infekcije – dijareja, povraćanje i upala ždrela nisu prijavljeni. Pokrivenost bolesti iznosi 62,5 % i sve prijavljene simptome pacijenta pokrivaju profil bolesti (input_coverage 100 %). Ovi podaci čine svinjsku gripu najverovatnijim uzrokom u poređenju sa drugim respiratornim infekcijama. Diferencijalna dijagnoza uključuje respiratorni sincicijalni virus, koji deli kašalj, temperaturu i rinitis, ali nedostaje letargija i mučnina. Potrebno je proveriti prisustvo gastrointestinalnih simptoma i moguće izloženosti svinjama ili kontakt sa zaraženim osobama.
-
-Recommendation: Preporučuje se hitna konsultacija infektologa ili pulmologa, laboratorijska ispitivanja uključuju PCR test za influenza A (svinjska so), brzi antigeni, kompletna krvna slika i kulturu respiratornog uzorka. Takođe treba proveriti prisustvo dijareje, upale ždrela i povraćanja. Ukoliko se potvrdi, započinje se antivirusna terapija prema smernicama. Praćenje simptoma i eventualna karantin preporučuju se.

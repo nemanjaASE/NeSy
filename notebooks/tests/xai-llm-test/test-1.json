@@ -1,22 +1,108 @@
 [
   {
-    "disease": "hepatitis D",
-    "uri": "http://purl.obolibrary.org/obo/DOID_2047",
-    "score": 6.37,
-    "match": 3,
-    "disease_coverage": "23.1%",
-    "input_coverage": "100.0%",
-    "matched_symptoms": ["lethargy", "jaundice", "dark urine"],
-    "missing_symptoms": ["drowsiness", "confusion", "coma", "fatigue", "anorexia", "nausea", "liver inflammation", "sleep disturbance", "acholic stool", "abnormal behavior"]
+    "disease": "nonparalytic poliomyelitis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_4986",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.731,
+    "match_count": 4,
+    "total_symptom_count": 6,
+    "disease_coverage_pct": "66.7%",
+    "input_coverage_pct": "80.0%",
+    "matched_symptoms": [
+      "headache",
+      "pharynx inflammation",
+      "fever",
+      "vomiting"
+    ],
+    "missing_symptoms": ["fatigue", "stiff neck"]
   },
   {
-    "disease": "hepatitis E",
-    "uri": "http://purl.obolibrary.org/obo/DOID_4411",
-    "score": 4.70,
-    "match": 2,
-    "disease_coverage": "18.2%",
-    "input_coverage": "66.7%",
-    "matched_symptoms": ["jaundice", "dark urine"],
-    "missing_symptoms": ["abdominal pain", "joint pain", "fever", "fatigue", "loss of appetite", "vomiting", "nausea", "liver inflammation", "acholic stool"]
+    "disease": "Marburg hemorrhagic fever",
+    "uri": "http://purl.obolibrary.org/obo/DOID_4327",
+    "passed_filter": false,
+    "blocking_symptoms": ["maculopapular rash", "chills"],
+    "normalized_score": 8.139,
+    "match_count": 5,
+    "total_symptom_count": 11,
+    "disease_coverage_pct": "45.5%",
+    "input_coverage_pct": "100.0%",
+    "matched_symptoms": [
+      "headache",
+      "pharynx inflammation",
+      "fever",
+      "vomiting",
+      "bleeding"
+    ],
+    "missing_symptoms": [
+      "diarrhea",
+      "abdominal pain",
+      "maculopapular rash",
+      "nausea",
+      "chills",
+      "chest pain"
+    ]
+  },
+  {
+    "disease": "Ebola virus disease",
+    "uri": "http://purl.obolibrary.org/obo/DOID_4325",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.139,
+    "match_count": 5,
+    "total_symptom_count": 11,
+    "disease_coverage_pct": "45.5%",
+    "input_coverage_pct": "100.0%",
+    "matched_symptoms": [
+      "headache",
+      "pharynx inflammation",
+      "fever",
+      "vomiting",
+      "bleeding"
+    ],
+    "missing_symptoms": [
+      "diarrhea",
+      "rash",
+      "joint pain",
+      "bloodshot eye",
+      "weakness",
+      "muscle weakness"
+    ]
+  },
+  {
+    "disease": "West Nile fever",
+    "uri": "http://purl.obolibrary.org/obo/DOID_2366",
+    "passed_filter": false,
+    "blocking_symptoms": ["maculopapular rash"],
+    "normalized_score": 8.083,
+    "match_count": 4,
+    "total_symptom_count": 7,
+    "disease_coverage_pct": "57.1%",
+    "input_coverage_pct": "80.0%",
+    "matched_symptoms": [
+      "headache",
+      "pharynx inflammation",
+      "fever",
+      "vomiting"
+    ],
+    "missing_symptoms": ["maculopapular rash", "nausea", "body ache"]
+  },
+  {
+    "disease": "poliomyelitis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_4953",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.083,
+    "match_count": 4,
+    "total_symptom_count": 7,
+    "disease_coverage_pct": "57.1%",
+    "input_coverage_pct": "80.0%",
+    "matched_symptoms": [
+      "headache",
+      "pharynx inflammation",
+      "fever",
+      "vomiting"
+    ],
+    "missing_symptoms": ["fatigue", "stiff neck", "flaccid paralysis"]
   }
 ]

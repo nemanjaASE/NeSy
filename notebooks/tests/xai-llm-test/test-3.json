@@ -1,52 +1,112 @@
 [
   {
-    "disease": "Marburg hemorrhagic fever",
-    "uri": "http://purl.obolibrary.org/obo/DOID_4327",
-    "score": 16.17,
-    "match": 9,
-    "disease_coverage": "81.8%",
-    "input_coverage": "100.0%",
-    "matched_symptoms": ["diarrhea", "headache", "abdominal pain", "pharynx inflammation", "maculopapular rash", "bleeding", "nausea", "chills", "chest pain"],
-    "missing_symptoms": ["fever", "vomiting"]
+    "disease": "Japanese encephalitis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_10844",
+    "passed_filter": false,
+    "blocking_symptoms": ["spastic paralysis"],
+    "normalized_score": 10.466,
+    "match_count": 5,
+    "total_symptom_count": 10,
+    "disease_coverage_pct": "50.0%",
+    "input_coverage_pct": "100.0%",
+    "matched_symptoms": [
+      "headache",
+      "confusion",
+      "coma",
+      "stiff neck",
+      "high fever"
+    ],
+    "missing_symptoms": [
+      "tremor",
+      "disorientation",
+      "convulsion",
+      "spastic paralysis",
+      "stupor"
+    ]
   },
   {
-    "disease": "Mycoplasma pneumoniae pneumonia",
-    "uri": "http://purl.obolibrary.org/obo/DOID_13276",
-    "score": 10.03,
-    "match": 4,
-    "disease_coverage": "66.7%",
-    "input_coverage": "44.4%",
-    "matched_symptoms": ["headache", "pharynx inflammation", "chills", "chest pain"],
-    "missing_symptoms": ["fever", "dry cough"]
+    "disease": "St. Louis encephalitis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_10845",
+    "passed_filter": false,
+    "blocking_symptoms": ["spastic paralysis"],
+    "normalized_score": 10.466,
+    "match_count": 5,
+    "total_symptom_count": 10,
+    "disease_coverage_pct": "50.0%",
+    "input_coverage_pct": "100.0%",
+    "matched_symptoms": [
+      "headache",
+      "confusion",
+      "coma",
+      "stiff neck",
+      "high fever"
+    ],
+    "missing_symptoms": [
+      "tremor",
+      "disorientation",
+      "convulsion",
+      "spastic paralysis",
+      "stupor"
+    ]
   },
   {
-    "disease": "clonorchiasis",
-    "uri": "http://purl.obolibrary.org/obo/DOID_13767",
-    "score": 9.58,
-    "match": 3,
-    "disease_coverage": "100.0%",
-    "input_coverage": "33.3%",
-    "matched_symptoms": ["diarrhea", "abdominal pain", "nausea"],
-    "missing_symptoms": []
+    "disease": "West Nile encephalitis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_2365",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 9.554,
+    "match_count": 5,
+    "total_symptom_count": 12,
+    "disease_coverage_pct": "41.7%",
+    "input_coverage_pct": "100.0%",
+    "matched_symptoms": [
+      "headache",
+      "confusion",
+      "coma",
+      "stiff neck",
+      "high fever"
+    ],
+    "missing_symptoms": [
+      "paralysis",
+      "tremor",
+      "disorientation",
+      "convulsion",
+      "muscle weakness",
+      "paresthesia",
+      "stupor"
+    ]
   },
   {
-    "disease": "West Nile fever",
-    "uri": "http://purl.obolibrary.org/obo/DOID_2366",
-    "score": 9.10,
-    "match": 4,
-    "disease_coverage": "57.1%",
-    "input_coverage": "44.4%",
-    "matched_symptoms": ["headache", "pharynx inflammation", "maculopapular rash", "nausea"],
-    "missing_symptoms": ["fever", "vomiting", "body ache"]
+    "disease": "Powassan encephalitis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_0050179",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.195,
+    "match_count": 4,
+    "total_symptom_count": 10,
+    "disease_coverage_pct": "40.0%",
+    "input_coverage_pct": "80.0%",
+    "matched_symptoms": ["headache", "confusion", "coma", "stiff neck"],
+    "missing_symptoms": [
+      "paralysis",
+      "drowsiness",
+      "fever",
+      "vomiting",
+      "seizure",
+      "tremor"
+    ]
   },
   {
-    "disease": "cat-scratch disease",
-    "uri": "http://purl.obolibrary.org/obo/DOID_11258",
-    "score": 8.37,
-    "match": 3,
-    "disease_coverage": "75.0%",
-    "input_coverage": "33.3%",
-    "matched_symptoms": ["headache", "abdominal pain", "chills"],
-    "missing_symptoms": ["backache"]
+    "disease": "Eastern equine encephalitis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_10841",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 7.245,
+    "match_count": 3,
+    "total_symptom_count": 7,
+    "disease_coverage_pct": "42.9%",
+    "input_coverage_pct": "60.0%",
+    "matched_symptoms": ["headache", "coma", "high fever"],
+    "missing_symptoms": ["vomiting", "seizure", "disorientation", "chills"]
   }
 ]

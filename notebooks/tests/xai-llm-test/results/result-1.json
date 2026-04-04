@@ -1,0 +1,18 @@
+{
+  "most_likely": "nonparalytic poliomyelitis",
+  "confidence": "high",
+  "differentials": [
+    "Ebola virus disease",
+    "poliomyelitis"
+  ],
+  "excluded_conditions": [
+    "Marburg hemorrhagic fever",
+    "West Nile fever"
+  ],
+  "reasoning": {
+    "primary_analysis": "The top-ranked disease, nonparalytic poliomyelitis, shows a strong clinical correlation with the patient's symptoms, with a high degree of specificity. The patient's symptoms, including headache, pharynx inflammation, fever, and vomiting, match well with the disease profile. The absence of blocking symptoms and a high disease coverage of 66.7% and input coverage of 80.0% further support this diagnosis. The missing symptoms, fatigue and stiff neck, are not critical for the initial assessment.",
+    "differential_comparison": "Ebola virus disease and poliomyelitis are considered differentials due to their similar symptom profiles. However, Ebola virus disease has a lower clinical correlation due to its lower disease coverage of 45.5%, despite a high input coverage of 100.0%. Poliomyelitis has a similar profile but with a slightly lower normalized score. Both are clinically consistent with the reported absences but are less specific than nonparalytic poliomyelitis.",
+    "exclusion_criteria": "Marburg hemorrhagic fever and West Nile fever were excluded due to the presence of blocking symptoms. Marburg hemorrhagic fever requires maculopapular rash and chills, which the patient denied. West Nile fever is typically associated with maculopapular rash, which is also absent in the patient. These blocking symptoms make these diseases less likely."
+  },
+  "recommendation": "Consult a neurologist or infectious disease specialist for further evaluation. Lab tests may include poliovirus-specific IgM antibody tests. Physical verification of missing symptoms such as fatigue, stiff neck, and muscle weakness is recommended."
+}

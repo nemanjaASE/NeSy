@@ -1,9 +1,0 @@
-Most likely: hepatitis D
-
-Confidence: niska
-
-Differentials: ['hepatitis E']
-
-Reasoning: Pacijent je prijavio letargiju, žutu boju kože i tamni urin, što su tri simptoma koji se podudaraju sa profilom hepatitis D (uri: http://purl.obolibrary.org/obo/DOID_2047). Međutim, od tipičnih simptoma hepatitis D nedostaju ključni znakovi poput umora, anoreksije, mučnine, zapaljenja jetre i promena stolice (acholic stool), što smanjuje pokrivenost bolesti na 23,1%. Iako su svi prijavljeni simptomi pokriveni (input_coverage 100%), nedostatak većine karakterističnih manifestacija ukazuje na nisku verovatnoću. Hepatitis E (uri: http://purl.obolibrary.org/obo/DOID_4411) takođe deli žutu boju i tamni urin, ali ima manju ocenu i pokrivenost (18,2%). Stoga je hepatitis D najverovatniji, ali s velikom nesigurnošću i potrebno je razmotriti i hepatitis E.
-
-Recommendation: Preporučuje se konsultacija hepatologa i kompletna laboratorijska evaluacija jetre (ALT, AST, bilirubin, koagulacijski parametri) uz serološke testove za hepatitis D i E. Takođe je indicirana ultrazvučna kontrola jetre. Lekaru se savetuje da proveri odsutne, ali klinički značajne simptome: umor, anoreksiju, mučninu, zapaljenje jetre (bol u desnom podrebrju, povišeni enzimi) i acholic stool. Ako postoje faktori rizika (putovanja, izloženost HBV), to treba uzeti u obzir pri daljoj dijagnostici.

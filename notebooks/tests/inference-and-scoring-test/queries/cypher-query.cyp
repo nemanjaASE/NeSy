@@ -31,4 +31,4 @@ RETURN d.n4sch__label[0]                 AS disease,
        total_symptom_count,
        total_score,
        total_score / sqrt(toFloat(total_symptom_count))      AS normalized_score
-ORDER BY passed_filter DESC, normalized_score DESC
+ORDER BY normalized_score DESC
