@@ -1,6 +1,6 @@
 ---
 title: 🧪 Testing the Explainable AI (XAI)
-nav_order: 7
+nav_order: 9
 ---
 
 # 🧪 Testing the Explainable AI (XAI)
