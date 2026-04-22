@@ -62,3 +62,45 @@ The Explainable AI (XAI) layer is evaluated using four distinct clinical scenari
 | Blocking symptoms | `empty` |
 
 **Success criteria:** Model identifies `seizure` as the clinical **tie-breaker** that elevates `Powassan encephalitis` over the competing candidates.
+
+## Model Evaluations
+ 
+### 🧪 Test 1: `llama3.2:3b` (local)
+ 
+**Overall assessment:** Strong JSON structural compliance, but exhibits hallucinatory reasoning when it comes to the clinical filter logic provided in the input data.
+ 
+#### Performance Matrix
+ 
+| Metric | Result | Commentary |
+|---|---|---|
+| JSON structural integrity | ✅ 100% | Perfectly followed the schema and maintained all keys |
+| Exclusion logic (blocking symptoms) | ⚠️ 50% | Correctly identified Hepatitis D exclusion; failed on Japanese Encephalitis |
+| Internal consistency | ❌ Fail | In TC3, contradicts the input filter logic |
+| Clinical tone | ✅ High | Professional language; avoids raw "database" jargon |
+ 
+#### Qualitative Analysis
+ 
+**1. Negation & filter logic (TC1 & TC3)**
+ 
+In TC3, the model correctly identifies `West Nile encephalitis` as the most likely diagnosis. However, it fails the logical constraint test by placing `Japanese encephalitis` and `St. Louis encephalitis` into the differential diagnosis category, completely ignoring the `passed_filter: false` flag. These conditions should have been moved to `excluded_conditions` due to the presence of the blocking symptom `spastic paralysis`, which the patient explicitly denied. Furthermore, the model incorrectly justifies their inclusion by claiming they have lower scores, when in fact, they had higher raw scores but were excluded.
+ 
+**2. Differential comparison (TC2 & TC4)**
+ 
+TC2 (Hepatitis panel) was handled well. The model correctly identified `Hepatitis D's` exclusion based on the absence of `drowsiness` and `confusion`.
+ 
+In TC4, the model ranked `Powassan encephalitis` correctly but did not explicitly name `seizure` as the clinical tie-breaker.
+ 
+**3. Safety & clinical recommendations**
+ 
+Across all test cases the model consistently appended relevant next steps (e.g., CSF analysis, PCR for flavivirus). This suggests its medical pre-training knowledge is being used to enrich explanations beyond the provided JSON — a useful behaviour, as long as it does not override or contradict the input data.
+ 
+#### Verdict
+ 
+`llama3.2:3b` is viable for **format enforcement** and **clinical tone**, but unreliable for **filter-aware reasoning**. It should not be used in production for cases where the distinction between "lower score" and "hard exclusion" carries clinical weight.
+ 
+| Capability | Rating |
+|---|---|
+| JSON schema compliance | ⭐⭐⭐⭐⭐ |
+| Blocking symptom reasoning | ⭐⭐☆☆☆ |
+| Score-based differential | ⭐⭐⭐☆☆ |
+| Clinical recommendation quality | ⭐⭐⭐⭐☆ |
