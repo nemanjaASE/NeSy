@@ -76,7 +76,7 @@ The Explainable AI (XAI) layer is evaluated using four distinct clinical scenari
 | JSON structural integrity | ✅ 100% | Perfectly followed the schema and maintained all keys |
 | Exclusion logic (blocking symptoms) | ⚠️ 50% | Correctly identified Hepatitis D exclusion; failed on Japanese Encephalitis |
 | Internal consistency | ❌ Fail | In TC3, contradicts the input filter logic |
-| Clinical tone | ✅ High | Professional language; avoids raw "database" jargon |
+| Clinical tone | ✅ High | Professional language/medical vocabulary |
  
 #### Qualitative Analysis
  
@@ -93,14 +93,52 @@ In TC4, the model ranked `Powassan encephalitis` correctly but did not explicitl
 **3. Safety & clinical recommendations**
  
 Across all test cases the model consistently appended relevant next steps (e.g., CSF analysis, PCR for flavivirus). This suggests its medical pre-training knowledge is being used to enrich explanations beyond the provided JSON — a useful behaviour, as long as it does not override or contradict the input data.
+
+### 🧪 Test 2: `llama3:8b` (local)
  
-#### Verdict
+**Overall assessment:** Successfully generates valid JSON structures and writes highly professional, clinically coherent paragraphs. However, it exhibits a severe inability to correctly map the logical `passed_filter` flag to the appropriate JSON arrays, leading to contradictory outputs where the text explains a disease is excluded, but the array lists it as a viable differential.
  
-`llama3.2:3b` is viable for **format enforcement** and **clinical tone**, but unreliable for **filter-aware reasoning**. It should not be used in production for cases where the distinction between "lower score" and "hard exclusion" carries clinical weight.
+#### Performance Matrix
+
+| Metric | Result | Commentary |
+|---|---|---|
+| JSON structural integrity | ✅ 100% | Perfectly followed the schema and maintained all keys |
+| Exclusion logic (blocking symptoms) | ❌ 25% | Recognized blocking symptoms in text, but placed the diseases in the wrong categories |
+| Internal consistency | ❌ Fail | Massive semantic disconnect. The text frequently contradicts the JSON arrays |
+| Clinical tone | ✅ High | Professional language/medical vocabulary |
+
+#### Qualitative Analysis
  
-| Capability | Rating |
-|---|---|
-| JSON schema compliance | ⭐⭐⭐⭐⭐ |
-| Blocking symptom reasoning | ⭐⭐☆☆☆ |
-| Score-based differential | ⭐⭐⭐☆☆ |
-| Clinical recommendation quality | ⭐⭐⭐⭐☆ |
+**1. Negation & filter logic (TC1, TC2 & TC3)**
+
+In TC1, it places `Marburg hemorrhagic fever` in the `differentials`, completely ignoring the `passed_filter: false` flag. Additionally, `poliomyelitis` should be in `differentials`, not in `excluded_conditions`.
+
+In TC2, it places `Hepatitis D` in `differentials`, but then correctly writes in the `exclusion_criteria` paragraph that `Hepatitis D` was ***"rejected due to the presence of blocking symptoms"***.
+
+In TC3, it completely inverts the logic: it places the excluded diseases (`Japanese encephalitis` and `St. Louis encephalitis`) into the `differentials` array, and puts valid differentials (`Powassan encephalitis` and `Eastern equine encephalitis`) into the `excluded_conditions` array.
+
+**2. Hallucinated Constraints (TC4)**:
+In TC4, all diseases passed the filter (no blocking symptoms were triggered). However, the model forced `La Crosse encephalitis` and `primary amebic meningoencephalitis` into the `excluded_conditions` array. To justify this, it hallucinated that blocking symptoms were present, stating: ***"La Crosse... excluded due to their lower scores and the presence of blocking symptoms."*** It clearly confused **"missing symptoms"** with **"blocking symptoms"** to force a logical narrative.
+
+### 🧪 Test 3: `qwen2.5:14b` (local)
+ 
+**Overall assessment:** Qwen 2.5 (14b) shows a significant leap in performance compared to Llama 3 (8b), particularly in logical consistency and adherence to rigid system rules. While Llama often "hallucinated" reasons for exclusion to justify its placement errors, Qwen demonstrates much stricter compliance with the `passed_filter` flag.
+ 
+#### Performance Matrix
+
+| Metric | Result | Commentary |
+|---|---|---|
+| JSON structural integrity | ✅ 100% | Perfectly followed the schema and maintained all keys |
+| Exclusion logic (blocking symptoms) | ✅ 100% | Accurately identifies `passed_filter: false` and correctly maps diseases to excluded_conditions |
+| Internal consistency | ✅ High | Textual reasoning directly supports the content of the JSON arrays. |
+| Clinical tone | ✅ High | Professional language/medical vocabulary |
+
+#### Qualitative Analysis
+
+**1. Precise Handling of Negation (TC1, TC2, & TC3)**
+
+In TC1, correctly places `Marburg hemorrhagic fever` in `excluded_conditions`. In the text, it explicitly states the disease is excluded due to the absence of a `rash` and `chills`, showing that the model "understands" that `passed_filter: false` takes priority over a high score.
+
+In TC2, `Hepatitis D` is correctly excluded. The reasoning is precise: it notes that `drowsiness` and `confusion` are mandatory markers that are missing, which directly justifies its placement in the excluded list.
+
+In TC3, the model successfully resolves the "inversion" problem. `Japanese encephalitis` and `St. Louis encephalitis` are correctly classified as excluded, with a clear explanation regarding the blocking symptom (`spastic paralysis`).
