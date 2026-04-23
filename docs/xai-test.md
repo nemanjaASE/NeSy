@@ -71,12 +71,12 @@ The Explainable AI (XAI) layer is evaluated using four distinct clinical scenari
  
 #### Performance Matrix
  
-| Metric | Result | Commentary |
-|---|---|---|
-| JSON structural integrity | ✅ 100% | Perfectly followed the schema and maintained all keys |
-| Exclusion logic (blocking symptoms) | ⚠️ 50% | Correctly identified Hepatitis D exclusion; failed on Japanese Encephalitis |
-| Internal consistency | ❌ Fail | In TC3, contradicts the input filter logic |
-| Clinical tone | ✅ High | Professional language/medical vocabulary |
+| Metric                              | Result   | Commentary                                                                  |
+|-------------------------------------|----------|-----------------------------------------------------------------------------|
+| JSON structural integrity           | ✅ 100%  | Perfectly followed the schema and maintained all keys                       |
+| Exclusion logic (blocking symptoms) | ⚠️ 50%  | Correctly identified Hepatitis D exclusion; failed on Japanese Encephalitis |
+| Internal consistency                | ❌ Fail  | In TC3, contradicts the input filter logic                                  |
+| Clinical tone                       | ✅ High  | Professional language / medical vocabulary                                  |
  
 #### Qualitative Analysis
  
@@ -100,12 +100,12 @@ Across all test cases the model consistently appended relevant next steps (e.g.,
  
 #### Performance Matrix
 
-| Metric | Result | Commentary |
-|---|---|---|
-| JSON structural integrity | ✅ 100% | Perfectly followed the schema and maintained all keys |
-| Exclusion logic (blocking symptoms) | ❌ 25% | Recognized blocking symptoms in text, but placed the diseases in the wrong categories |
-| Internal consistency | ❌ Fail | Massive semantic disconnect. The text frequently contradicts the JSON arrays |
-| Clinical tone | ✅ High | Professional language/medical vocabulary |
+| Metric                              | Result   | Commentary                                                                        |
+|-------------------------------------|----------|-----------------------------------------------------------------------------------|
+| JSON structural integrity           | ✅ 100%  | Perfectly followed the schema and maintained all keys                             |
+| Exclusion logic (blocking symptoms) | ❌ 25%   | Recognized blocking symptoms in text, but placed diseases in the wrong categories |
+| Internal consistency                | ❌ Fail  | Massive semantic disconnect — the text frequently contradicts the JSON arrays     |
+| Clinical tone                       | ✅ High  | Professional language / medical vocabulary                                        |
 
 #### Qualitative Analysis
  
@@ -126,12 +126,12 @@ In TC4, all diseases passed the filter (no blocking symptoms were triggered). Ho
  
 #### Performance Matrix
 
-| Metric | Result | Commentary |
-|---|---|---|
-| JSON structural integrity | ✅ 100% | Perfectly followed the schema and maintained all keys |
-| Exclusion logic (blocking symptoms) | ✅ 100% | Accurately identifies `passed_filter: false` and correctly maps diseases to excluded_conditions |
-| Internal consistency | ✅ High | Textual reasoning directly supports the content of the JSON arrays. |
-| Clinical tone | ✅ High | Professional language/medical vocabulary |
+| Metric                              | Result   | Commentary                                                                                          |
+|-------------------------------------|----------|-----------------------------------------------------------------------------------------------------|
+| JSON structural integrity           | ✅ 100%  | Perfectly followed the schema and maintained all keys                                               |
+| Exclusion logic (blocking symptoms) | ✅ 100%  | Accurately identifies `passed_filter: false` and correctly maps diseases to `excluded_conditions`   |
+| Internal consistency                | ✅ High  | Textual reasoning directly supports the content of the JSON arrays                                  |
+| Clinical tone                       | ✅ High  | Professional language / medical vocabulary                                                          |
 
 #### Qualitative Analysis
 
@@ -142,3 +142,37 @@ In TC1, correctly places `Marburg hemorrhagic fever` in `excluded_conditions`. I
 In TC2, `Hepatitis D` is correctly excluded. The reasoning is precise: it notes that `drowsiness` and `confusion` are mandatory markers that are missing, which directly justifies its placement in the excluded list.
 
 In TC3, the model successfully resolves the "inversion" problem. `Japanese encephalitis` and `St. Louis encephalitis` are correctly classified as excluded, with a clear explanation regarding the blocking symptom (`spastic paralysis`).
+
+### 🧪 Test 4: `phi4:14b` (local)
+ 
+**Overall assessment:** Phi 4 (14b) shows a high level of logical maturity. Unlike smaller models that often prioritize conversational fluency over data constraints, Phi-4 treats the provided symbolic filters as hard requirements.
+ 
+#### Performance Matrix
+
+| Metric                              | Result   | Commentary                                                                                          |
+|-------------------------------------|----------|-----------------------------------------------------------------------------------------------------|
+| JSON structural integrity           | ✅ 100%  | Perfectly followed the schema and maintained all keys                                               |
+| Exclusion logic (blocking symptoms) | ✅ 100%  | Accurately identifies `passed_filter: false` and correctly maps diseases to `excluded_conditions`   |
+| Internal consistency                | ✅ High  | Textual reasoning directly supports the content of the JSON arrays                                  |
+| Clinical tone                       | ✅ High  | Professional language / medical vocabulary                                                          |
+
+#### Qualitative Analysis
+
+**1. Precise Handling of Negation (TC1, TC2, & TC3)**
+
+In cases where a disease has a high `normalized_score` but is marked as `passed_filter: false`, Phi-4 successfully exclude that disease.
+
+For example, in TC1, even though `Marburg hemorrhagic fever` matches 5 out of 5 symptoms, Phi-4 correctly excludes it, explicitly stating that the absence of a `maculopapular rash` and `chills` is the deciding factor. TC2 and TC3 shows same behaviours.
+
+## 📊 Summary: Comparison of Model Performance
+
+| Model | Logic Accuracy | XAI Reliability | Key Finding |
+|-------|----------------|-----------------|-------------|
+| Llama 3.2 (3b) | ⚠️ 50% | Hallucinatory | Struggled with symbolic flags; relied on pre-training too much. |
+| Llama 3 (8b) | ❌ 25% | Contradictory | Semantic disconnect; text said "excluded" but JSON said "differential." |
+| Qwen 2.5 (14b) | ✅ 100% | High | Significant leap; understood priority of logical filters over scores. |
+| Phi-4 (14b) | ✅ 100% | High | Most "clinically mature"; treated filters as hard constraints. |
+
+
+
+
