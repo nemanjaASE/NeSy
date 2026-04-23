@@ -1,0 +1,17 @@
+{
+  "most_likely": "nonparalytic poliomyelitis",
+  "confidence": "moderate",
+  "differentials": [
+    "Ebola virus disease"
+  ],
+  "excluded_conditions": [
+    "Marburg hemorrhagic fever",
+    "West Nile fever"
+  ],
+  "reasoning": {
+    "primary_analysis": "Nonparalytic poliomyelitis is identified as the most likely condition due to its highest normalized score among diseases with clinically consistent reported absences. The patient's symptoms of headache, pharynx inflammation, fever, and vomiting align well with this disease profile, covering a significant portion of both the disease's known symptoms (66.7%) and the patient's reported symptoms (80.0%). The absence of blocking symptoms further supports its clinical relevance. However, the moderate confidence level is due to the disease coverage and input coverage being between 40% and 60%, indicating that while there is a strong correlation, it is not overwhelmingly definitive.",
+    "differential_comparison": "Ebola virus disease also shows a high degree of symptom alignment with the patient's presentation, sharing similar symptoms such as headache, pharynx inflammation, fever, vomiting, and bleeding. However, its lower normalized score compared to nonparalytic poliomyelitis places it in the differential category. The absence of blocking symptoms for Ebola virus disease is a positive factor, but the overall clinical alignment with the patient's symptom profile is not as strong as that of nonparalytic poliomyelitis.",
+    "exclusion_criteria": "Marburg hemorrhagic fever and West Nile fever were excluded due to their filter status being false. For Marburg hemorrhagic fever, the presence of blocking symptoms such as maculopapular rash and chills, which are absent in the patient's report, disqualifies it from consideration. Similarly, West Nile fever is excluded because of the absence of a maculopapular rash, a critical symptom for this disease that was not reported by the patient."
+  },
+  "recommendation": "Next steps should include consultation with an infectious disease specialist to further evaluate nonparalytic poliomyelitis. Recommended lab tests may involve PCR testing for poliovirus and serological assays to confirm infection. Clinicians should also verify the presence of missing symptoms such as fatigue, stiff neck, and any signs of neurological involvement that could indicate progression towards paralytic forms."
+}

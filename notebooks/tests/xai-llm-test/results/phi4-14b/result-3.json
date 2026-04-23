@@ -1,0 +1,18 @@
+{
+  "most_likely": "West Nile encephalitis",
+  "confidence": "moderate",
+  "differentials": [
+    "Powassan encephalitis",
+    "Eastern equine encephalitis"
+  ],
+  "excluded_conditions": [
+    "Japanese encephalitis",
+    "St. Louis encephalitis"
+  ],
+  "reasoning": {
+    "primary_analysis": "West Nile encephalitis is identified as the most likely condition due to its highest Normalized Score among diseases with a clinically consistent profile, indicating a strong clinical correlation. The patient's symptoms align well with those of West Nile encephalitis, covering 41.7% of the disease's known symptoms and matching 100% of the patient's reported symptoms. There are no blocking symptoms present, which supports its likelihood as the primary diagnosis.",
+    "differential_comparison": "Powassan encephalitis is considered a differential due to its high Normalized Score and clinically consistent profile, though it has lower disease coverage (40%) compared to West Nile encephalitis. Eastern equine encephalitis also remains in differentials with moderate symptom alignment but lower input coverage (60%). Both alternatives have fewer matched symptoms than the top-ranked condition, which reduces their clinical alignment.",
+    "exclusion_criteria": "Japanese and St. Louis encephalitis were excluded due to the presence of blocking symptoms ('spastic paralysis') that are typically required for these diseases but were absent in the patient's report. This inconsistency with mandatory clinical markers leads to their exclusion from consideration."
+  },
+  "recommendation": "Next steps should include consultation with a neurologist and infectious disease specialist, along with lab tests such as serology or PCR specific to West Nile virus (URI: http://purl.obolibrary.org/obo/DOID_2365). Clinicians should verify the presence of 'paralysis', 'tremor', 'disorientation', 'convulsion', 'muscle weakness', and 'paresthesia' as these symptoms are missing from the patient's report but are typically associated with West Nile encephalitis."
+}

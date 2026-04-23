@@ -1,0 +1,15 @@
+{
+  "most_likely": "Powassan encephalitis",
+  "confidence": "high",
+  "differentials": [
+    "nonparalytic poliomyelitis",
+    "poliomyelitis"
+  ],
+  "excluded_conditions": [],
+  "reasoning": {
+    "primary_analysis": "The most likely diagnosis is Powassan encephalitis, which shows a strong clinical correlation with the patient's symptoms. The disease profile aligns well with the reported symptoms of headache, fever, vomiting, seizure, and stiff neck, covering all input symptoms (100% Input Coverage). With no blocking symptoms present, this condition remains clinically consistent with the absences noted by the patient. The high Normalized Score indicates a highly specific symptom profile that matches the clinical presentation closely.",
+    "differential_comparison": "Nonparalytic poliomyelitis and poliomyelitis are considered differentials due to their significant but slightly lower Normalized Scores compared to Powassan encephalitis. Both conditions share common symptoms such as headache, fever, vomiting, and stiff neck with the patient's presentation. However, they have a lower disease coverage (66.7% and 57.1%, respectively) than Powassan encephalitis, indicating that not all typical symptoms of these diseases are present in this case. Additionally, their input coverage is slightly less comprehensive at 80%. These factors contribute to their lower clinical alignment compared to Powassan encephalitis.",
+    "exclusion_criteria": ""
+  },
+  "recommendation": "Next steps should include consultation with a neurologist and infectious disease specialist for further evaluation of Powassan encephalitis. Recommended lab tests may involve serological testing for Powassan virus antibodies, PCR testing from cerebrospinal fluid, and possibly MRI imaging to assess any neurological impact. Clinicians should also verify the presence or absence of tremor, disorientation, convulsion, spastic paralysis, and stupor as these symptoms are missing but relevant for a comprehensive assessment."
+}

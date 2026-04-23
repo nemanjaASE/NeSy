@@ -1,0 +1,18 @@
+{
+  "most_likely": "Powassan encephalitis",
+  "confidence": "high",
+  "differentials": [
+    "nonparalytic poliomyelitis",
+    "poliomyelitis"
+  ],
+  "excluded_conditions": [
+    "La Crosse encephalitis",
+    "primary amebic meningoencephalitis"
+  ],
+  "reasoning": {
+    "primary_analysis": "The top-ranked disease, Powassan encephalitis, exhibits a strong clinical correlation with the reported symptoms. The presence of headache, fever, vomiting, seizure, and stiff neck in the patient's profile is highly specific to this disease. This consistency is further supported by the absence of blocking symptoms, indicating that the patient does not have any mandatory markers that would rule out Powassan encephalitis.",
+    "differential_comparison": "While nonparalytic poliomyelitis and poliomyelitis also show a good match with the reported symptoms, their scores are lower than Powassan encephalitis. Nonparalytic poliomyelitis lacks the presence of stiff neck, which is a characteristic symptom of Powassan encephalitis. Poliomyelitis has a similar matched list but is downgraded due to the absence of tremor and disorientation, which are typical symptoms of this disease.",
+    "exclusion_criteria": "La Crosse encephalitis and primary amebic meningoencephalitis were excluded due to their lower scores and the presence of blocking symptoms that would typically be required for these diseases. The patient's reported absence of tremor, disorientation, convulsion, spastic paralysis, and stupor rules out La Crosse encephalitis, while the lack of coma, nausea, delirium, and flaccid paralysis excludes primary amebic meningoencephalitis."
+  },
+  "recommendation": "Next steps: Consult with a neurologist or infectious disease specialist to further evaluate the patient's symptoms. Lab tests such as blood cultures and cerebrospinal fluid analysis may be necessary to confirm the diagnosis. Additionally, verifying the presence of missing symptoms like tremor, disorientation, convulsion, spastic paralysis, and stupor would support or refute the diagnosis."
+}

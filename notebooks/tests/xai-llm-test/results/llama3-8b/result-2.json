@@ -1,0 +1,17 @@
+{
+  "most_likely": "hepatitis E",
+  "confidence": "high",
+  "differentials": [
+    "hepatitis D",
+    "hepatitis A",
+    "hepatitis B",
+    "hepatitis C"
+  ],
+  "excluded_conditions": [],
+  "reasoning": {
+    "primary_analysis": "The top-ranked disease, hepatitis E, exhibits a strong clinical correlation with the reported symptoms. The presence of fatigue, nausea, jaundice, acholic stool, and dark urine is highly specific to this disease. The absence of blocking symptoms further supports this diagnosis.",
+    "differential_comparison": "In comparison, hepatitis D has a lower clinical alignment due to the presence of drowsiness and confusion, which are not typically associated with hepatitis E. Hepatitis A and B have similar symptom profiles but lack the specificity of acholic stool and dark urine found in hepatitis E. Hepatitis C also lacks these specific symptoms.",
+    "exclusion_criteria": "The diseases excluded from consideration, such as hepatitis D, were rejected due to the presence of blocking symptoms that are typically required for this disease."
+  },
+  "recommendation": "Next steps: specialist consultation with a hepatologist and lab tests such as liver function tests (LFTs) and viral load testing. Additionally, verify the patient's symptoms by asking about abdominal pain, joint pain, fever, loss of appetite, vomiting, and liver inflammation."
+}

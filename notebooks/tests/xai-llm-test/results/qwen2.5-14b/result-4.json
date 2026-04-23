@@ -1,0 +1,15 @@
+{
+  "most_likely": "Powassan encephalitis",
+  "confidence": "high",
+  "differentials": [
+    "nonparalytic poliomyelitis",
+    "poliomyelitis"
+  ],
+  "excluded_conditions": [],
+  "reasoning": {
+    "primary_analysis": "The patient's symptoms strongly correlate with Powassan encephalitis, as they present with headache, fever, vomiting, seizure, and stiff neck. These symptoms are highly specific to the disease, and there are no reported absences of critical markers such as tremor or disorientation that would exclude this diagnosis. The clinical correlation is robust due to the high specificity of the matched symptoms.",
+    "differential_comparison": "Nonparalytic poliomyelitis and poliomyelitis also have a strong symptom profile match, but they are less specific compared to Powassan encephalitis. Both conditions lack critical markers such as pharynx inflammation and fatigue that would further support their diagnosis over Powassan encephalitis. Additionally, the absence of flaccid paralysis in poliomyelitis reduces its clinical alignment with the patient's symptoms.",
+    "exclusion_criteria": "No diseases were excluded based on blocking symptoms."
+  },
+  "recommendation": "Next steps: Consult a neurologist and consider cerebrospinal fluid analysis for further confirmation. Specific missing symptoms to verify include tremor, disorientation, convulsion, spastic paralysis, and stupor."
+}

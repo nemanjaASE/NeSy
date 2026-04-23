@@ -1,0 +1,18 @@
+{
+  "most_likely": "hepatitis E",
+  "confidence": "moderate",
+  "differentials": [
+    "hepatitis A",
+    "hepatitis B",
+    "hepatitis C"
+  ],
+  "excluded_conditions": [
+    "hepatitis D"
+  ],
+  "reasoning": {
+    "primary_analysis": "The patient's symptoms strongly correlate with hepatitis E, as the matched list includes fatigue, nausea, jaundice, acholic stool, and dark urine. These are highly specific markers for this condition. The absence of abdominal pain, joint pain, fever, loss of appetite, and vomiting does not significantly detract from the clinical correlation given the high specificity of the present symptoms.",
+    "differential_comparison": "Hepatitis A, B, and C also show a strong symptom profile with fatigue, nausea, jaundice, and acholic stool. However, they have lower disease coverage compared to hepatitis E, indicating that fewer typical symptoms are present in this case. Additionally, the presence of blocking symptoms such as drowsiness and confusion for hepatitis D rules it out.",
+    "exclusion_criteria": "Hepatitis D is excluded due to the patient reporting absence of mandatory clinical markers like drowsiness and confusion."
+  },
+  "recommendation": "Next steps: Consult a hepatologist and consider liver function tests, viral serology (anti-HAV IgM, HBsAg, anti-HCV), and abdominal ultrasound. Verify symptoms such as joint pain, fever, loss of appetite, vomiting, and liver inflammation to further confirm the diagnosis."
+}

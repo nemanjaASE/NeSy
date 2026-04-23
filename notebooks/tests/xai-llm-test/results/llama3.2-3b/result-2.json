@@ -1,0 +1,18 @@
+{
+  "most_likely": "hepatitis E",
+  "confidence": "high",
+  "differentials": [
+    "hepatitis A",
+    "hepatitis B",
+    "hepatitis C"
+  ],
+  "excluded_conditions": [
+    "hepatitis D"
+  ],
+  "reasoning": {
+    "primary_analysis": "The top-ranked disease, hepatitis E, has a strong clinical correlation with the reported symptoms. The matched list of 'fatigue', 'nausea', 'jaundice', 'acholic stool', and 'dark urine' is highly specific to this disease. Furthermore, the Normalized Score accounts for the clinical specificity of these symptoms, indicating a high level of confidence in this diagnosis. However, it's essential to note that hepatitis E typically does not present with abdominal pain or joint pain, which are missing from the patient's report.",
+    "differential_comparison": "The differential diseases, hepatitis A and B, have lower Normalized Scores and do not account for the same level of clinical specificity as hepatitis E. Hepatitis C is also a close match but has a slightly lower Normalized Score. The presence of 'drowsiness' and 'confusion' in hepatitis D's matched list indicates that this disease may be less likely due to these symptoms being absent from the patient's report.",
+    "exclusion_criteria": "Diseases were excluded based on the presence of 'blocking symptoms', which are mandatory clinical markers. In this case, hepatitis D was excluded because it requires 'drowsiness' and 'confusion', both of which were reported as absent by the patient."
+  },
+  "recommendation": "Next steps: specialist consultations for liver function tests and a stool test to verify the presence of hepatitis E. The physician should also inquire about the patient's travel history to determine if they may have been exposed to the virus through contaminated food or water."
+}

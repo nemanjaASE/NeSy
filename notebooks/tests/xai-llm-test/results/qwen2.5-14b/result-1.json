@@ -1,0 +1,17 @@
+{
+  "most_likely": "nonparalytic poliomyelitis",
+  "confidence": "high",
+  "differentials": [
+    "Ebola virus disease"
+  ],
+  "excluded_conditions": [
+    "Marburg hemorrhagic fever",
+    "West Nile fever"
+  ],
+  "reasoning": {
+    "primary_analysis": "The patient's symptoms strongly correlate with nonparalytic poliomyelitis, as the matched symptoms include headache, pharynx inflammation, fever, and vomiting. The disease coverage and input coverage are both above 60%, indicating a high clinical specificity. Additionally, there were no blocking symptoms reported by the patient that would exclude this diagnosis.",
+    "differential_comparison": "Ebola virus disease is considered as a differential due to its strong symptom profile match with headache, pharynx inflammation, fever, vomiting, and bleeding. However, it has lower coverage percentages compared to nonparalytic poliomyelitis, making it less likely. Marburg hemorrhagic fever and West Nile fever were excluded because they have blocking symptoms that the patient reported as absent.",
+    "exclusion_criteria": "Marburg hemorrhagic fever was excluded due to the absence of maculopapular rash and chills, which are mandatory clinical markers for this condition. Similarly, West Nile fever was excluded because the patient did not report a maculopapular rash."
+  },
+  "recommendation": "Next steps: Consult with a neurologist or infectious disease specialist. Consider lab tests such as cerebrospinal fluid analysis and viral serology to confirm nonparalytic poliomyelitis. Additionally, verify for fatigue and stiff neck symptoms in the patient's physical examination."
+}

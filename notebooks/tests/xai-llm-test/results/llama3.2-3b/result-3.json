@@ -1,0 +1,15 @@
+{
+  "most_likely": "West Nile encephalitis",
+  "confidence": "moderate",
+  "differentials": [
+    "Japanese encephalitis",
+    "St. Louis encephalitis"
+  ],
+  "excluded_conditions": [],
+  "reasoning": {
+    "primary_analysis": "The top-ranked disease, West Nile encephalitis, has a strong clinical correlation with the reported symptoms, including headache, confusion, coma, stiff neck, and high fever. The highly specific symptom profile of this disease is consistent with the patient's presentation. However, the Normalized Score is not the highest, indicating that there may be other diseases with similar scores. Notably, both Japanese encephalitis and St. Louis encephalitis have a lower score but are still clinically consistent with the reported absences.",
+    "differential_comparison": "In comparison to the differential diseases, West Nile encephalitis has a higher clinical alignment due to its highly specific symptom profile. However, Japanese encephalitis and St. Louis encephalitis were downgraded due to missing markers such as spastic paralysis and tremor, respectively. These symptoms are typically required for these diseases and were reported by the patient as absent.",
+    "exclusion_criteria": "Diseases in the 'excluded_conditions' list were rejected because they have a lower clinical alignment or were downgraded due to missing mandatory clinical markers. For example, Japanese encephalitis was downgraded due to the absence of spastic paralysis, which is typically required for this disease."
+  },
+  "recommendation": "Next steps: specialist consultations and lab tests relevant to West Nile encephalitis (URI: http://purl.obolibrary.org/obo/DOID_2365). The physician should verify the presence or absence of missing symptoms such as tremor, disorientation, convulsion, spastic paralysis, and stupor."
+}

@@ -1,0 +1,15 @@
+{
+  "most_likely": "Powassan encephalitis",
+  "confidence": "high",
+  "differentials": [
+    "nonparalytic poliomyelitis",
+    "poliomyelitis"
+  ],
+  "excluded_conditions": [],
+  "reasoning": {
+    "primary_analysis": "The top-ranked disease, Powassan encephalitis, has a strong clinical correlation with the reported symptoms. The highly specific symptom profile of this disease is consistent with the patient's presentation of headache, fever, vomiting, seizure, and stiff neck. Notably, the absence of tremor, disorientation, convulsion, spastic paralysis, and stupor in the matched list suggests that these symptoms may be absent or not present in this particular case. This aligns with the clinical expectation for Powassan encephalitis, which typically presents without significant neurological deficits at onset.",
+    "differential_comparison": "In comparison to the differential diseases, nonparalytic poliomyelitis and poliomyelitis have lower clinical alignment due to the presence of additional symptoms such as pharynx inflammation and flaccid paralysis. These symptoms are not present in the matched list for these diseases, suggesting that they may be absent or not relevant in this case. On the other hand, primary amebic meningoencephalitis has a lower clinical correlation due to the presence of additional symptoms such as coma and nausea, which are not present in the matched list.",
+    "exclusion_criteria": "Diseases were excluded based on the presence of blocking symptoms that were reported as absent by the patient. The absence of these mandatory clinical markers suggests that the disease is less likely to be the correct diagnosis."
+  },
+  "recommendation": "Next steps: specialist consultations and lab tests relevant to Powassan encephalitis (e.g., PCR for flavivirus, imaging studies). Verify the presence of missing symptoms such as tremor, disorientation, convulsion, spastic paralysis, and stupor."
+}

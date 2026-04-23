@@ -1,0 +1,18 @@
+{
+  "most_likely": "West Nile encephalitis",
+  "confidence": "moderate",
+  "differentials": [
+    "Powassan encephalitis",
+    "Eastern equine encephalitis"
+  ],
+  "excluded_conditions": [
+    "Japanese encephalitis",
+    "St. Louis encephalitis"
+  ],
+  "reasoning": {
+    "primary_analysis": "West Nile encephalitis has a strong clinical correlation with the patient's symptoms, as it matches five out of twelve known symptoms (headache, confusion, coma, stiff neck, high fever) and aligns well with the reported absences. The disease coverage is moderate at 41.7%, but the input coverage is perfect at 100%. This suggests that while not all typical symptoms are present, the ones that are match closely to the clinical presentation.",
+    "differential_comparison": "Powassan encephalitis and Eastern equine encephalitis also show a moderate alignment with the patient's symptoms but have lower disease coverage (40% and 42.9%, respectively). Both diseases share some common symptoms such as headache, confusion, coma, and stiff neck, but Powassan encephalitis lacks fever while Eastern equine encephalitis has fewer matched symptoms overall. The strong clinical correlation of West Nile encephalitis makes it the primary candidate.",
+    "exclusion_criteria": "Japanese encephalitis and St. Louis encephalitis were excluded due to clinically inconsistent absences, specifically spastic paralysis, which is a mandatory marker for both diseases but was reported as absent by the patient."
+  },
+  "recommendation": "Next steps: Consult with a neurologist and consider lab tests such as cerebrospinal fluid analysis (CSF) and West Nile virus-specific IgM antibody test. Verify missing symptoms like tremor, disorientation, convulsion, paralysis, muscle weakness, paresthesia, and stupor."
+}

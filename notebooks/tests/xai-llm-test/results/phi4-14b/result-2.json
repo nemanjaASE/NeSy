@@ -1,0 +1,18 @@
+{
+  "most_likely": "hepatitis E",
+  "confidence": "moderate",
+  "differentials": [
+    "hepatitis A",
+    "hepatitis B",
+    "hepatitis C"
+  ],
+  "excluded_conditions": [
+    "hepatitis D"
+  ],
+  "reasoning": {
+    "primary_analysis": "Hepatitis E is identified as the most likely disease due to its highest normalized score among those with clinically consistent reported absences. The patient's symptoms strongly correlate with hepatitis E, covering all input symptoms and matching a significant portion of known disease symptoms (45.5%). There are no blocking symptoms present, which supports this diagnosis. The matched symptoms include fatigue, nausea, jaundice, acholic stool, and dark urine, while missing symptoms such as abdominal pain and joint pain do not detract from the clinical correlation.",
+    "differential_comparison": "Hepatitis A, B, and C are considered differentials due to their lower normalized scores compared to hepatitis E. Although they share similar matched symptoms (fatigue, nausea, jaundice, acholic stool), their disease coverage is slightly lower at 40%, indicating a less specific symptom profile for these conditions. The absence of blocking symptoms in these diseases does not elevate them above hepatitis E due to the lesser degree of clinical specificity.",
+    "exclusion_criteria": "Hepatitis D was excluded from consideration because it has clinically inconsistent reported absences, specifically drowsiness and confusion, which are critical markers for this disease. These blocking symptoms were absent in the patient's report, leading to its exclusion despite a high input symptom match."
+  },
+  "recommendation": "Next steps should include consultation with a hepatologist and conducting liver function tests (LFTs) and serological testing specific to hepatitis E (URI: http://purl.obolibrary.org/obo/DOID_4411). The physician should also verify the presence of missing symptoms such as abdominal pain, joint pain, fever, loss of appetite, vomiting, and liver inflammation through physical examination or further diagnostic tests."
+}

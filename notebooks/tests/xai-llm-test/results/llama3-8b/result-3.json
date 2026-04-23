@@ -1,0 +1,18 @@
+{
+  "most_likely": "West Nile encephalitis",
+  "confidence": "high",
+  "differentials": [
+    "Japanese encephalitis",
+    "St. Louis encephalitis"
+  ],
+  "excluded_conditions": [
+    "Powassan encephalitis",
+    "Eastern equine encephalitis"
+  ],
+  "reasoning": {
+    "primary_analysis": "The top-ranked disease, West Nile encephalitis, shows a strong clinical correlation with the reported symptoms, including headache, confusion, coma, and stiff neck. The absence of spastic paralysis, which is typically required for Japanese encephalitis and St. Louis encephalitis, further supports this diagnosis. The Normalized Score takes into account the specificity of these symptoms, making West Nile encephalitis a highly likely candidate.",
+    "differential_comparison": "While Japanese encephalitis and St. Louis encephalitis also match some of the reported symptoms, they were downgraded due to the presence of blocking symptoms (spastic paralysis). In contrast, West Nile encephalitis does not require this symptom, making it a more clinically consistent diagnosis.",
+    "exclusion_criteria": "Powassan encephalitis and Eastern equine encephalitis were excluded because they do not match the reported symptoms as well as West Nile encephalitis. The absence of fever in Powassan encephalitis and the presence of vomiting, seizure, and disorientation in Eastern equine encephalitis further distinguish these diseases from the top-ranked candidate."
+  },
+  "recommendation": "Next steps: Consult with a neurologist or infectious disease specialist to confirm the diagnosis. Lab tests such as blood cultures and cerebrospinal fluid analysis may be necessary to rule out other conditions. Verify the presence of missing symptoms like paralysis, tremor, disorientation, convulsion, and stupor."
+}

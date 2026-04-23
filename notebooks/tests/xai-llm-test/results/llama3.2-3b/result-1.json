@@ -1,0 +1,18 @@
+{
+  "most_likely": "nonparalytic poliomyelitis",
+  "confidence": "high",
+  "differentials": [
+    "Marburg hemorrhagic fever",
+    "Ebola virus disease"
+  ],
+  "excluded_conditions": [
+    "West Nile fever",
+    "poliomyelitis"
+  ],
+  "reasoning": {
+    "primary_analysis": "The top-ranked disease, nonparalytic poliomyelitis, has a strong clinical correlation with the reported symptoms. The matched list of 'headache', 'pharynx inflammation', 'fever', and 'vomiting' is highly specific to this disease. Notably, the patient's absence of 'fatigue' and 'stiff neck' does not significantly downgrade the disease's relevance, as these symptoms are typically associated with paralytic poliomyelitis. The Normalized Score reflects the clinical specificity of the matched symptoms.",
+    "differential_comparison": "In comparison to Marburg hemorrhagic fever and Ebola virus disease, nonparalytic poliomyelitis has a more consistent symptom profile. While both diseases share some symptoms, Marburg and Ebola have additional symptoms like 'maculopapular rash' and 'bleeding', which are not present in nonparalytic poliomyelitis. This suggests that nonparalytic poliomyelitis is the most likely diagnosis.",
+    "exclusion_criteria": "Diseases were excluded based on the presence of 'blocking symptoms' that the patient reported as absent. For West Nile fever, the maculopapular rash was a required symptom for the disease, which the patient did not report. Similarly, poliomyelitis was excluded due to the patient's absence of 'flaccid paralysis', a hallmark symptom of paralytic poliomyelitis."
+  },
+  "recommendation": "Next steps: specialist consultations and lab tests relevant to nonparalytic poliomyelitis (e.g., CSF analysis, PCR for poliovirus). The physician should also verify the patient's symptoms, particularly 'fatigue' and 'stiff neck', which are not present in the matched list."
+}
