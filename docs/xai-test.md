@@ -58,8 +58,8 @@ The Explainable AI (XAI) layer is evaluated using four distinct clinical scenari
 |---|---|
 | Most Likely | `Powassan encephalitis` (Passed Filter: `True`) |
 | Differentials | `nonparalytic poliomyelitis`, `La Crosse encephalitis` and `poliomyelitis` (Passed Filter: `True`) |
-| Excluded conditions | `empty` |
-| Blocking symptoms | `empty` |
+| Excluded conditions | - |
+| Blocking symptoms | - |
 
 **Success criteria:** Model identifies `seizure` as the clinical **tie-breaker** that elevates `Powassan encephalitis` over the competing candidates.
 
@@ -166,12 +166,12 @@ For example, in TC1, even though `Marburg hemorrhagic fever` matches 5 out of 5 
 
 ## 📊 Summary: Comparison of Model Performance
 
-| Model | Logic Accuracy | XAI Reliability | Key Finding |
-|-------|----------------|-----------------|-------------|
-| Llama 3.2 (3b) | ⚠️ 50% | Hallucinatory | Struggled with symbolic flags; relied on pre-training too much. |
-| Llama 3 (8b) | ❌ 25% | Contradictory | Semantic disconnect; text said "excluded" but JSON said "differential." |
-| Qwen 2.5 (14b) | ✅ 100% | High | Significant leap; understood priority of logical filters over scores. |
-| Phi-4 (14b) | ✅ 100% | High | Most "clinically mature"; treated filters as hard constraints. |
+| Model | JSON Integrity | Exclusion Logic | Internal Consistency | Clinical Tone|
+|-------|----------------|-----------------|----------------------|--------------|
+| `Llama 3.2 (3b)` | ✅ 100% | ⚠️ 50% | ❌ Fail | ✅ High |
+| `Llama 3 (8b)` | ✅ 100% | ❌ 25% | ❌ Fail | ✅ High |
+| `Qwen 2.5 (14b)` | ✅ 100% | ✅ 100% | ✅ High | ✅ High |
+| `Phi-4 (14b)` | ✅ 100% | ✅ 100% | ✅ High | ✅ High |
 
 
 
