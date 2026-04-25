@@ -1,5 +1,6 @@
 ---
 title: 🧪 Testing the Explainable AI (XAI)
+
 nav_order: 9
 ---
 
@@ -14,6 +15,8 @@ The Explainable AI (XAI) layer is evaluated using four distinct clinical scenari
 ### TC1 - Negation Handling
 
 **Focus:** Can the model correctly identify why a high-scoring disease was excluded?
+
+ ![Diseases Graph Visualization](../assets/images/TC1.png)
 
 | Field | Value |
 |-------|-------|
