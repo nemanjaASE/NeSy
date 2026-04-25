@@ -31,6 +31,8 @@ The Explainable AI (XAI) layer is evaluated using four distinct clinical scenari
 
 **Focus:** Distinguishing between diseases with very similar symptom profiles.
 
+ ![Diseases Graph Visualization](../assets/images/TC2.png)
+
 | Field | Value |
 |-------|-------|
 | Most Likely | `hepatitis E` (Passed Filter: `True`) |
@@ -44,6 +46,8 @@ The Explainable AI (XAI) layer is evaluated using four distinct clinical scenari
 
 **Focus:** Managing high-severity cases with low disease coverage.
 
+ ![Diseases Graph Visualization](../assets/images/TC3.png)
+
 | Field | Value |
 |-------|-------|
 | Most Likely | `West Nile encephalitis` (Passed Filter: `True`) |
@@ -56,6 +60,8 @@ The Explainable AI (XAI) layer is evaluated using four distinct clinical scenari
 ### TC4 - Overlapping symptoms
 
 **Focus:** Handling overlapping symptoms where no conditions are excluded.
+
+ ![Diseases Graph Visualization](../assets/images/TC4.png)
 
 | Field | Value |
 |---|---|
