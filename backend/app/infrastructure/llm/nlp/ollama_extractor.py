@@ -4,6 +4,7 @@ from typing import List, Tuple
 from app.domain import NLPExtractor
 from app.core import settings, logger
 from ..prompt_loader import load_prompt
+from ..constants import SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER
 
 class OllamaNLPExtractor(NLPExtractor):
 
@@ -13,7 +14,7 @@ class OllamaNLPExtractor(NLPExtractor):
             api_key="ollama"
         )
         self.model = settings.LLM_EXTRACTION_MODEL_NAME
-        self.system_prompt = load_prompt("symptom_extraction_prompt.txt")
+        self.system_prompt = load_prompt(SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER)
 
     async def extract_entities(self, text: str) -> Tuple[List[str], List[str]]:
         try:

@@ -5,6 +5,7 @@ from openai import AsyncOpenAI
 from app.core import logger, settings
 from app.domain import XAIExplanationResult
 from app.domain.schemas import DiagnosisResult, DiseaseInference
+from ..constants import DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER
 from ..prompt_loader import load_prompt
 
 class OllamaExplainer:
@@ -19,7 +20,7 @@ class OllamaExplainer:
             api_key="ollama"
         )
         self.model = settings.LLM_XAI_MODEL_NAME
-        self.system_prompt = load_prompt("disease_explanation_prompt.txt")
+        self.system_prompt = load_prompt(DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER)
 
     def _format_input(self, diagnosis_result: DiagnosisResult) -> str:
         """Formats DiagnosisResult into a prompt-friendly string."""

@@ -5,6 +5,7 @@ from groq import AsyncGroq
 from app.core import logger, settings
 from app.domain import XAIExplanationResult
 from ..prompt_loader import load_prompt
+from ..constants import DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER
 
 class GroqExplainer:
     """
@@ -15,7 +16,7 @@ class GroqExplainer:
     def __init__(self):
         self.client = AsyncGroq(api_key=settings.LLM_API_KEY)
         self.model = settings.LLM_XAI_MODEL_NAME
-        self.system_prompt = load_prompt("disease_explanation_prompt.txt")
+        self.system_prompt = load_prompt(DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER)
 
     def _format_input(self, disease_results: List[Dict[str, Any]]) -> str:
         """Formats the inference results into a prompt-friendly string."""

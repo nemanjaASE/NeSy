@@ -4,6 +4,7 @@ from groq import Groq
 from app.domain import NLPExtractor
 from app.core import settings, logger
 from ..prompt_loader import load_prompt
+from ..constants import SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER
 
 class GroqNLPExtractor(NLPExtractor):
     """
@@ -17,7 +18,7 @@ class GroqNLPExtractor(NLPExtractor):
         """
         self.client = Groq(api_key=settings.LLM_API_KEY)
         self.model = settings.LLM_EXTRACTION_MODEL_NAME
-        self.system_prompt = load_prompt("symptom_extraction_prompt.txt")
+        self.system_prompt = load_prompt(SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER)
 
     async def extract_entities(self, text: str) -> List[str]:
         """
