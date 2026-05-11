@@ -59,15 +59,18 @@ class Neo4jRepository:
         
     async def infer_diseases(
         self, 
-        mapped_symptoms: List[str], 
-        min_match: int = 1, 
-        has_symptom_rel: str = "http://purl.obolibrary.org/obo/RO_0002452"
+        present_symptoms: List[str], 
+        absent_symptoms: List[str], 
+        min_match: int = 2, 
+        has_symptom_rel: str = "http://purl.obolibrary.org/obo/RO_0002452",
+        top_k: int = 5,
+        top_excluded: int = 3
     ) -> List[RawDiseaseMatch]:
         """
         Executes the inference Cypher query to find matching diseases.
         """
-        if not mapped_symptoms:
-            logger.warning("No mapped symptoms provided for inference.")
+        if not present_symptoms and not absent_symptoms:
+            logger.warning("No symptoms provided for inference.")
             return []
         try:
             query = get_query("infer_diseases")
@@ -76,15 +79,15 @@ class Neo4jRepository:
                 result = await session.run(
                     query, 
                     has_symptom=has_symptom_rel, 
-                    symptoms=mapped_symptoms, 
+                    present_symptoms=present_symptoms,
+                    absent_symptoms=absent_symptoms, 
                     min_match=min_match
                 )
 
-                validated_records = [RawDiseaseMatch(**dict(r)) async for r in result]
-                logger.info(f"Inference successful. Found {len(validated_records)} candidates.")
-                
-                return validated_records
-
+                records = await result.data()
+            
+            return [RawDiseaseMatch(**r) for r in records]
+        
         except Exception as e:
             logger.error(f"Error executing inference query: {str(e)}")
-            return []    
+            return []

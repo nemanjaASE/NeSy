@@ -4,11 +4,11 @@ from typing import List, Dict, Any
 from groq import AsyncGroq
 from app.core import logger, settings
 from app.domain import XAIExplanationResult
-from .prompt_loader import load_prompt
+from ..prompt_loader import load_prompt
 
-class XAIExplainer:
+class GroqExplainer:
     """
-    Explainable AI (XAI) layer that uses an LLM to generate human-readable 
+    Explainable AI (XAI) layer that uses an LLM to generate human-readable
     reasoning for the neuro-symbolic diagnostic results.
     """
 

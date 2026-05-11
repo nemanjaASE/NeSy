@@ -17,6 +17,7 @@ class Settings(BaseSettings):
     
     # --- AI / LLM
     LLM_API_KEY: str
+    LLM_BASE_URL: str
     LLM_EXTRACTION_MODEL_NAME: str
     LLM_XAI_MODEL_NAME: str
     EMBEDDING_MODEL_NAME: str

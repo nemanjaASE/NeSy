@@ -1,15 +1,13 @@
-from pydantic import BaseModel, Field
-from typing import List, Union
+from pydantic import BaseModel
+from typing import List
 
 class DiseaseInference(BaseModel):
-    """
-    Data Transfer Object for disease inference results.
-    """
-    disease_name: str
-    uri: str
-    normalized_score: float
-    match_count: int
-    disease_coverage_pct: Union[float, str]
-    input_coverage_pct: Union[float, str]
-    matched_symptoms: List[str]
-    missing_symptoms: List[str] = Field(default_factory=list)
+    disease_name:         str
+    uri:                  str
+    normalized_score:     float
+    match_count:          int
+    disease_coverage_pct: float
+    input_coverage_pct:   float
+    matched_symptoms:     List[str]
+    missing_symptoms:     List[str]
+    blocking_symptoms:    List[str] = []

@@ -1,2 +1,2 @@
-from .groq_extractor import GroqNLPExtractor
-from .xai_explainer import XAIExplainer
+from .nlp import GroqNLPExtractor, OllamaNLPExtractor
+from .xai import GroqExplainer, OllamaExplainer

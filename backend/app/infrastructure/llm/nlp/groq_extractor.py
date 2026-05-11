@@ -3,7 +3,7 @@ from typing import List
 from groq import Groq
 from app.domain import NLPExtractor
 from app.core import settings, logger
-from .prompt_loader import load_prompt
+from ..prompt_loader import load_prompt
 
 class GroqNLPExtractor(NLPExtractor):
     """

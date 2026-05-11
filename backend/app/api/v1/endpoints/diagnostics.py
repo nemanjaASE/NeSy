@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, Request
-from app.domain import NLPExtractor, TextEmbedder, SemanticMatcher, DiagnosticResponseDTO, DiseaseScorer, DiagnosticRequestDTO
+from app.domain import NLPExtractor, TextEmbedder, SemanticMatcher, DiagnosticResponseDTO, ScoringEngine, DiagnosticRequestDTO
 from app.application import DiagnosticCoordinator
 
 router = APIRouter()
@@ -15,7 +15,7 @@ def get_coordinator(request: Request) -> DiagnosticCoordinator:
         nlp_extractor=request.app.state.nlp_extractor,
         embedder=request.app.state.embedder,
         matcher=SemanticMatcher(threshold=0.9),
-        scorer=DiseaseScorer(top_k=5),
+        scoring_engine=ScoringEngine(5, 3),
         repository=request.app.state.db,
         xai_explainer=request.app.state.xai_explainer
     )

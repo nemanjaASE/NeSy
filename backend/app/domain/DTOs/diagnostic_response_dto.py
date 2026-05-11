@@ -4,23 +4,15 @@ from app.domain import XAIExplanationResult
 
 class DiagnosticResponseDTO(BaseModel):
     input_text: str
-    top_disease: str
-    confidence: str
-    mapped_symptoms: List[str]
-    missing_symptoms: List[str]
-    explanation_text: str
-    recommendation: str
-    other_potential_diseases: List[str]
+    present_symptoms: List[str]
+    absent_symptoms: List[str]
+    explanation: XAIExplanationResult
 
     @classmethod
-    def from_domain(cls, text: str, symptoms: List[str], missing_symptoms: List[str], xai: XAIExplanationResult):
+    def from_domain(cls, text: str, present_symptoms: List[str], absent_symptoms: List[str], xai: XAIExplanationResult):
         return cls(
             input_text=text,
-            top_disease=xai.most_likely,
-            confidence=xai.confidence,
-            missing_symptoms=missing_symptoms,
-            explanation_text=xai.reasoning,
-            recommendation=xai.recommendation,
-            mapped_symptoms=symptoms,
-            other_potential_diseases=xai.differentials
+            present_symptoms=present_symptoms,
+            absent_symptoms=absent_symptoms,
+            explanation=xai,
         )

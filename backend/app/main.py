@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.infrastructure import GroqNLPExtractor, E5Embedder, Neo4jRepository, XAIExplainer
+from app.infrastructure import OllamaNLPExtractor, E5Embedder, Neo4jRepository, OllamaExplainer
 from app.core import settings, logger
 from app.api import api_router
 
@@ -19,7 +19,7 @@ async def lifespan(app: FastAPI):
 
         # Initialize LLM Extractor model
         logger.info("Initializing LLM extractor model...")
-        app.state.nlp_extractor = GroqNLPExtractor()
+        app.state.nlp_extractor = OllamaNLPExtractor()
 
         # Initialize Text Embedder model
         logger.info("Initializing Text Embedder model...")
@@ -31,7 +31,7 @@ async def lifespan(app: FastAPI):
 
         # Initialize XAI Explainer model
         logger.info("Initializing XAI Explainer model...")
-        app.state.xai_explainer = XAIExplainer()
+        app.state.xai_explainer = OllamaExplainer()
 
         # Chaching Ontology Symptoms
         logger.info("Pre-loading ontology symptoms into memory...")

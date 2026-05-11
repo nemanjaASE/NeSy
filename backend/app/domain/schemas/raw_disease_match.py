@@ -1,12 +1,14 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import List
 
 class RawDiseaseMatch(BaseModel):
-    disease: str = Field(..., alias="disease")
-    uri: str
-    matched_symptoms: List[str]
-    missing_symptoms: List[str]
-    match_count: int
+    disease:             str
+    uri:                 str
+    passed_filter:       bool
+    blocking_symptoms:   List[str]
+    matched_symptoms:    List[str]
+    missing_symptoms:    List[str]
+    match_count:         int
     total_symptom_count: int
-    total_score: float
-    normalized_score: float
+    total_score:         float
+    normalized_score:    float

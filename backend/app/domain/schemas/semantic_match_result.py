@@ -7,4 +7,5 @@ class SemanticMatchResult(BaseModel):
     input_symptom: str
     mapped_symptom: str
     confidence: float
+    kind: str  # "present" or "absent"
     is_match: bool

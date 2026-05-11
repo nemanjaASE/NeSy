@@ -209,3 +209,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+.vscode/
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+env/
+data/
+outputs/
+artifacts/
+*.pt
+*.pth
+*.pkl
+.DS_Store
+*.ipynb filter=nbstripout
