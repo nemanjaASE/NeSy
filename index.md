@@ -27,7 +27,61 @@ NeSy is a diagnostic assistance framework that bridges the gap between neural na
 > ⚠️ **Disclaimer:** NeSy is a research prototype and is not intended
 > for clinical use. Do not use for actual medical diagnosis.
 
-## 🧬 Biomedical Ontologies
+# 🎯 Research Contribution
+ 
+NeSy makes the following contributions to the field of clinical decision support:
+ 
+---
+ 
+## 1. A Validated Neuro-Symbolic Pipeline for Symptom-Driven Disease Inference
+ 
+NeSy proposes and evaluates a complete pipeline that integrates LLM-based symptom extraction with Knowledge Graph reasoning over standardized biomedical ontologies (DOID, SYMP). Unlike pure LLM approaches, the symbolic layer guarantees that all inferences are grounded in peer-reviewed ontological relationships, eliminating the risk of hallucinated diagnoses.
+ 
+---
+ 
+## 2. Empirical Evaluation of 7 LLMs for Medical NLP Extraction
+ 
+A systematic, metric-driven comparison of models ranging from 3B to 120B parameters — both local and cloud-deployed — was conducted across 100 test cases. Results reveal a counter-intuitive **"High-Intelligence Bias"**: larger models tend to extract clinically accurate but ontology-misaligned terms, causing them to underperform smaller, instruction-compliant models.
+ 
+| Model | Size | Type | F1 Score |
+|---|---|---|---|
+| qwen2.5:14b | 14B | Local | **0.825** ✅ |
+| llama3:8b | 8B | Local | 0.800 ✅ |
+| mistral-nemo:12b | 12B | Local | 0.790 |
+| phi4:14b | 14B | Local | 0.772 |
+| llama3.2:3b | 3B | Local | 0.731 |
+| llama-4-scout-17b | 17B | Cloud | 0.763 |
+| gpt-oss-120b | 120B | Cloud | 0.691 |
+ 
+> ✅ `qwen2.5:14b` achieved the highest F1 score, outperforming models up to 8× larger.
+ 
+---
+ 
+## 3. IC-Weighted, Square-Root Normalized Scoring for Disease Ranking
+ 
+A scoring formula is introduced that combines **Information Content (IC)** weighting with square-root normalization to prevent broad diseases from dominating inference results:
+ 
+$$normalized\_{score} = \frac{\sum IC(matched\_{symptoms})}{\sqrt{count(disease\_{symptoms})}}$$
+ 
+This ensures **specificity over quantity** — a disease with two high-IC symptoms can outrank a disease with ten generic symptoms, providing a fairer and more clinically meaningful ranking.
+ 
+---
+ 
+## 4. Deterministic Absent-Symptom Filtering with 100% Accuracy
+ 
+The symbolic Cypher-based inference layer supports explicit negation: symptoms the patient does not have actively exclude matching diseases from the ranked results. Validated across **1,263 test cases**, the exclusion mechanism achieves:
+ 
+| Metric | Result |
+|---|---|
+| Exclusion Accuracy | **100%** |
+| Survival Accuracy | **100%** |
+| Collateral Filtering Errors | **0** |
+ 
+This confirms that the negation filter operates deterministically — every absent symptom reliably blocks similar diseases, while the target disease remains unaffected.
+ 
+---
+
+# 🧬 Biomedical Ontologies
 
 NeSy grounds its symbolic reasoning in standardized, peer-reviewed medical ontologies. This ensures that the system's knowledge base is medically accurate, hierarchically structured, and free from the hallucinations typical of pure LLM approaches.
 
@@ -39,7 +93,7 @@ NeSy grounds its symbolic reasoning in standardized, peer-reviewed medical ontol
 
   ![Symptoms Graph Visualization](./assets/images/symptoms.png)
 
-### 🔗 The Connection (RO_0002452)
+## 🔗 The Connection (RO_0002452)
 
 In the world of medical data, the link between a disease and its symptoms is formally called RO_0002452 (simply meaning `has symptom`).
 
