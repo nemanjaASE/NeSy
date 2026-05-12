@@ -85,13 +85,33 @@ This confirms that the negation filter operates deterministically — every abse
 
 NeSy grounds its symbolic reasoning in standardized, peer-reviewed medical ontologies. This ensures that the system's knowledge base is medically accurate, hierarchically structured, and free from the hallucinations typical of pure LLM approaches.
 
-* **DOID (Human Disease Ontology):** A standardized map of human diseases. It allows the system to understand the relationships between different medical conditions.
+## 🦠 DOID
 
-  ![Diseases Graph Visualization](./assets/images/diseases.png)
+> **(Human Disease Ontology):** A standardized map of human diseases. It allows the system to understand the relationships between different medical conditions.
 
-* **SYMP (Symptom Ontology):** Provides a standardized vocabulary for clinical signs and symptoms. NeSy uses this to extract, classify, and mathematically weight the symptoms reported by the user.
+![Diseases Graph Visualization](./assets/images/diseases.png)
 
-  ![Symptoms Graph Visualization](./assets/images/symptoms.png)
+### 🔍 Query for Disease Count:
+
+```cypher
+MATCH (d:Disease)
+RETURN count(d);
+```
+**Total Diseases Counted:** `14460`
+
+## 🩺 SYMP
+
+> **(Symptom Ontology)**: Provides a standardized vocabulary for clinical signs and symptoms. NeSy uses this to extract, classify, and mathematically weight the symptoms reported by the user.
+
+![Symptoms Graph Visualization](./assets/images/symptoms.png)
+
+### 🔍 Query for Symptom Count:
+
+```cypher
+MATCH (s:Symptom)
+RETURN count(s);
+```
+**Total Symptoms Counted:** `1019`
   
 ### Grounding Versions
 
