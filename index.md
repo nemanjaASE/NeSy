@@ -92,6 +92,14 @@ NeSy grounds its symbolic reasoning in standardized, peer-reviewed medical ontol
 * **SYMP (Symptom Ontology):** Provides a standardized vocabulary for clinical signs and symptoms. NeSy uses this to extract, classify, and mathematically weight the symptoms reported by the user.
 
   ![Symptoms Graph Visualization](./assets/images/symptoms.png)
+  
+### Grounding Versions
+
+
+| Ontology | Local Version | Release Cycle | Status | Source |
+| :--- | :--- | :--- | :--- | :--- |
+| **DOID** | 2025-09-30 | Monthly | Stable | [Download](https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/main/src/ontology) |
+| **SYMP** | 2024-05-17 | Irregular | Up-to-date | [Download](https://github.com/DiseaseOntology/SymptomOntology/releases) |
 
 ## 🔗 The Connection (RO_0002452)
 
