@@ -105,7 +105,7 @@ By mapping DOID diseases to SYMP symptoms via the `RO_0002452` relationship, NeS
 
 The system is divided into two primary workflows: the **Runtime Pipeline** and the **Preparation Pipeline**.
 
-![System Architecture](./assets/images/NeSy-architecture.png)
+![System Architecture](./assets/images/NeSy-workflow.png)
 
 ## ⚙️ Preparation Pipeline
 
