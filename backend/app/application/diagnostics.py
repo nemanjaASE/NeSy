@@ -130,9 +130,9 @@ class DiagnosticCoordinator:
 
             # Step 3.2: Calculate disease scores and coverage
             scoring_result = self.scoring_engine.evaluate(
-            raw_records=raw_records,
-            total_input_symptoms=len(mapped.present)
-)
+                raw_records=raw_records,
+                total_input_symptoms=len(mapped.present)
+            )
 
             if scoring_result.is_failure:
                 logger.error(f"Disease scoring failed: {scoring_result.error}")
