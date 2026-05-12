@@ -109,7 +109,7 @@ By mapping DOID diseases to SYMP symptoms via the `RO_0002452` relationship, NeS
 
 ![Graph Visualization](./assets/images/graph-visualization.png)
 
-# 🏗️ System Architecture
+# 🧠 End-to-end Neuro-Symbolic Pipeline
 
 The system is divided into two primary workflows: the **Runtime Pipeline** and the **Preparation Pipeline**.
 
