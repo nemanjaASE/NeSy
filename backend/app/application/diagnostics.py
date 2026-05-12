@@ -1,8 +1,11 @@
+import asyncio
+import logging
 from typing import List
-from app.domain import NLPExtractor, SemanticMatcher, TextEmbedder, ScoringEngine
+from app.domain import NLPExtractor, SemanticMatcher, TextEmbedder, ScoringEngine, DiagnosticResponseDTO, XAIExplanationResult
 from app.infrastructure import Neo4jRepository, OllamaExplainer
-from app.core import logger
-from app.domain import DiagnosticResponseDTO, XAIExplanationResult
+from app.core import settings
+
+logger = logging.getLogger(__name__)
 
 class DiagnosticCoordinator:
     """
@@ -38,21 +41,29 @@ class DiagnosticCoordinator:
 
         try:
             # Step 1: Extract symptoms from text
-            present, absent = await self.nlp_extractor.extract_entities(text)
-            if not present and not absent:
-                logger.warning("No symptoms extracted from text.")
+            extracted = await self.nlp_extractor.extract_symptoms(text)
+            if not extracted.present and not extracted.absent:
+                logger.warning("No symptoms extracted.")
                 return self._empty_response(text)
-        
-            logger.info(f"Extracted {len(present)} present symptoms: {present}")
-            logger.info(f"Extracted {len(absent)} absent symptoms: {absent}")
-            
-            # Step 2: Semantic matching to ontology
-            # Step 2.1: Generate embeddings and perform semantic matching
-            present_query_embeddings = await self.embedder.generate_embeddings(present)
-            logger.info(f"Generated embeddings for present symptoms.")
 
-            absent_query_embeddings = await self.embedder.generate_embeddings(absent)
-            logger.info(f"Generated embeddings for absent symptoms.")
+            logger.debug(
+                f"Extracted symptoms | "
+                f"present={extracted.present} "
+                f"absent={extracted.absent}"
+            )
+
+            # Step 2: Semantic matching to ontology
+            # Step 2.1: Generate embeddings for present and absent symptoms in parallel
+            present_query_embeddings, absent_query_embeddings = await asyncio.gather(
+                self.embedder.generate_embeddings(extracted.present, prefix="query: "),
+                self.embedder.generate_embeddings(extracted.absent,  prefix="query: ")
+            )
+
+            logger.debug(
+                f"Generated embeddings | "
+                f"present={len(present_query_embeddings)} "
+                f"absent={len(absent_query_embeddings)}"
+            )
 
             # Step 2.2: Find best matches in the ontology
             matches = self.semantic_matcher.find_best_matches(
@@ -60,46 +71,53 @@ class DiagnosticCoordinator:
                 absent_query_embeddings=absent_query_embeddings,
                 onto_labels=onto_labels,
                 onto_vectors=onto_vectors,
-                present_terms=present,
-                absent_terms=absent
+                present_terms=extracted.present,
+                absent_terms=extracted.absent
             )
 
-            present_symptoms = [m.mapped_symptom for m in matches if m.is_match and m.kind == "present"]
-            absent_symptoms = [m.mapped_symptom for m in matches if m.is_match and m.kind == "absent"]
-            if not present_symptoms:
-                return self._empty_response(text)
-        
-            logger.info(f"Pipeline finished. Found {len(present_symptoms)} valid ontological matches.")
-            logger.info(f"Mapped symptoms: {present_symptoms}")
+            mapped = self.semantic_matcher.filter_matched_symptoms(matches) 
 
+            logger.debug(
+                f"Mapped symptoms | "
+                f"present={mapped.present} "
+                f"absent={mapped.absent}"
+            )
+            
+            if not mapped.present:
+                logger.warning("No ontology symptoms mapped")
+                return self._empty_response(text)
+            
             # Step 3: Query Neo4j for disease inference and calculate scores
-            if len(present_symptoms) < 1:
-                logger.warning(f"Only {len(present_symptoms)} symptoms mapped. Inference might be skipped.")
 
             # Step 3.1: Query Neo4j for candidate diseases based on mapped symptoms
             raw_records = await self.repository.infer_diseases(
-                present_symptoms=present_symptoms,
-                absent_symptoms=absent_symptoms,
-                min_match=2
+                present_symptoms=mapped.present,
+                absent_symptoms=mapped.absent,
+                min_match=settings.MIN_MATCH
             )
             
-            logger.info(f"Inference query returned {len(raw_records)} candidate diseases from Neo4j.")
+            logger.debug(
+                f"Neo4j inference returned "
+                f"{len(raw_records)} candidate diseases"
+            )
 
             # Step 3.2: Calculate disease scores and coverage
             diagnosis_result = self.scoring_engine.evaluate(
                 raw_records=raw_records,
-                total_input_symptoms=len(present_symptoms)
+                total_input_symptoms=len(mapped.present)
             )
 
+            logger.debug("Disease scoring completed")
+            
             # Step 4: Generate XAI explanations for the inferred diseases
             explanation_result = await self.xai_explainer.generate_explanation(diagnosis_result)
 
-            logger.info("XAI explanation generated.")
+            logger.info("Diagnostic pipeline completed successfully")
 
             return DiagnosticResponseDTO.from_domain(
                 text=text,
-                present_symptoms=present_symptoms,
-                absent_symptoms=absent_symptoms,
+                present_symptoms=mapped.present,
+                absent_symptoms=mapped.absent,
                 xai=explanation_result
             )
         except Exception as e:
@@ -126,5 +144,5 @@ class DiagnosticCoordinator:
             input_text=text,
             present_symptoms=[],
             absent_symptoms=[],
-            explanation=XAIExplanationResult.fallback("Došlo je do interne greške pri obradi podataka."),
+            explanation=XAIExplanationResult.fallback(message),
         )

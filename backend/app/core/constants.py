@@ -1,0 +1,17 @@
+THIRD_PARTY_LOGGERS: list[str] = [
+    "neo4j",
+    "neo4j.io",
+    "httpcore",
+    "httpx",
+    "openai",
+    "openai._base_client",
+    "openai._sync_client",
+    "openai._async_client",
+    "openai._http_client",
+    "uvicorn",
+    "uvicorn.error",
+    "uvicorn.access",
+    "sentence_transformers",
+    "huggingface_hub",
+    "transformers",
+]

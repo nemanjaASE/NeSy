@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from typing import List
-from ..schemas import SemanticMatchResult
+from ..models.symptom import SemanticMatchResult, EmbeddingMatrix, ExtractedSymptoms
 
 class SemanticMatcher:
     """
@@ -9,28 +9,40 @@ class SemanticMatcher:
     """
 
     def __init__(self, threshold: float = 0.90):
+        """
+        Args:
+            threshold: Minimum cosine similarity score required to consider
+                       a match valid. Defaults to 0.90.
+        """
         self.threshold = threshold
 
     def find_best_matches(
         self, 
-        present_query_embeddings: List[List[float]], 
-        absent_query_embeddings: List[List[float]], 
+        present_query_embeddings: EmbeddingMatrix, 
+        absent_query_embeddings: EmbeddingMatrix, 
         onto_labels: List[str], 
-        onto_vectors: List[List[float]],
+        onto_vectors: EmbeddingMatrix,
         present_terms: List[str],
         absent_terms: List[str]
     ) -> List[SemanticMatchResult]:
         """
-        Calculates cosine similarity between query embeddings and ontology vectors to find the best matches.
+        Map each patient-reported symptom to its closest ontological term
+        using cosine similarity between their vector embeddings.
+
+        Processes present and absent symptoms separately to preserve
+        their clinical role in the diagnostic pipeline.
+
         Args:
-            present_query_embeddings: List of vector embeddings for the present symptoms.
-            absent_query_embeddings: List of vector embeddings for the absent symptoms.
-            onto_labels: List of symptom labels from the ontology.
-            onto_vectors: List of vector embeddings for the ontology symptoms.
-            present_terms: List of original symptom terms for the present symptoms.
-            absent_terms: List of original symptom terms for the absent symptoms.
+            present_query_embeddings: Embeddings for symptoms the patient reports having.
+            absent_query_embeddings:  Embeddings for symptoms the patient explicitly denies.
+            onto_labels:  Symptom labels from the ontology knowledge graph.
+            onto_vectors: Embeddings for the ontology symptom labels.
+            present_terms: Original present symptom terms from NLP extraction.
+            absent_terms:  Original absent symptom terms from NLP extraction.
+
         Returns:
-            A list of SemanticMatchResult objects containing the input symptom, mapped symptom, confidence score, and match status.
+            List[SemanticMatchResult]: One result per symptom, containing the
+            mapped ontological term, confidence score, and match status.
         """
         if not onto_vectors:
             return []
@@ -61,3 +73,25 @@ class SemanticMatcher:
                 ))
 
         return results
+    
+    def filter_matched_symptoms(
+        self,
+        matches: List[SemanticMatchResult]
+    ) -> ExtractedSymptoms:
+        """
+        Filter semantic match results by confidence threshold and clinical role.
+
+        Extracts only the ontological terms that meet the similarity threshold,
+        separated into present and absent symptom lists for use in the
+        downstream inference query.
+
+        Args:
+            matches: List of semantic match results from find_best_matches.
+
+        Returns:
+            ExtractedSymptoms: Filtered present and absent ontological symptom terms.
+        """
+        present = [m.mapped_symptom for m in matches if m.is_match and m.kind == "present"]
+        absent  = [m.mapped_symptom for m in matches if m.is_match and m.kind == "absent"]
+
+        return ExtractedSymptoms(present=present, absent=absent)  

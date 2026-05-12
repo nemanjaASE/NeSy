@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from app.domain import RawDiseaseMatch, DiseaseInference
+from ..models.disease import RawDiseaseMatch, DiseaseInference
 
 class DiseaseFilter:
     def split(

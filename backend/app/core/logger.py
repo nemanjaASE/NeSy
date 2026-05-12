@@ -1,28 +1,40 @@
-from .config import settings
 import logging
 import sys
 
-def setup_logging():
+from .config import settings
+from .constants import THIRD_PARTY_LOGGERS
+
+def setup_logging() -> None:
     """
-    Configure system-wide logging based on the current environment.
+    Configure application-wide logging.
     """
-    if settings.ENVIRONMENT == "development":
-        log_level = logging.DEBUG
-    else:
-        log_level = logging.INFO
+
+    log_level = (
+        logging.DEBUG
+        if settings.ENVIRONMENT == "development"
+        else logging.INFO
+    )
 
     logging.basicConfig(
-        level=logging.INFO,
+        level=log_level,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        handlers=[
-            logging.StreamHandler(sys.stdout)
-        ]
+        handlers=[logging.StreamHandler(sys.stdout)],
+        force=True
     )
-    
-    logging.getLogger("uvicorn.access").setLevel(logging.WARNING)
-    
-    logger = logging.getLogger("diagnostic_api")
-    logger.info(f"Logging initialized at {logging.getLevelName(log_level)} level.")
-    return logger
 
-logger = setup_logging()
+    for logger_name in THIRD_PARTY_LOGGERS:
+        logging.getLogger(logger_name).setLevel(logging.WARNING)
+
+    logger = logging.getLogger(__name__)
+
+    logger.info(
+        f"Logging initialized at "
+        f"{logging.getLevelName(log_level)} level."
+    )
+
+    logger = logging.getLogger(__name__)
+
+    logger.info(
+        f"Logging initialized at "
+        f"{logging.getLevelName(log_level)} level."
+    )

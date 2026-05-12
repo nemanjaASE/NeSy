@@ -1,6 +1,6 @@
 from typing import List
 from pydantic import BaseModel
-from app.domain import XAIExplanationResult
+from ..models.explanation import XAIExplanationResult
 
 class DiagnosticResponseDTO(BaseModel):
     input_text: str

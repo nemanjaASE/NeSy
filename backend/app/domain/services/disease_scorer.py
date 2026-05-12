@@ -1,6 +1,5 @@
 from typing import List
-from app.domain import RawDiseaseMatch
-from ..schemas import DiseaseInference
+from ..models.disease import RawDiseaseMatch, DiseaseInference
 
 class DiseaseScorer:
     def score(

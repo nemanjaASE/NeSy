@@ -1,25 +1,47 @@
-from typing import List
-from app.domain import RawDiseaseMatch
-from ..schemas import DiagnosisResult
-from .disease_scorer import DiseaseScorer
-from .disease_filter import DiseaseFilter
-from .disease_ranker import DiseaseRanker
+from ..models.disease import RawDiseaseMatch, DiagnosisResult
+from ..services.disease_filter import DiseaseFilter
+from ..services.disease_ranker import DiseaseRanker
+from ..services.disease_scorer import DiseaseScorer
 
 class ScoringEngine:
     """
-    Domain service that orchestrates scoring, filtering and ranking of disease candidates.
+    Domain service that orchestrates the disease candidate evaluation pipeline.
+
+    Acts as a facade over three focused domain services:
+        - DiseaseScorer:  calculates coverage and normalized scores per candidate
+        - DiseaseFilter:  separates candidates into included and excluded groups
+        - DiseaseRanker:  sorts and trims each group by score and configured limits
+
+    This class contains no scoring logic itself — it only defines the order
+    of operations and wires the services together.
     """
 
-    def __init__(self, top_k: int = 5, top_excluded: int = 3):
-        self.scorer = DiseaseScorer()
-        self.filter = DiseaseFilter()
-        self.ranker = DiseaseRanker(top_k=top_k, top_excluded=top_excluded)
+    def __init__(
+        self,
+        scorer: DiseaseScorer,
+        filter: DiseaseFilter,
+        ranker: DiseaseRanker,
+    ):
+        self.scorer = scorer
+        self.filter = filter
+        self.ranker = ranker
 
     def evaluate(
         self,
-        raw_records: List[RawDiseaseMatch],
+        raw_records:          list[RawDiseaseMatch],
         total_input_symptoms: int
     ) -> DiagnosisResult:
+        """
+        Run the full disease candidate evaluation pipeline.
+
+        Args:
+            raw_records:          Raw disease candidates returned by Neo4j inference query.
+            total_input_symptoms: Total number of present symptoms provided by the patient,
+                                  used to calculate input coverage percentage.
+
+        Returns:
+            DiagnosisResult: Ranked included and excluded disease candidates.
+        """
         scored             = self.scorer.score_all(raw_records, total_input_symptoms)
         included, excluded = self.filter.split(scored, raw_records)
         return self.ranker.rank(included, excluded)

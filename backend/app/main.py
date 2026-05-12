@@ -1,9 +1,15 @@
+import logging
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.infrastructure import OllamaNLPExtractor, E5Embedder, Neo4jRepository, OllamaExplainer
-from app.core import settings, logger
+from app.core import settings, setup_logging
+from app.domain import DiseaseScorer, DiseaseFilter, DiseaseRanker, ScoringEngine, SemanticMatcher
+from app.infrastructure import OllamaSymptomExtractor, E5Embedder, Neo4jRepository, OllamaExplainer
 from app.api import api_router
+
+setup_logging()
+
+logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -19,10 +25,15 @@ async def lifespan(app: FastAPI):
 
         # Initialize LLM Extractor model
         logger.info("Initializing LLM extractor model...")
-        app.state.nlp_extractor = OllamaNLPExtractor()
+        app.state.nlp_extractor = OllamaSymptomExtractor()
 
         # Initialize Text Embedder model
         logger.info("Initializing Text Embedder model...")
+        if settings.HF_HUB_TOKEN:
+            from huggingface_hub import login
+            login(settings.HF_HUB_TOKEN)
+            logger.info("Logged into HuggingFace Hub")
+
         app.state.embedder = E5Embedder(model_name=settings.EMBEDDING_MODEL_NAME)
 
         # Initialize Neo4j connection
@@ -43,7 +54,21 @@ async def lifespan(app: FastAPI):
     
         logger.info(f"Loaded {len(app.state.onto_labels)} symptoms from ontology.")
 
-        yield 
+        # Initialize Scoring Engine
+        logger.info("Initializing Scoring Engine...")
+        app.state.scoring_engine = ScoringEngine(
+            scorer=DiseaseScorer(),
+            filter=DiseaseFilter(),
+            ranker=DiseaseRanker(
+                top_k=settings.SCORING_TOP_K,
+                top_excluded=settings.SCORING_TOP_EXCLUDED
+            )
+        )
+        app.state.semantic_matcher = SemanticMatcher(threshold=settings.SEMANTIC_MATCHING_THRESHOLD)
+        
+        logger.info("Initialization complete. Application is ready to accept requests.")
+
+        yield
     
     finally:
         await db.close()

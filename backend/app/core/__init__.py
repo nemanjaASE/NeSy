@@ -1,2 +1,3 @@
 from .config import settings
-from .logger import logger
+from .logger import setup_logging
+from .decorators import timed

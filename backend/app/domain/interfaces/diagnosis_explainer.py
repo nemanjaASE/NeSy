@@ -1,6 +1,5 @@
 from typing import Protocol, List, Dict, Any
-
-from ..schemas.xai_explanation_result import XAIExplanationResult
+from ..models.explanation import XAIExplanationResult
 
 class DiagnosticExplainer(Protocol):
     """

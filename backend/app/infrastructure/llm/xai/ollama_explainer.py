@@ -1,12 +1,14 @@
 import re
 import json
 import asyncio
+import logging
 from openai import AsyncOpenAI
-from app.core import logger, settings
-from app.domain import XAIExplanationResult
-from app.domain.schemas import DiagnosisResult, DiseaseInference
+from app.core import settings, timed
+from app.domain import XAIExplanationResult, DiagnosisResult, DiseaseInference
 from ..constants import DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER
 from ..prompt_loader import load_prompt
+
+logger = logging.getLogger(__name__)
 
 class OllamaExplainer:
     """
@@ -48,6 +50,7 @@ class OllamaExplainer:
             f"  Missing List: {r.missing_symptoms})\n"
         )
 
+    @timed("LLM Explanation Generation")
     async def generate_explanation(
         self,
         diagnosis_result: DiagnosisResult,
@@ -71,11 +74,12 @@ class OllamaExplainer:
                         {"role": "system", "content": self.system_prompt},
                         {"role": "user",   "content": formatted_input}
                     ],
-                    temperature=0.1,
-                    top_p=1.0,
-                    max_tokens=2500,
-                    seed=42,
-                    stream=False,
+                    temperature=settings.LLM_XAI_TEMPERATURE,
+                    top_p=settings.LLM_XAI_TOP_P,
+                    max_tokens=settings.LLM_XAI_MAX_TOKENS,
+                    seed=settings.LLM_XAI_SEED,
+                    stream=settings.LLM_XAI_STREAM,
+                    response_format=({"type": "json_object"} if settings.LLM_XAI_FORCE_JSON else {} ),
                 )
 
                 raw = completion.choices[0].message.content

@@ -1,11 +1,14 @@
 import json
 import asyncio
+import logging
 from typing import List, Dict, Any
 from groq import AsyncGroq
-from app.core import logger, settings
+from app.core import settings, timed
 from app.domain import XAIExplanationResult
 from ..prompt_loader import load_prompt
 from ..constants import DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER
+
+logger = logging.getLogger(__name__)
 
 class GroqExplainer:
     """
@@ -36,6 +39,7 @@ class GroqExplainer:
             )
         return "\n".join(lines)
 
+    @timed("LLM Explanation Generation")
     async def generate_explanation(self, disease_results: List[Dict[str, Any]], max_retries: int = 3) -> XAIExplanationResult:
         """
         Calls the LLM to generate reasoning based on the extracted and scored diseases.
@@ -55,11 +59,12 @@ class GroqExplainer:
                         {"role": "system", "content": self.system_prompt},
                         {"role": "user", "content": formatted_input}
                     ],
-                    temperature=0.1,
-                    top_p=1.0,
-                    max_tokens=2500,
-                    stream=False,
-                    response_format={"type": "json_object"},
+                    temperature=settings.LLM_XAI_TEMPERATURE,
+                    top_p=settings.LLM_XAI_TOP_P,
+                    max_tokens=settings.LLM_XAI_MAX_TOKENS,
+                    seed=settings.LLM_XAI_SEED,
+                    stream=settings.LLM_XAI_STREAM,
+                    response_format=({"type": "json_object"} if settings.LLM_XAI_FORCE_JSON else {} ),
                 )
 
                 raw = completion.choices[0].message.content

@@ -1,2 +1,1 @@
-from .neo4j_repository import Neo4jRepository
-from .queries import get_query
+from .neo4j import Neo4jRepository

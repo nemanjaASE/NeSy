@@ -1,2 +1,2 @@
-from .groq_extractor import GroqNLPExtractor
-from .ollama_extractor import OllamaNLPExtractor
+from .groq_symptom_extractor import GroqSymptomExtractor
+from .ollama_symptom_extractor import OllamaSymptomExtractor

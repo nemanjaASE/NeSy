@@ -6,7 +6,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 class Settings(BaseSettings):
-    # --- Osnovna podešavanja ---
+    # --- Core settings ---
     PROJECT_NAME: str
     ENVIRONMENT: str
     
@@ -15,12 +15,43 @@ class Settings(BaseSettings):
     NEO4J_USERNAME: str
     NEO4J_PASSWORD: str
     
-    # --- AI / LLM
+    # --- LLM General
     LLM_API_KEY: str
     LLM_BASE_URL: str
+
+    # --- LLM Extraction
     LLM_EXTRACTION_MODEL_NAME: str
+    LLM_EXTRACTION_TEMPERATURE: float
+    LLM_EXTRACTION_MAX_TOKENS: int
+    LLM_EXTRACTION_TOP_P: float
+    LLM_EXTRACTION_SEED: int
+    LLM_STREAM: bool
+    LLM_EXTRACTION_FORCE_JSON: bool
+
+    # --- LLM XAI
     LLM_XAI_MODEL_NAME: str
+    LLM_XAI_TEMPERATURE: float
+    LLM_XAI_MAX_TOKENS: int
+    LLM_XAI_TOP_P: float
+    LLM_XAI_SEED: int
+    LLM_XAI_STREAM: bool
+    LLM_XAI_FORCE_JSON: bool
+
+    # --- HF Embedding settings
+    HF_HUB_TOKEN: str
+
+    # --- Embeddings
     EMBEDDING_MODEL_NAME: str
+
+    # --- Semantic matching settings
+    SEMANTIC_MATCHING_THRESHOLD: float
+
+    # Min matches for Neo4j inference
+    MIN_MATCH: int
+
+    # --- Scoring engine settings
+    SCORING_TOP_K: int
+    SCORING_TOP_EXCLUDED: int
         
     # --- CORS
     ALLOWED_ORIGINS: str 

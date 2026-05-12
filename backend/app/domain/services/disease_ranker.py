@@ -1,6 +1,5 @@
 from typing import List
-from app.domain import DiseaseInference
-from ..schemas.diagnosis_result import DiagnosisResult
+from ..models.disease import DiseaseInference, DiagnosisResult
 
 class DiseaseRanker:
     def __init__(self, top_k: int = 5, top_excluded: int = 3):

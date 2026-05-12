@@ -1,5 +1,7 @@
+import logging
 from pathlib import Path
-from app.core import logger
+
+logger = logging.getLogger(__name__)
 
 def load_prompt(filename: str, subfolder: str) -> str:
     """
