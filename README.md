@@ -102,6 +102,14 @@ NeSy grounds its symbolic reasoning in standardized, peer-reviewed medical ontol
 
   ![Symptoms Graph Visualization](./assets/images/symptoms.png)
 
+### Grounding Versions
+
+
+| Ontology | Local Version | Release Cycle | Status | Source |
+| :--- | :--- | :--- | :--- | :--- |
+| **DOID** | 2025-09-30 | Monthly | Stable | [Download](https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/main/src/ontology) |
+| **SYMP** | 2024-05-17 | Irregular | Up-to-date | [Download](https://github.com/DiseaseOntology/SymptomOntology/releases) |
+
 ## 🔗 The Connection (RO_0002452)
 
 In the world of medical data, the link between a disease and its symptoms is formally called RO_0002452 (simply meaning `has symptom`).
