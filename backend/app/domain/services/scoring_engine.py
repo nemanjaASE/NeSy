@@ -1,7 +1,12 @@
+import logging
 from ..models.disease import RawDiseaseMatch, DiagnosisResult
+from ..models.result import Result
 from ..services.disease_filter import DiseaseFilter
 from ..services.disease_ranker import DiseaseRanker
 from ..services.disease_scorer import DiseaseScorer
+
+logger = logging.getLogger(__name__)
+
 
 class ScoringEngine:
     """
@@ -30,7 +35,7 @@ class ScoringEngine:
         self,
         raw_records:          list[RawDiseaseMatch],
         total_input_symptoms: int
-    ) -> DiagnosisResult:
+    ) -> Result[DiagnosisResult]:
         """
         Run the full disease candidate evaluation pipeline.
 
@@ -40,8 +45,21 @@ class ScoringEngine:
                                   used to calculate input coverage percentage.
 
         Returns:
-            DiagnosisResult: Ranked included and excluded disease candidates.
+            Result[DiagnosisResult]: Success with ranked included and excluded disease
+            candidates, or failure with an error message.
         """
-        scored             = self.scorer.score_all(raw_records, total_input_symptoms)
-        included, excluded = self.filter.split(scored, raw_records)
-        return self.ranker.rank(included, excluded)
+        if not raw_records:
+            logger.warning("No raw records provided to scoring engine.")
+            return Result.failure("No disease candidates to evaluate.")
+
+        try:
+            scored             = self.scorer.score_all(raw_records, total_input_symptoms)
+            included, excluded = self.filter.split(scored, raw_records)
+            result             = self.ranker.rank(included, excluded)
+
+            logger.info(f"Scoring complete. Included: {len(result.included)}, Excluded: {len(result.excluded)}.")
+            return Result.success(result)
+
+        except Exception as e:
+            logger.exception("Scoring engine evaluation failed.")
+            return Result.failure(f"Scoring engine failed: {str(e)}")

@@ -2,7 +2,7 @@ import asyncio
 import logging
 from typing import List
 from sentence_transformers import SentenceTransformer
-from app.domain import TextEmbedder, EmbeddingGenerationError, EmbeddingMatrix
+from app.domain import Result, TextEmbedder, EmbeddingMatrix
 from app.core import timed
 
 logger = logging.getLogger(__name__)
@@ -34,7 +34,7 @@ class E5Embedder(TextEmbedder):
         self,
         texts: List[str],
         prefix: str = "query: "
-    ) -> EmbeddingMatrix:
+    ) -> Result[EmbeddingMatrix]:
         """
         Asynchronously generate vector embeddings for a list of input texts.
 
@@ -49,10 +49,8 @@ class E5Embedder(TextEmbedder):
                     for ontology terms. Defaults to "query: ".
 
         Returns:
-            EmbeddingMatrix: A list of embedding vectors, one per input text.
-
-        Raises:
-            EmbeddingGenerationError: If encoding fails for any reason.
+            Result[EmbeddingMatrix]: Success with a list of embedding vectors,
+            one per input text, or failure with an error message.
         """
         try:
             prefixed = [f"{prefix}{text}" for text in texts]
@@ -65,8 +63,45 @@ class E5Embedder(TextEmbedder):
             )
 
             logger.info(f"Successfully generated {len(embeddings_array)} embeddings.")
-            return embeddings_array.tolist()
+            return Result.success(embeddings_array.tolist())
 
         except Exception as e:
             logger.error(f"Failed to generate embeddings: {str(e)}", exc_info=True)
-            raise EmbeddingGenerationError(f"Critical error in embedding generation: {str(e)}")
+            return Result.failure(f"Embedding generation failed: {str(e)}")
+    
+    @timed("Embedding Generation Split")
+    async def generate_embeddings_split(
+        self,
+        present_terms: list[str],
+        absent_terms:  list[str],
+        prefix: str = "query: "
+    ) -> Result[tuple[EmbeddingMatrix, EmbeddingMatrix]]:
+        """
+        Generate embeddings for present and absent terms in a single model call.
+
+        Combines both lists into one encoding pass to avoid concurrent access
+        issues with the underlying SentenceTransformer model, then splits
+        the result back into present and absent embedding matrices.
+
+        Args:
+            present_terms: Symptom terms the patient reports having.
+            absent_terms:  Symptom terms the patient explicitly denies.
+            prefix:        Prefix prepended to each term before encoding.
+
+        Returns:
+            Result[tuple[EmbeddingMatrix, EmbeddingMatrix]]: Success with
+            (present_embeddings, absent_embeddings), or failure with an error message.
+        """
+        all_terms = present_terms + absent_terms
+
+        result = await self.generate_embeddings(all_terms, prefix=prefix)
+        if result.is_failure:
+            return Result.failure(result.error)
+
+        all_embeddings = result.value
+        split = len(present_terms)
+
+        return Result.success((
+            all_embeddings[:split],
+            all_embeddings[split:]
+        ))

@@ -1,4 +1,5 @@
 from typing import Protocol
+from ..models.result import Result
 from ..models.symptom import ExtractedSymptoms
 
 
@@ -10,7 +11,7 @@ class NLPExtractor(Protocol):
     this interface to be used within the diagnostic pipeline.
     """
 
-    async def extract_symptoms(self, text: str) -> ExtractedSymptoms:
+    async def extract_symptoms(self, text: str) -> Result[ExtractedSymptoms]:
         """
         Extract clinically relevant symptoms from a patient's free-text description.
 
@@ -21,7 +22,7 @@ class NLPExtractor(Protocol):
             text: Raw clinical description provided by the patient in natural language.
 
         Returns:
-            ExtractedSymptoms: A structured object containing:
+            Result[ExtractedSymptoms]: A structured object containing:
                 - present: symptoms the patient confirms having
                 - absent:  symptoms the patient explicitly denies
         """

@@ -1,13 +1,13 @@
 import json
 import logging
 from groq import AsyncGroq
-from app.domain import NLPExtractor, ExtractedSymptoms
+from app.domain import Result, NLPExtractor, ExtractedSymptoms
 from app.core import settings, timed
 from ..prompt_loader import load_prompt
 from ..constants import SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER
 
 logger = logging.getLogger(__name__)
-
+    
 class GroqSymptomExtractor(NLPExtractor):
     """
     NLPExtractor implementation backed by the Groq Cloud API.
@@ -23,7 +23,7 @@ class GroqSymptomExtractor(NLPExtractor):
         self.system_prompt = load_prompt(SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER)
 
     @timed("Groq Symptom Extraction")
-    async def extract_symptoms(self, text: str) -> ExtractedSymptoms:
+    async def extract_symptoms(self, text: str) -> Result[ExtractedSymptoms]:
         """
         Send patient input to the Groq LLM and parse the symptom extraction response.
 
@@ -35,7 +35,7 @@ class GroqSymptomExtractor(NLPExtractor):
             text: Raw clinical description provided by the patient.
 
         Returns:
-            ExtractedSymptoms: Extracted present and absent symptoms.
+            Result[ExtractedSymptoms]: Extracted present and absent symptoms.
         """
         try:
             logger.info(f"Extracting symptoms using Groq model: {self.model}")
@@ -57,8 +57,11 @@ class GroqSymptomExtractor(NLPExtractor):
             content = chat_completion.choices[0].message.content
             data = json.loads(content)
 
-            return ExtractedSymptoms(present=data.get("present", []), absent=data.get("absent", []))
-
+            return Result(ExtractedSymptoms(present=data.get("present", []), absent=data.get("absent", [])))
+        
+        except json.JSONDecodeError as e:
+            logger.error(f"Failed to parse Groq response as JSON: {str(e)}")
+            return Result.failure(f"Invalid JSON response from Groq: {str(e)}")
         except Exception as e:
             logger.error(f"Error during Groq symptom extraction: {str(e)}")
-            return ExtractedSymptoms(present=[], absent=[])
+            return Result.failure(f"Groq symptom extraction failed: {str(e)}")

@@ -1,8 +1,7 @@
 import logging
 from neo4j import AsyncGraphDatabase
-from app.core import settings
-from app.domain import RawDiseaseMatch, SymptomOntologyData
-from app.core import timed
+from app.core import settings, timed
+from app.domain import RawDiseaseMatch, SymptomOntologyData, Result
 from .constants import HAS_SYMPTOM_REL, GET_ONTOLOGY_SYMPTOMS, INFERENCE_QUERY
 from .queries.get_query import get_query
 
@@ -40,9 +39,9 @@ class Neo4jRepository:
                 auth=(self.user, self.password)
             )
             await self.driver.verify_connectivity()
-            logger.info(f"Connected to Neo4j")
+            logger.info("Connected to Neo4j.")
         except Exception as e:
-            logger.exception(f"Failed to connect to Neo4j")
+            logger.exception("Failed to connect to Neo4j.")
             raise
 
     async def close(self) -> None:
@@ -54,10 +53,10 @@ class Neo4jRepository:
         """
         if self.driver:
             await self.driver.close()
-            logger.debug("Neo4j connection closed")
+            logger.debug("Neo4j connection closed.")
 
     @timed("Fetch Ontology Symptoms")
-    async def get_ontology_symptoms(self) -> list[SymptomOntologyData]:
+    async def get_ontology_symptoms(self) -> Result[list[SymptomOntologyData]]:
         """
         Fetch all symptoms and their pre-computed embeddings from the knowledge graph.
 
@@ -66,8 +65,8 @@ class Neo4jRepository:
         from the result to ensure matching integrity.
 
         Returns:
-            list[SymptomOntologyData]: Ontology symptoms with their labels and
-            embedding vectors. Returns an empty list on failure.
+            Result[list[SymptomOntologyData]]: Success with ontology symptoms,
+            or failure with an error message.
         """
         try:
             query = get_query(GET_ONTOLOGY_SYMPTOMS)
@@ -79,12 +78,12 @@ class Neo4jRepository:
                     async for r in result if r["embedding"]
                 ]
 
-            logger.debug(f"Fetched {len(symptoms)} ontology symptom from neo4j.")
-            return symptoms
+            logger.debug(f"Fetched {len(symptoms)} ontology symptoms from Neo4j.")
+            return Result.success(symptoms)
 
         except Exception as e:
-            logger.exception(f"Failed to fetch ontology symptoms")
-            return []
+            logger.exception("Failed to fetch ontology symptoms.")
+            return Result.failure(f"Failed to fetch ontology symptoms: {str(e)}")
 
     @timed("Infer Diseases")
     async def infer_diseases(
@@ -92,7 +91,7 @@ class Neo4jRepository:
         present_symptoms: list[str],
         absent_symptoms:  list[str],
         min_match: int = 2,
-    ) -> list[RawDiseaseMatch]:
+    ) -> Result[list[RawDiseaseMatch]]:
         """
         Execute the diagnostic inference Cypher query against the knowledge graph.
 
@@ -107,18 +106,16 @@ class Neo4jRepository:
                               to qualify as a candidate. Defaults to 2.
 
         Returns:
-            list[RawDiseaseMatch]: Raw disease candidates with match scores and
-            symptom coverage data. Returns an empty list if no present symptoms
-            are provided or if the query fails.
+            Result[list[RawDiseaseMatch]]: Success with raw disease candidates,
+            or failure with an error message.
         """
         if not present_symptoms:
             logger.debug("Inference skipped: no present symptoms provided.")
-            return []
+            return Result.failure("No present symptoms provided for inference.")
 
         try:
             query = get_query(INFERENCE_QUERY)
-
-            logger.debug("Executing inference query")
+            logger.debug("Executing inference query.")
 
             async with self.driver.session() as session:
                 result = await session.run(
@@ -130,9 +127,9 @@ class Neo4jRepository:
                 )
                 records = await result.data()
 
-            logger.info(f"Inference returned {len(records)} candidates")
-            return [RawDiseaseMatch(**r) for r in records]
+            logger.info(f"Inference returned {len(records)} candidates.")
+            return Result.success([RawDiseaseMatch(**r) for r in records])
 
         except Exception as e:
-            logger.error(f"Failed to execute inference query")
-            return []
+            logger.exception("Failed to execute inference query.")
+            return Result.failure(f"Inference query failed: {str(e)}")

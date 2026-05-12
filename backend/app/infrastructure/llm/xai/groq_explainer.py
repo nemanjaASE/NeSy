@@ -1,55 +1,81 @@
+import re
 import json
 import asyncio
 import logging
-from typing import List, Dict, Any
 from groq import AsyncGroq
 from app.core import settings, timed
-from app.domain import XAIExplanationResult
+from app.domain import XAIExplanationResult, DiagnosisResult, DiseaseInference, Result, DiagnosticExplainer
 from ..prompt_loader import load_prompt
 from ..constants import DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER
 
 logger = logging.getLogger(__name__)
 
-class GroqExplainer:
+
+class GroqExplainer(DiagnosticExplainer):
     """
-    Explainable AI (XAI) layer that uses an LLM to generate human-readable
-    reasoning for the neuro-symbolic diagnostic results.
+    Explainable AI (XAI) layer that uses the Groq Cloud API to generate
+    human-readable clinical reasoning for the neuro-symbolic diagnostic results.
+    Intended for cloud-based deployments where low-latency inference is required.
     """
 
     def __init__(self):
-        self.client = AsyncGroq(api_key=settings.LLM_API_KEY)
-        self.model = settings.LLM_XAI_MODEL_NAME
+        self.client        = AsyncGroq(api_key=settings.LLM_API_KEY)
+        self.model         = settings.LLM_XAI_MODEL_NAME
         self.system_prompt = load_prompt(DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER)
 
-    def _format_input(self, disease_results: List[Dict[str, Any]]) -> str:
-        """Formats the inference results into a prompt-friendly string."""
+    def _format_input(self, diagnosis_result: DiagnosisResult) -> str:
+        """Formats DiagnosisResult into a prompt-friendly string."""
         lines = []
-        for r in disease_results:
-            missing = r.get("missing_symptoms", [])
-            missing_str = ", ".join(missing) if missing else "none"
-            lines.append(
-                f"- {r.get('disease_name', 'Unknown')} ("
-                f"uri: {r.get('uri', 'N/A')}, "
-                f"score: {r.get('normalized_score', 0)}, "
-                f"matched: {r.get('match_count', 0)} symptoms, "
-                f"disease_coverage: {r.get('disease_coverage_pct', 'N/A')}, "
-                f"input_coverage: {r.get('input_coverage_pct', 'N/A')}, "
-                f"matched_symptoms: {r.get('matched_symptoms', [])}, "
-                f"missing_symptoms: [{missing_str}])"
-            )
+        for r in diagnosis_result.included:
+            lines.append(self._format_disease(r, passed_filter=True))
+        for r in diagnosis_result.excluded:
+            lines.append(self._format_disease(r, passed_filter=False))
         return "\n".join(lines)
 
+    def _format_disease(self, r: DiseaseInference, passed_filter: bool) -> str:
+        return (
+            f"- {r.disease_name} (\n"
+            f"  URI: {r.uri},\n"
+            f"  Normalized Score: {round(r.normalized_score, 4)},\n"
+            f"  Filter Status: {passed_filter},\n"
+            f"  Match Count: {r.match_count},\n"
+            f"  Disease Coverage: {r.disease_coverage_pct}%,\n"
+            f"  Input Coverage: {r.input_coverage_pct}%,\n"
+            f"  Blocking Symptoms: {r.blocking_symptoms},\n"
+            f"  Matched List: {r.matched_symptoms},\n"
+            f"  Missing List: {r.missing_symptoms})\n"
+        )
+
     @timed("LLM Explanation Generation")
-    async def generate_explanation(self, disease_results: List[Dict[str, Any]], max_retries: int = 3) -> XAIExplanationResult:
+    async def generate_explanation(
+        self,
+        diagnosis_result: DiagnosisResult,
+        max_retries: int = 3
+    ) -> Result[XAIExplanationResult]:
         """
-        Calls the LLM to generate reasoning based on the extracted and scored diseases.
+        Call the Groq LLM to generate clinical reasoning based on scored and filtered diseases.
+
+        Attempts to parse the response as JSON directly, with a regex fallback
+        for cases where the model wraps JSON in additional text. Retries up to
+        max_retries times on failure before returning a Result.failure.
+
+        Args:
+            diagnosis_result: Scored and ranked disease candidates from the scoring engine.
+            max_retries:      Number of attempts before giving up. Defaults to 3.
+
+        Returns:
+            Result[XAIExplanationResult]: Success with structured clinical explanation,
+            or failure with an error message.
         """
-        if not disease_results:
+        if not diagnosis_result.included and not diagnosis_result.excluded:
             logger.warning("No disease results provided to XAI layer.")
-            return XAIExplanationResult.fallback("No data for reasoning.")
-        
-        formatted_input = self._format_input(disease_results)
-        logger.debug(f"Sending formatted data to LLM: {len(disease_results)} diseases.")
+            return Result.failure("No disease candidates available for explanation.")
+
+        formatted_input = self._format_input(diagnosis_result)
+        logger.debug(
+            f"Sending {len(diagnosis_result.included)} included and "
+            f"{len(diagnosis_result.excluded)} excluded diseases to XAI."
+        )
 
         for attempt in range(max_retries):
             try:
@@ -57,30 +83,37 @@ class GroqExplainer:
                     model=self.model,
                     messages=[
                         {"role": "system", "content": self.system_prompt},
-                        {"role": "user", "content": formatted_input}
+                        {"role": "user",   "content": formatted_input}
                     ],
                     temperature=settings.LLM_XAI_TEMPERATURE,
                     top_p=settings.LLM_XAI_TOP_P,
                     max_tokens=settings.LLM_XAI_MAX_TOKENS,
                     seed=settings.LLM_XAI_SEED,
                     stream=settings.LLM_XAI_STREAM,
-                    response_format=({"type": "json_object"} if settings.LLM_XAI_FORCE_JSON else {} ),
+                    response_format=({"type": "json_object"} if settings.LLM_XAI_FORCE_JSON else {}),
                 )
 
                 raw = completion.choices[0].message.content
-                
+
                 try:
-                    logger.info(f"Successfully generated XAI response on attempt {attempt + 1}.")
-                    return XAIExplanationResult.model_validate_json(raw)
+                    result = json.loads(raw)
+                    logger.info(f"XAI response parsed successfully on attempt {attempt + 1}.")
+                    return Result.success(XAIExplanationResult.model_validate(result))
                 except json.JSONDecodeError:
                     pass
 
-                logger.warning(f"Attempt {attempt + 1}/{max_retries} failed to return valid JSON. Retrying...")
+                match = re.search(r'\{.*\}', raw, re.DOTALL)
+                if match:
+                    result = json.loads(match.group())
+                    logger.info(f"XAI response parsed via regex fallback on attempt {attempt + 1}.")
+                    return Result.success(XAIExplanationResult.model_validate(result))
+
+                logger.warning(f"Attempt {attempt + 1}/{max_retries} did not return valid JSON. Retrying...")
                 await asyncio.sleep(1)
 
             except Exception as e:
-                logger.error(f"Error during LLM API call on attempt {attempt + 1}/{max_retries}: {str(e)}")
+                logger.error(f"XAI API call failed on attempt {attempt + 1}/{max_retries}: {str(e)}")
                 await asyncio.sleep(1)
-                
-        logger.error("All attempts to generate XAI reasoning have failed.")
-        return XAIExplanationResult.fallback("Technical error during reasoning generation.")
+
+        logger.error("All XAI attempts exhausted.")
+        return Result.failure("XAI explanation generation failed after all retry attempts.")

@@ -4,36 +4,34 @@ import asyncio
 import logging
 from openai import AsyncOpenAI
 from app.core import settings, timed
-from app.domain import XAIExplanationResult, DiagnosisResult, DiseaseInference
+from app.domain import XAIExplanationResult, DiagnosisResult, DiseaseInference, Result, DiagnosticExplainer
 from ..constants import DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER
 from ..prompt_loader import load_prompt
 
 logger = logging.getLogger(__name__)
 
-class OllamaExplainer:
+
+class OllamaExplainer(DiagnosticExplainer):
     """
     Explainable AI (XAI) layer that uses an LLM to generate human-readable
     reasoning for the neuro-symbolic diagnostic results.
     """
 
     def __init__(self):
-        self.client = AsyncOpenAI(
+        self.client        = AsyncOpenAI(
             base_url=settings.LLM_BASE_URL,
             api_key="ollama"
         )
-        self.model = settings.LLM_XAI_MODEL_NAME
+        self.model         = settings.LLM_XAI_MODEL_NAME
         self.system_prompt = load_prompt(DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER)
 
     def _format_input(self, diagnosis_result: DiagnosisResult) -> str:
         """Formats DiagnosisResult into a prompt-friendly string."""
         lines = []
-
         for r in diagnosis_result.included:
             lines.append(self._format_disease(r, passed_filter=True))
-
         for r in diagnosis_result.excluded:
             lines.append(self._format_disease(r, passed_filter=False))
-
         return "\n".join(lines)
 
     def _format_disease(self, r: DiseaseInference, passed_filter: bool) -> str:
@@ -55,16 +53,31 @@ class OllamaExplainer:
         self,
         diagnosis_result: DiagnosisResult,
         max_retries: int = 3
-    ) -> XAIExplanationResult:
+    ) -> Result[XAIExplanationResult]:
         """
-        Calls the LLM to generate reasoning based on scored and filtered diseases.
+        Call the LLM to generate clinical reasoning based on scored and filtered diseases.
+
+        Attempts to parse the response as JSON directly, with a regex fallback
+        for models that wrap JSON in additional text. Retries up to max_retries
+        times on failure before returning a Result.failure.
+
+        Args:
+            diagnosis_result: Scored and ranked disease candidates from the scoring engine.
+            max_retries:      Number of attempts before giving up. Defaults to 3.
+
+        Returns:
+            Result[XAIExplanationResult]: Success with structured clinical explanation,
+            or failure with an error message.
         """
         if not diagnosis_result.included and not diagnosis_result.excluded:
             logger.warning("No disease results provided to XAI layer.")
-            return XAIExplanationResult.fallback("No data for reasoning.")
+            return Result.failure("No disease candidates available for explanation.")
 
         formatted_input = self._format_input(diagnosis_result)
-        logger.debug(f"Sending {len(diagnosis_result.included)} included and {len(diagnosis_result.excluded)} excluded diseases to XAI.")
+        logger.debug(
+            f"Sending {len(diagnosis_result.included)} included and "
+            f"{len(diagnosis_result.excluded)} excluded diseases to XAI."
+        )
 
         for attempt in range(max_retries):
             try:
@@ -79,7 +92,7 @@ class OllamaExplainer:
                     max_tokens=settings.LLM_XAI_MAX_TOKENS,
                     seed=settings.LLM_XAI_SEED,
                     stream=settings.LLM_XAI_STREAM,
-                    response_format=({"type": "json_object"} if settings.LLM_XAI_FORCE_JSON else {} ),
+                    response_format=({"type": "json_object"} if settings.LLM_XAI_FORCE_JSON else {}),
                 )
 
                 raw = completion.choices[0].message.content
@@ -87,7 +100,7 @@ class OllamaExplainer:
                 try:
                     result = json.loads(raw)
                     logger.info(f"XAI response parsed successfully on attempt {attempt + 1}.")
-                    return XAIExplanationResult.model_validate(result)
+                    return Result.success(XAIExplanationResult.model_validate(result))
                 except json.JSONDecodeError:
                     pass
 
@@ -95,14 +108,14 @@ class OllamaExplainer:
                 if match:
                     result = json.loads(match.group())
                     logger.info(f"XAI response parsed via regex fallback on attempt {attempt + 1}.")
-                    return XAIExplanationResult.model_validate(result)
+                    return Result.success(XAIExplanationResult.model_validate(result))
 
                 logger.warning(f"Attempt {attempt + 1}/{max_retries} did not return valid JSON. Retrying...")
                 await asyncio.sleep(1)
 
             except Exception as e:
-                logger.error(f"Error during XAI API call on attempt {attempt + 1}/{max_retries}: {str(e)}")
+                logger.error(f"XAI API call failed on attempt {attempt + 1}/{max_retries}: {str(e)}")
                 await asyncio.sleep(1)
 
-        logger.error("All XAI attempts failed.")
-        return XAIExplanationResult.fallback("Technical error during reasoning generation.")
+        logger.error("All XAI attempts exhausted.")
+        return Result.failure("XAI explanation generation failed after all retry attempts.")
