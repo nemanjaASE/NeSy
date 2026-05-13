@@ -1,0 +1,93 @@
+name: Test Notebook Setup Scripts
+
+on:
+  push:
+    paths:
+      - "notebooks/setup.sh"
+      - "notebooks/setup.bat"
+      - "notebooks/requirements.txt"
+  pull_request:
+    paths:
+      - "notebooks/setup.sh"
+      - "notebooks/setup.bat"
+      - "notebooks/requirements.txt"
+  workflow_dispatch:
+
+jobs:
+  test-linux:
+    name: 🐧 Linux
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: notebooks
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run setup script
+        run: |
+          chmod +x setup.sh
+          ./setup.sh
+
+      - name: Verify kernel installed
+        run: |
+          source .venv/bin/activate
+          jupyter kernelspec list | grep nesy-notebooks
+
+  test-macos:
+    name: 🍎 macOS
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: notebooks
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run setup script
+        run: |
+          chmod +x setup.sh
+          ./setup.sh
+
+      - name: Verify kernel installed
+        run: |
+          source .venv/bin/activate
+          jupyter kernelspec list | grep nesy-notebooks
+
+  test-windows:
+    name: 🖥️ Windows
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: notebooks
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run setup script
+        run: ./setup.bat
+        shell: cmd
+
+      - name: Verify kernel installed
+        run: |
+          .venv\Scripts\activate
+          jupyter kernelspec list | findstr nesy-notebooks
+        shell: cmd
