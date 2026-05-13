@@ -90,21 +90,54 @@ Since this folder has its own dedicated environment, follow these steps to ensur
 
 We’ve included ready-to-run setup scripts in this folder — just double-click or run them to install everything automatically.
 
-🖥️ For Windows
-
+---
+ 
+### 🖥️ Windows
+ 
 **Option A: Double-click (easiest)**
+ 
 1. Find `setup.bat` in the `notebooks/` folder
 2. Double-click it — it will automatically:
    - Create `.venv`
    - Install dependencies
    - Register the Jupyter kernel
    - Show you next steps
-
+     
 **Option B: Run from terminal**
-1. Open terminal in `notebooks/` folder
-2. Type:
+ 
+```
+setup.bat
+```
+ 
+---
+ 
+### 🍎 macOS
+ 
+**Option A: Double-click (easiest)**
+ 
+1. Find `setup.sh` in the `notebooks/` folder
+2. Right-click → **Open With** → **Terminal**
    
-   ```
-   ./setup.bat
-   ```
-💡 No need to edit or create anything — script is pre-configured for this project.
+**Option B: Run from terminal**
+ 
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+ 
+---
+ 
+### 🐧 Linux
+ 
+**Run from terminal:**
+ 
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+ 
+> **Note:** `chmod +x` is only needed once to make the script executable. On macOS and Linux, both platforms use the same `setup.sh` script.
+ 
+---
+ 
+💡 No need to edit or create anything — scripts are pre-configured for this project.
