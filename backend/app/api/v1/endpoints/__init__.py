@@ -1,1 +1,1 @@
-from .diagnostics import router
+from .diagnostics import router as router

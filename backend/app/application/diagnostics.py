@@ -1,9 +1,6 @@
-import asyncio
-from email.mime import text
-from pydoc import text
 import logging
 from typing import List
-from app.domain import Result, NLPExtractor, SemanticMatcher, TextEmbedder, ScoringEngine, DiagnosticResponseDTO, XAIExplanationResult
+from app.domain import NLPExtractor, SemanticMatcher, TextEmbedder, ScoringEngine, DiagnosticResponseDTO, XAIExplanationResult
 from app.infrastructure import Neo4jRepository, OllamaExplainer
 from app.core import settings
 

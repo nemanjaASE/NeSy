@@ -1,1 +1,1 @@
-from .diagnostics import DiagnosticCoordinator
+from .diagnostics import DiagnosticCoordinator as DiagnosticCoordinator
