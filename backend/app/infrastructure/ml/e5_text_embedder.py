@@ -7,6 +7,7 @@ from app.core import timed
 
 logger = logging.getLogger(__name__)
 
+
 class E5Embedder(TextEmbedder):
     """
     TextEmbedder implementation using the multilingual-e5-large model
@@ -31,9 +32,7 @@ class E5Embedder(TextEmbedder):
 
     @timed("Embedding Generation")
     async def generate_embeddings(
-        self,
-        texts: List[str],
-        prefix: str = "query: "
+        self, texts: List[str], prefix: str = "query: "
     ) -> Result[EmbeddingMatrix]:
         """
         Asynchronously generate vector embeddings for a list of input texts.
@@ -54,12 +53,13 @@ class E5Embedder(TextEmbedder):
         """
         try:
             prefixed = [f"{prefix}{text}" for text in texts]
-            logger.debug(f"Generating embeddings for {len(prefixed)} texts with prefix '{prefix}'.")
+            logger.debug(
+                f"Generating embeddings for {len(prefixed)} texts with prefix '{prefix}'."
+            )
 
             loop = asyncio.get_running_loop()
             embeddings_array = await loop.run_in_executor(
-                None,
-                lambda: self.model.encode(prefixed)
+                None, lambda: self.model.encode(prefixed)
             )
 
             logger.info(f"Successfully generated {len(embeddings_array)} embeddings.")
@@ -68,13 +68,10 @@ class E5Embedder(TextEmbedder):
         except Exception as e:
             logger.error(f"Failed to generate embeddings: {str(e)}", exc_info=True)
             return Result.failure(f"Embedding generation failed: {str(e)}")
-    
+
     @timed("Embedding Generation Split")
     async def generate_embeddings_split(
-        self,
-        present_terms: list[str],
-        absent_terms:  list[str],
-        prefix: str = "query: "
+        self, present_terms: list[str], absent_terms: list[str], prefix: str = "query: "
     ) -> Result[tuple[EmbeddingMatrix, EmbeddingMatrix]]:
         """
         Generate embeddings for present and absent terms in a single model call.
@@ -101,7 +98,4 @@ class E5Embedder(TextEmbedder):
         all_embeddings = result.value
         split = len(present_terms)
 
-        return Result.success((
-            all_embeddings[:split],
-            all_embeddings[split:]
-        ))
+        return Result.success((all_embeddings[:split], all_embeddings[split:]))

@@ -2,6 +2,7 @@ from typing import List
 from pydantic import BaseModel
 from ..models.explanation import XAIExplanationResult
 
+
 class DiagnosticResponseDTO(BaseModel):
     input_text: str
     present_symptoms: List[str]
@@ -9,7 +10,13 @@ class DiagnosticResponseDTO(BaseModel):
     explanation: XAIExplanationResult
 
     @classmethod
-    def from_domain(cls, text: str, present_symptoms: List[str], absent_symptoms: List[str], xai: XAIExplanationResult):
+    def from_domain(
+        cls,
+        text: str,
+        present_symptoms: List[str],
+        absent_symptoms: List[str],
+        xai: XAIExplanationResult,
+    ):
         return cls(
             input_text=text,
             present_symptoms=present_symptoms,

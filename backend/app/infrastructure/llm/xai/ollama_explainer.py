@@ -4,7 +4,13 @@ import asyncio
 import logging
 from openai import AsyncOpenAI
 from app.core import settings, timed
-from app.domain import XAIExplanationResult, DiagnosisResult, DiseaseInference, Result, DiagnosticExplainer
+from app.domain import (
+    XAIExplanationResult,
+    DiagnosisResult,
+    DiseaseInference,
+    Result,
+    DiagnosticExplainer,
+)
 from ..constants import DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER
 from ..prompt_loader import load_prompt
 
@@ -18,11 +24,8 @@ class OllamaExplainer(DiagnosticExplainer):
     """
 
     def __init__(self):
-        self.client        = AsyncOpenAI(
-            base_url=settings.LLM_BASE_URL,
-            api_key="ollama"
-        )
-        self.model         = settings.LLM_XAI_MODEL_NAME
+        self.client = AsyncOpenAI(base_url=settings.LLM_BASE_URL, api_key="ollama")
+        self.model = settings.LLM_XAI_MODEL_NAME
         self.system_prompt = load_prompt(DISEASE_EXPLANATION_PROMPT, XAI_SUBFOLDER)
 
     def _format_input(self, diagnosis_result: DiagnosisResult) -> str:
@@ -50,9 +53,7 @@ class OllamaExplainer(DiagnosticExplainer):
 
     @timed("LLM Explanation Generation")
     async def generate_explanation(
-        self,
-        diagnosis_result: DiagnosisResult,
-        max_retries: int = 3
+        self, diagnosis_result: DiagnosisResult, max_retries: int = 3
     ) -> Result[XAIExplanationResult]:
         """
         Call the LLM to generate clinical reasoning based on scored and filtered diseases.
@@ -85,37 +86,49 @@ class OllamaExplainer(DiagnosticExplainer):
                     model=self.model,
                     messages=[
                         {"role": "system", "content": self.system_prompt},
-                        {"role": "user",   "content": formatted_input}
+                        {"role": "user", "content": formatted_input},
                     ],
                     temperature=settings.LLM_XAI_TEMPERATURE,
                     top_p=settings.LLM_XAI_TOP_P,
                     max_tokens=settings.LLM_XAI_MAX_TOKENS,
                     seed=settings.LLM_XAI_SEED,
                     stream=settings.LLM_XAI_STREAM,
-                    response_format=({"type": "json_object"} if settings.LLM_XAI_FORCE_JSON else {}),
+                    response_format=(
+                        {"type": "json_object"} if settings.LLM_XAI_FORCE_JSON else {}
+                    ),
                 )
 
                 raw = completion.choices[0].message.content
 
                 try:
                     result = json.loads(raw)
-                    logger.info(f"XAI response parsed successfully on attempt {attempt + 1}.")
+                    logger.info(
+                        f"XAI response parsed successfully on attempt {attempt + 1}."
+                    )
                     return Result.success(XAIExplanationResult.model_validate(result))
                 except json.JSONDecodeError:
                     pass
 
-                match = re.search(r'\{.*\}', raw, re.DOTALL)
+                match = re.search(r"\{.*\}", raw, re.DOTALL)
                 if match:
                     result = json.loads(match.group())
-                    logger.info(f"XAI response parsed via regex fallback on attempt {attempt + 1}.")
+                    logger.info(
+                        f"XAI response parsed via regex fallback on attempt {attempt + 1}."
+                    )
                     return Result.success(XAIExplanationResult.model_validate(result))
 
-                logger.warning(f"Attempt {attempt + 1}/{max_retries} did not return valid JSON. Retrying...")
+                logger.warning(
+                    f"Attempt {attempt + 1}/{max_retries} did not return valid JSON. Retrying..."
+                )
                 await asyncio.sleep(1)
 
             except Exception as e:
-                logger.error(f"XAI API call failed on attempt {attempt + 1}/{max_retries}: {str(e)}")
+                logger.error(
+                    f"XAI API call failed on attempt {attempt + 1}/{max_retries}: {str(e)}"
+                )
                 await asyncio.sleep(1)
 
         logger.error("All XAI attempts exhausted.")
-        return Result.failure("XAI explanation generation failed after all retry attempts.")
+        return Result.failure(
+            "XAI explanation generation failed after all retry attempts."
+        )

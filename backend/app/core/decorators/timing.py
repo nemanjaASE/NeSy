@@ -3,6 +3,7 @@ import logging
 
 from functools import wraps
 
+
 def timed(name: str):
     """
     Decorator for measuring and logging the execution time
@@ -35,10 +36,7 @@ def timed(name: str):
 
             result = await func(*args, **kwargs)
 
-            logger.debug(
-                f"{name} took "
-                f"{time.perf_counter() - start:.2f}s"
-            )
+            logger.debug(f"{name} took {time.perf_counter() - start:.2f}s")
 
             return result
 

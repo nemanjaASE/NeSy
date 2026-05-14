@@ -3,13 +3,25 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core import settings, setup_logging
-from app.domain import DiseaseScorer, DiseaseFilter, DiseaseRanker, ScoringEngine, SemanticMatcher
-from app.infrastructure import OllamaSymptomExtractor, E5Embedder, Neo4jRepository, OllamaExplainer
+from app.domain import (
+    DiseaseScorer,
+    DiseaseFilter,
+    DiseaseRanker,
+    ScoringEngine,
+    SemanticMatcher,
+)
+from app.infrastructure import (
+    OllamaSymptomExtractor,
+    E5Embedder,
+    Neo4jRepository,
+    OllamaExplainer,
+)
 from app.api import api_router
 
 setup_logging()
 
 logger = logging.getLogger(__name__)
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -18,7 +30,7 @@ async def lifespan(app: FastAPI):
     """
     logger.info(f"--- Starting {settings.PROJECT_NAME} ---")
     db = Neo4jRepository()
-    
+
     try:
         logger.info(f"Environment: {settings.ENVIRONMENT}")
         logger.info("Initializing ML models and database connections...")
@@ -31,6 +43,7 @@ async def lifespan(app: FastAPI):
         logger.info("Initializing Text Embedder model...")
         if settings.HF_HUB_TOKEN:
             from huggingface_hub import login
+
             login(settings.HF_HUB_TOKEN)
             logger.info("Logged into HuggingFace Hub")
 
@@ -47,11 +60,11 @@ async def lifespan(app: FastAPI):
         # Chaching Ontology Symptoms
         logger.info("Pre-loading ontology symptoms into memory...")
         ontology_data_result = await db.get_ontology_symptoms()
-    
+
         # Save labels and vectors separately
         app.state.onto_labels = [item.label for item in ontology_data_result.value]
         app.state.onto_vectors = [item.embedding for item in ontology_data_result.value]
-    
+
         logger.info(f"Loaded {len(app.state.onto_labels)} symptoms from ontology.")
 
         # Initialize Scoring Engine
@@ -60,32 +73,30 @@ async def lifespan(app: FastAPI):
             scorer=DiseaseScorer(),
             filter=DiseaseFilter(),
             ranker=DiseaseRanker(
-                top_k=settings.SCORING_TOP_K,
-                top_excluded=settings.SCORING_TOP_EXCLUDED
-            )
+                top_k=settings.SCORING_TOP_K, top_excluded=settings.SCORING_TOP_EXCLUDED
+            ),
         )
-        app.state.semantic_matcher = SemanticMatcher(threshold=settings.SEMANTIC_MATCHING_THRESHOLD)
-        
+        app.state.semantic_matcher = SemanticMatcher(
+            threshold=settings.SEMANTIC_MATCHING_THRESHOLD
+        )
+
         logger.info("Initialization complete. Application is ready to accept requests.")
 
         yield
-    
+
     finally:
         await db.close()
-    
+
         logger.info(f"--- Shutting down {settings.PROJECT_NAME} ---")
 
-app_kwargs = {
-    "title": settings.PROJECT_NAME,
-    "version": "1.0.0",
-    "lifespan": lifespan
-}
+
+app_kwargs = {"title": settings.PROJECT_NAME, "version": "1.0.0", "lifespan": lifespan}
 
 if settings.ENVIRONMENT == "production":
     logger.info("Configuring FastAPI for PRODUCTION mode. Disabling Swagger UI.")
-    app_kwargs["docs_url"] = None      # Hides /docs
-    app_kwargs["redoc_url"] = None     # Hides /redoc
-    app_kwargs["openapi_url"] = None   # Hides the OpenAPI JSON schema
+    app_kwargs["docs_url"] = None  # Hides /docs
+    app_kwargs["redoc_url"] = None  # Hides /redoc
+    app_kwargs["openapi_url"] = None  # Hides the OpenAPI JSON schema
 else:
     logger.info("Configuring FastAPI for DEVELOPMENT mode. Swagger UI enabled.")
 
@@ -101,9 +112,11 @@ app.add_middleware(
 
 app.include_router(api_router, prefix="/api/v1")
 
+
 @app.get("/")
 async def root():
     return {"message": f"Welcome to {settings.PROJECT_NAME}."}
+
 
 @app.get("/health")
 async def health_check():
@@ -116,5 +129,5 @@ async def health_check():
     return {
         "status": "online",
         "project": settings.PROJECT_NAME,
-        "environment": settings.ENVIRONMENT
+        "environment": settings.ENVIRONMENT,
     }

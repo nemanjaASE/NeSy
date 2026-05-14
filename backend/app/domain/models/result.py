@@ -2,6 +2,7 @@ from typing import TypeVar, Generic, Optional
 
 T = TypeVar("T")
 
+
 class Result(Generic[T]):
     """
     Represents the outcome of an operation that can either succeed or fail.

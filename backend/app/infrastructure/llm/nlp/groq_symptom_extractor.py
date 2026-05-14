@@ -7,7 +7,8 @@ from ..prompt_loader import load_prompt
 from ..constants import SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER
 
 logger = logging.getLogger(__name__)
-    
+
+
 class GroqSymptomExtractor(NLPExtractor):
     """
     NLPExtractor implementation backed by the Groq Cloud API.
@@ -43,22 +44,29 @@ class GroqSymptomExtractor(NLPExtractor):
             chat_completion = await self.client.chat.completions.create(
                 messages=[
                     {"role": "system", "content": self.system_prompt},
-                    {"role": "user",   "content": text}
+                    {"role": "user", "content": text},
                 ],
                 model=self.model,
                 temperature=settings.LLM_EXTRACTION_TEMPERATURE,
                 top_p=settings.LLM_EXTRACTION_TOP_P,
                 max_tokens=settings.LLM_EXTRACTION_MAX_TOKENS,
                 seed=settings.LLM_EXTRACTION_SEED,
-                response_format=({"type": "json_object"} if settings.LLM_EXTRACTION_FORCE_JSON else {})
-
+                response_format=(
+                    {"type": "json_object"}
+                    if settings.LLM_EXTRACTION_FORCE_JSON
+                    else {}
+                ),
             )
 
             content = chat_completion.choices[0].message.content
             data = json.loads(content)
 
-            return Result(ExtractedSymptoms(present=data.get("present", []), absent=data.get("absent", [])))
-        
+            return Result(
+                ExtractedSymptoms(
+                    present=data.get("present", []), absent=data.get("absent", [])
+                )
+            )
+
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse Groq response as JSON: {str(e)}")
             return Result.failure(f"Invalid JSON response from Groq: {str(e)}")

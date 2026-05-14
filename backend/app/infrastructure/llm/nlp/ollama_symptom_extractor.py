@@ -9,6 +9,7 @@ from ..constants import SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER
 
 logger = logging.getLogger(__name__)
 
+
 class OllamaSymptomExtractor(NLPExtractor):
     """
     NLPExtractor implementation backed by a locally hosted Ollama instance.
@@ -20,8 +21,7 @@ class OllamaSymptomExtractor(NLPExtractor):
 
     def __init__(self):
         self.client = AsyncOpenAI(
-            base_url=settings.LLM_BASE_URL,
-            api_key=settings.LLM_API_KEY
+            base_url=settings.LLM_BASE_URL, api_key=settings.LLM_API_KEY
         )
         self.model = settings.LLM_EXTRACTION_MODEL_NAME
         self.system_prompt = load_prompt(SYMPTOM_EXTRACTION_PROMPT, NLP_SUBFOLDER)
@@ -48,7 +48,7 @@ class OllamaSymptomExtractor(NLPExtractor):
                 model=self.model,
                 messages=[
                     {"role": "system", "content": self.system_prompt},
-                    {"role": "user",   "content": text}
+                    {"role": "user", "content": text},
                 ],
                 temperature=settings.LLM_EXTRACTION_TEMPERATURE,
                 top_p=settings.LLM_EXTRACTION_TOP_P,
@@ -59,15 +59,19 @@ class OllamaSymptomExtractor(NLPExtractor):
 
             raw = completion.choices[0].message.content
 
-            match = re.search(r'\{.*\}', raw, re.DOTALL)
+            match = re.search(r"\{.*\}", raw, re.DOTALL)
             if not match:
                 logger.warning("No JSON found in Ollama response.")
                 return Result.failure("No JSON object found in Ollama response.")
 
             result = json.loads(match.group())
 
-            return Result.success(ExtractedSymptoms(present=result.get("present", []), absent=result.get("absent", [])))
-        
+            return Result.success(
+                ExtractedSymptoms(
+                    present=result.get("present", []), absent=result.get("absent", [])
+                )
+            )
+
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse Ollama response as JSON: {str(e)}")
             return Result.failure(f"Invalid JSON in Ollama response: {str(e)}")

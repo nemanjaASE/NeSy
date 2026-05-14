@@ -6,6 +6,7 @@ from ..models.result import Result
 
 logger = logging.getLogger(__name__)
 
+
 class SemanticMatcher:
     """
     Domain Service responsible for mapping symptoms using vector similarity.
@@ -22,11 +23,11 @@ class SemanticMatcher:
     def find_best_matches(
         self,
         present_query_embeddings: EmbeddingMatrix,
-        absent_query_embeddings:  EmbeddingMatrix,
-        onto_labels:  list[str],
+        absent_query_embeddings: EmbeddingMatrix,
+        onto_labels: list[str],
         onto_vectors: EmbeddingMatrix,
         present_terms: list[str],
-        absent_terms:  list[str]
+        absent_terms: list[str],
     ) -> Result[list[SemanticMatchResult]]:
         """
         Map each patient-reported symptom to its closest ontological term
@@ -48,16 +49,18 @@ class SemanticMatcher:
             or failure if ontology vectors are missing.
         """
         if not onto_vectors:
-            logger.error("Ontology vectors are empty — cannot perform semantic matching.")
+            logger.error(
+                "Ontology vectors are empty — cannot perform semantic matching."
+            )
             return Result.failure("Ontology vectors are empty.")
 
         try:
-            o_vecs  = np.array(onto_vectors)
+            o_vecs = np.array(onto_vectors)
             results = []
 
             for embeddings, terms, kind in [
                 (present_query_embeddings, present_terms, "present"),
-                (absent_query_embeddings,  absent_terms,  "absent"),
+                (absent_query_embeddings, absent_terms, "absent"),
             ]:
                 if not embeddings:
                     continue
@@ -66,16 +69,18 @@ class SemanticMatcher:
                 matrix = cosine_similarity(q_vecs, o_vecs)
 
                 for i, term in enumerate(terms):
-                    best_idx   = int(np.argmax(matrix[i]))
+                    best_idx = int(np.argmax(matrix[i]))
                     confidence = float(matrix[i][best_idx])
 
-                    results.append(SemanticMatchResult(
-                        input_symptom=term,
-                        mapped_symptom=onto_labels[best_idx],
-                        confidence=confidence,
-                        kind=kind,
-                        is_match=confidence >= self.threshold
-                    ))
+                    results.append(
+                        SemanticMatchResult(
+                            input_symptom=term,
+                            mapped_symptom=onto_labels[best_idx],
+                            confidence=confidence,
+                            kind=kind,
+                            is_match=confidence >= self.threshold,
+                        )
+                    )
 
             logger.info(f"Semantic matching complete. Matched {len(results)} symptoms.")
             return Result.success(results)
@@ -85,8 +90,7 @@ class SemanticMatcher:
             return Result.failure(f"Semantic matching failed: {str(e)}")
 
     def filter_matched_symptoms(
-        self,
-        matches: list[SemanticMatchResult]
+        self, matches: list[SemanticMatchResult]
     ) -> ExtractedSymptoms:
         """
         Filter semantic match results by confidence threshold and clinical role.
@@ -101,8 +105,12 @@ class SemanticMatcher:
         Returns:
             ExtractedSymptoms: Filtered present and absent ontological symptom terms.
         """
-        present = [m.mapped_symptom for m in matches if m.is_match and m.kind == "present"]
-        absent  = [m.mapped_symptom for m in matches if m.is_match and m.kind == "absent"]
+        present = [
+            m.mapped_symptom for m in matches if m.is_match and m.kind == "present"
+        ]
+        absent = [
+            m.mapped_symptom for m in matches if m.is_match and m.kind == "absent"
+        ]
 
         logger.debug(f"Filtered matches | present={len(present)}, absent={len(absent)}")
-        return ExtractedSymptoms(present=present, absent=absent) 
+        return ExtractedSymptoms(present=present, absent=absent)

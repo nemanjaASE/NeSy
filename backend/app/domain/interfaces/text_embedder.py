@@ -2,6 +2,7 @@ from typing import List, Protocol
 from ..models.result import Result
 from ..models.symptom import EmbeddingMatrix
 
+
 class TextEmbedder(Protocol):
     """
     Interface defining the contract for generating vector embeddings from text.
@@ -11,9 +12,7 @@ class TextEmbedder(Protocol):
     """
 
     async def generate_embeddings(
-        self,
-        texts: List[str],
-        prefix: str = "query: "
+        self, texts: List[str], prefix: str = "query: "
     ) -> Result[EmbeddingMatrix]:
         """
         Asynchronously generate vector embeddings for a list of input texts.
@@ -31,12 +30,9 @@ class TextEmbedder(Protocol):
         Returns:
             Result[EmbeddingMatrix]: A list of embedding vectors, one per input text.
         """
-        
+
     async def generate_embeddings_split(
-        self,
-        present_terms: list[str],
-        absent_terms:  list[str],
-        prefix: str = "query: "
+        self, present_terms: list[str], absent_terms: list[str], prefix: str = "query: "
     ) -> Result[tuple[EmbeddingMatrix, EmbeddingMatrix]]:
         """
         Generate embeddings for present and absent symptom terms in a single model call.

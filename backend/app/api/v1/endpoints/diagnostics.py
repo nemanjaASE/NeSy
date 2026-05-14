@@ -4,6 +4,7 @@ from app.application import DiagnosticCoordinator
 
 router = APIRouter()
 
+
 def get_coordinator(request: Request) -> DiagnosticCoordinator:
     return DiagnosticCoordinator(
         nlp_extractor=request.app.state.nlp_extractor,
@@ -11,8 +12,9 @@ def get_coordinator(request: Request) -> DiagnosticCoordinator:
         matcher=request.app.state.semantic_matcher,
         scoring_engine=request.app.state.scoring_engine,
         repository=request.app.state.db,
-        xai_explainer=request.app.state.xai_explainer
+        xai_explainer=request.app.state.xai_explainer,
     )
+
 
 @router.post("/diagnose", response_model=DiagnosticResponseDTO)
 async def perform_diagnosis(
@@ -30,5 +32,5 @@ async def perform_diagnosis(
     return await coordinator.run_full_diagnostic_pipeline(
         text=payload.text,
         onto_labels=request.app.state.onto_labels,
-        onto_vectors=request.app.state.onto_vectors
+        onto_vectors=request.app.state.onto_vectors,
     )

@@ -3,6 +3,7 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
+
 def load_prompt(filename: str, subfolder: str) -> str:
     """
     Load a prompt template from a subfolder's prompts directory.
@@ -21,7 +22,7 @@ def load_prompt(filename: str, subfolder: str) -> str:
     if not file_path.exists():
         logger.error(f"Prompt file not found: {file_path}")
         return ""
-    
+
     try:
         return file_path.read_text(encoding="utf-8").strip()
     except Exception as e:

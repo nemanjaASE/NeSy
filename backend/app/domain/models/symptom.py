@@ -4,6 +4,7 @@ from typing import List, Literal
 EmbeddingVector = List[float]
 EmbeddingMatrix = List[EmbeddingVector]
 
+
 class SymptomOntologyData(BaseModel):
     """
     Represents a single symptom entry from the medical ontology knowledge graph.
@@ -14,8 +15,9 @@ class SymptomOntologyData(BaseModel):
                    used for semantic similarity matching.
     """
 
-    label:     str
+    label: str
     embedding: EmbeddingVector
+
 
 class SemanticMatchResult(BaseModel):
     """
@@ -30,11 +32,12 @@ class SemanticMatchResult(BaseModel):
         is_match:       True if the confidence score meets or exceeds the similarity threshold.
     """
 
-    input_symptom:  str
+    input_symptom: str
     mapped_symptom: str
-    confidence:     float = Field(..., ge=0.0, le=1.0)
-    kind:           Literal["present", "absent"]
-    is_match:       bool
+    confidence: float = Field(..., ge=0.0, le=1.0)
+    kind: Literal["present", "absent"]
+    is_match: bool
+
 
 class ExtractedSymptoms(BaseModel):
     """
@@ -44,6 +47,6 @@ class ExtractedSymptoms(BaseModel):
         present: Symptoms the patient explicitly reports having.
         absent:  Symptoms the patient explicitly denies having.
     """
-    present: List[str]
-    absent:  List[str]
 
+    present: List[str]
+    absent: List[str]

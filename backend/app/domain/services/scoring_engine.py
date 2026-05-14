@@ -32,9 +32,7 @@ class ScoringEngine:
         self.ranker = ranker
 
     def evaluate(
-        self,
-        raw_records:          list[RawDiseaseMatch],
-        total_input_symptoms: int
+        self, raw_records: list[RawDiseaseMatch], total_input_symptoms: int
     ) -> Result[DiagnosisResult]:
         """
         Run the full disease candidate evaluation pipeline.
@@ -53,11 +51,13 @@ class ScoringEngine:
             return Result.failure("No disease candidates to evaluate.")
 
         try:
-            scored             = self.scorer.score_all(raw_records, total_input_symptoms)
+            scored = self.scorer.score_all(raw_records, total_input_symptoms)
             included, excluded = self.filter.split(scored, raw_records)
-            result             = self.ranker.rank(included, excluded)
+            result = self.ranker.rank(included, excluded)
 
-            logger.info(f"Scoring complete. Included: {len(result.included)}, Excluded: {len(result.excluded)}.")
+            logger.info(
+                f"Scoring complete. Included: {len(result.included)}, Excluded: {len(result.excluded)}."
+            )
             return Result.success(result)
 
         except Exception as e:

@@ -5,16 +5,17 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
+
 class Settings(BaseSettings):
     # --- Core settings ---
     PROJECT_NAME: str
     ENVIRONMENT: str
-    
+
     # --- Neo4j
     NEO4J_URI: str
     NEO4J_USERNAME: str
     NEO4J_PASSWORD: str
-    
+
     # --- LLM General
     LLM_API_KEY: str
     LLM_BASE_URL: str
@@ -52,9 +53,9 @@ class Settings(BaseSettings):
     # --- Scoring engine settings
     SCORING_TOP_K: int
     SCORING_TOP_EXCLUDED: int
-        
+
     # --- CORS
-    ALLOWED_ORIGINS: str 
+    ALLOWED_ORIGINS: str
     ALLOWED_METHODS: str
     ALLOWED_HEADERS: str
     ALLOW_CREDENTIALS: bool
@@ -74,7 +75,8 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file=os.path.join(BASE_DIR, ".env"),
         env_file_encoding="utf-8",
-        case_sensitive=True
+        case_sensitive=True,
     )
+
 
 settings = Settings()

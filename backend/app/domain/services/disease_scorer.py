@@ -1,11 +1,10 @@
 from typing import List
 from ..models.disease import RawDiseaseMatch, DiseaseInference
 
+
 class DiseaseScorer:
     def score(
-        self,
-        rec: RawDiseaseMatch,
-        total_input_symptoms: int
+        self, rec: RawDiseaseMatch, total_input_symptoms: int
     ) -> DiseaseInference:
         total = rec.total_symptom_count if rec.total_symptom_count > 0 else 1
 
@@ -22,9 +21,7 @@ class DiseaseScorer:
         )
 
     def score_all(
-        self,
-        raw_records: List[RawDiseaseMatch],
-        total_input_symptoms: int
+        self, raw_records: List[RawDiseaseMatch], total_input_symptoms: int
     ) -> List[DiseaseInference]:
         if not raw_records or total_input_symptoms == 0:
             return []

@@ -3,8 +3,9 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-QUERIES_DIR  = Path(__file__).parent
+QUERIES_DIR = Path(__file__).parent
 _QUERY_CACHE: dict[str, str] = {}
+
 
 def get_query(query_name: str) -> str:
     """

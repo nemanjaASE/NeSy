@@ -7,6 +7,7 @@ from .queries.get_query import get_query
 
 logger = logging.getLogger(__name__)
 
+
 class Neo4jRepository:
     """
     Data access layer for the Neo4j graph database.
@@ -18,10 +19,10 @@ class Neo4jRepository:
     """
 
     def __init__(self):
-        self.uri      = settings.NEO4J_URI
-        self.user     = settings.NEO4J_USERNAME
+        self.uri = settings.NEO4J_URI
+        self.user = settings.NEO4J_USERNAME
         self.password = settings.NEO4J_PASSWORD
-        self.driver   = None
+        self.driver = None
 
     async def connect(self) -> None:
         """
@@ -35,12 +36,11 @@ class Neo4jRepository:
         """
         try:
             self.driver = AsyncGraphDatabase.driver(
-                self.uri,
-                auth=(self.user, self.password)
+                self.uri, auth=(self.user, self.password)
             )
             await self.driver.verify_connectivity()
             logger.info("Connected to Neo4j.")
-        except Exception as e:
+        except Exception:
             logger.exception("Failed to connect to Neo4j.")
             raise
 
@@ -75,7 +75,8 @@ class Neo4jRepository:
                 result = await session.run(query)
                 symptoms = [
                     SymptomOntologyData(label=r["label"], embedding=r["embedding"])
-                    async for r in result if r["embedding"]
+                    async for r in result
+                    if r["embedding"]
                 ]
 
             logger.debug(f"Fetched {len(symptoms)} ontology symptoms from Neo4j.")
@@ -89,7 +90,7 @@ class Neo4jRepository:
     async def infer_diseases(
         self,
         present_symptoms: list[str],
-        absent_symptoms:  list[str],
+        absent_symptoms: list[str],
         min_match: int = 2,
     ) -> Result[list[RawDiseaseMatch]]:
         """
@@ -123,7 +124,7 @@ class Neo4jRepository:
                     has_symptom=HAS_SYMPTOM_REL,
                     present_symptoms=present_symptoms,
                     absent_symptoms=absent_symptoms,
-                    min_match=min_match
+                    min_match=min_match,
                 )
                 records = await result.data()
 
