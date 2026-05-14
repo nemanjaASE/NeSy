@@ -94,13 +94,21 @@ app_kwargs = {"title": settings.PROJECT_NAME, "version": "1.0.0", "lifespan": li
 
 if settings.ENVIRONMENT == "production":
     logger.info("Configuring FastAPI for PRODUCTION mode. Disabling Swagger UI.")
-    app_kwargs["docs_url"] = None  # Hides /docs
-    app_kwargs["redoc_url"] = None  # Hides /redoc
-    app_kwargs["openapi_url"] = None  # Hides the OpenAPI JSON schema
+    app = FastAPI(
+        title=settings.PROJECT_NAME,
+        version="1.0.0",
+        lifespan=lifespan,
+        docs_url=None,
+        redoc_url=None,
+        openapi_url=None,
+    )
 else:
     logger.info("Configuring FastAPI for DEVELOPMENT mode. Swagger UI enabled.")
-
-app = FastAPI(**app_kwargs)
+    app = FastAPI(
+        title=settings.PROJECT_NAME,
+        version="1.0.0",
+        lifespan=lifespan,
+    )
 
 app.add_middleware(
     CORSMiddleware,

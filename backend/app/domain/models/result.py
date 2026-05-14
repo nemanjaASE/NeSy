@@ -26,7 +26,7 @@ class Result(Generic[T]):
     def value(self) -> T:
         if self._error:
             raise ValueError(f"Result is a failure: {self._error}")
-        return self._value
+        return self._value # type: ignore[return-value]
 
     @property
     def error(self) -> str:

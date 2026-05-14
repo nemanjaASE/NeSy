@@ -1,5 +1,6 @@
 import numpy as np
 import logging
+from typing import Literal, cast
 from sklearn.metrics.pairwise import cosine_similarity
 from ..models.symptom import SemanticMatchResult, EmbeddingMatrix, ExtractedSymptoms
 from ..models.result import Result
@@ -59,8 +60,8 @@ class SemanticMatcher:
             results = []
 
             for embeddings, terms, kind in [
-                (present_query_embeddings, present_terms, "present"),
-                (absent_query_embeddings, absent_terms, "absent"),
+                (present_query_embeddings, present_terms, cast(Literal["present", "absent"], "present")),
+                (absent_query_embeddings,  absent_terms,  cast(Literal["present", "absent"], "absent")),
             ]:
                 if not embeddings:
                     continue

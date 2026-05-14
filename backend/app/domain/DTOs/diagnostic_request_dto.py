@@ -8,5 +8,6 @@ class DiagnosticRequestDTO(BaseModel):
 
     text: str = Field(
         ...,
-        example="I have a rash on my chest and arms, it itches and is red — but no fever, no fatigue, no joint pain.",
+        examples=["I have a rash on my chest and arms, it itches and is red — but no fever, no fatigue, no joint pain."],
     )
+    
