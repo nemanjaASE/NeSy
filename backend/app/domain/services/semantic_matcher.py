@@ -60,8 +60,16 @@ class SemanticMatcher:
             results = []
 
             for embeddings, terms, kind in [
-                (present_query_embeddings, present_terms, cast(Literal["present", "absent"], "present")),
-                (absent_query_embeddings,  absent_terms,  cast(Literal["present", "absent"], "absent")),
+                (
+                    present_query_embeddings,
+                    present_terms,
+                    cast(Literal["present", "absent"], "present"),
+                ),
+                (
+                    absent_query_embeddings,
+                    absent_terms,
+                    cast(Literal["present", "absent"], "absent"),
+                ),
             ]:
                 if not embeddings:
                     continue

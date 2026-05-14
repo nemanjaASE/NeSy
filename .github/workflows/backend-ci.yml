@@ -80,10 +80,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install bandit safety
+          pip install bandit pip-audit
 
       - name: Run Bandit
         run: bandit -r app/
 
-      - name: Run Safety
-        run: safety check -r requirements.txt
+      - name: Run pip-audit
+        run: pip-audit -r requirements.txt
