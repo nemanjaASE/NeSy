@@ -151,7 +151,7 @@ jobs:
         run: |
           fastapi dev app/main.py &
           echo "Waiting for server to start..."
-          sleep 15
+          sleep 100
 
       - name: Check health endpoint
         run: |
