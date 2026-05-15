@@ -39,6 +39,18 @@ Standard NLP metrics were used to assess extraction quality:
 | Recall    | ✅ ≥ 80%          | TP / (TP + FN) — or 0 if no symptoms expected                 |
 | F1 Score  | ✅ ≥ 80%          | 2 × (Precision × Recall) / (Precision + Recall) — or 0 if both are 0 |
 
+### ⚙️ Test Environment
+
+| Property   | Value                                               |
+|------------|-----------------------------------------------------|
+| OS         | Windows-11-10.0.26200-SP0                           |
+| CPU        | AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD  |
+| RAM        | 17.1 GB                                             |
+| GPU        | NVIDIA GeForce RTX 3060                             |
+| VRAM       | 12.0 GB                                             |
+| Python     | 3.12.9                                              |
+| Test Cases | 100                                                 |
+
 ## 🧪 Test 1
 
 | Field          | Value                                  |
@@ -71,6 +83,13 @@ Standard NLP metrics were used to assess extraction quality:
 | Precision | 0.747 |
 | Recall    | 0.730 |
 | F1 Score  | 0.731 |
+
+### ⏱️ Performance
+
+| Metric        | Value   |
+|---------------|---------|
+| Total Time    | 39.14s  |
+| Avg/Case      | 0.39s   |
 
 ### 💬 Commentary
 
@@ -110,6 +129,13 @@ The `llama3.2:3B` model offers surprisingly robust baseline extraction capabilit
 | Recall    | 0.806 |
 | F1 Score  | 0.800 |
 
+### ⏱️ Performance
+
+| Metric        | Value   |
+|---------------|---------|
+| Total Time    | 57.39s  |
+| Avg/Case      | 0.57s   |
+
 ### 💬 Commentary
 
 The `llama3:8B` model achieved a solid **80% F1-score** across the **100 test cases**. While it excels at identifying standard symptoms like `fever` and `headache`, it struggles with semantic mapping—often extracting a clinically accurate term (e.g., `paresthesia`) that doesn't perfectly match the expected "gold standard" label (e.g., `hypoesthesia`), or failing to split compound descriptions into separate entities. Despite these mapping nuances, the **zero negation errors** indicate high reliability in distinguishing between present and absent symptoms.
@@ -148,6 +174,13 @@ The `llama3:8B` model achieved a solid **80% F1-score** across the **100 test ca
 | Precision | 0.784 |
 | Recall    | 0.810 |
 | F1 Score  | 0.790 |
+
+### ⏱️ Performance
+
+| Metric        | Value   |
+|---------------|---------|
+| Total Time    | 78.96s  |
+| Avg/Case      | 0.79s   |
 
 ### 💬 Commentary
 
@@ -189,6 +222,13 @@ The `mistral-nemo:12b` model achieved a nearly identical **79% F1-score**, showi
 | Recall    | 0.825 |
 | F1 Score  | 0.825 |
 
+### ⏱️ Performance
+
+| Metric        | Value   |
+|---------------|---------|
+| Total Time    | 95.29s  |
+| Avg/Case      | 0.95s   |
+
 ### 💬 Commentary
 
 The `qwen2.5:14b` model is the current top performer with a **0.825 F1-score**, showing a superior ability to map descriptive symptoms into formal clinical terminology while maintaining perfect accuracy in negation handling, though it still occasionally penalizes itself by grouping separate symptoms into single compound terms.
@@ -228,6 +268,13 @@ The `qwen2.5:14b` model is the current top performer with a **0.825 F1-score**, 
 | Recall    | 0.783 |
 | F1 Score  | 0.772 |
 
+### ⏱️ Performance
+
+| Metric        |  Value   |
+|---------------|----------|
+| Total Time    | 115.82s  |
+| Avg/Case      |  1.16s   |
+
 ### 💬 Commentary
 
 The `phi4:14B model` demonstrates high clinical intelligence with an **F1-score of 0.772**, though it frequently loses points by using advanced medical terminology (e.g., `presyncope` instead of `faint`) that causes mismatches with your dataset's expected labels. While it excels at handling negations and complex symptoms, its primary challenge is over-specification, as it often provides more detailed anatomical descriptions than your ground truth requires.
@@ -265,13 +312,20 @@ The `phi4:14B model` demonstrates high clinical intelligence with an **F1-score 
 
 | Metric    | Score |
 |-----------|-------|
-| Precision | 0.746 |
-| Recall    | 0.799 |
-| F1 Score  | 0.763 |
+| Precision | 0.749 |
+| Recall    | 0.806 |
+| F1 Score  | 0.769 |
+
+### ⏱️ Performance
+
+| Metric        |  Value   |
+|---------------|----------|
+| Total Time    | 206.58s  |
+| Avg/Case      |  2.07s   |
 
 ### 💬 Commentary
 
-The `llama-4-scout-17b` model shows a solid baseline for symptom extraction with an average **F1-score of 0.763**, but it frequently encounters "False Positives" due to its high clinical precision. Much like the previous model, it tends to extract more detailed or technical terms (e.g., `presyncope` or `hyperhidrosis`) when the ground truth expects simpler descriptions (e.g., `lightheadedness` or `diaphoresis`). While its negation detection is nearly perfect, the overall score is primarily capped by this semantic gap between the model's medical vocabulary and your dataset's specific labels.
+The `llama-4-scout-17b` model shows a solid baseline for symptom extraction with an average **F1-score of 0.769**, but it frequently encounters "False Positives" due to its high clinical precision. Much like the previous model, it tends to extract more detailed or technical terms (e.g., `presyncope` or `hyperhidrosis`) when the ground truth expects simpler descriptions (e.g., `lightheadedness` or `diaphoresis`). While its negation detection is nearly perfect, the overall score is primarily capped by this semantic gap between the model's medical vocabulary and your dataset's specific labels.
 
 ## 🧪 Test 7
 
@@ -297,25 +351,32 @@ The `llama-4-scout-17b` model shows a solid baseline for symptom extraction with
 
 | Metric    | Score |
 |-----------|-------|
-| Precision | 0.697 |
-| Recall    | 0.701 |
-| F1 Score  | 0.691 |
+| Precision | 0.695 |
+| Recall    | 0.697 |
+| F1 Score  | 0.689 |
+
+### ⏱️ Performance
+
+| Metric        |  Value   |
+|---------------|----------|
+| Total Time    | 362.56s  |
+| Avg/Case      |  3.63s   |
 
 ### 💬 Commentary
 
-The `gpt-oss-120b` model achieves an average **F1-score of 0.691**, making it the most descriptive but least "label-compliant" model among those tested. Its primary failure mode is over-descriptive labeling, where it frequently includes anatomical details (e.g., `severe abdominal pain` or `arm rash`) that result in total mismatches with the simpler ground truth labels (e.g., `abdominal pain` or `rash`). While its extraction logic is **physically accurate** and **highly** sensitive to nuances like `productive cough` or `high fever`, its lack of constraint to your specific ontology leads to significantly lower precision and recall compared to the **llama** or **phi** models
+The `gpt-oss-120b` model achieves an average **F1-score of 0.689**, making it the most descriptive but least "label-compliant" model among those tested. Its primary failure mode is over-descriptive labeling, where it frequently includes anatomical details (e.g., `severe abdominal pain` or `arm rash`) that result in total mismatches with the simpler ground truth labels (e.g., `abdominal pain` or `rash`). While its extraction logic is **physically accurate** and **highly** sensitive to nuances like `productive cough` or `high fever`, its lack of constraint to your specific ontology leads to significantly lower precision and recall compared to the **llama** or **phi** models
 
 ## 📊 Overall Results
 
-| Model                                    | Size | Type  | Precision | Recall | F1    |
-|------------------------------------------|------|-------|-----------|--------|-------|
-| llama3.2:3b                              | 3B   | Local | 0.747     | 0.730  | 0.731 |
-| llama3:8b                                | 8B   | Local | 0.809     | 0.806  | 0.800 |
-| mistral-nemo:12b                         | 12B  | Local | 0.784     | 0.810  | 0.790 |
-| qwen2.5:14b                              | 14B  | Local | 0.835     | 0.825  | 0.825 |
-| phi4:14b                                 | 14B  | Local | 0.771     | 0.783  | 0.772 |
-| meta-llama/llama-4-scout-17b-16e-instruct| 17B  | Cloud | 0.746     | 0.799  | 0.763 |
-| openai/gpt-oss-120b                      | 120B | Cloud | 0.697     | 0.701  | 0.691 |
+| Model                                    | Size | Type  | Precision | Recall | F1    | Total time (s) | Avg/case (s) |
+|------------------------------------------|------|-------|-----------|--------|-------|----------------|--------------|
+| llama3.2:3b                              | 3B   | Local | 0.747     | 0.730  | 0.731 |     39.14      |     0.39     |
+| llama3:8b                                | 8B   | Local | 0.809     | 0.806  | 0.800 |     57.39      |     0.57     |
+| mistral-nemo:12b                         | 12B  | Local | 0.784     | 0.810  | 0.790 |     78.96      |     0.79     |
+| qwen2.5:14b                              | 14B  | Local | 0.835     | 0.825  | 0.825 |     95.29      |     0.95     |
+| phi4:14b                                 | 14B  | Local | 0.771     | 0.783  | 0.772 |     115.82     |     1.16     |
+| meta-llama/llama-4-scout-17b-16e-instruct| 17B  | Cloud | 0.749     | 0.806  | 0.769 |     206.58     |     2.07     |
+| openai/gpt-oss-120b                      | 120B | Cloud | 0.695     | 0.697  | 0.689 |     362.56     |     3.63     |
 
 > ✅ `qwen2.5:14b` achieved the highest F1 score across all tested models, surpassing the 80% target threshold and outperforming models up to 8x larger.
 
