@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "openai/gpt-oss-120b",
+    "date": "2026-05-16 17:19:01",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 21.14
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "excluded_conditions": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "West Nile encephalitis shows a strong clinical correlation with the patient's presentation, matching all reported symptoms: headache, confusion, coma, stiff neck, and high fever. The disease profile also includes additional manifestations such as paralysis, tremor, disorientation, convulsion, muscle weakness, paresthesia, and stupor, which were not reported, accounting for the moderate disease coverage. No mandatory symptoms were denied by the patient, making the condition clinically consistent with the reported absences. The matched symptom set reflects a typical encephalitic picture with fever and meningeal irritation, supporting West Nile as the leading consideration.",
+      "differential_comparison": "Powassan encephalitis shares four of the five reported symptoms but lacks the high fever in its matched list and has a lower overall symptom overlap, resulting in a less specific alignment. Eastern equine encephalitis matches only three symptoms (headache, coma, high fever) and misses key meningeal signs such as stiff neck, reducing its clinical relevance. Both alternatives therefore have fewer concordant findings and broader missing symptom profiles, placing them behind West Nile encephalitis.",
+      "exclusion_criteria": "Japanese encephalitis and St. Louis encephalitis were excluded because the patient explicitly denied spastic paralysis, a symptom required for these diagnoses. The presence of this blocking symptom makes the diseases inconsistent with the patient's reported absences, leading to their removal from consideration."
+    },
+    "recommendation": "Next steps: consult infectious disease and neurology specialists; obtain West Nile virus IgM serology, PCR testing of serum and CSF, comprehensive CSF analysis, brain MRI, and EEG. Verify the presence or absence of the following missing symptoms during physical examination: paralysis, tremor, muscle weakness, and stupor."
+  }
+}

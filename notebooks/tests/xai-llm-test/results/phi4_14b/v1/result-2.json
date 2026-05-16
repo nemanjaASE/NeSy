@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "phi4:14b",
+    "date": "2026-05-16 17:05:09",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 22.12
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "moderate",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "Hepatitis E is identified as the most likely disease due to its highest normalized score among those with clinically consistent reported absences. The patient's symptoms strongly correlate with hepatitis E, covering all input symptoms and matching a significant portion of known disease symptoms (45.5%). There are no blocking symptoms present, which supports this diagnosis. The matched symptoms include fatigue, nausea, jaundice, acholic stool, and dark urine, while missing symptoms like abdominal pain and fever do not detract from the clinical correlation.",
+      "differential_comparison": "Hepatitis A, B, and C have lower normalized scores compared to hepatitis E but are still considered differentials due to their clinically consistent reported absences. These diseases share similar matched symptoms (fatigue, nausea, jaundice, acholic stool) with hepatitis E but cover a slightly lower percentage of known disease symptoms (40%). The absence of blocking symptoms in these conditions does not elevate them above hepatitis E, which has a higher clinical specificity and symptom profile alignment.",
+      "exclusion_criteria": "Hepatitis D is excluded due to the presence of blocking symptoms such as drowsiness and confusion that were reported absent by the patient. These symptoms are typically required for diagnosing hepatitis D, making it inconsistent with the patient's reported absences."
+    },
+    "recommendation": "Next steps include consulting a hepatologist for further evaluation of hepatitis E. Recommended lab tests should focus on liver function tests (LFTs), viral serologies specific to hepatitis E, and possibly an ultrasound or CT scan of the abdomen. The physician should verify missing symptoms such as abdominal pain, joint pain, fever, and loss of appetite through physical examination."
+  }
+}

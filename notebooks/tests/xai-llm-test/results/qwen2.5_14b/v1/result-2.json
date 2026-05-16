@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "qwen2.5:14b",
+    "date": "2026-05-16 17:11:26",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 21.87
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "moderate",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "Hepatitis E shows a strong clinical correlation with the patient's symptoms, including fatigue, nausea, jaundice, acholic stool, and dark urine. The absence of reported drowsiness or confusion is consistent with hepatitis E rather than hepatitis D, which requires these markers to be present for diagnosis. Hepatitis E has a higher disease coverage and input coverage compared to other potential candidates.",
+      "differential_comparison": "Hepatitis A, B, and C also show clinical consistency but have lower disease coverage and input coverage scores. They share similar symptoms such as fatigue, nausea, jaundice, and acholic stool, but lack additional specific markers found in hepatitis E. Hepatitis D is excluded due to the presence of blocking symptoms (drowsiness and confusion) that are not reported by the patient.",
+      "exclusion_criteria": "Hepatitis D was excluded because it requires drowsiness and confusion as mandatory clinical markers, which were explicitly negated by the patient."
+    },
+    "recommendation": "Next steps: Consult a hepatologist for further evaluation. Consider lab tests including hepatitis E virus antibody testing. Verify symptoms such as abdominal pain, joint pain, fever, loss of appetite, vomiting, and liver inflammation to confirm diagnosis."
+  }
+}

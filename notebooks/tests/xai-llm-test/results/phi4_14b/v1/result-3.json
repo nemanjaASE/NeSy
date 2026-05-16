@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "phi4:14b",
+    "date": "2026-05-16 17:05:38",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 24.37
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "excluded_conditions": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "West Nile encephalitis is identified as the most likely condition due to its highest Normalized Score among diseases with a clinically consistent profile, indicating a strong clinical correlation. The patient's symptoms align well with those of West Nile encephalitis, covering 41.7% of the disease's known symptoms and matching 100% of the patient's reported symptoms. Importantly, there are no blocking symptoms that contradict this diagnosis, supporting its consistency with the patient's condition.",
+      "differential_comparison": "Powassan encephalitis is considered a differential due to its high Normalized Score and clinically consistent profile but has lower disease coverage at 40% compared to West Nile encephalitis. Eastern equine encephalitis, while also having a consistent profile, shows even less alignment with the patient's symptoms, covering only 42.9% of known symptoms and matching 60% of input symptoms. These factors contribute to their lower clinical alignment relative to West Nile encephalitis.",
+      "exclusion_criteria": "Japanese encephalitis and St. Louis encephalitis were excluded due to the presence of blocking symptoms, specifically 'spastic paralysis,' which the patient reported as absent. This absence is a critical marker for these diseases, leading to their exclusion from consideration."
+    },
+    "recommendation": "Next steps should include consultation with an infectious disease specialist familiar with viral encephalitides and laboratory tests such as serology or PCR specific to West Nile virus (URI: http://purl.obolibrary.org/obo/DOID_2365). Clinicians should also verify the presence of 'paralysis,' 'tremor,' 'disorientation,' 'convulsion,' 'muscle weakness,' 'paresthesia,' and 'stupor' to further refine the diagnosis."
+  }
+}

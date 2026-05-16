@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "llama3:8b",
+    "date": "2026-05-16 16:56:23",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 17.08
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "high",
+    "differentials": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "excluded_conditions": [
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, West Nile encephalitis, shows a strong clinical correlation with the reported symptoms, including headache, confusion, coma, and stiff neck. The absence of spastic paralysis, which is typically required for Japanese and St. Louis encephalitis, suggests that these diseases are less likely. The high Normalized Score reflects the specificity of the matched symptoms.",
+      "differential_comparison": "While Japanese and St. Louis encephalitis also match some of the reported symptoms, they were downgraded due to the presence of blocking symptoms like spastic paralysis. In contrast, West Nile encephalitis does not require these symptoms, making it a more plausible candidate.",
+      "exclusion_criteria": "Powassan and Eastern equine encephalitis were excluded because they do not match the reported symptoms as well as West Nile encephalitis. The absence of fever in Powassan encephalitis and the lack of coma in Eastern equine encephalitis further support their exclusion."
+    },
+    "recommendation": "Next steps: consult with a neurologist or infectious disease specialist, consider lab tests such as blood cultures and PCR for West Nile virus. Verify the presence of missing symptoms like paralysis, tremor, disorientation, convulsion, and stupor."
+  }
+}

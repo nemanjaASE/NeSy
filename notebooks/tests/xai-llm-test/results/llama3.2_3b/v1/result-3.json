@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "llama3.2:3b",
+    "date": "2026-05-16 16:59:44",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 15.28
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, West Nile encephalitis, has a strong clinical correlation with the reported symptoms, including headache, confusion, coma, stiff neck, and high fever. The absence of spastic paralysis in the patient's report is notable, as this symptom is present in both Japanese encephalitis and St. Louis encephalitis profiles. However, West Nile encephalitis has a highly specific symptom profile that aligns with the patient's presentation.",
+      "differential_comparison": "In comparison to the other potential candidates, West Nile encephalitis has a higher clinical alignment due to its matching symptoms and lower number of missing markers. Japanese encephalitis and St. Louis encephalitis were downgraded due to the presence of spastic paralysis in their profiles, which was not reported by the patient.",
+      "exclusion_criteria": "Diseases with Filter Status False or low clinical alignment were excluded from consideration. The presence of blocking symptoms that were negated by the patient, such as spastic paralysis, led to the exclusion of Japanese encephalitis and St. Louis encephalitis."
+    },
+    "recommendation": "Next steps: specialist consultations for neurology and infectious disease, and lab work including PCR testing for West Nile virus and other tick-borne pathogens."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "llama3:8b",
+    "date": "2026-05-16 16:55:35",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 16.51
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "high",
+    "differentials": [
+      "hepatitis D",
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, hepatitis E, shows a strong clinical correlation with the reported symptoms. The presence of jaundice, acholic stool, and dark urine is highly specific to this disease. Additionally, the absence of drowsiness and confusion, which are typically required for hepatitis D, further supports the likelihood of hepatitis E.",
+      "differential_comparison": "While hepatitis A and B also show some clinical correlation with the reported symptoms, their scores are lower than that of hepatitis E. Hepatitis C has a similar score to hepatitis E but lacks the specificity of jaundice and acholic stool. The differential diseases were downgraded due to missing markers such as abdominal pain, joint pain, fever, loss of appetite, and vomiting.",
+      "exclusion_criteria": "Diseases in the 'excluded_conditions' list were rejected because they required mandatory clinical markers that the patient negated and marked as absent. For example, hepatitis D requires drowsiness and confusion, which are not present in this case."
+    },
+    "recommendation": "Next steps: specialist consultation with a hepatologist, lab tests such as liver function tests (LFTs) and viral load testing to confirm the diagnosis. Additionally, verifying the presence of abdominal pain, joint pain, fever, loss of appetite, and vomiting would be important to rule out other potential causes."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "phi4:14b",
+    "date": "2026-05-16 17:04:18",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 25.02
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Ebola virus disease"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "West Nile fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "Nonparalytic poliomyelitis is the most likely diagnosis due to its highest normalized score among diseases with clinically consistent reported absences. The patient's symptoms of headache, pharynx inflammation, fever, and vomiting align well with this disease profile, covering a significant portion of both the disease's known symptoms (66.7%) and the patient's reported symptoms (80.0%). There are no blocking symptoms present that would negate this diagnosis, supporting its strong clinical correlation.",
+      "differential_comparison": "Ebola virus disease also shows a high degree of symptom alignment with the patient's presentation but has a slightly lower normalized score compared to nonparalytic poliomyelitis. While it matches five symptoms including bleeding, which is not reported by the patient, the absence of key Ebola-specific symptoms such as rash and joint pain reduces its clinical specificity relative to nonparalytic poliomyelitis.",
+      "exclusion_criteria": "Marburg hemorrhagic fever and West Nile fever were excluded due to their filter status being false. Marburg hemorrhagic fever was downgraded because of the presence of blocking symptoms like maculopapular rash and chills, which are typically required for diagnosis but absent in this case. Similarly, West Nile fever's exclusion is due to the absence of a maculopapular rash, a critical symptom for its clinical profile."
+    },
+    "recommendation": "Next steps should include consultation with an infectious disease specialist familiar with viral infections and poliomyelitis. Recommended lab tests include PCR testing for poliovirus from stool samples or throat swabs. Clinicians should also verify the presence of missing symptoms such as fatigue, stiff neck, and flaccid paralysis to further support or rule out nonparalytic poliomyelitis."
+  }
+}

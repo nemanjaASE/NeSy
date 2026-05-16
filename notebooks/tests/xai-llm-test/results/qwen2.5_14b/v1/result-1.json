@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "qwen2.5:14b",
+    "date": "2026-05-16 17:10:49",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 23.65
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Ebola virus disease"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "West Nile fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "The patient's symptoms strongly correlate with nonparalytic poliomyelitis, as the matched symptoms include headache, pharynx inflammation, fever, and vomiting. The disease coverage and input coverage are both above 60%, indicating a high clinical specificity. Additionally, there are no blocking symptoms reported by the patient that would exclude this diagnosis.",
+      "differential_comparison": "Ebola virus disease is also highly specific with matched symptoms including headache, pharynx inflammation, fever, vomiting, and bleeding. However, it has lower coverage percentages compared to nonparalytic poliomyelitis, making it less likely given the current symptom profile. Marburg hemorrhagic fever and West Nile fever were excluded due to reported absences of specific clinical markers such as maculopapular rash in both cases.",
+      "exclusion_criteria": "Marburg hemorrhagic fever and West Nile fever are excluded because they have blocking symptoms that the patient has explicitly denied, including maculopapular rash and chills for Marburg, and maculopapular rash for West Nile."
+    },
+    "recommendation": "Next steps: Consult a neurologist or infectious disease specialist. Consider lab tests to confirm poliovirus infection. Verify missing symptoms such as fatigue and stiff neck in the patient's clinical examination."
+  }
+}

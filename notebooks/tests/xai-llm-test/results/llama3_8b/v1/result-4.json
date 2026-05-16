@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "llama3:8b",
+    "date": "2026-05-16 16:56:48",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 18.71
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "high",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [
+      "La Crosse encephalitis",
+      "primary amebic meningoencephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, Powassan encephalitis, exhibits a strong clinical correlation with the reported symptoms. The presence of headache, fever, vomiting, seizure, and stiff neck in the patient's profile is highly specific to this disease. This consistency suggests that Powassan encephalitis is a plausible explanation for the patient's condition.",
+      "differential_comparison": "While nonparalytic poliomyelitis and poliomyelitis also show some clinical alignment with the reported symptoms, their scores are lower than Powassan encephalitis. The absence of paralysis and coma in the patient's profile, which are typical markers for these diseases, further supports the primary diagnosis.",
+      "exclusion_criteria": "La Crosse encephalitis and primary amebic meningoencephalitis were excluded due to their lower clinical alignment with the reported symptoms. Additionally, the absence of paralysis, coma, and other characteristic features in the patient's profile makes these diseases less likely explanations for the condition."
+    },
+    "recommendation": "Next steps: Consult a neurologist or infectious disease specialist for further evaluation. Lab tests such as blood cultures and cerebrospinal fluid analysis may be necessary to confirm the diagnosis. The physician should also verify the presence of tremor, disorientation, convulsion, spastic paralysis, and stupor, which are typically associated with Powassan encephalitis."
+  }
+}

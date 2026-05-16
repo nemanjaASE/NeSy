@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "openai/gpt-oss-120b",
+    "date": "2026-05-16 17:19:35",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 10.29
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "low",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis",
+      "La Crosse encephalitis",
+      "primary amebic meningoencephalitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "Powassan encephalitis shows a strong clinical correlation with the patient's presentation, capturing all five reported symptoms: headache, fever, vomiting, seizure, and stiff neck. These findings reflect a classic encephalitic picture with meningeal irritation and acute neurologic involvement. The disease profile also lists tremor, disorientation, convulsion, spastic paralysis, and stupor, which were not reported; their absence does not contradict the diagnosis because they are less frequent manifestations. No mandatory (blocking) symptoms were negated, making the condition clinically consistent with the reported absences. The symptom pattern therefore aligns closely with the known Powassan virus infection spectrum.",
+      "differential_comparison": "Nonparalytic poliomyelitis matches four symptoms (headache, fever, vomiting, stiff neck) but lacks seizure, reducing its specificity compared with Powassan. Poliomyelitis shares the same four matches and adds the possibility of flaccid paralysis, which was not observed, further lowering its alignment. La Crosse encephalitis captures headache, fever, and seizure but misses vomiting and stiff neck, making its overall match less comprehensive. Primary amebic meningoencephalitis includes headache, vomiting, and seizure yet omits fever and stiff neck, resulting in a weaker clinical fit. Consequently, each alternative demonstrates either fewer key encephalitic signs or relies on symptoms not present in the patient, justifying their placement as differentials rather than the primary suggestion.",
+      "exclusion_criteria": "No conditions were excluded because all candidates were clinically consistent with the reported absences; none presented mandatory blocking symptoms that the patient denied."
+    },
+    "recommendation": "Next steps: consult infectious disease and neurology specialists; obtain cerebrospinal fluid analysis, MRI of the brain, and Powassan virus PCR/serology. Verify the presence or absence of tremor, disorientation, spastic paralysis, and stupor during physical examination."
+  }
+}

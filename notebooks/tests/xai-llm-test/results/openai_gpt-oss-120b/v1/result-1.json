@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "openai/gpt-oss-120b",
+    "date": "2026-05-16 17:18:09",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 2.53
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Ebola virus disease",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "West Nile fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "The patient presents with headache, pharyngeal inflammation, fever, and vomiting, which align closely with the classic presentation of nonparalytic poliomyelitis. These four symptoms constitute 80% of the reported findings and cover two‑thirds of the disease's known manifestations, indicating a strong clinical correlation. The disease’s profile also includes fatigue and stiff neck, which were not reported but are not mandatory for diagnosis, explaining their absence without contradicting the current picture. No reported absent findings conflict with this condition, making it clinically consistent with the patient’s reported negatives. Overall, the symptom set strongly supports nonparalytic poliomyelitis as the leading consideration.",
+      "differential_comparison": "Ebola virus disease shares five of the same symptoms, adding bleeding, yet it lacks many typical features such as diarrhea, rash, joint pain, and ocular involvement, reducing its overall alignment. Moreover, bleeding is a distinctive marker more characteristic of hemorrhagic fevers than poliomyelitis, lowering its plausibility. Poliomyelitis (the paralytic form) also matches the four core symptoms but expects flaccid paralysis and additional neuromuscular signs that are absent, making its fit less complete than the nonparalytic variant. Consequently, both alternatives are less specific to the observed presentation.",
+      "exclusion_criteria": "Marburg hemorrhagic fever was excluded because the patient denied maculopapular rash and chills, both essential markers for that disease, rendering it clinically inconsistent. West Nile fever was similarly rejected due to the absence of a maculopapular rash, a required symptom for its diagnosis. These blocking symptoms directly conflict with the patient’s reported negatives, justifying their exclusion."
+    },
+    "recommendation": "Next steps: consult an infectious disease specialist and a neurologist; obtain stool PCR for poliovirus, CSF analysis, and serologic testing for enteroviruses; order a complete blood count and inflammatory markers. Verify the presence or absence of fatigue, stiff neck, flaccid paralysis, and any rash during physical examination."
+  }
+}

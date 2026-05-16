@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "date": "2026-05-16 17:15:26",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 1.29
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "high",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [
+      "La Crosse encephalitis",
+      "primary amebic meningoencephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "Powassan encephalitis has the highest normalized score of 9.002 and a filter status that is clinically consistent with the reported absences. It shows a strong clinical correlation with 5 matched symptoms out of 10 total symptoms associated with the disease, including headache, fever, vomiting, seizure, and stiff neck. The disease coverage is 50.0%, and the input coverage is 100.0%, indicating that all reported symptoms align with this condition. The missing symptoms, such as tremor and disorientation, do not seem critical given the high score and match count.",
+      "differential_comparison": "Nonparalytic poliomyelitis and poliomyelitis have high normalized scores of 8.954 and 8.289, respectively, and are clinically consistent with reported absences. However, they have lower match counts (4 out of 6 and 7, respectively) and slightly lower disease and input coverages. These conditions share common symptoms like headache, fever, vomiting, and stiff neck but lack some of the more specific symptoms like seizure. They are considered differentials due to their strong clinical correlations but slightly lower specificity compared to Powassan encephalitis.",
+      "exclusion_criteria": "La Crosse encephalitis and primary amebic meningoencephalitis have lower normalized scores (7.178 and 6.835, respectively) and fewer matched symptoms (3 out of 5 and 6, respectively). While they are clinically consistent with reported absences, their lower scores and match counts result in lower disease and input coverages, making them less likely candidates."
+    },
+    "recommendation": "Based on the probabilistic suggestion, a consultation with a neurologist or infectious disease specialist is recommended. Lab tests may include viral PCR, serology for Powassan virus, and CSF analysis to confirm the diagnosis. Specific missing symptoms to verify include tremor, disorientation, convulsion, and spastic paralysis."
+  }
+}

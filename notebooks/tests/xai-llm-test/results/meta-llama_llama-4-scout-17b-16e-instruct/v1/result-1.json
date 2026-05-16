@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "date": "2026-05-16 17:14:52",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 1.19
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Ebola virus disease",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "West Nile fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, nonparalytic poliomyelitis, shows a strong clinical correlation with the patient's symptoms, with a high degree of specificity. The patient's symptoms, including headache, pharynx inflammation, fever, and vomiting, match well with the disease profile. The absence of blocking symptoms and a high disease coverage of 66.7% and input coverage of 80.0% further support this diagnosis. The missing symptoms, fatigue and stiff neck, are not critical for the initial assessment.",
+      "differential_comparison": "Ebola virus disease and poliomyelitis are considered differentials due to their similar symptom profiles. However, Ebola virus disease has a lower clinical alignment due to its broader range of symptoms, which are not fully matched by the patient's input. Poliomyelitis, while similar, has a slightly lower normalized score and a less comprehensive match of symptoms.",
+      "exclusion_criteria": "Marburg hemorrhagic fever and West Nile fever were excluded due to the presence of blocking symptoms. Marburg hemorrhagic fever requires symptoms like maculopapular rash and chills, which the patient denied. West Nile fever is also unlikely due to the absence of maculopapular rash, a key symptom for this condition."
+    },
+    "recommendation": "Consult a neurologist or infectious disease specialist for further evaluation. Lab tests may include poliovirus-specific IgM antibody tests. Verify the presence of fatigue, stiff neck, and other missing symptoms to rule out other conditions."
+  }
+}

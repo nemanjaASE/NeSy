@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "phi4:14b",
+    "date": "2026-05-16 17:06:09",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 21.31
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "high",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "The most likely diagnosis is Powassan encephalitis, which exhibits a strong clinical correlation with the patient's symptoms. This disease has the highest normalized score among those that are clinically consistent with reported absences, indicating a highly specific symptom profile. The matched symptoms include headache, fever, vomiting, seizure, and stiff neck, covering 50% of the disease's known symptoms while matching all of the patient's reported symptoms (100%). There are no blocking symptoms present, reinforcing its likelihood as the primary diagnosis.",
+      "differential_comparison": "Nonparalytic poliomyelitis is considered a differential due to its high normalized score and clinical consistency with reported absences. It shares several matched symptoms such as headache, fever, vomiting, and stiff neck but lacks some specific markers like tremor or disorientation found in Powassan encephalitis. Poliomyelitis also shows similar symptom overlap but has a lower disease coverage compared to Powassan encephalitis. Both differentials have fewer matched symptoms and slightly lower input coverage, making them less likely than Powassan encephalitis.",
+      "exclusion_criteria": ""
+    },
+    "recommendation": "Next steps should include consultation with an infectious disease specialist familiar with tick-borne illnesses, given the URI profile of Powassan encephalitis. Recommended lab tests may involve serological testing for Powassan virus antibodies and PCR testing from cerebrospinal fluid if available. Clinicians should also verify the presence or absence of missing symptoms such as tremor, disorientation, convulsion, spastic paralysis, and stupor to further support this diagnosis."
+  }
+}

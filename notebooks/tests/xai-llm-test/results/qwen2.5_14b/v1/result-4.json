@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "qwen2.5:14b",
+    "date": "2026-05-16 17:12:28",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 21.47
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "high",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "The patient's symptoms strongly correlate with Powassan encephalitis, as they present with headache, fever, vomiting, seizure, and stiff neck. These symptoms are highly specific to the disease, and there are no reported absences of critical markers required for this diagnosis. The clinical correlation is further supported by a high specificity score.",
+      "differential_comparison": "Nonparalytic poliomyelitis and poliomyelitis also show strong symptom matches but with lower scores compared to Powassan encephalitis. Both conditions share headache, fever, vomiting, and stiff neck, but they lack the seizure reported by the patient. Additionally, nonparalytic poliomyelitis and poliomyelitis have missing symptoms such as pharynx inflammation and fatigue that are not present in the patient's report.",
+      "exclusion_criteria": "No conditions were excluded based on blocking symptoms."
+    },
+    "recommendation": "Next steps: Consult a neurologist for further evaluation. Consider lab tests to confirm Powassan virus infection, including serology and PCR testing. Additionally, verify if the patient has tremor, disorientation, convulsion, spastic paralysis, or stupor, which are potential missing symptoms."
+  }
+}

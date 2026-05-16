@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "openai/gpt-oss-120b",
+    "date": "2026-05-16 17:18:18",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 5.03
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "moderate",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "The patient presents with fatigue, nausea, jaundice, acholic stool, and dark urine, a constellation that aligns closely with hepatitis E. All reported symptoms are typical for this infection, and no mandatory symptoms have been denied, making the profile clinically consistent with hepatitis E. The disease coverage of 45.5% reflects that nearly half of the known hepatitis E manifestations are present, while the input coverage of 100% shows that every symptom the patient reported matches this condition. The missing items—abdominal pain, joint pain, fever, loss of appetite, vomiting, and liver inflammation—are not required for diagnosis and may simply be absent or subclinical at this stage. The strong clinical correlation is reinforced by the high specificity of the matched symptom set, especially the presence of dark urine and acholic stool, which are less common in other hepatitis types.",
+      "differential_comparison": "Hepatitis A, B, and C share four of the five symptoms identified for hepatitis E but lack the dark urine finding, reducing their overall alignment. Their disease coverage (40%) and input coverage (80%) are lower than hepatitis E, indicating fewer of their characteristic features are observed. Consequently, while they remain plausible, the reduced symptom overlap and absence of the highly specific dark urine sign place them behind hepatitis E in clinical likelihood. Hepatitis D was excluded because the patient explicitly denied drowsiness and confusion, which are essential markers for that disease, leading to a mismatch with the required clinical picture.",
+      "exclusion_criteria": "Hepatitis D was rejected because the patient reported the absence of drowsiness and confusion, both of which are mandatory symptoms for hepatitis D. The presence of these blocking symptoms would be necessary to consider the disease, and their negation makes hepatitis D clinically inconsistent with the current presentation."
+    },
+    "recommendation": "Next steps: refer to a hepatology or infectious disease specialist; order hepatitis E IgM serology, quantitative PCR for HEV, comprehensive liver function panel, and complete blood count. Verify the presence or absence of abdominal pain, fever, joint pain, and clinical signs of liver inflammation (e.g., hepatic tenderness) during physical examination."
+  }
+}

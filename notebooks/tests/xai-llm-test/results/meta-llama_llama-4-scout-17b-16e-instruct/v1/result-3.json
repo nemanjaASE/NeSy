@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "date": "2026-05-16 17:15:21",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 1.24
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "excluded_conditions": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, West Nile encephalitis, shows a strong clinical correlation with the patient's symptoms, including headache, confusion, coma, stiff neck, and high fever. The absence of blocking symptoms and a high input coverage of 100% support this consideration. However, the disease coverage is 41.7%, indicating some missing symptoms. The Normalized Score of 9.554 reflects the clinical specificity of the symptoms found. West Nile encephalitis is consistent with the reported absences and has a moderate level of confidence due to the balance between matched and missing symptoms.",
+      "differential_comparison": "Powassan encephalitis and Eastern equine encephalitis are considered differentials due to their high Filter Status and reasonable Normalized Scores. Powassan encephalitis has a lower match count and disease coverage compared to West Nile encephalitis, while Eastern equine encephalitis has a lower match count and input coverage. These diseases were not downgraded by blocking symptoms but have lower clinical alignment due to missing markers.",
+      "exclusion_criteria": "Japanese encephalitis and St. Louis encephalitis were excluded primarily due to the presence of 'spastic paralysis' as a blocking symptom, which the patient reported as absent. This symptom is crucial for these diseases, and its absence makes them less likely."
+    },
+    "recommendation": "Consult a neurologist or infectious disease specialist for further evaluation. Consider lab tests such as IgM antibody capture ELISA for West Nile virus, Powassan virus, and Eastern equine encephalitis virus. Verify the following missing symptoms: paralysis, tremor, disorientation, and muscle weakness for West Nile encephalitis; paralysis, drowsiness, fever, vomiting, seizure, and tremor for Powassan encephalitis; and vomiting, seizure, disorientation, and chills for Eastern equine encephalitis."
+  }
+}

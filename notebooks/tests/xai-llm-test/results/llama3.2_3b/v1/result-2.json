@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "llama3.2:3b",
+    "date": "2026-05-16 16:59:21",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 17.58
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "high",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, hepatitis E, has a strong clinical correlation with the reported symptoms. The matched list of 'fatigue', 'nausea', 'jaundice', 'acholic stool', and 'dark urine' is highly specific to this disease. Furthermore, the Normalized Score accounts for the clinical specificity of these symptoms, indicating a high level of confidence in this diagnosis. Notably, hepatitis E was not downgraded due to any missing markers, as all reported symptoms were present in the matched list.",
+      "differential_comparison": "In comparison to the differential diseases, hepatitis A and B have lower clinical alignment due to the presence of 'abdominal pain' and 'joint pain' in their matched lists, which are not present in the patient's input. Hepatitis C was also considered but downgraded due to the missing marker 'liver inflammation'. These alternatives do not demonstrate the same level of specificity as hepatitis E.",
+      "exclusion_criteria": "Diseases were excluded based on the presence of 'blocking symptoms' that were reported as absent by the patient. For hepatitis D, the 'drowsiness' and 'confusion' blocking symptoms were present in the matched list but not in the patient's input, indicating a lack of clinical consistency."
+    },
+    "recommendation": "Next steps: specialist consultations for liver function tests and specific missing symptoms to verify (e.g., abdominal pain, joint pain, fever)."
+  }
+}

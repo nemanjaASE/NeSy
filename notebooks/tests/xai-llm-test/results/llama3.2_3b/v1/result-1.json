@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "llama3.2:3b",
+    "date": "2026-05-16 16:58:48",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 22.22
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Marburg hemorrhagic fever",
+      "Ebola virus disease"
+    ],
+    "excluded_conditions": [
+      "West Nile fever",
+      "poliomyelitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, nonparalytic poliomyelitis, has a strong clinical correlation with the reported symptoms. The matched list of 'headache', 'pharynx inflammation', 'fever', and 'vomiting' is highly specific to this disease. Notably, the patient's absence of 'fatigue' and 'stiff neck' does not significantly downgrade the disease's relevance, as these symptoms are typically associated with paralytic poliomyelitis. The Normalized Score reflects the clinical specificity of the matched symptoms.",
+      "differential_comparison": "In comparison to Marburg hemorrhagic fever and Ebola virus disease, nonparalytic poliomyelitis has a more consistent symptom profile. While both diseases share some common symptoms like 'headache' and 'fever', they also have distinct differences in their symptomatology. For instance, Marburg hemorrhagic fever includes 'maculopapular rash' as a symptom, which is not present in nonparalytic poliomyelitis. Similarly, Ebola virus disease has 'bleeding' as a symptom, whereas nonparalytic poliomyelitis does not. These differences suggest that nonparalytic poliomyelitis is the more likely diagnosis.",
+      "exclusion_criteria": "Diseases in the 'excluded_conditions' list were rejected due to the presence of 'blocking symptoms'. West Nile fever's 'maculopapular rash' and poliomyelitis's 'flaccid paralysis' are both mandatory clinical markers that the patient negated, indicating a lack of clinical consistency with their reported absences."
+    },
+    "recommendation": "Next steps: specialist consultations for neurological evaluation and lab tests to confirm the presence of poliovirus RNA in stool or blood samples. The physician should also verify the absence of 'fatigue' and 'stiff neck' through physical examination and imaging studies."
+  }
+}

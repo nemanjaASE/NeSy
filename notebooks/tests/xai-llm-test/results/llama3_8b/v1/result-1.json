@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "llama3:8b",
+    "date": "2026-05-16 16:53:06",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 23.74
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Marburg hemorrhagic fever",
+      "Ebola virus disease"
+    ],
+    "excluded_conditions": [
+      "West Nile fever",
+      "poliomyelitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "The top-ranked disease, nonparalytic poliomyelitis, exhibits a strong clinical correlation with the reported symptoms. The presence of headache, pharynx inflammation, fever, and vomiting is highly specific to this condition. Furthermore, the absence of blocking symptoms such as maculopapular rash or chills supports this diagnosis. The Normalized Score takes into account the clinical specificity of these symptoms, further solidifying the connection.",
+      "differential_comparison": "In comparison, Marburg hemorrhagic fever and Ebola virus disease both have a lower clinical alignment with the reported symptoms. While they share some matched symptoms like headache, pharynx inflammation, and fever, their presence is not as specific to these conditions as it is for nonparalytic poliomyelitis. Additionally, the absence of blocking symptoms in nonparalytic poliomyelitis sets it apart from Marburg hemorrhagic fever, which requires maculopapular rash and chills.",
+      "exclusion_criteria": "West Nile fever was excluded due to the presence of blocking symptoms like maculopapular rash. Poliomyelitis was also excluded as it has a lower Normalized Score than nonparalytic poliomyelitis, despite sharing some matched symptoms."
+    },
+    "recommendation": "Next steps: Consult with an infectious disease specialist and consider lab tests such as blood cultures or PCR to confirm the diagnosis. Additionally, verify the presence of missing symptoms like fatigue, stiff neck, and flaccid paralysis in a physical examination."
+  }
+}
