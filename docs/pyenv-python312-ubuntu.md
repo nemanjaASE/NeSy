@@ -1,4 +1,4 @@
-# Pyenv & Python 3.12 on Ubuntu — Setup Guide
+# 🐧🐍 Pyenv & Python 3.12 on Ubuntu — Setup Guide
 
 ---
 
