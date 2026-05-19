@@ -321,6 +321,7 @@ To get the system up and running, follow these modules in order:
 2. **Ollama**: Local Ollama Setup [Ollama Setup Guide](./docs/ollama_setup.md).
 3. **Notebooks**: Preparation phase and testing [Notebooks Guide](./notebooks/README.md).
 4. **API**: Launch the backend following the [Backend README](./backend/README.md).
+5. **Pyenv**: Pyenv setup [Pyenv Setup Guide](./docs/pyenv-python312-ubuntu.md).
 
 ---
 
