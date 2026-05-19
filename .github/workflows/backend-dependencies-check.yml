@@ -1,4 +1,4 @@
-name: 🐧🐍 Backend Dependencies Check
+name: Backend Dependencies Check
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install pyenv dependencies
         run: |
