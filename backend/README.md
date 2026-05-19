@@ -56,7 +56,7 @@ source .venv/bin/activate
 
 > **⚠️ Note:** This project requires **Python 3.12**. Most Linux systems ship with an older version that may also lack SSL support, causing `pip` to fail during dependency installation. It is strongly recommended to use **pyenv** to install and manage Python 3.12 before proceeding with the steps below.
 >
-> 📘 **[Click here to read the pyenv Setup Guide](./docs/pyenv-python312-ubuntu.md)**
+> 📘 **[Click here to read the pyenv Setup Guide](../docs/pyenv-python312-ubuntu.md)**
 
 ### **3. Install dependencies:**
 
