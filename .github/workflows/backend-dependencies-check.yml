@@ -3,10 +3,10 @@ name: Backend Dependencies Check
 on:
   push:
     paths:
-      - "backend/**"
+      - "backend/requirements.txt"
   pull_request:
     paths:
-      - "backend/**"
+      - "backend/requirements.txt"
   workflow_dispatch:
 
 jobs:
