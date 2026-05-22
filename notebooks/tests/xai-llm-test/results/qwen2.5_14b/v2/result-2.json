@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "qwen2.5:14b",
+    "date": "2026-05-18 06:28:43",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 56.38
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "moderate",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "Hepatitis E shows a strong clinical correlation with the patient's reported symptoms. The presence of fatigue, nausea, jaundice, acholic stool, and dark urine aligns well with the typical symptom profile for hepatitis E.",
+      "differential_comparison": [
+        {
+          "disease": "hepatitis A",
+          "reasoning": "While hepatitis A also matches several key symptoms such as fatigue, nausea, jaundice, and acholic stool, it lacks some of the more specific indicators found in hepatitis E. Additionally, hepatitis A typically includes abdominal pain and joint pain which were not reported by the patient."
+        },
+        {
+          "disease": "hepatitis B",
+          "reasoning": "Hepatitis B shares similar symptoms with hepatitis E including fatigue, nausea, jaundice, and acholic stool. However, it does not capture as many of the unique markers present in hepatitis E's symptom profile."
+        },
+        {
+          "disease": "hepatitis C",
+          "reasoning": "Similar to hepatitis A and B, hepatitis C matches some core symptoms like fatigue, nausea, jaundice, and acholic stool but lacks specific indicators found in hepatitis E. Additionally, it does not account for the absence of certain symptoms that would be expected if hepatitis C were present."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "hepatitis D",
+          "reasoning": "Hepatitis D is excluded due to the patient's explicit denial of mandatory clinical markers such as drowsiness and confusion, which are critical for this diagnosis."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "gastroenterologist",
+        "infectious disease specialist"
+      ],
+      "lab_tests": [
+        "hepatitis E antibody test",
+        "liver function tests",
+        "complete blood count"
+      ],
+      "symptoms_to_verify": [
+        "abdominal pain",
+        "joint pain",
+        "fever",
+        "loss of appetite",
+        "vomiting"
+      ]
+    }
+  }
+}

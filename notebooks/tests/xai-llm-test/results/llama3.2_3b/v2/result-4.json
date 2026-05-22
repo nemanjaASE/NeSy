@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "llama3.2:3b",
+    "date": "2026-05-18 06:06:22",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 22.61
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "high",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "La Crosse encephalitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "Powassan encephalitis has a strong clinical correlation due to its high specificity for symptoms such as headache, fever, vomiting, seizure, and stiff neck. These symptoms are highly suggestive of Powassan encephalitis, which is clinically consistent with the patient's reported absences.",
+      "differential_comparison": [
+        {
+          "disease": "nonparalytic poliomyelitis",
+          "reasoning": "Nonparalytic poliomyelitis has a lower clinical alignment due to its lower specificity for symptoms such as flaccid paralysis, which is not present in the patient's profile. Additionally, nonparalytic poliomyelitis has a lower disease coverage, with only 66.7% of its known symptoms identified in the patient's profile."
+        },
+        {
+          "disease": "La Crosse encephalitis",
+          "reasoning": "La Crosse encephalitis also has a lower clinical alignment due to its lower specificity for symptoms such as paralysis and coma, which are not present in the patient's profile. Furthermore, La Crosse encephalitis has a lower disease coverage, with only 60% of its known symptoms identified in the patient's profile."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "primary amebic meningoencephalitis",
+          "reasoning": "Primary amebic meningoencephalitis is excluded due to the presence of mandatory clinical markers such as coma, which the patient explicitly denied. This makes primary amebic meningoencephalitis clinically inconsistent with the patient's reported absences."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurologist",
+        "Infectious Disease Specialist"
+      ],
+      "lab_tests": [
+        "CT scan of the brain",
+        "MRI of the brain",
+        "Viral PCR for Powassan virus"
+      ],
+      "symptoms_to_verify": [
+        "tremor",
+        "disorientation",
+        "convulsion"
+      ]
+    }
+  }
+}

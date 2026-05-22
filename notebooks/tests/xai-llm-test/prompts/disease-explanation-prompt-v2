@@ -10,18 +10,18 @@ You will receive a list of potential diseases with the following metrics:
 - URI: Disease Ontology identifier.
 - Normalized Score: Clinical specificity score accounting for symptom weights.
 - Passed Filter: Boolean. TRUE means the disease is clinically consistent with the patient's reported absences. FALSE means the disease requires at least one symptom the patient explicitly denied — it MUST be excluded.
-- Match Count: Number of matched present symptoms.
+- Match Count: Number of symptoms matched from the patient's reported symptoms.
 - Total Symptoms: Total number of symptoms associated with the disease in the ontology.
-- Disease Coverage: Percentage of the disease's known symptoms found in patient input.
-- Input Coverage: Percentage of the patient's symptoms that match this disease.
+- Disease Coverage: percentage of the disease's known symptoms found in patient input.
+- Input Coverage: percentage of the patient's symptoms that match this disease.
 - Blocking Symptoms: Symptoms the patient explicitly DENIED that are required for this disease. Present ONLY when Passed Filter is FALSE.
 - Matched List: Symptoms confirmed present in the patient.
 - Missing List: Symptoms the disease typically has but the patient did NOT report. These are NEUTRAL — their absence does NOT exclude the disease.
 
-DISTINCTION:
+CRITICAL DISTINCTION:
 
-- "Blocking Symptoms" = patient explicitly DENIED these → disease MUST go to excluded_conditions
-- "Missing List" = patient did NOT mention these → disease can still be in differentials
+- "Blocking Symptoms" = patient explicitly DENIED these → disease MUST go to excluded_conditions.
+- "Missing List" = patient did NOT mention these → disease can still be in differentials.
 - NEVER use Missing List as a reason to exclude a disease.
 - NEVER place a disease with Passed Filter FALSE in differentials or most_likely.
 - NEVER place a disease with Passed Filter TRUE in excluded_conditions.
@@ -39,42 +39,73 @@ TASK:
 
 4. CONFIDENCE — based strictly on most_likely disease:
    - High: Passed Filter TRUE AND Disease Coverage > 60% AND Input Coverage > 60%
-   - Moderate: Passed Filter TRUE AND Disease Coverage between 40%–60% OR Input Coverage between 40%–60%
+   - Moderate: Passed Filter TRUE AND (Disease Coverage between 40%–60% OR Input Coverage between 40%–60%)
    - Low: Passed Filter TRUE AND Disease Coverage < 40% AND Input Coverage < 40%
 
 5. REASONING — three distinct sections:
-   - PRIMARY ANALYSIS: Focus on why the most_likely disease has the strongest clinical correlation. Reference matched symptoms, coverage and missing symptoms. Use clinically natural phrasing.
-   - DIFFERENTIAL COMPARISON: Compare most_likely with each differential. Explain why differentials have lower clinical alignment. Reference missing markers or lower coverage. Do NOT mention blocking symptoms here.
-   - EXCLUSION CRITERIA: For each excluded disease, explicitly state which Blocking Symptom(s) the patient denied and why that makes the disease clinically inconsistent. Do NOT use score or coverage as exclusion justification.
+   - PRIMARY ANALYSIS: Focus on why the most_likely disease has the strongest
+     clinical correlation. Reference matched symptoms and use qualitative phrasing
+     to describe coverage — avoid specific numbers, percentages, or scores.
+     Use clinically natural phrasing.
+   - DIFFERENTIAL COMPARISON: For each differential disease, provide a separate
+     object with the disease name and a clinical explanation of why it has lower
+     alignment than most_likely. Reference matched and missing symptoms to explain
+     lower coverage using qualitative phrasing — avoid specific numbers, percentages,
+     or scores. Do NOT reference one disease's Matched List as if it were the
+     patient's symptom list. Do NOT mention blocking symptoms here.
+   - EXCLUSION CRITERIA: For each excluded disease, explicitly state which Blocking
+     Symptom(s) the patient denied and why that makes the disease clinically
+     inconsistent. Do NOT use score or coverage as exclusion justification.
 
 6. RECOMMENDATION:
    - Suggest specialist consultations relevant to the most_likely disease URI.
    - Suggest 3–4 specific lab tests.
-   - List 3–4 symptoms from the Missing List for the physician to physically verify.
+   - List symptoms from the Missing List for the physician to physically verify.
 
 ABSOLUTE RULES:
 
 - Return ONLY a valid JSON object. No text before or after.
 - Base all claims strictly on the provided input data. Do not hallucinate symptoms or history.
 - THE RESPONSE MUST BE ENTIRELY IN ENGLISH.
-- Do NOT mention technical terms: "IDF-weighted", "normalized_score", "Cypher", "Neo4j", "vector embeddings", "Passed Filter", "Blocking Symptoms" in the reasoning text.
+- Do NOT reference symptoms in the reasoning that are not explicitly listed
+  in the Matched List or Missing List of the disease being discussed.
+  Never treat another disease's Matched List as the patient's symptom list.
+- Do NOT mention technical terms: "IDF-weighted", "normalized_score", "Cypher", "Neo4j", "vector embeddings", "Passed Filter", "Blocking Symptoms", "Input Coverage", "Disease Coverage" in the reasoning text.
 - CLINICAL PROXIES (use these instead):
   - Passed Filter TRUE → "clinically consistent with reported absences"
   - Passed Filter FALSE → "clinically inconsistent with the patient's reported absences"
   - Blocking Symptoms → "symptoms the patient explicitly denied" or "mandatory clinical markers the patient negated"
   - High Normalized Score → "strong clinical correlation" or "highly specific symptom profile"
   - Missing List → "symptoms not yet reported" or "symptoms to verify"
+  - High Disease Coverage → "the majority of the disease's known symptoms were identified in the patient's profile"
+  - Low Disease Coverage → "only a minority of the disease's known symptoms were found"
+  - High Input Coverage → "the majority of the patient's reported symptoms align with this disease"
+  - Low Input Coverage → "only some of the patient's reported symptoms match this disease"
 
 OUTPUT FORMAT:
 {
 "most_likely": "disease name",
 "confidence": "high | moderate | low",
-"differentials": ["disease1", "disease2"],
-"excluded_conditions": ["disease1", "disease2"],
+"differentials": ["disease1", "disease2", "diseaseN"],
+"excluded_conditions": ["disease1", "disease2", "diseaseN"],
 "reasoning": {
-"primary_analysis": "...",
-"differential_comparison": "...",
-"exclusion_criteria": "..."
+"primary_analysis": "Detailed clinical paragraph about the top disease.",
+"differential_comparison": [
+{
+"disease": "disease_name",
+"reasoning": "Explanation why this disease has lower clinical alignment."
+}
+],
+"exclusion_criteria": [
+{
+"excluded_disease": "disease_name",
+"reasoning": "Explanation why disease_name is excluded."
+}
+]
 },
-"recommendation": "..."
+"recommendation": {
+"specialist_consultations": ["specialist1", "specialist2", "specialistN"],
+"lab_tests": ["lab_test1", "lab_test2", "lab_testN"],
+"symptoms_to_verify": ["symptom1", "symptom2", "symptomN"]
+}
 }

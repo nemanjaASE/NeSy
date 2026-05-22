@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "phi4:14b",
+    "date": "2026-05-18 06:24:20",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 45.15
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "moderate",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "Hepatitis E is the most likely diagnosis due to its strong clinical correlation with the patient's reported symptoms. The majority of the disease's known symptoms were identified in the patient's profile, including fatigue, nausea, jaundice, acholic stool, and dark urine. This comprehensive symptom alignment suggests a highly specific symptom profile for hepatitis E.",
+      "differential_comparison": [
+        {
+          "disease": "hepatitis A",
+          "reasoning": "Hepatitis A has lower clinical alignment compared to hepatitis E because fewer of the disease's known symptoms were identified in the patient's profile. While fatigue, nausea, jaundice, and acholic stool are present, dark urine is missing from this diagnosis."
+        },
+        {
+          "disease": "hepatitis B",
+          "reasoning": "Hepatitis B shares a similar symptom profile with hepatitis A, having fewer identified symptoms compared to hepatitis E. The absence of dark urine in the patient's reported symptoms results in lower disease coverage for hepatitis B."
+        },
+        {
+          "disease": "hepatitis C",
+          "reasoning": "Similar to hepatitis A and B, hepatitis C has a lower clinical alignment due to missing dark urine among the matched symptoms. This reduces its overall symptom match with the patient's profile compared to hepatitis E."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "hepatitis D",
+          "reasoning": "Hepatitis D is excluded because it requires symptoms that the patient explicitly denied, specifically drowsiness and confusion. These mandatory clinical markers are absent in the patient's symptom report, making this diagnosis clinically inconsistent with the reported absences."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Hepatologist"
+      ],
+      "lab_tests": [
+        "Liver function tests",
+        "Serology for hepatitis E antibodies",
+        "Viral load test for hepatitis E RNA",
+        "Complete blood count (CBC)"
+      ],
+      "symptoms_to_verify": [
+        "abdominal pain",
+        "joint pain",
+        "fever",
+        "loss of appetite"
+      ]
+    }
+  }
+}

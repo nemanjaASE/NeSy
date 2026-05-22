@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "qwen2.5:14b",
+    "date": "2026-05-18 06:30:32",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 58.12
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis",
+      "La Crosse encephalitis",
+      "primary amebic meningoencephalitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "The patient's symptoms strongly align with Powassan encephalitis, which includes headache, fever, vomiting, seizure, and stiff neck. The presence of these neurological symptoms suggests a high clinical correlation for this condition.",
+      "differential_comparison": [
+        {
+          "disease": "nonparalytic poliomyelitis",
+          "reasoning": "While nonparalytic poliomyelitis also presents with headache, fever, vomiting, and stiff neck, it lacks the seizure symptom reported by the patient. This makes its clinical alignment slightly lower compared to Powassan encephalitis."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis shares similar symptoms such as headache, fever, vomiting, and stiff neck but does not account for the seizure symptom present in the patient's profile. Additionally, it lacks fatigue and pharynx inflammation which further reduces its clinical alignment."
+        },
+        {
+          "disease": "La Crosse encephalitis",
+          "reasoning": "La Crosse encephalitis presents with headache, fever, and seizure but does not include vomiting or stiff neck in the patient's profile. This lower symptom overlap makes it less likely compared to Powassan encephalitis."
+        },
+        {
+          "disease": "primary amebic meningoencephalitis",
+          "reasoning": "Primary amebic meningoencephalitis includes headache, vomiting, and seizure but lacks stiff neck in the patient's profile. The absence of this symptom reduces its clinical alignment compared to Powassan encephalitis."
+        }
+      ],
+      "exclusion_criteria": []
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurologist",
+        "Infectious Disease Specialist"
+      ],
+      "lab_tests": [
+        "Lumbar Puncture for Cerebrospinal Fluid Analysis",
+        "Blood Tests for Viral Antibodies",
+        "MRI of the Brain"
+      ],
+      "symptoms_to_verify": [
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "spastic paralysis",
+        "stupor"
+      ]
+    }
+  }
+}

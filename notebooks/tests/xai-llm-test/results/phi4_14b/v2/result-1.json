@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "phi4:14b",
+    "date": "2026-05-18 06:23:30",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 50.28
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Ebola virus disease",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "West Nile fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "Nonparalytic poliomyelitis is the most likely diagnosis due to its strong clinical correlation with the patient's reported symptoms. The majority of this disease's known symptoms were identified in the patient's profile, including headache, pharynx inflammation, fever, and vomiting. This alignment suggests a highly specific symptom profile for nonparalytic poliomyelitis.",
+      "differential_comparison": [
+        {
+          "disease": "Ebola virus disease",
+          "reasoning": "While Ebola virus disease shares several symptoms with the patient's report, such as headache, pharynx inflammation, fever, vomiting, and bleeding, it has a lower alignment compared to nonparalytic poliomyelitis. This is because only some of the patient's reported symptoms match this disease, indicating that not all known symptoms of Ebola virus disease were identified in the patient's profile."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis also shares several symptoms with the patient's report, including headache, pharynx inflammation, fever, and vomiting. However, it has a lower alignment compared to nonparalytic poliomyelitis because only some of the disease's known symptoms were found in the patient's profile."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Marburg hemorrhagic fever",
+          "reasoning": "This disease is excluded because it requires symptoms that the patient explicitly denied, specifically maculopapular rash and chills. These mandatory clinical markers make Marburg hemorrhagic fever clinically inconsistent with the patient's reported absences."
+        },
+        {
+          "excluded_disease": "West Nile fever",
+          "reasoning": "This disease is excluded because it requires a symptom that the patient explicitly denied, specifically maculopapular rash. This mandatory clinical marker makes West Nile fever clinically inconsistent with the patient's reported absences."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Infectious Disease Specialist"
+      ],
+      "lab_tests": [
+        "PCR test for poliovirus",
+        "Serology tests for poliovirus antibodies",
+        "CSF analysis",
+        "Throat swab culture"
+      ],
+      "symptoms_to_verify": [
+        "fatigue",
+        "stiff neck"
+      ]
+    }
+  }
+}

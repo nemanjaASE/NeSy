@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "date": "2026-05-17 22:12:01",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 1.44
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Ebola virus disease",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "West Nile fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "The top disease, nonparalytic poliomyelitis, shows a strong clinical correlation with the patient's symptoms, including headache, pharynx inflammation, fever, and vomiting. The majority of its known symptoms were identified in the patient's profile, and most of the patient's reported symptoms align with this disease.",
+      "differential_comparison": [
+        {
+          "disease": "Ebola virus disease",
+          "reasoning": "Ebola virus disease has a similar symptom profile to nonparalytic poliomyelitis but with a lower disease coverage, as several key symptoms like diarrhea, rash, and joint pain were not reported by the patient."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis has a similar symptom profile to nonparalytic poliomyelitis but with a slightly lower clinical alignment due to missing symptoms like fatigue and stiff neck."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Marburg hemorrhagic fever",
+          "reasoning": "Marburg hemorrhagic fever is clinically inconsistent with the patient's reported absences because the patient explicitly denied symptoms like maculopapular rash and chills, which are mandatory clinical markers for this disease."
+        },
+        {
+          "excluded_disease": "West Nile fever",
+          "reasoning": "West Nile fever is clinically inconsistent with the patient's reported absences because the patient explicitly denied a maculopapular rash, a key symptom required for this disease."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Infectious Disease Specialist",
+        "Neurologist"
+      ],
+      "lab_tests": [
+        "Viral PCR",
+        "Serology test",
+        "Blood culture"
+      ],
+      "symptoms_to_verify": [
+        "fatigue",
+        "stiff neck",
+        "diarrhea"
+      ]
+    }
+  }
+}

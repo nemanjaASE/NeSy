@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "mistral-nemo:12b",
+    "date": "2026-05-18 06:18:10",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 28.15
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Ebola virus disease",
+      "West Nile fever"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "poliomyelitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "The most likely disease is nonparalytic poliomyelitis, which shows a strong clinical correlation with the patient's profile. The majority of its known symptoms were identified in the patient's report, including headache, pharynx inflammation, fever, and vomiting.",
+      "differential_comparison": [
+        {
+          "disease": "Ebola virus disease",
+          "reasoning": "While Ebola virus disease shares several symptoms with nonparalytic poliomyelitis, such as headache, pharynx inflammation, fever, and vomiting, it has lower clinical alignment due to the absence of symptoms like diarrhea and rash."
+        },
+        {
+          "disease": "West Nile fever",
+          "reasoning": "Although West Nile fever matches many symptoms with nonparalytic poliomyelitis, its clinical alignment is lower because the patient did not report a maculopapular rash, which is often associated with this disease."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Marburg hemorrhagic fever",
+          "reasoning": "Marburg hemorrhagic fever is clinically inconsistent with the patient's reported absences. The patient explicitly denied having a maculopapular rash and chills, which are mandatory clinical markers for this disease."
+        },
+        {
+          "excluded_disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis is excluded because it typically presents with flaccid paralysis, fatigue, and stiff neck, none of which were reported by the patient. The absence of these symptoms makes poliomyelitis clinically inconsistent."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Infectious Disease Specialist",
+        "Neurologist"
+      ],
+      "lab_tests": [
+        "Complete Blood Count (CBC)",
+        "Blood Chemistry Panel",
+        "Viral Markers for Poliovirus"
+      ],
+      "symptoms_to_verify": [
+        "fatigue",
+        "stiff neck"
+      ]
+    }
+  }
+}

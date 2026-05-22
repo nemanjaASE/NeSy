@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "llama3:8b",
+    "date": "2026-05-18 06:12:59",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 20.36
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "excluded_conditions": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "The most likely disease, West Nile encephalitis, has a strong clinical correlation with the patient's reported symptoms, including headache, confusion, coma, and stiff neck.",
+      "differential_comparison": [
+        {
+          "disease": "Powassan encephalitis",
+          "reasoning": "While Powassan encephalitis shares some symptoms with West Nile encephalitis, such as headache, confusion, and coma, it has a lower clinical alignment due to the absence of fever and other characteristic symptoms."
+        },
+        {
+          "disease": "Eastern equine encephalitis",
+          "reasoning": "Eastern equine encephalitis has fewer matched symptoms compared to West Nile encephalitis, including only headache, coma, and high fever. The patient's reported symptoms do not fully align with this disease."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Japanese encephalitis",
+          "reasoning": "Japanese encephalitis is clinically inconsistent with the patient's reported absences, as it requires spastic paralysis, which was explicitly denied by the patient."
+        },
+        {
+          "excluded_disease": "St. Louis encephalitis",
+          "reasoning": "St. Louis encephalitis is also clinically inconsistent with the patient's reported absences, as it requires spastic paralysis, which was explicitly denied by the patient."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurologist"
+      ],
+      "lab_tests": [
+        "Complete Blood Count",
+        "Electroencephalogram",
+        "Lyme disease test"
+      ],
+      "symptoms_to_verify": [
+        "Tremor",
+        "Disorientation",
+        "Convulsion"
+      ]
+    }
+  }
+}

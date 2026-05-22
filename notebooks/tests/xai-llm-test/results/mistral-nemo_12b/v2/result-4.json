@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "mistral-nemo:12b",
+    "date": "2026-05-18 06:19:27",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 18.16
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "high",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "Powassan encephalitis shows a strong clinical correlation with the patient's profile, as it matches all reported symptoms of headache, fever, vomiting, seizure, and stiff neck. This indicates a highly specific symptom profile.",
+      "differential_comparison": [
+        {
+          "disease": "nonparalytic poliomyelitis",
+          "reasoning": "While nonparalytic poliomyelitis aligns well with the patient's symptoms, it lacks some of the disease's typical markers like pharynx inflammation and fatigue, which have not yet been reported."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis also matches most symptoms but is missing some key indicators such as flaccid paralysis. These symptoms are not yet confirmed in the patient's profile."
+        }
+      ],
+      "exclusion_criteria": []
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurologist",
+        "Infectious Disease Specialist"
+      ],
+      "lab_tests": [
+        "CSF analysis",
+        "Serological tests for Powassan virus",
+        "MRI of the brain"
+      ],
+      "symptoms_to_verify": [
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "spastic paralysis",
+        "stupor"
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "mistral-nemo:12b",
+    "date": "2026-05-18 06:18:38",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 26.26
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "high",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "The most likely disease is hepatitis E, which shows a strong clinical correlation with the patient's profile. The majority of the disease's known symptoms were identified in the patient's profile, including fatigue, nausea, jaundice, acholic stool, and dark urine.",
+      "differential_comparison": [
+        {
+          "disease": "hepatitis A",
+          "reasoning": "While hepatitis A has a strong clinical correlation with the patient's reported symptoms, it does not align as well as hepatitis E. The patient did not report abdominal pain or fever, which are common in hepatitis A but not yet verified."
+        },
+        {
+          "disease": "hepatitis B",
+          "reasoning": "Hepatitis B also has a strong clinical correlation with the patient's reported symptoms. However, it is less specific than hepatitis E as the patient did not report loss of appetite or vomiting, which are common in hepatitis B but not yet verified."
+        },
+        {
+          "disease": "hepatitis C",
+          "reasoning": "Hepatitis C has a similar clinical correlation to hepatitis A and B, but it is less specific due to the absence of reported joint pain and fever, which are common in hepatitis C but not yet verified."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "hepatitis D",
+          "reasoning": "Hepatitis D is clinically inconsistent with the patient's reported absences. The patient explicitly denied experiencing drowsiness and confusion, which are mandatory clinical markers for this disease."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Gastroenterologist",
+        "Infectious Disease Specialist"
+      ],
+      "lab_tests": [
+        "Hepatitis E IgM Antibody Test",
+        "Hepatitis A IgM Antibody Test",
+        "Hepatitis B Surface Antigen Test",
+        "Hepatitis C Antibody Test"
+      ],
+      "symptoms_to_verify": [
+        "abdominal pain",
+        "joint pain",
+        "fever",
+        "loss of appetite",
+        "vomiting"
+      ]
+    }
+  }
+}

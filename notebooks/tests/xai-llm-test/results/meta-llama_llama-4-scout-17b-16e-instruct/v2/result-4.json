@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "date": "2026-05-17 22:12:05",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 1.41
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis",
+      "La Crosse encephalitis",
+      "primary amebic meningoencephalitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "Powassan encephalitis has the strongest clinical correlation due to its high normalized score and comprehensive match of the patient's symptoms, including headache, fever, vomiting, seizure, and stiff neck. Although some symptoms like tremor and disorientation are not reported, the disease's profile aligns well with the patient's presentation.",
+      "differential_comparison": [
+        {
+          "disease": "nonparalytic poliomyelitis",
+          "reasoning": "Nonparalytic poliomyelitis has a slightly lower normalized score and fewer matched symptoms compared to Powassan encephalitis. While it shares common symptoms like headache and fever, the absence of pharynx inflammation and fatigue might contribute to its lower ranking."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis has a lower normalized score and a similar set of matched symptoms but includes additional symptoms like flaccid paralysis in its profile, which were not reported by the patient. This might explain its lower clinical alignment."
+        },
+        {
+          "disease": "La Crosse encephalitis",
+          "reasoning": "La Crosse encephalitis has a lower normalized score and fewer matched symptoms, with only headache, fever, and seizure aligning with the patient's symptoms. The absence of reported paralysis and coma might affect its differential ranking."
+        },
+        {
+          "disease": "primary amebic meningoencephalitis",
+          "reasoning": "Primary amebic meningoencephalitis has a lower normalized score and a more limited set of matched symptoms, including headache, vomiting, and seizure. The absence of reported coma, nausea, and delirium might contribute to its lower clinical correlation."
+        }
+      ],
+      "exclusion_criteria": []
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurology",
+        "Infectious Disease"
+      ],
+      "lab_tests": [
+        "Cerebrospinal fluid (CSF) analysis",
+        "Viral PCR",
+        "Serology for Powassan virus"
+      ],
+      "symptoms_to_verify": [
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "spastic paralysis",
+        "stupor"
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "qwen2.5:14b",
+    "date": "2026-05-18 06:29:39",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 52.73
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "excluded_conditions": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "West Nile encephalitis has a strong clinical correlation with the patient's reported symptoms, including headache, confusion, coma, stiff neck, and high fever. The majority of the patient's reported symptoms align well with this disease.",
+      "differential_comparison": [
+        {
+          "disease": "Powassan encephalitis",
+          "reasoning": "While Powassan encephalitis shares some similar symptoms such as headache, confusion, and coma, it has a lower alignment due to fewer matched symptoms compared to West Nile encephalitis."
+        },
+        {
+          "disease": "Eastern equine encephalitis",
+          "reasoning": "Eastern equine encephalitis also matches the patient's reported symptoms but with less coverage. It includes headache, coma, and high fever, but has a lower overall alignment due to fewer matched symptoms compared to West Nile encephalitis."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Japanese encephalitis",
+          "reasoning": "Japanese encephalitis is excluded because the patient explicitly denied spastic paralysis, which is a mandatory clinical marker for this disease."
+        },
+        {
+          "excluded_disease": "St. Louis encephalitis",
+          "reasoning": "St. Louis encephalitis is excluded due to the patient's denial of spastic paralysis, a symptom required for this diagnosis."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurology",
+        "Infectious Disease"
+      ],
+      "lab_tests": [
+        "West Nile virus IgM antibody test",
+        "CSF analysis",
+        "Blood cultures"
+      ],
+      "symptoms_to_verify": [
+        "paralysis",
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "muscle weakness",
+        "paresthesia",
+        "stupor"
+      ]
+    }
+  }
+}

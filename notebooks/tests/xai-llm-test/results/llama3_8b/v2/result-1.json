@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "llama3:8b",
+    "date": "2026-05-18 06:12:15",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 22.45
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Marburg hemorrhagic fever",
+      "Ebola virus disease"
+    ],
+    "excluded_conditions": [
+      "West Nile fever",
+      "poliomyelitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "The most likely diagnosis is nonparalytic poliomyelitis, which has a strong clinical correlation with the patient's reported symptoms. The majority of the disease's known symptoms were identified in the patient's profile, including headache, pharynx inflammation, fever, and vomiting.",
+      "differential_comparison": [
+        {
+          "disease": "Marburg hemorrhagic fever",
+          "reasoning": "This disease has lower alignment due to the presence of maculopapular rash and chills, which are not yet reported. Additionally, some symptoms typically associated with Marburg hemorrhagic fever were not found in the patient's profile."
+        },
+        {
+          "disease": "Ebola virus disease",
+          "reasoning": "This disease also has lower alignment due to the absence of diarrhea, abdominal pain, and maculopapular rash, which are typical symptoms. The patient's reported symptoms align with Ebola virus disease, but the majority of its known symptoms were not identified."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "West Nile fever",
+          "reasoning": "This disease is excluded because the patient denied maculopapular rash, a mandatory clinical marker."
+        },
+        {
+          "excluded_disease": "poliomyelitis",
+          "reasoning": "This disease is excluded because it requires symptoms the patient explicitly denied, such as flaccid paralysis."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "neurologist",
+        "infectious disease specialist"
+      ],
+      "lab_tests": [
+        "complete blood count",
+        "electrolyte panel",
+        "viral load test"
+      ],
+      "symptoms_to_verify": [
+        "fatigue",
+        "stiff neck"
+      ]
+    }
+  }
+}

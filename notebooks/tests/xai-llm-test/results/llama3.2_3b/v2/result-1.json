@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "llama3.2:3b",
+    "date": "2026-05-18 06:04:56",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 34.96
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Marburg hemorrhagic fever",
+      "Ebola virus disease",
+      "West Nile fever",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "Nonparalytic poliomyelitis has a strong clinical correlation due to the presence of headache, pharynx inflammation, and fever in the patient's symptoms. These symptoms are highly specific to this disease, indicating a high level of clinical specificity.",
+      "differential_comparison": [
+        {
+          "disease": "Marburg hemorrhagic fever",
+          "reasoning": "While Marburg hemorrhagic fever shares some symptoms with nonparalytic poliomyelitis, such as headache and pharynx inflammation, it has a higher number of total symptoms (11) and a lower disease coverage (45.5%) compared to nonparalytic poliomyelitis."
+        },
+        {
+          "disease": "Ebola virus disease",
+          "reasoning": "Ebola virus disease also shares some symptoms with nonparalytic poliomyelitis, but it has a higher number of total symptoms (11) and a lower disease coverage (45.5%) compared to nonparalytic poliomyelitis."
+        },
+        {
+          "disease": "West Nile fever",
+          "reasoning": "West Nile fever shares some symptoms with nonparalytic poliomyelitis, but it has a higher number of total symptoms (7) and a lower disease coverage (57.1%) compared to nonparalytic poliomyelitis."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis shares some symptoms with nonparalytic poliomyelitis, but it has a lower disease coverage (57.1%) compared to nonparalytic poliomyelitis."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Marburg hemorrhagic fever",
+          "reasoning": "The patient denied maculopapular rash, which is a mandatory clinical marker for Marburg hemorrhagic fever. This makes the disease clinically inconsistent with the patient's reported absences."
+        },
+        {
+          "excluded_disease": "Ebola virus disease",
+          "reasoning": "The patient did not report diarrhea or joint pain, which are symptoms of Ebola virus disease. However, this does not necessarily exclude the disease, as some patients may not exhibit these symptoms."
+        },
+        {
+          "excluded_disease": "West Nile fever",
+          "reasoning": "The patient denied maculopapular rash, which is a symptom of West Nile fever. This makes the disease clinically inconsistent with the patient's reported absences."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurologist",
+        "Infectious Disease Specialist"
+      ],
+      "lab_tests": [
+        "CT scan of the head and neck",
+        "Blood tests for viral infections",
+        "Electrolyte panel"
+      ],
+      "symptoms_to_verify": [
+        "fatigue",
+        "stiff neck",
+        "flaccid paralysis"
+      ]
+    }
+  }
+}

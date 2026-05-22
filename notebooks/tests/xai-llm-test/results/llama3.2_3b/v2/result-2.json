@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "llama3.2:3b",
+    "date": "2026-05-18 06:05:31",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 21.46
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "high",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "Hepatitis E has a strong clinical correlation due to its high specificity for symptoms such as fatigue, nausea, jaundice, and acholic stool. These symptoms are commonly reported in patients with hepatitis E, making it the most likely diagnosis.",
+      "differential_comparison": [
+        {
+          "disease": "hepatitis A",
+          "reasoning": "Hepatitis A has lower alignment due to its lower disease coverage (40%) and input coverage (80%), which indicates that only some of the patient's reported symptoms match this disease."
+        },
+        {
+          "disease": "hepatitis B",
+          "reasoning": "Hepatitis B has similar alignment to hepatitis E, but with a slightly lower disease coverage. However, its matching list is identical to hepatitis E's, making it less likely than hepatitis E."
+        },
+        {
+          "disease": "hepatitis C",
+          "reasoning": "Hepatitis C has the same alignment as hepatitis B and A, but with an additional missing symptom 'liver inflammation'. This makes it less likely than hepatitis E due to its lower input coverage."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "hepatitis D",
+          "reasoning": "Hepatitis D is clinically inconsistent with the patient's reported absences because the patient explicitly denied symptoms such as drowsiness and confusion, which are mandatory clinical markers for hepatitis D."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Gastroenterologist",
+        "Infectious Disease Specialist"
+      ],
+      "lab_tests": [
+        "Liver Function Test (LFT)",
+        "Hepatitis E Virus (HEV) Antibody Test",
+        "Stool Test for Ova and Parasites"
+      ],
+      "symptoms_to_verify": [
+        "abdominal pain",
+        "joint pain",
+        "fever",
+        "loss of appetite",
+        "vomiting"
+      ]
+    }
+  }
+}

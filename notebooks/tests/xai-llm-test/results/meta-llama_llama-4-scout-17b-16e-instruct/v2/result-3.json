@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "date": "2026-05-17 22:12:04",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 1.21
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "excluded_conditions": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "West Nile encephalitis has a strong clinical correlation with the patient's symptoms, including headache, confusion, coma, stiff neck, and high fever. Although not all symptoms of the disease were reported, the majority of the patient's symptoms align with this disease.",
+      "differential_comparison": [
+        {
+          "disease": "Powassan encephalitis",
+          "reasoning": "Powassan encephalitis has a lower clinical alignment compared to West Nile encephalitis because it has a lower match count and a lower disease coverage. The patient's symptoms mostly match, but some key symptoms like fever and vomiting are not reported."
+        },
+        {
+          "disease": "Eastern equine encephalitis",
+          "reasoning": "Eastern equine encephalitis has an even lower clinical alignment due to a lower match count and lower input coverage. Only a few of the disease's typical symptoms were reported by the patient."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Japanese encephalitis",
+          "reasoning": "Japanese encephalitis is clinically inconsistent with the patient's reported absences because the patient explicitly denied spastic paralysis, which is a mandatory clinical marker for this disease."
+        },
+        {
+          "excluded_disease": "St. Louis encephalitis",
+          "reasoning": "St. Louis encephalitis is also clinically inconsistent due to the patient's denial of spastic paralysis, a critical symptom required for this diagnosis."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurology",
+        "Infectious Disease"
+      ],
+      "lab_tests": [
+        "Cerebrospinal fluid analysis",
+        "Serology for flavivirus",
+        "Viral PCR"
+      ],
+      "symptoms_to_verify": [
+        "paralysis",
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "muscle weakness"
+      ]
+    }
+  }
+}

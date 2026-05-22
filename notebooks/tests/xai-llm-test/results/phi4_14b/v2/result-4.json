@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "phi4:14b",
+    "date": "2026-05-18 06:25:51",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 53.57
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis",
+      "La Crosse encephalitis",
+      "primary amebic meningoencephalitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "Powassan encephalitis is the most likely diagnosis due to its strong clinical correlation with the patient's reported symptoms. The disease profile aligns perfectly with all of the patient's symptoms, indicating a high level of specificity in symptom matching. While not all known symptoms of Powassan encephalitis are present, those that are match exactly with what the patient has experienced, suggesting a significant overlap between the disease and the patient's condition.",
+      "differential_comparison": [
+        {
+          "disease": "nonparalytic poliomyelitis",
+          "reasoning": "Nonparalytic poliomyelitis shows a good alignment with the patient's symptoms but is less likely than Powassan encephalitis because it does not account for all of the patient's reported symptoms, specifically 'seizure' and 'stiff neck', which are critical markers in this case."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis has a similar symptom profile to nonparalytic poliomyelitis but is even less aligned with the patient's symptoms due to missing 'seizure' and 'stiff neck', which are present in Powassan encephalitis."
+        },
+        {
+          "disease": "La Crosse encephalitis",
+          "reasoning": "La Crosse encephalitis is less likely because it matches fewer of the patient's symptoms, missing key indicators such as 'vomiting' and 'stiff neck', which are present in Powassan encephalitis."
+        },
+        {
+          "disease": "primary amebic meningoencephalitis",
+          "reasoning": "Primary amebic meningoencephalitis is the least aligned with the patient's symptoms, missing several critical markers such as 'fever', 'vomiting', and 'stiff neck' that are present in Powassan encephalitis."
+        }
+      ],
+      "exclusion_criteria": []
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Infectious Disease Specialist",
+        "Neurologist"
+      ],
+      "lab_tests": [
+        "Lumbar puncture for CSF analysis",
+        "Serology test for Powassan virus antibodies",
+        "MRI of the brain",
+        "Complete blood count (CBC)"
+      ],
+      "symptoms_to_verify": [
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "spastic paralysis",
+        "stupor"
+      ]
+    }
+  }
+}

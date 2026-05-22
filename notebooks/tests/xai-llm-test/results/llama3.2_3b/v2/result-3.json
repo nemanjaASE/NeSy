@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "llama3.2:3b",
+    "date": "2026-05-18 06:05:52",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 29.74
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "high",
+    "differentials": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis",
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "excluded_conditions": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "West Nile encephalitis has a strong clinical correlation due to its highly specific symptom profile, which includes headache, confusion, coma, stiff neck, and high fever. These symptoms are consistent with the patient's reported absences.",
+      "differential_comparison": [
+        {
+          "disease": "Japanese encephalitis",
+          "reasoning": "Although Japanese encephalitis has a strong clinical correlation, it is excluded due to the presence of spastic paralysis in the blocking symptoms list. This symptom was explicitly denied by the patient."
+        },
+        {
+          "disease": "St. Louis encephalitis",
+          "reasoning": "Similar to Japanese encephalitis, St. Louis encephalitis is also excluded due to the presence of spastic paralysis in the blocking symptoms list."
+        },
+        {
+          "disease": "Powassan encephalitis",
+          "reasoning": "Powassan encephalitis has a lower clinical alignment compared to West Nile encephalitis due to its lower disease coverage and input coverage. The patient's reported symptoms do not fully match the disease's known symptoms."
+        },
+        {
+          "disease": "Eastern equine encephalitis",
+          "reasoning": "Eastern equine encephalitis has a lower clinical alignment compared to West Nile encephalitis due to its lower input coverage. The patient's reported symptoms do not fully match the disease's known symptoms."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Japanese encephalitis",
+          "reasoning": "The presence of spastic paralysis in the blocking symptoms list makes Japanese encephalitis clinically inconsistent with the patient's reported absences."
+        },
+        {
+          "excluded_disease": "St. Louis encephalitis",
+          "reasoning": "The presence of spastic paralysis in the blocking symptoms list makes St. Louis encephalitis clinically inconsistent with the patient's reported absences."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurologist",
+        "Infectious disease specialist"
+      ],
+      "lab_tests": [
+        "CT scan of the brain",
+        "MRI of the brain",
+        "Viral PCR test"
+      ],
+      "symptoms_to_verify": [
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "spastic paralysis",
+        "stupor"
+      ]
+    }
+  }
+}

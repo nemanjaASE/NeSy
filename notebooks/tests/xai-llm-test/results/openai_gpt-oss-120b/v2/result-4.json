@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "test_name": "Test Case 4",
+    "model": "openai/gpt-oss-120b",
+    "date": "2026-05-17 22:10:02",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 32.34
+  },
+  "results": {
+    "most_likely": "Powassan encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "nonparalytic poliomyelitis",
+      "poliomyelitis",
+      "La Crosse encephalitis",
+      "primary amebic meningoencephalitis"
+    ],
+    "excluded_conditions": [],
+    "reasoning": {
+      "primary_analysis": "The patient's presentation of headache, fever, vomiting, seizure activity, and neck stiffness aligns closely with the classic encephalitic picture of Powassan encephalitis. This combination captures the core neurologic and systemic features expected for this infection, making it the most compelling match among the candidates.",
+      "differential_comparison": [
+        {
+          "disease": "nonparalytic poliomyelitis",
+          "reasoning": "While this condition shares headache, fever, vomiting, and neck stiffness, it does not account for the seizure activity observed in the patient. The absence of this key neurologic sign reduces its overall alignment."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Similar to the nonparalytic form, poliomyelitis matches several systemic symptoms but lacks seizure involvement, which is a prominent feature in the patient's profile, leading to a weaker fit."
+        },
+        {
+          "disease": "La Crosse encephalitis",
+          "reasoning": "This disease captures headache, fever, and seizures but misses the vomiting and neck stiffness reported by the patient. Additionally, it anticipates paralysis or coma, which have not been noted, further lowering its correspondence."
+        },
+        {
+          "disease": "primary amebic meningoencephalitis",
+          "reasoning": "The condition aligns with headache, vomiting, and seizures yet does not include fever or neck stiffness. It also expects symptoms such as coma, nausea, or delirium that are not currently reported, making its match less complete."
+        }
+      ],
+      "exclusion_criteria": []
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Infectious Disease Specialist",
+        "Neurologist",
+        "Vector‑borne Disease Expert"
+      ],
+      "lab_tests": [
+        "CSF analysis with cell count, protein, and glucose",
+        "PCR assay for Powassan virus in CSF",
+        "Serologic testing for tick‑borne encephalitis viruses",
+        "Magnetic Resonance Imaging (MRI) of the brain"
+      ],
+      "symptoms_to_verify": [
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "spastic paralysis",
+        "stupor"
+      ]
+    }
+  }
+}

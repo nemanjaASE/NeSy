@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "test_name": "Test Case 3",
+    "model": "openai/gpt-oss-120b",
+    "date": "2026-05-17 22:09:50",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 11.88
+  },
+  "results": {
+    "most_likely": "West Nile encephalitis",
+    "confidence": "moderate",
+    "differentials": [
+      "Powassan encephalitis",
+      "Eastern equine encephalitis"
+    ],
+    "excluded_conditions": [
+      "Japanese encephalitis",
+      "St. Louis encephalitis"
+    ],
+    "reasoning": {
+      "primary_analysis": "West Nile encephalitis shows a strong clinical correlation with the patient's presentation. The patient reports headache, confusion, coma, stiff neck, and high fever, all of which are characteristic of West Nile encephalitis. This combination of core neurologic and systemic signs aligns closely with the typical manifestation of the disease, indicating that the majority of the patient's reported symptoms are captured.",
+      "differential_comparison": [
+        {
+          "disease": "Powassan encephalitis",
+          "reasoning": "Powassan encephalitis shares several features such as headache, confusion, coma, and stiff neck, but the patient also reports high fever, which is not a prominent feature in the matched list for Powassan. Additionally, Powassan's typical profile includes fever, vomiting, and seizure that were not reported, resulting in a less complete match."
+        },
+        {
+          "disease": "Eastern equine encephalitis",
+          "reasoning": "Eastern equine encephalitis matches on headache, coma, and high fever, but lacks the confusion and stiff neck that the patient experiences. Moreover, many characteristic signs of Eastern equine encephalitis such as vomiting, seizure, and chills are absent, leading to a lower overall alignment."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Japanese encephalitis",
+          "reasoning": "The disease requires spastic paralysis, a symptom the patient explicitly denied, making it clinically inconsistent with the patient's reported absences."
+        },
+        {
+          "excluded_disease": "St. Louis encephalitis",
+          "reasoning": "The disease requires spastic paralysis, a symptom the patient explicitly denied, making it clinically inconsistent with the patient's reported absences."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Infectious Disease Specialist",
+        "Neurologist",
+        "Public Health/Epidemiology Consultant"
+      ],
+      "lab_tests": [
+        "West Nile virus PCR on cerebrospinal fluid",
+        "West Nile virus IgM serology in serum",
+        "Complete blood count with differential",
+        "Magnetic resonance imaging of the brain"
+      ],
+      "symptoms_to_verify": [
+        "paralysis",
+        "tremor",
+        "disorientation",
+        "convulsion",
+        "muscle weakness",
+        "paresthesia",
+        "stupor"
+      ]
+    }
+  }
+}

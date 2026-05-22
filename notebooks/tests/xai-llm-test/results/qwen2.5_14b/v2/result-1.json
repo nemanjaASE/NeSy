@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "qwen2.5:14b",
+    "date": "2026-05-18 06:27:53",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 49.49
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Ebola virus disease"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "West Nile fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "The patient's symptoms strongly align with nonparalytic poliomyelitis, which includes headache, pharynx inflammation, fever, and vomiting. The majority of the disease's known symptoms were identified in the patient's profile, indicating a highly specific symptom profile.",
+      "differential_comparison": [
+        {
+          "disease": "Ebola virus disease",
+          "reasoning": "While Ebola virus disease also matches several symptoms such as headache, pharynx inflammation, fever, vomiting, and bleeding, it has fewer unique matching symptoms compared to nonparalytic poliomyelitis. Additionally, the patient's profile does not include some of the more distinctive symptoms like rash or joint pain that are typically associated with Ebola virus disease."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Marburg hemorrhagic fever",
+          "reasoning": "The patient explicitly denied experiencing maculopapular rash and chills, which are mandatory clinical markers for Marburg hemorrhagic fever. Therefore, this condition is clinically inconsistent with the patient's reported absences."
+        },
+        {
+          "excluded_disease": "West Nile fever",
+          "reasoning": "The patient also denied having a maculopapular rash, which is required for West Nile fever. This makes the disease clinically inconsistent with the patient's profile."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Neurologist",
+        "Infectious Disease Specialist"
+      ],
+      "lab_tests": [
+        "CSF analysis",
+        "Viral PCR panel",
+        "Blood culture"
+      ],
+      "symptoms_to_verify": [
+        "fatigue",
+        "stiff neck"
+      ]
+    }
+  }
+}

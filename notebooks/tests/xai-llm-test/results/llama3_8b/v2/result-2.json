@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "llama3:8b",
+    "date": "2026-05-18 06:12:38",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 21.07
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "high",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "The most likely disease, hepatitis E, has a strong clinical correlation with the patient's reported symptoms. The majority of its known symptoms were identified in the patient's profile, including fatigue, nausea, jaundice, acholic stool, and dark urine.",
+      "differential_comparison": [
+        {
+          "disease": "hepatitis A",
+          "reasoning": "Hepatitis A has a lower clinical alignment due to missing symptoms such as abdominal pain, joint pain, fever, loss of appetite, and vomiting. Although some symptoms align, the overall coverage is not as comprehensive."
+        },
+        {
+          "disease": "hepatitis B",
+          "reasoning": "Hepatitis B also has a lower clinical alignment due to missing symptoms like abdominal pain, joint pain, fever, loss of appetite, and vomiting. The patient's reported symptoms do not fully capture the disease's known manifestations."
+        },
+        {
+          "disease": "hepatitis C",
+          "reasoning": "Hepatitis C has a lower clinical alignment due to missing symptoms such as abdominal pain, joint pain, fever, loss of appetite, and vomiting. Although some symptoms align, the overall coverage is not as comprehensive."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "hepatitis D",
+          "reasoning": "Hepatitis D is clinically inconsistent with the patient's reported absences due to mandatory clinical markers such as drowsiness and confusion that were explicitly denied by the patient."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "gastroenterologist"
+      ],
+      "lab_tests": [
+        "Liver function tests",
+        "Viral hepatitis panel",
+        "Complete blood count"
+      ],
+      "symptoms_to_verify": [
+        "abdominal pain",
+        "joint pain",
+        "fever",
+        "loss of appetite",
+        "vomiting",
+        "liver inflammation"
+      ]
+    }
+  }
+}

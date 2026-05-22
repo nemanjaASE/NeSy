@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "test_name": "Test Case 2",
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "date": "2026-05-17 22:12:02",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 1.32
+  },
+  "results": {
+    "most_likely": "hepatitis E",
+    "confidence": "moderate",
+    "differentials": [
+      "hepatitis A",
+      "hepatitis B",
+      "hepatitis C"
+    ],
+    "excluded_conditions": [
+      "hepatitis D"
+    ],
+    "reasoning": {
+      "primary_analysis": "Hepatitis E has the strongest clinical correlation due to its high normalized score and the fact that all reported symptoms match this disease. The patient's symptoms, including fatigue, nausea, jaundice, acholic stool, and dark urine, are highly specific to hepatitis E. Although some symptoms like abdominal pain and fever are not reported, the majority of the disease's known symptoms were identified.",
+      "differential_comparison": [
+        {
+          "disease": "hepatitis A",
+          "reasoning": "Hepatitis A has a lower clinical alignment compared to hepatitis E due to its lower normalized score and fewer matched symptoms. While it shares common symptoms like fatigue, nausea, and jaundice, it lacks one of the patient's reported symptoms, dark urine."
+        },
+        {
+          "disease": "hepatitis B",
+          "reasoning": "Hepatitis B has a similar profile to hepatitis A, with the same normalized score and matched symptoms. However, its clinical alignment is lower than hepatitis E due to the same reasons."
+        },
+        {
+          "disease": "hepatitis C",
+          "reasoning": "Hepatitis C also shares the same characteristics as hepatitis A and B, with a lower normalized score and similar matched symptoms. Its clinical alignment is lower compared to hepatitis E."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "hepatitis D",
+          "reasoning": "Hepatitis D is clinically inconsistent with the patient's reported absences because the patient explicitly denied symptoms like drowsiness and confusion, which are mandatory clinical markers for this disease."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Infectious Disease Specialist",
+        "Gastroenterologist"
+      ],
+      "lab_tests": [
+        "Liver Function Tests (LFTs)",
+        "Hepatitis E IgM antibody test",
+        "Viral load test for hepatitis E"
+      ],
+      "symptoms_to_verify": [
+        "abdominal pain",
+        "joint pain",
+        "fever",
+        "loss of appetite",
+        "vomiting",
+        "liver inflammation"
+      ]
+    }
+  }
+}

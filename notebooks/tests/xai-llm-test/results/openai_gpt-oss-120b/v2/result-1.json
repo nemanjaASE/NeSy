@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "test_name": "Test Case 1",
+    "model": "openai/gpt-oss-120b",
+    "date": "2026-05-17 22:09:44",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 2.95
+  },
+  "results": {
+    "most_likely": "nonparalytic poliomyelitis",
+    "confidence": "high",
+    "differentials": [
+      "Ebola virus disease",
+      "poliomyelitis"
+    ],
+    "excluded_conditions": [
+      "Marburg hemorrhagic fever",
+      "West Nile fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "The patient's presentation of headache, throat inflammation, fever, and vomiting aligns closely with the classic symptom profile of nonparalytic poliomyelitis. Most of the disease's characteristic manifestations are captured, and the patient's reported signs correspond well with what is expected for this condition, making it the strongest clinical match.",
+      "differential_comparison": [
+        {
+          "disease": "Ebola virus disease",
+          "reasoning": "While Ebola shares several initial symptoms such as headache, throat inflammation, fever, and vomiting, it also typically includes bleeding, which the patient has not reported. Additionally, many other expected features like diarrhea, rash, and joint pain are absent, resulting in a less precise fit compared to the top diagnosis."
+        },
+        {
+          "disease": "poliomyelitis",
+          "reasoning": "Poliomyelitis matches the same core symptoms, but it commonly involves fatigue, a stiff neck, and the possibility of flaccid paralysis—symptoms the patient has not indicated. The presence of these additional expected findings lowers its overall alignment relative to the nonparalytic form."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Marburg hemorrhagic fever",
+          "reasoning": "The patient explicitly denied a maculopapular rash and chills, both of which are mandatory clinical markers for Marburg hemorrhagic fever, making this condition clinically inconsistent with the reported absences."
+        },
+        {
+          "excluded_disease": "West Nile fever",
+          "reasoning": "A maculopapular rash, which the patient specifically denied, is required for West Nile fever, rendering the disease clinically inconsistent with the patient's reported absences."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "Infectious Disease Specialist",
+        "Neurologist",
+        "Public Health Physician"
+      ],
+      "lab_tests": [
+        "Stool PCR for poliovirus",
+        "Serum neutralizing antibody titers for poliovirus",
+        "Complete blood count with differential",
+        "Cerebrospinal fluid analysis"
+      ],
+      "symptoms_to_verify": [
+        "fatigue",
+        "stiff neck"
+      ]
+    }
+  }
+}
