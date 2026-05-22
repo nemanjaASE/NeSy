@@ -13,36 +13,58 @@ nav_order: 5
 
 ## 🛠️ Installation & Setup
 
-**0. Clone the repository**
+### **0. Clone the repository**
 
 ```
  git clone https://github.com/nemanjaASE/NeSy.git
 ```
 
-**1. Navigate to the backend project root:**
+### **1. Navigate to the backend project root:**
 
 ```
   cd NeSy/backend
 ```
 
-**2. Create a virtual environment:**
+### **2. Create a virtual environment:**
 
+#### 🖥️ Windows
+
+```powershell
+python -m venv .venv
+
+# Activate venv
+.venv\Scripts\activate
 ```
-  python -m venv .venv
 
-  # Activate on Windows:
-  .venv\Scripts\activate
-  # Activate on Linux/macOS:
-  source .venv/bin/activate
+#### 🍎 macOS
+
+```bash
+python3 -m venv .venv
+
+# Activate venv
+source .venv/bin/activate
 ```
 
-**3. Install dependencies:**
+#### 🐧 Linux
+
+```bash
+python3 -m venv .venv
+
+# Activate venv
+source .venv/bin/activate
+```
+
+> **⚠️ Note:** This project requires **Python 3.12**. Most Linux systems ship with an older version that may also lack SSL support, causing `pip` to fail during dependency installation. It is strongly recommended to use **pyenv** to install and manage Python 3.12 before proceeding with the steps below.
+>
+> 📘 **[Click here to read the pyenv Setup Guide](../docs/pyenv-python312-ubuntu.md)**
+
+### **3. Install dependencies:**
 
 ```
   pip install -r requirements.txt
 ```
 
-**4. Configuration (.env file):**
+### **4. Configuration (.env file):**
 
 Create a .env file in the backend/ directory:
 
@@ -73,14 +95,14 @@ ALLOW_CREDENTIALS="your-allow-credentials" # true or false
 
 ## 💻 Running the Application
 
-**1. Initialize the Knowledge Graph:**
+### **1. Initialize the Knowledge Graph:**
 
 Before starting the API, you must populate the Neo4j database with the medical ontologies, calculate the Information Content (IC) weights, and generate symptom embeddings. 
 
 > **Note:** The preparation pipeline is currently implemented as interactive Jupyter Notebooks. 
 > 📘 **[Click here to read the detailed Notebooks Setup Guide](./notebooks/README.md)** to learn how to configure your VS Code kernel and execute the graph enrichment steps.
 
-**2. Start the FastAPI Development Server**
+### **2. Start the FastAPI Development Server**
 
 ```
 fastapi dev app/main.py
