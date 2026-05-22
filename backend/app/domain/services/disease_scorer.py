@@ -13,6 +13,7 @@ class DiseaseScorer:
             uri=rec.uri,
             normalized_score=round(rec.normalized_score, 2),
             match_count=rec.match_count,
+            total_symptoms=rec.total_symptom_count,
             disease_coverage_pct=round(rec.match_count / total * 100, 1),
             input_coverage_pct=round(rec.match_count / total_input_symptoms * 100, 1),
             matched_symptoms=rec.matched_symptoms,

@@ -2,10 +2,26 @@ from pydantic import BaseModel, Field
 from typing import List
 
 
+class DifferentialComparison(BaseModel):
+    disease: str
+    reasoning: str
+
+
+class ExclusionCriteria(BaseModel):
+    excluded_disease: str
+    reasoning: str
+
+
 class XAIReasoning(BaseModel):
     primary_analysis: str
-    differential_comparison: str
-    exclusion_criteria: str
+    differential_comparison: List[DifferentialComparison]
+    exclusion_criteria: List[ExclusionCriteria]
+
+
+class Recommendation(BaseModel):
+    specialist_consultations: List[str] = Field(default_factory=list)
+    lab_tests: List[str] = Field(default_factory=list)
+    symptoms_to_verify: List[str] = Field(default_factory=list)
 
 
 class XAIExplanationResult(BaseModel):
@@ -14,7 +30,7 @@ class XAIExplanationResult(BaseModel):
     differentials: List[str] = Field(default_factory=list)
     excluded_conditions: List[str] = Field(default_factory=list)
     reasoning: XAIReasoning
-    recommendation: str
+    recommendation: Recommendation
 
     @classmethod
     def fallback(cls, message: str) -> "XAIExplanationResult":
@@ -25,8 +41,8 @@ class XAIExplanationResult(BaseModel):
             excluded_conditions=[],
             reasoning=XAIReasoning(
                 primary_analysis=message,
-                differential_comparison="N/A",
-                exclusion_criteria="N/A",
+                differential_comparison=[],
+                exclusion_criteria=[],
             ),
-            recommendation="Consult a medical professional.",
+            recommendation=Recommendation(),
         )

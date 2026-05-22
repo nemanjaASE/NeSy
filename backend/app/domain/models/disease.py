@@ -20,6 +20,7 @@ class DiseaseInference(BaseModel):
     uri: str
     normalized_score: float
     match_count: int
+    total_symptoms: int
     disease_coverage_pct: float
     input_coverage_pct: float
     matched_symptoms: List[str]
