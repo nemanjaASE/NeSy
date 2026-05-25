@@ -1,5 +1,5 @@
-import { apiConfig } from "@/config";
-import { apiRequest } from "@/lib";
+import { apiConfig } from "../../config";
+import { apiRequest } from "../../lib/http";
 import type { DiagnosticRequest, DiagnosticResponse } from "./types";
 
 export function runDiagnosis(
