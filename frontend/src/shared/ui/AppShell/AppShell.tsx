@@ -6,6 +6,7 @@ export function AppShell({ children }: PropsWithChildren) {
     <main className="nesy-app">
       <div className="bg-wash" />
       <div className="bg-glow" />
+      <div className="bg-grid" />
       <div className="page">{children}</div>
     </main>
   );

@@ -4,6 +4,7 @@ type MetricCardProps = {
   countTo?: number;
   label: string;
   suffix?: string;
+  tone?: "blue" | "teal" | "violet";
   value: string;
 };
 
@@ -19,6 +20,7 @@ export function MetricCard({
   countTo,
   label,
   suffix,
+  tone = "blue",
   value,
 }: MetricCardProps) {
   const [animatedValue, setAnimatedValue] = useState(0);
@@ -55,9 +57,11 @@ export function MetricCard({
     : value;
 
   return (
-    <article className="metric-card">
+    <article className={`metric-card metric-card-${tone}`}>
       <span>{label}</span>
-      <strong>{displayValue}</strong>
+      <div>
+        <strong>{displayValue}</strong>
+      </div>
     </article>
   );
 }

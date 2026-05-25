@@ -6,14 +6,14 @@ export function SiteHeader() {
       <a className="brand" href="/">
         <div className="brand-mark">
           <svg
-            width="20"
-            height="20"
+            width="28"
+            height="28"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2.35"
           >
             <circle cx="12" cy="12" r="3" />
             <circle cx="19" cy="5" r="3" />
@@ -30,7 +30,7 @@ export function SiteHeader() {
 
       <nav className="nav-links">
         {navItems.map((item) => (
-          <a href="/" key={item}>
+          <a className={item === "Platform" ? "is-active" : undefined} href="/" key={item}>
             {item}
           </a>
         ))}
