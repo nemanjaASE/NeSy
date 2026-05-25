@@ -1,0 +1,45 @@
+.nesy-app {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #06080d;
+  color: #ffffff;
+}
+
+.bg-wash,
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bg-wash {
+  background: linear-gradient(180deg, #141a2b 0%, #06080d 44%);
+}
+
+.bg-glow {
+  height: 560px;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(94, 123, 255, 0.5),
+    rgba(94, 123, 255, 0.12) 28%,
+    transparent 62%
+  );
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100vh;
+  width: min(100%, 1280px);
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 14px;
+  }
+}
