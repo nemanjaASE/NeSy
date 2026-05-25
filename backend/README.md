@@ -107,3 +107,46 @@ Before starting the API, you must populate the Neo4j database with the medical o
 ```
 fastapi dev app/main.py
 ```
+
+## 🧪 Local Testing & CI Checks
+
+Before pushing code or creating a pull request, it is highly recommended to replicate the GitHub Actions CI pipeline locally. This ensures your code is clean, type-safe, and secure.
+
+### 1. Install Dev Dependencies
+
+Install the necessary testing and linting tools alongside the main requirements:
+
+```
+pip install ruff mypy bandit pip-audit
+```
+
+### 2. Linting & Formatting (Ruff)
+
+We use Ruff for fast code linting and formatting.
+
+```
+# Check for styling and logic errors
+ruff check .
+
+# Auto-format the code
+ruff format .
+```
+### 3. Static Type Checking (Mypy)
+
+Ensure all type hints are correct:
+
+```
+mypy app/
+```
+
+### 4. Security Audits
+
+Scan both the application code and external libraries for known vulnerabilities:
+
+```
+# Scan application code for bad practices
+bandit -r app/
+
+# Audit dependencies for known CVEs
+pip-audit -r requirements.txt
+```
