@@ -1,4 +1,8 @@
-export const navItems = ["Platform", "Workflow", "Models", "Docs"];
+export const navItems = [
+  { href: "#platform", label: "Platform" },
+  { href: "#models", label: "Models" },
+  { href: "#docs", label: "Docs" },
+];
 
 type HeroMetric = {
   countTo?: number;
@@ -91,17 +95,35 @@ export const previewDiagnosis = {
   },
 };
 
-export const workflowCards = [
+export const runtimePipeline = [
   {
-    title: "Extract symptoms",
-    text: "Convert patient narratives into structured, present and absent clinical findings.",
+    artifact: "present + absent symptoms",
+    phase: "Extract",
+    title: "Read the patient narrative",
+    text: "The system turns free-form text into structured clinical findings, including symptoms the patient explicitly denies.",
   },
   {
-    title: "Ground concepts",
-    text: "Map extracted phrases to standard medical ontologies before running graph inference.",
+    artifact: "mapped ontology symptoms",
+    phase: "Ground",
+    title: "Map symptoms to ontology terms",
+    text: "Extracted phrases are normalized against the symptom ontology so reasoning uses stable medical concepts.",
   },
   {
-    title: "Explain results",
-    text: "Deliver ranked diagnostic candidates with transparent reasoning, exclusions, and next steps.",
+    artifact: "candidate diseases",
+    phase: "Infer",
+    title: "Search the disease graph",
+    text: "Neo4j graph reasoning finds diseases connected to matched symptoms through ontology-backed has_symptom relations.",
+  },
+  {
+    artifact: "ranked + filtered results",
+    phase: "Rank",
+    title: "Score and filter candidates",
+    text: "Candidates are ranked by symptom specificity, while explicitly absent symptoms block incompatible diseases.",
+  },
+  {
+    artifact: "explanation + care plan",
+    phase: "Explain",
+    title: "Return transparent reasoning",
+    text: "The UI receives the likely diagnosis, differentials, ruled-out conditions, and recommended next steps.",
   },
 ];

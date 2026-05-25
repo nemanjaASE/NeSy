@@ -4,19 +4,21 @@ import { HeroVisualCarousel } from "./ui/HeroVisualCarousel";
 import { SiteFooter } from "./ui/SiteFooter";
 import { SiteHeader } from "./ui/SiteHeader";
 import { WorkspacePreview } from "./ui/WorkspacePreview";
+import { WorkflowSection } from "./ui/WorkflowSection";
 import "./HomePage.css";
 
 export function HomePage() {
   return (
     <AppShell>
       <SiteHeader />
-      <section className="hero">
+      <section className="hero" id="platform">
         <div className="hero-top">
           <HeroSection />
           <HeroVisualCarousel />
         </div>
         <WorkspacePreview />
       </section>
+      <WorkflowSection />
       <SiteFooter />
     </AppShell>
   );

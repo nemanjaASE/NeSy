@@ -30,8 +30,12 @@ export function SiteHeader() {
 
       <nav className="nav-links">
         {navItems.map((item) => (
-          <a className={item === "Platform" ? "is-active" : undefined} href="/" key={item}>
-            {item}
+          <a
+            className={item.label === "Platform" ? "is-active" : undefined}
+            href={item.href}
+            key={item.label}
+          >
+            {item.label}
           </a>
         ))}
       </nav>

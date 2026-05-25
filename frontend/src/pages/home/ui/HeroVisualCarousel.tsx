@@ -37,6 +37,11 @@ const reasoningSteps = [
     text: "diseases through Neo4j",
   },
   {
+    icon: "score",
+    label: "Score",
+    text: "rank and filter candidates",
+  },
+  {
     icon: "spark",
     label: "Explain",
     text: "ranked reasoning output",
@@ -67,6 +72,17 @@ function StepIcon({ type }: { type: string }) {
         <circle cx="18" cy="7" r="2.5" />
         <circle cx="18" cy="17" r="2.5" />
         <path d="M8.2 10.9 15.8 8.1M8.2 13.1l7.6 2.8" />
+      </svg>
+    );
+  }
+
+  if (type === "score") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 19V9" />
+        <path d="M12 19V5" />
+        <path d="M19 19v-7" />
+        <path d="M4 19h16" />
       </svg>
     );
   }
