@@ -15,7 +15,7 @@ const slides = [
   },
   {
     eyebrow: "Clinical output",
-    title: "Ranked result with next steps",
+    title: "Hepatitis E result preview",
     visual: "output",
   },
 ];
@@ -139,7 +139,7 @@ function ClinicalOutputVisual() {
                 <strong>{previewDiagnosis.presentSymptoms.length} detected</strong>
               </div>
               <div className="mini-token-grid">
-                {previewDiagnosis.presentSymptoms.slice(0, 4).map((item) => (
+                {previewDiagnosis.presentSymptoms.map((item) => (
                   <span key={item}>{item}</span>
                 ))}
               </div>
@@ -178,6 +178,56 @@ function ClinicalOutputVisual() {
               </section>
             </div>
 
+            <section className="mini-reasoning-panel">
+              <small>Differential comparison</small>
+              <div className="mini-reasoning-row">
+                {previewDiagnosis.differentialComparison
+                  .slice(0, 2)
+                  .map((item) => (
+                    <article key={item.disease}>
+                      <strong>{item.disease}</strong>
+                      <span>Alternative</span>
+                    </article>
+                  ))}
+              </div>
+            </section>
+
+            <div className="mini-bottom-grid">
+              <article>
+                <small>Ruled out</small>
+                <strong>{previewDiagnosis.exclusionCriteria[0]?.disease}</strong>
+              </article>
+              <article>
+                <small>Consult</small>
+                <div className="mini-care-chips">
+                  {previewDiagnosis.recommendation.specialistConsultations.map(
+                    (item) => (
+                      <span key={item}>{item}</span>
+                    ),
+                  )}
+                </div>
+              </article>
+              <article>
+                <small>Test</small>
+                <div className="mini-care-chips">
+                  {previewDiagnosis.recommendation.labTests
+                    .slice(0, 2)
+                    .map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
+                </div>
+              </article>
+              <article>
+                <small>Verify</small>
+                <div className="mini-care-chips">
+                  {previewDiagnosis.recommendation.symptomsToVerify
+                    .slice(0, 2)
+                    .map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </div>

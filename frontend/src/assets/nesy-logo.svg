@@ -1,0 +1,31 @@
+<svg width="300" height="86" viewBox="0 0 300 86" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">NeSy logo</title>
+  <desc id="desc">Minimal stethoscope mark combined with the NeSy wordmark.</desc>
+  <defs>
+    <linearGradient id="nesy-word-gradient" x1="164" y1="13" x2="246" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9AAEFF"/>
+      <stop offset="0.78" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="nesy-underline-gradient" x1="91" y1="70" x2="252" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.82"/>
+      <stop offset="0.55" stop-color="#8EA5FF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#8EA5FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="nesy-mark-glow" x="0" y="0" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#22D3EE" flood-opacity="0.11"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#nesy-mark-glow)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 16V34.5C24 43.1 30.9 50 39.5 50C48.1 50 55 43.1 55 34.5V16" stroke="#DFE7F3" stroke-width="4.6"/>
+    <path d="M39.5 50V54C39.5 59.8 44.2 64.5 50 64.5C55.8 64.5 60.5 59.8 60.5 54V48" stroke="#9AAEFF" stroke-width="4.6"/>
+    <circle cx="60.5" cy="42.5" r="6.3" stroke="#22D3EE" stroke-width="4.6"/>
+    <path d="M18 16H30M49 16H61" stroke="#8EA5FF" stroke-opacity="0.5" stroke-width="3.4"/>
+  </g>
+
+  <g>
+    <text x="88" y="58" fill="#DFE7F3" font-family="Geist, Inter, Arial, sans-serif" font-size="54" font-weight="900" letter-spacing="-3.2">Ne</text>
+    <text x="164" y="58" fill="url(#nesy-word-gradient)" font-family="Geist, Inter, Arial, sans-serif" font-size="54" font-weight="900" letter-spacing="-3.2">Sy</text>
+    <rect x="91" y="70" width="162" height="2" rx="1" fill="url(#nesy-underline-gradient)"/>
+  </g>
+</svg>

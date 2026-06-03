@@ -1,4 +1,5 @@
 import { MetricCard } from "@/shared/ui/MetricCard/MetricCard";
+import { Link } from "react-router-dom";
 import { heroMetrics } from "../model/content";
 
 export function HeroSection() {
@@ -13,9 +14,9 @@ export function HeroSection() {
       </p>
 
       <div className="hero-actions">
-        <a className="primary-button" href="#workspace">
+        <Link className="primary-button" to="/diagnosis">
           Start diagnosis
-        </a>
+        </Link>
         <a className="secondary-button" href="#workflow">
           See how it works
         </a>

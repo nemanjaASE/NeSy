@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from "react";
+import { BackToTop } from "../BackToTop";
 import "./AppShell.css";
 
 export function AppShell({ children }: PropsWithChildren) {
@@ -8,6 +9,7 @@ export function AppShell({ children }: PropsWithChildren) {
       <div className="bg-glow" />
       <div className="bg-grid" />
       <div className="page">{children}</div>
+      <BackToTop />
     </main>
   );
 }

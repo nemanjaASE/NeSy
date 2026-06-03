@@ -107,6 +107,10 @@ export function WorkspacePreview() {
               <strong className="input-badge">Input</strong>
             </div>
             <p>{previewDiagnosis.inputText}</p>
+            <div className="preview-action-row" aria-hidden="true">
+              <span>Run diagnosis</span>
+              <span>Clear</span>
+            </div>
           </article>
 
           <div className="finding-list">
@@ -214,11 +218,11 @@ export function WorkspacePreview() {
                       <span>Verify</span>
                     </div>
                     <div className="recommendation-chips monitor-chips">
-                      {previewDiagnosis.recommendation.symptomsToVerify
-                        .slice(0, 4)
-                        .map((item) => (
+                      {previewDiagnosis.recommendation.symptomsToVerify.map(
+                        (item) => (
                           <strong key={item}>{item}</strong>
-                      ))}
+                        ),
+                      )}
                     </div>
                   </section>
                 </div>

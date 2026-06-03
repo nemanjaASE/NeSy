@@ -1,52 +1,49 @@
+import nesyLogo from "@/assets/nesy-logo.svg";
+import { Link, useLocation } from "react-router-dom";
 import { navItems } from "../model/content";
 
 export function SiteHeader() {
+  const location = useLocation();
+
+  const isActive = (href: string) => {
+    const [path, hash = ""] = href.split("#");
+
+    if (path !== location.pathname) {
+      return false;
+    }
+
+    if (!hash) {
+      return location.hash === "";
+    }
+
+    return (
+      location.hash === `#${hash}` ||
+      (hash === "platform" && location.hash === "")
+    );
+  };
+
   return (
     <header className="topbar">
-      <a className="brand" href="/">
-        <div className="brand-mark">
-          <svg
-            width="28"
-            height="28"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2.35"
-          >
-            <circle cx="12" cy="12" r="3" />
-            <circle cx="19" cy="5" r="3" />
-            <circle cx="5" cy="19" r="3" />
-            <line x1="16.5" y1="7.5" x2="14.5" y2="9.5" />
-            <line x1="9.5" y1="14.5" x2="7.5" y2="16.5" />
-          </svg>
-        </div>
-        <span>
-          <strong>NeSy</strong>
-          <small>Diagnostic AI</small>
-        </span>
-      </a>
+      <Link className="brand" to="/">
+        <img className="brand-logo" src={nesyLogo} alt="NeSy" />
+      </Link>
 
       <nav className="nav-links">
         {navItems.map((item) => (
-          <a
-            className={item.label === "Platform" ? "is-active" : undefined}
-            href={item.href}
+          <Link
+            className={isActive(item.href) ? "is-active" : undefined}
             key={item.label}
+            to={item.href}
           >
             {item.label}
-          </a>
+          </Link>
         ))}
       </nav>
 
       <div className="top-actions">
-        <a className="ghost-link" href="/">
-          Sign in
-        </a>
-        <a className="primary-link" href="#workspace">
+        <Link className="primary-link" to="/diagnosis">
           Launch
-        </a>
+        </Link>
       </div>
     </header>
   );
