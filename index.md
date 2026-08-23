@@ -3,7 +3,7 @@ title: Overview
 nav_order: 1
 ---
 
-<h1 align="center">🌟 NeSy: Neuro-Symbolic Diagnostic Framework</h1>
+<h1 align="center">🌟 NeSy-X: Neuro-Symbolic Diagnostic Framework</h1>
 
 <p align="center">
 
@@ -22,20 +22,20 @@ nav_order: 1
 </p>
 
 ---
-NeSy is a diagnostic assistance framework that bridges the gap between neural natural language processing and symbolic knowledge representation. By integrating Large Language Models (LLMs) with a Knowledge Graph (Neo4j), the system provides a robust pipeline for disease inference based on standardized medical ontologies.
+NeSy-X is a diagnostic assistance framework that bridges the gap between neural natural language processing and symbolic knowledge representation. By integrating Large Language Models (LLMs) with a Knowledge Graph (KG), the system provides a robust pipeline for disease inference based on standardized medical ontologies.
 
-> ⚠️ **Disclaimer:** NeSy is a research prototype and is not intended
+> ⚠️ **Disclaimer:** NeSy-X is a research prototype and is not intended
 > for clinical use. Do not use for actual medical diagnosis.
 
 # 🎯 Research Contribution
  
-NeSy makes the following contributions to the field of clinical decision support:
+NeSy-X makes the following contributions to the field of clinical decision support:
  
 ---
  
 ## 1. A Validated Neuro-Symbolic Pipeline for Symptom-Driven Disease Inference
  
-NeSy proposes and evaluates a complete pipeline that integrates LLM-based symptom extraction with Knowledge Graph reasoning over standardized biomedical ontologies (DOID, SYMP). Unlike pure LLM approaches, the symbolic layer guarantees that all inferences are grounded in peer-reviewed ontological relationships, eliminating the risk of hallucinated diagnoses.
+NeSy-X proposes and evaluates a complete pipeline that integrates LLM-based symptom extraction with Knowledge Graph reasoning over standardized biomedical ontologies (DO, SYMP). Unlike pure LLM approaches, the symbolic layer guarantees that all inferences are grounded in peer-reviewed ontological relationships, eliminating the risk of hallucinated diagnoses.
  
 ---
  
