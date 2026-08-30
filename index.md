@@ -1,9 +1,6 @@
----
-title: Overview
-nav_order: 1
----
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://nemanjaase.github.io/NeSy/)
 
-<h1 align="center">🌟 NeSy-X: Neuro-Symbolic Diagnostic Framework</h1>
+<h1 align="center">🌟 NeSy-X: Neuro-Symbolic eXplainable Framework for Diagnostic Support</h1>
 
 <p align="center">
 
@@ -22,7 +19,7 @@ nav_order: 1
 </p>
 
 ---
-NeSy-X is a diagnostic assistance framework that bridges the gap between neural natural language processing and symbolic knowledge representation. By integrating Large Language Models (LLMs) with a Knowledge Graph (KG), the system provides a robust pipeline for disease inference based on standardized medical ontologies.
+NeSy-X is a neuro-symbolic framework for diagnostic support that integrates large language models, text vector representations, biomedical ontologies, and a knowledge graph. The neural layer extracts and semantically maps symptoms, while the symbolic layer scores, ranks, and filters candidate diseases. The XAI layer generates structured explanations based on the symbolic results.
 
 > ⚠️ **Disclaimer:** NeSy-X is a research prototype and is not intended
 > for clinical use. Do not use for actual medical diagnosis.
@@ -33,15 +30,15 @@ NeSy-X makes the following contributions to the field of clinical decision suppo
  
 ---
  
-## 1. A Validated Neuro-Symbolic Pipeline for Symptom-Driven Disease Inference
+## 1. A Neuro-Symbolic Framework for Diagnostic Support
  
-NeSy-X proposes and evaluates a complete pipeline that integrates LLM-based symptom extraction with Knowledge Graph reasoning over standardized biomedical ontologies (DO, SYMP). Unlike pure LLM approaches, the symbolic layer guarantees that all inferences are grounded in peer-reviewed ontological relationships, eliminating the risk of hallucinated diagnoses.
+NeSy-X integrates LLM-based symptom extraction and semantic mapping with symbolic reasoning over a knowledge graph based on the Human Disease Ontology (DO) and the Symptom Ontology (SYMP). This separation supports traceability, verifiability, explainability, and controllability. The LLM is not used as a standalone diagnostic mechanism, and errors in extraction, mapping, or explanation generation remain possible.
  
 ---
  
-## 2. Empirical Evaluation of 7 LLMs for Medical NLP Extraction
+## 2. A systematic, metric-driven comparison
  
-A systematic, metric-driven comparison of models ranging from 3B to 120B parameters — both local and cloud-deployed — was conducted across 100 test cases. Results reveal a counter-intuitive **"High-Intelligence Bias"**: larger models tend to extract clinically accurate but ontology-misaligned terms, causing them to underperform smaller, instruction-compliant models.
+Seven locally or cloud-executed LLMs were evaluated on 100 symptom-extraction test cases. Some models combined separately expected symptoms into compound expressions, deviating from the required atomic extraction. This observation concerns the evaluated task and does not imply that larger models are generally less capable.
  
 | Model | Size | Type | F1 Score |
 |---|---|---|---|
@@ -50,11 +47,12 @@ A systematic, metric-driven comparison of models ranging from 3B to 120B paramet
 | mistral-nemo:12b | 12B | Local | 0.790 |
 | phi4:14b | 14B | Local | 0.772 |
 | llama3.2:3b | 3B | Local | 0.731 |
-| llama-4-scout-17b | 17B | Cloud | 0.763 |
-| gpt-oss-120b | 120B | Cloud | 0.691 |
+| llama-4-scout-17b | 17B | Cloud | 0.769 |
+| gpt-oss-120b | 120B | Cloud | 0.689 |
  
-> ✅ `qwen2.5:14b` achieved the highest F1 score, outperforming models up to 8× larger.
- 
+> ✅ `qwen2.5:14b` achieved the highest mean per-case F1 score in this evaluation.
+>
+> Note: Precision, recall, and F1 were calculated separately for each test case and then averaged, corresponding to the macro-average over test cases reported in the thesis.
 ---
  
 ## 3. IC-Weighted, Square-Root Normalized Scoring for Disease Ranking
@@ -67,9 +65,9 @@ This ensures **specificity over quantity** — a disease with two high-IC sympto
  
 ---
  
-## 4. Deterministic Absent-Symptom Filtering with 100% Accuracy
+## 4. Rule-Based Negated-Symptom Filtering
  
-The symbolic Cypher-based inference layer supports explicit negation: symptoms the patient does not have actively exclude matching diseases from the ranked results. Validated across **1,263 test cases**, the exclusion mechanism achieves:
+The filter checks whether a candidate disease is associated with any explicitly negated symptom in the knowledge graph. If such a symptom is found, the candidate is marked as excluded. The mechanism was evaluated on 1,263 controlled test cases:
  
 | Metric | Result |
 |---|---|
@@ -77,15 +75,27 @@ The symbolic Cypher-based inference layer supports explicit negation: symptoms t
 | Survival Accuracy | **100%** |
 | Collateral Filtering Errors | **0** |
  
-This confirms that the negation filter operates deterministically — every absent symptom reliably blocks similar diseases, while the target disease remains unaffected.
+These results demonstrate consistent application of the filtering rule on the constructed test set. They do not establish a 100% clinically correct exclusion rate, and exclusion by the framework does not mean that a disease is clinically impossible.
  
 ---
+ 
+## 5. Evaluation of Symbolic Disease Ranking
+ 
+The symbolic ranking component was evaluated using ontology-derived symptom profiles, initially covering **424 eligible diseases**. Ranking uses graph relations and IC-weighted scoring without a separately trained disease classifier. The complete framework nevertheless uses machine learning through its LLMs and text vector representation model:
+ 
+| Scenario | Hit@1 | Hit@3 | Hit@5 |
+|---|---|---|---|
+| Full match (all symptoms) | **85.4%** | 92.0% | 93.2% |
+| Partial match (drop=1) | 57.3% | 67.7% | 71.2% |
+| Partial match (drop=2) | 50.0% | 63.0% | 67.9% |
+ 
+Ranking performance decreases as symptoms are removed. Some inputs fall below the minimum-match threshold, resulting in no candidates. These controlled experiments assess sensitivity to incomplete symptom profiles, not performance on real patient data.
 
 # 🧬 Biomedical Ontologies
 
-NeSy grounds its symbolic reasoning in standardized, peer-reviewed medical ontologies. This ensures that the system's knowledge base is medically accurate, hierarchically structured, and free from the hallucinations typical of pure LLM approaches.
+NeSy-X uses the Human Disease Ontology (DO) and the Symptom Ontology (SYMP) to represent disease and symptom concepts and their relations. This provides an explicit basis for symbolic reasoning, but the results remain dependent on the coverage and quality of the imported knowledge.
 
-## 🦠 DOID
+## 🦠 Human Disease Ontology (DO)
 
 > **(Human Disease Ontology):** A standardized map of human diseases. It allows the system to understand the relationships between different medical conditions.
 
@@ -112,9 +122,10 @@ MATCH (s:Symptom)
 RETURN count(s);
 ```
 **Total Symptoms Counted:** `1019`
-  
+
 ### Grounding Versions
 
+The listed versions describe the ontology snapshot used in the thesis, not necessarily the latest available releases.
 
 | Ontology | Local Version | Release Cycle | Status | Source |
 | :--- | :--- | :--- | :--- | :--- |
@@ -133,7 +144,7 @@ In the world of medical data, the link between a disease and its symptoms is for
  
 ### 🤔 Why OWL Restriction Instead of a Direct Edge?
  
-#### ➡️ Direct Relationship (Standard Property Graph)
+#### ➡️ Representation of Disease-Symptom Relations
  
 In standard graph databases (e.g., Neo4j), a connection is modeled as a simple binary edge between two nodes:
  
@@ -149,7 +160,7 @@ The edge merely states that a connection **exists**, but says nothing about **wh
  
 #### 🦉 OWL Restriction (Ontological Axiom)
  
-Formal biomedical ontologies (DOID, HP, SYMP) are authored in the **W3C OWL 2 DL** standard, which uses Description Logic (DL). The relation `RO_0002452` is not declared as a simple edge in OWL, but rather as an **existential restriction** (`owl:Restriction`):
+Formal biomedical ontologies (DO, HP, SYMP) are authored in the **W3C OWL 2 DL** standard, which uses Description Logic (DL). The relation `RO_0002452` is not declared as a simple edge in OWL, but rather as an **existential restriction** (`owl:Restriction`):
  
 $$Disease \sqsubseteq \exists\, RO\\_0002452 . Symptom$$
  
@@ -209,7 +220,7 @@ The system is divided into two primary workflows: the **Runtime Pipeline** and t
 
 ![System Architecture](./assets/images/NeSy-workflow.png)
 
-## ⚙️ Preparation Pipeline
+## ⚙️ Preparation Phase
 
 The preparation phase is a two-step process:
 
@@ -227,11 +238,11 @@ Existing biomedical ontologies (DOID and SYMP) are parsed and loaded into the Ne
 
 Before the system can perform inferences, it undergoes a data enrichment phase:
 
-- **Symptom Embedding**: Generates high-dimensional vector representations for symptoms using the ```intfloat/multilingual-e5-large model```.
+- **Symptom Vector Representations**: Symptom nodes are enriched with vector representations of their textual labels using ```intfloat/multilingual-e5-large```. The vectors are stored as node properties and used for semantic mapping during execution.
 
-- **Information Content (IC)**: Calculates IC metrics to weight the significance of each symptom within the graph hierarchy as follows:
+- **Information Content (IC)**: Calculates IC metrics to weight the significance of each symptom based on disease-symptom associations in the graph:
   
-    $$IC(s) = \log \left( \frac{N_{total}}{f(s) + 1} \right)$$
+$$IC(s) = \log \left( \frac{N_{total}}{f(s) + 1} \right)$$
   
   Where:
   
@@ -247,7 +258,7 @@ Before the system can perform inferences, it undergoes a data enrichment phase:
 
 > 📚 **[Notebook Directory & Workflow](./notebooks/README.md)** — Follow these steps to prepare your Jupyter environment and run the preparation pipeline.
 
-## ⚡Runtime Pipeline
+## ⚡Execution Phase
 
 The active diagnostic process follows a neuro-symbolic approach:
 
@@ -255,23 +266,23 @@ The active diagnostic process follows a neuro-symbolic approach:
 
 - **LLM Extraction (NLP)**: The system uses an LLM to parse unstructured user input. It identifies mentions of clinical signs and symptoms, filtering out noise and irrelevant context to isolate core medical entities.
 
-- **Embedding Model**: Extracted symptoms are passed through the ```intfloat/multilingual-e5-large model``` model. This transforms text into high-dimensional vectors (embeddings). This step is crucial for Semantic Search, allowing the system to understand that "headache" and "cephalalgia" are semantically identical, even if the exact words differ.
+- **Semantic Mapping**: Extracted symptoms are encoded using ```intfloat/multilingual-e5-large``` and compared with the vector representations of SYMP concepts. Each expression is mapped to the most similar concept only if cosine similarity reaches the configured threshold of 0.90. Present and negated symptoms are processed separately.
 
-- **XAI LLM (Explainable AI)**: Acts as the final synthesis bridge. It takes the structured inference results from the Symbolic Layer and translates them into natural language explanations, ensuring the diagnostic process is transparent and interpretable for the end-user. Instead of just showing a score, it generates a transparent explanation: "Based on the reported symptom of [Symptom A], which is a high-weighted indicator for [Disease B] in the DOID ontology..."
+- **Explanation Generation (XAI)**: The LLM receives structured symbolic results, including scores, filter status, and matched, missing, and blocking symptoms. It is instructed to explain ranking and exclusion decisions without overriding the symbolic results. Generated explanations may still contain unsupported statements and require review."
 
 ### 🟣 Symbolic Layer:
 
-- **Neo4j Graph Reasoning**: This is the core of the "Symbolic" engine. It performs a Vector Similarity Search between the user's symptom embeddings and the pre-computed embeddings stored in the graph. Once matches are found, it traverses the symbolic relationships (e.g., RO_0002452 - has_symptom) to find all diseases connected to the identified symptoms within the DOID/SYMP hierarchy.
+- **Graph-Based Reasoning**: The symbolic layer queries explicit disease-symptom relations using the mapped symptom concepts. It retrieves candidate diseases and the information required for scoring and negated-symptom filtering. Semantic similarity is calculated by the Python semantic-mapping component, not by a Neo4j vector-index search.
 
 - **Scoring Engine**: Disease ranking is not a simple count of matching symptoms. Instead, it utilizes a sophisticated Normalized Weighted Sum approach:
 
   - **Weighted Sum** (```total_score```): The Neo4j engine identifies diseases connected to the user's symptoms and sums the pre-calculated weights (IC) of all matching symptoms.
     
-    $$total\_{score} = \sum IC(matched\_{symptoms})$$
+$$total\_{score} = \sum IC(matched\_{symptoms})$$
   
   - **Square Root Normalization** (```normalized_score```): To prevent "broad" diseases (those with a high number of general symptoms) from unfairly dominating the results, we normalize the score by the square root of the total number of symptoms associated with that disease.
 
-    $$normalized\_{score} = \frac{total\_{score}}{\sqrt{count(disease\_{symptoms})}}$$
+$$normalized\_{score} = \frac{total\_{score}}{\sqrt{count(disease\_{symptoms})}}$$
   
 **Key advantages of this approach**:
 
@@ -300,9 +311,10 @@ NeSy/
 ## 🔬 Limitations
  
 - Knowledge graph coverage is bounded by DOID and SYMP ontology versions — rare or newly described diseases may be absent
-- The system performs inference, not diagnosis — results represent probabilistic candidates, not clinical conclusions
+- The system performs inference, not diagnosis — the system returns ranked disease candidates, not calibrated disease probabilities or clinical diagnoses.
 - Multilingual support depends on `intfloat/multilingual-e5-large` — performance may vary across languages
 - IC weights are computed at preparation time; updating ontologies requires re-running the enrichment pipeline
+- Evaluation was conducted on controlled examples and ontology-derived datasets, not on real patient data. High similarity scores, consistent filtering, and structured explanations do not independently establish clinical accuracy.
 
 # 🚀 Getting Started
 
