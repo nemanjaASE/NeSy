@@ -23,21 +23,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           python-version: "3.12"
+          enable-cache: true
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install ruff
+        run: uv sync --extra dev
 
       - name: Run Ruff (linter)
-        run: ruff check .
+        run: uv run ruff check .
 
       - name: Run Ruff (formatter)
-        run: ruff format --check .
+        run: uv run ruff format --check .
 
   type-check:
     name: 🔎 Type Check
@@ -50,18 +49,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           python-version: "3.12"
+          enable-cache: true
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install mypy
+        run: uv sync --extra dev
 
       - name: Run mypy
-        run: mypy app/
+        run: uv run mypy app/
 
   security:
     name: 🔒 Security
@@ -74,21 +72,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           python-version: "3.12"
+          enable-cache: true
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install bandit pip-audit
+        run: uv sync --extra dev
 
       - name: Run Bandit
-        run: bandit -r app/
+        run: uv run bandit -r app/
 
       - name: Run pip-audit
-        run: pip-audit -r requirements.txt
+        run: uv run pip-audit
   smoke-test:
     name: 🚀 Smoke Test
     needs: lint
@@ -141,17 +138,18 @@ jobs:
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:ci
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           python-version: "3.12"
+          enable-cache: true
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: uv sync
 
       - name: Start FastAPI server
         run: |
-          fastapi dev app/main.py &
+          uv run fastapi dev app/main.py &
           echo "Waiting for server to start..."
           sleep 100
 

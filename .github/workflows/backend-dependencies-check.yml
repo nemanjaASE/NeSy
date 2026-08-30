@@ -3,10 +3,12 @@ name: Backend Dependencies Check
 on:
   push:
     paths:
-      - "backend/requirements.txt"
+      - "backend/pyproject.toml"
+      - "backend/uv.lock"
   pull_request:
     paths:
-      - "backend/requirements.txt"
+      - "backend/pyproject.toml"
+      - "backend/uv.lock"
   workflow_dispatch:
 
 jobs:
@@ -54,5 +56,6 @@ jobs:
         working-directory: backend
         run: |
           source .venv/bin/activate
-          pip install -r requirements.txt
+          pip install uv
+          uv sync --locked
           echo "✅ All dependencies installed successfully"

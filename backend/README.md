@@ -16,53 +16,42 @@ nav_order: 6
 ### **0. Clone the repository**
 
 ```
- git clone https://github.com/nemanjaASE/NeSy.git
+ git clone https://github.com/nemanjaASE/NeSy-X.git
 ```
 
 ### **1. Navigate to the backend project root:**
 
 ```
-  cd NeSy/backend
+  cd NeSy-X/backend
 ```
 
-### **2. Create a virtual environment:**
+### **2. Install `uv`:**
 
-#### 🖥️ Windows
-
-```powershell
-python -m venv .venv
-
-# Activate venv
-.venv\Scripts\activate
-```
-
-#### 🍎 macOS
+This project uses [`uv`](https://docs.astral.sh/uv/) to manage the virtual environment and pin exact dependency versions (`uv.lock`), so every clone reproduces the same environment.
 
 ```bash
-python3 -m venv .venv
-
-# Activate venv
-source .venv/bin/activate
+pip install uv
 ```
 
-#### 🐧 Linux
-
-```bash
-python3 -m venv .venv
-
-# Activate venv
-source .venv/bin/activate
-```
-
-> **⚠️ Note:** This project requires **Python 3.12**. Most Linux systems ship with an older version that may also lack SSL support, causing `pip` to fail during dependency installation. It is strongly recommended to use **pyenv** to install and manage Python 3.12 before proceeding with the steps below.
+> **⚠️ Note:** This project requires **Python 3.12**. Most Linux systems ship with an older version that may also lack SSL support, causing dependency installation to fail. `uv` can download and manage its own Python 3.12 automatically, so this is usually not an issue — but if you'd rather use a system-managed Python, **pyenv** is a solid alternative.
 >
 > 📘 **[Click here to read the pyenv Setup Guide](../docs/pyenv-python312-ubuntu.md)**
 
 ### **3. Install dependencies:**
 
+```bash
+uv sync
 ```
-  pip install -r requirements.txt
-```
+
+This creates a `.venv` in `backend/` and installs the exact versions pinned in `uv.lock`. Run commands through `uv run <command>` (e.g. `uv run fastapi dev app/main.py`), or activate the environment the usual way:
+
+- Windows: `.venv\Scripts\activate`
+- macOS/Linux: `source .venv/bin/activate`
+
+### **Adding a new dependency**
+
+1. `uv add <package-name>` (or `uv add --optional dev <package-name>` for a dev-only tool like a linter). This installs it and updates `pyproject.toml` and `uv.lock` for you.
+2. Commit both `pyproject.toml` and `uv.lock`.
 
 ### **4. Configuration (.env file):**
 
@@ -104,8 +93,8 @@ Before starting the API, you must populate the Neo4j database with the medical o
 
 ### **2. Start the FastAPI Development Server**
 
-```
-fastapi dev app/main.py
+```bash
+uv run fastapi dev app/main.py
 ```
 
 ## 🧪 Local Testing & CI Checks
@@ -114,39 +103,39 @@ Before pushing code or creating a pull request, it is highly recommended to repl
 
 ### 1. Install Dev Dependencies
 
-Install the necessary testing and linting tools alongside the main requirements:
+Install the necessary testing and linting tools alongside the main dependencies:
 
-```
-pip install ruff mypy bandit pip-audit
+```bash
+uv sync --extra dev
 ```
 
 ### 2. Linting & Formatting (Ruff)
 
 We use Ruff for fast code linting and formatting.
 
-```
+```bash
 # Check for styling and logic errors
-ruff check .
+uv run ruff check .
 
 # Auto-format the code
-ruff format .
+uv run ruff format .
 ```
 ### 3. Static Type Checking (Mypy)
 
 Ensure all type hints are correct:
 
-```
-mypy app/
+```bash
+uv run mypy app/
 ```
 
 ### 4. Security Audits
 
 Scan both the application code and external libraries for known vulnerabilities:
 
-```
+```bash
 # Scan application code for bad practices
-bandit -r app/
+uv run bandit -r app/
 
 # Audit dependencies for known CVEs
-pip-audit -r requirements.txt
+uv run pip-audit
 ```
