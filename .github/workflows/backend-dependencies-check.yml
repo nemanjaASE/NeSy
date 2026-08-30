@@ -13,8 +13,12 @@ on:
 
 jobs:
   dependencies-check:
-    name: Install Dependencies
-    runs-on: ubuntu-22.04
+    name: Install Dependencies (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, windows-latest, macos-latest]
     defaults:
       run:
         working-directory: backend
@@ -32,4 +36,4 @@ jobs:
       - name: Install dependencies (locked)
         run: |
           uv sync --locked
-          echo "✅ All dependencies installed successfully"
+          echo "✅ All dependencies installed successfully on ${{ matrix.os }}"
