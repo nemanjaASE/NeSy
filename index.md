@@ -4,6 +4,8 @@ nav_order: 1
 ---
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://nemanjaase.github.io/NeSy-X/)
+[![Backend CI](https://github.com/nemanjaASE/NeSy-X/actions/workflows/backend-ci.yml/badge.svg)](https://github.com/nemanjaASE/NeSy-X/actions/workflows/backend-ci.yml)
+[![Frontend CI](https://github.com/nemanjaASE/NeSy-X/actions/workflows/frontend-ci.yml/badge.svg)](https://github.com/nemanjaASE/NeSy-X/actions/workflows/frontend-ci.yml)
 
 <h1 align="center">🌟 NeSy-X</h1>
 <p align="center"><strong>Neuro-Symbolic eXplainable Framework for Diagnostic Support</strong></p>
