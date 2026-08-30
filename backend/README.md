@@ -7,7 +7,7 @@ nav_order: 6
 
 ## 📋 Prerequisites
 
-- Python 3.12+
+- [`uv`](https://docs.astral.sh/uv/) (manages Python 3.12 for you — no separate Python install needed)
 - Neo4j AuraDB (or a local Neo4j Desktop instance)
 - Groq Cloud API Key (or a local LLM model API KEY)
 
@@ -27,15 +27,20 @@ nav_order: 6
 
 ### **2. Install `uv`:**
 
-This project uses [`uv`](https://docs.astral.sh/uv/) to manage the virtual environment and pin exact dependency versions (`uv.lock`), so every clone reproduces the same environment.
+This project uses [`uv`](https://docs.astral.sh/uv/) to manage the virtual environment and pin exact dependency versions (`uv.lock`), so every clone reproduces the same environment. `uv` also downloads and manages the required **Python 3.12** for you — you do not need Python pre-installed at all.
 
-```bash
-pip install uv
-```
+Use the standalone installer (does not require an existing Python):
 
-> **⚠️ Note:** This project requires **Python 3.12**. Most Linux systems ship with an older version that may also lack SSL support, causing dependency installation to fail. `uv` can download and manage its own Python 3.12 automatically, so this is usually not an issue — but if you'd rather use a system-managed Python, **pyenv** is a solid alternative.
->
-> 📘 **[Click here to read the pyenv Setup Guide](../docs/pyenv-python312-ubuntu.md)**
+- **macOS / Linux:**
+  ```bash
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+  ```
+- **Windows (PowerShell):**
+  ```powershell
+  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+  ```
+
+> **Note:** If you already have a working Python + pip, `pip install uv` also works. Avoid this on older Linux systems with an outdated system Python (missing SSL support, etc.) — use the standalone installer above instead, since it has no Python dependency. If you specifically want a system-managed Python 3.12 for reasons outside this project, **pyenv** is still a fine option: 📘 **[pyenv Setup Guide](../docs/pyenv-python312-ubuntu.md)**.
 
 ### **3. Install dependencies:**
 
