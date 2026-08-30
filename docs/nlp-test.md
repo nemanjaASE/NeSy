@@ -1,19 +1,19 @@
 ---
-title: 🧪 Testing the Natural Language Processing Layer (NLP)
+title: 🧪 Testing the Natural Language Processing Layer
 nav_order: 6
 ---
 
-# 🧪 Testing the Natural Language Processing Layer (NLP)
+# 🧪 Testing the Natural Language Processing Layer
 
 ## 📋 Introduction
 
-This report documents the testing and evaluation of the Natural Language Processing (NLP) layer, whose primary role is the automatic extraction of medical symptoms from unstructured text in English.
+This section documents the evaluation of the natural language processing layer used in the NeSy-X framework. The role of this layer is to extract symptoms from unstructured English text and organize them into two structured lists: present symptoms and absent symptoms.
 
-The core challenge of this layer is accurately **identifying symptoms** in complex sentences, **distinguishing confirmed** from **negated conditions**, and **normalizing extracted terms** to canonical English equivalents compatible with medical ontologies (SYMP/DOID).
+The main challenge is strict symptom extraction. The model must identify relevant medical symptoms, preserve negation, avoid adding symptoms that are not explicitly mentioned, and avoid grouping separate symptoms into broader disease-like or syndrome-like expressions.
 
-The goal of testing is to identify the optimal combination of LLM architecture and system prompt configuration in order to achieve high precision and reliability before data is passed to the next layer — **the embedding (vectorization) layer**.
+The goal of testing is to identify which LLM provides the most reliable structured symptom extraction before the results are passed to the embedding layer and then to the symbolic graph-based reasoning layer.
 
-Testing was conducted across 7 phases, varying model size (from 3B to 120B parameters) and instruction complexity, with a focus on reaching an 80% success threshold across key metrics. The following models were evaluated:
+Seven large language models were evaluated under the same prompt and test conditions, including five locally executed models and two cloud-based models. The following models were evaluated:
 
 - 🤖 **llama3.2:3b** (local)
 - 🤖 **llama3.3:8** (local)
@@ -25,11 +25,13 @@ Testing was conducted across 7 phases, varying model size (from 3B to 120B param
 
 ## 📐 Evaluation Methodology
 
-Standard NLP metrics were used to assess extraction quality:
+The evaluation was performed on a test set of 100 English input examples. For each model, the extracted symptoms were compared with the manually defined expected symptoms:
 
-- **Precision** — the model's ability to extract only relevant and correct symptoms without introducing noise
-- **Recall** — the model's ability to identify all symptoms mentioned in the text without omissions
-- **F1 Score** — the harmonic mean of precision and recall, representing the overall accuracy of the model
+- **Precision** — measures how many extracted symptoms are correct.
+- **Recall** — measures how many expected symptoms were successfully extracted.
+- **F1 Score** — F1 Score — the harmonic mean of precision and recall.
+
+> The reported values are macro-averages: metrics were calculated for each test case and then averaged across the complete test set.
 
 ## 🎯 Target Metrics
 
@@ -231,7 +233,7 @@ The `mistral-nemo:12b` model achieved a nearly identical **79% F1-score**, showi
 
 ### 💬 Commentary
 
-The `qwen2.5:14b` model is the current top performer with a **0.825 F1-score**, showing a superior ability to map descriptive symptoms into formal clinical terminology while maintaining perfect accuracy in negation handling, though it still occasionally penalizes itself by grouping separate symptoms into single compound terms.
+The best result was achieved by qwen2.5:14b, with an F1 score of 0.825. This model also achieved the highest precision, which is especially important in the NeSy-X framework because false positive symptoms can be mapped to ontology nodes and then influence downstream disease ranking.
 
 ## 🧪 Test 5
 
@@ -345,7 +347,7 @@ The `llama-4-scout-17b` model shows a solid baseline for symptom extraction with
 | Parameters       | ~120B                              |
 | Deployment       | Cloud (API)                        |
  
-> Large-scale dense model. Highest parameter count among all tested models. Exhibits the most pronounced High-Intelligence Bias — consistently extracts more clinically nuanced and anatomically precise terms than the ground truth labels require.
+> Large-scale dense model. Highest parameter count among all tested models. Exhibits the most pronounced Tendency toward over-inference — consistently extracts more clinically nuanced and anatomically precise terms than the ground truth labels require.
 
 ### 📊 Results
 
@@ -382,7 +384,9 @@ The `gpt-oss-120b` model achieves an average **F1-score of 0.689**, making it th
 
 ## Conclusion
 
-While the NLP layer achieved satisfactory performance (**F1 ≥ 0.82** for the best model), several challenges remain that directly impact the embedding layer.
+The evaluation shows that `qwen2.5:14b` is the most suitable model for the NLP layer in the implemented NeSy-X system. It achieved the highest F1 score and the highest precision while remaining locally executable.
+
+This result is important from both technical and privacy perspectives. Since the user input may contain sensitive health information, local execution reduces the need to send unstructured medical text to external services. At the same time, the model provides sufficiently reliable structured symptom extraction for the next stages of the pipeline.
 
 ---
 
@@ -394,8 +398,10 @@ The most critical issue identified is the **lack of strict canonical normalizati
 
 ### 🧠 Interpretation of Model Performance
 
-It is important to emphasize that a **lower F1 score does not necessarily indicate a "weaker" model**. Analysis of the extraction logs reveals a distinct **"High-Intelligence Bias"** in larger architectures:
+Larger models often normalize, combine, or enrich symptom expressions using their internal medical knowledge. In this task, lower scores often reflect a mismatch between free clinical interpretation and strict ontology-oriented extraction. Analysis of the extraction logs reveals a distinct **"Tendency toward over-inference"** in larger architectures:
 
-- **Descriptive Precision:** Models like `gpt-oss-120b` often extract more technical or clinically accurate terms (e.g., `productive cough` instead of just `cough`).
-- **Metric Penalty:** These models are frequently penalized by the evaluation script for not strictly adhering to the simplified, flat labels of the ground truth, despite their output being medically valid.
+- **Descriptive Precision:** Larger models often normalize, combine, or enrich symptom expressions using their internal medical knowledge (e.g., `productive cough` instead of just `cough`).
+- **Metric Penalty:** Such outputs can be medically meaningful, but they are not ideal for the proposed pipeline because each forwarded symptom must be explicitly grounded in the user input and suitable for mapping to a specific ontology node.
 - **Instruction Following:** Mid-sized models like `qwen2.5:14b` demonstrate superior balance between clinical extraction and adherence to formatting constraints, leading to higher benchmark scores.
+
+The main remaining limitation is the need for stricter control of symptom granularity. Future improvements may include additional prompt constraints, domain-specific fine-tuning, or post-processing rules that prevent the model from merging separate symptoms or introducing clinically plausible but unstated information.
