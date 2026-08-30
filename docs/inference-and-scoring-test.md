@@ -1,6 +1,6 @@
 ---
 title: 🧪 Testing the Inference and Scoring Layer
-nav_order: 8
+nav_order: 9
 ---
 
 # 🧪 Testing the Inference and Scoring Layer
@@ -104,3 +104,7 @@ The test results are located in `inference-exclusion-test.json`.
 **The negated symptom filter** achieves 100% accuracy in both exclusion and survival tests across 1,263 cases. This confirms that the `passed_filter` mechanism works deterministically and provides a reliable basis for explaining why certain diseases are excluded.
 
 Overall, the evaluation shows that the symbolic inference layer provides a transparent and controllable ranking mechanism. Its results should be interpreted as a technical validation of graph-based scoring and filtering, not as a clinical validation of diagnostic accuracy.
+
+---
+
+**⬅ Previous:** [🧪 Testing the Embedding Layer](./embedding-test.md) &nbsp;|&nbsp; **Next ➡:** [🧪 Testing the Explainable AI (XAI) Layer](./xai-test.md)

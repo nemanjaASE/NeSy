@@ -1,6 +1,6 @@
 ---
 title: 🦙 Ollama — Setup Guide
-nav_order: 4
+nav_order: 5
 ---
 
 # 🦙 Ollama — Setup Guide
@@ -376,3 +376,7 @@ def is_ollama_running(base_url: str = "http://localhost:11434") -> bool:
 | `503 server overloaded` | Too many parallel requests | Increase `OLLAMA_MAX_QUEUE` |
 | Model unloads immediately | `OLLAMA_KEEP_ALIVE` too low | Set to `30m` or `-1` to keep it loaded indefinitely |
 | Not enough VRAM | Model too large for the GPU | Use a quantized version (e.g. `q4_K_M`) |
+
+---
+
+**⬅ Previous:** [📚 Notebook Directory & Workflow](../notebooks/README.md) &nbsp;|&nbsp; **Next ➡:** [🚀 FastAPI](../backend/README.md)

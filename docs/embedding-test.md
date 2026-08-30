@@ -1,6 +1,6 @@
 ---
 title: 🧪 Testing the Embedding Layer
-nav_order: 7
+nav_order: 8
 ---
 
 # 🧪 Testing the Embedding Layer
@@ -165,3 +165,7 @@ The model handles clinical terminology, ontology-style labels, and colloquial pa
 The evaluation shows that `intfloat/multilingual-e5-large` provides the most reliable semantic mapping between extracted symptom expressions and ontology symptoms. It significantly reduces the number of unusable mappings and performs especially well on synonyms, descriptive expressions, and LLM-generated symptom outputs. It is the recommended model for the production embedding layer, to be used as the default for all subsequent testing phases and downstream inference layers.
 
 For the NeSy-X framework, this model is the most appropriate choice because the embedding layer acts as the bridge between the neural NLP component and the symbolic graph-based reasoning component. Reliable semantic mapping ensures that only sufficiently confident ontology matches are forwarded to the disease ranking, negation filtering, and XAI layers.
+
+---
+
+**⬅ Previous:** [🧪 Testing the Natural Language Processing Layer](./nlp-test.md) &nbsp;|&nbsp; **Next ➡:** [🧪 Testing the Inference and Scoring Layer](./inference-and-scoring-test.md)

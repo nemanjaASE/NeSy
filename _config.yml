@@ -1,6 +1,6 @@
-remote_theme: just-the-docs/just-the-docs@v0.10.0
-title: NeSy Diagnostics
-description: Neuro-Symbolic Diagnostic Assistance Framework
+remote_theme: just-the-docs/just-the-docs@v0.12.0
+title: NeSy-X
+description: Neuro-Symbolic eXplainable Framework for Diagnostic Support
 color_scheme: dark
 markdown: kramdown
 kramdown:
@@ -8,3 +8,16 @@ kramdown:
 plugins:
   - jekyll-remote-theme
 exclude: [vendor]
+
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "NeSy-X on GitHub":
+    - "https://github.com/nemanjaASE/NeSy-X"
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/nemanjaASE/NeSy-X"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"

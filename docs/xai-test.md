@@ -1,6 +1,6 @@
 ---
 title: 🧪 Testing the Explainable AI (XAI) Layer
-nav_order: 9
+nav_order: 10
 ---
 
 # 🧪 Testing the Explainable AI (XAI) Layer
@@ -376,3 +376,7 @@ Cloud models offer significantly faster inference — `llama-4-scout` completed 
 For local execution, `qwen2.5:14b` is the most suitable model for the XAI layer. Although it is slower than several alternatives, it achieves full exclusion logic accuracy and high internal consistency.For cloud execution, `llama-4-scout-17b` is the strongest option among the tested models because it combines full logical compliance with the lowest execution time.
 
 Within the NeSy-X framework, the XAI layer improves transparency by explaining why a disease was ranked, why alternatives remain possible, and why some diseases were excluded. Its output should be interpreted as an explanation of symbolic reasoning results, not as an independent medical diagnosis.
+
+---
+
+**⬅ Previous:** [🧪 Testing the Inference and Scoring Layer](./inference-and-scoring-test.md)

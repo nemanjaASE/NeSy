@@ -1,6 +1,6 @@
 ---
 title: 🧪 Testing the Natural Language Processing Layer
-nav_order: 6
+nav_order: 7
 ---
 
 # 🧪 Testing the Natural Language Processing Layer
@@ -405,3 +405,7 @@ Larger models often normalize, combine, or enrich symptom expressions using thei
 - **Instruction Following:** Mid-sized models like `qwen2.5:14b` demonstrate superior balance between clinical extraction and adherence to formatting constraints, leading to higher benchmark scores.
 
 The main remaining limitation is the need for stricter control of symptom granularity. Future improvements may include additional prompt constraints, domain-specific fine-tuning, or post-processing rules that prevent the model from merging separate symptoms or introducing clinically plausible but unstated information.
+
+---
+
+**⬅ Previous:** [🚀 FastAPI](../backend/README.md) &nbsp;|&nbsp; **Next ➡:** [🧪 Testing the Embedding Layer](./embedding-test.md)
