@@ -4,9 +4,11 @@ on:
   push:
     paths:
       - "frontend/**"
+      - "!frontend/README.md"
   pull_request:
     paths:
       - "frontend/**"
+      - "!frontend/README.md"
   workflow_dispatch:
 
 jobs:
@@ -19,10 +21,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Set up Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
           cache: "npm"
