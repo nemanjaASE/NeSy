@@ -1,0 +1,142 @@
+[
+  {
+    "disease": "septicemic plague",
+    "uri": "http://purl.obolibrary.org/obo/DOID_3481",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 9.551,
+    "match_count": 4,
+    "total_symptom_count": 6,
+    "disease_coverage_pct": "66.7%",
+    "input_coverage_pct": "66.7%",
+    "matched_symptoms": ["abdominal pain", "fever", "shock", "chills"],
+    "missing_symptoms": ["prostration", "hemorrhage into skin"]
+  },
+  {
+    "disease": "ornithosis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_11262",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.298,
+    "match_count": 3,
+    "total_symptom_count": 4,
+    "disease_coverage_pct": "75.0%",
+    "input_coverage_pct": "50.0%",
+    "matched_symptoms": ["rash", "fever", "chills"],
+    "missing_symptoms": ["headache"]
+  },
+  {
+    "disease": "Haverhill fever",
+    "uri": "http://purl.obolibrary.org/obo/DOID_13238",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 8.298,
+    "match_count": 3,
+    "total_symptom_count": 4,
+    "disease_coverage_pct": "75.0%",
+    "input_coverage_pct": "50.0%",
+    "matched_symptoms": ["rash", "fever", "chills"],
+    "missing_symptoms": ["joint pain"]
+  },
+  {
+    "disease": "schistosomiasis",
+    "uri": "http://purl.obolibrary.org/obo/DOID_1395",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 7.088,
+    "match_count": 4,
+    "total_symptom_count": 10,
+    "disease_coverage_pct": "40.0%",
+    "input_coverage_pct": "66.7%",
+    "matched_symptoms": ["rash", "abdominal pain", "fever", "chills"],
+    "missing_symptoms": [
+      "diarrhea",
+      "hepatomegaly",
+      "nausea",
+      "malaise",
+      "hematuria",
+      "splenomegaly"
+    ]
+  },
+  {
+    "disease": "toxic shock syndrome",
+    "uri": "http://purl.obolibrary.org/obo/DOID_14115",
+    "passed_filter": true,
+    "blocking_symptoms": [],
+    "normalized_score": 6.275,
+    "match_count": 3,
+    "total_symptom_count": 8,
+    "disease_coverage_pct": "37.5%",
+    "input_coverage_pct": "50.0%",
+    "matched_symptoms": ["rash", "fever", "shock"],
+    "missing_symptoms": [
+      "diarrhea",
+      "headache",
+      "vomiting",
+      "hypotension",
+      "skin desquamation"
+    ]
+  },
+  {
+    "disease": "Korean hemorrhagic fever",
+    "uri": "http://purl.obolibrary.org/obo/DOID_0050200",
+    "passed_filter": false,
+    "blocking_symptoms": ["backache"],
+    "normalized_score": 10.419,
+    "match_count": 6,
+    "total_symptom_count": 12,
+    "disease_coverage_pct": "50.0%",
+    "input_coverage_pct": "100.0%",
+    "matched_symptoms": [
+      "rash",
+      "abdominal pain",
+      "fever",
+      "bloodshot eye",
+      "shock",
+      "chills"
+    ],
+    "missing_symptoms": [
+      "headache",
+      "backache",
+      "flushing",
+      "low blood pressure",
+      "nausea",
+      "hypotension"
+    ]
+  },
+  {
+    "disease": "cat-scratch disease",
+    "uri": "http://purl.obolibrary.org/obo/DOID_11258",
+    "passed_filter": false,
+    "blocking_symptoms": ["backache"],
+    "normalized_score": 5.879,
+    "match_count": 2,
+    "total_symptom_count": 4,
+    "disease_coverage_pct": "50.0%",
+    "input_coverage_pct": "33.3%",
+    "matched_symptoms": ["abdominal pain", "chills"],
+    "missing_symptoms": ["headache", "backache"]
+  },
+  {
+    "disease": "sennetsu fever",
+    "uri": "http://purl.obolibrary.org/obo/DOID_0050485",
+    "passed_filter": false,
+    "blocking_symptoms": ["backache"],
+    "normalized_score": 3.315,
+    "match_count": 2,
+    "total_symptom_count": 10,
+    "disease_coverage_pct": "20.0%",
+    "input_coverage_pct": "33.3%",
+    "matched_symptoms": ["fever", "chills"],
+    "missing_symptoms": [
+      "headache",
+      "backache",
+      "fatigue",
+      "anorexia",
+      "hepatosplenomegaly",
+      "malaise",
+      "enlargement of lymph nodes",
+      "lymphadenopathy"
+    ]
+  }
+]

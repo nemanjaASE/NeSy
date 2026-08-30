@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "test_name": "Test Case 5",
+    "model": "qwen2.5:14b",
+    "date": "2026-06-28 10:19:48",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "ram_gb": 17.1,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_gb": 12.0,
+    "python": "3.12.9",
+    "total_time_s": 46.01
+  },
+  "results": {
+    "most_likely": "septicemic plague",
+    "confidence": "high",
+    "differentials": [
+      "ornithosis",
+      "Haverhill fever",
+      "schistosomiasis",
+      "toxic shock syndrome"
+    ],
+    "excluded_conditions": [
+      "Korean hemorrhagic fever",
+      "cat-scratch disease",
+      "sennetsu fever"
+    ],
+    "reasoning": {
+      "primary_analysis": "The patient's symptoms strongly align with septicemic plague, which includes abdominal pain, fever, shock, and chills. These symptoms collectively suggest a severe systemic infection consistent with the clinical presentation of septicemia.",
+      "differential_comparison": [
+        {
+          "disease": "ornithosis",
+          "reasoning": "While ornithosis shares some common symptoms such as rash, fever, and chills, it lacks abdominal pain and shock, which are critical indicators for septicemic plague."
+        },
+        {
+          "disease": "Haverhill fever",
+          "reasoning": "Haverhill fever also presents with rash, fever, and chills but does not include the key symptom of abdominal pain. Additionally, joint pain is a missing symptom that further distinguishes it from septicemic plague."
+        },
+        {
+          "disease": "schistosomiasis",
+          "reasoning": "Schistosomiasis shares symptoms like rash, abdominal pain, fever, and chills but lacks the critical systemic signs of shock. Furthermore, additional symptoms such as diarrhea and hepatomegaly are not present in this patient's profile."
+        },
+        {
+          "disease": "toxic shock syndrome",
+          "reasoning": "Toxic shock syndrome includes rash, fever, and shock but is missing abdominal pain and chills, which are crucial for the diagnosis of septicemic plague. Additionally, symptoms like hypotension and skin desquamation are not reported by the patient."
+        }
+      ],
+      "exclusion_criteria": [
+        {
+          "excluded_disease": "Korean hemorrhagic fever",
+          "reasoning": "The patient explicitly denied backache, which is a mandatory clinical marker for Korean hemorrhagic fever. This makes it clinically inconsistent with the patient's reported absences."
+        },
+        {
+          "excluded_disease": "cat-scratch disease",
+          "reasoning": "Cat-scratch disease requires backache as a symptom, but this was denied by the patient, making it clinically inconsistent with their profile."
+        },
+        {
+          "excluded_disease": "sennetsu fever",
+          "reasoning": "Sennetsu fever also necessitates backache, which is not present in the patient's reported symptoms. This makes it clinically inconsistent and excludes it from further consideration."
+        }
+      ]
+    },
+    "recommendation": {
+      "specialist_consultations": [
+        "infectious disease specialist",
+        "emergency medicine physician"
+      ],
+      "lab_tests": [
+        "blood cultures",
+        "serum lactate levels",
+        "complete blood count (CBC) with differential",
+        "creatinine kinase (CK) level"
+      ],
+      "symptoms_to_verify": [
+        "prostration",
+        "hemorrhage into skin"
+      ]
+    }
+  }
+}
