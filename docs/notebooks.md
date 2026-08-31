@@ -5,33 +5,39 @@ nav_order: 4
 
 # 📚 Notebook Directory & Workflow
 
-The notebooks in this directory live in two folders: `pipeline/` (the actual NeSy-X workflow — data enrichment plus the neural/symbolic/XAI layer notebooks, each with its own `tests/` fixtures) and `demos/` (standalone visual aids that are not part of the framework's execution flow).
+The notebooks in this directory live in two folders: `pipeline/` (the actual NeSy-X workflow, split into `preparation/` and `execution/` phases matching the framework's own two-phase design) and `demos/` (standalone visual aids that are not part of the framework's execution flow).
 
-## ⚙️ 1. `pipeline/` — Data Enrichment
+## ⚙️ 1. `pipeline/preparation/` — Data Enrichment
 These notebooks must be executed to "bake" the logic and weights into the Neo4j graph. Run these if you are not using a pre-configured database dump.
 
 | Notebook | Purpose | Impact on Database |
 |---|---|---|
-| `pipeline/calculate-weights.ipynb` | Calculates Information Content (IC) for each symptom based on disease frequency. | Adds `weight` property to `:Symptom` nodes. |
-| `pipeline/generate-embeddings.ipynb` | Generates high-dimensional vectors using the `multilingual-e5-large` model. | Adds `embedding` property to `:Symptom` nodes. |
+| `preparation/01-calculate-weights.ipynb` | Calculates Information Content (IC) for each symptom based on disease frequency. | Adds `weight` property to `:Symptom` nodes. |
+| `preparation/02-generate-embeddings.ipynb` | Generates high-dimensional vectors using the `multilingual-e5-large` model. | Adds `embedding` property to `:Symptom` nodes. |
 
-## 🧪 2. `pipeline/` — Layer Demonstrations (Individual Components)
+## 🧪 2. `pipeline/execution/` — Layer Demonstrations (Individual Components)
 
-These notebooks are used for research, validation, and testing each layer of the NeSy framework in isolation, reading fixtures from `pipeline/tests/`. They do not modify the database.
+These notebooks are used for research, validation, and testing each layer of the NeSy framework in isolation, reading fixtures from `execution/tests/`. They do not modify the database, and are numbered in the same order as the framework's Execution Phase steps.
 
-- `pipeline/nlp-llm.ipynb` (Neural Layer)
+- `execution/01-nlp-llm.ipynb` (Neural Layer)
 
   - **Focus**: Symptom extraction.
 
   - **Action**: Demonstrates how an LLM parses unstructured user inputs into structured symptom lists.
 
-- `pipeline/inference-and-scoring.ipynb` (Symbolic Layer)
+- `execution/02-semantic-mapping.ipynb` (Neural Layer)
+
+  - **Focus**: Mapping extracted symptoms to ontology concepts.
+
+  - **Action**: Embeds symptoms with `multilingual-e5-large` and matches them against ontological symptom embeddings via cosine similarity. Saves the mapped symptoms for the next notebook.
+
+- `execution/03-inference-and-scoring.ipynb` (Symbolic Layer)
 
   - **Focus**: Graph reasoning and ranking.
 
-  - **Action**: Executes the hybrid Vector Search + Normalized Weighted Sum scoring directly against Neo4j to rank potential diseases.
+  - **Action**: Loads the symptoms mapped by `02-semantic-mapping.ipynb` and executes the IC-weighted, normalized scoring query against Neo4j to rank candidate diseases.
 
-- `pipeline/xai-llm.ipynb` (Neural Layer)
+- `execution/04-xai-llm.ipynb` (Neural Layer)
 
   - **Focus**: Clinical transparency.
 
