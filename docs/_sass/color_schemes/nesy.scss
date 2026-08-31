@@ -1,0 +1,16 @@
+// NeSy-X custom color scheme: dark navy base with a teal accent,
+// built on top of just-the-docs' built-in "dark" scheme.
+@import "./color_schemes/dark";
+
+$body-background-color: #0f172a;
+$sidebar-color: #0f172a;
+$body-heading-color: #f8fafc;
+$body-text-color: #cbd5e1;
+$link-color: #2dd4bf;
+$nav-child-link-color: #94a3b8;
+$btn-primary-color: #2dd4bf;
+$code-background-color: #0b1220;
+$table-background-color: #111827;
+$search-background-color: #111827;
+$border-color: #1e293b;
+$feedback-color: darken($sidebar-color, 3%);

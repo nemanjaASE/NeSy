@@ -1,7 +1,7 @@
 remote_theme: just-the-docs/just-the-docs@v0.12.0
 title: NeSy-X
 description: Neuro-Symbolic eXplainable Framework for Diagnostic Support
-color_scheme: dark
+color_scheme: nesy
 markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
