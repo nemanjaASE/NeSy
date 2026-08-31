@@ -91,9 +91,9 @@ ALLOW_CREDENTIALS="your-allow-credentials" # true or false
 
 ### **1. Initialize the Knowledge Graph:**
 
-Before starting the API, you must populate the Neo4j database with the medical ontologies, calculate the Information Content (IC) weights, and generate symptom embeddings. 
+Before starting the API, you must populate the Neo4j database with the medical ontologies, calculate the Information Content (IC) weights, and generate symptom embeddings.
 
-> **Note:** The preparation pipeline is currently implemented as interactive Jupyter Notebooks. 
+> **Note:** The preparation pipeline is currently implemented as interactive Jupyter Notebooks.
 > 📘 **[Click here to read the detailed Notebooks Setup Guide](./notebooks/README.md)** to learn how to configure your VS Code kernel and execute the graph enrichment steps.
 
 ### **2. Start the FastAPI Development Server**
@@ -114,7 +114,23 @@ Install the necessary testing and linting tools alongside the main dependencies:
 uv sync --extra dev
 ```
 
-### 2. Linting & Formatting (Ruff)
+### 2. Set Up `pre-commit` Hooks
+
+The repo ships a `.pre-commit-config.yaml` (repo root) that runs Ruff and basic file hygiene checks automatically on every `git commit`, so issues are caught before they even reach CI. Install the git hook once per clone:
+
+```bash
+uv run pre-commit install
+```
+
+Run it manually against everything (e.g. after pulling a large change):
+
+```bash
+uv run pre-commit run --all-files
+```
+
+> **Note:** `pre-commit` is a local, best-effort safety net — it doesn't replace CI. `backend-ci.yml` runs the same Ruff checks (plus mypy/bandit/pip-audit) on every push/PR regardless of whether hooks are installed locally.
+
+### 3. Linting & Formatting (Ruff)
 
 We use Ruff for fast code linting and formatting.
 
@@ -125,7 +141,7 @@ uv run ruff check .
 # Auto-format the code
 uv run ruff format .
 ```
-### 3. Static Type Checking (Mypy)
+### 4. Static Type Checking (Mypy)
 
 Ensure all type hints are correct:
 
@@ -133,7 +149,7 @@ Ensure all type hints are correct:
 uv run mypy app/
 ```
 
-### 4. Security Audits
+### 5. Security Audits
 
 Scan both the application code and external libraries for known vulnerabilities:
 
