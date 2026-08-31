@@ -52,43 +52,39 @@ Standalone notebooks that support exploration and reporting but are not required
 
 # ⚙️ Setting Up the Local Jupyter Kernel
 
-Since this folder has its own dedicated environment, follow these steps to ensure VS Code uses the correct dependencies.
+This folder has its own dedicated environment — separate from `backend/`, managed with [`uv`](https://docs.astral.sh/uv/) via `notebooks/pyproject.toml` and `notebooks/uv.lock`, so every clone reproduces the same set of packages. `uv` also downloads Python 3.12 itself, so you don't need Python pre-installed.
 
 ## 🛠️ Option 1: Manual Setup (Step-by-Step)
 
 **1. Navigate to the `notebooks/` directory:**
 
 ```
-  cd NeSy/notebooks
+  cd NeSy-X/notebooks
 ```
 
-**2. Create a virtual environment:**
+**2. Install `uv`** (skip if already installed):
 
-```
-  python -m venv .venv
-```
-
-**3. Activate virtual environment:**
-
-- Windows
+- **macOS / Linux:**
+  ```bash
+  curl -LsSf https://astral.sh/uv/install.sh | sh
   ```
-    .venv\Scripts\activate
-  ```
-- macOS/Linux
-  ```
-    source .venv/bin/activate
+- **Windows (PowerShell):**
+  ```powershell
+  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
   ```
 
 **3. Install dependencies:**
 
-```
-  pip install -r requirements.txt
+```bash
+uv sync --extra dev
 ```
 
-**4. Install Jupyter kernel:**
+This creates a `.venv` in `notebooks/` and installs the exact versions pinned in `uv.lock` (including `nbstripout` and `nbconvert` from the `dev` extra).
 
-```
-  python -m ipykernel install --user --name=nesy-notebooks --display-name="NeSy Notebooks (venv)"
+**4. Install the Jupyter kernel:**
+
+```bash
+uv run python -m ipykernel install --user --name=nesy-notebooks --display-name="NeSy Notebooks (venv)"
 ```
 
 **5. Select the Kernel in VS Code:**
@@ -100,9 +96,14 @@ Since this folder has its own dedicated environment, follow these steps to ensur
 {: .note }
 If the kernel does not appear immediately, restart VS Code and try selecting the kernel again.
 
+### Adding a new dependency
+
+1. `uv add <package-name>` (or `uv add --optional dev <package-name>` for a dev-only tool). This installs it and updates `pyproject.toml` and `uv.lock` for you.
+2. Commit both `pyproject.toml` and `uv.lock`.
+
 ## 🤖  Option 2: Automated Setup (One-Click Script)
 
-We’ve included ready-to-run setup scripts in this folder — just double-click or run them to install everything automatically.
+We've included ready-to-run setup scripts in this folder — just double-click or run them to install everything automatically. They assume `uv` is already installed (step 2 above) and will tell you if it isn't.
 
 ---
 
@@ -112,8 +113,7 @@ We’ve included ready-to-run setup scripts in this folder — just double-click
 
 1. Find `setup.bat` in the `notebooks/` folder
 2. Double-click it — it will automatically:
-   - Create `.venv`
-   - Install dependencies
+   - Install dependencies with `uv`
    - Register the Jupyter kernel
    - Show you next steps
 

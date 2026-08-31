@@ -5,74 +5,41 @@ echo   NeSy Notebooks - Setup Script
 echo ========================================
 echo.
 
-python --version >nul 2>&1
+where uv >nul 2>&1
 if errorlevel 1 (
-  echo [ERROR] Python is not installed or not in PATH.
-  echo Please install Python from https://www.python.org/
+  echo [ERROR] uv is not installed or not in PATH.
+  echo Install it with:
+  echo   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+  echo Then restart this terminal and re-run this script.
   pause
   exit /b 1
 )
 
-for /f "tokens=2" %%i in ('python --version 2^>^&1') do set PYTHON_VERSION=%%i
-for /f "tokens=1,2 delims=." %%a in ("%PYTHON_VERSION%") do set MAJOR=%%a& set MINOR=%%b
-
-if not "%MAJOR%"=="3" (
-  echo [ERROR] Python 3.12 is required, but found Python %PYTHON_VERSION%.
-  echo Please install Python 3.12 from https://www.python.org/
-  pause
-  exit /b 1
-)
-if not "%MINOR%"=="12" (
-  echo [ERROR] Python 3.12 is required, but found Python %PYTHON_VERSION%.
-  echo Please install Python 3.12 from https://www.python.org/
-  pause
-  exit /b 1
-)
-
-echo Python version: %PYTHON_VERSION%
+echo uv found:
+uv --version
 echo.
 
-echo [1/5] Creating virtual environment...
-python -m venv .venv
-if errorlevel 1 (
-  echo [ERROR] Failed to create virtual environment.
-  pause
-  exit /b 1
-)
-echo [✓] Virtual environment created.
-echo.
-
-echo [2/5] Activating virtual environment...
-call .venv\Scripts\activate.bat
-if errorlevel 1 (
-  echo [ERROR] Failed to activate virtual environment.
-  pause
-  exit /b 1
-)
-echo [✓] Virtual environment activated.
-echo.
-
-echo [3/5] Installing dependencies...
-pip install -r requirements.txt
+echo [1/3] Installing dependencies (uv downloads Python 3.12 automatically if needed)...
+uv sync --extra dev
 if errorlevel 1 (
   echo [ERROR] Failed to install dependencies.
   pause
   exit /b 1
 )
-echo [✓] Dependencies installed.
+echo [OK] Dependencies installed.
 echo.
 
-echo [4/5] Installing Jupyter kernel...
-python -m ipykernel install --user --name=nesy-notebooks --display-name="NeSy Notebooks (venv)"
+echo [2/3] Installing Jupyter kernel...
+uv run python -m ipykernel install --user --name=nesy-notebooks --display-name="NeSy Notebooks (venv)"
 if errorlevel 1 (
   echo [ERROR] Failed to install Jupyter kernel.
   pause
   exit /b 1
 )
-echo [✓] Jupyter kernel installed.
+echo [OK] Jupyter kernel installed.
 echo.
 
-echo [5/5] Setup complete!
+echo [3/3] Setup complete!
 echo.
 echo ========================================
 echo   Next Steps:

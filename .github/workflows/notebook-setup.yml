@@ -5,12 +5,14 @@ on:
     paths:
       - "notebooks/setup.sh"
       - "notebooks/setup.bat"
-      - "notebooks/requirements.txt"
+      - "notebooks/pyproject.toml"
+      - "notebooks/uv.lock"
   pull_request:
     paths:
       - "notebooks/setup.sh"
       - "notebooks/setup.bat"
-      - "notebooks/requirements.txt"
+      - "notebooks/pyproject.toml"
+      - "notebooks/uv.lock"
   workflow_dispatch:
 
 concurrency:
@@ -29,10 +31,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           python-version: "3.12"
+          enable-cache: true
 
       - name: Run setup script
         run: |
@@ -40,9 +43,7 @@ jobs:
           ./setup.sh
 
       - name: Verify kernel installed
-        run: |
-          source .venv/bin/activate
-          jupyter kernelspec list | grep nesy-notebooks
+        run: uv run jupyter kernelspec list | grep nesy-notebooks
 
   test-macos:
     name: 🍎 macOS
@@ -55,10 +56,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           python-version: "3.12"
+          enable-cache: true
 
       - name: Run setup script
         run: |
@@ -66,9 +68,7 @@ jobs:
           ./setup.sh
 
       - name: Verify kernel installed
-        run: |
-          source .venv/bin/activate
-          jupyter kernelspec list | grep nesy-notebooks
+        run: uv run jupyter kernelspec list | grep nesy-notebooks
 
   test-windows:
     name: 🖥️ Windows
@@ -81,17 +81,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           python-version: "3.12"
+          enable-cache: true
 
       - name: Run setup script
         run: ./setup.bat
         shell: cmd
 
       - name: Verify kernel installed
-        run: |
-          .venv\Scripts\activate
-          jupyter kernelspec list | findstr nesy-notebooks
+        run: uv run jupyter kernelspec list | findstr nesy-notebooks
         shell: cmd
