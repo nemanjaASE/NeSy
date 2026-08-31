@@ -1,0 +1,13 @@
+{
+  "present_symptoms": [
+    "abdominal pain",
+    "rash",
+    "fever",
+    "bloodshot eye",
+    "chills",
+    "shock"
+  ],
+  "absent_symptoms": [
+    "backache"
+  ]
+}
