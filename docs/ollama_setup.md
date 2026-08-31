@@ -292,7 +292,8 @@ Then restart the Ollama application from the Applications folder.
 
 ## 🔌 6. Project Integration
 
-> ⚠️ **Security warning:** Ollama has no built-in authentication. Exposing it on `0.0.0.0` makes the API accessible to anyone on the same network — or the internet if your firewall is open. Do not expose Ollama publicly without a reverse proxy (e.g. Nginx) that enforces authentication and TLS. For local development, prefer keeping `OLLAMA_HOST=127.0.0.1:11434` and using SSH tunneling to access it remotely.
+{: .warning }
+Ollama has no built-in authentication. Exposing it on `0.0.0.0` makes the API accessible to anyone on the same network — or the internet if your firewall is open. Do not expose Ollama publicly without a reverse proxy (e.g. Nginx) that enforces authentication and TLS. For local development, prefer keeping `OLLAMA_HOST=127.0.0.1:11434` and using SSH tunneling to access it remotely.
 
 ### Accessing Ollama from another device or server
 

@@ -90,7 +90,8 @@ Since this folder has its own dedicated environment, follow these steps to ensur
 2. Click **Select Kernel** in the top-right corner.
 3. Navigate to **Jupyter Kernel** ->  **NeSy Notebooks (venv)**.
 
-> **Note:** If the kernel does not appear immediately, restart VS Code and try selecting the kernel again.
+{: .note }
+If the kernel does not appear immediately, restart VS Code and try selecting the kernel again.
 
 ## 🤖  Option 2: Automated Setup (One-Click Script)
 
@@ -142,7 +143,8 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-> **Note:** `chmod +x` is only needed once to make the script executable. On macOS and Linux, both platforms use the same `setup.sh` script.
+{: .note }
+`chmod +x` is only needed once to make the script executable. On macOS and Linux, both platforms use the same `setup.sh` script.
 
 ---
 

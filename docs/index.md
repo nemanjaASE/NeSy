@@ -74,7 +74,8 @@ The research contribution lies in integrating these components into a unified di
 
 Evaluation covers symptom extraction, semantic mapping, disease ranking, negated-symptom filtering, and explanation generation. The study also examines the practical trade-offs between local and cloud model execution.
 
-> ⚠️ **NeSy-X is a research prototype, not a clinically validated diagnostic system.** Evaluation was conducted on controlled examples and ontology-derived datasets rather than real patient data. Ranking scores and cosine-similarity values are not calibrated disease probabilities. Results remain dependent on ontology coverage, extraction and mapping quality, and the reliability of generated explanations.
+{: .warning }
+**NeSy-X is a research prototype, not a clinically validated diagnostic system.** Evaluation was conducted on controlled examples and ontology-derived datasets rather than real patient data. Ranking scores and cosine-similarity values are not calibrated disease probabilities. Results remain dependent on ontology coverage, extraction and mapping quality, and the reliability of generated explanations.
 
 The framework must not be used for medical diagnosis or treatment decisions.
 
