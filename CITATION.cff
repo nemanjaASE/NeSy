@@ -4,7 +4,7 @@ title: "NeSy-X: Neuro-Symbolic eXplainable Framework for Diagnostic Support"
 authors:
   - family-names: "Petrović"
     given-names: "Nemanja"
-version: 1.1.0
+version: 1.2.0
 date-released: 2026-08-31
 url: "https://nemanjaase.github.io/NeSy-X/"
 repository-code: "https://github.com/nemanjaASE/NeSy-X"
