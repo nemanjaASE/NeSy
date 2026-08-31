@@ -11,7 +11,7 @@ NeSy-X uses the Human Disease Ontology (DO) and the Symptom Ontology (SYMP) to r
 
 > **(Human Disease Ontology):** A standardized map of human diseases. It allows the system to understand the relationships between different medical conditions.
 
-![Diseases Graph Visualization](../assets/images/diseases.png)
+![Diseases Graph Visualization](./assets/images/diseases.png)
 
 ### 🔍 Query for Disease Count
 
@@ -25,7 +25,7 @@ RETURN count(d);
 
 > **(Symptom Ontology)**: Provides a standardized vocabulary for clinical signs and symptoms. NeSy uses this to extract, classify, and mathematically weight the symptoms reported by the user.
 
-![Symptoms Graph Visualization](../assets/images/symptoms.png)
+![Symptoms Graph Visualization](./assets/images/symptoms.png)
 
 ### 🔍 Query for Symptom Count
 
@@ -50,7 +50,7 @@ In the world of medical data, the link between a disease and its symptoms is for
 
 `RO_0002452` is the formal identifier for the `has_symptom` relation defined in the **Relations Ontology (RO)** — a standard library of biomedical relations maintained by the OBO Foundry community. This relation formally connects the `Disease` class to the `Symptom` class and serves as the foundation for interoperability between biomedical ontologies such as **DOID** (Disease Ontology) and **SYMP** (Symptom Ontology).
 
-![Graph Visualization](../assets/images/graph-visualization.png)
+![Graph Visualization](./assets/images/graph-visualization.png)
 
 ---
 
@@ -126,4 +126,4 @@ RETURN count(r);
 
 ---
 
-**⬅ Previous:** [🔧 Neo4j Desktop Setup & n10s Installation](./neo4j_setup.md) &nbsp;|&nbsp; **Next ➡:** [📚 Notebook Directory & Workflow](../notebooks/README.md)
+**⬅ Previous:** [🔧 Neo4j Desktop Setup & n10s Installation](./neo4j_setup.md) &nbsp;|&nbsp; **Next ➡:** [📚 Notebook Directory & Workflow](./notebooks.md)

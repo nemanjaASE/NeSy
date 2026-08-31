@@ -197,19 +197,19 @@ print(data["message"]["content"])
 ```
 
 Or via the OpenAI-compatible SDK (Ollama exposes an OpenAI-compatible endpoint):
- 
+
 ```bash
 pip install openai
 ```
- 
+
 ```python
 from openai import OpenAI
- 
+
 client = OpenAI(
     base_url="http://localhost:11434/v1",
     api_key="ollama"  # required by the SDK, but ignored by Ollama
 )
- 
+
 response = client.chat.completions.create(
     model="qwen2.5:14b",
     messages=[
@@ -217,20 +217,20 @@ response = client.chat.completions.create(
         {"role": "user", "content": "Extract symptoms from: ..."}
     ]
 )
- 
+
 print(response.choices[0].message.content)
 ```
 
 ---
 
 ## ⚙️ 5. Environment Variables
- 
+
 When using Ollama as an OpenAI-compatible server, only a subset of environment variables are relevant. The variables below affect the **server itself** — network exposure, model storage, memory behavior, and GPU acceleration — all of which directly impact how your OpenAI SDK client connects and performs.
- 
+
 > Variables related to internal concurrency (`OLLAMA_NUM_PARALLEL`, `OLLAMA_MAX_QUEUE`, `OLLAMA_MAX_LOADED_MODELS`) and low-level cache tuning (`OLLAMA_KV_CACHE_TYPE`, `OLLAMA_ORIGINS`) are server-side concerns and are not needed in this context.
- 
+
 ### Reference table
- 
+
 | Variable | Default | Description |
 |---|---|---|
 | `OLLAMA_HOST` | `127.0.0.1:11434` | IP address and port the server listens on — set to `0.0.0.0:11434` to expose to other devices |
@@ -239,7 +239,7 @@ When using Ollama as an OpenAI-compatible server, only a subset of environment v
 | `OLLAMA_FLASH_ATTENTION` | `0` | Enable Flash Attention to reduce VRAM usage (set to `1`) |
 | `CUDA_VISIBLE_DEVICES` | all | Which NVIDIA GPUs are visible to Ollama |
 | `OLLAMA_DEBUG` | `0` | Enable verbose server logging — useful when diagnosing connection issues from the client (set to `1`) |
- 
+
 ---
 
 ### Configuration per OS
@@ -379,4 +379,4 @@ def is_ollama_running(base_url: str = "http://localhost:11434") -> bool:
 
 ---
 
-**⬅ Previous:** [📚 Notebook Directory & Workflow](../notebooks/README.md) &nbsp;|&nbsp; **Next ➡:** [🚀 FastAPI](../backend/README.md)
+**⬅ Previous:** [📚 Notebook Directory & Workflow](./notebooks.md) &nbsp;|&nbsp; **Next ➡:** [🚀 FastAPI](./backend.md)

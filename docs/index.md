@@ -80,17 +80,17 @@ The framework must not be used for medical diagnosis or treatment decisions.
 
 ## 📚 Documentation
 
-- [Neo4j and ontology setup](./docs/neo4j_setup.md)
-- [Ontology structure and OWL representation](./docs/ontology.md)
-- [Preparation and evaluation notebooks](./notebooks/README.md)
-- [Local model setup with Ollama](./docs/ollama_setup.md)
-- [Backend setup and configuration](./backend/README.md)
-- [Frontend setup](./frontend/README.md)
-- [Symptom extraction evaluation](./docs/nlp-test.md)
-- [Semantic mapping evaluation](./docs/embedding-test.md)
-- [Symbolic reasoning, scoring, and filtering evaluation](./docs/inference-and-scoring-test.md)
-- [Explanation generation evaluation](./docs/xai-test.md)
+- [Neo4j and ontology setup](./neo4j_setup.md)
+- [Ontology structure and OWL representation](./ontology.md)
+- [Preparation and evaluation notebooks](./notebooks.md)
+- [Local model setup with Ollama](./ollama_setup.md)
+- [Backend setup and configuration](./backend.md)
+- [Frontend setup](../frontend/README.md)
+- [Symptom extraction evaluation](./nlp-test.md)
+- [Semantic mapping evaluation](./embedding-test.md)
+- [Symbolic reasoning, scoring, and filtering evaluation](./inference-and-scoring-test.md)
+- [Explanation generation evaluation](./xai-test.md)
 
 ## 📄 License
 
-Distributed under the MIT License. See [LICENSE](./LICENSE).
+Distributed under the MIT License. See [LICENSE](../LICENSE).

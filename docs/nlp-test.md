@@ -63,7 +63,7 @@ The evaluation was performed on a test set of 100 English input examples. For ea
 | Results        | symptom-extraction-result-1.txt        |
 
 ### 🔍 Model Overview — `llama3.2:3b`
- 
+
 | Property         | Value                          |
 |------------------|--------------------------------|
 | Developer        | Meta                           |
@@ -75,7 +75,7 @@ The evaluation was performed on a test set of 100 English input examples. For ea
 | Quantization     | Q4_K_M (Ollama)                |
 | Intended Use     | On-device / edge deployment    |
 | License          | Llama 3.2 Community License    |
- 
+
 > Lightweight text-only model optimized for mobile and edge environments. Supports 8 languages. Smallest model in the Llama 3.2 family.
 
 ### 📊 Results
@@ -107,7 +107,7 @@ The `llama3.2:3B` model offers surprisingly robust baseline extraction capabilit
 | Results        | symptom-extraction-result-2.txt        |
 
 ### 🔍 Model Overview — `llama3:8b`
- 
+
 | Property         | Value                          |
 |------------------|--------------------------------|
 | Developer        | Meta                           |
@@ -152,7 +152,7 @@ The `llama3:8B` model achieved a solid **80% F1-score** across the **100 test ca
 | Results        | symptom-extraction-result-3.txt        |
 
 ### 🔍 Model Overview — `mistral-nemo:12b`
- 
+
 | Property         | Value                                  |
 |------------------|----------------------------------------|
 | Developer        | Mistral AI + NVIDIA (joint)            |
@@ -166,7 +166,7 @@ The `llama3:8B` model achieved a solid **80% F1-score** across the **100 test ca
 | Quantization     | FP8-aware training                     |
 | Training Infra   | NVIDIA Megatron-LM, 3072× H100 GPUs   |
 | License          | Apache 2.0                             |
- 
+
 > Co-developed with NVIDIA on DGX Cloud. Drop-in replacement for Mistral 7B with significantly expanded context and multilingual capability across 11+ languages.
 
 ### 📊 Results
@@ -198,7 +198,7 @@ The `mistral-nemo:12b` model achieved a nearly identical **79% F1-score**, showi
 | Results        | symptom-extraction-result-4.txt                |
 
 ### 🔍 Model Overview — `qwen2.5:14b`
- 
+
 | Property         | Value                                      |
 |------------------|--------------------------------------------|
 | Developer        | Alibaba Cloud (Qwen Team)                  |
@@ -213,7 +213,7 @@ The `mistral-nemo:12b` model achieved a nearly identical **79% F1-score**, showi
 | Pretraining Data | ~18 trillion tokens                        |
 | Multilingual     | 29+ languages                              |
 | License          | Qwen Research License                      |
- 
+
 > Dense open-weight model from the Qwen2.5 family. Pretrained on the largest dataset among local models tested (~18T tokens). Strong structured output and instruction-following capabilities.
 
 ### 📊 Results
@@ -245,7 +245,7 @@ The best result was achieved by qwen2.5:14b, with an F1 score of 0.825. This mod
 | Results        | symptom-extraction-result-5.txt        |
 
 ### 🔍 Model Overview — `phi4:14b`
- 
+
 | Property         | Value                                      |
 |------------------|--------------------------------------------|
 | Developer        | Microsoft Research                         |
@@ -259,7 +259,7 @@ The best result was achieved by qwen2.5:14b, with an F1 score of 0.825. This mod
 | Pretraining Data | ~9.8T tokens (incl. ~400B synthetic)      |
 | Knowledge Cutoff | June 2024                                  |
 | License          | MIT                                        |
- 
+
 > STEM-focused SLM (Small Language Model) from Microsoft. Distinguished by heavy use of **synthetic training data** for mathematical and scientific reasoning. Punches above its weight class on GPQA and MATH benchmarks.
 
 ### 📊 Results
@@ -291,7 +291,7 @@ The `phi4:14B model` demonstrates high clinical intelligence with an **F1-score 
 | Results        | symptom-extraction-result-6.txt        |
 
 ### 🔍 Model Overview — `meta-llama/llama-4-scout-17b-16e-instruct`
- 
+
 | Property           | Value                                              |
 |--------------------|----------------------------------------------------|
 | Developer          | Meta                                               |
@@ -307,7 +307,7 @@ The `phi4:14B model` demonstrates high clinical intelligence with an **F1-score 
 | Knowledge Cutoff   | August 2024                                        |
 | Multilingual       | 12 languages                                       |
 | License            | Llama 4 Community License                          |
- 
+
 > First MoE model in the Llama family. Each token activates only 2 of 16 experts, giving the inference cost of a 17B dense model with the knowledge capacity of 109B parameters. Natively multimodal via early fusion architecture.
 
 ### 📊 Results
@@ -339,14 +339,14 @@ The `llama-4-scout-17b` model shows a solid baseline for symptom extraction with
 | Results        | symptom-extraction-result-7.txt        |
 
 ### 🔍 Model Overview — `openai/gpt-oss-120b`
- 
+
 | Property         | Value                              |
 |------------------|------------------------------------|
 | Developer        | OpenAI                             |
 | Architecture     | Dense · Decoder-only Transformer   |
 | Parameters       | ~120B                              |
 | Deployment       | Cloud (API)                        |
- 
+
 > Large-scale dense model. Highest parameter count among all tested models. Exhibits the most pronounced Tendency toward over-inference — consistently extracts more clinically nuanced and anatomically precise terms than the ground truth labels require.
 
 ### 📊 Results
@@ -408,4 +408,4 @@ The main remaining limitation is the need for stricter control of symptom granul
 
 ---
 
-**⬅ Previous:** [🚀 FastAPI](../backend/README.md) &nbsp;|&nbsp; **Next ➡:** [🧪 Testing the Embedding Layer](./embedding-test.md)
+**⬅ Previous:** [🚀 FastAPI](./backend.md) &nbsp;|&nbsp; **Next ➡:** [🧪 Testing the Embedding Layer](./embedding-test.md)

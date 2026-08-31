@@ -19,7 +19,7 @@ The central requirement is that the explanation must remain grounded in symbolic
 
 **Focus:** Explain why diseases with blocking symptoms are excluded.
 
-![Diseases Graph Visualization](../assets/images/TC1.png)
+![Diseases Graph Visualization](./assets/images/TC1.png)
 
 | Field               | Value                                                                 |
 |---------------------|-----------------------------------------------------------------------|
@@ -36,7 +36,7 @@ The central requirement is that the explanation must remain grounded in symbolic
 
 **Focus:** Distinguish diseases with similar symptom profiles.
 
-![Diseases Graph Visualization](../assets/images/TC2.png)
+![Diseases Graph Visualization](./assets/images/TC2.png)
 
 | Field               | Value                                                                  |
 |---------------------|------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ The central requirement is that the explanation must remain grounded in symbolic
 
 **Focus:** Identify the most likely disease while acknowledging low coverage.
 
-![Diseases Graph Visualization](../assets/images/TC3.png)
+![Diseases Graph Visualization](./assets/images/TC3.png)
 
 | Field               | Value                                                                              |
 |---------------------|------------------------------------------------------------------------------------|
@@ -70,7 +70,7 @@ The central requirement is that the explanation must remain grounded in symbolic
 
 **Focus:** Identify the symptom that differentiates the most likely disease from similar alternatives.
 
-![Diseases Graph Visualization](../assets/images/TC4.png)
+![Diseases Graph Visualization](./assets/images/TC4.png)
 
 | Field               | Value                                                                                          |
 |---------------------|------------------------------------------------------------------------------------------------|
@@ -97,11 +97,11 @@ The central requirement is that the explanation must remain grounded in symbolic
 ---
 
 ## 🧪 Test 1: llama3.2:3b (local)
- 
+
 **Overall assessment:** The model followed the required JSON structure, but showed weak exclusion logic. It sometimes placed diseases with `passed_filter = false` among differentials or used missing symptoms as if they were blocking symptoms.
- 
+
 ### ⏱️ Performance
- 
+
 | Test Case | Total Time |
 |-----------|------------|
 | TC1       | 34.96s     |
@@ -126,7 +126,7 @@ The central requirement is that the explanation must remain grounded in symbolic
 In TC3, the model correctly identifies West Nile encephalitis as the most likely diagnosis. However, it fails the logical constraint test by placing Japanese encephalitis and St. Louis encephalitis into the differential diagnosis category, completely ignoring the `passed_filter: false` flag. These conditions should have been moved to `excluded_conditions` due to the presence of the blocking symptom spastic paralysis, which the patient explicitly denied. Furthermore, the model incorrectly justifies their inclusion by claiming they have lower scores, when in fact, they had higher raw scores but were excluded.
 
 **2. Hallucinated exclusion (TC4)**
- 
+
 In TC4, all five diseases have `passed_filter: true` and no blocking symptoms exist. Despite this, the model placed primary amebic meningoencephalitis in `excluded_conditions`, falsely claiming the patient denied coma — a symptom that appears only in the Missing List, not the Blocking Symptoms list. This is the same missing/blocking confusion as before.
 
 ---
@@ -136,7 +136,7 @@ In TC4, all five diseases have `passed_filter: true` and no blocking symptoms ex
 **Overall assessment:** `llama3:8b` followed the JSON structure correctly, but achieved only partial logical consistency. The main errors occurred when filtered diseases were placed among differentials or when missing symptoms were interpreted as exclusion reasons.
 
 ### ⏱️ Performance
- 
+
 | Test Case | Total Time |
 |-----------|------------|
 | TC1       | 22.45s     |
@@ -161,17 +161,17 @@ In TC4, all five diseases have `passed_filter: true` and no blocking symptoms ex
 In TC1, the model placed Marburg hemorrhagic fever in `differentials` despite its `passed_filter: false` flag. At the same time, it incorrectly excluded poliomyelitis — a disease with `passed_filter: true` — citing flaccid paralysis as a blocking symptom. Flaccid paralysis is listed under Missing List, not Blocking Symptoms, making this an unjustified exclusion.
 
 **2. Correct handling (TC2, TC3, TC4)**
- 
+
 TC2 correctly excluded hepatitis D with the right justification. TC3 correctly placed Japanese encephalitis and St. Louis encephalitis in `excluded_conditions` citing spastic paralysis. TC4 correctly identified Powassan encephalitis as most likely with all others as differentials and an empty `excluded_conditions` list.
 
 ---
 
 ## 🧪 Test 3: mistral-nemo:12b (local)
- 
+
 **Overall assessment:** `mistral-nemo:12b` showed partial consistency. It handled several scenarios correctly, but still confused missing symptoms with blocking symptoms in at least one case.
 
 ### ⏱️ Performance
- 
+
 | Test Case | Total Time |
 |-----------|------------|
 | TC1       | 28.15s     |
@@ -181,7 +181,7 @@ TC2 correctly excluded hepatitis D with the right justification. TC3 correctly p
 | **Total** | **95.83s** |
 
 ### 📊 Performance Matrix
- 
+
 | Metric                              | Result   | Commentary                                                                                         |
 |-------------------------------------|----------|----------------------------------------------------------------------------------------------------|
 | JSON structural integrity           | 100%  | Perfectly followed the schema and maintained all keys                                        |
@@ -191,25 +191,25 @@ TC2 correctly excluded hepatitis D with the right justification. TC3 correctly p
 ### 💬 Qualitative Analysis
 
 **1. Negation & filter logic (TC1)**
- 
+
 In TC1, West Nile fever (`passed_filter: false`) was placed in `differentials` instead of `excluded_conditions`. The model also incorrectly excluded poliomyelitis (`passed_filter: true`), justifying the exclusion with flaccid paralysis — which appears only in the Missing List and does not qualify as a blocking symptom.
- 
+
 **2. Correct handling (TC2, TC3, TC4)**
- 
+
 TC2 correctly excluded hepatitis D citing drowsiness and confusion. TC3 correctly excluded both Japanese and St. Louis encephalitis citing spastic paralysis. TC4 correctly identified Powassan encephalitis as most likely and included all other diseases as differentials with an empty excluded list.
- 
+
 **3. TC4 differential comparison quality**
- 
+
 In TC4, the model correctly identified seizure as absent from poliomyelitis and nonparalytic poliomyelitis, indirectly supporting Powassan encephalitis as the tie-breaker — though it did not explicitly name seizure as the deciding factor.
 
 ---
 
 ## 🧪 Test 4: phi4:14b (local)
- 
+
 **Overall assessment:** `phi4:14b` demonstrated strong logical compliance across all test cases. All diseases with `passed_filter = false` were correctly placed in excluded_conditions. TC4 now includes all four differentials correctly and explicitly references seizure and stiff neck as the tie-breaking symptoms for Powassan encephalitis.
- 
+
 ### ⏱️ Performance
- 
+
 | Test Case | Total Time |
 |-----------|------------|
 | TC1       | 50.28s     |
@@ -219,7 +219,7 @@ In TC4, the model correctly identified seizure as absent from poliomyelitis and 
 | **Total** | **194.86s**|
 
 ### 📊 Performance Matrix
- 
+
 | Metric                              | Result   | Commentary                                                                                          |
 |-------------------------------------|----------|-----------------------------------------------------------------------------------------------------|
 | JSON structural integrity           | 100%  | Perfectly followed the schema and maintained all keys                                      |
@@ -227,17 +227,17 @@ In TC4, the model correctly identified seizure as absent from poliomyelitis and 
 | Internal consistency                | High  | Textual reasoning directly supports the content of the JSON arrays                                  |
 | Clinical tone                       | High  | Medical vocabulary                                                                       |
 ### 💬 Qualitative Analysis
- 
+
 **1. Precise handling of negation (TC1, TC2, TC3)**
- 
+
 In TC1, Marburg hemorrhagic fever and West Nile fever are correctly placed in `excluded_conditions`, with explicit references to the denied maculopapular rash and chills. In TC2, hepatitis D is correctly excluded citing drowsiness and confusion. In TC3, both Japanese and St. Louis encephalitis are correctly excluded citing spastic paralysis.
- 
+
 **2. TC4 tie-breaker identification**
- 
+
 In TC4, the model correctly identifies seizure and stiff neck as the symptoms that distinguish Powassan encephalitis from nonparalytic poliomyelitis and poliomyelitis, fulfilling the success criteria for this test case.
 
 **3. Trade-off: accuracy vs speed**
- 
+
 Phi4 14b is the slowest local model tested, averaging nearly 49 seconds per test case. This is a significant trade-off compared to smaller models, and should be considered when evaluating it for production use.
 
 ---
@@ -247,7 +247,7 @@ Phi4 14b is the slowest local model tested, averaging nearly 49 seconds per test
 **Overall assessment:** `qwen2.5:14b` demonstrated strong logical compliance across all test cases. All diseases with `passed_filter = false` were correctly placed in `excluded_conditions`, and the generated explanations remained internally consistent. TC4 confidence is set to `moderate` — a more conservative and arguably more appropriate calibration than the `high` assigned by phi4, given that Powassan encephalitis covers only 50% of its known symptoms.
 
 ### ⏱️ Performance
- 
+
 | Test Case | Total Time |
 |-----------|------------|
 | TC1       | 49.49s     |
@@ -266,17 +266,17 @@ Phi4 14b is the slowest local model tested, averaging nearly 49 seconds per test
 | Clinical tone                       |  High     | Medical vocabulary                              |
 
 ### 💬 Qualitative Analysis
- 
+
 **1. Precise handling of negation (TC1, TC2, TC3)**
- 
+
 In TC1, Marburg hemorrhagic fever and West Nile fever are correctly excluded citing denied maculopapular rash and chills. In TC2, hepatitis D is correctly excluded citing drowsiness and confusion. In TC3, Japanese and St. Louis encephalitis are correctly excluded citing spastic paralysis.
- 
+
 **2. TC4 differential comparison quality**
- 
+
 In TC4, the model explicitly names seizure as the differentiating symptom across all differential comparisons — noting its absence from nonparalytic poliomyelitis, poliomyelitis, La Crosse encephalitis, and primary amebic meningoencephalitis. This is the most thorough fulfillment of the TC4 success criteria among all tested models.
- 
+
 **3. Confidence calibration**
- 
+
 The `moderate` confidence assigned in TC4 reflects a correct reading of the data — Disease Coverage is 50% and Input Coverage is 100%, which places the case in the moderate band per the prompt definition. This is more precise than phi4's `high` assignment for the same scenario.
 
 ---
@@ -352,7 +352,7 @@ In TC3, correctly excludes Japanese encephalitis and St. Louis encephalitis, cit
 ---
 
 ## 📊 Summary: Comparison of Model Performance
- 
+
 | Model            | Size  | Type  | JSON Integrity | Exclusion Logic | Internal Consistency | Clinical Tone | Total Time  |
 |------------------|-------|-------|----------------|-----------------|----------------------|---------------|-------------|
 | llama3.2:3b      | 3B    | Local | ✅ 100%        | ❌ 25%          | ❌ Fail              | ✅ High       | 108.77s     |
@@ -362,13 +362,13 @@ In TC3, correctly excludes Japanese encephalitis and St. Louis encephalitis, cit
 | **qwen2.5:14b**      | 14B   | Local | ✅ 100%        | ✅ 100%         | ✅ High              | ✅ High       | 216.72s     |
 | meta-llama/llama-4-scout-17b-16e-instruct      | 17b-16e (MoE)   | Cloud | ✅ 100%        | ✅ 100%         | ✅ High              | ✅ High       | 5.38s     |
 | openai/gpt-oss-120b      | 120B   | Cloud | ✅ 100%        | ✅ 100%         | ✅ High              | ✅ High       | 50.41s     |
- 
+
 ---
- 
+
 ## 🏁 Conclusion
- 
+
 The evaluation shows that the XAI layer can reliably transform symbolic inference results into structured explanations when the model follows the `passed_filter` logic and respects the distinction between matched, missing, and blocking symptoms. The main difference between models was not JSON formatting, but logical consistency in interpreting `passed_filter` and blocking symptoms.
- 
+
 A notable new finding is the introduction of **mistral-nemo:12b**, which performs on par with llama3:8b despite having 50% more parameters. Both achieve 50% exclusion logic accuracy, suggesting that parameter count alone is not the primary factor — instruction-following capability and training data quality play an equally important role.
 
 Cloud models offer significantly faster inference — `llama-4-scout` completed all four test cases in just 5 seconds compared to 70–90 seconds for local 14B models. However, `gpt-oss-120b` showed variable latency (2.5s to 21s per case), suggesting that response depth impacts inference time more than model size alone.

@@ -71,8 +71,8 @@ Once the database restarts, the n10s plugin will be loaded and ready to use.
 ### Next Steps
 
 Now that your ontologies are loaded and labeled, you need to calculate weights and embeddings.
-➡️ **[Go to Data Enrichment Instructions](../notebooks/README.md)**
+➡️ **[Go to Data Enrichment Instructions](./notebooks.md)**
 
 ---
 
-**⬅ Previous:** [🏠 Home](../index.md) &nbsp;|&nbsp; **Next ➡:** [🧬 Biomedical Ontologies and Graph Representation](./ontology.md)
+**⬅ Previous:** [🏠 Home](./index.md) &nbsp;|&nbsp; **Next ➡:** [🧬 Biomedical Ontologies and Graph Representation](./ontology.md)
