@@ -91,23 +91,14 @@ Logical translation: *"Every instance of the `Disease` class must be connected t
 
 When the **neosemantics** library parses an OWL/RDF file, it cannot directly represent anonymous OWL restrictions as simple Neo4j edges — because an OWL restriction is not a binary relation but a **complex logical structure**. Instead, it creates an **intermediate anonymous node** that represents the restriction itself:
 
-```text
- ┌─────────────────────┐
- │   (d:Disease)       │  ← DOID term (e.g., DOID:9351 - diabetes mellitus)
- └──────────┬──────────┘
-            │
-            │  [:n4sch__SCO_RESTRICTION]
-            │  r.onPropertyURI = "http://purl.obolibrary.org/obo/RO_0002452"
-            ▼
- ┌─────────────────────┐
- │  [owl:Restriction]  │  ← Anonymous node (blank node)
- └──────────┬──────────┘
-            │
-            │  [:n4sch__SVF] (someValuesFrom)
-            ▼
- ┌─────────────────────┐
- │   (s:Symptom)       │  ← SYMP term (e.g., SYMP:0000570 - polydipsia)
- └─────────────────────┘
+```mermaid
+graph TD
+    D["(d:Disease)<br/>DOID:9351 - diabetes mellitus"]
+    R("[owl:Restriction]<br/>anonymous blank node")
+    S["(s:Symptom)<br/>SYMP:0000570 - polydipsia"]
+
+    D -->|":n4sch__SCO_RESTRICTION<br/>onPropertyURI = RO_0002452"| R
+    R -->|":n4sch__SVF<br/>(someValuesFrom)"| S
 ```
 
 This three-step structure is a direct consequence of the **RDF blank node** mechanism that OWL uses for anonymous restrictions, which neosemantics maps into Neo4j nodes and edges.

@@ -40,7 +40,8 @@ Use the standalone installer (does not require an existing Python):
   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
   ```
 
-> **Note:** If you already have a working Python + pip, `pip install uv` also works. Avoid this on older Linux systems with an outdated system Python (missing SSL support, etc.) — use the standalone installer above instead, since it has no Python dependency. If you specifically want a system-managed Python 3.12 for reasons outside this project, **pyenv** is still a fine option: 📘 **[pyenv Setup Guide](./pyenv-python312-ubuntu.md)**.
+{: .note }
+If you already have a working Python + pip, `pip install uv` also works. Avoid this on older Linux systems with an outdated system Python (missing SSL support, etc.) — use the standalone installer above instead, since it has no Python dependency. If you specifically want a system-managed Python 3.12 for reasons outside this project, **pyenv** is still a fine option: 📘 **[pyenv Setup Guide](./pyenv-python312-ubuntu.md)**.
 
 ### **3. Install dependencies:**
 
@@ -93,7 +94,8 @@ ALLOW_CREDENTIALS="your-allow-credentials" # true or false
 
 Before starting the API, you must populate the Neo4j database with the medical ontologies, calculate the Information Content (IC) weights, and generate symptom embeddings.
 
-> **Note:** The preparation pipeline is currently implemented as interactive Jupyter Notebooks.
+{: .note }
+The preparation pipeline is currently implemented as interactive Jupyter Notebooks.
 > 📘 **[Click here to read the detailed Notebooks Setup Guide](./notebooks.md)** to learn how to configure your VS Code kernel and execute the graph enrichment steps.
 
 ### **2. Start the FastAPI Development Server**
@@ -128,7 +130,8 @@ Run it manually against everything (e.g. after pulling a large change):
 uv run pre-commit run --all-files
 ```
 
-> **Note:** `pre-commit` is a local, best-effort safety net — it doesn't replace CI. `backend-ci.yml` runs the same Ruff checks (plus mypy/bandit/pip-audit) on every push/PR regardless of whether hooks are installed locally.
+{: .note }
+`pre-commit` is a local, best-effort safety net — it doesn't replace CI. `backend-ci.yml` runs the same Ruff checks (plus mypy/bandit/pip-audit) on every push/PR regardless of whether hooks are installed locally.
 
 ### 3. Linting & Formatting (Ruff)
 

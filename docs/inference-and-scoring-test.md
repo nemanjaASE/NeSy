@@ -4,6 +4,15 @@ nav_order: 9
 ---
 
 # 🧪 Testing the Inference and Scoring Layer
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 📋 Overview
 
