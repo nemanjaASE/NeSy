@@ -197,6 +197,7 @@ TC2 correctly excluded hepatitis D with the right justification. TC3 correctly p
 | Exclusion logic (blocking symptoms) | 50%  | TC1: West Nile fever in differentials, poliomyelitis incorrectly excluded;  |
 | Internal consistency                | Partial | TC1 internally inconsistent;                                      |
 | Clinical tone                       | High  | Medical vocabulary                                                                      |
+
 ### 💬 Qualitative Analysis
 
 **1. Negation & filter logic (TC1)**
@@ -235,6 +236,7 @@ In TC4, the model correctly identified seizure as absent from poliomyelitis and 
 | Exclusion logic (blocking symptoms) | 100%  | All passed_filter: false diseases correctly placed in excluded_conditions across all test cases      |
 | Internal consistency                | High  | Textual reasoning directly supports the content of the JSON arrays                                  |
 | Clinical tone                       | High  | Medical vocabulary                                                                       |
+
 ### 💬 Qualitative Analysis
 
 **1. Precise handling of negation (TC1, TC2, TC3)**
