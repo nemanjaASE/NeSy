@@ -40,7 +40,7 @@ These properties support transparency of the overall workflow without assuming t
 
 NeSy-X operates through two phases: preparation and execution. The preparation phase establishes and enriches the knowledge graph, while the execution phase processes user input and produces ranked disease candidates with accompanying explanations.
 
-![Preparation and execution phases of NeSy-X](./assets/images/NeSy-workflow.png)
+![Preparation and execution phases of NeSy-X](./docs/assets/images/NeSy-workflow.png)
 
 ### ⚙️ Preparation Phase
 
@@ -77,9 +77,9 @@ The framework must not be used for medical diagnosis or treatment decisions.
 
 - [Neo4j and ontology setup](./docs/neo4j_setup.md)
 - [Ontology structure and OWL representation](./docs/ontology.md)
-- [Preparation and evaluation notebooks](./notebooks/README.md)
+- [Preparation and evaluation notebooks](./docs/notebooks.md)
 - [Local model setup with Ollama](./docs/ollama_setup.md)
-- [Backend setup and configuration](./backend/README.md)
+- [Backend setup and configuration](./docs/backend.md)
 - [Frontend setup](./frontend/README.md)
 - [Symptom extraction evaluation](./docs/nlp-test.md)
 - [Semantic mapping evaluation](./docs/embedding-test.md)
