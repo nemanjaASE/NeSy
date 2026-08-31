@@ -42,6 +42,7 @@ These notebooks are used for research, validation, and testing each layer of the
 Standalone notebooks that support exploration and reporting but are not required to run the framework.
 
 - `demos/embeddings-visualization.ipynb` — projects symptom embeddings into 2D (t-SNE + K-Means) for an interactive Plotly view of the vector space. Writes to `demos/results/`.
+- `demos/embedding-similarity.ipynb` — visualizes the cosine similarity behind the semantic-mapping threshold: the angle between two term embeddings, and a PCA projection of related/unrelated terms around a shared anchor. Writes to `demos/results/`.
 
 # ⚙️ Setting Up the Local Jupyter Kernel
 
