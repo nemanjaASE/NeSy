@@ -11,6 +11,10 @@ on:
       - "backend/uv.lock"
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   dependencies-check:
     name: Install Dependencies (${{ matrix.os }})
