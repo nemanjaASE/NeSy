@@ -2,9 +2,9 @@ exclude: |
   (?x)^(
     notebooks/pipeline/execution/tests/.*|
     notebooks/demos/results/.*|
-    notebooks/requirements\.txt|
     data/.*|
-    backend/uv\.lock
+    backend/uv\.lock|
+    notebooks/uv\.lock
   )$
 
 repos:
